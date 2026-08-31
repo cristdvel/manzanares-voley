@@ -1,0 +1,3 @@
+# Redirige el subdominio www al dominio principal.
+# Requiere que www.manzanaresvoley.com también apunte al proyecto de Cloudflare Pages.
+https://www.manzanaresvoley.com/* https://manzanaresvoley.com/:splat 301!

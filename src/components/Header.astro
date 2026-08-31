@@ -1,0 +1,23 @@
+---
+import { nav } from "../data/site";
+---
+<header id="header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo" aria-label="Manzanares Voley — inicio">
+      <svg class="brand-logo" viewBox="0 0 346 84" role="img" aria-label="Manzanares Voley"><use href="#mzv-logo" /></svg>
+    </a>
+
+    <nav id="nav" class="nav" aria-label="Navegación principal">
+      <ul class="nav-links">
+        {nav.map((item) => (
+          <li><a href={item.href}>{item.label}</a></li>
+        ))}
+      </ul>
+      <a href="#inscripciones" class="btn btn--primary nav-cta">Inscríbete</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>

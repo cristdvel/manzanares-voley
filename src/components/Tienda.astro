@@ -1,0 +1,25 @@
+---
+import { productos } from "../data/contenido";
+---
+<div class="section section--crema">
+  <div class="container">
+    <span class="eyebrow">Tienda</span>
+    <h2 class="section-title">Tienda oficial</h2>
+    <div class="tienda-grid">
+      {productos.map((p) => (
+        <article class="producto">
+          <div class="placeholder placeholder--accion">
+            <img src={p.img} alt="" loading="lazy" onerror="this.remove()" />
+            <span class="placeholder__label">Foto pendiente</span>
+          </div>
+          <div class="producto__body">
+            <h3>{p.titulo}</h3>
+            <p>{p.texto}</p>
+            <a href="#inscripciones" class="btn btn--primary">Ver productos</a>
+          </div>
+        </article>
+      ))}
+    </div>
+    <p class="tienda-note">Para realizar un pedido contacta con el club. Recogida en el pabellón.</p>
+  </div>
+</div>

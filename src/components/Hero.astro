@@ -1,0 +1,25 @@
+---
+import { heroImg } from "../data/contenido";
+---
+<div class="hero">
+  <img class="hero__media" src={heroImg} alt="" aria-hidden="true" onerror="this.remove()" />
+  <div class="hero__overlay"></div>
+  <div class="container hero__inner">
+    <h1>Pasión · Equipo · Voleibol</h1>
+    <p class="hero__sub">Club Voleibol Manzanares · Madrid · Desde 2016</p>
+    <div class="hero__actions">
+      <a href="#inscripciones" class="btn btn--primary btn--lg">¡Únete al club!</a>
+      <a href="#club" class="btn btn--outline-light btn--lg">Conoce el club</a>
+    </div>
+  </div>
+  <div class="scroll-ind" aria-hidden="true">Scroll<span></span></div>
+</div>
+
+<div class="aniversario">
+  <div class="container">
+    <p class="aniversario__text">
+      <svg class="ani-mark" viewBox="0 0 80 84" aria-hidden="true"><use href="#mzv-icon" /></svg>
+      Una década de pasión por el voley · 2016 — 2026
+    </p>
+  </div>
+</div>

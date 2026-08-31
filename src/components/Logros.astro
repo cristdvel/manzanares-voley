@@ -1,0 +1,37 @@
+---
+import { hitos, palmares } from "../data/historia";
+---
+<div class="section">
+  <div class="container">
+    <span class="eyebrow">Logros</span>
+    <h2 class="section-title">Una década de historia</h2>
+    <div class="timeline">
+      {hitos.map((h) => (
+        <div class="hito">
+          <div class="hito__year">{h.year}</div>
+          <div>
+            <h3>{h.titulo}</h3>
+            <p>{h.texto}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+
+<!-- Palmarés -->
+<div class="section section--oscuro">
+  <div class="container">
+    <span class="eyebrow">Vitrina del club</span>
+    <h2 class="section-title">Palmarés</h2>
+    <div class="palmares">
+      {palmares.map((l) => (
+        <article class="trofeo">
+          <div class="trofeo__icon" aria-hidden="true">{l.icon}</div>
+          <h3>{l.titulo}</h3>
+          <span>{l.year}</span>
+        </article>
+      ))}
+    </div>
+  </div>
+</div>

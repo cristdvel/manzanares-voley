@@ -1,0 +1,20 @@
+---
+import { partidos } from "../data/partidos";
+import { site } from "../data/site";
+---
+<div class="section">
+  <div class="container">
+    <span class="eyebrow">Temporada 2025 / 2026</span>
+    <h2 class="section-title">Próximos partidos</h2>
+    <div class="partidos__grid">
+      {partidos.map((p) => (
+        <article class="match">
+          <span class="badge">{p.cat}</span>
+          <p class="match__teams">{p.local} <span class="vs">vs</span> {p.visitante}</p>
+          <p class="match__meta">{p.meta}</p>
+        </article>
+      ))}
+    </div>
+    <a href={site.fmvb} target="_blank" rel="noopener" class="btn btn--outline">Ver clasificaciones en la FMVB →</a>
+  </div>
+</div>

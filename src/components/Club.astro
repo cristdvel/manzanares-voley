@@ -1,0 +1,85 @@
+---
+import { clubImg, quienesSomos, mvv, valores, pilares, staff } from "../data/contenido";
+---
+<!-- Presentación -->
+<div class="section">
+  <div class="container">
+    <div class="split">
+      <div>
+        <span class="eyebrow">El Club</span>
+        <h2 class="section-title">Quiénes somos</h2>
+        {quienesSomos.map((parrafo) => <p>{parrafo}</p>)}
+      </div>
+      <div class="placeholder placeholder--persona">
+        <img src={clubImg} alt="" loading="lazy" onerror="this.remove()" />
+        <span class="placeholder__label">Foto del club · Foto pendiente</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Misión, Visión, Valores -->
+<div class="section section--crema">
+  <div class="container">
+    <div class="mvv">
+      {mvv.map((c) => (
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">{c.icon}</div>
+          <h3>{c.titulo}</h3>
+          <p>{c.texto}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</div>
+
+<!-- Los 4 valores -->
+<div class="section">
+  <div class="container">
+    <span class="eyebrow">Lo que nos define</span>
+    <h2 class="section-title">Nuestros valores</h2>
+    <div class="valores">
+      {valores.map((v) => (
+        <article class="valor">
+          <h3>{v.titulo}</h3>
+          <p>{v.texto}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</div>
+
+<!-- Filosofía Manzanita -->
+<div class="section section--oscuro">
+  <div class="container">
+    <span class="eyebrow">Nuestra forma de entender el club</span>
+    <h2 class="section-title">La filosofía Manzanita</h2>
+    <div class="pilares">
+      {pilares.map((p) => (
+        <article class="pilar">
+          <div class="pilar__icon" aria-hidden="true">{p.icon}</div>
+          <h3>{p.titulo}</h3>
+          <p>{p.texto}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</div>
+
+<!-- Staff -->
+<div class="section section--crema">
+  <div class="container">
+    <span class="eyebrow">Las personas del club</span>
+    <h2 class="section-title">Nuestro equipo</h2>
+    <div class="staff">
+      {staff.map((m) => (
+        <div class="member">
+          <div class="member__avatar" aria-hidden="true">?</div>
+          <div class="member__name">[Nombre]</div>
+          <div class="member__role">{m.role}</div>
+        </div>
+      ))}
+    </div>
+    <p class="staff-note">(Nombres reales pendientes de confirmar por el club)</p>
+  </div>
+</div>

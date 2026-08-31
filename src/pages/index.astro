@@ -1,0 +1,35 @@
+---
+import Base from "../layouts/Base.astro";
+import LogoSprite from "../components/LogoSprite.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Cifras from "../components/Cifras.astro";
+import Partidos from "../components/Partidos.astro";
+import TiendaStrip from "../components/TiendaStrip.astro";
+import Club from "../components/Club.astro";
+import Equipos from "../components/Equipos.astro";
+import Logros from "../components/Logros.astro";
+import Tienda from "../components/Tienda.astro";
+import Inscripciones from "../components/Inscripciones.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Base>
+  <LogoSprite />
+  <Header />
+  <main>
+    <section id="inicio">
+      <Hero />
+      <Cifras />
+      <Partidos />
+      <TiendaStrip />
+    </section>
+
+    <section id="club"><Club /></section>
+    <section id="equipos"><Equipos /></section>
+    <section id="logros"><Logros /></section>
+    <section id="tienda"><Tienda /></section>
+    <section id="inscripciones"><Inscripciones /></section>
+  </main>
+  <Footer />
+</Base>

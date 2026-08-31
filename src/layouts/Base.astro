@@ -1,0 +1,208 @@
+---
+import "../styles/global.css";
+import { site } from "../data/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title = site.title, description = site.description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, site.url).href;
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={site.url} />
+    <meta name="generator" content={Astro.generator} />
+  </head>
+  <body>
+    <slot />
+
+    <script is:inline>
+      (function () {
+        "use strict";
+
+        // ---- Header: fondo al hacer scroll ----
+        var header = document.getElementById("header");
+        function onScroll() {
+          header.classList.toggle("scrolled", window.scrollY > 50);
+        }
+        onScroll();
+        window.addEventListener("scroll", onScroll, { passive: true });
+
+        // ---- Menú móvil ----
+        var burger = document.getElementById("hamburger");
+        var nav = document.getElementById("nav");
+        burger.addEventListener("click", function () {
+          var open = nav.classList.toggle("open");
+          burger.setAttribute("aria-expanded", String(open));
+          burger.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+        });
+        nav.querySelectorAll("a").forEach(function (a) {
+          a.addEventListener("click", function () {
+            nav.classList.remove("open");
+            burger.setAttribute("aria-expanded", "false");
+            burger.setAttribute("aria-label", "Abrir menú");
+          });
+        });
+
+        // ---- Scrollspy: enlace activo ----
+        var sections = Array.prototype.slice.call(document.querySelectorAll("main section[id]"));
+        var navLinks = Array.prototype.slice.call(nav.querySelectorAll('.nav-links a[href^="#"]'));
+        function spy() {
+          var y = window.scrollY + 120;
+          var current = sections.length ? sections[0].id : "";
+          sections.forEach(function (s) {
+            if (s.offsetTop <= y) current = s.id;
+          });
+          navLinks.forEach(function (a) {
+            a.classList.toggle("active", a.getAttribute("href") === "#" + current);
+          });
+        }
+        spy();
+        window.addEventListener("scroll", spy, { passive: true });
+
+        // ---- Tabs de equipos ----
+        var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+        var panels = Array.prototype.slice.call(document.querySelectorAll(".tab-panel"));
+        tabs.forEach(function (tab) {
+          tab.addEventListener("click", function () {
+            tabs.forEach(function (t) {
+              t.classList.remove("active");
+              t.setAttribute("aria-selected", "false");
+            });
+            panels.forEach(function (p) {
+              p.classList.remove("active");
+            });
+            tab.classList.add("active");
+            tab.setAttribute("aria-selected", "true");
+            var target = document.querySelector('.tab-panel[data-cat="' + tab.dataset.cat + '"]');
+            if (target) target.classList.add("active");
+          });
+        });
+
+        // ---- Acordeón FAQ ----
+        document.querySelectorAll(".faq-item").forEach(function (item) {
+          var q = item.querySelector(".faq-q");
+          q.addEventListener("click", function () {
+            var open = item.classList.toggle("open");
+            q.setAttribute("aria-expanded", String(open));
+            q.querySelector(".ico").textContent = open ? "−" : "+";
+          });
+        });
+
+        // ---- Categoría según fecha de nacimiento ----
+        var dob = document.getElementById("dob");
+        var catHint = document.getElementById("cat-hint");
+        function categoriaPorEdad(age) {
+          if (age < 9) return null;
+          if (age <= 10) return "Minivoley";
+          if (age === 11) return "Benjamín";
+          if (age === 12) return "Alevín";
+          if (age <= 14) return "Infantil";
+          if (age <= 16) return "Cadete";
+          if (age <= 18) return "Juvenil";
+          return "Adultos";
+        }
+        function calcCategoria() {
+          if (!dob.value) {
+            catHint.classList.remove("show");
+            return;
+          }
+          var b = new Date(dob.value);
+          if (isNaN(b.getTime())) {
+            catHint.classList.remove("show");
+            return;
+          }
+          var now = new Date();
+          var age = now.getFullYear() - b.getFullYear();
+          var m = now.getMonth() - b.getMonth();
+          if (m < 0 || (m === 0 && now.getDate() < b.getDate())) age--;
+          var cat = categoriaPorEdad(age);
+          if (age < 0 || age > 99) {
+            catHint.classList.remove("show");
+            return;
+          }
+          if (cat === null) {
+            catHint.textContent =
+              "Aún por debajo de la edad mínima (9 años). Escríbenos y te avisamos cuando pueda empezar.";
+          } else {
+            catHint.textContent = "Categoría orientativa: " + cat + " · " + age + " años";
+          }
+          catHint.classList.add("show");
+        }
+        if (dob) {
+          dob.addEventListener("change", calcCategoria);
+          dob.addEventListener("input", calcCategoria);
+        }
+
+        // ---- Validación del formulario ----
+        var form = document.getElementById("insc-form");
+        var success = document.getElementById("form-success");
+        if (form) {
+          var requeridos = Array.prototype.slice.call(form.querySelectorAll("[required]"));
+
+          function wrapperDe(campo) {
+            return campo.closest(".field") || campo.closest(".check");
+          }
+
+          function validaCampo(campo) {
+            var malo = campo.type === "checkbox" ? !campo.checked : !campo.value.trim();
+            if (
+              campo.type === "email" &&
+              campo.value.trim() &&
+              !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(campo.value.trim())
+            ) {
+              malo = true;
+            }
+            var w = wrapperDe(campo);
+            if (w) w.classList.toggle("field--error", malo);
+            return !malo;
+          }
+
+          requeridos.forEach(function (campo) {
+            var ev = campo.type === "checkbox" ? "change" : "input";
+            campo.addEventListener(ev, function () {
+              var w = wrapperDe(campo);
+              if (w) w.classList.remove("field--error");
+            });
+          });
+
+          form.addEventListener("submit", function (e) {
+            e.preventDefault();
+            var ok = true;
+            requeridos.forEach(function (campo) {
+              if (!validaCampo(campo)) ok = false;
+            });
+            if (!ok) {
+              success.classList.remove("show");
+              var primerError = form.querySelector(".field--error");
+              if (primerError) primerError.scrollIntoView({ behavior: "smooth", block: "center" });
+              return;
+            }
+            form.style.display = "none";
+            success.classList.add("show");
+            success.scrollIntoView({ behavior: "smooth", block: "center" });
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+---
+import { cifras } from "../data/site";
+---
+<div class="section section--crema">
+  <div class="container">
+    <div class="cifras__grid">
+      {cifras.map((c) => (
+        <div>
+          <div class="cifra__num">{c.num}</div>
+          <div class="cifra__label">{c.label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
