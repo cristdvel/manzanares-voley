@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Club Voleibol Manzanares · Prototipo web</title>
+<meta name="description" content="Prototipo visual del sitio web del Club Voleibol Manzanares. Madrid. Desde 2016." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&family=Pacifico&display=swap" rel="stylesheet" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 84'%3E%3Cpath d='M40 26C39 16 40 8 45 2' fill='none' stroke='%23A0C828' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M46 3C56 -2 67 2 65 12 57 18 46 14 46 3Z' fill='%23A0C828'/%3E%3Cpath d='M40 82C8 55 0 35 0 22 0 9 13 1 24 6 31 9 37 15 40 22 43 15 49 9 56 6 67 1 80 9 80 22 80 35 72 55 40 82Z' fill='%23DC3C14'/%3E%3Cpath d='M40 60C24 47 19 37 19 30 19 23 26 19 32 22 35 23 38 26 40 30 42 26 45 23 48 22 54 19 61 23 61 30 61 37 56 47 40 60Z' fill='%23fff'/%3E%3C/svg%3E" />
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+  :root{
+    --mzv-naranja:     #DC3C14;
+    --mzv-naranja-hov: #C23310;
+    --mzv-verde:       #A0C828;
+    --mzv-oscuro:      #1D1D24;
+    --mzv-oscuro-2:    #28282D;
+    --mzv-crema:       #F5F2EB;
+    --mzv-borde:       #E8E1D3;
+    --mzv-titulo:      #212327;
+    --mzv-texto:       #928F87;
+    --mzv-alt-titulo:  #FFFEFE;
+    --mzv-alt-texto:   #A39C8A;
+    --header-h: 72px;
+  }
+
+  html{scroll-behavior:smooth;scroll-padding-top:88px}
+  body{
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:16px;line-height:1.625;color:var(--mzv-texto);background:#fff;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  ul{list-style:none}
+
+  h1,h2,h3,h4{
+    font-family:"Anton",Impact,"Arial Narrow",sans-serif;font-weight:400;
+    line-height:1.05;color:var(--mzv-titulo);text-transform:uppercase;letter-spacing:.02em;
+  }
+  p{margin-bottom:1rem}
+  p:last-child{margin-bottom:0}
+
+  .container{width:100%;max-width:1200px;margin:0 auto;padding:0 24px}
+  .section{padding:96px 0}
+  .section--crema{background:var(--mzv-crema)}
+  .section--oscuro{background:var(--mzv-oscuro);color:var(--mzv-alt-texto)}
+  .section--oscuro-2{background:var(--mzv-oscuro-2);color:var(--mzv-alt-texto)}
+  .section--oscuro h2,.section--oscuro h3,.section--oscuro-2 h2,.section--oscuro-2 h3{color:var(--mzv-alt-titulo)}
+
+  .eyebrow{
+    display:block;font-size:13px;text-transform:uppercase;letter-spacing:.1em;
+    font-weight:600;color:var(--mzv-naranja);margin-bottom:12px;
+  }
+  .section--oscuro .eyebrow,.section--oscuro-2 .eyebrow{color:var(--mzv-verde)}
+  .section-title{font-size:clamp(2rem,5vw,3rem);margin-bottom:16px}
+  .section-intro{max-width:640px;margin-bottom:48px}
+  .section--oscuro .section-intro,.section--oscuro-2 .section-intro{color:var(--mzv-alt-texto)}
+  .center{text-align:center}
+  .center .section-intro{margin-left:auto;margin-right:auto}
+
+  /* ---------- Botones ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:.5em;font-family:Inter,sans-serif;
+    font-weight:600;font-size:14px;text-transform:uppercase;letter-spacing:.06em;
+    padding:14px 28px;border-radius:4px;border:2px solid transparent;cursor:pointer;
+    transition:background .25s ease,color .25s ease,border-color .25s ease;
+  }
+  .btn--primary{background:var(--mzv-naranja);color:#fff}
+  .btn--primary:hover{background:var(--mzv-naranja-hov)}
+  .btn--outline{border-color:var(--mzv-naranja);color:var(--mzv-naranja);background:transparent}
+  .btn--outline:hover{background:var(--mzv-naranja);color:#fff}
+  .btn--outline-light{border-color:#fff;color:#fff;background:transparent}
+  .btn--outline-light:hover{background:#fff;color:var(--mzv-oscuro)}
+  .btn--lg{padding:18px 40px;font-size:15px}
+
+  /* ---------- Header ---------- */
+  #header{
+    position:fixed;top:0;left:0;right:0;z-index:100;background:transparent;
+    transition:background .3s ease,box-shadow .3s ease;
+  }
+  #header.scrolled{background:var(--mzv-oscuro);box-shadow:0 2px 20px rgba(0,0,0,.28)}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;height:var(--header-h)}
+  .logo{
+    display:flex;align-items:center;gap:10px;font-family:"Anton",sans-serif;
+    font-size:22px;text-transform:uppercase;letter-spacing:.04em;color:var(--mzv-naranja);
+  }
+  .brand-logo{height:34px;width:auto;display:block;flex-shrink:0}
+  .footer .brand-logo{height:38px}
+  .ani-mark{height:1.6em;width:auto;vertical-align:-.48em;margin-right:.1em}
+  @media (max-width:560px){.brand-logo{height:29px}}
+  .nav{display:flex;align-items:center;gap:28px}
+  .nav-links{display:flex;align-items:center;gap:28px}
+  .nav-links a{
+    font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;
+    color:#fff;padding:6px 0;transition:color .2s ease;
+  }
+  .nav-links a:hover,.nav-links a.active{color:var(--mzv-naranja)}
+  .nav-cta{padding:10px 22px}
+
+  .hamburger{
+    display:none;flex-direction:column;justify-content:center;gap:5px;
+    width:44px;height:44px;background:none;border:0;cursor:pointer;
+  }
+  .hamburger span{display:block;width:24px;height:2px;background:#fff;transition:transform .25s ease,opacity .2s ease}
+  .hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .hamburger[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;
+    background:linear-gradient(135deg,var(--mzv-oscuro),var(--mzv-oscuro-2));color:#fff;
+  }
+  .hero__media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.30}
+  .hero__overlay{position:absolute;inset:0;background:linear-gradient(120deg,rgba(29,29,36,.94) 20%,rgba(40,40,45,.72))}
+  .hero__inner{position:relative;z-index:2;padding-top:130px;padding-bottom:96px;max-width:820px}
+  .hero h1{font-size:clamp(2.75rem,8vw,5rem);color:#fff;letter-spacing:.03em;margin-bottom:20px}
+  .hero__sub{font-size:clamp(1rem,2.4vw,1.25rem);color:var(--mzv-alt-texto);letter-spacing:.02em;margin-bottom:36px}
+  .hero__actions{display:flex;flex-wrap:wrap;gap:16px}
+  .scroll-ind{
+    position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:2;
+    display:flex;flex-direction:column;align-items:center;gap:8px;
+    font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.7);
+    animation:bob 1.9s ease-in-out infinite;
+  }
+  .scroll-ind span{width:1px;height:34px;background:rgba(255,255,255,.5)}
+  @keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,10px)}}
+
+  /* ---------- Banner aniversario ---------- */
+  .aniversario{background:var(--mzv-oscuro-2);padding:26px 0}
+  .aniversario__text{
+    display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;
+    font-family:"Anton",sans-serif;text-transform:uppercase;color:var(--mzv-verde);
+    font-size:clamp(1rem,3vw,1.6rem);letter-spacing:.06em;text-align:center;
+  }
+  .aniversario__text::before,.aniversario__text::after{content:"";height:2px;width:64px;background:var(--mzv-verde)}
+
+  /* ---------- Cifras ---------- */
+  .cifras__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+  .cifra__num{font-family:"Anton",sans-serif;color:var(--mzv-naranja);font-size:clamp(2.5rem,6vw,4rem);line-height:1}
+  .cifra__label{margin-top:10px;font-size:13px;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--mzv-texto)}
+
+  /* ---------- Placeholders de imagen ---------- */
+  .placeholder{position:relative;overflow:hidden;border-radius:8px}
+  .placeholder--accion{background:linear-gradient(135deg,var(--mzv-naranja),var(--mzv-oscuro))}
+  .placeholder--persona{background:var(--mzv-crema)}
+  .placeholder > img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .placeholder__label{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-family:"Anton",sans-serif;text-transform:uppercase;letter-spacing:.12em;
+    font-size:13px;color:rgba(255,255,255,.65);text-align:center;padding:16px;
+  }
+  .placeholder--persona .placeholder__label{color:var(--mzv-texto)}
+
+  /* ---------- Partidos ---------- */
+  .partidos__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:40px}
+  .match{
+    border:1px solid var(--mzv-borde);border-radius:10px;padding:28px;text-align:center;background:#fff;
+    transition:transform .2s ease,box-shadow .2s ease;
+  }
+  .match:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.07)}
+  .badge{
+    display:inline-block;background:var(--mzv-verde);color:var(--mzv-oscuro);
+    font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;
+    padding:5px 12px;border-radius:999px;margin-bottom:16px;
+  }
+  .match__teams{font-family:"Anton",sans-serif;font-size:20px;text-transform:uppercase;color:var(--mzv-titulo);line-height:1.3}
+  .match__teams .vs{color:var(--mzv-naranja);margin:0 8px}
+  .match__meta{margin-top:14px;font-size:14px;color:var(--mzv-texto)}
+
+  /* ---------- Franja tienda (inicio) ---------- */
+  .tienda-strip .split{align-items:center}
+  .tienda-strip h2{color:var(--mzv-alt-titulo)}
+  .tienda-strip p{color:var(--mzv-alt-texto)}
+
+  /* ---------- Layout genérico 2 columnas ---------- */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+  .split .placeholder{aspect-ratio:4/3}
+
+  /* ---------- Tarjetas MVV ---------- */
+  .mvv{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .card{background:#fff;border:1px solid var(--mzv-borde);border-radius:12px;padding:32px}
+  .card__icon{font-size:32px;margin-bottom:14px}
+  .card h3{font-size:22px;color:var(--mzv-naranja);margin-bottom:10px}
+
+  /* ---------- Valores 2x2 ---------- */
+  .valores{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+  .valor{border-left:4px solid var(--mzv-verde);background:var(--mzv-crema);padding:26px 30px;border-radius:0 12px 12px 0}
+  .valor h3{font-size:20px;margin-bottom:8px}
+
+  /* ---------- Filosofía (pilares) ---------- */
+  .pilares{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  .pilar__icon{font-size:30px;margin-bottom:12px}
+  .pilar h3{color:var(--mzv-verde);font-size:20px;margin-bottom:10px}
+  .pilar p{color:var(--mzv-alt-texto)}
+
+  /* ---------- Staff ---------- */
+  .staff{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  .member{text-align:center}
+  .member__avatar{
+    width:112px;height:112px;border-radius:50%;background:var(--mzv-borde);margin:0 auto 14px;
+    display:flex;align-items:center;justify-content:center;
+    font-family:"Anton",sans-serif;font-size:32px;color:#fff;
+  }
+  .member__name{font-family:"Anton",sans-serif;text-transform:uppercase;color:var(--mzv-titulo);font-size:18px}
+  .member__role{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mzv-texto)}
+  .staff-note{text-align:center;margin-top:30px;font-size:14px;font-style:italic;color:var(--mzv-texto)}
+
+  /* ---------- Equipos: tabs ---------- */
+  .tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+  .tab{
+    font-family:Inter,sans-serif;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.06em;
+    padding:10px 18px;border-radius:999px;border:1px solid var(--mzv-borde);background:#fff;color:var(--mzv-texto);
+    cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease;
+  }
+  .tab:hover{border-color:var(--mzv-naranja);color:var(--mzv-naranja)}
+  .tab.active{background:var(--mzv-naranja);border-color:var(--mzv-naranja);color:#fff}
+  .tab-panel{display:none}
+  .tab-panel.active{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .team{border:1px solid var(--mzv-borde);border-radius:12px;padding:26px}
+  .team h3{font-size:20px;margin-bottom:6px}
+  .team__div{font-size:14px;color:var(--mzv-naranja);font-weight:600}
+  .team__meta{font-size:14px;color:var(--mzv-texto);margin-top:10px}
+
+  /* ---------- Clasificaciones ---------- */
+  .clasif{text-align:center}
+  .clasif p{max-width:640px;margin:0 auto 28px}
+
+  /* ---------- Sedes ---------- */
+  .sedes{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:start}
+  .mapa{
+    height:320px;background:var(--mzv-borde);border-radius:12px;
+    display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;
+    font-family:"Anton",sans-serif;text-transform:uppercase;letter-spacing:.1em;color:var(--mzv-texto);font-size:14px;
+  }
+  .sede-list li{padding:14px 0;border-bottom:1px solid var(--mzv-borde);font-size:15px;color:var(--mzv-titulo)}
+  .sede-list li:last-child{border-bottom:0}
+  .sede-list li span{display:block;font-size:13px;color:var(--mzv-texto)}
+
+  /* ---------- Timeline ---------- */
+  .timeline{max-width:880px;margin:0 auto}
+  .hito{
+    display:grid;grid-template-columns:100px 1fr;gap:24px;position:relative;
+    padding:22px 24px 22px 42px;border-left:3px solid var(--mzv-verde);
+  }
+  .hito::before{
+    content:"";position:absolute;left:-9px;top:28px;width:15px;height:15px;border-radius:50%;
+    background:var(--mzv-verde);border:3px solid #fff;
+  }
+  .hito:nth-child(even){background:var(--mzv-crema)}
+  .hito:nth-child(even)::before{border-color:var(--mzv-crema)}
+  .hito__year{font-family:"Anton",sans-serif;color:var(--mzv-naranja);font-size:26px;line-height:1.2}
+  .hito h3{font-size:18px;margin-bottom:6px}
+  .hito p{font-size:15px}
+
+  /* ---------- Palmarés ---------- */
+  .palmares{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .trofeo{background:var(--mzv-oscuro-2);border-top:3px solid var(--mzv-naranja);border-radius:10px;padding:26px}
+  .trofeo__icon{font-size:34px}
+  .trofeo h3{font-size:18px;color:var(--mzv-alt-titulo);margin:12px 0 6px}
+  .trofeo span{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mzv-verde)}
+
+  /* ---------- Tienda ---------- */
+  .tienda-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .producto{background:#fff;border:1px solid var(--mzv-borde);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+  .producto .placeholder{aspect-ratio:4/3;border-radius:0}
+  .producto__body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .producto h3{font-size:18px}
+  .producto__body p{font-size:14px}
+  .producto .btn{margin-top:auto;align-self:flex-start}
+  .tienda-note{text-align:center;margin-top:28px;font-size:13px;color:var(--mzv-texto)}
+
+  /* ---------- Inscripciones ---------- */
+  .insc-hero{background:var(--mzv-naranja);color:#fff;text-align:center;padding:84px 0 96px}
+  .insc-hero h2{color:#fff;font-size:clamp(2rem,5vw,3rem)}
+  .insc-hero p{color:rgba(255,255,255,.92);max-width:560px;margin:14px auto 0}
+  .form-wrap{
+    max-width:720px;margin:-56px auto 0;position:relative;z-index:2;background:#fff;
+    border-radius:16px;box-shadow:0 26px 64px rgba(0,0,0,.14);padding:44px;
+  }
+  .field{margin-bottom:20px}
+  .field label{
+    display:block;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--mzv-titulo);margin-bottom:8px;
+  }
+  .req{color:var(--mzv-naranja)}
+  .field input,.field select{
+    width:100%;padding:12px 14px;border:1px solid var(--mzv-borde);border-radius:6px;
+    font:inherit;color:var(--mzv-titulo);background:#fff;
+  }
+  .field input:focus,.field select:focus{outline:2px solid var(--mzv-naranja);outline-offset:1px;border-color:var(--mzv-naranja)}
+  .field--error input,.field--error select{border-color:var(--mzv-naranja);background:#fdf2ef}
+  .error-msg{color:var(--mzv-naranja);font-size:13px;margin-top:6px;display:none}
+  .field--error .error-msg{display:block}
+  .cat-hint{margin-top:8px;font-size:14px;color:var(--mzv-naranja);font-weight:600;display:none}
+  .cat-hint.show{display:block}
+  .check{
+    display:flex;gap:12px;align-items:flex-start;font-size:14px;color:var(--mzv-texto);margin-bottom:16px;
+  }
+  .check input{width:18px;height:18px;margin-top:3px;flex-shrink:0;accent-color:var(--mzv-naranja)}
+  .check.field--error{color:var(--mzv-naranja)}
+  .form-note{font-size:13px;color:var(--mzv-texto);margin-top:14px}
+  .form-success{
+    display:none;background:#eef6d9;border:1px solid var(--mzv-verde);color:#3c4d15;
+    border-radius:12px;padding:22px;font-size:15px;
+  }
+  .form-success.show{display:block}
+  .form-success strong{color:#2f3d10}
+
+  /* ---------- FAQ ---------- */
+  .faq{max-width:840px;margin:0 auto}
+  .faq-item{border-bottom:1px solid var(--mzv-borde)}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:0;cursor:pointer;padding:22px 0;
+    display:flex;justify-content:space-between;align-items:center;gap:20px;
+    font-family:"Anton",sans-serif;font-size:18px;text-transform:uppercase;letter-spacing:.02em;color:var(--mzv-titulo);
+  }
+  .faq-q .ico{color:var(--mzv-naranja);font-size:26px;line-height:1;flex-shrink:0;width:24px;text-align:center}
+  .faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .28s ease}
+  .faq-a > div{overflow:hidden}
+  .faq-a p{padding-bottom:22px;font-size:15px}
+  .faq-item.open .faq-a{grid-template-rows:1fr}
+
+  /* ---------- Footer ---------- */
+  .footer{background:var(--mzv-oscuro);color:var(--mzv-alt-texto);padding:64px 0 28px}
+  .footer__top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:44px}
+  .footer .logo{margin-bottom:14px}
+  .footer__brand p{font-size:14px;max-width:320px}
+  .footer h4{font-family:"Anton",sans-serif;color:var(--mzv-alt-titulo);text-transform:uppercase;font-size:15px;letter-spacing:.06em;margin-bottom:16px}
+  .footer ul{display:flex;flex-direction:column;gap:10px;font-size:14px}
+  .footer a:hover{color:var(--mzv-naranja)}
+  .socials{display:flex;gap:14px}
+  .socials a{
+    width:38px;height:38px;border:1px solid rgba(255,255,255,.16);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;color:var(--mzv-alt-titulo);
+    transition:background .2s ease,border-color .2s ease,color .2s ease;
+  }
+  .socials a:hover{background:var(--mzv-naranja);border-color:var(--mzv-naranja);color:#fff}
+  .socials svg{width:18px;height:18px}
+  .footer__bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;font-size:13px;text-align:center}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:1023px){
+    .section{padding:80px 0}
+    .split{gap:40px}
+    .tienda-grid{grid-template-columns:repeat(2,1fr)}
+    .footer__top{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:980px){
+    .hamburger{display:flex}
+    .nav{
+      position:fixed;top:var(--header-h);left:0;right:0;flex-direction:column;align-items:stretch;gap:0;
+      background:var(--mzv-oscuro);padding:16px 24px 28px;transform:translateY(-135%);
+      transition:transform .3s ease;box-shadow:0 22px 44px rgba(0,0,0,.32);
+      max-height:calc(100vh - var(--header-h));overflow-y:auto;
+    }
+    .nav.open{transform:translateY(0)}
+    .nav-links{flex-direction:column;align-items:stretch;gap:0}
+    .nav-links a{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+    .nav-cta{margin-top:18px;justify-content:center}
+  }
+  @media (max-width:900px){
+    .section{padding:72px 0}
+    .partidos__grid{grid-template-columns:1fr}
+    .split{grid-template-columns:1fr}
+    .mvv{grid-template-columns:1fr}
+    .pilares{grid-template-columns:1fr}
+    .tab-panel.active{grid-template-columns:1fr}
+    .sedes{grid-template-columns:1fr}
+    .palmares{grid-template-columns:1fr}
+  }
+  @media (max-width:768px){
+    .cifras__grid{grid-template-columns:repeat(2,1fr);gap:36px 16px}
+    .valores{grid-template-columns:1fr}
+    .staff{grid-template-columns:repeat(2,1fr)}
+    .form-wrap{padding:28px}
+  }
+  @media (max-width:640px){
+    .hito{grid-template-columns:1fr;gap:4px;padding-right:16px}
+    .aniversario__text::before,.aniversario__text::after{width:32px}
+  }
+  @media (max-width:560px){
+    .tienda-grid{grid-template-columns:1fr}
+    .staff{grid-template-columns:1fr}
+    .footer__top{grid-template-columns:1fr}
+    .hero__actions .btn{width:100%;justify-content:center}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ LOGO (símbolos SVG reutilizables) ============ -->
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
+  <symbol id="mzv-icon" viewBox="0 0 80 84">
+    <path d="M40 26C39 16 40 8 45 2" fill="none" stroke="#A0C828" stroke-width="5" stroke-linecap="round"/>
+    <path d="M46 3C56 -2 67 2 65 12 57 18 46 14 46 3Z" fill="#A0C828"/>
+    <path d="M40 82C8 55 0 35 0 22 0 9 13 1 24 6 31 9 37 15 40 22 43 15 49 9 56 6 67 1 80 9 80 22 80 35 72 55 40 82Z" fill="#DC3C14"/>
+    <path d="M16 54C30 68 52 68 64 52 58 72 28 76 16 62Z" fill="#FFFFFF"/>
+    <path d="M40 60C24 47 19 37 19 30 19 23 26 19 32 22 35 23 38 26 40 30 42 26 45 23 48 22 54 19 61 23 61 30 61 37 56 47 40 60Z" fill="#FFFFFF"/>
+  </symbol>
+  <symbol id="mzv-logo" viewBox="0 0 346 84">
+    <path d="M40 26C39 16 40 8 45 2" fill="none" stroke="#A0C828" stroke-width="5" stroke-linecap="round"/>
+    <path d="M46 3C56 -2 67 2 65 12 57 18 46 14 46 3Z" fill="#A0C828"/>
+    <path d="M40 82C8 55 0 35 0 22 0 9 13 1 24 6 31 9 37 15 40 22 43 15 49 9 56 6 67 1 80 9 80 22 80 35 72 55 40 82Z" fill="#DC3C14"/>
+    <path d="M16 54C30 68 52 68 64 52 58 72 28 76 16 62Z" fill="#FFFFFF"/>
+    <path d="M40 60C24 47 19 37 19 30 19 23 26 19 32 22 35 23 38 26 40 30 42 26 45 23 48 22 54 19 61 23 61 30 61 37 56 47 40 60Z" fill="#FFFFFF"/>
+    <text x="96" y="45" font-family="Anton, Impact, sans-serif" font-size="35" fill="#DC3C14" letter-spacing="1.5">MANZANARES</text>
+    <text x="150" y="79" font-family="Pacifico, 'Brush Script MT', cursive" font-size="33" fill="#FFFFFF" stroke="#1D1D24" stroke-width="5" paint-order="stroke" stroke-linejoin="round">voley</text>
+  </symbol>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header id="header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo" aria-label="Manzanares Voley — inicio">
+      <svg class="brand-logo" viewBox="0 0 346 84" role="img" aria-label="Manzanares Voley"><use href="#mzv-logo"/></svg>
+    </a>
+
+    <nav id="nav" class="nav" aria-label="Navegación principal">
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#club">El Club</a></li>
+        <li><a href="#equipos">Equipos</a></li>
+        <li><a href="#logros">Logros</a></li>
+        <li><a href="#tienda">Tienda</a></li>
+        <li><a href="#inscripciones">Inscríbete</a></li>
+      </ul>
+      <a href="#inscripciones" class="btn btn--primary nav-cta">Inscríbete</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- ============ 1. INICIO ============ -->
+<section id="inicio">
+  <div class="hero">
+    <img class="hero__media" src="https://images.unsplash.com/photo-1592656094267-764a45160876?w=1600&q=80" alt="" aria-hidden="true" onerror="this.remove()" />
+    <div class="hero__overlay"></div>
+    <div class="container hero__inner">
+      <h1>Pasión · Equipo · Voleibol</h1>
+      <p class="hero__sub">Club Voleibol Manzanares · Madrid · Desde 2016</p>
+      <div class="hero__actions">
+        <a href="#inscripciones" class="btn btn--primary btn--lg">¡Únete al club!</a>
+        <a href="#club" class="btn btn--outline-light btn--lg">Conoce el club</a>
+      </div>
+    </div>
+    <div class="scroll-ind" aria-hidden="true">Scroll<span></span></div>
+  </div>
+
+  <!-- Banner 10º aniversario -->
+  <div class="aniversario">
+    <div class="container">
+      <p class="aniversario__text"><svg class="ani-mark" viewBox="0 0 80 84" aria-hidden="true"><use href="#mzv-icon"/></svg> Una década de pasión por el voley · 2016 — 2026</p>
+    </div>
+  </div>
+
+  <!-- Cifras del club -->
+  <div class="section section--crema">
+    <div class="container">
+      <div class="cifras__grid">
+        <div><div class="cifra__num">10</div><div class="cifra__label">Años de historia</div></div>
+        <div><div class="cifra__num">25</div><div class="cifra__label">Equipos en competición</div></div>
+        <div><div class="cifra__num">+325</div><div class="cifra__label">Deportistas</div></div>
+        <div><div class="cifra__num">18</div><div class="cifra__label">Entrenadores titulados</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Próximos partidos -->
+  <div class="section">
+    <div class="container">
+      <span class="eyebrow">Temporada 2025 / 2026</span>
+      <h2 class="section-title">Próximos partidos</h2>
+      <div class="partidos__grid">
+        <article class="match">
+          <span class="badge">Infantil</span>
+          <p class="match__teams">Infantil A <span class="vs">vs</span> [Rival por confirmar]</p>
+          <p class="match__meta">Sábado 6 sep · Pabellón Tomás Bretón · 11:00 h</p>
+        </article>
+        <article class="match">
+          <span class="badge">Cadete Fem.</span>
+          <p class="match__teams">Cadete Fem. <span class="vs">vs</span> [Rival por confirmar]</p>
+          <p class="match__meta">Sábado 6 sep · Pabellón Perú · 12:30 h</p>
+        </article>
+        <article class="match">
+          <span class="badge">Juvenil</span>
+          <p class="match__teams">Juvenil A <span class="vs">vs</span> [Rival por confirmar]</p>
+          <p class="match__meta">Domingo 7 sep · Pabellón San Ignacio · 10:00 h</p>
+        </article>
+      </div>
+      <a href="https://www.fmvb.es" target="_blank" rel="noopener" class="btn btn--outline">Ver clasificaciones en la FMVB →</a>
+    </div>
+  </div>
+
+  <!-- Acceso a tienda -->
+  <div class="section section--oscuro tienda-strip">
+    <div class="container">
+      <div class="split">
+        <div class="placeholder placeholder--accion">
+          <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1200&q=80" alt="" loading="lazy" onerror="this.remove()" />
+          <span class="placeholder__label">Foto pendiente</span>
+        </div>
+        <div>
+          <span class="eyebrow">Tienda oficial</span>
+          <h2 class="section-title">Equipación oficial · 10º aniversario</h2>
+          <p>Camisetas, sudaderas y accesorios del club.</p>
+          <a href="#tienda" class="btn btn--primary">Ver tienda</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. EL CLUB ============ -->
+<section id="club">
+  <!-- Presentación -->
+  <div class="section">
+    <div class="container">
+      <div class="split">
+        <div>
+          <span class="eyebrow">El Club</span>
+          <h2 class="section-title">Quiénes somos</h2>
+          <p>El Club Manzanares Voley nació en abril de 2016 de la mano de un grupo de padres y madres comprometidos. Su motivación era sencilla pero poderosa: dar continuidad deportiva y competitiva a sus hijas cuando terminaban su etapa en el colegio.</p>
+          <p>Bajo la guía de una entrenadora apasionada, comenzamos nuestra andadura con solo 3 equipos y 42 jugadoras, todas mujeres. Hoy, esa pequeña semilla ha florecido en un club mixto, transversal y multicultural que cuenta con 25 equipos que compiten tanto en ligas municipales como en la exigente federación madrileña.</p>
+        </div>
+        <div class="placeholder placeholder--persona">
+          <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=1200&q=80" alt="" loading="lazy" onerror="this.remove()" />
+          <span class="placeholder__label">Foto del club · Foto pendiente</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Misión, Visión, Valores -->
+  <div class="section section--crema">
+    <div class="container">
+      <div class="mvv">
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">🎯</div>
+          <h3>Misión</h3>
+          <p>Formar personas a través del voleibol, ofreciendo a niñas, niños y adultos del barrio un proyecto deportivo de calidad, cercano y competitivo, donde crecer dentro y fuera de la pista.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">⭐</div>
+          <h3>Visión</h3>
+          <p>Ser un club de referencia en Madrid por su cantera, su ambiente familiar y su compromiso con el deporte base, manteniendo viva la ilusión con la que empezamos en 2016.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon" aria-hidden="true">❤️</div>
+          <h3>Valores</h3>
+          <p>Pertenencia, continuidad, inclusión y educación. Cuatro ideas que explican quiénes somos y cómo entrenamos, competimos y convivimos cada temporada.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Los 4 valores -->
+  <div class="section">
+    <div class="container">
+      <span class="eyebrow">Lo que nos define</span>
+      <h2 class="section-title">Nuestros valores</h2>
+      <div class="valores">
+        <article class="valor">
+          <h3>Sentido de Pertenencia</h3>
+          <p>Cada camiseta naranja en el barrio nos identifica. Sentirse parte de Manzanares Voley es defender unos colores, cuidar a los compañeros y representar al club dentro y fuera de la pista.</p>
+        </article>
+        <article class="valor">
+          <h3>Continuidad y Legado</h3>
+          <p>Valoramos nuestra historia. La mayor prueba de nuestro éxito es que muchas jugadoras que empezaron siendo niñas siguen hoy en el club como veteranas, entrenadoras o delegadas.</p>
+        </article>
+        <article class="valor">
+          <h3>Inclusión y Diversidad</h3>
+          <p>Respetamos y enriquecemos el club con las múltiples nacionalidades, culturas y realidades que conviven en nuestros equipos. Aquí cabe todo el que quiera jugar.</p>
+        </article>
+        <article class="valor">
+          <h3>Educación a través del Deporte</h3>
+          <p>Creemos firmemente que el deporte es una herramienta educativa. El esfuerzo, el respeto al rival, la gestión de la derrota y el compromiso con el grupo se entrenan como se entrena un saque.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Filosofía Manzanita -->
+  <div class="section section--oscuro">
+    <div class="container">
+      <span class="eyebrow">Nuestra forma de entender el club</span>
+      <h2 class="section-title">La filosofía Manzanita</h2>
+      <div class="pilares">
+        <article class="pilar">
+          <div class="pilar__icon" aria-hidden="true">👨‍👩‍👧</div>
+          <h3>Valores Familiares</h3>
+          <p>Padres, madres, jugadoras y técnicos formamos una comunidad. Las decisiones se toman pensando en las personas antes que en los resultados.</p>
+        </article>
+        <article class="pilar">
+          <div class="pilar__icon" aria-hidden="true">🌱</div>
+          <h3>Cantera de Éxito</h3>
+          <p>Apostamos por el jugador de casa. Preferimos hacer crecer a nuestros deportistas desde Minivoley que buscar refuerzos de fuera.</p>
+        </article>
+        <article class="pilar">
+          <div class="pilar__icon" aria-hidden="true">🍏</div>
+          <h3>El Legado Manzanita</h3>
+          <p>Lo que se construye permanece. Cada generación deja el club un poco mejor de como lo encontró para la siguiente.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Staff -->
+  <div class="section section--crema">
+    <div class="container">
+      <span class="eyebrow">Las personas del club</span>
+      <h2 class="section-title">Nuestro equipo</h2>
+      <div class="staff">
+        <div class="member"><div class="member__avatar" aria-hidden="true">?</div><div class="member__name">[Nombre]</div><div class="member__role">Presidencia</div></div>
+        <div class="member"><div class="member__avatar" aria-hidden="true">?</div><div class="member__name">[Nombre]</div><div class="member__role">Dirección deportiva</div></div>
+        <div class="member"><div class="member__avatar" aria-hidden="true">?</div><div class="member__name">[Nombre]</div><div class="member__role">Coordinación de cantera</div></div>
+        <div class="member"><div class="member__avatar" aria-hidden="true">?</div><div class="member__name">[Nombre]</div><div class="member__role">Preparación física</div></div>
+        <div class="member"><div class="member__avatar" aria-hidden="true">?</div><div class="member__name">[Nombre]</div><div class="member__role">Coordinación femenina</div></div>
+        <div class="member"><div class="member__avatar" aria-hidden="true">?</div><div class="member__name">[Nombre]</div><div class="member__role">Secretaría y delegación</div></div>
+      </div>
+      <p class="staff-note">(Nombres reales pendientes de confirmar por el club)</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. EQUIPOS Y COMPETICIÓN ============ -->
+<section id="equipos">
+  <div class="section">
+    <div class="container">
+      <span class="eyebrow">Equipos y competición</span>
+      <h2 class="section-title">Nuestros equipos</h2>
+
+      <div class="tabs" role="tablist" aria-label="Categorías">
+        <button class="tab active" data-cat="minivoley" role="tab" aria-selected="true">Minivoley</button>
+        <button class="tab" data-cat="benjamin" role="tab" aria-selected="false">Benjamín</button>
+        <button class="tab" data-cat="alevin" role="tab" aria-selected="false">Alevín</button>
+        <button class="tab" data-cat="infantil" role="tab" aria-selected="false">Infantil</button>
+        <button class="tab" data-cat="cadete" role="tab" aria-selected="false">Cadete</button>
+        <button class="tab" data-cat="juvenil" role="tab" aria-selected="false">Juvenil</button>
+        <button class="tab" data-cat="adultos" role="tab" aria-selected="false">Adultos</button>
+      </div>
+
+      <div class="tab-panel active" data-cat="minivoley" role="tabpanel">
+        <article class="team"><span class="badge">Minivoley</span><h3>Minivoley Mixto A</h3><div class="team__div">Iniciación · Mixto</div><p class="team__meta">Lunes y jueves 17:30 h · Pabellón Colegio Perú</p></article>
+        <article class="team"><span class="badge">Minivoley</span><h3>Minivoley Mixto B</h3><div class="team__div">Iniciación · Mixto</div><p class="team__meta">Martes y jueves 17:30 h · Pabellón Larra</p></article>
+      </div>
+
+      <div class="tab-panel" data-cat="benjamin" role="tabpanel">
+        <article class="team"><span class="badge">Benjamín</span><h3>Benjamín Mixto A</h3><div class="team__div">Liga Municipal · Mixto</div><p class="team__meta">Lunes y miércoles 18:00 h · Pabellón Jovellanos</p></article>
+        <article class="team"><span class="badge">Benjamín</span><h3>Benjamín Mixto B</h3><div class="team__div">Liga Municipal · Mixto</div><p class="team__meta">Martes y jueves 18:00 h · Pabellón Larra</p></article>
+      </div>
+
+      <div class="tab-panel" data-cat="alevin" role="tabpanel">
+        <article class="team"><span class="badge">Alevín</span><h3>Alevín Femenino A</h3><div class="team__div">Liga Municipal</div><p class="team__meta">Lunes y miércoles 18:00 h · Pabellón Colegio Perú</p></article>
+        <article class="team"><span class="badge">Alevín</span><h3>Alevín Masculino</h3><div class="team__div">Liga Municipal</div><p class="team__meta">Martes y jueves 18:00 h · Pabellón Colegio Perú</p></article>
+      </div>
+
+      <div class="tab-panel" data-cat="infantil" role="tabpanel">
+        <article class="team"><span class="badge">Infantil</span><h3>Infantil A</h3><div class="team__div">1ª División</div><p class="team__meta">Martes y jueves 18:30 h · Pabellón Tomás Bretón</p></article>
+        <article class="team"><span class="badge">Infantil</span><h3>Infantil B</h3><div class="team__div">2ª División</div><p class="team__meta">Lunes y miércoles 18:30 h · Pabellón San Ignacio</p></article>
+        <article class="team"><span class="badge">Infantil</span><h3>Infantil Masculino</h3><div class="team__div">1ª División</div><p class="team__meta">Martes y jueves 19:00 h · Pabellón Tomás Bretón</p></article>
+      </div>
+
+      <div class="tab-panel" data-cat="cadete" role="tabpanel">
+        <article class="team"><span class="badge">Cadete</span><h3>Cadete Femenino A</h3><div class="team__div">2ª División</div><p class="team__meta">Lunes y miércoles 19:30 h · Pabellón San Ignacio</p></article>
+        <article class="team"><span class="badge">Cadete</span><h3>Cadete Femenino B</h3><div class="team__div">3ª División</div><p class="team__meta">Martes y jueves 19:00 h · Pabellón Dicenta</p></article>
+        <article class="team"><span class="badge">Cadete</span><h3>Cadete Masculino</h3><div class="team__div">2ª División</div><p class="team__meta">Lunes y miércoles 19:30 h · Pabellón Tomás Bretón</p></article>
+      </div>
+
+      <div class="tab-panel" data-cat="juvenil" role="tabpanel">
+        <article class="team"><span class="badge">Juvenil</span><h3>Juvenil A</h3><div class="team__div">1ª División</div><p class="team__meta">Martes y jueves 20:00 h · Pabellón San Ignacio</p></article>
+        <article class="team"><span class="badge">Juvenil</span><h3>Juvenil Femenino B</h3><div class="team__div">2ª División</div><p class="team__meta">Lunes y miércoles 20:00 h · Pabellón Dicenta</p></article>
+      </div>
+
+      <div class="tab-panel" data-cat="adultos" role="tabpanel">
+        <article class="team"><span class="badge">Adultos</span><h3>Escuela de Adultos</h3><div class="team__div">Recreativo · Mixto</div><p class="team__meta">Viernes 20:00 h · Pistas Senior Salamanca</p></article>
+        <article class="team"><span class="badge">Adultos</span><h3>Sénior Femenino</h3><div class="team__div">Liga Municipal</div><p class="team__meta">Martes y jueves 21:00 h · Pistas Senior Salamanca</p></article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clasificaciones -->
+  <div class="section section--crema">
+    <div class="container clasif">
+      <h2 class="section-title">Clasificaciones</h2>
+      <p>Sigue los resultados y clasificaciones de todos nuestros equipos en la web oficial de la Federación Madrileña de Voleibol.</p>
+      <a href="https://www.fmvb.es" target="_blank" rel="noopener" class="btn btn--primary btn--lg">Ver clasificaciones en la FMVB →</a>
+    </div>
+  </div>
+
+  <!-- Sedes -->
+  <div class="section">
+    <div class="container">
+      <span class="eyebrow">Sedes</span>
+      <h2 class="section-title">Dónde entrenamos</h2>
+      <div class="sedes">
+        <div class="mapa">Mapa de sedes · Google Maps</div>
+        <ul class="sede-list">
+          <li>📍 Pabellón Tomás Bretón <span>Sede histórica fundacional</span></li>
+          <li>📍 Pabellón Colegio Perú <span>Infantil y Alevín</span></li>
+          <li>📍 Pistas Senior Salamanca <span>Escuela de Adultos</span></li>
+          <li>📍 Pabellón San Ignacio <span>Categorías intermedias</span></li>
+          <li>📍 Pabellón Jovellanos <span>Escuelas vinculadas</span></li>
+          <li>📍 Pabellón Larra <span>Nuevas promociones</span></li>
+          <li>📍 Pabellón Dicenta <span>Desde 2024/2025</span></li>
+          <li>📍 Centro Móstoles <span>Expansión territorial</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. LOGROS ============ -->
+<section id="logros">
+  <div class="section">
+    <div class="container">
+      <span class="eyebrow">Logros</span>
+      <h2 class="section-title">Una década de historia</h2>
+      <div class="timeline">
+        <div class="hito"><div class="hito__year">2016</div><div><h3>Fundación oficial</h3><p>3 equipos, 42 jugadoras.</p></div></div>
+        <div class="hito"><div class="hito__year">2016/17</div><div><h3>Primeras ligas federadas</h3><p>Participación en la AMB CUP en Portugal.</p></div></div>
+        <div class="hito"><div class="hito__year">2017/18</div><div><h3>Primer campeón</h3><p>Benjamín Mixto, Copa Primavera.</p></div></div>
+        <div class="hito"><div class="hito__year">2018/19</div><div><h3>Ascenso histórico</h3><p>Infantil Femenino asciende a 2ª División.</p></div></div>
+        <div class="hito"><div class="hito__year">2019/20</div><div><h3>Pandemia COVID-19</h3><p>Entrenamientos online para mantener al club unido.</p></div></div>
+        <div class="hito"><div class="hito__year">2020/21</div><div><h3>Retorno a la pista</h3><p>Cadete Femenino asciende a 2ª División.</p></div></div>
+        <div class="hito"><div class="hito__year">2021/22</div><div><h3>Final Four</h3><p>Infantil Masculino llega a la Final Four de 1ª División.</p></div></div>
+        <div class="hito"><div class="hito__year">2022/23</div><div><h3>Doble ascenso</h3><p>Dos equipos suben a 1ª División. Bronce nacional en la Copa de España.</p></div></div>
+        <div class="hito"><div class="hito__year">2023/24</div><div><h3>7 fases finales</h3><p>Infantil Masculino, subcampeón INVICTO.</p></div></div>
+        <div class="hito"><div class="hito__year">2024/25</div><div><h3>7 escuelas vinculadas</h3><p>Copa de España organizada en 3 sedes.</p></div></div>
+        <div class="hito"><div class="hito__year">2025/26</div><div><h3>25 equipos</h3><p>+325 deportistas. Estreno de la web oficial.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Palmarés -->
+  <div class="section section--oscuro">
+    <div class="container">
+      <span class="eyebrow">Vitrina del club</span>
+      <h2 class="section-title">Palmarés</h2>
+      <div class="palmares">
+        <article class="trofeo"><div class="trofeo__icon" aria-hidden="true">🏆</div><h3>Benjamín Mixto — Campeón Copa Primavera</h3><span>2017/18</span></article>
+        <article class="trofeo"><div class="trofeo__icon" aria-hidden="true">🥈</div><h3>Infantil Femenino — Ascenso a 2ª División</h3><span>2018/19</span></article>
+        <article class="trofeo"><div class="trofeo__icon" aria-hidden="true">🥈</div><h3>Cadete Femenino — Ascenso a 2ª División</h3><span>2020/21</span></article>
+        <article class="trofeo"><div class="trofeo__icon" aria-hidden="true">🏆</div><h3>Infantil Masculino — Final Four 1ª División</h3><span>2021/22</span></article>
+        <article class="trofeo"><div class="trofeo__icon" aria-hidden="true">🥉</div><h3>Bronce nacional — Copa de España</h3><span>2022/23</span></article>
+        <article class="trofeo"><div class="trofeo__icon" aria-hidden="true">🏆</div><h3>Doble ascenso a 1ª División</h3><span>2022/23</span></article>
+        <article class="trofeo"><div class="trofeo__icon" aria-hidden="true">🥈</div><h3>Infantil Masculino — Subcampeón INVICTO</h3><span>2023/24</span></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. TIENDA ============ -->
+<section id="tienda">
+  <div class="section section--crema">
+    <div class="container">
+      <span class="eyebrow">Tienda</span>
+      <h2 class="section-title">Tienda oficial</h2>
+      <div class="tienda-grid">
+        <article class="producto">
+          <div class="placeholder placeholder--accion"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=1200&q=80" alt="" loading="lazy" onerror="this.remove()" /><span class="placeholder__label">Foto pendiente</span></div>
+          <div class="producto__body"><h3>Equipación de juego</h3><p>Camiseta, pantalón y medias oficiales del club.</p><a href="#inscripciones" class="btn btn--primary">Ver productos</a></div>
+        </article>
+        <article class="producto">
+          <div class="placeholder placeholder--accion"><img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=1200&q=80" alt="" loading="lazy" onerror="this.remove()" /><span class="placeholder__label">Foto pendiente</span></div>
+          <div class="producto__body"><h3>Sudaderas y ropa de entreno</h3><p>Sudaderas, cortavientos y camisetas técnicas.</p><a href="#inscripciones" class="btn btn--primary">Ver productos</a></div>
+        </article>
+        <article class="producto">
+          <div class="placeholder placeholder--accion"><img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=1200&q=80" alt="" loading="lazy" onerror="this.remove()" /><span class="placeholder__label">Foto pendiente</span></div>
+          <div class="producto__body"><h3>Accesorios</h3><p>Balones, mochilas y complementos del club.</p><a href="#inscripciones" class="btn btn--primary">Ver productos</a></div>
+        </article>
+        <article class="producto">
+          <div class="placeholder placeholder--accion"><img src="https://images.unsplash.com/photo-1560089000-7433a4ebbd64?w=1200&q=80" alt="" loading="lazy" onerror="this.remove()" /><span class="placeholder__label">Foto pendiente</span></div>
+          <div class="producto__body"><h3>Colección 10º Aniversario</h3><p>Tazas, camisetas conmemorativas y detalles de la década.</p><a href="#inscripciones" class="btn btn--primary">Ver productos</a></div>
+        </article>
+      </div>
+      <p class="tienda-note">Para realizar un pedido contacta con el club. Recogida en el pabellón.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. INSCRIPCIONES ============ -->
+<section id="inscripciones">
+  <div class="insc-hero">
+    <div class="container">
+      <h2>Únete a Manzanares Voley</h2>
+      <p>Tenemos equipos para todas las edades, desde los 9 años hasta adultos.</p>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="container">
+      <div class="form-wrap">
+        <form id="insc-form" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre de la jugadora / jugador <span class="req">*</span></label>
+            <input type="text" id="nombre" name="nombre" required autocomplete="name" />
+            <span class="error-msg">Indica el nombre del deportista.</span>
+          </div>
+
+          <div class="field">
+            <label for="dob">Fecha de nacimiento <span class="req">*</span></label>
+            <input type="date" id="dob" name="dob" required />
+            <span class="error-msg">Indica la fecha de nacimiento.</span>
+            <span class="cat-hint" id="cat-hint"></span>
+          </div>
+
+          <div class="field">
+            <label for="tutor">Nombre del padre / madre / tutor <span class="req">*</span></label>
+            <input type="text" id="tutor" name="tutor" required />
+            <span class="error-msg">Indica el nombre del tutor.</span>
+          </div>
+
+          <div class="field">
+            <label for="tel">Teléfono de contacto <span class="req">*</span></label>
+            <input type="tel" id="tel" name="tel" required autocomplete="tel" />
+            <span class="error-msg">Indica un teléfono de contacto.</span>
+          </div>
+
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+            <span class="error-msg">Indica un email válido.</span>
+          </div>
+
+          <div class="field">
+            <label for="exp">Experiencia previa</label>
+            <select id="exp" name="exp">
+              <option value="sin">Sin experiencia</option>
+              <option value="1-2">1–2 años</option>
+              <option value="3+">Más de 3 años</option>
+            </select>
+          </div>
+
+          <label class="check" for="privacidad">
+            <input type="checkbox" id="privacidad" name="privacidad" required />
+            <span>He leído y acepto la política de privacidad y el tratamiento de datos para la gestión de la inscripción. <span class="req">*</span></span>
+          </label>
+
+          <label class="check" for="imagenes">
+            <input type="checkbox" id="imagenes" name="imagenes" />
+            <span>Autorizo el uso de imágenes del deportista para la comunicación del club (redes sociales, web).</span>
+          </label>
+
+          <button type="submit" class="btn btn--primary btn--lg">Enviar inscripción</button>
+          <p class="form-note">Nos pondremos en contacto contigo en menos de 48 horas para confirmar la prueba.</p>
+        </form>
+
+        <div class="form-success" id="form-success" role="status">
+          <strong>¡Inscripción recibida!</strong><br />
+          Gracias por confiar en Manzanares Voley. Nos pondremos en contacto contigo en menos de 48 horas para concretar la sesión de prueba.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div class="section section--crema">
+    <div class="container">
+      <span class="eyebrow">Antes de apuntarte</span>
+      <h2 class="section-title">Preguntas frecuentes</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>¿A partir de qué edad se puede apuntar?</span><span class="ico" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p>Desde los 9 años en Minivoley hasta adultos sin límite de edad.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>¿Necesito experiencia previa?</span><span class="ico" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p>No. Tenemos equipos y grupos para todos los niveles.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>¿Cómo funciona la prueba?</span><span class="ico" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p>Nos ponemos en contacto y acordamos una sesión de prueba gratuita.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>¿Cuáles son los horarios de entrenamiento?</span><span class="ico" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p>Varían por categoría y sede. Te lo confirmamos al inscribirte.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>¿Qué incluye la cuota?</span><span class="ico" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p>Entrenamiento, licencia federativa y seguro deportivo. Las cuotas se informan al inscribirse.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false"><span>¿Hay equipos mixtos?</span><span class="ico" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div><p>Sí. Minivoley, Benjamín y la Escuela de Adultos son mixtos.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="logo">
+          <svg class="brand-logo" viewBox="0 0 346 84" role="img" aria-label="Manzanares Voley"><use href="#mzv-logo"/></svg>
+        </div>
+        <p>Pasión por el voleibol desde 2016.</p>
+      </div>
+
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#club">El Club</a></li>
+          <li><a href="#equipos">Equipos</a></li>
+          <li><a href="#logros">Logros</a></li>
+          <li><a href="#tienda">Tienda</a></li>
+          <li><a href="#inscripciones">Inscríbete</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:info@manzanaresvoley.com">info@manzanaresvoley.com</a></li>
+          <li>[teléfono por confirmar]</li>
+          <li>Madrid · Distrito Arganzuela</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Síguenos</h4>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3l.5-3H14V4.5c0-.9.3-1.5 1.6-1.5H17V.3C16.6.2 15.6 0 14.5 0 12 0 10.3 1.5 10.3 4.3V6H7.5v3h2.8v9H14z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.2-.4-4.7c-.2-.9-.9-1.5-1.8-1.8C19.3 5 12 5 12 5s-7.3 0-8.8.5c-.9.3-1.6.9-1.8 1.8C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.9.9 1.5 1.8 1.8C4.7 19 12 19 12 19s7.3 0 8.8-.5c.9-.3 1.6-.9 1.8-1.8.4-1.5.4-4.7.4-4.7zM9.8 15V9l5.2 3z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      © 2026 Club Voleibol Manzanares · manzanaresvoley.com · <a href="#">Política de privacidad</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  // ---- Header: fondo al hacer scroll ----
+  var header = document.getElementById("header");
+  function onScroll() { header.classList.toggle("scrolled", window.scrollY > 50); }
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+
+  // ---- Menú móvil ----
+  var burger = document.getElementById("hamburger");
+  var nav = document.getElementById("nav");
+  burger.addEventListener("click", function () {
+    var open = nav.classList.toggle("open");
+    burger.setAttribute("aria-expanded", String(open));
+    burger.setAttribute("aria-label", open ? "Cerrar menú" : "Abrir menú");
+  });
+  nav.querySelectorAll("a").forEach(function (a) {
+    a.addEventListener("click", function () {
+      nav.classList.remove("open");
+      burger.setAttribute("aria-expanded", "false");
+      burger.setAttribute("aria-label", "Abrir menú");
+    });
+  });
+
+  // ---- Scrollspy: enlace activo ----
+  var sections = Array.prototype.slice.call(document.querySelectorAll("main section[id]"));
+  var navLinks = Array.prototype.slice.call(nav.querySelectorAll('.nav-links a[href^="#"]'));
+  function spy() {
+    var y = window.scrollY + 120;
+    var current = sections.length ? sections[0].id : "";
+    sections.forEach(function (s) { if (s.offsetTop <= y) current = s.id; });
+    navLinks.forEach(function (a) {
+      a.classList.toggle("active", a.getAttribute("href") === "#" + current);
+    });
+  }
+  spy();
+  window.addEventListener("scroll", spy, { passive: true });
+
+  // ---- Tabs de equipos ----
+  var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
+  var panels = Array.prototype.slice.call(document.querySelectorAll(".tab-panel"));
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      tabs.forEach(function (t) { t.classList.remove("active"); t.setAttribute("aria-selected", "false"); });
+      panels.forEach(function (p) { p.classList.remove("active"); });
+      tab.classList.add("active");
+      tab.setAttribute("aria-selected", "true");
+      var target = document.querySelector('.tab-panel[data-cat="' + tab.dataset.cat + '"]');
+      if (target) target.classList.add("active");
+    });
+  });
+
+  // ---- Acordeón FAQ ----
+  document.querySelectorAll(".faq-item").forEach(function (item) {
+    var q = item.querySelector(".faq-q");
+    q.addEventListener("click", function () {
+      var open = item.classList.toggle("open");
+      q.setAttribute("aria-expanded", String(open));
+      q.querySelector(".ico").textContent = open ? "−" : "+";
+    });
+  });
+
+  // ---- Categoría según fecha de nacimiento ----
+  var dob = document.getElementById("dob");
+  var catHint = document.getElementById("cat-hint");
+  function categoriaPorEdad(age) {
+    if (age < 9) return null;
+    if (age <= 10) return "Minivoley";
+    if (age === 11) return "Benjamín";
+    if (age === 12) return "Alevín";
+    if (age <= 14) return "Infantil";
+    if (age <= 16) return "Cadete";
+    if (age <= 18) return "Juvenil";
+    return "Adultos";
+  }
+  function calcCategoria() {
+    if (!dob.value) { catHint.classList.remove("show"); return; }
+    var b = new Date(dob.value);
+    if (isNaN(b.getTime())) { catHint.classList.remove("show"); return; }
+    var now = new Date();
+    var age = now.getFullYear() - b.getFullYear();
+    var m = now.getMonth() - b.getMonth();
+    if (m < 0 || (m === 0 && now.getDate() < b.getDate())) age--;
+    var cat = categoriaPorEdad(age);
+    if (age < 0 || age > 99) { catHint.classList.remove("show"); return; }
+    if (cat === null) {
+      catHint.textContent = "Aún por debajo de la edad mínima (9 años). Escríbenos y te avisamos cuando pueda empezar.";
+    } else {
+      catHint.textContent = "Categoría orientativa: " + cat + " · " + age + " años";
+    }
+    catHint.classList.add("show");
+  }
+  dob.addEventListener("change", calcCategoria);
+  dob.addEventListener("input", calcCategoria);
+
+  // ---- Validación del formulario ----
+  var form = document.getElementById("insc-form");
+  var success = document.getElementById("form-success");
+  var requeridos = Array.prototype.slice.call(form.querySelectorAll("[required]"));
+
+  function wrapperDe(campo) { return campo.closest(".field") || campo.closest(".check"); }
+
+  function validaCampo(campo) {
+    var malo = campo.type === "checkbox" ? !campo.checked : !campo.value.trim();
+    if (campo.type === "email" && campo.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(campo.value.trim())) {
+      malo = true;
+    }
+    var w = wrapperDe(campo);
+    if (w) w.classList.toggle("field--error", malo);
+    return !malo;
+  }
+
+  requeridos.forEach(function (campo) {
+    var ev = campo.type === "checkbox" ? "change" : "input";
+    campo.addEventListener(ev, function () {
+      var w = wrapperDe(campo);
+      if (w) w.classList.remove("field--error");
+    });
+  });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var ok = true;
+    requeridos.forEach(function (campo) { if (!validaCampo(campo)) ok = false; });
+    if (!ok) {
+      success.classList.remove("show");
+      var primerError = form.querySelector(".field--error");
+      if (primerError) primerError.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+    form.style.display = "none";
+    success.classList.add("show");
+    success.scrollIntoView({ behavior: "smooth", block: "center" });
+  });
+})();
+</script>
+</body>
+</html>
