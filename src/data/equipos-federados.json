@@ -1,0 +1,9 @@
+{
+  "clubId": "120",
+  "temporada": "2026/2027",
+  "grupos": [
+    { "categoria": "Juvenil Femenino", "grupoId": 33929 },
+    { "categoria": "Cadete Femenino", "grupoId": 33922 },
+    { "categoria": "Junior Femenino", "grupoId": 33941 }
+  ]
+}

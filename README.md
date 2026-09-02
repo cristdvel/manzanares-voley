@@ -29,6 +29,21 @@ public/
 Para cambiar textos, equipos, horarios, hitos o preguntas frecuentes se editan
 los ficheros de `src/data/`. No hace falta tocar el HTML.
 
+## Calendario y clasificación
+
+- `scripts/fetch-competicion.mjs` descarga calendario, resultados y clasificación
+  de los equipos federados desde la API pública de la FMVoley y escribe
+  `src/data/competicion.json`.
+- Qué equipos y qué grupos se siguen: `src/data/equipos-federados.json`
+  (añadir `{ "categoria": "...", "grupoId": NNNNN }` cuando federe un equipo
+  nuevo; el `grupoId` sale del botón «Ver clasificación» de la ficha del club
+  en fmvoley.com).
+- La GitHub Action `.github/workflows/competicion.yml` lo ejecuta cada 4 h y
+  hace commit si hay cambios → Cloudflare redespliega. También se puede lanzar
+  a mano (`node scripts/fetch-competicion.mjs`) o desde la pestaña Actions.
+- La web sirve ese JSON estático: si la API de la FMVoley falla, se mantiene
+  el último dato bueno con su fecha de actualización.
+
 ## Comandos
 
 | Comando           | Acción                                    |

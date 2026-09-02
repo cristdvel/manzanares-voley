@@ -1,0 +1,28 @@
+---
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Calendario from "../components/Calendario.astro";
+import Clasificacion from "../components/Clasificacion.astro";
+import { temporada, actualizadoTexto } from "../data/competicion";
+---
+
+<Base
+  title="Calendario y clasificación | Manzanares Voley"
+  description="Calendario, resultados y clasificación de los equipos federados del Club Voleibol Manzanares, con datos de la Federación de Madrid de Voleibol."
+>
+  <Header />
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Competición · {temporada}</span>
+        <h1>Calendario y clasificación</h1>
+        <p>Partidos y clasificación de los equipos federados de Manzanares Voley. Datos de la Federación de Madrid de Voleibol, actualizados automáticamente ({actualizadoTexto()}).</p>
+      </div>
+    </div>
+
+    <Calendario />
+    <Clasificacion full={true} />
+  </main>
+  <Footer />
+</Base>

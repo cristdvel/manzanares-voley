@@ -1,0 +1,6233 @@
+{
+  "actualizado": "2026-09-02T16:28:23.852Z",
+  "temporada": "2026/2027",
+  "grupos": [
+    {
+      "grupoId": 33929,
+      "categoria": "Juvenil Femenino",
+      "division": "1ª División Aut. Preferente",
+      "competicion": "Juvenil Femenino",
+      "fase": "Fase Regular",
+      "urlFmvoley": "https://fmvoley.com/clasificaciones-y-resultados",
+      "clasificacion": [
+        {
+          "pos": 1,
+          "equipo": "Cvleganes.com A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 2,
+          "equipo": "CV Sanse Rojo",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 3,
+          "equipo": "CV Bulldogs A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 4,
+          "equipo": "Feel Alcobendas Negro",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 5,
+          "equipo": "CV Las Rozas A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 6,
+          "equipo": "Ucam Torrejón A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 7,
+          "equipo": "V-Valley CValcalá G1",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 8,
+          "equipo": "VP Madrid A Amarillo Juvenil Femenino",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 9,
+          "equipo": "CV Collado Villalba A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 10,
+          "equipo": "Chv1995 A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 11,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 12,
+          "equipo": "Club Voleibol Móstoles A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        }
+      ],
+      "jornadas": [
+        {
+          "numero": 1,
+          "fecha": "2026-09-27T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56740,
+              "jornada": 1,
+              "fechaHora": "2026-09-27T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56741,
+              "jornada": 1,
+              "fechaHora": "2026-09-27T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56742,
+              "jornada": 1,
+              "fechaHora": "2026-09-27T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56743,
+              "jornada": 1,
+              "fechaHora": "2026-09-27T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56744,
+              "jornada": 1,
+              "fechaHora": "2026-09-27T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56745,
+              "jornada": 1,
+              "fechaHora": "2026-09-27T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "fecha": "2026-10-04T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56746,
+              "jornada": 2,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56747,
+              "jornada": 2,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56748,
+              "jornada": 2,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56749,
+              "jornada": 2,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56750,
+              "jornada": 2,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56751,
+              "jornada": 2,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "fecha": "2026-10-11T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56752,
+              "jornada": 3,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56753,
+              "jornada": 3,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56754,
+              "jornada": 3,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56755,
+              "jornada": 3,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56756,
+              "jornada": 3,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56757,
+              "jornada": 3,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "fecha": "2026-10-18T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56758,
+              "jornada": 4,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56759,
+              "jornada": 4,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56760,
+              "jornada": 4,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56761,
+              "jornada": 4,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56762,
+              "jornada": 4,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56763,
+              "jornada": 4,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "fecha": "2026-10-25T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56764,
+              "jornada": 5,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56765,
+              "jornada": 5,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56766,
+              "jornada": 5,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56767,
+              "jornada": 5,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56768,
+              "jornada": 5,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56769,
+              "jornada": 5,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "fecha": "2026-11-01T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56770,
+              "jornada": 6,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56771,
+              "jornada": 6,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56772,
+              "jornada": 6,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56773,
+              "jornada": 6,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56774,
+              "jornada": 6,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56775,
+              "jornada": 6,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "fecha": "2026-11-08T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56776,
+              "jornada": 7,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56777,
+              "jornada": 7,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56778,
+              "jornada": 7,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56779,
+              "jornada": 7,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56780,
+              "jornada": 7,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56781,
+              "jornada": 7,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "fecha": "2026-11-15T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56782,
+              "jornada": 8,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56783,
+              "jornada": 8,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56784,
+              "jornada": 8,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56785,
+              "jornada": 8,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56786,
+              "jornada": 8,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56787,
+              "jornada": 8,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "fecha": "2026-11-22T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56788,
+              "jornada": 9,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56789,
+              "jornada": 9,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56790,
+              "jornada": 9,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56791,
+              "jornada": 9,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56792,
+              "jornada": 9,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56793,
+              "jornada": 9,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "fecha": "2026-11-29T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56794,
+              "jornada": 10,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56795,
+              "jornada": 10,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56796,
+              "jornada": 10,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56797,
+              "jornada": 10,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56798,
+              "jornada": 10,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56799,
+              "jornada": 10,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "fecha": "2026-12-13T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56800,
+              "jornada": 11,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56801,
+              "jornada": 11,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56802,
+              "jornada": 11,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56803,
+              "jornada": 11,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56804,
+              "jornada": 11,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56805,
+              "jornada": 11,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "fecha": "2026-12-20T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56806,
+              "jornada": 12,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56807,
+              "jornada": 12,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56808,
+              "jornada": 12,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56809,
+              "jornada": 12,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56810,
+              "jornada": 12,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56811,
+              "jornada": 12,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 13,
+          "fecha": "2027-01-10T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56812,
+              "jornada": 13,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56813,
+              "jornada": 13,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56814,
+              "jornada": 13,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56815,
+              "jornada": 13,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56816,
+              "jornada": 13,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56817,
+              "jornada": 13,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 14,
+          "fecha": "2027-01-17T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56818,
+              "jornada": 14,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56819,
+              "jornada": 14,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56820,
+              "jornada": 14,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56821,
+              "jornada": 14,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56822,
+              "jornada": 14,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56823,
+              "jornada": 14,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            }
+          ]
+        },
+        {
+          "numero": 15,
+          "fecha": "2027-01-24T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56824,
+              "jornada": 15,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56825,
+              "jornada": 15,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56826,
+              "jornada": 15,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56827,
+              "jornada": 15,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56828,
+              "jornada": 15,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56829,
+              "jornada": 15,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 16,
+          "fecha": "2027-01-31T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56830,
+              "jornada": 16,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56831,
+              "jornada": 16,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56832,
+              "jornada": 16,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56833,
+              "jornada": 16,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56834,
+              "jornada": 16,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56835,
+              "jornada": 16,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            }
+          ]
+        },
+        {
+          "numero": 17,
+          "fecha": "2027-02-07T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56836,
+              "jornada": 17,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56837,
+              "jornada": 17,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56838,
+              "jornada": 17,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56839,
+              "jornada": 17,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56840,
+              "jornada": 17,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56841,
+              "jornada": 17,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 18,
+          "fecha": "2027-02-14T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56842,
+              "jornada": 18,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56843,
+              "jornada": 18,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56844,
+              "jornada": 18,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56845,
+              "jornada": 18,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56846,
+              "jornada": 18,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56847,
+              "jornada": 18,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 19,
+          "fecha": "2027-02-21T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56848,
+              "jornada": 19,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56849,
+              "jornada": 19,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56850,
+              "jornada": 19,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56851,
+              "jornada": 19,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56852,
+              "jornada": 19,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56853,
+              "jornada": 19,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 20,
+          "fecha": "2027-02-28T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56854,
+              "jornada": 20,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56855,
+              "jornada": 20,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56856,
+              "jornada": 20,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56857,
+              "jornada": 20,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56858,
+              "jornada": 20,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56859,
+              "jornada": 20,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 21,
+          "fecha": "2027-03-07T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56860,
+              "jornada": 21,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "Chv1995 A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56861,
+              "jornada": 21,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56862,
+              "jornada": 21,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56863,
+              "jornada": 21,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56864,
+              "jornada": 21,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56865,
+              "jornada": 21,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 22,
+          "fecha": "2027-03-14T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 56866,
+              "jornada": 22,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56867,
+              "jornada": 22,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56868,
+              "jornada": 22,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 56869,
+              "jornada": 22,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56870,
+              "jornada": 22,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56871,
+              "jornada": 22,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "CV Bulldogs A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        }
+      ],
+      "misPartidos": [
+        {
+          "id": 56744,
+          "jornada": 1,
+          "fechaHora": "2026-09-27T00:00:00.000Z",
+          "local": "Ucam Torrejón A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56747,
+          "jornada": 2,
+          "fechaHora": "2026-10-04T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Las Rozas A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56757,
+          "jornada": 3,
+          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "local": "V-Valley CValcalá G1",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56758,
+          "jornada": 4,
+          "fechaHora": "2026-10-18T00:00:00.000Z",
+          "local": "Chv1995 A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56769,
+          "jornada": 5,
+          "fechaHora": "2026-10-25T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Sanse Rojo",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56772,
+          "jornada": 6,
+          "fechaHora": "2026-11-01T00:00:00.000Z",
+          "local": "Club Voleibol Móstoles A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56780,
+          "jornada": 7,
+          "fechaHora": "2026-11-08T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Bulldogs A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56784,
+          "jornada": 8,
+          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "local": "VP Madrid A Amarillo Juvenil Femenino",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56791,
+          "jornada": 9,
+          "fechaHora": "2026-11-22T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Feel Alcobendas Negro",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56797,
+          "jornada": 10,
+          "fechaHora": "2026-11-29T00:00:00.000Z",
+          "local": "Cvleganes.com A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56802,
+          "jornada": 11,
+          "fechaHora": "2026-12-13T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Collado Villalba A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56810,
+          "jornada": 12,
+          "fechaHora": "2026-12-20T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Ucam Torrejón A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56813,
+          "jornada": 13,
+          "fechaHora": "2027-01-10T00:00:00.000Z",
+          "local": "CV Las Rozas A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56823,
+          "jornada": 14,
+          "fechaHora": "2027-01-17T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "V-Valley CValcalá G1",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56824,
+          "jornada": 15,
+          "fechaHora": "2027-01-24T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Chv1995 A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56835,
+          "jornada": 16,
+          "fechaHora": "2027-01-31T00:00:00.000Z",
+          "local": "CV Sanse Rojo",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56837,
+          "jornada": 17,
+          "fechaHora": "2027-02-07T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Club Voleibol Móstoles A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56842,
+          "jornada": 18,
+          "fechaHora": "2027-02-14T00:00:00.000Z",
+          "local": "CV Bulldogs A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56850,
+          "jornada": 19,
+          "fechaHora": "2027-02-21T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56857,
+          "jornada": 20,
+          "fechaHora": "2027-02-28T00:00:00.000Z",
+          "local": "Feel Alcobendas Negro",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56863,
+          "jornada": 21,
+          "fechaHora": "2027-03-07T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Cvleganes.com A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 56868,
+          "jornada": 22,
+          "fechaHora": "2027-03-14T00:00:00.000Z",
+          "local": "CV Collado Villalba A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        }
+      ]
+    },
+    {
+      "grupoId": 33922,
+      "categoria": "Cadete Femenino",
+      "division": "1ª División Aut. Preferente",
+      "competicion": "Cadete Femenino",
+      "fase": "Fase Regular",
+      "urlFmvoley": "https://fmvoley.com/clasificaciones-y-resultados",
+      "clasificacion": [
+        {
+          "pos": 1,
+          "equipo": "Cvleganes.com A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 2,
+          "equipo": "Dragons Voleibol Moralzarzal A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 3,
+          "equipo": "Cvleganes.com B",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 4,
+          "equipo": "CV Sanse Rojo",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 5,
+          "equipo": "Feel Alcobendas Negro",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 6,
+          "equipo": "CV Las Rozas A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 7,
+          "equipo": "Ucam Torrejón A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 8,
+          "equipo": "A. D. Voleibol Rivas Verde",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 9,
+          "equipo": "VP Madrid A Amarillo",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 10,
+          "equipo": "CV Collado Villalba A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 11,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 12,
+          "equipo": "Club Voleibol Móstoles A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        }
+      ],
+      "jornadas": [
+        {
+          "numero": 1,
+          "fecha": "2026-10-04T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57143,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57144,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57145,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57146,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57147,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57148,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "fecha": "2026-10-11T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57149,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57150,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57151,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57152,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57153,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57154,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "fecha": "2026-10-18T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57155,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57156,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57157,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57158,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57159,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57160,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "fecha": "2026-10-25T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57161,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57162,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57163,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57164,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57165,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57166,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "fecha": "2026-11-08T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57167,
+              "jornada": 5,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57168,
+              "jornada": 5,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57169,
+              "jornada": 5,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57170,
+              "jornada": 5,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57171,
+              "jornada": 5,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57172,
+              "jornada": 5,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "fecha": "2026-11-15T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57173,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57174,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57175,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57176,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57177,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57178,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "fecha": "2026-11-22T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57179,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57180,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57181,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57182,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57183,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57184,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "fecha": "2026-11-29T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57185,
+              "jornada": 8,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57186,
+              "jornada": 8,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57187,
+              "jornada": 8,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57188,
+              "jornada": 8,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57189,
+              "jornada": 8,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57190,
+              "jornada": 8,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "fecha": "2026-12-13T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57191,
+              "jornada": 9,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57192,
+              "jornada": 9,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57193,
+              "jornada": 9,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57194,
+              "jornada": 9,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57195,
+              "jornada": 9,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57196,
+              "jornada": 9,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "fecha": "2026-12-20T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57197,
+              "jornada": 10,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57198,
+              "jornada": 10,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57199,
+              "jornada": 10,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57200,
+              "jornada": 10,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57201,
+              "jornada": 10,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57202,
+              "jornada": 10,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "fecha": "2027-01-10T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57203,
+              "jornada": 11,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57204,
+              "jornada": 11,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57205,
+              "jornada": 11,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57206,
+              "jornada": 11,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57207,
+              "jornada": 11,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57208,
+              "jornada": 11,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "fecha": "2027-01-17T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57209,
+              "jornada": 12,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57210,
+              "jornada": 12,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57211,
+              "jornada": 12,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57212,
+              "jornada": 12,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57213,
+              "jornada": 12,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57214,
+              "jornada": 12,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            }
+          ]
+        },
+        {
+          "numero": 13,
+          "fecha": "2027-01-24T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57215,
+              "jornada": 13,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57216,
+              "jornada": 13,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57217,
+              "jornada": 13,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57218,
+              "jornada": 13,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57219,
+              "jornada": 13,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57220,
+              "jornada": 13,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 14,
+          "fecha": "2027-01-31T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57221,
+              "jornada": 14,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57222,
+              "jornada": 14,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57223,
+              "jornada": 14,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57224,
+              "jornada": 14,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57225,
+              "jornada": 14,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57226,
+              "jornada": 14,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            }
+          ]
+        },
+        {
+          "numero": 15,
+          "fecha": "2027-02-07T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57227,
+              "jornada": 15,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57228,
+              "jornada": 15,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57229,
+              "jornada": 15,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57230,
+              "jornada": 15,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57231,
+              "jornada": 15,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57232,
+              "jornada": 15,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 16,
+          "fecha": "2027-02-21T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57233,
+              "jornada": 16,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57234,
+              "jornada": 16,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57235,
+              "jornada": 16,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57236,
+              "jornada": 16,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57237,
+              "jornada": 16,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57238,
+              "jornada": 16,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 17,
+          "fecha": "2027-02-28T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57239,
+              "jornada": 17,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57240,
+              "jornada": 17,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57241,
+              "jornada": 17,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57242,
+              "jornada": 17,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57243,
+              "jornada": 17,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57244,
+              "jornada": 17,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 18,
+          "fecha": "2027-03-07T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57245,
+              "jornada": 18,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57246,
+              "jornada": 18,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57247,
+              "jornada": 18,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57248,
+              "jornada": 18,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57249,
+              "jornada": 18,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57250,
+              "jornada": 18,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            }
+          ]
+        },
+        {
+          "numero": 19,
+          "fecha": "2027-03-14T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57251,
+              "jornada": 19,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57252,
+              "jornada": 19,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57253,
+              "jornada": 19,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57254,
+              "jornada": 19,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57255,
+              "jornada": 19,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57256,
+              "jornada": 19,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 20,
+          "fecha": "2027-04-04T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57257,
+              "jornada": 20,
+              "fechaHora": "2027-04-04T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57258,
+              "jornada": 20,
+              "fechaHora": "2027-04-04T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57259,
+              "jornada": 20,
+              "fechaHora": "2027-04-04T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57260,
+              "jornada": 20,
+              "fechaHora": "2027-04-04T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57261,
+              "jornada": 20,
+              "fechaHora": "2027-04-04T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57262,
+              "jornada": 20,
+              "fechaHora": "2027-04-04T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 21,
+          "fecha": "2027-04-11T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57263,
+              "jornada": 21,
+              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57264,
+              "jornada": 21,
+              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57265,
+              "jornada": 21,
+              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57266,
+              "jornada": 21,
+              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Feel Alcobendas Negro",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57267,
+              "jornada": 21,
+              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57268,
+              "jornada": 21,
+              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 22,
+          "fecha": "2027-04-18T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57269,
+              "jornada": 22,
+              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "local": "Club Voleibol Móstoles A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57270,
+              "jornada": 22,
+              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57271,
+              "jornada": 22,
+              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57272,
+              "jornada": 22,
+              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "Dragons Voleibol Moralzarzal A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57273,
+              "jornada": 22,
+              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57274,
+              "jornada": 22,
+              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "Cvleganes.com B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        }
+      ],
+      "misPartidos": [
+        {
+          "id": 57148,
+          "jornada": 1,
+          "fechaHora": "2026-10-04T00:00:00.000Z",
+          "local": "CV Las Rozas A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57149,
+          "jornada": 2,
+          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "local": "Club Voleibol Móstoles A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57160,
+          "jornada": 3,
+          "fechaHora": "2026-10-18T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Ucam Torrejón A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57162,
+          "jornada": 4,
+          "fechaHora": "2026-10-25T00:00:00.000Z",
+          "local": "Dragons Voleibol Moralzarzal A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57171,
+          "jornada": 5,
+          "fechaHora": "2026-11-08T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "A. D. Voleibol Rivas Verde",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57176,
+          "jornada": 6,
+          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "local": "Cvleganes.com B",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57182,
+          "jornada": 7,
+          "fechaHora": "2026-11-22T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Sanse Rojo",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57188,
+          "jornada": 8,
+          "fechaHora": "2026-11-29T00:00:00.000Z",
+          "local": "Cvleganes.com A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57193,
+          "jornada": 9,
+          "fechaHora": "2026-12-13T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Feel Alcobendas Negro",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57201,
+          "jornada": 10,
+          "fechaHora": "2026-12-20T00:00:00.000Z",
+          "local": "CV Collado Villalba A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57204,
+          "jornada": 11,
+          "fechaHora": "2027-01-10T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "VP Madrid A Amarillo",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57214,
+          "jornada": 12,
+          "fechaHora": "2027-01-17T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Las Rozas A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57215,
+          "jornada": 13,
+          "fechaHora": "2027-01-24T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Club Voleibol Móstoles A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57226,
+          "jornada": 14,
+          "fechaHora": "2027-01-31T00:00:00.000Z",
+          "local": "Ucam Torrejón A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57228,
+          "jornada": 15,
+          "fechaHora": "2027-02-07T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Dragons Voleibol Moralzarzal A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57237,
+          "jornada": 16,
+          "fechaHora": "2027-02-21T00:00:00.000Z",
+          "local": "A. D. Voleibol Rivas Verde",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57241,
+          "jornada": 17,
+          "fechaHora": "2027-02-28T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Cvleganes.com B",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57250,
+          "jornada": 18,
+          "fechaHora": "2027-03-07T00:00:00.000Z",
+          "local": "CV Sanse Rojo",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57254,
+          "jornada": 19,
+          "fechaHora": "2027-03-14T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Cvleganes.com A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57259,
+          "jornada": 20,
+          "fechaHora": "2027-04-04T00:00:00.000Z",
+          "local": "Feel Alcobendas Negro",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57267,
+          "jornada": 21,
+          "fechaHora": "2027-04-11T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Collado Villalba A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57270,
+          "jornada": 22,
+          "fechaHora": "2027-04-18T00:00:00.000Z",
+          "local": "VP Madrid A Amarillo",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        }
+      ]
+    },
+    {
+      "grupoId": 33941,
+      "categoria": "Junior Femenino",
+      "division": "1ª División Aut. Preferente",
+      "competicion": "Junior Femenino",
+      "fase": "Liga Regular",
+      "urlFmvoley": "https://fmvoley.com/clasificaciones-y-resultados",
+      "clasificacion": [
+        {
+          "pos": 1,
+          "equipo": "Cvleganes.com",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 2,
+          "equipo": "CV Sanse",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 3,
+          "equipo": "Feel Alcobendas",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 4,
+          "equipo": "Cde Parla Voley Ortopedia A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 5,
+          "equipo": "CV Las Rozas A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 6,
+          "equipo": "Ucam Torrejón",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 7,
+          "equipo": "V-Valley CValcalá G1",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 8,
+          "equipo": "Cuv Alcorcón Azul",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 9,
+          "equipo": "VP Madrid A Amarillo",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 10,
+          "equipo": "CV Collado Villalba",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 11,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        },
+        {
+          "pos": 12,
+          "equipo": "CV Nueva Castilla",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 0,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 0,
+          "setsContra": 0,
+          "puntosFavor": 0,
+          "puntosContra": 0
+        }
+      ],
+      "jornadas": [
+        {
+          "numero": 1,
+          "fecha": "2026-10-04T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57282,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57283,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57284,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57285,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57286,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57287,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 2,
+          "fecha": "2026-10-11T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57288,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57289,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57290,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57291,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57292,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57293,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 3,
+          "fecha": "2026-10-18T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57294,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57295,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57296,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57297,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57298,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57299,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 4,
+          "fecha": "2026-10-25T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57300,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57301,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57302,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57303,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57304,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57305,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 5,
+          "fecha": "2026-11-01T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57306,
+              "jornada": 5,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57307,
+              "jornada": 5,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57308,
+              "jornada": 5,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57309,
+              "jornada": 5,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57310,
+              "jornada": 5,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57311,
+              "jornada": 5,
+              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 6,
+          "fecha": "2026-11-08T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57312,
+              "jornada": 6,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57313,
+              "jornada": 6,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57314,
+              "jornada": 6,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57315,
+              "jornada": 6,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57316,
+              "jornada": 6,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57317,
+              "jornada": 6,
+              "fechaHora": "2026-11-08T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 7,
+          "fecha": "2026-11-15T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57318,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57319,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57320,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57321,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57322,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57323,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 8,
+          "fecha": "2026-11-22T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57324,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57325,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57326,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57327,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57328,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57329,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 9,
+          "fecha": "2026-11-29T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57330,
+              "jornada": 9,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57331,
+              "jornada": 9,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57332,
+              "jornada": 9,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57333,
+              "jornada": 9,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57334,
+              "jornada": 9,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57335,
+              "jornada": 9,
+              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 10,
+          "fecha": "2026-12-13T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57336,
+              "jornada": 10,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57337,
+              "jornada": 10,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57338,
+              "jornada": 10,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57339,
+              "jornada": 10,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57340,
+              "jornada": 10,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57341,
+              "jornada": 10,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 11,
+          "fecha": "2026-12-20T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57342,
+              "jornada": 11,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57343,
+              "jornada": 11,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57344,
+              "jornada": 11,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57345,
+              "jornada": 11,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57346,
+              "jornada": 11,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57347,
+              "jornada": 11,
+              "fechaHora": "2026-12-20T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 12,
+          "fecha": "2027-01-10T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57348,
+              "jornada": 12,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57349,
+              "jornada": 12,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57350,
+              "jornada": 12,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57351,
+              "jornada": 12,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57352,
+              "jornada": 12,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57353,
+              "jornada": 12,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 13,
+          "fecha": "2027-01-17T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57354,
+              "jornada": 13,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57355,
+              "jornada": 13,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57356,
+              "jornada": 13,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57357,
+              "jornada": 13,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57358,
+              "jornada": 13,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57359,
+              "jornada": 13,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 14,
+          "fecha": "2027-01-24T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57360,
+              "jornada": 14,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57361,
+              "jornada": 14,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57362,
+              "jornada": 14,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57363,
+              "jornada": 14,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57364,
+              "jornada": 14,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57365,
+              "jornada": 14,
+              "fechaHora": "2027-01-24T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 15,
+          "fecha": "2027-01-31T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57366,
+              "jornada": 15,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57367,
+              "jornada": 15,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57368,
+              "jornada": 15,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57369,
+              "jornada": 15,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57370,
+              "jornada": 15,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57371,
+              "jornada": 15,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 16,
+          "fecha": "2027-02-07T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57372,
+              "jornada": 16,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57373,
+              "jornada": 16,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57374,
+              "jornada": 16,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57375,
+              "jornada": 16,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57376,
+              "jornada": 16,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57377,
+              "jornada": 16,
+              "fechaHora": "2027-02-07T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 17,
+          "fecha": "2027-02-14T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57378,
+              "jornada": 17,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57379,
+              "jornada": 17,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57380,
+              "jornada": 17,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57381,
+              "jornada": 17,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57382,
+              "jornada": 17,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57383,
+              "jornada": 17,
+              "fechaHora": "2027-02-14T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 18,
+          "fecha": "2027-02-21T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57384,
+              "jornada": 18,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57385,
+              "jornada": 18,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57386,
+              "jornada": 18,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57387,
+              "jornada": 18,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57388,
+              "jornada": 18,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57389,
+              "jornada": 18,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 19,
+          "fecha": "2027-02-28T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57390,
+              "jornada": 19,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57391,
+              "jornada": 19,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57392,
+              "jornada": 19,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57393,
+              "jornada": 19,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57394,
+              "jornada": 19,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57395,
+              "jornada": 19,
+              "fechaHora": "2027-02-28T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 20,
+          "fecha": "2027-03-07T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57396,
+              "jornada": 20,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57397,
+              "jornada": 20,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57398,
+              "jornada": 20,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57399,
+              "jornada": 20,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57400,
+              "jornada": 20,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57401,
+              "jornada": 20,
+              "fechaHora": "2027-03-07T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 21,
+          "fecha": "2027-03-14T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57402,
+              "jornada": 21,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "Manzanares Voley A",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57403,
+              "jornada": 21,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57404,
+              "jornada": 21,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "Feel Alcobendas",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57405,
+              "jornada": 21,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57406,
+              "jornada": 21,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "Cvleganes.com",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57407,
+              "jornada": 21,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "CV Las Rozas A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        },
+        {
+          "numero": 22,
+          "fecha": "2027-03-28T00:00:00.000Z",
+          "partidos": [
+            {
+              "id": 57408,
+              "jornada": 22,
+              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "CV Collado Villalba",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 57409,
+              "jornada": 22,
+              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Ucam Torrejón",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57410,
+              "jornada": 22,
+              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57411,
+              "jornada": 22,
+              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57412,
+              "jornada": 22,
+              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57413,
+              "jornada": 22,
+              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "CV Sanse",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            }
+          ]
+        }
+      ],
+      "misPartidos": [
+        {
+          "id": 57282,
+          "jornada": 1,
+          "fechaHora": "2026-10-04T00:00:00.000Z",
+          "local": "VP Madrid A Amarillo",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57288,
+          "jornada": 2,
+          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Ucam Torrejón",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57294,
+          "jornada": 3,
+          "fechaHora": "2026-10-18T00:00:00.000Z",
+          "local": "Feel Alcobendas",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57300,
+          "jornada": 4,
+          "fechaHora": "2026-10-25T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Cuv Alcorcón Azul",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57306,
+          "jornada": 5,
+          "fechaHora": "2026-11-01T00:00:00.000Z",
+          "local": "V-Valley CValcalá G1",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57313,
+          "jornada": 6,
+          "fechaHora": "2026-11-08T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Nueva Castilla",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57318,
+          "jornada": 7,
+          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "local": "Cvleganes.com",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57324,
+          "jornada": 8,
+          "fechaHora": "2026-11-22T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Cde Parla Voley Ortopedia A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57330,
+          "jornada": 9,
+          "fechaHora": "2026-11-29T00:00:00.000Z",
+          "local": "CV Las Rozas A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57336,
+          "jornada": 10,
+          "fechaHora": "2026-12-13T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Sanse",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57342,
+          "jornada": 11,
+          "fechaHora": "2026-12-20T00:00:00.000Z",
+          "local": "CV Collado Villalba",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57348,
+          "jornada": 12,
+          "fechaHora": "2027-01-10T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "VP Madrid A Amarillo",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57354,
+          "jornada": 13,
+          "fechaHora": "2027-01-17T00:00:00.000Z",
+          "local": "Ucam Torrejón",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57360,
+          "jornada": 14,
+          "fechaHora": "2027-01-24T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Feel Alcobendas",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57366,
+          "jornada": 15,
+          "fechaHora": "2027-01-31T00:00:00.000Z",
+          "local": "Cuv Alcorcón Azul",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57372,
+          "jornada": 16,
+          "fechaHora": "2027-02-07T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "V-Valley CValcalá G1",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57378,
+          "jornada": 17,
+          "fechaHora": "2027-02-14T00:00:00.000Z",
+          "local": "CV Nueva Castilla",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57386,
+          "jornada": 18,
+          "fechaHora": "2027-02-21T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "Cvleganes.com",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57390,
+          "jornada": 19,
+          "fechaHora": "2027-02-28T00:00:00.000Z",
+          "local": "Cde Parla Voley Ortopedia A",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57396,
+          "jornada": 20,
+          "fechaHora": "2027-03-07T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Las Rozas A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57402,
+          "jornada": 21,
+          "fechaHora": "2027-03-14T00:00:00.000Z",
+          "local": "CV Sanse",
+          "visitante": "Manzanares Voley A",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 57408,
+          "jornada": 22,
+          "fechaHora": "2027-03-28T00:00:00.000Z",
+          "local": "Manzanares Voley A",
+          "visitante": "CV Collado Villalba",
+          "pabellon": null,
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "jugado": false
+        }
+      ]
+    }
+  ],
+  "proximos": [
+    {
+      "id": 56744,
+      "jornada": 1,
+      "fechaHora": "2026-09-27T00:00:00.000Z",
+      "local": "Ucam Torrejón A",
+      "visitante": "Manzanares Voley A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino"
+    },
+    {
+      "id": 56747,
+      "jornada": 2,
+      "fechaHora": "2026-10-04T00:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "CV Las Rozas A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino"
+    },
+    {
+      "id": 57148,
+      "jornada": 1,
+      "fechaHora": "2026-10-04T00:00:00.000Z",
+      "local": "CV Las Rozas A",
+      "visitante": "Manzanares Voley A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Femenino"
+    },
+    {
+      "id": 57282,
+      "jornada": 1,
+      "fechaHora": "2026-10-04T00:00:00.000Z",
+      "local": "VP Madrid A Amarillo",
+      "visitante": "Manzanares Voley A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Junior Femenino"
+    },
+    {
+      "id": 56757,
+      "jornada": 3,
+      "fechaHora": "2026-10-11T00:00:00.000Z",
+      "local": "V-Valley CValcalá G1",
+      "visitante": "Manzanares Voley A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino"
+    },
+    {
+      "id": 57149,
+      "jornada": 2,
+      "fechaHora": "2026-10-11T00:00:00.000Z",
+      "local": "Club Voleibol Móstoles A",
+      "visitante": "Manzanares Voley A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Femenino"
+    },
+    {
+      "id": 57288,
+      "jornada": 2,
+      "fechaHora": "2026-10-11T00:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Ucam Torrejón",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Junior Femenino"
+    },
+    {
+      "id": 56758,
+      "jornada": 4,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Chv1995 A",
+      "visitante": "Manzanares Voley A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino"
+    }
+  ],
+  "ultimos": []
+}

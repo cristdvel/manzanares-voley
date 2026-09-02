@@ -1,18 +1,48 @@
 ---
-import { partidos } from "../data/partidos";
+import { proximos, ultimos, temporada, fechaCorta, horaCorta } from "../data/competicion";
+
+const lista = proximos.slice(0, 3);
 ---
 <div class="section">
   <div class="container">
-    <span class="eyebrow">Temporada 2025 / 2026</span>
+    <span class="eyebrow">Temporada {temporada}</span>
     <h2 class="section-title">Próximos partidos</h2>
-    <div class="partidos__grid">
-      {partidos.map((p) => (
-        <article class="match">
-          <span class="badge">{p.cat}</span>
-          <p class="match__teams">{p.local} <span class="vs">vs</span> {p.visitante}</p>
-          <p class="match__meta">{p.fecha}</p>
-        </article>
-      ))}
-    </div>
+
+    {lista.length > 0 ? (
+      <div class="partidos__grid">
+        {lista.map((p) => (
+          <article class="match">
+            <span class="badge">{p.categoria}</span>
+            <p class="match__teams">
+              <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
+              <span class="vs">vs</span>
+              <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
+            </p>
+            <p class="match__meta">
+              Jornada {p.jornada} · {fechaCorta(p.fechaHora)}
+              {horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
+            </p>
+          </article>
+        ))}
+      </div>
+    ) : ultimos.length > 0 ? (
+      <div class="partidos__grid">
+        {ultimos.slice(0, 3).map((p) => (
+          <article class="match">
+            <span class="badge">{p.categoria}</span>
+            <p class="match__teams">
+              <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
+              <span class="vs">{p.resultado ?? "vs"}</span>
+              <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
+            </p>
+            <p class="match__meta">Jornada {p.jornada} · {fechaCorta(p.fechaHora)}</p>
+          </article>
+        ))}
+      </div>
+    ) : (
+      <p class="match__empty">El calendario de la temporada se publicará aquí en cuanto la Federación de Madrid lo confirme.</p>
+    )}
+
+    <a href="/calendario" class="btn btn--outline">Ver calendario y clasificación →</a>
   </div>
 </div>

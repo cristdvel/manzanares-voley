@@ -1,0 +1,79 @@
+---
+import { grupos, hayResultados, actualizadoTexto } from "../data/competicion";
+
+interface Props {
+  full?: boolean;
+}
+const { full = false } = Astro.props;
+---
+<div class="section section--crema">
+  <div class="container">
+    <span class="eyebrow">Clasificaciones y resultados</span>
+    <h2 class="section-title">La liga, en directo</h2>
+    <p class="clasif__intro">
+      Clasificación de los equipos federados de Manzanares Voley, con datos de la
+      Federación de Madrid de Voleibol.
+      {!hayResultados && " La competición arranca el 27 de septiembre de 2026."}
+    </p>
+
+    <div class="tabs" data-tabs="clasif" role="tablist" aria-label="Categorías de competición">
+      {grupos.map((g, i) => (
+        <button
+          class={`tab${i === 0 ? " active" : ""}`}
+          data-cat={String(g.grupoId)}
+          role="tab"
+          aria-selected={i === 0 ? "true" : "false"}
+        >
+          {g.categoria}
+        </button>
+      ))}
+    </div>
+
+    {grupos.map((g, i) => (
+      <div
+        class={`tab-panel${i === 0 ? " active" : ""}`}
+        data-tabgroup="clasif"
+        data-cat={String(g.grupoId)}
+        role="tabpanel"
+      >
+        <p class="clasif__division">{g.division} · {g.fase}</p>
+        <div class="tabla-wrap">
+          <table class="tabla-clasif">
+            <thead>
+              <tr>
+                <th class="c">#</th>
+                <th>Equipo</th>
+                <th class="c">PJ</th>
+                <th class="c">PG</th>
+                <th class="c">PP</th>
+                <th class="c">Sets</th>
+                <th class="c">Pts</th>
+              </tr>
+            </thead>
+            <tbody>
+              {g.clasificacion.map((f) => (
+                <tr class={f.esManzanares ? "is-mzv" : ""}>
+                  <td class="c">{f.pos}</td>
+                  <td>{f.equipo}</td>
+                  <td class="c">{f.pj}</td>
+                  <td class="c">{f.pg}</td>
+                  <td class="c">{f.pp}</td>
+                  <td class="c">{f.setsFavor}-{f.setsContra}</td>
+                  <td class="c b">{f.pts}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <a href={g.urlFmvoley} target="_blank" rel="noopener" class="clasif__link">
+          Ficha del grupo en fmvoley.com ↗
+        </a>
+      </div>
+    ))}
+
+    <p class="clasif__foot">
+      Actualizado automáticamente · {actualizadoTexto()}
+      {!full && <> · <a href="/calendario">ver calendario completo →</a></>}
+    </p>
+  </div>
+</div>

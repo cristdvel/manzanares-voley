@@ -73,13 +73,14 @@ export const categorias: Categoria[] = [
   },
 ];
 
+// Pabellones registrados en la Federación de Madrid de Voleibol.
 export const sedes = [
-  { nombre: "Pabellón Tomás Bretón", nota: "Sede histórica fundacional" },
-  { nombre: "Pabellón Colegio Perú", nota: "Infantil y Alevín" },
-  { nombre: "Pistas Senior Salamanca", nota: "Escuela de Adultos" },
-  { nombre: "Pabellón San Ignacio", nota: "Categorías intermedias" },
-  { nombre: "Pabellón Jovellanos", nota: "Escuelas vinculadas" },
-  { nombre: "Pabellón Larra", nota: "Nuevas promociones" },
-  { nombre: "Pabellón Dicenta", nota: "Desde 2024/2025" },
-  { nombre: "Centro Móstoles", nota: "Expansión territorial" },
+  {
+    nombre: "Colegio Nueva Castilla",
+    nota: "Calle Mazaterón 12, 28051 Madrid",
+  },
+  {
+    nombre: "Colegio Greenfield",
+    nota: "Ctra. de Carabanchel a Villaverde 82, Villaverde, 28021 Madrid",
+  },
 ];

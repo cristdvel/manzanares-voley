@@ -1,0 +1,50 @@
+---
+import { grupos, fechaCorta, horaCorta } from "../data/competicion";
+---
+<div class="section">
+  <div class="container">
+    <span class="eyebrow">Temporada regular</span>
+    <h2 class="section-title">Calendario</h2>
+
+    <div class="tabs" data-tabs="cal" role="tablist" aria-label="Categorías">
+      {grupos.map((g, i) => (
+        <button
+          class={`tab${i === 0 ? " active" : ""}`}
+          data-cat={String(g.grupoId)}
+          role="tab"
+          aria-selected={i === 0 ? "true" : "false"}
+        >
+          {g.categoria}
+        </button>
+      ))}
+    </div>
+
+    {grupos.map((g, i) => (
+      <div
+        class={`tab-panel${i === 0 ? " active" : ""}`}
+        data-tabgroup="cal"
+        data-cat={String(g.grupoId)}
+        role="tabpanel"
+      >
+        <p class="clasif__division">{g.division} · {g.fase}</p>
+        <ol class="cal-list">
+          {g.misPartidos.map((p) => (
+            <li class={`cal-item${p.jugado ? " is-done" : ""}`}>
+              <span class="cal-item__j">J{p.jornada}</span>
+              <span class="cal-item__fecha">
+                {fechaCorta(p.fechaHora)}
+                {horaCorta(p.fechaHora) ? <><br /><small>{horaCorta(p.fechaHora)}</small></> : null}
+              </span>
+              <span class="cal-item__match">
+                <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
+                <span class="cal-item__vs">{p.jugado ? p.resultado : "·"}</span>
+                <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
+              </span>
+              {p.aplazado && <span class="cal-item__tag">Aplazado</span>}
+            </li>
+          ))}
+        </ol>
+      </div>
+    ))}
+  </div>
+</div>

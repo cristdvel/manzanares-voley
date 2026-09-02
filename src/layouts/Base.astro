@@ -83,22 +83,30 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
           window.addEventListener("scroll", spy, { passive: true });
         }
 
-        // ---- Tabs de equipos ----
-        var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));
-        var panels = Array.prototype.slice.call(document.querySelectorAll(".tab-panel"));
-        tabs.forEach(function (tab) {
-          tab.addEventListener("click", function () {
-            tabs.forEach(function (t) {
-              t.classList.remove("active");
-              t.setAttribute("aria-selected", "false");
+        // ---- Tabs (agrupados por [data-tabs]) ----
+        document.querySelectorAll("[data-tabs]").forEach(function (group) {
+          var name = group.getAttribute("data-tabs");
+          var scope = group.closest("section") || document;
+          var tabs = Array.prototype.slice.call(group.querySelectorAll(".tab"));
+          var panels = Array.prototype.slice.call(
+            scope.querySelectorAll('.tab-panel[data-tabgroup="' + name + '"]'),
+          );
+          tabs.forEach(function (tab) {
+            tab.addEventListener("click", function () {
+              tabs.forEach(function (t) {
+                t.classList.remove("active");
+                t.setAttribute("aria-selected", "false");
+              });
+              panels.forEach(function (p) {
+                p.classList.remove("active");
+              });
+              tab.classList.add("active");
+              tab.setAttribute("aria-selected", "true");
+              var target = panels.filter(function (p) {
+                return p.getAttribute("data-cat") === tab.dataset.cat;
+              })[0];
+              if (target) target.classList.add("active");
             });
-            panels.forEach(function (p) {
-              p.classList.remove("active");
-            });
-            tab.classList.add("active");
-            tab.setAttribute("aria-selected", "true");
-            var target = document.querySelector('.tab-panel[data-cat="' + tab.dataset.cat + '"]');
-            if (target) target.classList.add("active");
           });
         });
 
