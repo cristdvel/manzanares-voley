@@ -1,26 +1,14 @@
 ---
+// Logo oficial del club, versión monocroma blanca (para fondos oscuros).
 interface Props {
   class?: string;
-  variant?: "horizontal" | "stacked";
 }
-const { class: className = "", variant = "horizontal" } = Astro.props;
+const { class: className = "" } = Astro.props;
 ---
-{
-  variant === "stacked" ? (
-    <img
-      src="/img/logo-blanco.png"
-      alt="Manzanares Voley"
-      class={`brand brand--stacked ${className}`.trim()}
-      width="612"
-      height="614"
-    />
-  ) : (
-    <span class={`brand ${className}`.trim()}>
-      <img src="/img/logo-icono.png" alt="" class="brand__icon" width="46" height="45" />
-      <span class="brand__word">
-        <span class="brand__manzanares">Manzanares</span>
-        <span class="brand__voley">voley</span>
-      </span>
-    </span>
-  )
-}
+<img
+  src="/img/logo-blanco.png"
+  alt="Manzanares Voley"
+  class={`brand ${className}`.trim()}
+  width="612"
+  height="614"
+/>

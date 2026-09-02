@@ -12,10 +12,10 @@
   --mzv-texto:       #928F87;
   --mzv-alt-titulo:  #FFFEFE;
   --mzv-alt-texto:   #A39C8A;
-  --header-h: 84px;
+  --header-h: 92px;
 }
 
-html{scroll-behavior:smooth;scroll-padding-top:100px}
+html{scroll-behavior:smooth;scroll-padding-top:108px}
 body{
   font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   font-size:16px;line-height:1.625;color:var(--mzv-texto);background:#fff;
@@ -76,26 +76,13 @@ p:last-child{margin-bottom:0}
   display:flex;align-items:center;gap:10px;font-family:"Anton",sans-serif;
   font-size:22px;text-transform:uppercase;letter-spacing:.04em;color:var(--mzv-naranja);
 }
-/* Logo — lockup horizontal en la cabecera */
-.brand{display:inline-flex;align-items:center;gap:12px;line-height:1}
-.brand__icon{height:44px;width:auto;display:block;flex-shrink:0}
-.brand__word{display:inline-grid;line-height:1}
-.brand__manzanares{
-  font-family:"Anton",Impact,sans-serif;text-transform:uppercase;letter-spacing:.06em;
-  font-size:24px;color:var(--mzv-alt-titulo);
-}
-.brand__voley{
-  font-family:"Pacifico","Brush Script MT",cursive;font-size:21px;color:#fff;
-  justify-self:end;margin-top:-6px;margin-right:-2px;
-}
-/* Logo apilado (footer) */
-.brand--stacked{height:96px;width:auto;display:block}
+/* Logo oficial (monocromo blanco) */
+.brand{height:74px;width:auto;display:block}
+.brand--footer{height:104px}
 .ani-mark{height:1.9em;width:auto;vertical-align:-.62em;margin-right:.15em}
 @media (max-width:560px){
-  .brand__icon{height:38px}
-  .brand__manzanares{font-size:20px}
-  .brand__voley{font-size:17px}
-  .brand--stacked{height:78px}
+  .brand{height:58px}
+  .brand--footer{height:88px}
 }
 
 /* Fotos reales dentro de secciones */
