@@ -64,21 +64,24 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
           });
         });
 
-        // ---- Scrollspy: enlace activo ----
+        // ---- Scrollspy: enlace activo (solo en la home) ----
         var sections = Array.prototype.slice.call(document.querySelectorAll("main section[id]"));
-        var navLinks = Array.prototype.slice.call(nav.querySelectorAll('.nav-links a[href^="#"]'));
-        function spy() {
-          var y = window.scrollY + 120;
-          var current = sections.length ? sections[0].id : "";
-          sections.forEach(function (s) {
-            if (s.offsetTop <= y) current = s.id;
-          });
-          navLinks.forEach(function (a) {
-            a.classList.toggle("active", a.getAttribute("href") === "#" + current);
-          });
+        var navLinks = Array.prototype.slice.call(nav.querySelectorAll('.nav-links a[href*="#"]'));
+        if (sections.length) {
+          var spy = function () {
+            var y = window.scrollY + 120;
+            var current = sections[0].id;
+            sections.forEach(function (s) {
+              if (s.offsetTop <= y) current = s.id;
+            });
+            navLinks.forEach(function (a) {
+              var href = a.getAttribute("href") || "";
+              a.classList.toggle("active", href.split("#")[1] === current);
+            });
+          };
+          spy();
+          window.addEventListener("scroll", spy, { passive: true });
         }
-        spy();
-        window.addEventListener("scroll", spy, { passive: true });
 
         // ---- Tabs de equipos ----
         var tabs = Array.prototype.slice.call(document.querySelectorAll(".tab"));

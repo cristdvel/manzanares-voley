@@ -1,0 +1,105 @@
+---
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { juego, mallas, entreno, sudadera, accesorios } from "../data/equipacion";
+import { site } from "../data/site";
+---
+
+<Base
+  title="Equipación oficial · 10º aniversario | Manzanares Voley"
+  description="Colección conmemorativa del 10º aniversario del Club Voleibol Manzanares: camisetas de juego «Gatos» y «Claveles», ropa de entreno, sudadera y accesorios."
+>
+  <Header />
+  <main>
+    <div class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Tienda oficial</span>
+        <h1>Equipación oficial · 10º aniversario</h1>
+        <p>La colección conmemorativa de una década de Manzanares Voley: dos diseños de camiseta de juego, ropa de entreno, la sudadera del aniversario y los accesorios del club.</p>
+      </div>
+    </div>
+
+    <!-- Camisetas de juego -->
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Camisetas de juego</span>
+        <h2 class="section-title">Dos diseños del aniversario</h2>
+        {juego.map((j) => (
+          <div class="kit-feature">
+            <div class="kit-feature__info">
+              <h3>{j.nombre}</h3>
+              <p>{j.desc}</p>
+            </div>
+            <figure class="kit-shot"><img src={j.frente} alt={`${j.nombre} — frente`} loading="lazy" /><figcaption>Frente</figcaption></figure>
+            <figure class="kit-shot"><img src={j.espalda} alt={`${j.nombre} — espalda`} loading="lazy" /><figcaption>Espalda</figcaption></figure>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Camisetas de tirantes -->
+    <section class="section section--crema">
+      <div class="container">
+        <span class="eyebrow">Calentamiento</span>
+        <h2 class="section-title">Camisetas de tirantes</h2>
+        <div class="kit-grid">
+          {mallas.map((m) => (
+            <figure class="kit-card"><img src={m.img} alt={m.nombre} loading="lazy" /><figcaption>{m.nombre}</figcaption></figure>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Ropa de entreno -->
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Día a día</span>
+        <h2 class="section-title">Ropa de entreno</h2>
+        <div class="kit-grid">
+          {entreno.map((e) => (
+            <figure class="kit-card"><img src={e.img} alt={e.nombre} loading="lazy" /><figcaption>{e.nombre}</figcaption></figure>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Sudadera 10º aniversario -->
+    <section class="section section--crema">
+      <div class="container">
+        <span class="eyebrow">Pieza estrella</span>
+        <h2 class="section-title">Sudadera 10º aniversario</h2>
+        <div class="kit-grid">
+          <figure class="kit-card"><img src={sudadera.frente} alt="Sudadera 10º aniversario — frente" loading="lazy" /><figcaption>Frente</figcaption></figure>
+          <figure class="kit-card"><img src={sudadera.espalda} alt="Sudadera 10º aniversario — espalda" loading="lazy" /><figcaption>Espalda · huellas y «10 aniversario»</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Accesorios -->
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Complementos</span>
+        <h2 class="section-title">Abrigo y mochila</h2>
+        <div class="kit-grid">
+          {accesorios.map((a) => (
+            <figure class="kit-card"><img src={a.img} alt={a.nombre} loading="lazy" /><figcaption>{a.nombre}</figcaption></figure>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Catálogo + contacto -->
+    <section class="section section--oscuro">
+      <div class="container center">
+        <h2 class="section-title">¿Quieres una pieza?</h2>
+        <p class="section-intro">Los pedidos se gestionan a través del club. El catálogo completo con tallas y precios está disponible en PDF.</p>
+        <div class="page-cta">
+          <span class="btn btn--outline-light btn--lg is-disabled" aria-disabled="true">Catálogo en PDF (próximamente)</span>
+          <a href={`mailto:${site.email}?subject=Equipaci%C3%B3n%2010%C2%BA%20aniversario`} class="btn btn--primary btn--lg">Escribir al club</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Base>

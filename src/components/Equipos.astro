@@ -38,9 +38,9 @@ import { site } from "../data/site";
 <!-- Clasificaciones -->
 <div class="section section--crema">
   <div class="container clasif">
-    <h2 class="section-title">Clasificaciones</h2>
-    <p>Sigue los resultados y clasificaciones de todos nuestros equipos en la web oficial de la Federación Madrileña de Voleibol.</p>
-    <a href={site.fmvb} target="_blank" rel="noopener" class="btn btn--primary btn--lg">Ver clasificaciones en la FMVB →</a>
+    <h2 class="section-title">Clasificaciones y resultados</h2>
+    <p>Todos nuestros equipos federados compiten en la Federación de Madrid de Voleibol. Consulta calendarios, resultados y clasificaciones actualizados en su web oficial.</p>
+    <a href={site.fmvb} target="_blank" rel="noopener" class="btn btn--primary btn--lg">Ver clasificaciones en la FMVoley →</a>
   </div>
 </div>
 
@@ -50,7 +50,15 @@ import { site } from "../data/site";
     <span class="eyebrow">Sedes</span>
     <h2 class="section-title">Dónde entrenamos</h2>
     <div class="sedes">
-      <div class="mapa">Mapa de sedes · Google Maps</div>
+      <div class="mapa">
+        <iframe
+          title="Ubicación del Pabellón Tomás Bretón"
+          src="https://www.google.com/maps?q=Pabell%C3%B3n%20Deportivo%20Tom%C3%A1s%20Bret%C3%B3n%2C%20Madrid&z=14&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+      </div>
       <ul class="sede-list">
         {sedes.map((s) => (
           <li>📍 {s.nombre} <span>{s.nota}</span></li>

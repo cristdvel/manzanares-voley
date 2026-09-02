@@ -8,18 +8,18 @@ import { productos } from "../data/contenido";
     <div class="tienda-grid">
       {productos.map((p) => (
         <article class="producto">
-          <div class="placeholder placeholder--accion">
-            {p.img && <img src={p.img} alt="" loading="lazy" onerror="this.remove()" />}
-            {!p.img && <span class="placeholder__label">Foto pendiente</span>}
+          <div class="producto__img">
+            <img src={p.img} alt={p.titulo} loading="lazy" />
           </div>
           <div class="producto__body">
             <h3>{p.titulo}</h3>
             <p>{p.texto}</p>
-            <a href="#inscripciones" class="btn btn--primary">Ver productos</a>
+            {p.href
+              ? <a href={p.href} class="btn btn--primary">Ver productos</a>
+              : <span class="producto__soon">Próximamente</span>}
           </div>
         </article>
       ))}
     </div>
-    <p class="tienda-note">Para realizar un pedido contacta con el club. Recogida en el pabellón.</p>
   </div>
 </div>

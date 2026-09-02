@@ -77,34 +77,34 @@ export const pilares = [
   },
 ];
 
-export const staff = [
-  { role: "Presidencia" },
-  { role: "Dirección deportiva" },
-  { role: "Coordinación de cantera" },
-  { role: "Preparación física" },
-  { role: "Coordinación femenina" },
-  { role: "Secretaría y delegación" },
-];
+export interface Producto {
+  img: string;
+  titulo: string;
+  texto: string;
+  href?: string; // si falta, la tarjeta no lleva botón "Ver productos"
+}
 
-export const productos = [
+export const productos: Producto[] = [
   {
-    img: "/img/equipacion.jpg",
+    img: "/img/equipacion/gatos-frente.png",
     titulo: "Equipación de juego",
-    texto: "Camiseta, pantalón y medias oficiales del club.",
+    texto: "Camisetas de juego «Gatos» y «Claveles», mallas y equipación oficial del 10º aniversario.",
+    href: "/equipacion",
   },
   {
-    img: "",
-    titulo: "Sudaderas y ropa de entreno",
-    texto: "Sudaderas, cortavientos y camisetas técnicas.",
-  },
-  {
-    img: "",
-    titulo: "Accesorios",
-    texto: "Balones, mochilas y complementos del club.",
-  },
-  {
-    img: "",
+    img: "/img/equipacion/claveles-frente.png",
     titulo: "Colección 10º Aniversario",
-    texto: "Tazas, camisetas conmemorativas y detalles de la década.",
+    texto: "La colección conmemorativa de la década: equipaciones, sudadera y complementos.",
+    href: "/equipacion",
+  },
+  {
+    img: "/img/equipacion/sudadera-frente.png",
+    titulo: "Sudaderas y ropa de entreno",
+    texto: "Sudadera del 10º aniversario, camisetas de entreno y abrigo del club.",
+  },
+  {
+    img: "/img/equipacion/mochila.png",
+    titulo: "Accesorios",
+    texto: "Mochila oficial, balones y complementos del club.",
   },
 ];

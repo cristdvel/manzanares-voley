@@ -242,11 +242,8 @@ p:last-child{margin-bottom:0}
 
 /* ---------- Sedes ---------- */
 .sedes{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:start}
-.mapa{
-  height:320px;background:var(--mzv-borde);border-radius:12px;
-  display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;
-  font-family:"Anton",sans-serif;text-transform:uppercase;letter-spacing:.1em;color:var(--mzv-texto);font-size:14px;
-}
+.mapa{height:340px;background:var(--mzv-borde);border-radius:12px;overflow:hidden}
+.mapa iframe{width:100%;height:100%;border:0;display:block;filter:grayscale(.15)}
 .sede-list li{padding:14px 0;border-bottom:1px solid var(--mzv-borde);font-size:15px;color:var(--mzv-titulo)}
 .sede-list li:last-child{border-bottom:0}
 .sede-list li span{display:block;font-size:13px;color:var(--mzv-texto)}
@@ -277,12 +274,13 @@ p:last-child{margin-bottom:0}
 /* ---------- Tienda ---------- */
 .tienda-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 .producto{background:#fff;border:1px solid var(--mzv-borde);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
-.producto .placeholder{aspect-ratio:4/3;border-radius:0}
+.producto__img{aspect-ratio:1/1;background:#fff;border-bottom:1px solid var(--mzv-borde);display:flex;align-items:center;justify-content:center;padding:14px}
+.producto__img img{width:100%;height:100%;object-fit:contain;display:block}
 .producto__body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
 .producto h3{font-size:18px}
 .producto__body p{font-size:14px}
 .producto .btn{margin-top:auto;align-self:flex-start}
-.tienda-note{text-align:center;margin-top:28px;font-size:13px;color:var(--mzv-texto)}
+.producto__soon{margin-top:auto;align-self:flex-start;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--mzv-texto);border:1px solid var(--mzv-borde);border-radius:999px;padding:6px 14px}
 
 /* ---------- Inscripciones ---------- */
 .insc-hero{background:var(--mzv-naranja);color:#fff;text-align:center;padding:84px 0 96px}
@@ -402,4 +400,42 @@ p:last-child{margin-bottom:0}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
   html{scroll-behavior:auto}
+}
+
+/* ---------- Página de equipación ---------- */
+.page-hero{background:var(--mzv-oscuro);color:var(--mzv-alt-texto);padding:calc(var(--header-h) + 64px) 0 64px}
+.page-hero h1{color:var(--mzv-alt-titulo);font-size:clamp(2.2rem,5vw,3.2rem);margin-bottom:16px}
+.page-hero p{max-width:640px}
+.page-cta{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:28px}
+.btn.is-disabled{opacity:.5;cursor:not-allowed;pointer-events:none}
+
+.kit-feature{
+  display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;align-items:center;
+  padding:32px 0;border-top:1px solid var(--mzv-borde);
+}
+.kit-feature:first-of-type{border-top:0}
+.kit-feature__info h3{font-size:22px;margin-bottom:10px}
+.kit-shot{margin:0;text-align:center}
+.kit-shot img{width:100%;max-height:340px;object-fit:contain;display:block}
+.kit-shot figcaption,.kit-card figcaption{
+  margin-top:10px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mzv-texto);
+}
+
+.kit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.kit-card{
+  margin:0;background:#fff;border:1px solid var(--mzv-borde);border-radius:12px;
+  padding:22px;text-align:center;
+}
+.section--crema .kit-card{background:#fff}
+.kit-card img{width:100%;height:300px;object-fit:contain;display:block}
+.kit-card figcaption{margin-top:14px}
+
+@media (max-width:900px){
+  .kit-feature{grid-template-columns:1fr 1fr}
+  .kit-feature__info{grid-column:1 / -1}
+  .kit-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .kit-feature{grid-template-columns:1fr}
+  .kit-grid{grid-template-columns:1fr}
 }

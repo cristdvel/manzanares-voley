@@ -1,6 +1,5 @@
 ---
 import { partidos } from "../data/partidos";
-import { site } from "../data/site";
 ---
 <div class="section">
   <div class="container">
@@ -11,10 +10,9 @@ import { site } from "../data/site";
         <article class="match">
           <span class="badge">{p.cat}</span>
           <p class="match__teams">{p.local} <span class="vs">vs</span> {p.visitante}</p>
-          <p class="match__meta">{p.meta}</p>
+          <p class="match__meta">{p.fecha}</p>
         </article>
       ))}
     </div>
-    <a href={site.fmvb} target="_blank" rel="noopener" class="btn btn--outline">Ver clasificaciones en la FMVB →</a>
   </div>
 </div>

@@ -7,7 +7,7 @@ export const site = {
   email: "info@manzanaresvoley.com",
   telefono: "[teléfono por confirmar]",
   ciudad: "Madrid · Distrito Arganzuela",
-  fmvb: "https://www.fmvb.es",
+  fmvb: "https://fmvoley.com/clasificaciones-y-resultados",
   social: {
     instagram: "#",
     facebook: "#",
@@ -16,12 +16,12 @@ export const site = {
 };
 
 export const nav = [
-  { href: "#inicio", label: "Inicio" },
-  { href: "#club", label: "El Club" },
-  { href: "#equipos", label: "Equipos" },
-  { href: "#logros", label: "Logros" },
-  { href: "#tienda", label: "Tienda" },
-  { href: "#inscripciones", label: "Inscríbete" },
+  { href: "/#inicio", label: "Inicio" },
+  { href: "/#club", label: "El Club" },
+  { href: "/#equipos", label: "Equipos" },
+  { href: "/#logros", label: "Logros" },
+  { href: "/#tienda", label: "Tienda" },
+  { href: "/#inscripciones", label: "Inscríbete" },
 ];
 
 export const cifras = [

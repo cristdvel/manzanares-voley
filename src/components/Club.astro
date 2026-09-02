@@ -1,5 +1,5 @@
 ---
-import { clubImg, staffImg, quienesSomos, mvv, valores, pilares, staff } from "../data/contenido";
+import { clubImg, staffImg, quienesSomos, mvv, valores, pilares } from "../data/contenido";
 ---
 <!-- Presentación -->
 <div class="section">
@@ -72,22 +72,13 @@ import { clubImg, staffImg, quienesSomos, mvv, valores, pilares, staff } from ".
       <div>
         <span class="eyebrow">Las personas del club</span>
         <h2 class="section-title">Nuestro equipo</h2>
-        <p>Un cuerpo técnico titulado y un equipo de coordinación y delegación que sostienen el día a día de 25 equipos, curso tras curso.</p>
-        <p class="staff-note">(Nombres y fotos del staff pendientes de confirmar por el club)</p>
+        <p>Detrás de los 25 equipos hay un cuerpo técnico titulado y un equipo de coordinación, delegación y junta directiva que sostienen el club curso tras curso. La mayoría empezaron como madres, padres o jugadoras y hoy siguen vinculados desde otro rol.</p>
+        <p>Cada categoría cuenta con entrenador o entrenadora principal y, en muchos casos, un segundo técnico y un delegado o delegada de equipo. La preparación física y la coordinación de cantera trabajan de forma transversal para que la progresión de cada deportista tenga sentido desde Minivoley hasta adultos.</p>
+        <p class="staff-note">Nombres y fotos del cuerpo técnico y la directiva, pendientes de confirmar por el club.</p>
       </div>
       <figure class="foto foto--4x3">
         <img src={staffImg} alt="Charla de equipo durante un tiempo muerto" loading="lazy" />
       </figure>
-    </div>
-
-    <div class="staff">
-      {staff.map((m) => (
-        <div class="member">
-          <div class="member__avatar" aria-hidden="true">?</div>
-          <div class="member__name">[Nombre]</div>
-          <div class="member__role">{m.role}</div>
-        </div>
-      ))}
     </div>
   </div>
 </div>

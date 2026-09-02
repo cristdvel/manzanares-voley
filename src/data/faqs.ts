@@ -24,8 +24,4 @@ export const faqs: Faq[] = [
     q: "¿Qué incluye la cuota?",
     a: "Entrenamiento, licencia federativa y seguro deportivo. Las cuotas se informan al inscribirse.",
   },
-  {
-    q: "¿Hay equipos mixtos?",
-    a: "Sí. Minivoley, Benjamín y la Escuela de Adultos son mixtos.",
-  },
 ];
