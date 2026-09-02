@@ -76,12 +76,26 @@ p:last-child{margin-bottom:0}
   display:flex;align-items:center;gap:10px;font-family:"Anton",sans-serif;
   font-size:22px;text-transform:uppercase;letter-spacing:.04em;color:var(--mzv-naranja);
 }
-/* Logo oficial (monocromo blanco) */
-.brand{height:62px;width:auto;display:block}
-.brand--footer{height:84px}
+/* Logo — lockup horizontal en la cabecera */
+.brand{display:inline-flex;align-items:center;gap:12px;line-height:1}
+.brand__icon{height:44px;width:auto;display:block;flex-shrink:0}
+.brand__word{display:inline-grid;line-height:1}
+.brand__manzanares{
+  font-family:"Anton",Impact,sans-serif;text-transform:uppercase;letter-spacing:.06em;
+  font-size:24px;color:var(--mzv-alt-titulo);
+}
+.brand__voley{
+  font-family:"Pacifico","Brush Script MT",cursive;font-size:21px;color:#fff;
+  justify-self:end;margin-top:-6px;margin-right:-2px;
+}
+/* Logo apilado (footer) */
+.brand--stacked{height:96px;width:auto;display:block}
 .ani-mark{height:1.9em;width:auto;vertical-align:-.62em;margin-right:.15em}
 @media (max-width:560px){
-  .brand{height:52px}
+  .brand__icon{height:38px}
+  .brand__manzanares{font-size:20px}
+  .brand__voley{font-size:17px}
+  .brand--stacked{height:78px}
 }
 
 /* Fotos reales dentro de secciones */
