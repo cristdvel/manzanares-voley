@@ -1,3 +1,3 @@
-# Redirige el subdominio www al dominio principal.
-# Requiere que www.manzanaresvoley.com también apunte al proyecto de Cloudflare Pages.
-https://www.manzanaresvoley.com/* https://manzanaresvoley.com/:splat 301!
+# Cloudflare Pages solo evalua rutas en _redirects, no el hostname, asi que
+# el redirect www -> dominio raiz se hace con una "Redirect Rule" en el panel
+# de Cloudflare (ver DEPLOY.md). Este archivo queda para futuras reglas de ruta.
