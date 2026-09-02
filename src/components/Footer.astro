@@ -23,7 +23,7 @@ import LogoLockup from "./LogoLockup.astro";
         <h4>Contacto</h4>
         <ul>
           <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
-          <li>{site.telefono}</li>
+          <li><a href={`tel:+34${site.telefono.replace(/\s/g, "")}`}>{site.telefono}</a></li>
           <li>{site.ciudad}</li>
         </ul>
       </div>

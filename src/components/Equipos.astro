@@ -37,10 +37,20 @@ import { site } from "../data/site";
 
 <!-- Clasificaciones -->
 <div class="section section--crema">
-  <div class="container clasif">
-    <h2 class="section-title">Clasificaciones y resultados</h2>
-    <p>Todos nuestros equipos federados compiten en la Federación de Madrid de Voleibol. Consulta calendarios, resultados y clasificaciones actualizados en su web oficial.</p>
-    <a href={site.fmvb} target="_blank" rel="noopener" class="btn btn--primary btn--lg">Ver clasificaciones en la FMVoley →</a>
+  <div class="container">
+    <div class="clasif">
+      <h2 class="section-title">Clasificaciones y resultados</h2>
+      <p>Nuestros equipos federados compiten en la Federación de Madrid de Voleibol. Elige competición y grupo en el buscador para ver la clasificación y los resultados en directo.</p>
+      <a href={site.fmvb} target="_blank" rel="noopener" class="btn btn--outline">Abrir en fmvoley.com ↗</a>
+    </div>
+    <div class="clasif-embed">
+      <iframe
+        title="Clasificaciones y resultados — Federación de Madrid de Voleibol"
+        src={site.fmvb}
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
   </div>
 </div>
 
@@ -52,8 +62,8 @@ import { site } from "../data/site";
     <div class="sedes">
       <div class="mapa">
         <iframe
-          title="Ubicación del Pabellón Tomás Bretón"
-          src="https://www.google.com/maps?q=Pabell%C3%B3n%20Deportivo%20Tom%C3%A1s%20Bret%C3%B3n%2C%20Madrid&z=14&output=embed"
+          title="Ubicación del Club Voleibol Manzanares"
+          src="https://www.google.com/maps?q=Calle%20Duquesa%20de%20Parcet%20116%2C%2028047%20Madrid&z=14&output=embed"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           allowfullscreen

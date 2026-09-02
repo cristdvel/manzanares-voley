@@ -5,8 +5,8 @@ export const site = {
     "Club de voleibol en Madrid desde 2016. 25 equipos, +325 deportistas, cantera y competición federada.",
   url: "https://manzanaresvoley.com",
   email: "info@manzanaresvoley.com",
-  telefono: "[teléfono por confirmar]",
-  ciudad: "Madrid · Distrito Arganzuela",
+  telefono: "695 04 58 19",
+  ciudad: "Calle Duquesa de Parcet 116 · 28047 Madrid",
   fmvb: "https://fmvoley.com/clasificaciones-y-resultados",
   social: {
     instagram: "#",

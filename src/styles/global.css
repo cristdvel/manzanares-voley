@@ -12,10 +12,10 @@
   --mzv-texto:       #928F87;
   --mzv-alt-titulo:  #FFFEFE;
   --mzv-alt-texto:   #A39C8A;
-  --header-h: 72px;
+  --header-h: 84px;
 }
 
-html{scroll-behavior:smooth;scroll-padding-top:88px}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
 body{
   font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   font-size:16px;line-height:1.625;color:var(--mzv-texto);background:#fff;
@@ -76,20 +76,12 @@ p:last-child{margin-bottom:0}
   display:flex;align-items:center;gap:10px;font-family:"Anton",sans-serif;
   font-size:22px;text-transform:uppercase;letter-spacing:.04em;color:var(--mzv-naranja);
 }
-/* Lockup del logo: icono real del club + wordmark */
-.brand{display:inline-flex;align-items:center;gap:11px;line-height:1}
-.brand__icon{height:38px;width:auto;display:block;flex-shrink:0}
-.brand__word{display:inline-grid;line-height:1}
-.brand__manzanares{font-family:"Anton",Impact,sans-serif;text-transform:uppercase;letter-spacing:.055em;font-size:21px;color:var(--mzv-alt-titulo)}
-.brand__voley{font-family:"Pacifico","Brush Script MT",cursive;font-size:19px;color:#fff;justify-self:end;margin-top:-5px;margin-right:-1px}
-.brand--footer .brand__icon{height:42px}
-.brand--footer .brand__manzanares{font-size:23px}
-.brand--footer .brand__voley{font-size:21px}
-.ani-mark{height:1.7em;width:auto;vertical-align:-.5em;margin-right:.15em}
+/* Logo oficial (monocromo blanco) */
+.brand{height:62px;width:auto;display:block}
+.brand--footer{height:84px}
+.ani-mark{height:1.9em;width:auto;vertical-align:-.62em;margin-right:.15em}
 @media (max-width:560px){
-  .brand__icon{height:33px}
-  .brand__manzanares{font-size:18px}
-  .brand__voley{font-size:16px}
+  .brand{height:52px}
 }
 
 /* Fotos reales dentro de secciones */
@@ -237,8 +229,14 @@ p:last-child{margin-bottom:0}
 .team__meta{font-size:14px;color:var(--mzv-texto);margin-top:10px}
 
 /* ---------- Clasificaciones ---------- */
-.clasif{text-align:center}
-.clasif p{max-width:640px;margin:0 auto 28px}
+.clasif{text-align:center;margin-bottom:36px}
+.clasif p{max-width:640px;margin:0 auto 20px}
+.clasif-embed{
+  border:1px solid var(--mzv-borde);border-radius:12px;overflow:hidden;background:#fff;
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+.clasif-embed iframe{display:block;width:100%;height:1000px;border:0}
+@media (max-width:768px){.clasif-embed iframe{height:1200px}}
 
 /* ---------- Sedes ---------- */
 .sedes{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:start}
