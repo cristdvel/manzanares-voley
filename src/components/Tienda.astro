@@ -9,8 +9,8 @@ import { productos } from "../data/contenido";
       {productos.map((p) => (
         <article class="producto">
           <div class="placeholder placeholder--accion">
-            <img src={p.img} alt="" loading="lazy" onerror="this.remove()" />
-            <span class="placeholder__label">Foto pendiente</span>
+            {p.img && <img src={p.img} alt="" loading="lazy" onerror="this.remove()" />}
+            {!p.img && <span class="placeholder__label">Foto pendiente</span>}
           </div>
           <div class="producto__body">
             <h3>{p.titulo}</h3>

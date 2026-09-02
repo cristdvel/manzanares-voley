@@ -1,10 +1,15 @@
 ---
 import { hitos, palmares } from "../data/historia";
+import { historiaImg } from "../data/contenido";
 ---
 <div class="section">
   <div class="container">
     <span class="eyebrow">Logros</span>
     <h2 class="section-title">Una década de historia</h2>
+    <figure class="foto foto--wide logros__foto">
+      <img src={historiaImg} alt="Plantilla del club en la temporada 2017/2018" loading="lazy" />
+      <figcaption>Plantilla de la temporada 2017/2018.</figcaption>
+    </figure>
     <div class="timeline">
       {hitos.map((h) => (
         <div class="hito">

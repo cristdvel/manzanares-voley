@@ -1,5 +1,5 @@
 ---
-import { clubImg, quienesSomos, mvv, valores, pilares, staff } from "../data/contenido";
+import { clubImg, staffImg, quienesSomos, mvv, valores, pilares, staff } from "../data/contenido";
 ---
 <!-- Presentación -->
 <div class="section">
@@ -10,10 +10,9 @@ import { clubImg, quienesSomos, mvv, valores, pilares, staff } from "../data/con
         <h2 class="section-title">Quiénes somos</h2>
         {quienesSomos.map((parrafo) => <p>{parrafo}</p>)}
       </div>
-      <div class="placeholder placeholder--persona">
-        <img src={clubImg} alt="" loading="lazy" onerror="this.remove()" />
-        <span class="placeholder__label">Foto del club · Foto pendiente</span>
-      </div>
+      <figure class="foto foto--4x3">
+        <img src={clubImg} alt="La comunidad de Manzanares Voley con la bandera del club" loading="lazy" />
+      </figure>
     </div>
   </div>
 </div>
@@ -69,8 +68,18 @@ import { clubImg, quienesSomos, mvv, valores, pilares, staff } from "../data/con
 <!-- Staff -->
 <div class="section section--crema">
   <div class="container">
-    <span class="eyebrow">Las personas del club</span>
-    <h2 class="section-title">Nuestro equipo</h2>
+    <div class="split">
+      <div>
+        <span class="eyebrow">Las personas del club</span>
+        <h2 class="section-title">Nuestro equipo</h2>
+        <p>Un cuerpo técnico titulado y un equipo de coordinación y delegación que sostienen el día a día de 25 equipos, curso tras curso.</p>
+        <p class="staff-note">(Nombres y fotos del staff pendientes de confirmar por el club)</p>
+      </div>
+      <figure class="foto foto--4x3">
+        <img src={staffImg} alt="Charla de equipo durante un tiempo muerto" loading="lazy" />
+      </figure>
+    </div>
+
     <div class="staff">
       {staff.map((m) => (
         <div class="member">
@@ -80,6 +89,5 @@ import { clubImg, quienesSomos, mvv, valores, pilares, staff } from "../data/con
         </div>
       ))}
     </div>
-    <p class="staff-note">(Nombres reales pendientes de confirmar por el club)</p>
   </div>
 </div>

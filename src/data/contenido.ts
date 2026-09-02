@@ -1,12 +1,11 @@
 // Textos largos de las secciones "El Club" y "Tienda".
-// Reemplazar imágenes de Unsplash por fotos reales antes del lanzamiento.
+// Fotos reales del club en /public/img/ (fuente original: "Manzanares Voley/Web").
 
-export const unsplash = (id: string, w = 1200) =>
-  `https://images.unsplash.com/photo-${id}?w=${w}&q=80`;
-
-export const heroImg = unsplash("1592656094267-764a45160876", 1600);
-export const tiendaStripImg = unsplash("1571902943202-507ec2618e8f");
-export const clubImg = unsplash("1612872087720-bb876e2e67d1");
+export const heroImg = "/img/hero.jpg";
+export const clubImg = "/img/club-familia.jpg";
+export const tiendaStripImg = "/img/equipacion.jpg";
+export const historiaImg = "/img/historia.jpg";
+export const staffImg = "/img/staff.jpg";
 
 export const quienesSomos = [
   "El Club Manzanares Voley nació en abril de 2016 de la mano de un grupo de padres y madres comprometidos. Su motivación era sencilla pero poderosa: dar continuidad deportiva y competitiva a sus hijas cuando terminaban su etapa en el colegio.",
@@ -89,22 +88,22 @@ export const staff = [
 
 export const productos = [
   {
-    img: unsplash("1517649763962-0c623066013b"),
+    img: "/img/equipacion.jpg",
     titulo: "Equipación de juego",
     texto: "Camiseta, pantalón y medias oficiales del club.",
   },
   {
-    img: unsplash("1556821840-3a63f95609a7"),
+    img: "",
     titulo: "Sudaderas y ropa de entreno",
     texto: "Sudaderas, cortavientos y camisetas técnicas.",
   },
   {
-    img: unsplash("1579952363873-27f3bade9f55"),
+    img: "",
     titulo: "Accesorios",
     texto: "Balones, mochilas y complementos del club.",
   },
   {
-    img: unsplash("1560089000-7433a4ebbd64"),
+    img: "",
     titulo: "Colección 10º Aniversario",
     texto: "Tazas, camisetas conmemorativas y detalles de la década.",
   },

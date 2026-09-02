@@ -1,0 +1,15 @@
+---
+// Lockup horizontal para cabeceras sobre fondo oscuro:
+// icono real del club + "MANZANARES" (Anton) + "voley" (Pacifico).
+interface Props {
+  class?: string;
+}
+const { class: className = "" } = Astro.props;
+---
+<span class={`brand ${className}`.trim()}>
+  <img src="/img/logo-icono.png" alt="" class="brand__icon" width="41" height="40" />
+  <span class="brand__word">
+    <span class="brand__manzanares">Manzanares</span>
+    <span class="brand__voley">voley</span>
+  </span>
+</span>
