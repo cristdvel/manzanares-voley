@@ -14,7 +14,7 @@ const destacados = productos.slice(0, 3);
       {destacados.map((p) => (
         <a class="producto" href="/tienda">
           <div class="producto__img">
-            <img src={p.imagenes[0]} alt={p.nombre} loading="lazy" />
+            <img src={p.imagenes[0].src} alt={p.nombre} loading="lazy" />
           </div>
           <div class="producto__body">
             <h3>{p.nombre}</h3>

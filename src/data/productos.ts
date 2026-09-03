@@ -8,6 +8,12 @@ export interface Variante {
   opciones: string[];
 }
 
+export interface Imagen {
+  src: string;
+  /** opción de variante a la que corresponde esta imagen (p. ej. "Gatos"). */
+  variante?: string;
+}
+
 export interface Producto {
   id: string;
   nombre: string;
@@ -15,15 +21,14 @@ export interface Producto {
   precio: number;
   resumen: string;
   descripcion: string;
-  imagenes: string[];
+  imagenes: Imagen[];
   caracteristicas: string[];
   variantes: Variante[];
   tallas: string[];
   disponible: boolean;
 }
 
-const TALLAS_JUEGO = ["4XS", "3XS", "2XS", "XS", "S", "M", "L", "XL", "XXL"];
-const TALLAS_ROPA = ["6", "8", "10", "12", "14", "XS", "S", "M", "L", "XL"];
+const TALLAS = ["XS", "S", "M", "L", "XL"];
 const TALLA_UNICA = ["Única"];
 
 export const productos: Producto[] = [
@@ -36,10 +41,10 @@ export const productos: Producto[] = [
     descripcion:
       "Camiseta oficial de competición de la colección del 10º aniversario, disponible en los dos diseños conmemorativos: «Gatos» y «Claveles». Sublimación total, escudo del aniversario y corte pensado para el juego. Es la prenda que se usa en todos los partidos federados y municipales.",
     imagenes: [
-      "/img/equipacion/gatos-frente.png",
-      "/img/equipacion/gatos-espalda.png",
-      "/img/equipacion/claveles-frente.png",
-      "/img/equipacion/claveles-espalda.png",
+      { src: "/img/equipacion/gatos-frente.png", variante: "Gatos" },
+      { src: "/img/equipacion/gatos-espalda.png", variante: "Gatos" },
+      { src: "/img/equipacion/claveles-frente.png", variante: "Claveles" },
+      { src: "/img/equipacion/claveles-espalda.png", variante: "Claveles" },
     ],
     caracteristicas: [
       "Tejido técnico 100% poliéster, ligero y transpirable",
@@ -49,7 +54,7 @@ export const productos: Producto[] = [
       "Personalizable con nombre y dorsal (indícalo en las notas del pedido)",
     ],
     variantes: [{ nombre: "Diseño", opciones: ["Gatos", "Claveles"] }],
-    tallas: TALLAS_JUEGO,
+    tallas: TALLAS,
     disponible: true,
   },
   {
@@ -60,7 +65,10 @@ export const productos: Producto[] = [
     resumen: "Malla corta a juego con la camiseta, en «Gatos» y «Claveles».",
     descripcion:
       "Malla corta a juego con la camiseta, en los dos diseños del aniversario. Ajuste ceñido que no limita el movimiento y cintura ancha que no marca. Diseñada para que la lleven cómoda todas las categorías.",
-    imagenes: ["/img/equipacion/malla-gatos.png", "/img/equipacion/malla-claveles.png"],
+    imagenes: [
+      { src: "/img/equipacion/malla-gatos.png", variante: "Gatos" },
+      { src: "/img/equipacion/malla-claveles.png", variante: "Claveles" },
+    ],
     caracteristicas: [
       "Tejido elástico en 4 direcciones",
       "Cintura ancha que no marca",
@@ -68,7 +76,7 @@ export const productos: Producto[] = [
       "Secado rápido",
     ],
     variantes: [{ nombre: "Diseño", opciones: ["Gatos", "Claveles"] }],
-    tallas: TALLAS_JUEGO,
+    tallas: TALLAS,
     disponible: true,
   },
   {
@@ -79,7 +87,10 @@ export const productos: Producto[] = [
     resumen: "Camiseta técnica para el día a día. Corte femenino o masculino.",
     descripcion:
       "Camiseta técnica para los entrenamientos del día a día, en naranja con mangas negras y el logo del club en el pecho. Disponible en corte femenino y masculino para que siente bien a todo el mundo.",
-    imagenes: ["/img/equipacion/entreno-fem.png", "/img/equipacion/entreno-masc.png"],
+    imagenes: [
+      { src: "/img/equipacion/entreno-fem.png", variante: "Femenino" },
+      { src: "/img/equipacion/entreno-masc.png", variante: "Masculino" },
+    ],
     caracteristicas: [
       "Poliéster técnico transpirable",
       "Logo del club estampado en el pecho",
@@ -87,7 +98,7 @@ export const productos: Producto[] = [
       "Uso recomendado para todas las categorías",
     ],
     variantes: [{ nombre: "Corte", opciones: ["Femenino", "Masculino"] }],
-    tallas: TALLAS_ROPA,
+    tallas: TALLAS,
     disponible: true,
   },
   {
@@ -98,7 +109,10 @@ export const productos: Producto[] = [
     resumen: "Sudadera con capucha gris con el logo «10 aniversario».",
     descripcion:
       "Sudadera con capucha gris jaspeado, con el logo «10 aniversario» en el pecho y las huellas en la espalda. La pieza estrella de la colección: para el pabellón, el cole o la calle.",
-    imagenes: ["/img/equipacion/sudadera-frente.png", "/img/equipacion/sudadera-espalda.png"],
+    imagenes: [
+      { src: "/img/equipacion/sudadera-frente.png" },
+      { src: "/img/equipacion/sudadera-espalda.png" },
+    ],
     caracteristicas: [
       "Mezcla algodón/poliéster, interior tipo felpa",
       "Capucha con cordón y bolsillo canguro",
@@ -106,7 +120,7 @@ export const productos: Producto[] = [
       "Unisex",
     ],
     variantes: [],
-    tallas: TALLAS_ROPA,
+    tallas: TALLAS,
     disponible: true,
   },
   {
@@ -117,7 +131,7 @@ export const productos: Producto[] = [
     resumen: "Abrigo acolchado negro con capucha para el invierno.",
     descripcion:
       "Abrigo acolchado negro con capucha, para los pabellones fríos y los desplazamientos de invierno. Ligero pero cálido, con el logo del club y el dorsal bordados.",
-    imagenes: ["/img/equipacion/abrigo.png"],
+    imagenes: [{ src: "/img/equipacion/abrigo.png" }],
     caracteristicas: [
       "Acolchado ligero y cálido",
       "Capucha fija, cierre de cremallera",
@@ -125,7 +139,7 @@ export const productos: Producto[] = [
       "Logo del club y dorsal bordados",
     ],
     variantes: [],
-    tallas: TALLAS_ROPA,
+    tallas: TALLAS,
     disponible: true,
   },
   {
@@ -136,7 +150,7 @@ export const productos: Producto[] = [
     resumen: "Mochila negra con compartimento inferior para el calzado.",
     descripcion:
       "Mochila negra con compartimento inferior separado para el calzado y el logo del club estampado. La que usan todos los equipos para entrenar y competir.",
-    imagenes: ["/img/equipacion/mochila.png"],
+    imagenes: [{ src: "/img/equipacion/mochila.png" }],
     caracteristicas: [
       "Compartimento inferior separado para botas/zapatillas",
       "Bolsillo grande principal + bolsillo frontal",

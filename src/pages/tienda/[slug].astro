@@ -21,7 +21,7 @@ const productSchema = {
   "@type": "Product",
   name: p.nombre,
   category: p.categoria,
-  image: p.imagenes.map((i) => new URL(i, site.url).href),
+  image: p.imagenes.map((i) => new URL(i.src, site.url).href),
   description: p.descripcion,
   brand: { "@type": "Brand", name: "Manzanares Voley" },
   offers: {
@@ -48,7 +48,7 @@ const breadcrumb = {
 <Base
   title={`${p.nombre} | Tienda Manzanares Voley`}
   description={p.resumen}
-  image={p.imagenes[0]}
+  image={p.imagenes[0].src}
   schemas={[productSchema, breadcrumb]}
 >
   <Header />
@@ -63,7 +63,7 @@ const breadcrumb = {
         <div class="pdp">
           <div class="pdp__gallery">
             <div class="pdp__main">
-              <img id="pdp-main" src={p.imagenes[0]} alt={p.nombre} width="600" height="600" />
+              <img id="pdp-main" src={p.imagenes[0].src} alt={p.nombre} width="600" height="600" />
             </div>
             {p.imagenes.length > 1 && (
               <div class="pdp__thumbs">
@@ -71,10 +71,11 @@ const breadcrumb = {
                   <button
                     type="button"
                     class={`pdp__thumb${i === 0 ? " is-on" : ""}`}
-                    data-src={img}
+                    data-src={img.src}
+                    data-variante={img.variante}
                     aria-label={`Imagen ${i + 1}`}
                   >
-                    <img src={img} alt="" loading="lazy" />
+                    <img src={img.src} alt="" loading="lazy" />
                   </button>
                 ))}
               </div>
@@ -103,7 +104,7 @@ const breadcrumb = {
                 <label>
                   Talla <span class="req">*</span>
                   <select data-opt="talla" required>
-                    <option value="">Elige…</option>
+                    {p.tallas.length > 1 && <option value="">Elige…</option>}
                     {p.tallas.map((t) => <option value={t}>{t}</option>)}
                   </select>
                 </label>
@@ -181,7 +182,7 @@ const breadcrumb = {
             {relacionados.map((r) => (
               <a class="card-prod" href={`/tienda/${r.id}`}>
                 <div class="card-prod__img">
-                  <img src={r.imagenes[0]} alt={r.nombre} loading="lazy" />
+                  <img src={r.imagenes[0].src} alt={r.nombre} loading="lazy" />
                 </div>
                 <div class="card-prod__body">
                   <h3>{r.nombre}</h3>
@@ -201,12 +202,25 @@ const breadcrumb = {
 <script>
   // Galería
   const main = document.getElementById("pdp-main") as HTMLImageElement | null;
-  document.querySelectorAll<HTMLButtonElement>(".pdp__thumb").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      if (main) main.src = btn.dataset.src || main.src;
-      document.querySelectorAll(".pdp__thumb").forEach((t) => t.classList.toggle("is-on", t === btn));
+  const thumbs = Array.from(document.querySelectorAll<HTMLButtonElement>(".pdp__thumb"));
+
+  function mostrar(btn: HTMLButtonElement | undefined) {
+    if (!btn || !main) return;
+    main.src = btn.dataset.src || main.src;
+    thumbs.forEach((t) => t.classList.toggle("is-on", t === btn));
+  }
+  thumbs.forEach((btn) => btn.addEventListener("click", () => mostrar(btn)));
+
+  // Al elegir modelo/variante, cambia la foto principal a la de ese modelo
+  document
+    .querySelectorAll<HTMLSelectElement>('.pdp__opts select[data-opt]:not([data-opt="talla"])')
+    .forEach((sel) => {
+      sel.addEventListener("change", () => {
+        const v = sel.value;
+        if (!v) return;
+        mostrar(thumbs.find((t) => t.dataset.variante === v));
+      });
     });
-  });
 
   // Pedido
   const form = document.getElementById("pedido-form") as HTMLFormElement | null;
