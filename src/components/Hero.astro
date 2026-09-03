@@ -2,7 +2,17 @@
 import { heroImg } from "../data/contenido";
 ---
 <div class="hero">
-  <img class="hero__media" src={heroImg} alt="" aria-hidden="true" onerror="this.remove()" />
+  <img
+    class="hero__media"
+    src={heroImg}
+    alt=""
+    aria-hidden="true"
+    width="1600"
+    height="1066"
+    fetchpriority="high"
+    decoding="async"
+    onerror="this.remove()"
+  />
   <div class="hero__overlay"></div>
   <div class="container hero__inner">
     <h1>Pasión · Equipo · Voleibol</h1>
