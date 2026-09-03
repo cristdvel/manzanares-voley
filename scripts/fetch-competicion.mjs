@@ -161,6 +161,20 @@ async function main() {
     ultimos,
   };
 
+  // Solo reescribir si cambió algo más que la marca de tiempo, para no
+  // ensuciar el historial con commits que solo tocan "actualizado".
+  const sinFecha = (o) => JSON.stringify({ ...o, actualizado: null });
+  let previo = null;
+  try {
+    previo = JSON.parse(await readFile(OUT, "utf8"));
+  } catch {
+    /* primera ejecución */
+  }
+  if (previo && sinFecha(previo) === sinFecha(data)) {
+    console.log("\n= Sin cambios en calendario ni clasificación; no se reescribe.");
+    return;
+  }
+
   await writeFile(OUT, JSON.stringify(data, null, 2) + "\n");
   console.log(`\n✓ ${OUT} (${grupos.length} grupos, ${proximos.length} próximos, ${ultimos.length} resultados)`);
 }
