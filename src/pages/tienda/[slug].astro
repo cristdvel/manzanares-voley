@@ -1,0 +1,282 @@
+---
+import Base from "../../layouts/Base.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { productos, getRelacionados, type Producto } from "../../data/productos";
+import { site } from "../../data/site";
+
+export function getStaticPaths() {
+  return productos.map((p) => ({ params: { slug: p.id }, props: { producto: p } }));
+}
+
+interface Props {
+  producto: Producto;
+}
+const { producto: p } = Astro.props;
+const relacionados = getRelacionados(p);
+const url = site.url + "tienda/" + p.id + "/";
+
+const productSchema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: p.nombre,
+  category: p.categoria,
+  image: p.imagenes.map((i) => new URL(i, site.url).href),
+  description: p.descripcion,
+  brand: { "@type": "Brand", name: "Manzanares Voley" },
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+    availability: p.disponible
+      ? "https://schema.org/InStock"
+      : "https://schema.org/OutOfStock",
+    url,
+  },
+};
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
+    { "@type": "ListItem", position: 2, name: "Tienda", item: site.url + "tienda/" },
+    { "@type": "ListItem", position: 3, name: p.nombre, item: url },
+  ],
+};
+---
+
+<Base
+  title={`${p.nombre} | Tienda Manzanares Voley`}
+  description={p.resumen}
+  image={p.imagenes[0]}
+  schemas={[productSchema, breadcrumb]}
+>
+  <Header />
+  <main id="contenido">
+    <div class="pdp-wrap section">
+      <div class="container">
+        <nav class="crumbs" aria-label="Migas de pan">
+          <a href="/tienda">Tienda</a> <span aria-hidden="true">/</span>
+          <span>{p.categoria}</span>
+        </nav>
+
+        <div class="pdp">
+          <div class="pdp__gallery">
+            <div class="pdp__main">
+              <img id="pdp-main" src={p.imagenes[0]} alt={p.nombre} width="600" height="600" />
+            </div>
+            {p.imagenes.length > 1 && (
+              <div class="pdp__thumbs">
+                {p.imagenes.map((img, i) => (
+                  <button
+                    type="button"
+                    class={`pdp__thumb${i === 0 ? " is-on" : ""}`}
+                    data-src={img}
+                    aria-label={`Imagen ${i + 1}`}
+                  >
+                    <img src={img} alt="" loading="lazy" />
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+
+          <div class="pdp__summary">
+            <h1>{p.nombre}</h1>
+            <p class="pdp__cat">{p.categoria}</p>
+            <p class="pdp__price">{p.precio === 0 ? "0 €" : `${p.precio} €`}
+              <span class="pdp__price-note">provisional · el club te confirma el importe</span>
+            </p>
+            <p class="pdp__resumen">{p.resumen}</p>
+
+            <form id="pedido-form" class="pdp__form" data-producto={p.nombre} novalidate>
+              <div class="pdp__opts">
+                {p.variantes.map((v) => (
+                  <label>
+                    {v.nombre} <span class="req">*</span>
+                    <select data-opt={v.nombre} required>
+                      <option value="">Elige…</option>
+                      {v.opciones.map((o) => <option value={o}>{o}</option>)}
+                    </select>
+                  </label>
+                ))}
+                <label>
+                  Talla <span class="req">*</span>
+                  <select data-opt="talla" required>
+                    <option value="">Elige…</option>
+                    {p.tallas.map((t) => <option value={t}>{t}</option>)}
+                  </select>
+                </label>
+                <label class="pdp__qty">
+                  Unidades
+                  <input type="number" data-opt="cantidad" min="1" max="20" value="1" />
+                </label>
+              </div>
+
+              <hr class="pdp__sep" />
+
+              <div class="field">
+                <label for="p-nombre">Nombre y apellidos <span class="req">*</span></label>
+                <input type="text" id="p-nombre" name="nombre" required autocomplete="name" />
+              </div>
+              <div class="field">
+                <label for="p-email">Email <span class="req">*</span></label>
+                <input type="email" id="p-email" name="email" required autocomplete="email" />
+              </div>
+              <div class="field">
+                <label for="p-tel">Teléfono <span class="req">*</span></label>
+                <input type="tel" id="p-tel" name="telefono" required autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label for="p-notas">Notas (nombre y dorsal, aclaraciones de talla…)</label>
+                <textarea id="p-notas" name="notas" rows="2"></textarea>
+              </div>
+              <div class="field" id="field-file">
+                <label for="p-file">Comprobante de pago <span class="req">*</span></label>
+                <input type="file" id="p-file" name="comprobante" accept="image/*,application/pdf" required />
+                <span class="error-msg">Es obligatorio adjuntar el justificante de la transferencia (imagen o PDF, máx. 8 MB).</span>
+              </div>
+
+              <label class="check" for="p-priv">
+                <input type="checkbox" id="p-priv" required />
+                <span>He leído y acepto la <a href="/privacidad" target="_blank" rel="noopener">política de privacidad</a>. <span class="req">*</span></span>
+              </label>
+
+              <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
+
+              <button type="submit" class="btn btn--primary btn--lg" id="pedido-submit">Realizar pedido</button>
+              <p class="form-note">Recibimos tu pedido por email y te contestamos en menos de 48 h para cerrar la entrega.</p>
+            </form>
+
+            <div id="pedido-ok" class="form-success" role="status">
+              <strong>¡Pedido recibido!</strong><br />
+              Tu pedido y el comprobante han llegado al club. Te escribimos para confirmar
+              tallas y recogida.
+            </div>
+            <div id="pedido-error" class="pedido-error" role="alert" hidden></div>
+          </div>
+        </div>
+
+        <div class="pdp__info">
+          <div>
+            <h2 class="section-title">Descripción</h2>
+            <p>{p.descripcion}</p>
+          </div>
+          <div>
+            <h2 class="section-title">Características</h2>
+            <ul class="pdp__feats">
+              {p.caracteristicas.map((c) => <li>{c}</li>)}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {relacionados.length > 0 && (
+      <section class="section section--crema">
+        <div class="container">
+          <span class="eyebrow">También te puede servir</span>
+          <h2 class="section-title">Artículos relacionados</h2>
+          <div class="shop__grid">
+            {relacionados.map((r) => (
+              <a class="card-prod" href={`/tienda/${r.id}`}>
+                <div class="card-prod__img">
+                  <img src={r.imagenes[0]} alt={r.nombre} loading="lazy" />
+                </div>
+                <div class="card-prod__body">
+                  <h3>{r.nombre}</h3>
+                  <p class="card-prod__resumen">{r.resumen}</p>
+                  <span class="card-prod__cta">Ver artículo →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+  </main>
+  <Footer />
+</Base>
+
+<script>
+  // Galería
+  const main = document.getElementById("pdp-main") as HTMLImageElement | null;
+  document.querySelectorAll<HTMLButtonElement>(".pdp__thumb").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      if (main) main.src = btn.dataset.src || main.src;
+      document.querySelectorAll(".pdp__thumb").forEach((t) => t.classList.toggle("is-on", t === btn));
+    });
+  });
+
+  // Pedido
+  const form = document.getElementById("pedido-form") as HTMLFormElement | null;
+  const okEl = document.getElementById("pedido-ok")!;
+  const errEl = document.getElementById("pedido-error")!;
+  const submitBtn = document.getElementById("pedido-submit") as HTMLButtonElement;
+  const fileEl = document.getElementById("p-file") as HTMLInputElement;
+  const fieldFile = document.getElementById("field-file")!;
+
+  form?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    errEl.hidden = true;
+
+    // opciones de producto
+    const opts: Record<string, string> = {};
+    let faltaOpt = false;
+    form.querySelectorAll<HTMLSelectElement | HTMLInputElement>("[data-opt]").forEach((el) => {
+      const k = (el as HTMLElement).dataset.opt!;
+      const v = el.value.trim();
+      opts[k] = v;
+      if (k !== "cantidad" && !v) {
+        faltaOpt = true;
+        el.classList.add("prod__opt--err");
+      } else {
+        el.classList.remove("prod__opt--err");
+      }
+    });
+
+    // archivo OBLIGATORIO
+    const f = fileEl.files && fileEl.files[0];
+    const fileMal = !f || f.size === 0 || f.size > 8 * 1024 * 1024;
+    fieldFile.classList.toggle("field--error", !!fileMal);
+
+    if (faltaOpt || fileMal || !form.checkValidity()) {
+      if (!faltaOpt && !fileMal) form.reportValidity();
+      return;
+    }
+
+    const variante = Object.keys(opts)
+      .filter((k) => k !== "talla" && k !== "cantidad")
+      .map((k) => opts[k])
+      .join(" · ");
+    const linea = {
+      nombre: form.dataset.producto,
+      variante,
+      talla: opts.talla,
+      cantidad: Math.max(1, Math.min(20, parseInt(opts.cantidad || "1", 10))),
+    };
+
+    const fd = new FormData(form);
+    fd.append("pedido", JSON.stringify([linea]));
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Enviando…";
+    try {
+      const res = await fetch("/api/pedido", { method: "POST", body: fd });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok && data.ok) {
+        form.style.display = "none";
+        okEl.classList.add("show");
+        okEl.scrollIntoView({ behavior: "smooth", block: "center" });
+      } else {
+        throw new Error(data.error || "No se pudo enviar el pedido.");
+      }
+    } catch (err) {
+      errEl.textContent = (err as Error).message + " Si sigue fallando, escríbenos por email.";
+      errEl.hidden = false;
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Realizar pedido";
+    }
+  });
+</script>

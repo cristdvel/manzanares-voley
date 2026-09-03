@@ -17,6 +17,7 @@ const {
 
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const ogImage = new URL(image, site.url).href;
+const isHome = Astro.url.pathname === "/";
 const tel = "+34" + site.telefono.replace(/\s/g, "");
 const sameAs = [site.social.instagram, site.social.facebook, site.social.twitter].filter(
   (u) => u && u !== "#",
@@ -92,7 +93,7 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
     <meta name="generator" content={Astro.generator} />
     <script type="application/ld+json" set:html={JSON.stringify(allSchemas)} />
   </head>
-  <body>
+  <body class={isHome ? "is-home" : undefined}>
     <a href="#contenido" class="skip-link">Saltar al contenido</a>
     <slot />
 

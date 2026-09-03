@@ -1,0 +1,77 @@
+---
+import Base from "../../layouts/Base.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { productos, categoriasTienda } from "../../data/productos";
+import { site } from "../../data/site";
+
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
+    { "@type": "ListItem", position: 2, name: "Tienda oficial", item: site.url + "tienda/" },
+  ],
+};
+const itemList = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: productos.map((p, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    url: site.url + "tienda/" + p.id + "/",
+    name: p.nombre,
+  })),
+};
+---
+
+<Base
+  title="Tienda oficial | Manzanares Voley"
+  description="Equipación y material oficial del Club Voleibol Manzanares. Cada artículo con tallas, características y pedido online con comprobante de pago."
+  schemas={[breadcrumb, itemList]}
+>
+  <Header />
+  <main id="contenido">
+    <div class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Tienda</span>
+        <h1>Tienda oficial</h1>
+        <p>
+          Equipación y material del club. Entra en cada artículo para ver fotos, tallas y
+          características, y haz el pedido adjuntando el comprobante de la transferencia.
+          Recogida en el pabellón.
+        </p>
+      </div>
+    </div>
+
+    <section class="section shop">
+      <div class="container">
+        {categoriasTienda.map((cat) => (
+          <div class="shop__cat">
+            <h2 class="section-title">{cat}</h2>
+            <div class="shop__grid">
+              {productos
+                .filter((p) => p.categoria === cat)
+                .map((p) => (
+                  <a class="card-prod" href={`/tienda/${p.id}`}>
+                    <div class="card-prod__img">
+                      <img src={p.imagenes[0]} alt={p.nombre} loading="lazy" />
+                    </div>
+                    <div class="card-prod__body">
+                      <h3>{p.nombre}</h3>
+                      <p class="card-prod__resumen">{p.resumen}</p>
+                      <span class="card-prod__price">
+                        {p.precio === 0 ? "0 € · provisional" : `${p.precio} €`}
+                      </span>
+                      <span class="card-prod__cta">Ver artículo →</span>
+                    </div>
+                  </a>
+                ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Base>
