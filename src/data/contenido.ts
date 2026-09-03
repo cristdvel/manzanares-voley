@@ -76,35 +76,3 @@ export const pilares = [
       "Lo que se construye permanece. Cada generación deja el club un poco mejor de como lo encontró para la siguiente.",
   },
 ];
-
-export interface Producto {
-  img: string;
-  titulo: string;
-  texto: string;
-  href?: string; // si falta, la tarjeta no lleva botón "Ver productos"
-}
-
-export const productos: Producto[] = [
-  {
-    img: "/img/equipacion/gatos-frente.png",
-    titulo: "Equipación de juego",
-    texto: "Camisetas de juego «Gatos» y «Claveles», mallas y equipación oficial del 10º aniversario.",
-    href: "/equipacion",
-  },
-  {
-    img: "/img/equipacion/claveles-frente.png",
-    titulo: "Colección 10º Aniversario",
-    texto: "La colección conmemorativa de la década: equipaciones, sudadera y complementos.",
-    href: "/equipacion",
-  },
-  {
-    img: "/img/equipacion/sudadera-frente.png",
-    titulo: "Sudaderas y ropa de entreno",
-    texto: "Sudadera del 10º aniversario, camisetas de entreno y abrigo del club.",
-  },
-  {
-    img: "/img/equipacion/mochila.png",
-    titulo: "Accesorios",
-    texto: "Mochila oficial, balones y complementos del club.",
-  },
-];

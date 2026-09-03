@@ -21,6 +21,7 @@
 }
 
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
 
 :root{
   --mzv-naranja:     #DC3C14;
@@ -331,16 +332,16 @@ p:last-child{margin-bottom:0}
 .trofeo h3{font-size:18px;color:var(--mzv-alt-titulo);margin:12px 0 6px}
 .trofeo span{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mzv-verde)}
 
-/* ---------- Tienda ---------- */
-.tienda-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-.producto{background:#fff;border:1px solid var(--mzv-borde);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+/* ---------- Tienda (teaser en la home) ---------- */
+.tienda-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.producto{background:#fff;border:1px solid var(--mzv-borde);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease}
+.producto:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.07)}
 .producto__img{aspect-ratio:1/1;background:#fff;border-bottom:1px solid var(--mzv-borde);display:flex;align-items:center;justify-content:center;padding:14px}
 .producto__img img{width:100%;height:100%;object-fit:contain;display:block}
 .producto__body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
 .producto h3{font-size:18px}
 .producto__body p{font-size:14px}
-.producto .btn{margin-top:auto;align-self:flex-start}
-.producto__soon{margin-top:auto;align-self:flex-start;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--mzv-texto);border:1px solid var(--mzv-borde);border-radius:999px;padding:6px 14px}
+.producto__link{margin-top:auto;font-weight:600;color:var(--mzv-naranja);font-size:14px}
 
 /* ---------- Inscripciones ---------- */
 .insc-hero{background:var(--mzv-naranja);color:#fff;text-align:center;padding:84px 0 96px}
@@ -542,3 +543,55 @@ p:last-child{margin-bottom:0}
 .legal code{background:var(--mzv-crema);padding:2px 6px;border-radius:4px;font-size:.9em}
 .legal strong{color:var(--mzv-titulo)}
 .legal__note{margin-top:32px;padding:16px 18px;background:var(--mzv-crema);border-left:4px solid var(--mzv-verde);border-radius:0 8px 8px 0;font-size:14px}
+
+/* ---------- Tienda ---------- */
+.shop__cat + .shop__cat{margin-top:64px}
+.shop__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.prod{display:flex;flex-direction:column;background:#fff;border:1px solid var(--mzv-borde);border-radius:14px;overflow:hidden}
+.prod__media{position:relative;aspect-ratio:1/1;background:#fff;border-bottom:1px solid var(--mzv-borde);display:flex;align-items:center;justify-content:center;padding:16px}
+.prod__media img{width:100%;height:100%;object-fit:contain}
+.prod__dots{position:absolute;bottom:10px;left:50%;transform:translateX(-50%);display:flex;gap:6px}
+.prod__dot{width:8px;height:8px;border-radius:50%;border:0;background:var(--mzv-borde);cursor:pointer;padding:0}
+.prod__dot.is-on{background:var(--mzv-naranja)}
+.prod__body{padding:22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.prod__body h3{font-size:18px}
+.prod__price{font-weight:600;color:var(--mzv-titulo);font-size:14px;margin:0}
+.prod__desc{font-size:14px;margin:0}
+.prod__more{font-size:14px}
+.prod__more summary{cursor:pointer;font-weight:600;color:var(--mzv-naranja);list-style:revert}
+.prod__more ul{list-style:disc;padding-left:20px;margin:10px 0 0;color:var(--mzv-texto)}
+.prod__more li{margin-bottom:6px}
+.prod__opts{display:flex;flex-wrap:wrap;gap:12px;margin-top:4px}
+.prod__opts label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--mzv-titulo);flex:1 1 120px}
+.prod__opts select,.prod__opts input{padding:9px 10px;border:1px solid var(--mzv-borde);border-radius:6px;font:inherit;background:#fff;color:var(--mzv-titulo)}
+.prod__opts select:focus,.prod__opts input:focus{outline:2px solid var(--mzv-naranja);outline-offset:1px}
+.prod__opt--err{border-color:var(--mzv-naranja);background:#fdf2ef}
+.prod__qty{flex:0 0 76px}
+.prod__add{margin-top:auto;align-self:flex-start}
+.prod__added{font-size:13px;font-weight:600;color:var(--mzv-verde)}
+
+.cart-empty{max-width:560px;color:var(--mzv-texto)}
+.cart-list{list-style:none;margin:0 0 24px;padding:0;border:1px solid var(--mzv-borde);border-radius:12px;background:#fff}
+.cart-line{display:grid;grid-template-columns:1fr auto;gap:2px 14px;align-items:center;padding:14px 16px;border-bottom:1px solid var(--mzv-borde)}
+.cart-line:last-child{border-bottom:0}
+.cart-line__name{font-weight:600;color:var(--mzv-titulo)}
+.cart-line__meta{grid-column:1;font-size:13px;color:var(--mzv-texto)}
+.cart-line__del{grid-row:1 / span 2;grid-column:2;border:0;background:none;color:var(--mzv-texto);font-size:16px;cursor:pointer;padding:6px}
+.cart-line__del:hover{color:var(--mzv-naranja)}
+
+.pedido-form{max-width:600px;background:#fff;border:1px solid var(--mzv-borde);border-radius:14px;padding:32px}
+.pedido-form__intro{font-size:14px;color:var(--mzv-texto);margin-bottom:20px}
+.pedido-form textarea{width:100%;padding:12px 14px;border:1px solid var(--mzv-borde);border-radius:6px;font:inherit;color:var(--mzv-titulo);resize:vertical}
+.pedido-form input[type=file]{width:100%;font-size:14px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.pedido-error{margin-top:16px;background:#fdf2ef;border:1px solid var(--mzv-naranja);color:var(--mzv-naranja-hov);border-radius:10px;padding:16px;font-size:14px}
+
+.cart-fab{
+  position:fixed;right:18px;bottom:18px;z-index:120;background:var(--mzv-naranja);color:#fff;
+  padding:14px 22px;border-radius:999px;font-weight:600;font-size:14px;text-transform:uppercase;
+  letter-spacing:.04em;box-shadow:0 12px 30px rgba(220,60,20,.4);display:flex;gap:8px;align-items:center;
+}
+.cart-fab span{background:rgba(255,255,255,.25);border-radius:999px;min-width:22px;text-align:center;padding:1px 6px}
+
+@media (max-width:900px){.shop__grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.shop__grid{grid-template-columns:1fr}}

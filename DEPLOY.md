@@ -120,3 +120,34 @@ Cuando el dominio resuelva, Claude comprueba:
 - `astro.config.mjs` → `site: 'https://<dominio-final>'`
 - `public/robots.txt` y `public/_redirects` → mismo dominio
 - `src/data/site.ts` → `url`, `email`
+
+---
+
+## 5. Pedidos de la tienda (email con Resend)
+
+El formulario de `/tienda` envía cada pedido + el comprobante adjunto por email
+mediante la función `functions/api/pedido.ts` (Cloudflare Pages Functions) y
+**Resend**. Sin configurar la clave, el formulario devuelve un error controlado.
+
+1. Crea una cuenta en <https://resend.com> (plan gratuito: 3.000 emails/mes).
+2. **API Keys** → *Create API Key* (permiso *Sending access*). Copia la clave `re_...`.
+3. En Cloudflare → proyecto Pages → **Settings → Environment variables**
+   (entorno *Production* y *Preview*):
+
+   | Nombre           | Valor                                             |
+   | :--------------- | :------------------------------------------------ |
+   | `RESEND_API_KEY` | la clave `re_...`                                 |
+   | `PEDIDOS_TO`     | `manzanaresvoley@gmail.com` (opcional, es el valor por defecto) |
+   | `PEDIDOS_FROM`   | `Tienda Manzanares Voley <pedidos@manzanaresvoley.com>` (opcional) |
+
+4. **Remitente:**
+   - Rápido: deja `PEDIDOS_FROM` sin poner → usa `onboarding@resend.dev`
+     (funciona ya, pero puede caer en spam).
+   - Recomendado: en Resend → **Domains** → añade `manzanaresvoley.com` y crea
+     los registros DNS que te da (SPF/DKIM) en Cloudflare. Luego pon
+     `PEDIDOS_FROM` con una dirección `@manzanaresvoley.com`.
+5. Vuelve a desplegar (cualquier push) para que la función coja las variables.
+6. Prueba: haz un pedido en `/tienda` con un archivo pequeño y confirma que
+   llega el email.
+
+> Límite del adjunto: 8 MB (imagen o PDF). Se puede subir en `functions/api/pedido.ts`.

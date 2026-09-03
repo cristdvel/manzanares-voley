@@ -1,25 +1,29 @@
 ---
-import { productos } from "../data/contenido";
+import { productos } from "../data/productos";
+const destacados = productos.slice(0, 3);
 ---
 <div class="section section--crema">
   <div class="container">
     <span class="eyebrow">Tienda</span>
     <h2 class="section-title">Tienda oficial</h2>
+    <p class="section-intro">
+      Equipación de juego, ropa de entreno, sudadera del 10º aniversario y accesorios.
+      Haz tu pedido online y recógelo en el pabellón.
+    </p>
     <div class="tienda-grid">
-      {productos.map((p) => (
-        <article class="producto">
+      {destacados.map((p) => (
+        <a class="producto" href="/tienda">
           <div class="producto__img">
-            <img src={p.img} alt={p.titulo} loading="lazy" />
+            <img src={p.imagenes[0]} alt={p.nombre} loading="lazy" />
           </div>
           <div class="producto__body">
-            <h3>{p.titulo}</h3>
-            <p>{p.texto}</p>
-            {p.href
-              ? <a href={p.href} class="btn btn--primary">Ver productos</a>
-              : <span class="producto__soon">Próximamente</span>}
+            <h3>{p.nombre}</h3>
+            <p>{p.descripcion}</p>
+            <span class="producto__link">Ver en la tienda →</span>
           </div>
-        </article>
+        </a>
       ))}
     </div>
+    <a href="/tienda" class="btn btn--primary btn--lg" style="margin-top:32px">Ver toda la tienda</a>
   </div>
 </div>

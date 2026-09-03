@@ -21,7 +21,7 @@ export const nav = [
   { href: "/#equipos", label: "Equipos" },
   { href: "/calendario", label: "Calendario" },
   { href: "/#logros", label: "Logros" },
-  { href: "/#tienda", label: "Tienda" },
+  { href: "/tienda", label: "Tienda" },
 ];
 
 export const cifras = [
