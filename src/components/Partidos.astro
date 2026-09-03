@@ -19,8 +19,8 @@ const lista = proximos.slice(0, 3);
               <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
             </p>
             <p class="match__meta">
-              Jornada {p.jornada} · {fechaCorta(p.fechaHora)}
-              {horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
+              Jornada {p.jornada} · {fechaCorta(p.fechaHora)}{horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
+              {p.pabellon && <><br />{p.pabellon}</>}
             </p>
           </article>
         ))}

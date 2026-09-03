@@ -22,7 +22,6 @@ export const nav = [
   { href: "/calendario", label: "Calendario" },
   { href: "/#logros", label: "Logros" },
   { href: "/#tienda", label: "Tienda" },
-  { href: "/#inscripciones", label: "Inscríbete" },
 ];
 
 export const cifras = [

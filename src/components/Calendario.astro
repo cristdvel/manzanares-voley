@@ -41,6 +41,12 @@ import { grupos, fechaCorta, horaCorta } from "../data/competicion";
                 <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
               </span>
               {p.aplazado && <span class="cal-item__tag">Aplazado</span>}
+              {p.pabellon && (
+                <span class="cal-item__sede">
+                  📍 {p.pabellon}
+                  {p.mapa && <> · <a href={p.mapa} target="_blank" rel="noopener">cómo llegar</a></>}
+                </span>
+              )}
             </li>
           ))}
         </ol>

@@ -21,6 +21,8 @@ export interface Partido {
   local: string;
   visitante: string;
   pabellon: string | null;
+  direccion?: string;
+  mapa?: string;
   esManzanares: boolean;
   esLocal: boolean;
   aplazado: boolean;

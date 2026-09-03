@@ -94,21 +94,29 @@ async function fetchGrupo({ categoria, grupoId }, clubId) {
     }),
   }));
 
-  // Resultados de los partidos de Manzanares ya jugados
+  // Detalle de los partidos de Manzanares: sede, hora, mapa y resultado
   await Promise.all(
     misPartidos.map(async (p) => {
       try {
         const d = await api(`getPartido?partidoId=${p.id}`);
-        if (d && d.finalizado) {
-          p.jugado = true;
+        if (!d) return;
+        if (d.pabellon) p.pabellon = titleCase(d.pabellon);
+        if (d.direccion) p.direccion = d.direccion.trim();
+        // Solo si el enlace lleva coordenadas o consulta real (no el "search" vacío)
+        if (d.urlGoogleMaps && /[?@]/.test(d.urlGoogleMaps)) p.mapa = d.urlGoogleMaps.trim();
+        if (d.fecha_hora) {
+          const [f, h] = String(d.fecha_hora).split(" ");
+          const iso = toIso(f, h);
+          if (iso) p.fechaHora = iso;
+        }
+        p.jugado = !!d.finalizado;
+        if (d.finalizado) {
           p.setsLocal = Number(d.sets_local);
           p.setsVisitante = Number(d.sets_visitante);
           p.resultado = `${d.sets_local}-${d.sets_visitante}`;
-        } else {
-          p.jugado = false;
         }
       } catch {
-        p.jugado = false;
+        p.jugado = p.jugado ?? false;
       }
     }),
   );
