@@ -11,11 +11,25 @@ import Logros from "../components/Logros.astro";
 import Tienda from "../components/Tienda.astro";
 import Inscripciones from "../components/Inscripciones.astro";
 import Footer from "../components/Footer.astro";
+import { faqs } from "../data/faqs";
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: { "@type": "Answer", text: f.a },
+  })),
+};
 ---
 
-<Base>
+<Base
+  title="Club Voleibol Manzanares · Voleibol en Madrid desde 2016"
+  schemas={[faqSchema]}
+>
   <Header />
-  <main>
+  <main id="contenido">
     <section id="inicio">
       <Hero />
       <Cifras />

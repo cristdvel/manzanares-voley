@@ -49,14 +49,15 @@ import Clasificacion from "./Clasificacion.astro";
     <span class="eyebrow">Sedes</span>
     <h2 class="section-title">Dónde entrenamos</h2>
     <div class="sedes">
-      <div class="mapa">
-        <iframe
-          title="Ubicación del Club Voleibol Manzanares"
-          src="https://www.google.com/maps?q=Colegio%20Nueva%20Castilla%2C%20Calle%20Mazater%C3%B3n%2012%2C%2028051%20Madrid&z=14&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          allowfullscreen
-        ></iframe>
+      <div
+        class="mapa embed-gate"
+        data-embed-src="https://www.google.com/maps?q=Colegio%20Nueva%20Castilla%2C%20Calle%20Mazater%C3%B3n%2012%2C%2028051%20Madrid&z=14&output=embed"
+        data-embed-title="Ubicación del Club Voleibol Manzanares"
+      >
+        <div class="embed-gate__msg">
+          <p>El mapa se carga desde Google Maps, que instala cookies.</p>
+          <button type="button" class="btn btn--outline" data-embed-load>Cargar el mapa</button>
+        </div>
       </div>
       <ul class="sede-list">
         {sedes.map((s) => (

@@ -5,9 +5,58 @@ import { site } from "../data/site";
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
+  schemas?: unknown[];
 }
-const { title = site.title, description = site.description } = Astro.props;
+const {
+  title = site.title,
+  description = site.description,
+  image = "/og.jpg",
+  schemas = [],
+} = Astro.props;
+
 const canonical = new URL(Astro.url.pathname, site.url).href;
+const ogImage = new URL(image, site.url).href;
+const tel = "+34" + site.telefono.replace(/\s/g, "");
+const sameAs = [site.social.instagram, site.social.facebook, site.social.twitter].filter(
+  (u) => u && u !== "#",
+);
+
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "SportsOrganization",
+  "@id": site.url + "#org",
+  name: "Club Voleibol Manzanares",
+  alternateName: "Manzanares Voley",
+  url: site.url,
+  logo: site.url + "favicon.png",
+  image: ogImage,
+  description: site.description,
+  sport: "Volleyball",
+  foundingDate: "2016-04",
+  email: site.email,
+  telephone: tel,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Calle Duquesa de Parcent 116",
+    postalCode: "28047",
+    addressLocality: "Madrid",
+    addressRegion: "Comunidad de Madrid",
+    addressCountry: "ES",
+  },
+  areaServed: { "@type": "City", name: "Madrid" },
+  sameAs,
+};
+const siteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": site.url + "#website",
+  url: site.url,
+  name: site.title,
+  inLanguage: "es-ES",
+  publisher: { "@id": site.url + "#org" },
+};
+const allSchemas = [orgSchema, siteSchema, ...schemas];
 ---
 <!doctype html>
 <html lang="es">
@@ -17,24 +66,46 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    <meta name="theme-color" content="#1D1D24" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin />
 
+    <meta property="og:site_name" content="Club Voleibol Manzanares" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content={site.url} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <meta name="generator" content={Astro.generator} />
+    <script type="application/ld+json" set:html={JSON.stringify(allSchemas)} />
   </head>
   <body>
+    <a href="#contenido" class="skip-link">Saltar al contenido</a>
     <slot />
+
+    <div id="cookie-banner" class="cookie-banner" hidden>
+      <p class="cookie-banner__text">
+        Usamos solo cookies técnicas necesarias. El mapa de Google Maps y otros contenidos
+        externos no se cargan sin tu permiso. <a href="/cookies">Más información</a>.
+      </p>
+      <div class="cookie-banner__actions">
+        <button type="button" data-cookie="reject" class="btn btn--outline">Solo necesarias</button>
+        <button type="button" data-cookie="accept" class="btn btn--primary">Aceptar todo</button>
+      </div>
+    </div>
 
     <script is:inline>
       (function () {
@@ -214,6 +285,70 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
             success.scrollIntoView({ behavior: "smooth", block: "center" });
           });
         }
+
+        // ---- Consentimiento de cookies + carga diferida de embeds ----
+        var CKEY = "mzv-consent";
+        function getConsent() {
+          try {
+            return localStorage.getItem(CKEY);
+          } catch (e) {
+            return null;
+          }
+        }
+        function setConsent(v) {
+          try {
+            localStorage.setItem(CKEY, v);
+          } catch (e) {}
+        }
+        function loadEmbeds() {
+          document.querySelectorAll("[data-embed-src]").forEach(function (box) {
+            if (box.querySelector("iframe")) return;
+            var f = document.createElement("iframe");
+            f.src = box.getAttribute("data-embed-src");
+            f.title = box.getAttribute("data-embed-title") || "Contenido embebido";
+            f.loading = "lazy";
+            f.setAttribute("referrerpolicy", "no-referrer-when-downgrade");
+            f.allowFullscreen = true;
+            box.innerHTML = "";
+            box.appendChild(f);
+          });
+        }
+        function applyConsent(v) {
+          document.documentElement.setAttribute("data-consent", v);
+          if (v === "accept") loadEmbeds();
+        }
+        var banner = document.getElementById("cookie-banner");
+        var stored = getConsent();
+        if (stored) {
+          applyConsent(stored);
+        } else if (banner) {
+          banner.hidden = false;
+        }
+        if (banner) {
+          banner.addEventListener("click", function (e) {
+            var b = e.target.closest("[data-cookie]");
+            if (!b) return;
+            var v = b.getAttribute("data-cookie");
+            setConsent(v);
+            applyConsent(v);
+            banner.hidden = true;
+          });
+        }
+        // Botón "cargar mapa" dentro del placeholder
+        document.querySelectorAll("[data-embed-load]").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            var box = btn.closest("[data-embed-src]");
+            if (box) {
+              var f = document.createElement("iframe");
+              f.src = box.getAttribute("data-embed-src");
+              f.title = box.getAttribute("data-embed-title") || "Mapa";
+              f.loading = "lazy";
+              f.allowFullscreen = true;
+              box.innerHTML = "";
+              box.appendChild(f);
+            }
+          });
+        });
       })();
     </script>
   </body>

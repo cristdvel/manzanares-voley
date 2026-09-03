@@ -1,0 +1,23 @@
+---
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Base title="Página no encontrada | Manzanares Voley" description="La página que buscas no existe.">
+  <Header />
+  <main id="contenido">
+    <div class="page-hero">
+      <div class="container center">
+        <span class="eyebrow">Error 404</span>
+        <h1>Aquí no hay nada</h1>
+        <p class="section-intro">La página que buscas no existe o ha cambiado de sitio.</p>
+        <div class="page-cta">
+          <a href="/" class="btn btn--primary btn--lg">Ir al inicio</a>
+          <a href="/calendario" class="btn btn--outline-light btn--lg">Calendario</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Base>

@@ -1,0 +1,82 @@
+---
+import LegalPage from "../layouts/LegalPage.astro";
+import { site } from "../data/site";
+---
+
+<LegalPage
+  title="Política de privacidad"
+  description="Cómo trata el Club Voleibol Manzanares los datos personales que recoge a través de su web y del formulario de inscripción."
+  updated="septiembre de 2026"
+>
+  <h2>1. Responsable del tratamiento</h2>
+  <p>
+    <strong>Club Voleibol Manzanares (CDE Manzanares Voley)</strong><br />
+    Domicilio: {site.ciudad}<br />
+    Correo electrónico: <a href={`mailto:${site.email}`}>{site.email}</a><br />
+    Teléfono: <a href={`tel:+34${site.telefono.replace(/\s/g, "")}`}>{site.telefono}</a>
+  </p>
+
+  <h2>2. Datos que recogemos y con qué finalidad</h2>
+  <p>Solo tratamos los datos que nos facilitas voluntariamente:</p>
+  <ul>
+    <li>
+      <strong>Formulario de inscripción:</strong> nombre del deportista, fecha de nacimiento,
+      nombre del padre/madre/tutor, teléfono, correo electrónico y experiencia previa.
+      Finalidad: gestionar tu solicitud, contactar contigo y organizar la sesión de prueba.
+    </li>
+    <li>
+      <strong>Autorización de imágenes</strong> (casilla opcional): si la marcas, podremos usar
+      imágenes del deportista en la comunicación del club (web y redes sociales).
+    </li>
+    <li>
+      <strong>Correos que nos envíes:</strong> los datos que incluyas en tu mensaje, para
+      atender tu consulta.
+    </li>
+  </ul>
+  <p>
+    La web <strong>no utiliza cookies de analítica ni de publicidad</strong> y no elabora
+    perfiles. Consulta la <a href="/cookies">política de cookies</a>.
+  </p>
+
+  <h2>3. Base jurídica</h2>
+  <p>
+    El tratamiento se basa en tu <strong>consentimiento</strong> (art. 6.1.a RGPD), que otorgas
+    al enviar el formulario o el correo, y en la ejecución de las gestiones que solicitas.
+    Para inscribir a menores en competición federada, los datos necesarios se comunican a la
+    Federación de Madrid de Voleibol para la tramitación de la licencia deportiva y el seguro.
+  </p>
+
+  <h2>4. Conservación</h2>
+  <p>
+    Conservamos los datos mientras dure la relación con el club y, después, el tiempo necesario
+    para atender posibles responsabilidades legales. Si tu solicitud no se concreta en alta,
+    eliminamos los datos en un plazo máximo de un año.
+  </p>
+
+  <h2>5. Destinatarios</h2>
+  <p>
+    No cedemos tus datos a terceros salvo obligación legal o cuando sea imprescindible para la
+    finalidad indicada (por ejemplo, la Federación de Madrid de Voleibol para las licencias).
+    No se realizan transferencias internacionales de datos.
+  </p>
+
+  <h2>6. Tus derechos</h2>
+  <p>
+    Puedes ejercer los derechos de acceso, rectificación, supresión, oposición, limitación del
+    tratamiento y portabilidad escribiendo a <a href={`mailto:${site.email}`}>{site.email}</a>,
+    indicando el derecho que deseas ejercer. También puedes retirar tu consentimiento en
+    cualquier momento y presentar una reclamación ante la Agencia Española de Protección de
+    Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>).
+  </p>
+
+  <h2>7. Cambios</h2>
+  <p>
+    Podemos actualizar esta política para adaptarla a cambios normativos o de funcionamiento
+    del club. La versión vigente es siempre la publicada en esta página.
+  </p>
+
+  <p class="legal__note">
+    Texto de referencia pendiente de revisión final por el club. Si necesitas adaptarlo (plazos
+    de conservación concretos, delegado de protección de datos, etc.), contáctanos.
+  </p>
+</LegalPage>

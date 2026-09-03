@@ -4,14 +4,24 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { juego, entreno, sudadera, accesorios } from "../data/equipacion";
 import { site } from "../data/site";
+
+const breadcrumb = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Inicio", item: site.url },
+    { "@type": "ListItem", position: 2, name: "Equipación oficial", item: site.url + "equipacion/" },
+  ],
+};
 ---
 
 <Base
   title="Equipación oficial · 10º aniversario | Manzanares Voley"
   description="Colección conmemorativa del 10º aniversario del Club Voleibol Manzanares: camisetas de juego «Gatos» y «Claveles», ropa de entreno, sudadera y accesorios."
+  schemas={[breadcrumb]}
 >
   <Header />
-  <main>
+  <main id="contenido">
     <div class="page-hero">
       <div class="container">
         <span class="eyebrow">Tienda oficial</span>

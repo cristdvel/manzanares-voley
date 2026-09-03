@@ -4,15 +4,38 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Calendario from "../components/Calendario.astro";
 import Clasificacion from "../components/Clasificacion.astro";
-import { temporada, actualizadoTexto } from "../data/competicion";
+import { temporada, actualizadoTexto, proximos } from "../data/competicion";
+import { site } from "../data/site";
+
+const eventSchemas = proximos
+  .filter((p) => p.fechaHora)
+  .map((p) => ({
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    name: `${p.local} vs ${p.visitante}`,
+    sport: "Volleyball",
+    startDate: p.fechaHora,
+    eventStatus: p.aplazado
+      ? "https://schema.org/EventPostponed"
+      : "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    ...(p.pabellon
+      ? { location: { "@type": "Place", name: p.pabellon, address: "Madrid" } }
+      : {}),
+    homeTeam: { "@type": "SportsTeam", name: p.local },
+    awayTeam: { "@type": "SportsTeam", name: p.visitante },
+    organizer: { "@type": "Organization", name: "Federación de Madrid de Voleibol" },
+    superEvent: { "@type": "SportsOrganization", name: "Manzanares Voley", "@id": site.url + "#org" },
+  }));
 ---
 
 <Base
   title="Calendario y clasificación | Manzanares Voley"
   description="Calendario, resultados y clasificación de los equipos federados del Club Voleibol Manzanares, con datos de la Federación de Madrid de Voleibol."
+  schemas={eventSchemas}
 >
   <Header />
-  <main>
+  <main id="contenido">
     <div class="page-hero">
       <div class="container">
         <span class="eyebrow">Competición · {temporada}</span>
