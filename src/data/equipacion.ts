@@ -1,21 +1,22 @@
 export const juego = [
   {
-    nombre: "Camiseta de juego «Gatos»",
-    desc: "Estampado de gatos negros sobre paneles naranjas y huellas. Diseño conmemorativo del 10º aniversario.",
-    frente: "/img/equipacion/gatos-frente.png",
-    espalda: "/img/equipacion/gatos-espalda.png",
+    nombre: "Diseño «Gatos»",
+    desc: "Estampado de gatos negros sobre paneles naranjas y huellas. Camiseta y malla conmemorativas del 10º aniversario.",
+    camiseta: {
+      frente: "/img/equipacion/gatos-frente.png",
+      espalda: "/img/equipacion/gatos-espalda.png",
+    },
+    malla: "/img/equipacion/malla-gatos.png",
   },
   {
-    nombre: "Camiseta de juego «Claveles»",
-    desc: "Estampado floral de claveles rojos sobre negro. Diseño conmemorativo del 10º aniversario.",
-    frente: "/img/equipacion/claveles-frente.png",
-    espalda: "/img/equipacion/claveles-espalda.png",
+    nombre: "Diseño «Claveles»",
+    desc: "Estampado floral de claveles rojos sobre negro. Camiseta y malla conmemorativas del 10º aniversario.",
+    camiseta: {
+      frente: "/img/equipacion/claveles-frente.png",
+      espalda: "/img/equipacion/claveles-espalda.png",
+    },
+    malla: "/img/equipacion/malla-claveles.png",
   },
-];
-
-export const mallas = [
-  { nombre: "Camiseta de tirantes «Gatos»", img: "/img/equipacion/malla-gatos.png" },
-  { nombre: "Camiseta de tirantes «Claveles»", img: "/img/equipacion/malla-claveles.png" },
 ];
 
 export const entreno = [

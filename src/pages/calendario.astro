@@ -17,7 +17,12 @@ import { temporada, actualizadoTexto } from "../data/competicion";
       <div class="container">
         <span class="eyebrow">Competición · {temporada}</span>
         <h1>Calendario y clasificación</h1>
-        <p>Partidos y clasificación de los equipos federados de Manzanares Voley. Datos de la Federación de Madrid de Voleibol, actualizados automáticamente ({actualizadoTexto()}).</p>
+        <p>Partidos, resultados y clasificación de los equipos federados de Manzanares Voley, con datos oficiales de la Federación de Madrid de Voleibol.</p>
+        <div class="page-cta">
+          <a href="#calendario" class="btn btn--outline-light">Ver calendario</a>
+          <a href="#clasificacion" class="btn btn--primary">Ver clasificación</a>
+        </div>
+        <p class="page-hero__meta">Se actualiza solo · {actualizadoTexto()}</p>
       </div>
     </div>
 

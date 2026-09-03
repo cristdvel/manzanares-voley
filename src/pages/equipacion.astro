@@ -2,7 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { juego, mallas, entreno, sudadera, accesorios } from "../data/equipacion";
+import { juego, entreno, sudadera, accesorios } from "../data/equipacion";
 import { site } from "../data/site";
 ---
 
@@ -20,10 +20,10 @@ import { site } from "../data/site";
       </div>
     </div>
 
-    <!-- Camisetas de juego -->
+    <!-- Equipación de juego -->
     <section class="section">
       <div class="container">
-        <span class="eyebrow">Camisetas de juego</span>
+        <span class="eyebrow">Equipación de juego</span>
         <h2 class="section-title">Dos diseños del aniversario</h2>
         {juego.map((j) => (
           <div class="kit-feature">
@@ -31,28 +31,18 @@ import { site } from "../data/site";
               <h3>{j.nombre}</h3>
               <p>{j.desc}</p>
             </div>
-            <figure class="kit-shot"><img src={j.frente} alt={`${j.nombre} — frente`} loading="lazy" /><figcaption>Frente</figcaption></figure>
-            <figure class="kit-shot"><img src={j.espalda} alt={`${j.nombre} — espalda`} loading="lazy" /><figcaption>Espalda</figcaption></figure>
+            <div class="kit-shots">
+              <figure class="kit-shot"><img src={j.camiseta.frente} alt={`${j.nombre} — camiseta frente`} loading="lazy" /><figcaption>Camiseta · frente</figcaption></figure>
+              <figure class="kit-shot"><img src={j.camiseta.espalda} alt={`${j.nombre} — camiseta espalda`} loading="lazy" /><figcaption>Camiseta · espalda</figcaption></figure>
+              <figure class="kit-shot"><img src={j.malla} alt={`${j.nombre} — malla`} loading="lazy" /><figcaption>Malla</figcaption></figure>
+            </div>
           </div>
         ))}
       </div>
     </section>
 
-    <!-- Camisetas de tirantes -->
-    <section class="section section--crema">
-      <div class="container">
-        <span class="eyebrow">Calentamiento</span>
-        <h2 class="section-title">Camisetas de tirantes</h2>
-        <div class="kit-grid">
-          {mallas.map((m) => (
-            <figure class="kit-card"><img src={m.img} alt={m.nombre} loading="lazy" /><figcaption>{m.nombre}</figcaption></figure>
-          ))}
-        </div>
-      </div>
-    </section>
-
     <!-- Ropa de entreno -->
-    <section class="section">
+    <section class="section section--crema">
       <div class="container">
         <span class="eyebrow">Día a día</span>
         <h2 class="section-title">Ropa de entreno</h2>
@@ -65,7 +55,7 @@ import { site } from "../data/site";
     </section>
 
     <!-- Sudadera 10º aniversario -->
-    <section class="section section--crema">
+    <section class="section">
       <div class="container">
         <span class="eyebrow">Pieza estrella</span>
         <h2 class="section-title">Sudadera 10º aniversario</h2>
@@ -77,7 +67,7 @@ import { site } from "../data/site";
     </section>
 
     <!-- Accesorios -->
-    <section class="section">
+    <section class="section section--crema">
       <div class="container">
         <span class="eyebrow">Complementos</span>
         <h2 class="section-title">Abrigo y mochila</h2>
