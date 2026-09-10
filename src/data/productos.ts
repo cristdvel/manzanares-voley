@@ -16,6 +16,12 @@ export interface Imagen {
   variante?: string;
 }
 
+export interface TallaGrupo {
+  /** etiqueta del selector, p. ej. "Talla camisetas". */
+  nombre: string;
+  tallas: string[];
+}
+
 export interface Producto {
   id: string;
   nombre: string;
@@ -32,6 +38,8 @@ export interface Producto {
   disponible: boolean;
   /** sólo packs: prendas que incluye, p. ej. "2 × Camiseta de juego". */
   incluye?: string[];
+  /** sólo packs: un selector de talla por tipo de prenda (camisetas, malla, sudadera…). */
+  tallasPack?: TallaGrupo[];
 }
 
 const TALLAS = ["XS", "S", "M", "L", "XL"];
@@ -46,7 +54,7 @@ export const productos: Producto[] = [
     precio: 146,
     resumen: "El equipo completo de temporada para jugadoras federadas.",
     descripcion:
-      "Todo lo que necesita una jugadora federada para la temporada en un único pedido: 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario, 1 mochila oficial y 2 mallas de partido. Eliges una sola talla para el conjunto; el club asigna los diseños de camiseta y malla según disponibilidad (puedes indicar tu preferencia en las notas del pedido).",
+      "Todo lo que necesita una jugadora federada para la temporada en un único pedido: 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario, 1 mochila oficial y 2 mallas de partido. Eliges la talla de cada prenda (camisetas, mallas y sudadera); el club asigna los diseños de camiseta y malla según disponibilidad (puedes indicar tu preferencia en las notas del pedido).",
     imagenes: [
       { src: "/img/equipacion/gatos-frente.png" },
       { src: "/img/equipacion/entreno-fem.png" },
@@ -63,12 +71,17 @@ export const productos: Producto[] = [
     ],
     caracteristicas: [
       "Ahorro frente a comprar cada prenda por separado",
-      "Una sola talla para todo el conjunto",
+      "Eliges talla de camisetas, de mallas y de sudadera por separado",
       "Diseños de camiseta y malla asignados por el club según stock",
       "Personalizable con nombre y dorsal (indícalo en las notas)",
     ],
     variantes: [],
     tallas: TALLAS,
+    tallasPack: [
+      { nombre: "Talla camisetas", tallas: TALLAS },
+      { nombre: "Talla mallas", tallas: TALLAS },
+      { nombre: "Talla sudadera", tallas: TALLAS },
+    ],
     disponible: true,
   },
   {
@@ -79,7 +92,7 @@ export const productos: Producto[] = [
     // TODO: cargar la foto del pantalón de juego (/img/equipacion/pantalon-juego.png).
     resumen: "El conjunto completo de temporada para jugadores federados.",
     descripcion:
-      "El conjunto de temporada para jugadores federados: 2 pantalones de juego, 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario y 1 mochila oficial. Eliges una sola talla para el conjunto; el club asigna los diseños según disponibilidad.",
+      "El conjunto de temporada para jugadores federados: 2 pantalones de juego, 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario y 1 mochila oficial. Eliges la talla de cada prenda (camisetas, pantalón y sudadera); el club asigna los diseños según disponibilidad.",
     imagenes: [
       { src: "/img/equipacion/gatos-frente.png" },
       { src: "/img/equipacion/entreno-masc.png" },
@@ -95,12 +108,17 @@ export const productos: Producto[] = [
     ],
     caracteristicas: [
       "Ahorro frente a comprar cada prenda por separado",
-      "Una sola talla para todo el conjunto",
+      "Eliges talla de camisetas, de pantalón y de sudadera por separado",
       "Foto del pantalón de juego pendiente de subir",
       "Personalizable con nombre y dorsal (indícalo en las notas)",
     ],
     variantes: [],
     tallas: TALLAS,
+    tallasPack: [
+      { nombre: "Talla camisetas", tallas: TALLAS },
+      { nombre: "Talla pantalón", tallas: TALLAS },
+      { nombre: "Talla sudadera", tallas: TALLAS },
+    ],
     disponible: true,
   },
   {
@@ -110,7 +128,7 @@ export const productos: Producto[] = [
     precio: 70,
     resumen: "Lo justo para competición municipal: 2 camisetas de juego y 2 de entreno.",
     descripcion:
-      "El pack para jugadoras y jugadores de competición municipal: 2 camisetas de juego y 2 camisetas de entreno naranjas. Eliges una sola talla para el conjunto; el club asigna los diseños según disponibilidad.",
+      "El pack para jugadoras y jugadores de competición municipal: 2 camisetas de juego y 2 camisetas de entreno naranjas. Eliges la talla de las camisetas; el club asigna los diseños según disponibilidad.",
     imagenes: [
       { src: "/img/equipacion/gatos-frente.png" },
       { src: "/img/equipacion/entreno-fem.png" },
@@ -121,12 +139,13 @@ export const productos: Producto[] = [
     ],
     caracteristicas: [
       "Ahorro frente a comprar cada prenda por separado",
-      "Una sola talla para todo el conjunto",
+      "Una talla para las 4 camisetas",
       "Diseños asignados por el club según stock",
       "Personalizable con nombre y dorsal (indícalo en las notas)",
     ],
     variantes: [],
     tallas: TALLAS,
+    tallasPack: [{ nombre: "Talla camisetas", tallas: TALLAS }],
     disponible: true,
   },
 

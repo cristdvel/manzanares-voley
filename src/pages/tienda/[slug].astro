@@ -16,6 +16,7 @@ const { producto: p } = Astro.props;
 const relacionados = getRelacionados(p);
 const url = site.url + "tienda/" + p.id + "/";
 const esPack = !!p.incluye?.length;
+const tallasPack = p.tallasPack ?? [];
 
 const productSchema = {
   "@context": "https://schema.org",
@@ -108,22 +109,34 @@ const breadcrumb = {
               <div class="pdp__opts">
                 {p.variantes.map((v) => (
                   <label>
-                    {v.nombre} <span class="req">*</span>
+                    <span class="pdp__opt-lbl">{v.nombre} <span class="req">*</span></span>
                     <select data-opt={v.nombre} required>
                       <option value="">Elige…</option>
                       {v.opciones.map((o) => <option value={o}>{o}</option>)}
                     </select>
                   </label>
                 ))}
-                <label>
-                  {esPack ? "Talla (para todo el pack)" : "Talla"} <span class="req">*</span>
-                  <select data-opt="talla" required>
-                    {p.tallas.length > 1 && <option value="">Elige…</option>}
-                    {p.tallas.map((t) => <option value={t}>{t}</option>)}
-                  </select>
-                </label>
+                {tallasPack.length > 0 ? (
+                  tallasPack.map((g) => (
+                    <label>
+                      <span class="pdp__opt-lbl">{g.nombre} <span class="req">*</span></span>
+                      <select data-opt={g.nombre} required>
+                        <option value="">Elige…</option>
+                        {g.tallas.map((t) => <option value={t}>{t}</option>)}
+                      </select>
+                    </label>
+                  ))
+                ) : (
+                  <label>
+                    <span class="pdp__opt-lbl">Talla <span class="req">*</span></span>
+                    <select data-opt="talla" required>
+                      {p.tallas.length > 1 && <option value="">Elige…</option>}
+                      {p.tallas.map((t) => <option value={t}>{t}</option>)}
+                    </select>
+                  </label>
+                )}
                 <label class="pdp__qty">
-                  Unidades
+                  <span class="pdp__opt-lbl">Unidades</span>
                   <input type="number" data-opt="cantidad" min="1" max="20" value="1" />
                 </label>
               </div>
@@ -225,16 +238,31 @@ const breadcrumb = {
   }
   thumbs.forEach((btn) => btn.addEventListener("click", () => mostrar(btn)));
 
-  // Al elegir modelo/variante, cambia la foto principal a la de ese modelo
-  document
-    .querySelectorAll<HTMLSelectElement>('.pdp__opts select[data-opt]:not([data-opt="talla"])')
-    .forEach((sel) => {
-      sel.addEventListener("change", () => {
-        const v = sel.value;
-        if (!v) return;
-        mostrar(thumbs.find((t) => t.dataset.variante === v));
-      });
+  // Al elegir modelo/variante: deja visibles sólo las fotos de ese modelo
+  // (frente y espalda) y pon la de frente como principal.
+  const esTallaKey = (k: string) => k === "talla" || /^talla/i.test(k);
+  const varSelects = Array.from(
+    document.querySelectorAll<HTMLSelectElement>(".pdp__opts select[data-opt]"),
+  ).filter((s) => {
+    const k = s.dataset.opt || "";
+    return k !== "cantidad" && !esTallaKey(k);
+  });
+
+  function filtrarPorVariante(v: string) {
+    let primera: HTMLButtonElement | undefined;
+    thumbs.forEach((t) => {
+      const suya = !v || !t.dataset.variante || t.dataset.variante === v;
+      t.hidden = !suya;
+      if (suya && !primera) primera = t;
     });
+    mostrar(primera);
+  }
+
+  varSelects.forEach((sel) => {
+    sel.addEventListener("change", () => {
+      if (sel.value) filtrarPorVariante(sel.value);
+    });
+  });
 
   // Pedido
   const form = document.getElementById("pedido-form") as HTMLFormElement | null;
@@ -273,14 +301,27 @@ const breadcrumb = {
       return;
     }
 
-    const variante = Object.keys(opts)
-      .filter((k) => k !== "talla" && k !== "cantidad")
+    const keys = Object.keys(opts).filter((k) => k !== "cantidad");
+    const variante = keys
+      .filter((k) => !esTallaKey(k))
       .map((k) => opts[k])
       .join(" · ");
+
+    const tallaKeys = keys.filter(esTallaKey);
+    const talla =
+      tallaKeys.length === 1 && tallaKeys[0] === "talla"
+        ? opts["talla"]
+        : tallaKeys
+            .map((k) => {
+              const et = k.replace(/^talla\s*/i, "");
+              return (et ? et[0].toUpperCase() + et.slice(1) : "Talla") + ": " + opts[k];
+            })
+            .join(" · ");
+
     const linea = {
       nombre: form.dataset.producto,
       variante,
-      talla: opts.talla,
+      talla,
       cantidad: Math.max(1, Math.min(20, parseInt(opts.cantidad || "1", 10))),
     };
 
