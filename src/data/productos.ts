@@ -61,11 +61,9 @@ export const productos: Producto[] = [
       { src: "/img/equipacion/gatos-espalda.png" },
       { src: "/img/equipacion/claveles-frente.png" },
       { src: "/img/equipacion/claveles-espalda.png" },
-      // Camiseta de entreno: corte femenino y masculino, frente y espalda
+      // Camiseta de entreno: corte femenino, frente y espalda
       { src: "/img/equipacion/entreno-fem.png" },
       { src: "/img/equipacion/entreno-fem-espalda.png" },
-      { src: "/img/equipacion/entreno-masc.png" },
-      { src: "/img/equipacion/entreno-masc-espalda.png" },
       // Sudadera
       { src: "/img/equipacion/sudadera-frente.png" },
       { src: "/img/equipacion/sudadera-espalda.png" },
@@ -114,9 +112,7 @@ export const productos: Producto[] = [
       { src: "/img/equipacion/gatos-espalda.png" },
       { src: "/img/equipacion/claveles-frente.png" },
       { src: "/img/equipacion/claveles-espalda.png" },
-      // Camiseta de entreno: corte femenino y masculino, frente y espalda
-      { src: "/img/equipacion/entreno-fem.png" },
-      { src: "/img/equipacion/entreno-fem-espalda.png" },
+      // Camiseta de entreno: corte masculino, frente y espalda
       { src: "/img/equipacion/entreno-masc.png" },
       { src: "/img/equipacion/entreno-masc-espalda.png" },
       // Sudadera
