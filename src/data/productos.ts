@@ -1,6 +1,8 @@
 // Catálogo de la tienda oficial.
-// Precios a 0 € temporalmente: el pago se hace por transferencia y el
-// comprobante se adjunta al tramitar el pedido.
+// Artículos sueltos con precio confirmado por el club (€).
+// El pago se hace por transferencia y el comprobante se adjunta al pedido.
+// Los PACKS llevan de momento la SUMA orientativa de sus prendas: el club
+// confirma el descuento final al tramitar el pedido.
 // Descripciones y características son de MUESTRA, pendientes de revisión del club.
 
 export interface Variante {
@@ -19,6 +21,8 @@ export interface Producto {
   nombre: string;
   categoria: string;
   precio: number;
+  /** texto bajo el precio; si no se indica y el precio es 0 se muestra el aviso "provisional". */
+  precioNota?: string;
   resumen: string;
   descripcion: string;
   imagenes: Imagen[];
@@ -26,17 +30,118 @@ export interface Producto {
   variantes: Variante[];
   tallas: string[];
   disponible: boolean;
+  /** sólo packs: prendas que incluye, p. ej. "2 × Camiseta de juego". */
+  incluye?: string[];
 }
 
 const TALLAS = ["XS", "S", "M", "L", "XL"];
 const TALLA_UNICA = ["Única"];
 
+const NOTA_PACK =
+  "Suma de los artículos sueltos. El club confirma el descuento del pack al tramitar el pedido.";
+
 export const productos: Producto[] = [
+  // ---------------- PACKS ----------------
+  {
+    id: "pack-federado-femenino",
+    nombre: "Pack Federado Femenino",
+    categoria: "Packs",
+    precio: 246, // 2·40 + 2·30 + 30 + 26 + 2·25
+    precioNota: NOTA_PACK,
+    resumen: "El equipo completo de temporada para jugadoras federadas.",
+    descripcion:
+      "Todo lo que necesita una jugadora federada para la temporada en un único pedido: 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario, 1 mochila oficial y 2 mallas de partido. Eliges una sola talla para el conjunto; el club asigna los diseños de camiseta y malla según disponibilidad (puedes indicar tu preferencia en las notas del pedido).",
+    imagenes: [
+      { src: "/img/equipacion/gatos-frente.png" },
+      { src: "/img/equipacion/entreno-fem.png" },
+      { src: "/img/equipacion/sudadera-frente.png" },
+      { src: "/img/equipacion/mochila.png" },
+      { src: "/img/equipacion/malla-gatos.png" },
+    ],
+    incluye: [
+      "2 × Camiseta de juego",
+      "2 × Camiseta de entreno",
+      "1 × Sudadera 10º aniversario",
+      "1 × Mochila oficial",
+      "2 × Malla de partido",
+    ],
+    caracteristicas: [
+      "Ahorro frente a comprar cada prenda por separado",
+      "Una sola talla para todo el conjunto",
+      "Diseños de camiseta y malla asignados por el club según stock",
+      "Personalizable con nombre y dorsal (indícalo en las notas)",
+    ],
+    variantes: [],
+    tallas: TALLAS,
+    disponible: true,
+  },
+  {
+    id: "pack-federado-masculino",
+    nombre: "Pack Federado Masculino",
+    categoria: "Packs",
+    precio: 0,
+    // TODO: cargar el pantalón de juego (producto + foto) y fijar el precio del pack.
+    precioNota: "Pendiente: falta cargar el pantalón de juego y fijar el precio del pack.",
+    resumen: "El conjunto completo de temporada para jugadores federados.",
+    descripcion:
+      "El conjunto de temporada para jugadores federados: 2 pantalones de juego, 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario y 1 mochila oficial. Eliges una sola talla para el conjunto; el club asigna los diseños según disponibilidad.",
+    imagenes: [
+      { src: "/img/equipacion/gatos-frente.png" },
+      { src: "/img/equipacion/entreno-masc.png" },
+      { src: "/img/equipacion/sudadera-frente.png" },
+      { src: "/img/equipacion/mochila.png" },
+    ],
+    incluye: [
+      "2 × Pantalón de juego",
+      "2 × Camiseta de juego",
+      "2 × Camiseta de entreno",
+      "1 × Sudadera 10º aniversario",
+      "1 × Mochila oficial",
+    ],
+    caracteristicas: [
+      "Ahorro frente a comprar cada prenda por separado",
+      "Una sola talla para todo el conjunto",
+      "Foto del pantalón de juego pendiente de subir",
+      "Personalizable con nombre y dorsal (indícalo en las notas)",
+    ],
+    variantes: [],
+    tallas: TALLAS,
+    disponible: true,
+  },
+  {
+    id: "pack-municipal",
+    nombre: "Pack Municipal",
+    categoria: "Packs",
+    precio: 140, // 2·40 + 2·30
+    precioNota: NOTA_PACK,
+    resumen: "Lo justo para competición municipal: 2 camisetas de juego y 2 de entreno.",
+    descripcion:
+      "El pack para jugadoras y jugadores de competición municipal: 2 camisetas de juego y 2 camisetas de entreno naranjas. Eliges una sola talla para el conjunto; el club asigna los diseños según disponibilidad.",
+    imagenes: [
+      { src: "/img/equipacion/gatos-frente.png" },
+      { src: "/img/equipacion/entreno-fem.png" },
+    ],
+    incluye: [
+      "2 × Camiseta de juego",
+      "2 × Camiseta de entreno naranja",
+    ],
+    caracteristicas: [
+      "Ahorro frente a comprar cada prenda por separado",
+      "Una sola talla para todo el conjunto",
+      "Diseños asignados por el club según stock",
+      "Personalizable con nombre y dorsal (indícalo en las notas)",
+    ],
+    variantes: [],
+    tallas: TALLAS,
+    disponible: true,
+  },
+
+  // ---------------- ARTÍCULOS SUELTOS ----------------
   {
     id: "camiseta-juego",
     nombre: "Camiseta de juego · 10º aniversario",
     categoria: "Equipación de juego",
-    precio: 0,
+    precio: 40,
     resumen: "Camiseta oficial de competición, en los diseños «Gatos» y «Claveles».",
     descripcion:
       "Camiseta oficial de competición de la colección del 10º aniversario, disponible en los dos diseños conmemorativos: «Gatos» y «Claveles». Sublimación total, escudo del aniversario y corte pensado para el juego. Es la prenda que se usa en todos los partidos federados y municipales.",
@@ -61,7 +166,7 @@ export const productos: Producto[] = [
     id: "malla-juego",
     nombre: "Malla de juego · 10º aniversario",
     categoria: "Equipación de juego",
-    precio: 0,
+    precio: 25,
     resumen: "Malla corta a juego con la camiseta, en «Gatos» y «Claveles».",
     descripcion:
       "Malla corta a juego con la camiseta, en los dos diseños del aniversario. Ajuste ceñido que no limita el movimiento y cintura ancha que no marca. Diseñada para que la lleven cómoda todas las categorías.",
@@ -83,7 +188,7 @@ export const productos: Producto[] = [
     id: "camiseta-entreno",
     nombre: "Camiseta de entreno",
     categoria: "Ropa de entreno",
-    precio: 0,
+    precio: 30,
     resumen: "Camiseta técnica para el día a día. Corte femenino o masculino.",
     descripcion:
       "Camiseta técnica para los entrenamientos del día a día, en naranja con mangas negras y el logo del club en el pecho. Disponible en corte femenino y masculino para que siente bien a todo el mundo.",
@@ -105,7 +210,7 @@ export const productos: Producto[] = [
     id: "sudadera-aniversario",
     nombre: "Sudadera 10º aniversario",
     categoria: "Sudaderas y abrigo",
-    precio: 0,
+    precio: 30,
     resumen: "Sudadera con capucha gris con el logo «10 aniversario».",
     descripcion:
       "Sudadera con capucha gris jaspeado, con el logo «10 aniversario» en el pecho y las huellas en la espalda. La pieza estrella de la colección: para el pabellón, el cole o la calle.",
@@ -127,7 +232,7 @@ export const productos: Producto[] = [
     id: "abrigo-nepal",
     nombre: "Abrigo Nepal",
     categoria: "Sudaderas y abrigo",
-    precio: 0,
+    precio: 0, // TODO: el club no ha facilitado el precio de este artículo.
     resumen: "Abrigo acolchado negro con capucha para el invierno.",
     descripcion:
       "Abrigo acolchado negro con capucha, para los pabellones fríos y los desplazamientos de invierno. Ligero pero cálido, con el logo del club y el dorsal bordados.",
@@ -146,7 +251,7 @@ export const productos: Producto[] = [
     id: "mochila",
     nombre: "Mochila oficial",
     categoria: "Accesorios",
-    precio: 0,
+    precio: 26,
     resumen: "Mochila negra con compartimento inferior para el calzado.",
     descripcion:
       "Mochila negra con compartimento inferior separado para el calzado y el logo del club estampado. La que usan todos los equipos para entrenar y competir.",

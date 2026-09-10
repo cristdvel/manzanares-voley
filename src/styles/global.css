@@ -579,6 +579,12 @@ p:last-child{margin-bottom:0}
 .pdp__price-note{font-family:Inter,sans-serif;font-size:12px;font-weight:400;color:var(--mzv-texto);letter-spacing:0}
 .pdp__resumen{margin:0 0 22px}
 
+.pdp__incluye{background:var(--mzv-crema);border:1px solid var(--mzv-borde);border-radius:12px;padding:16px 18px;margin:0 0 24px}
+.pdp__incluye h2{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--mzv-titulo);margin:0 0 10px}
+.pdp__incluye ul{list-style:none;margin:0;padding:0;display:grid;gap:7px}
+.pdp__incluye li{position:relative;padding-left:22px;font-size:14px;color:var(--mzv-titulo)}
+.pdp__incluye li::before{content:"";position:absolute;left:0;top:.5em;width:9px;height:9px;border-radius:2px;background:var(--mzv-verde)}
+
 .pdp__form{border-top:1px solid var(--mzv-borde);padding-top:22px}
 .pdp__opts{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:4px}
 .pdp__opts label{display:flex;flex-direction:column;gap:6px;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;color:var(--mzv-titulo);flex:1 1 130px}

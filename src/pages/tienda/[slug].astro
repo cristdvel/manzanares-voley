@@ -15,6 +15,7 @@ interface Props {
 const { producto: p } = Astro.props;
 const relacionados = getRelacionados(p);
 const url = site.url + "tienda/" + p.id + "/";
+const esPack = !!p.incluye?.length;
 
 const productSchema = {
   "@context": "https://schema.org",
@@ -26,7 +27,7 @@ const productSchema = {
   brand: { "@type": "Brand", name: "Manzanares Voley" },
   offers: {
     "@type": "Offer",
-    price: "0",
+    price: String(p.precio),
     priceCurrency: "EUR",
     availability: p.disponible
       ? "https://schema.org/InStock"
@@ -85,10 +86,23 @@ const breadcrumb = {
           <div class="pdp__summary">
             <h1>{p.nombre}</h1>
             <p class="pdp__cat">{p.categoria}</p>
-            <p class="pdp__price">{p.precio === 0 ? "0 €" : `${p.precio} €`}
-              <span class="pdp__price-note">provisional · el club te confirma el importe</span>
+            <p class="pdp__price">{p.precio === 0 ? "Por confirmar" : `${p.precio} €`}
+              {(p.precioNota || p.precio === 0) && (
+                <span class="pdp__price-note">
+                  {p.precioNota ?? "provisional · el club te confirma el importe"}
+                </span>
+              )}
             </p>
             <p class="pdp__resumen">{p.resumen}</p>
+
+            {esPack && (
+              <div class="pdp__incluye">
+                <h2>Qué incluye el pack</h2>
+                <ul>
+                  {p.incluye!.map((i) => <li>{i}</li>)}
+                </ul>
+              </div>
+            )}
 
             <form id="pedido-form" class="pdp__form" data-producto={p.nombre} novalidate>
               <div class="pdp__opts">
@@ -102,7 +116,7 @@ const breadcrumb = {
                   </label>
                 ))}
                 <label>
-                  Talla <span class="req">*</span>
+                  {esPack ? "Talla (para todo el pack)" : "Talla"} <span class="req">*</span>
                   <select data-opt="talla" required>
                     {p.tallas.length > 1 && <option value="">Elige…</option>}
                     {p.tallas.map((t) => <option value={t}>{t}</option>)}

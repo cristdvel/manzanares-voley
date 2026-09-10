@@ -61,7 +61,8 @@ const itemList = {
                       <h3>{p.nombre}</h3>
                       <p class="card-prod__resumen">{p.resumen}</p>
                       <span class="card-prod__price">
-                        {p.precio === 0 ? "0 € · provisional" : `${p.precio} €`}
+                        {p.precio === 0 ? "Por confirmar" : `${p.precio} €`}
+                        {p.incluye && p.incluye.length > 0 && " · pack"}
                       </span>
                       <span class="card-prod__cta">Ver artículo →</span>
                     </div>
