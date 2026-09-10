@@ -1,8 +1,8 @@
 // Catálogo de la tienda oficial.
-// Artículos sueltos con precio confirmado por el club (€).
-// El pago se hace por transferencia y el comprobante se adjunta al pedido.
-// Los PACKS llevan de momento la SUMA orientativa de sus prendas: el club
-// confirma el descuento final al tramitar el pedido.
+// Precios (€) confirmados por el club. El pago se hace por transferencia y el
+// comprobante se adjunta al tramitar el pedido.
+// Pendiente: precio del Abrigo Nepal y del Pack Federado Masculino (falta el
+// pantalón de juego).
 // Descripciones y características son de MUESTRA, pendientes de revisión del club.
 
 export interface Variante {
@@ -37,17 +37,13 @@ export interface Producto {
 const TALLAS = ["XS", "S", "M", "L", "XL"];
 const TALLA_UNICA = ["Única"];
 
-const NOTA_PACK =
-  "Suma de los artículos sueltos. El club confirma el descuento del pack al tramitar el pedido.";
-
 export const productos: Producto[] = [
   // ---------------- PACKS ----------------
   {
     id: "pack-federado-femenino",
     nombre: "Pack Federado Femenino",
     categoria: "Packs",
-    precio: 246, // 2·40 + 2·30 + 30 + 26 + 2·25
-    precioNota: NOTA_PACK,
+    precio: 146,
     resumen: "El equipo completo de temporada para jugadoras federadas.",
     descripcion:
       "Todo lo que necesita una jugadora federada para la temporada en un único pedido: 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario, 1 mochila oficial y 2 mallas de partido. Eliges una sola talla para el conjunto; el club asigna los diseños de camiseta y malla según disponibilidad (puedes indicar tu preferencia en las notas del pedido).",
@@ -112,8 +108,7 @@ export const productos: Producto[] = [
     id: "pack-municipal",
     nombre: "Pack Municipal",
     categoria: "Packs",
-    precio: 140, // 2·40 + 2·30
-    precioNota: NOTA_PACK,
+    precio: 70,
     resumen: "Lo justo para competición municipal: 2 camisetas de juego y 2 de entreno.",
     descripcion:
       "El pack para jugadoras y jugadores de competición municipal: 2 camisetas de juego y 2 camisetas de entreno naranjas. Eliges una sola talla para el conjunto; el club asigna los diseños según disponibilidad.",
