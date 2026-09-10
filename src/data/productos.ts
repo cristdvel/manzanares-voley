@@ -57,10 +57,14 @@ export const productos: Producto[] = [
       "Todo lo que necesita una jugadora federada para la temporada en un único pedido: 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario, 1 mochila oficial y 2 mallas de partido. Eliges la talla de cada prenda (camisetas, mallas y sudadera); el club asigna los diseños de camiseta y malla según disponibilidad (puedes indicar tu preferencia en las notas del pedido).",
     imagenes: [
       { src: "/img/equipacion/gatos-frente.png" },
+      { src: "/img/equipacion/gatos-espalda.png" },
       { src: "/img/equipacion/entreno-fem.png" },
+      { src: "/img/equipacion/entreno-fem-espalda.png" },
       { src: "/img/equipacion/sudadera-frente.png" },
-      { src: "/img/equipacion/mochila.png" },
+      { src: "/img/equipacion/sudadera-espalda.png" },
       { src: "/img/equipacion/malla-gatos.png" },
+      { src: "/img/equipacion/malla-gatos-espalda.png" },
+      { src: "/img/equipacion/mochila.png" },
     ],
     incluye: [
       "2 × Camiseta de juego",
@@ -95,8 +99,11 @@ export const productos: Producto[] = [
       "El conjunto de temporada para jugadores federados: 2 pantalones de juego, 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario y 1 mochila oficial. Eliges la talla de cada prenda (camisetas, pantalón y sudadera); el club asigna los diseños según disponibilidad.",
     imagenes: [
       { src: "/img/equipacion/gatos-frente.png" },
+      { src: "/img/equipacion/gatos-espalda.png" },
       { src: "/img/equipacion/entreno-masc.png" },
+      { src: "/img/equipacion/entreno-masc-espalda.png" },
       { src: "/img/equipacion/sudadera-frente.png" },
+      { src: "/img/equipacion/sudadera-espalda.png" },
       { src: "/img/equipacion/mochila.png" },
     ],
     incluye: [
@@ -131,7 +138,9 @@ export const productos: Producto[] = [
       "El pack para jugadoras y jugadores de competición municipal: 2 camisetas de juego y 2 camisetas de entreno naranjas. Eliges la talla de las camisetas; el club asigna los diseños según disponibilidad.",
     imagenes: [
       { src: "/img/equipacion/gatos-frente.png" },
+      { src: "/img/equipacion/gatos-espalda.png" },
       { src: "/img/equipacion/entreno-fem.png" },
+      { src: "/img/equipacion/entreno-fem-espalda.png" },
     ],
     incluye: [
       "2 × Camiseta de juego",
@@ -185,7 +194,9 @@ export const productos: Producto[] = [
       "Malla corta a juego con la camiseta, en los dos diseños del aniversario. Ajuste ceñido que no limita el movimiento y cintura ancha que no marca. Diseñada para que la lleven cómoda todas las categorías.",
     imagenes: [
       { src: "/img/equipacion/malla-gatos.png", variante: "Gatos" },
+      { src: "/img/equipacion/malla-gatos-espalda.png", variante: "Gatos" },
       { src: "/img/equipacion/malla-claveles.png", variante: "Claveles" },
+      { src: "/img/equipacion/malla-claveles-espalda.png", variante: "Claveles" },
     ],
     caracteristicas: [
       "Tejido elástico en 4 direcciones",
@@ -207,7 +218,9 @@ export const productos: Producto[] = [
       "Camiseta técnica para los entrenamientos del día a día, en naranja con mangas negras y el logo del club en el pecho. Disponible en corte femenino y masculino para que siente bien a todo el mundo.",
     imagenes: [
       { src: "/img/equipacion/entreno-fem.png", variante: "Femenino" },
+      { src: "/img/equipacion/entreno-fem-espalda.png", variante: "Femenino" },
       { src: "/img/equipacion/entreno-masc.png", variante: "Masculino" },
+      { src: "/img/equipacion/entreno-masc-espalda.png", variante: "Masculino" },
     ],
     caracteristicas: [
       "Poliéster técnico transpirable",
