@@ -56,14 +56,25 @@ export const productos: Producto[] = [
     descripcion:
       "Todo lo que necesita una jugadora federada para la temporada en un único pedido: 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario, 1 mochila oficial y 2 mallas de partido. Eliges la talla de cada prenda (camisetas, mallas y sudadera); el club asigna los diseños de camiseta y malla según disponibilidad (puedes indicar tu preferencia en las notas del pedido).",
     imagenes: [
+      // Camiseta de juego: los dos diseños, frente y espalda
       { src: "/img/equipacion/gatos-frente.png" },
       { src: "/img/equipacion/gatos-espalda.png" },
+      { src: "/img/equipacion/claveles-frente.png" },
+      { src: "/img/equipacion/claveles-espalda.png" },
+      // Camiseta de entreno: corte femenino y masculino, frente y espalda
       { src: "/img/equipacion/entreno-fem.png" },
       { src: "/img/equipacion/entreno-fem-espalda.png" },
+      { src: "/img/equipacion/entreno-masc.png" },
+      { src: "/img/equipacion/entreno-masc-espalda.png" },
+      // Sudadera
       { src: "/img/equipacion/sudadera-frente.png" },
       { src: "/img/equipacion/sudadera-espalda.png" },
+      // Mallas de partido: los dos diseños, frente y espalda
       { src: "/img/equipacion/malla-gatos.png" },
       { src: "/img/equipacion/malla-gatos-espalda.png" },
+      { src: "/img/equipacion/malla-claveles.png" },
+      { src: "/img/equipacion/malla-claveles-espalda.png" },
+      // Mochila
       { src: "/img/equipacion/mochila.png" },
     ],
     incluye: [
@@ -98,12 +109,20 @@ export const productos: Producto[] = [
     descripcion:
       "El conjunto de temporada para jugadores federados: 2 pantalones de juego, 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario y 1 mochila oficial. Eliges la talla de cada prenda (camisetas, pantalón y sudadera); el club asigna los diseños según disponibilidad.",
     imagenes: [
+      // Camiseta de juego: los dos diseños, frente y espalda
       { src: "/img/equipacion/gatos-frente.png" },
       { src: "/img/equipacion/gatos-espalda.png" },
+      { src: "/img/equipacion/claveles-frente.png" },
+      { src: "/img/equipacion/claveles-espalda.png" },
+      // Camiseta de entreno: corte femenino y masculino, frente y espalda
+      { src: "/img/equipacion/entreno-fem.png" },
+      { src: "/img/equipacion/entreno-fem-espalda.png" },
       { src: "/img/equipacion/entreno-masc.png" },
       { src: "/img/equipacion/entreno-masc-espalda.png" },
+      // Sudadera
       { src: "/img/equipacion/sudadera-frente.png" },
       { src: "/img/equipacion/sudadera-espalda.png" },
+      // Mochila
       { src: "/img/equipacion/mochila.png" },
     ],
     incluye: [
