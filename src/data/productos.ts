@@ -1,8 +1,8 @@
 // Catálogo de la tienda oficial.
 // Precios (€) confirmados por el club. El pago se hace por transferencia y el
 // comprobante se adjunta al tramitar el pedido.
-// Pendiente: precio del Abrigo Nepal y del Pack Federado Masculino (falta el
-// pantalón de juego).
+// Pendiente: precio del Abrigo Nepal y la foto del pantalón de juego que
+// incluye el Pack Federado Masculino.
 // Descripciones y características son de MUESTRA, pendientes de revisión del club.
 
 export interface Variante {
@@ -75,9 +75,8 @@ export const productos: Producto[] = [
     id: "pack-federado-masculino",
     nombre: "Pack Federado Masculino",
     categoria: "Packs",
-    precio: 0,
-    // TODO: cargar el pantalón de juego (producto + foto) y fijar el precio del pack.
-    precioNota: "Pendiente: falta cargar el pantalón de juego y fijar el precio del pack.",
+    precio: 146,
+    // TODO: cargar la foto del pantalón de juego (/img/equipacion/pantalon-juego.png).
     resumen: "El conjunto completo de temporada para jugadores federados.",
     descripcion:
       "El conjunto de temporada para jugadores federados: 2 pantalones de juego, 2 camisetas de juego, 2 camisetas de entreno, 1 sudadera del 10º aniversario y 1 mochila oficial. Eliges una sola talla para el conjunto; el club asigna los diseños según disponibilidad.",
