@@ -57,8 +57,12 @@ const breadcrumb = {
     <!-- Ropa de entreno -->
     <section class="section section--crema">
       <div class="container">
-        <span class="eyebrow">Día a día</span>
-        <h2 class="section-title">Ropa de entreno</h2>
+        <span class="eyebrow">Día a día y equipos federados</span>
+        <h2 class="section-title">Entreno y entrada en calor</h2>
+        <p class="section-intro">
+          La naranja es la camiseta de entreno de cada día; la fucsia la usan los equipos
+          federados solo para el calentamiento antes de los partidos.
+        </p>
         <div class="kit-grid">
           {entreno.map((e) => (
             <figure class="kit-card"><img src={e.img} alt={e.nombre} loading="lazy" /><figcaption>{e.nombre}</figcaption></figure>

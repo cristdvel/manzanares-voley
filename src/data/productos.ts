@@ -1,9 +1,8 @@
 // Catálogo de la tienda oficial.
 // Precios (€) confirmados por el club. El pago se hace por transferencia y el
 // comprobante se adjunta al tramitar el pedido.
-// Pendiente: precio del Abrigo Nepal, precio y foto real de la camiseta de
-// calentamiento (fucsia), y la foto del pantalón de juego que incluye el
-// Pack Federado Masculino.
+// Pendiente: precio del Abrigo Nepal y la foto del pantalón de juego que
+// incluye el Pack Federado Masculino.
 // Descripciones y características son de MUESTRA, pendientes de revisión del club.
 
 export interface Variante {
@@ -62,11 +61,12 @@ export const productos: Producto[] = [
       { src: "/img/equipacion/gatos-espalda.png" },
       { src: "/img/equipacion/claveles-frente.png" },
       { src: "/img/equipacion/claveles-espalda.png" },
-      // Camiseta de entreno (naranja): corte femenino, frente y espalda
+      // Camiseta de entreno (naranja), frente y espalda
       { src: "/img/equipacion/entreno-fem.png" },
       { src: "/img/equipacion/entreno-fem-espalda.png" },
-      // Camiseta de calentamiento (fucsia) — foto provisional, pendiente de la real
-      { src: "/img/equipacion/calentamiento-placeholder.svg" },
+      // Camiseta de entrada en calor federado (fucsia), frente y espalda
+      { src: "/img/equipacion/calentamiento-frente.png" },
+      { src: "/img/equipacion/calentamiento-espalda.png" },
       // Sudadera
       { src: "/img/equipacion/sudadera-frente.png" },
       { src: "/img/equipacion/sudadera-espalda.png" },
@@ -81,7 +81,7 @@ export const productos: Producto[] = [
     incluye: [
       "2 × Camiseta de juego",
       "2 × Camiseta de entreno (naranja)",
-      "2 × Camiseta de calentamiento (fucsia)",
+      "2 × Camiseta de entrada en calor federado (fucsia)",
       "1 × Sudadera 10º aniversario",
       "1 × Mochila oficial",
       "2 × Malla de partido",
@@ -90,7 +90,6 @@ export const productos: Producto[] = [
       "Ahorro frente a comprar cada prenda por separado",
       "Eliges la talla de cada prenda por separado",
       "Diseños de camiseta y malla asignados por el club según stock",
-      "Foto de la camiseta de calentamiento provisional, pendiente de subir la real",
       "Personalizable con nombre y dorsal en la camiseta de juego (indícalo en las notas)",
     ],
     variantes: [],
@@ -119,11 +118,12 @@ export const productos: Producto[] = [
       { src: "/img/equipacion/gatos-espalda.png" },
       { src: "/img/equipacion/claveles-frente.png" },
       { src: "/img/equipacion/claveles-espalda.png" },
-      // Camiseta de entreno (naranja): corte masculino, frente y espalda
-      { src: "/img/equipacion/entreno-masc.png" },
-      { src: "/img/equipacion/entreno-masc-espalda.png" },
-      // Camiseta de calentamiento (fucsia) — foto provisional, pendiente de la real
-      { src: "/img/equipacion/calentamiento-placeholder.svg" },
+      // Camiseta de entreno (naranja), frente y espalda
+      { src: "/img/equipacion/entreno-fem.png" },
+      { src: "/img/equipacion/entreno-fem-espalda.png" },
+      // Camiseta de entrada en calor federado (fucsia), frente y espalda
+      { src: "/img/equipacion/calentamiento-frente.png" },
+      { src: "/img/equipacion/calentamiento-espalda.png" },
       // Sudadera
       { src: "/img/equipacion/sudadera-frente.png" },
       { src: "/img/equipacion/sudadera-espalda.png" },
@@ -134,14 +134,14 @@ export const productos: Producto[] = [
       "2 × Pantalón de juego",
       "2 × Camiseta de juego",
       "2 × Camiseta de entreno (naranja)",
-      "2 × Camiseta de calentamiento (fucsia)",
+      "2 × Camiseta de entrada en calor federado (fucsia)",
       "1 × Sudadera 10º aniversario",
       "1 × Mochila oficial",
     ],
     caracteristicas: [
       "Ahorro frente a comprar cada prenda por separado",
       "Eliges la talla de cada prenda por separado",
-      "Foto del pantalón de juego y de la camiseta de calentamiento pendientes de subir",
+      "Foto del pantalón de juego pendiente de subir",
       "Personalizable con nombre y dorsal en la camiseta de juego (indícalo en las notas)",
     ],
     variantes: [],
@@ -243,42 +243,41 @@ export const productos: Producto[] = [
     nombre: "Camiseta de entreno",
     categoria: "Ropa de entreno",
     precio: 10,
-    resumen: "Camiseta técnica naranja para el día a día. Corte femenino o masculino.",
+    resumen: "Camiseta técnica naranja para el entreno del día a día.",
     descripcion:
-      "Camiseta técnica para los entrenamientos del día a día, en naranja con mangas negras y el logo del club en el pecho. Disponible en corte femenino y masculino para que siente bien a todo el mundo.",
+      "Camiseta técnica para los entrenamientos del día a día, en naranja con mangas negras y el logo del club en el pecho.",
     imagenes: [
-      { src: "/img/equipacion/entreno-fem.png", variante: "Femenino" },
-      { src: "/img/equipacion/entreno-fem-espalda.png", variante: "Femenino" },
-      { src: "/img/equipacion/entreno-masc.png", variante: "Masculino" },
-      { src: "/img/equipacion/entreno-masc-espalda.png", variante: "Masculino" },
+      { src: "/img/equipacion/entreno-fem.png" },
+      { src: "/img/equipacion/entreno-fem-espalda.png" },
     ],
     caracteristicas: [
       "Poliéster técnico transpirable",
       "Logo del club estampado en el pecho",
-      "Corte específico femenino o masculino",
+      "Corte unisex",
       "Uso recomendado para todas las categorías",
     ],
-    variantes: [{ nombre: "Corte", opciones: ["Femenino", "Masculino"] }],
+    variantes: [],
     tallas: TALLAS,
     disponible: true,
   },
   {
     id: "camiseta-calentamiento",
-    nombre: "Camiseta de calentamiento",
+    nombre: "Camiseta de entrada en calor federado",
     categoria: "Ropa de entreno",
-    precio: 0, // TODO: el club no ha facilitado el precio de esta prenda.
-    precioNota: "Por confirmar por el club.",
+    precio: 10,
     resumen: "Camiseta fucsia de entrada en calor para partidos, equipos federados.",
     descripcion:
-      "Camiseta fucsia que usan los equipos federados para el calentamiento antes de los partidos (distinta de la camiseta de entreno naranja del día a día). Corte femenino o masculino.",
-    imagenes: [{ src: "/img/equipacion/calentamiento-placeholder.svg" }],
+      "Camiseta fucsia que usan los equipos federados para el calentamiento previo al partido (distinta de la camiseta de entreno naranja del día a día).",
+    imagenes: [
+      { src: "/img/equipacion/calentamiento-frente.png" },
+      { src: "/img/equipacion/calentamiento-espalda.png" },
+    ],
     caracteristicas: [
       "Solo para equipos federados: uso previo al partido",
-      "Corte femenino o masculino",
-      // TODO: sustituir por fotos reales cuando el club las facilite.
-      "Foto real pendiente de subir (imagen provisional)",
+      "Poliéster técnico transpirable",
+      "Corte unisex",
     ],
-    variantes: [{ nombre: "Corte", opciones: ["Femenino", "Masculino"] }],
+    variantes: [],
     tallas: TALLAS,
     disponible: true,
   },

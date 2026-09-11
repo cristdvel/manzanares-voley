@@ -20,8 +20,10 @@ export const juego = [
 ];
 
 export const entreno = [
-  { nombre: "Camiseta de entreno · corte femenino", img: "/img/equipacion/entreno-fem.png" },
-  { nombre: "Camiseta de entreno · corte masculino", img: "/img/equipacion/entreno-masc.png" },
+  { nombre: "Camiseta de entreno — frente", img: "/img/equipacion/entreno-fem.png" },
+  { nombre: "Camiseta de entreno — espalda", img: "/img/equipacion/entreno-fem-espalda.png" },
+  { nombre: "Entrada en calor federado — frente", img: "/img/equipacion/calentamiento-frente.png" },
+  { nombre: "Entrada en calor federado — espalda", img: "/img/equipacion/calentamiento-espalda.png" },
 ];
 
 export const sudadera = {
