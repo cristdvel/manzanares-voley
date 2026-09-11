@@ -260,6 +260,8 @@ p:last-child{margin-bottom:0}
 .team h3{font-size:20px;margin-bottom:6px}
 .team__div{font-size:14px;color:var(--mzv-naranja);font-weight:600}
 .team__meta{font-size:14px;color:var(--mzv-texto);margin-top:10px}
+.team__cal{font-size:13px;font-weight:600;margin-top:10px;color:var(--mzv-texto)}
+.team__cal--ok{color:var(--mzv-verde)}
 
 /* ---------- Clasificación y calendario ---------- */
 .clasif__intro{max-width:660px;margin-bottom:28px}
@@ -366,6 +368,7 @@ p:last-child{margin-bottom:0}
 .field input:focus,.field select:focus{outline:2px solid var(--mzv-naranja);outline-offset:1px;border-color:var(--mzv-naranja)}
 .field--error input,.field--error select{border-color:var(--mzv-naranja);background:#fdf2ef}
 .error-msg{color:var(--mzv-naranja);font-size:13px;margin-top:6px;display:none}
+.field-hint{color:var(--mzv-texto);font-size:13px;margin-top:6px}
 .field--error .error-msg{display:block}
 .cat-hint{margin-top:8px;font-size:14px;color:var(--mzv-naranja);font-weight:600;display:none}
 .cat-hint.show{display:block}

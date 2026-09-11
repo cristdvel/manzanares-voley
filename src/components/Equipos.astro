@@ -32,7 +32,13 @@ import Clasificacion from "./Clasificacion.astro";
             <span class="badge">{cat.label}</span>
             <h3>{eq.nombre}</h3>
             <div class="team__div">{eq.division}</div>
-            <p class="team__meta">{eq.meta}</p>
+            {cat.id.startsWith("federado") && (
+              eq.calendario ? (
+                <p class="team__cal team__cal--ok">✓ Calendario y clasificación disponibles</p>
+              ) : (
+                <p class="team__cal">Calendario pendiente de publicar por la Federación</p>
+              )
+            )}
           </article>
         ))}
       </div>

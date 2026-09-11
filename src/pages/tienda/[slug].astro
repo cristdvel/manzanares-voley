@@ -156,8 +156,12 @@ const breadcrumb = {
                 <input type="tel" id="p-tel" name="telefono" required autocomplete="tel" />
               </div>
               <div class="field">
-                <label for="p-notas">Notas (nombre y dorsal, aclaraciones de talla…)</label>
-                <textarea id="p-notas" name="notas" rows="2"></textarea>
+                <label for="p-notas">Notas</label>
+                <textarea id="p-notas" name="notas" rows="2" placeholder="Nombre y dorsal para la camiseta de juego, preferencia de diseño…"></textarea>
+                <span class="field-hint">
+                  Si quieres nombre y dorsal en la camiseta de juego, escríbelos aquí (p. ej. "GARCÍA · 7").
+                  Si lo dejas en blanco, se entrega sin personalizar.
+                </span>
               </div>
               <div class="field" id="field-file">
                 <label for="p-file">Comprobante de pago <span class="req">*</span></label>
