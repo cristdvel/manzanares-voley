@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-13T15:43:58.778Z",
+  "actualizado": "2026-09-14T09:37:51.339Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -173,12 +173,12 @@
           "fecha": "2026-09-27T00:00:00.000Z",
           "partidos": [
             {
-              "id": 56741,
+              "id": 56743,
               "jornada": 1,
-              "fechaHora": "2026-09-27T00:00:00.000Z",
-              "local": "Feel Alcobendas Negro",
-              "visitante": "CV Bulldogs A",
-              "pabellon": null,
+              "fechaHora": "2026-09-26T20:00:00.000Z",
+              "local": "Baumit CV Collado Villalba",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": "Antonio Machado, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -189,17 +189,6 @@
               "fechaHora": "2026-09-27T00:00:00.000Z",
               "local": "Cvleganes.com A",
               "visitante": "Club Voleibol Móstoles A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 56743,
-              "jornada": 1,
-              "fechaHora": "2026-09-27T00:00:00.000Z",
-              "local": "Baumit CV Collado Villalba",
-              "visitante": "CV Sanse Rojo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -224,6 +213,17 @@
               "local": "CV Las Rozas A",
               "visitante": "V-Valley CValcalá G1",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56741,
+              "jornada": 1,
+              "fechaHora": "2026-09-27T11:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Bulldogs A",
+              "pabellon": "Luis Buñuel, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
