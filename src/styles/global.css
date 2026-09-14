@@ -262,6 +262,8 @@ p:last-child{margin-bottom:0}
 .team__meta{font-size:14px;color:var(--mzv-texto);margin-top:10px}
 .team__cal{font-size:13px;font-weight:600;margin-top:10px;color:var(--mzv-texto)}
 .team__cal--ok{color:var(--mzv-verde)}
+.team__cal--link{display:inline-block;text-decoration:none;cursor:pointer}
+.team__cal--link:hover{text-decoration:underline}
 
 /* ---------- Fotos de equipos ---------- */
 .team-photos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}

@@ -182,6 +182,21 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
           });
         });
 
+        // ---- Enlace directo a un equipo en /calendario (#equipo-<grupoId>) ----
+        (function () {
+          var m = /^#equipo-(\d+)$/.exec(window.location.hash);
+          if (!m) return;
+          var id = m[1];
+          ["cal", "clasif"].forEach(function (name) {
+            var tab = document.querySelector(
+              '[data-tabs="' + name + '"] .tab[data-cat="' + id + '"]',
+            );
+            if (tab) tab.click();
+          });
+          var destino = document.getElementById("calendario");
+          if (destino) destino.scrollIntoView({ behavior: "smooth", block: "start" });
+        })();
+
         // ---- Acordeón FAQ ----
         document.querySelectorAll(".faq-item").forEach(function (item) {
           var q = item.querySelector(".faq-q");

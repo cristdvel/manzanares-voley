@@ -8,6 +8,9 @@ export interface Equipo {
    * Solo se usa en las categorías federadas.
    */
   calendario?: boolean;
+  /** grupoId de la FMVoley (ver equipos-federados.json) cuando calendario es true;
+   * permite enlazar directo a su pestaña en /calendario. */
+  grupoId?: number;
 }
 
 export interface Categoria {
@@ -47,12 +50,12 @@ export const categorias: Categoria[] = [
     label: "Federado femenino",
     equipos: [
       { nombre: "Sénior", division: "Liga federada" },
-      { nombre: "Junior A", division: "1ª División", calendario: true },
+      { nombre: "Junior A", division: "1ª División", calendario: true, grupoId: 33941 },
       { nombre: "Junior B", division: "Liga federada" },
-      { nombre: "Juvenil A", division: "1ª División", calendario: true },
+      { nombre: "Juvenil A", division: "1ª División", calendario: true, grupoId: 33929 },
       { nombre: "Juvenil B", division: "Liga federada" },
       { nombre: "Juvenil C", division: "Liga federada" },
-      { nombre: "Cadete A", division: "1ª División", calendario: true },
+      { nombre: "Cadete A", division: "1ª División", calendario: true, grupoId: 33922 },
       { nombre: "Cadete B", division: "Liga federada" },
       { nombre: "Cadete C", division: "Liga federada" },
       { nombre: "Infantil A", division: "Liga federada" },
