@@ -1,17 +1,21 @@
 /**
  * Cloudflare Pages Function — recibe un pedido de la tienda con el comprobante
- * de pago adjunto y lo envía por email al club mediante Resend.
+ * de pago adjunto, lo envía por email al club mediante Resend y lo registra
+ * en una hoja de Google Sheets (vía un Apps Script Web App) para tener un
+ * listado descargable de todos los pedidos. Ver DEPLOY.md §6.
  *
  * Variables de entorno (Pages → Settings → Environment variables):
- *   RESEND_API_KEY  (obligatoria)  clave de API de Resend
- *   PEDIDOS_TO      (opcional)     destino; por defecto manzanaresvoley@gmail.com
- *   PEDIDOS_FROM    (opcional)     remitente verificado en Resend
+ *   RESEND_API_KEY     (obligatoria)  clave de API de Resend
+ *   PEDIDOS_TO         (opcional)     destino; por defecto manzanaresvoley@gmail.com
+ *   PEDIDOS_FROM       (opcional)     remitente verificado en Resend
+ *   SHEETS_WEBHOOK_URL (opcional)     URL del Apps Script Web App que registra el pedido
  */
 
 interface Env {
   RESEND_API_KEY: string;
   PEDIDOS_TO?: string;
   PEDIDOS_FROM?: string;
+  SHEETS_WEBHOOK_URL?: string;
 }
 
 const MAX_FILE = 8 * 1024 * 1024; // 8 MB
@@ -151,6 +155,31 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   if (!res.ok) {
     const detail = await res.text().catch(() => "");
     return json({ ok: false, error: "No se pudo enviar el pedido.", detail }, 502);
+  }
+
+  // Registro en Google Sheets: best-effort, no bloquea la respuesta al
+  // cliente si falla (el pedido ya se ha enviado por email de todas formas).
+  if (env.SHEETS_WEBHOOK_URL) {
+    try {
+      await fetch(env.SHEETS_WEBHOOK_URL, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          nombre,
+          email,
+          telefono,
+          notas,
+          pedido: lineas,
+          comprobante: {
+            nombre: file.name,
+            tipo: file.type || "application/octet-stream",
+            base64: attachment.content,
+          },
+        }),
+      });
+    } catch (err) {
+      console.error("No se pudo registrar el pedido en Sheets:", err);
+    }
   }
 
   return json({ ok: true });

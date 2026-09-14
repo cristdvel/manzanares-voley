@@ -151,3 +151,38 @@ mediante la función `functions/api/pedido.ts` (Cloudflare Pages Functions) y
    llega el email.
 
 > Límite del adjunto: 8 MB (imagen o PDF). Se puede subir en `functions/api/pedido.ts`.
+
+---
+
+## 6. Registro de pedidos en Google Sheets (el "Excel" descargable)
+
+Además del email, cada pedido se guarda como una fila en una hoja de Google
+Sheets: fecha, cliente, artículos, comprobante (enlace a Drive) y dos columnas
+libres — **Estado** y **Comentario interno** — para que el club anote cómo va
+cada pedido. Es opcional: sin configurar esto, la tienda sigue funcionando
+igual (solo por email).
+
+1. Crea una hoja de cálculo nueva en <https://sheets.new> y llámala p. ej.
+   **"Pedidos tienda Manzanares"**.
+2. Menú **Extensiones → Apps Script**. Borra el código de ejemplo y pega el
+   contenido de [`scripts/apps-script-pedidos.gs`](scripts/apps-script-pedidos.gs)
+   de este repo. Guarda (icono de disquete).
+3. **Implementar → Nueva implementación**:
+   - Tipo: **Aplicación web**.
+   - Ejecutar como: **Yo** (tu cuenta de Google).
+   - Quién tiene acceso: **Cualquier usuario**.
+   - *Implementar* → la primera vez pide autorizar permisos (Sheets + Drive):
+     acepta con la misma cuenta de Google.
+4. Copia la **URL de la aplicación web** que te da (termina en `/exec`).
+5. En Cloudflare → proyecto Pages → **Settings → Environment variables**,
+   añade `SHEETS_WEBHOOK_URL` con esa URL (entornos *Production* y *Preview*).
+6. Vuelve a desplegar (cualquier push) y haz un pedido de prueba en `/tienda`:
+   debería aparecer una fila nueva en la hoja, con el comprobante subido a una
+   carpeta de Drive llamada "Comprobantes Tienda Manzanares".
+7. **Panel de pedidos:** la propia hoja de cálculo hace de panel — filtra,
+   ordena, escribe en "Estado"/"Comentario interno", o **Archivo → Descargar →
+   Microsoft Excel (.xlsx)** cuando quieras el Excel offline.
+
+> Si más adelante cambias el código del Apps Script, tienes que volver a
+> **Implementar → Gestionar implementaciones → editar (lápiz) → Nueva versión**
+> para que el cambio se publique (guardar el archivo no es suficiente).
