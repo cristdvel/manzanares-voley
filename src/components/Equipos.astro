@@ -54,13 +54,59 @@ import Clasificacion from "./Clasificacion.astro";
     <div class="team-photos">
       {fotosEquipos.map((f) => (
         <figure class="team-photo">
-          <img src={f.foto} alt={`Equipo ${f.equipo} · ${f.categoria}`} loading="lazy" width="800" height="1000" />
+          <button
+            type="button"
+            class="team-photo__btn"
+            data-lightbox={f.foto}
+            data-caption={`${f.equipo} · ${f.categoria}`}
+            aria-label={`Ampliar foto: ${f.equipo} · ${f.categoria}`}
+          >
+            <img src={f.foto} alt={`Equipo ${f.equipo} · ${f.categoria}`} loading="lazy" width="600" height="600" />
+          </button>
           <figcaption><strong>{f.equipo}</strong><span>{f.categoria}</span></figcaption>
         </figure>
       ))}
     </div>
+
+    <div id="team-lightbox" class="lightbox" hidden>
+      <button type="button" class="lightbox__close" data-lightbox-close aria-label="Cerrar">✕</button>
+      <img id="team-lightbox-img" src="" alt="" />
+      <p id="team-lightbox-cap" class="lightbox__cap"></p>
+    </div>
   </div>
 </div>
+
+<script>
+  const lb = document.getElementById("team-lightbox") as HTMLDivElement | null;
+  const lbImg = document.getElementById("team-lightbox-img") as HTMLImageElement | null;
+  const lbCap = document.getElementById("team-lightbox-cap") as HTMLParagraphElement | null;
+
+  function abrir(src: string, caption: string) {
+    if (!lb || !lbImg || !lbCap) return;
+    lbImg.src = src;
+    lbImg.alt = caption;
+    lbCap.textContent = caption;
+    lb.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+  function cerrar() {
+    if (!lb || !lbImg) return;
+    lb.hidden = true;
+    lbImg.src = "";
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll<HTMLButtonElement>("[data-lightbox]").forEach((btn) => {
+    btn.addEventListener("click", () => abrir(btn.dataset.lightbox!, btn.dataset.caption || ""));
+  });
+  document.querySelector("[data-lightbox-close]")?.addEventListener("click", cerrar);
+  lb?.addEventListener("click", (e) => {
+    if (e.target === lb) cerrar();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lb && !lb.hidden) cerrar();
+  });
+</script>
 
 <!-- Clasificación en directo (datos de la FMVoley) -->
 <Clasificacion />
