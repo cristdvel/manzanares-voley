@@ -82,6 +82,27 @@ export const categorias: Categoria[] = [
   },
 ];
 
+export interface FotoEquipo {
+  equipo: string;
+  categoria: string;
+  foto: string;
+}
+
+// Fotos reales de la temporada, facilitadas por el club (14 sep 2026).
+// La foto de "Cadete masculino" no venía separada por A/B: se muestra
+// sin distinguir hasta que el club confirme a qué equipo corresponde.
+export const fotosEquipos: FotoEquipo[] = [
+  { equipo: "Sénior", categoria: "Femenino", foto: "/img/equipos/senior-femenino.jpg" },
+  { equipo: "Sénior", categoria: "Masculino", foto: "/img/equipos/senior-masculino.jpg" },
+  { equipo: "Junior A", categoria: "Femenino", foto: "/img/equipos/junior-a-femenino.jpg" },
+  { equipo: "Junior B", categoria: "Femenino", foto: "/img/equipos/junior-b-femenino.jpg" },
+  { equipo: "Juvenil A", categoria: "Femenino", foto: "/img/equipos/juvenil-a-femenino.jpg" },
+  { equipo: "Juvenil", categoria: "Masculino", foto: "/img/equipos/juvenil-masculino.jpg" },
+  { equipo: "Cadete", categoria: "Masculino", foto: "/img/equipos/cadete-masculino.jpg" },
+  { equipo: "Infantil A", categoria: "Femenino", foto: "/img/equipos/infantil-a-femenino.jpg" },
+  { equipo: "Alevín", categoria: "Femenino", foto: "/img/equipos/alevin-femenino.jpg" },
+];
+
 // Pabellones registrados en la Federación de Madrid de Voleibol
 // (ficha del club en fmvoley.com).
 export const sedes = [

@@ -263,6 +263,17 @@ p:last-child{margin-bottom:0}
 .team__cal{font-size:13px;font-weight:600;margin-top:10px;color:var(--mzv-texto)}
 .team__cal--ok{color:var(--mzv-verde)}
 
+/* ---------- Fotos de equipos ---------- */
+.team-photos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.team-photo{background:#fff;border:1px solid var(--mzv-borde);border-radius:14px;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease}
+.team-photo:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(0,0,0,.09)}
+.team-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:contain;background:var(--mzv-crema)}
+.team-photo figcaption{padding:12px 14px}
+.team-photo figcaption strong{display:block;font-size:15px;color:var(--mzv-titulo)}
+.team-photo figcaption span{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mzv-texto)}
+@media (max-width:900px){.team-photos{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.team-photos{grid-template-columns:repeat(2,1fr)}}
+
 /* ---------- Clasificación y calendario ---------- */
 .clasif__intro{max-width:660px;margin-bottom:28px}
 .clasif__division{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mzv-texto);font-weight:600;margin:20px 0 12px}

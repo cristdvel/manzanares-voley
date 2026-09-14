@@ -1,5 +1,5 @@
 ---
-import { categorias, sedes } from "../data/equipos";
+import { categorias, sedes, fotosEquipos } from "../data/equipos";
 import Clasificacion from "./Clasificacion.astro";
 ---
 <div class="section">
@@ -43,6 +43,22 @@ import Clasificacion from "./Clasificacion.astro";
         ))}
       </div>
     ))}
+  </div>
+</div>
+
+<!-- Fotos reales de la temporada -->
+<div class="section section--crema">
+  <div class="container">
+    <span class="eyebrow">Esta temporada</span>
+    <h2 class="section-title">Nuestros equipos en el pabellón</h2>
+    <div class="team-photos">
+      {fotosEquipos.map((f) => (
+        <figure class="team-photo">
+          <img src={f.foto} alt={`Equipo ${f.equipo} · ${f.categoria}`} loading="lazy" width="800" height="1000" />
+          <figcaption><strong>{f.equipo}</strong><span>{f.categoria}</span></figcaption>
+        </figure>
+      ))}
+    </div>
   </div>
 </div>
 
