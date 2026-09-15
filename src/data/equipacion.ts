@@ -1,21 +1,23 @@
 export const juego = [
   {
     nombre: "Diseño «Gatos»",
-    desc: "Estampado de gatos negros sobre paneles naranjas y huellas. Camiseta y malla conmemorativas del 10º aniversario.",
+    desc: "Estampado de gatos negros sobre paneles naranjas y huellas. Camiseta, malla y pantalón conmemorativos del 10º aniversario.",
     camiseta: {
       frente: "/img/equipacion/gatos-frente.png",
       espalda: "/img/equipacion/gatos-espalda.png",
     },
     malla: "/img/equipacion/malla-gatos.png",
+    pantalon: "/img/equipacion/pantalon-gatos.jpg",
   },
   {
     nombre: "Diseño «Claveles»",
-    desc: "Estampado floral de claveles rojos sobre negro. Camiseta y malla conmemorativas del 10º aniversario.",
+    desc: "Estampado floral de claveles rojos sobre negro. Camiseta, malla y pantalón conmemorativos del 10º aniversario.",
     camiseta: {
       frente: "/img/equipacion/claveles-frente.png",
       espalda: "/img/equipacion/claveles-espalda.png",
     },
     malla: "/img/equipacion/malla-claveles.png",
+    pantalon: "/img/equipacion/pantalon-claveles.jpg",
   },
 ];
 

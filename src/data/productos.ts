@@ -1,8 +1,7 @@
 // Catálogo de la tienda oficial.
 // Precios (€) confirmados por el club. El pago se hace por transferencia y el
 // comprobante se adjunta al tramitar el pedido.
-// Pendiente: precio del Abrigo Nepal y la foto del pantalón de juego que
-// incluye el Pack Federado Masculino.
+// Pendiente: precio del Abrigo Nepal.
 // Descripciones y características son de MUESTRA, pendientes de revisión del club.
 
 export interface Variante {
@@ -108,7 +107,6 @@ export const productos: Producto[] = [
     nombre: "Pack Federado Masculino",
     categoria: "Packs",
     precio: 146,
-    // TODO: cargar la foto del pantalón de juego (/img/equipacion/pantalon-juego.png).
     resumen: "El conjunto completo de temporada para jugadores federados.",
     descripcion:
       "El conjunto de temporada para jugadores federados: 2 pantalones de juego, 2 camisetas de juego, 1 camiseta de entreno (naranja, para el día a día) y 1 de entrada en calor (fucsia, para antes de los partidos), 1 sudadera del 10º aniversario y 1 mochila oficial. Eliges la talla de cada prenda por separado; el club asigna los diseños según disponibilidad.",
@@ -118,6 +116,9 @@ export const productos: Producto[] = [
       { src: "/img/equipacion/gatos-espalda.png" },
       { src: "/img/equipacion/claveles-frente.png" },
       { src: "/img/equipacion/claveles-espalda.png" },
+      // Pantalón de juego: los dos diseños
+      { src: "/img/equipacion/pantalon-gatos.jpg" },
+      { src: "/img/equipacion/pantalon-claveles.jpg" },
       // Camiseta de entreno (naranja), frente y espalda
       { src: "/img/equipacion/entreno-fem.png" },
       { src: "/img/equipacion/entreno-fem-espalda.png" },
@@ -141,7 +142,7 @@ export const productos: Producto[] = [
     caracteristicas: [
       "Ahorro frente a comprar cada prenda por separado",
       "Eliges la talla de cada prenda por separado",
-      "Foto del pantalón de juego pendiente de subir",
+      "Diseños de camiseta y pantalón asignados por el club según stock",
       "Personalizable con nombre y dorsal en la camiseta de juego (indícalo en las notas)",
     ],
     variantes: [],
