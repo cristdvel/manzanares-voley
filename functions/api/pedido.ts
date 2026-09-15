@@ -1,8 +1,9 @@
 /**
  * Cloudflare Pages Function — recibe un pedido de la tienda con el comprobante
- * de pago adjunto, lo envía por email al club mediante Resend y lo registra
- * en una hoja de Google Sheets (vía un Apps Script Web App) para tener un
- * listado descargable de todos los pedidos. Ver DEPLOY.md §6.
+ * de pago adjunto, envía por email al club el pedido completo (con adjunto) y
+ * al comprador una confirmación con su nº de pedido, y lo registra en una
+ * hoja de Google Sheets (vía un Apps Script Web App) para tener un listado
+ * descargable de todos los pedidos. Ver DEPLOY.md §6.
  *
  * Variables de entorno (Pages → Settings → Environment variables):
  *   RESEND_API_KEY     (obligatoria)  clave de API de Resend
@@ -168,6 +169,49 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
     const detail = await res.text().catch(() => "");
     return json({ ok: false, error: "No se pudo enviar el pedido.", detail }, 502);
   }
+
+  // Confirmación al comprador: en segundo plano, no bloquea la respuesta.
+  // Si falla, el pedido ya está recibido por el club de todas formas.
+  const htmlComprador = `
+    <div style="font-family:Arial,sans-serif;color:#212327;max-width:640px">
+      <h2 style="color:#DC3C14;margin:0 0 4px">¡Gracias por tu pedido!</h2>
+      <p style="margin:0 0 18px;color:#666">Pedido <strong>${esc(numero)}</strong> · ${esc(new Date().toLocaleString("es-ES"))}</p>
+      <p style="margin:0 0 18px">
+        Hola ${esc(nombre)}, hemos recibido tu pedido y el comprobante de pago.
+        El club te contesta a este email en menos de 48 h para confirmar tallas y cerrar la entrega.
+      </p>
+      <h3 style="margin:0 0 6px">Tu pedido</h3>
+      <table style="border-collapse:collapse;width:100%;font-size:14px">
+        <thead><tr>
+          <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #212327">Artículo</th>
+          <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #212327">Variante</th>
+          <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #212327">Talla</th>
+          <th style="padding:6px 10px;border-bottom:2px solid #212327">Uds.</th>
+        </tr></thead>
+        <tbody>${filas}</tbody>
+      </table>
+      ${notas ? `<h3 style="margin:18px 0 6px">Tus notas</h3><p style="margin:0;white-space:pre-wrap">${esc(notas)}</p>` : ""}
+      <p style="margin:24px 0 0;color:#666;font-size:13px">
+        ¿Dudas mientras tanto? Escríbenos a
+        <a href="mailto:manzanaresvoley@gmail.com">manzanaresvoley@gmail.com</a>.
+      </p>
+    </div>`;
+
+  const confirmacion = fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${env.RESEND_API_KEY}`,
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({
+      from: env.PEDIDOS_FROM || "Tienda Manzanares Voley <onboarding@resend.dev>",
+      to: [email],
+      reply_to: env.PEDIDOS_TO || "manzanaresvoley@gmail.com",
+      subject: `Hemos recibido tu pedido — ${numero}`,
+      html: htmlComprador,
+    }),
+  }).catch((err) => console.error("No se pudo enviar la confirmación al comprador:", err));
+  waitUntil(confirmacion);
 
   // Registro en Google Sheets: en segundo plano (waitUntil), sin esperar a
   // que Apps Script termine — así no se cuelga la respuesta al cliente si
