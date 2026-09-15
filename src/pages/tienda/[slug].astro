@@ -180,11 +180,6 @@ const breadcrumb = {
               <p class="form-note">Recibimos tu pedido por email y te contestamos en menos de 48 h para cerrar la entrega.</p>
             </form>
 
-            <div id="pedido-ok" class="form-success" role="status">
-              <strong>¡Pedido recibido!</strong><br />
-              Tu pedido y el comprobante han llegado al club. Te escribimos para confirmar
-              tallas y recogida.
-            </div>
             <div id="pedido-error" class="pedido-error" role="alert" hidden></div>
           </div>
         </div>
@@ -270,7 +265,6 @@ const breadcrumb = {
 
   // Pedido
   const form = document.getElementById("pedido-form") as HTMLFormElement | null;
-  const okEl = document.getElementById("pedido-ok")!;
   const errEl = document.getElementById("pedido-error")!;
   const submitBtn = document.getElementById("pedido-submit") as HTMLButtonElement;
   const fileEl = document.getElementById("p-file") as HTMLInputElement;
@@ -338,9 +332,12 @@ const breadcrumb = {
       const res = await fetch("/api/pedido", { method: "POST", body: fd });
       const data = await res.json().catch(() => ({}));
       if (res.ok && data.ok) {
-        form.style.display = "none";
-        okEl.classList.add("show");
-        okEl.scrollIntoView({ behavior: "smooth", block: "center" });
+        const params = new URLSearchParams({
+          pedido: data.numero || "",
+          producto: (form.dataset.producto as string) || "",
+        });
+        window.location.href = "/tienda/gracias?" + params.toString();
+        return;
       } else {
         throw new Error(data.error || "No se pudo enviar el pedido.");
       }

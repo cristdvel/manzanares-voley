@@ -38,7 +38,14 @@ function toBase64(buf: ArrayBuffer): string {
   return btoa(bin);
 }
 
-export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
+/** Nº de pedido legible: MZV + fecha (AAMMDD) + 4 dígitos aleatorios. */
+function generarNumeroPedido(): string {
+  const fecha = new Date().toISOString().slice(2, 10).replace(/-/g, "");
+  const sufijo = Math.floor(1000 + Math.random() * 9000);
+  return `MZV${fecha}-${sufijo}`;
+}
+
+export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
   const json = (data: unknown, status = 200) =>
     new Response(JSON.stringify(data), {
       status,
@@ -95,6 +102,11 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     return json({ ok: false, error: "El comprobante debe ser una imagen o un PDF." }, 400);
   }
 
+  const numero = generarNumeroPedido();
+  // Renombra el adjunto con el nº de pedido, conservando la extensión original.
+  const ext = /\.[a-zA-Z0-9]+$/.exec(file.name || "")?.[0] || "";
+  const nombreArchivo = `${numero}${ext}`;
+
   const filas = lineas
     .map(
       (l) =>
@@ -107,7 +119,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
 
   const html = `
     <div style="font-family:Arial,sans-serif;color:#212327;max-width:640px">
-      <h2 style="color:#DC3C14;margin:0 0 4px">Nuevo pedido de la tienda</h2>
+      <h2 style="color:#DC3C14;margin:0 0 4px">Nuevo pedido de la tienda — ${esc(numero)}</h2>
       <p style="margin:0 0 18px;color:#666">${esc(new Date().toLocaleString("es-ES"))}</p>
       <h3 style="margin:0 0 6px">Cliente</h3>
       <p style="margin:0 0 18px">
@@ -127,12 +139,12 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       </table>
       ${notas ? `<h3 style="margin:18px 0 6px">Notas</h3><p style="margin:0;white-space:pre-wrap">${esc(notas)}</p>` : ""}
       <p style="margin:18px 0 0;color:#666;font-size:13px">
-        Comprobante de pago adjunto: <strong>${esc(file.name)}</strong>
+        Comprobante de pago adjunto: <strong>${esc(nombreArchivo)}</strong>
       </p>
     </div>`;
 
   const attachment = {
-    filename: file.name || "comprobante",
+    filename: nombreArchivo,
     content: toBase64(await file.arrayBuffer()),
   };
 
@@ -146,7 +158,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
       from: env.PEDIDOS_FROM || "Tienda Manzanares Voley <onboarding@resend.dev>",
       to: [env.PEDIDOS_TO || "manzanaresvoley@gmail.com"],
       reply_to: email,
-      subject: `Pedido tienda — ${nombre}`,
+      subject: `Pedido ${numero} — ${nombre}`,
       html,
       attachments: [attachment],
     }),
@@ -157,30 +169,29 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     return json({ ok: false, error: "No se pudo enviar el pedido.", detail }, 502);
   }
 
-  // Registro en Google Sheets: best-effort, no bloquea la respuesta al
-  // cliente si falla (el pedido ya se ha enviado por email de todas formas).
+  // Registro en Google Sheets: en segundo plano (waitUntil), sin esperar a
+  // que Apps Script termine — así no se cuelga la respuesta al cliente si
+  // Google tarda. El pedido ya se ha enviado por email de todas formas.
   if (env.SHEETS_WEBHOOK_URL) {
-    try {
-      await fetch(env.SHEETS_WEBHOOK_URL, {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({
-          nombre,
-          email,
-          telefono,
-          notas,
-          pedido: lineas,
-          comprobante: {
-            nombre: file.name,
-            tipo: file.type || "application/octet-stream",
-            base64: attachment.content,
-          },
-        }),
-      });
-    } catch (err) {
-      console.error("No se pudo registrar el pedido en Sheets:", err);
-    }
+    const registro = fetch(env.SHEETS_WEBHOOK_URL, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        numero,
+        nombre,
+        email,
+        telefono,
+        notas,
+        pedido: lineas,
+        comprobante: {
+          nombre: nombreArchivo,
+          tipo: file.type || "application/octet-stream",
+          base64: attachment.content,
+        },
+      }),
+    }).catch((err) => console.error("No se pudo registrar el pedido en Sheets:", err));
+    waitUntil(registro);
   }
 
-  return json({ ok: true });
+  return json({ ok: true, numero });
 };

@@ -1,0 +1,52 @@
+---
+import Base from "../../layouts/Base.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<Base
+  title="Pedido recibido | Tienda Manzanares Voley"
+  description="Tu pedido se ha recibido correctamente. El club te contesta en menos de 48 horas."
+  noindex={true}
+>
+  <Header />
+  <main id="contenido">
+    <div class="page-hero">
+      <div class="container center">
+        <span class="eyebrow">Pedido recibido</span>
+        <h1>¡Gracias por tu pedido!</h1>
+        <p class="gracias-numero" id="gracias-numero" hidden>
+          Nº de pedido: <strong id="gracias-numero-valor"></strong>
+        </p>
+        <p class="section-intro">
+          Hemos recibido tu pedido<span id="gracias-producto"></span> y el comprobante de pago.
+          Te contestamos por email en menos de 48 h para confirmar tallas y cerrar la entrega.
+        </p>
+        <div class="page-cta">
+          <a href="/tienda" class="btn btn--outline-light btn--lg">Seguir comprando</a>
+          <a href="mailto:manzanaresvoley@gmail.com" class="btn btn--primary btn--lg">Escribir al club</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Base>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const numero = params.get("pedido");
+  const producto = params.get("producto");
+
+  if (numero) {
+    const num = document.getElementById("gracias-numero") as HTMLElement | null;
+    const val = document.getElementById("gracias-numero-valor") as HTMLElement | null;
+    if (num && val) {
+      val.textContent = numero;
+      num.hidden = false;
+    }
+  }
+  if (producto) {
+    const prodEl = document.getElementById("gracias-producto");
+    if (prodEl) prodEl.textContent = ` (${producto})`;
+  }
+</script>

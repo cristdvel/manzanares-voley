@@ -177,8 +177,11 @@ igual (solo por email).
 5. En Cloudflare → proyecto Pages → **Settings → Environment variables**,
    añade `SHEETS_WEBHOOK_URL` con esa URL (entornos *Production* y *Preview*).
 6. Vuelve a desplegar (cualquier push) y haz un pedido de prueba en `/tienda`:
-   debería aparecer una fila nueva en la hoja, con el comprobante subido a una
-   carpeta de Drive llamada "Comprobantes Tienda Manzanares".
+   debería aparecer una fila nueva en una **pestaña llamada "Pedidos"** (el
+   script la crea la primera vez, es una pestaña nueva al lado de "Hoja 1" —
+   mira abajo del todo de la hoja de cálculo si no la ves a primera vista),
+   con el comprobante subido a una carpeta de Drive llamada "Comprobantes
+   Tienda Manzanares" con el nº de pedido como nombre de archivo.
 7. **Panel de pedidos:** la propia hoja de cálculo hace de panel — filtra,
    ordena, escribe en "Estado"/"Comentario interno", o **Archivo → Descargar →
    Microsoft Excel (.xlsx)** cuando quieras el Excel offline.
@@ -186,3 +189,9 @@ igual (solo por email).
 > Si más adelante cambias el código del Apps Script, tienes que volver a
 > **Implementar → Gestionar implementaciones → editar (lápiz) → Nueva versión**
 > para que el cambio se publique (guardar el archivo no es suficiente).
+
+> El registro en Sheets se hace en segundo plano (no bloquea la respuesta al
+> cliente): un pedido puede aparecer en la hoja unos segundos después de que
+> el comprador vea la página de confirmación. Si nunca aparece, revisa en
+> Apps Script → **Ejecuciones** (icono de reloj a la izquierda) los últimos
+> intentos y su error.

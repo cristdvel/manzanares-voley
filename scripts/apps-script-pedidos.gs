@@ -6,19 +6,25 @@
  * los pedidos. Instrucciones completas en DEPLOY.md §6.
  *
  * Recibe (POST, JSON) desde functions/api/pedido.ts:
- *   { nombre, email, telefono, notas,
+ *   { numero, nombre, email, telefono, notas,
  *     pedido: [{ nombre, variante, talla, cantidad }, ...],
  *     comprobante: { nombre, tipo, base64 } }
  *
+ * "numero" es el nº de pedido (p. ej. "MZV260915-4821"), generado ya en la
+ * función de Cloudflare — se usa tal cual como primera columna de la hoja
+ * y como nombre del archivo del comprobante en Drive.
+ *
  * Por cada pedido:
  *   - añade una fila a la hoja "Pedidos" (la crea la primera vez, con cabecera)
- *   - guarda el comprobante en una carpeta de Drive y pone el enlace en la fila
+ *   - guarda el comprobante en una carpeta de Drive con el nº de pedido como
+ *     nombre de archivo, y pone el enlace en la fila
  *   - dos columnas quedan libres para uso del club: "Estado" y "Comentario"
  */
 
 const HOJA = "Pedidos";
 const CARPETA_COMPROBANTES = "Comprobantes Tienda Manzanares";
 const CABECERA = [
+  "Nº Pedido",
   "Fecha",
   "Nombre",
   "Email",
@@ -34,9 +40,10 @@ function doPost(e) {
   try {
     const data = JSON.parse(e.postData.contents);
     const hoja = obtenerHoja();
+    const numero = data.numero || "";
 
     const comprobanteUrl = data.comprobante && data.comprobante.base64
-      ? guardarComprobante(data.comprobante)
+      ? guardarComprobante(data.comprobante, numero)
       : "";
 
     const lineas = (data.pedido || [])
@@ -44,6 +51,7 @@ function doPost(e) {
       .join("\n");
 
     hoja.appendRow([
+      numero,
       new Date(),
       data.nombre || "",
       data.email || "",
@@ -55,7 +63,7 @@ function doPost(e) {
       "",
     ]);
 
-    return respuesta({ ok: true });
+    return respuesta({ ok: true, numero: numero });
   } catch (err) {
     return respuesta({ ok: false, error: String(err) });
   }
@@ -73,11 +81,17 @@ function obtenerHoja() {
   return hoja;
 }
 
-function guardarComprobante(comprobante) {
+function guardarComprobante(comprobante, numero) {
   const carpetas = DriveApp.getFoldersByName(CARPETA_COMPROBANTES);
   const carpeta = carpetas.hasNext() ? carpetas.next() : DriveApp.createFolder(CARPETA_COMPROBANTES);
   const bytes = Utilities.base64Decode(comprobante.base64);
-  const blob = Utilities.newBlob(bytes, comprobante.tipo || "application/octet-stream", comprobante.nombre || "comprobante");
+  // El nombre ya viene con el nº de pedido y su extensión desde Cloudflare
+  // (p. ej. "MZV260915-4821.jpg"); si por lo que sea no llega, usamos el
+  // nombre original del archivo como respaldo.
+  const nombreArchivo = numero
+    ? (comprobante.nombre || numero)
+    : (comprobante.nombre || "comprobante");
+  const blob = Utilities.newBlob(bytes, comprobante.tipo || "application/octet-stream", nombreArchivo);
   const file = carpeta.createFile(blob);
   file.setSharing(DriveApp.Access.ANYONE_WITH_LINK, DriveApp.Permission.VIEW);
   return file.getUrl();

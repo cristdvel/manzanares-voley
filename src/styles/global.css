@@ -493,6 +493,8 @@ p:last-child{margin-bottom:0}
 .page-hero h1{color:var(--mzv-alt-titulo);font-size:clamp(2.2rem,5vw,3.2rem);margin-bottom:16px}
 .page-hero p{max-width:640px}
 .page-hero__meta{margin-top:18px;font-size:13px;color:var(--mzv-alt-texto);opacity:.8}
+.gracias-numero{display:inline-block;margin:4px 0 18px;padding:8px 18px;border:1px solid rgba(255,255,255,.25);border-radius:999px;font-size:14px;color:var(--mzv-alt-texto)}
+.gracias-numero strong{color:var(--mzv-alt-titulo);font-family:"Anton",sans-serif;letter-spacing:.03em}
 .page-cta{display:flex;flex-wrap:wrap;gap:16px;margin-top:26px}
 .center .page-cta{justify-content:center}
 .btn.is-disabled{opacity:.5;cursor:not-allowed;pointer-events:none}
