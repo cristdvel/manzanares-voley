@@ -77,6 +77,12 @@ function obtenerHoja() {
     hoja.appendRow(CABECERA);
     hoja.setFrozenRows(1);
     hoja.getRange(1, 1, 1, CABECERA.length).setFontWeight("bold");
+  } else if (hoja.getRange(1, 1).getValue() !== CABECERA[0]) {
+    // La hoja ya existía con una cabecera de una versión anterior del
+    // script (p. ej. sin "Nº Pedido"): la reescribe para que no se
+    // desalineen las columnas con los datos nuevos.
+    hoja.getRange(1, 1, 1, CABECERA.length).setValues([CABECERA]);
+    hoja.getRange(1, 1, 1, CABECERA.length).setFontWeight("bold");
   }
   return hoja;
 }
