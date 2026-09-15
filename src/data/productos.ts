@@ -54,7 +54,7 @@ export const productos: Producto[] = [
     precio: 146,
     resumen: "El equipo completo de temporada para jugadoras federadas.",
     descripcion:
-      "Todo lo que necesita una jugadora federada para la temporada en un único pedido: 2 camisetas de juego, 2 camisetas de entreno (naranja, para el día a día) y 2 de calentamiento (fucsia, para antes de los partidos), 1 sudadera del 10º aniversario, 1 mochila oficial y 2 mallas de partido. Eliges la talla de cada prenda por separado; el club asigna los diseños de camiseta y malla según disponibilidad (puedes indicar tu preferencia en las notas del pedido).",
+      "Todo lo que necesita una jugadora federada para la temporada en un único pedido: 2 camisetas de juego, 1 camiseta de entreno (naranja, para el día a día) y 1 de entrada en calor (fucsia, para antes de los partidos), 1 sudadera del 10º aniversario, 1 mochila oficial y 2 mallas de partido. Eliges la talla de cada prenda por separado; el club asigna los diseños de camiseta y malla según disponibilidad (puedes indicar tu preferencia en las notas del pedido).",
     imagenes: [
       // Camiseta de juego: los dos diseños, frente y espalda
       { src: "/img/equipacion/gatos-frente.png" },
@@ -80,8 +80,8 @@ export const productos: Producto[] = [
     ],
     incluye: [
       "2 × Camiseta de juego",
-      "2 × Camiseta de entreno (naranja)",
-      "2 × Camiseta de entrada en calor federado (fucsia)",
+      "1 × Camiseta de entreno (naranja)",
+      "1 × Camiseta de entrada en calor federado (fucsia)",
       "1 × Sudadera 10º aniversario",
       "1 × Mochila oficial",
       "2 × Malla de partido",
@@ -111,7 +111,7 @@ export const productos: Producto[] = [
     // TODO: cargar la foto del pantalón de juego (/img/equipacion/pantalon-juego.png).
     resumen: "El conjunto completo de temporada para jugadores federados.",
     descripcion:
-      "El conjunto de temporada para jugadores federados: 2 pantalones de juego, 2 camisetas de juego, 2 camisetas de entreno (naranja, para el día a día) y 2 de calentamiento (fucsia, para antes de los partidos), 1 sudadera del 10º aniversario y 1 mochila oficial. Eliges la talla de cada prenda por separado; el club asigna los diseños según disponibilidad.",
+      "El conjunto de temporada para jugadores federados: 2 pantalones de juego, 2 camisetas de juego, 1 camiseta de entreno (naranja, para el día a día) y 1 de entrada en calor (fucsia, para antes de los partidos), 1 sudadera del 10º aniversario y 1 mochila oficial. Eliges la talla de cada prenda por separado; el club asigna los diseños según disponibilidad.",
     imagenes: [
       // Camiseta de juego: los dos diseños, frente y espalda
       { src: "/img/equipacion/gatos-frente.png" },
@@ -133,8 +133,8 @@ export const productos: Producto[] = [
     incluye: [
       "2 × Pantalón de juego",
       "2 × Camiseta de juego",
-      "2 × Camiseta de entreno (naranja)",
-      "2 × Camiseta de entrada en calor federado (fucsia)",
+      "1 × Camiseta de entreno (naranja)",
+      "1 × Camiseta de entrada en calor federado (fucsia)",
       "1 × Sudadera 10º aniversario",
       "1 × Mochila oficial",
     ],
