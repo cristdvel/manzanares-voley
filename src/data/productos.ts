@@ -42,6 +42,7 @@ export interface Producto {
 }
 
 const TALLAS = ["XS", "S", "M", "L", "XL"];
+const TALLAS_MALLA = ["7/8", "9/11", "12/14", "16", "S", "M", "L", "XL"];
 const TALLA_UNICA = ["Única"];
 
 export const productos: Producto[] = [
@@ -97,7 +98,7 @@ export const productos: Producto[] = [
       { nombre: "Talla camiseta de juego", tallas: TALLAS },
       { nombre: "Talla camiseta de entreno", tallas: TALLAS },
       { nombre: "Talla camiseta de calentamiento", tallas: TALLAS },
-      { nombre: "Talla malla", tallas: TALLAS },
+      { nombre: "Talla malla", tallas: TALLAS_MALLA },
       { nombre: "Talla sudadera", tallas: TALLAS },
     ],
     disponible: true,
@@ -236,7 +237,7 @@ export const productos: Producto[] = [
       "Secado rápido",
     ],
     variantes: [{ nombre: "Diseño", opciones: ["Gatos", "Claveles"] }],
-    tallas: TALLAS,
+    tallas: TALLAS_MALLA,
     disponible: true,
   },
   {
