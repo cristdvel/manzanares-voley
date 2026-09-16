@@ -389,6 +389,11 @@ p:last-child{margin-bottom:0}
 .field--error input,.field--error select{border-color:var(--mzv-naranja);background:#fdf2ef}
 .error-msg{color:var(--mzv-naranja);font-size:13px;margin-top:6px;display:none}
 .field-hint{color:var(--mzv-texto);font-size:13px;margin-top:6px}
+.transfer-info{
+  margin-top:10px;padding:12px 14px;background:#fdf6ee;border:1px solid var(--mzv-naranja);
+  border-radius:8px;font-size:13px;color:var(--mzv-texto);line-height:1.6;
+}
+.transfer-info strong{display:block;font-size:15px;letter-spacing:.03em;color:var(--mzv-titulo);margin:2px 0}
 .field--error .error-msg{display:block}
 .cat-hint{margin-top:8px;font-size:14px;color:var(--mzv-naranja);font-weight:600;display:none}
 .cat-hint.show{display:block}
