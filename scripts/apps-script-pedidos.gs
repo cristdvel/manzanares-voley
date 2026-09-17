@@ -12,8 +12,8 @@
  *
  * "tallas" trae la talla desglosada por prenda, p. ej.
  * { "Camiseta de juego": "L", "Camiseta de entreno": "M" } para un pack, o
- * { "Talla": "M" } para un artículo suelto — así cada prenda del pedido
- * llega en su propia columna en vez de un único texto combinado.
+ * { "Malla": "M" } para un artículo suelto — cada prenda tiene su propia
+ * columna (ver PRENDAS), no hay columna "Talla" genérica.
  *
  * "numero" es el nº de pedido (p. ej. "MZV260915-4821"), generado ya en la
  * función de Cloudflare — se usa tal cual como primera columna de la hoja
@@ -29,10 +29,11 @@
 const HOJA = "Pedidos";
 const CARPETA_COMPROBANTES = "Comprobantes Tienda Manzanares";
 
-// Prendas que pueden aparecer en los packs, cada una en su propia columna
-// (ver tallasPack en src/data/productos.ts). Si el club añade un pack con
-// una prenda nueva, se añade aquí su etiqueta tal cual la genera
-// [slug].astro (p. ej. "Talla malla" → "Malla").
+// Toda prenda que puede llevar talla, tanto en los packs (ver tallasPack en
+// src/data/productos.ts) como en los artículos sueltos (ver el campo
+// "prenda" de cada producto): cada una tiene su propia columna en vez de
+// una columna "Talla" genérica. Si el club añade un pack o artículo con una
+// prenda nueva, se añade aquí su etiqueta tal cual la genera [slug].astro.
 const PRENDAS = [
   "Camiseta de juego",
   "Camiseta de entreno",
@@ -40,6 +41,8 @@ const PRENDAS = [
   "Malla",
   "Pantalón",
   "Sudadera",
+  "Abrigo",
+  "Mochila",
 ];
 
 const CABECERA = [
@@ -51,7 +54,6 @@ const CABECERA = [
   "Equipo",
   "Producto",
   "Variante",
-  "Talla",
   ...PRENDAS,
   "Cantidad",
   "Notas del cliente",
@@ -84,7 +86,6 @@ function doPost(e) {
       data.equipo || "",
       linea.nombre || "",
       linea.variante || "",
-      tallas["Talla"] || "",
       ...columnasPrendas,
       linea.cantidad || "",
       data.notas || "",

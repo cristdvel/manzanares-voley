@@ -38,6 +38,13 @@ export interface Producto {
   incluye?: string[];
   /** sólo packs: un selector de talla por tipo de prenda (camisetas, malla, sudadera…). */
   tallasPack?: TallaGrupo[];
+  /**
+   * sólo artículos sueltos (sin tallasPack): a qué prenda corresponde su
+   * única talla, p. ej. "Malla" o "Camiseta de juego" — así en el excel de
+   * pedidos la talla cae en la misma columna que usan los packs para esa
+   * prenda, en vez de una columna "Talla" genérica.
+   */
+  prenda?: string;
 }
 
 const TALLAS = ["XS", "S", "M", "L", "XL"];
@@ -216,6 +223,7 @@ export const productos: Producto[] = [
     ],
     variantes: [{ nombre: "Diseño", opciones: ["Gatos", "Claveles"] }],
     tallas: TALLAS,
+    prenda: "Camiseta de juego",
     disponible: true,
   },
   {
@@ -240,6 +248,7 @@ export const productos: Producto[] = [
     ],
     variantes: [{ nombre: "Diseño", opciones: ["Gatos", "Claveles"] }],
     tallas: TALLAS_MALLA,
+    prenda: "Malla",
     disponible: true,
   },
   {
@@ -262,6 +271,7 @@ export const productos: Producto[] = [
     ],
     variantes: [],
     tallas: TALLAS,
+    prenda: "Camiseta de entreno",
     disponible: true,
   },
   {
@@ -283,6 +293,7 @@ export const productos: Producto[] = [
     ],
     variantes: [],
     tallas: TALLAS,
+    prenda: "Camiseta de calentamiento",
     disponible: true,
   },
   {
@@ -305,6 +316,7 @@ export const productos: Producto[] = [
     ],
     variantes: [],
     tallas: TALLAS,
+    prenda: "Sudadera",
     disponible: true,
   },
   {
@@ -324,6 +336,7 @@ export const productos: Producto[] = [
     ],
     variantes: [],
     tallas: TALLAS,
+    prenda: "Abrigo",
     disponible: true,
   },
   {
@@ -343,6 +356,7 @@ export const productos: Producto[] = [
     ],
     variantes: [],
     tallas: TALLA_UNICA,
+    prenda: "Mochila",
     disponible: true,
   },
 ];

@@ -129,7 +129,7 @@ const breadcrumb = {
                 ) : (
                   <label>
                     <span class="pdp__opt-lbl">Talla <span class="req">*</span></span>
-                    <select data-opt="talla" required>
+                    <select data-opt="talla" data-prenda={p.prenda ?? "Talla"} required>
                       {p.tallas.length > 1 && <option value="">Elige…</option>}
                       {p.tallas.map((t) => <option value={t}>{t}</option>)}
                     </select>
@@ -314,14 +314,20 @@ const breadcrumb = {
       .map((k) => opts[k])
       .join(" · ");
 
-    // tallas por prenda, p. ej. { "Camiseta de juego": "L", "Camiseta de entreno": "M" }
-    // (o { "Talla": "M" } para un artículo suelto), para que el pedido llegue
-    // desglosado en columnas separadas al excel de pedidos.
+    // tallas por prenda, p. ej. { "Camiseta de juego": "L", "Camiseta de entreno": "M" },
+    // para que el pedido llegue desglosado en columnas separadas al excel de
+    // pedidos (cada prenda cae en su propia columna, nunca en una "Talla" genérica).
     const tallaKeys = keys.filter(esTallaKey);
     const tallas: Record<string, string> = {};
     tallaKeys.forEach((k) => {
-      const et = k.replace(/^talla\s*/i, "");
-      const etiqueta = et ? et[0].toUpperCase() + et.slice(1) : "Talla";
+      let etiqueta: string;
+      if (k === "talla") {
+        const sel = form.querySelector('[data-opt="talla"]') as HTMLElement | null;
+        etiqueta = sel?.dataset.prenda || "Talla";
+      } else {
+        const et = k.replace(/^talla\s*/i, "");
+        etiqueta = et ? et[0].toUpperCase() + et.slice(1) : "Talla";
+      }
       tallas[etiqueta] = opts[k];
     });
     const talla =
