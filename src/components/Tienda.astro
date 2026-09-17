@@ -12,7 +12,7 @@ const destacados = productos.slice(0, 3);
     </p>
     <div class="tienda-grid">
       {destacados.map((p) => (
-        <a class="producto" href="/tienda">
+        <a class="producto" href={`/tienda/${p.id}`}>
           <div class="producto__img">
             <img src={p.imagenes[0].src} alt={p.nombre} loading="lazy" />
           </div>
