@@ -324,6 +324,10 @@ p:last-child{margin-bottom:0}
   .cal-item__tag{grid-column:1 / -1;grid-row:auto;justify-self:start}
   .cal-item__sede{grid-column:1 / -1;grid-row:auto}
 }
+.amistosos__nota{
+  margin-top:16px;padding:12px 16px;background:var(--mzv-crema);border-radius:10px;
+  font-size:14px;font-weight:600;color:var(--mzv-titulo);
+}
 
 /* ---------- Sedes ---------- */
 .sedes{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:start}

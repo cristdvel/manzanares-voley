@@ -1,7 +1,6 @@
 // Catálogo de la tienda oficial.
 // Precios (€) confirmados por el club. El pago se hace por transferencia y el
 // comprobante se adjunta al tramitar el pedido.
-// Pendiente: precio del Abrigo Nepal.
 // Descripciones y características son de MUESTRA, pendientes de revisión del club.
 
 export interface Variante {
@@ -166,8 +165,11 @@ export const productos: Producto[] = [
     descripcion:
       "El pack para jugadoras y jugadores de competición municipal: 2 camisetas de juego y 2 camisetas de entreno naranjas. Eliges la talla de las camisetas; el club asigna los diseños según disponibilidad.",
     imagenes: [
+      // Camiseta de juego: los dos diseños, frente y espalda
       { src: "/img/equipacion/gatos-frente.png" },
       { src: "/img/equipacion/gatos-espalda.png" },
+      { src: "/img/equipacion/claveles-frente.png" },
+      { src: "/img/equipacion/claveles-espalda.png" },
       { src: "/img/equipacion/entreno-fem.png" },
       { src: "/img/equipacion/entreno-fem-espalda.png" },
     ],
@@ -309,7 +311,7 @@ export const productos: Producto[] = [
     id: "abrigo-nepal",
     nombre: "Abrigo Nepal",
     categoria: "Sudaderas y abrigo",
-    precio: 0, // TODO: el club no ha facilitado el precio de este artículo.
+    precio: 60,
     resumen: "Abrigo acolchado negro con capucha para el invierno.",
     descripcion:
       "Abrigo acolchado negro con capucha, para los pabellones fríos y los desplazamientos de invierno. Ligero pero cálido, con el logo del club y el dorsal bordados.",

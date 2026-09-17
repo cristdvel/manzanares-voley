@@ -2,6 +2,7 @@
 import Base from "../layouts/Base.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Amistosos from "../components/Amistosos.astro";
 import Calendario from "../components/Calendario.astro";
 import Clasificacion from "../components/Clasificacion.astro";
 import { temporada, actualizadoTexto, proximos } from "../data/competicion";
@@ -42,6 +43,7 @@ const eventSchemas = proximos
         <h1>Calendario y clasificación</h1>
         <p>Partidos, resultados y clasificación de los equipos federados de Manzanares Voley, con datos oficiales de la Federación de Madrid de Voleibol.</p>
         <div class="page-cta">
+          <a href="#amistosos" class="btn btn--outline-light">Ver amistosos</a>
           <a href="#calendario" class="btn btn--outline-light">Ver calendario</a>
           <a href="#clasificacion" class="btn btn--primary">Ver clasificación</a>
         </div>
@@ -49,6 +51,7 @@ const eventSchemas = proximos
       </div>
     </div>
 
+    <Amistosos />
     <Calendario />
     <Clasificacion full={true} />
   </main>
