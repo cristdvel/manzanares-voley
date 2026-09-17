@@ -186,7 +186,6 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
       <p style="margin:0 0 18px;color:#666">Pedido <strong>${esc(numero)}</strong> · ${esc(new Date().toLocaleString("es-ES"))} · Equipo: ${esc(equipo)}</p>
       <p style="margin:0 0 18px">
         Hola ${esc(nombre)}, hemos recibido tu pedido y el comprobante de pago.
-        El club te contesta a este email en menos de 48 h para confirmar tallas y cerrar la entrega.
       </p>
       <h3 style="margin:0 0 6px">Tu pedido</h3>
       <table style="border-collapse:collapse;width:100%;font-size:14px">
