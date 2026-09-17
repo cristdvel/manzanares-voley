@@ -49,6 +49,7 @@ export interface Producto {
 
 const TALLAS = ["XS", "S", "M", "L", "XL"];
 const TALLAS_MALLA = ["7/8", "9/11", "12/14", "16", "S", "M", "L", "XL"];
+const TALLAS_ENTRENO = ["8", "12", "16", "S", "M", "L", "XL", "2XL"];
 const TALLA_UNICA = ["Única"];
 
 export const productos: Producto[] = [
@@ -102,7 +103,7 @@ export const productos: Producto[] = [
     tallas: TALLAS,
     tallasPack: [
       { nombre: "Talla camiseta de juego", tallas: TALLAS },
-      { nombre: "Talla camiseta de entreno", tallas: TALLAS },
+      { nombre: "Talla camiseta de entreno", tallas: TALLAS_ENTRENO },
       { nombre: "Talla camiseta de calentamiento", tallas: TALLAS },
       { nombre: "Talla malla", tallas: TALLAS_MALLA },
       { nombre: "Talla sudadera", tallas: TALLAS },
@@ -156,7 +157,7 @@ export const productos: Producto[] = [
     tallas: TALLAS,
     tallasPack: [
       { nombre: "Talla camiseta de juego", tallas: TALLAS },
-      { nombre: "Talla camiseta de entreno", tallas: TALLAS },
+      { nombre: "Talla camiseta de entreno", tallas: TALLAS_ENTRENO },
       { nombre: "Talla camiseta de calentamiento", tallas: TALLAS },
       { nombre: "Talla pantalón", tallas: TALLAS },
       { nombre: "Talla sudadera", tallas: TALLAS },
@@ -194,7 +195,7 @@ export const productos: Producto[] = [
     tallas: TALLAS,
     tallasPack: [
       { nombre: "Talla camiseta de juego", tallas: TALLAS },
-      { nombre: "Talla camiseta de entreno", tallas: TALLAS },
+      { nombre: "Talla camiseta de entreno", tallas: TALLAS_ENTRENO },
     ],
     disponible: true,
   },
@@ -270,7 +271,7 @@ export const productos: Producto[] = [
       "Uso recomendado para todas las categorías",
     ],
     variantes: [],
-    tallas: TALLAS,
+    tallas: TALLAS_ENTRENO,
     prenda: "Camiseta de entreno",
     disponible: true,
   },
