@@ -21,18 +21,17 @@ export interface Categoria {
 
 // Roster de la temporada 2026/2027 facilitado por el club (11 sep 2026).
 //
-// OJO: a día de hoy, la ficha oficial del club en fmvoley.com
-// (fmvoley.com/clubes/cde_manzanares_voley) solo recoge 6 equipos
-// federados con grupo dado de alta — Juvenil, Cadete y Junior femenino
-// (con calendario ya publicado, calendario:true) más Infantil masculino,
-// Sénior femenino e Infantil femenino (dados de alta pero "sin resultados"
-// todavía). El resto de equipos federados de esta lista (masculino Sénior/
-// Juvenil/Cadete A/B y femenino Junior B, Juvenil B/C, Cadete B/C e
-// Infantil A/B) no tienen grupo federado publicado en la Federación en
-// este momento, así que no pueden mostrar calendario ni clasificación real
-// hasta que la Federación los dé de alta (la temporada empieza el
-// 27/09/2026). En cuanto FMVoley publique un grupo nuevo, se añade su
-// grupoId a equipos-federados.json y el scraper lo recoge solo.
+// OJO: a día de hoy (17 sep 2026), la ficha oficial del club en fmvoley.com
+// (fmvoley.com/clubes/cde_manzanares_voley) solo recoge 6 equipos federados
+// con grupo dado de alta y calendario completo ya publicado (calendario:true):
+// Juvenil, Cadete y Junior femenino, más Infantil masculino, Sénior femenino
+// e Infantil B femenino. El resto de equipos federados de esta lista
+// (masculino Sénior/Juvenil/Cadete A/B y femenino Junior B, Juvenil B/C,
+// Cadete B/C, Infantil A y Alevín) no tienen grupo federado publicado en la
+// Federación en este momento, así que no pueden mostrar calendario ni
+// clasificación real hasta que la Federación los dé de alta (la temporada
+// empieza el 27/09/2026). En cuanto FMVoley publique un grupo nuevo, se añade
+// su grupoId a equipos-federados.json y el scraper lo recoge solo.
 export const categorias: Categoria[] = [
   {
     id: "federado-masculino",
@@ -42,14 +41,14 @@ export const categorias: Categoria[] = [
       { nombre: "Juvenil", division: "Liga federada" },
       { nombre: "Cadete A", division: "Liga federada" },
       { nombre: "Cadete B", division: "Liga federada" },
-      { nombre: "Infantil", division: "1ª División" },
+      { nombre: "Infantil", division: "1ª División Aut. Preferente", calendario: true, grupoId: 34021 },
     ],
   },
   {
     id: "federado-femenino",
     label: "Federado femenino",
     equipos: [
-      { nombre: "Sénior", division: "Liga federada" },
+      { nombre: "Sénior", division: "2ª División Aut. Preferente", calendario: true, grupoId: 34075 },
       { nombre: "Junior A", division: "1ª División", calendario: true, grupoId: 33941 },
       { nombre: "Junior B", division: "Liga federada" },
       { nombre: "Juvenil A", division: "1ª División", calendario: true, grupoId: 33929 },
@@ -59,7 +58,7 @@ export const categorias: Categoria[] = [
       { nombre: "Cadete B", division: "Liga federada" },
       { nombre: "Cadete C", division: "Liga federada" },
       { nombre: "Infantil A", division: "Liga federada" },
-      { nombre: "Infantil B", division: "Liga federada" },
+      { nombre: "Infantil B", division: "2ª División Aut. Preferente", calendario: true, grupoId: 34047 },
       { nombre: "Alevín", division: "Liga federada" },
     ],
   },

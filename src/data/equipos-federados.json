@@ -4,6 +4,9 @@
   "grupos": [
     { "categoria": "Juvenil Femenino", "grupoId": 33929 },
     { "categoria": "Cadete Femenino", "grupoId": 33922 },
-    { "categoria": "Junior Femenino", "grupoId": 33941 }
+    { "categoria": "Junior Femenino", "grupoId": 33941 },
+    { "categoria": "Infantil Masculino", "grupoId": 34021 },
+    { "categoria": "Infantil Femenino B", "grupoId": 34047 },
+    { "categoria": "Sénior Femenino", "grupoId": 34075 }
   ]
 }
