@@ -6,68 +6,81 @@ const lista = proximos.slice(0, 3);
 ---
 <div class="section">
   <div class="container">
-    <span class="eyebrow">Temporada {temporada}</span>
-    <h2 class="section-title">Próximos partidos</h2>
+    <span class="eyebrow" id="partidos-eyebrow">Temporada {temporada}</span>
+    <h2 class="section-title" id="partidos-title">Próximos partidos</h2>
 
-    {lista.length > 0 ? (
-      <div class="partidos__grid">
-        {lista.map((p) => (
-          <article class="match">
-            <span class="badge">{p.categoria}</span>
-            <p class="match__teams">
-              <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
-              <span class="vs">vs</span>
-              <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
-            </p>
-            <p class="match__meta">
-              Jornada {p.jornada} · {fechaCorta(p.fechaHora)}{horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
-              {p.pabellon && <><br />{p.pabellon}</>}
-            </p>
-          </article>
-        ))}
-      </div>
-    ) : ultimos.length > 0 ? (
-      <div class="partidos__grid">
-        {ultimos.slice(0, 3).map((p) => (
-          <article class="match">
-            <span class="badge">{p.categoria}</span>
-            <p class="match__teams">
-              <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
-              <span class="vs">{p.resultado ?? "vs"}</span>
-              <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
-            </p>
-            <p class="match__meta">Jornada {p.jornada} · {fechaCorta(p.fechaHora)}</p>
-          </article>
-        ))}
-      </div>
-    ) : (
-      <p class="match__empty">El calendario de la temporada se publicará aquí en cuanto la Federación de Madrid lo confirme.</p>
-    )}
+    <div id="vista-proximos">
+      {lista.length > 0 ? (
+        <div class="partidos__grid">
+          {lista.map((p) => (
+            <article class="match">
+              <span class="badge">{p.categoria}</span>
+              <p class="match__teams">
+                <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
+                <span class="vs">vs</span>
+                <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
+              </p>
+              <p class="match__meta">
+                Jornada {p.jornada} · {fechaCorta(p.fechaHora)}{horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
+                {p.pabellon && <><br />{p.pabellon}</>}
+              </p>
+            </article>
+          ))}
+        </div>
+      ) : ultimos.length > 0 ? (
+        <div class="partidos__grid">
+          {ultimos.slice(0, 3).map((p) => (
+            <article class="match">
+              <span class="badge">{p.categoria}</span>
+              <p class="match__teams">
+                <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
+                <span class="vs">{p.resultado ?? "vs"}</span>
+                <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
+              </p>
+              <p class="match__meta">Jornada {p.jornada} · {fechaCorta(p.fechaHora)}</p>
+            </article>
+          ))}
+        </div>
+      ) : (
+        <p class="match__empty">El calendario de la temporada se publicará aquí en cuanto la Federación de Madrid lo confirme.</p>
+      )}
+    </div>
+
+    <div id="vista-amistosos" hidden>
+      <AmistososTabs />
+    </div>
 
     <div class="partidos__ctas">
-      <button type="button" class="btn btn--outline" id="toggle-amistosos" aria-expanded="false" aria-controls="amistosos-home">
+      <button type="button" class="btn btn--outline" id="toggle-amistosos" aria-expanded="false">
         🏐 Ver amistosos
       </button>
       <a href="/calendario" class="btn btn--outline">Ver calendario y clasificación →</a>
-    </div>
-
-    <div id="amistosos-home" class="amistosos-home" hidden>
-      <span class="eyebrow">Pretemporada</span>
-      <h3 class="amistosos-home__title">Amistosos por categoría</h3>
-      <AmistososTabs />
     </div>
   </div>
 </div>
 
 <script>
-  const toggleBtn = document.getElementById("toggle-amistosos");
-  const panel = document.getElementById("amistosos-home");
+  const toggleBtn = document.getElementById("toggle-amistosos") as HTMLButtonElement | null;
+  const eyebrow = document.getElementById("partidos-eyebrow");
+  const title = document.getElementById("partidos-title");
+  const vistaProximos = document.getElementById("vista-proximos");
+  const vistaAmistosos = document.getElementById("vista-amistosos");
+
+  const eyebrowProximos = eyebrow?.textContent ?? "";
 
   toggleBtn?.addEventListener("click", () => {
-    const abrir = panel!.hidden;
-    panel!.hidden = !abrir;
-    toggleBtn.setAttribute("aria-expanded", String(abrir));
-    toggleBtn.textContent = abrir ? "🏐 Ocultar amistosos" : "🏐 Ver amistosos";
-    if (abrir) panel!.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    const mostrarAmistosos = vistaProximos!.hidden === false;
+    vistaProximos!.hidden = mostrarAmistosos;
+    vistaAmistosos!.hidden = !mostrarAmistosos;
+    toggleBtn.setAttribute("aria-expanded", String(mostrarAmistosos));
+    if (mostrarAmistosos) {
+      if (eyebrow) eyebrow.textContent = "Pretemporada";
+      if (title) title.textContent = "Amistosos por categoría";
+      toggleBtn.textContent = "📅 Ver próximos partidos";
+    } else {
+      if (eyebrow) eyebrow.textContent = eyebrowProximos;
+      if (title) title.textContent = "Próximos partidos";
+      toggleBtn.textContent = "🏐 Ver amistosos";
+    }
   });
 </script>
