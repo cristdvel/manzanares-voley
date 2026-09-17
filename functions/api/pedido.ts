@@ -72,18 +72,25 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
   const nombre = (form.get("nombre") as string || "").trim();
   const email = (form.get("email") as string || "").trim();
   const telefono = (form.get("telefono") as string || "").trim();
+  const equipo = (form.get("equipo") as string || "").trim();
   const notas = (form.get("notas") as string || "").trim();
   const pedidoRaw = (form.get("pedido") as string || "").trim();
   const file = form.get("comprobante");
 
-  if (!nombre || !email || !telefono) {
+  if (!nombre || !email || !telefono || !equipo) {
     return json({ ok: false, error: "Faltan datos de contacto." }, 400);
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
     return json({ ok: false, error: "El email no es válido." }, 400);
   }
 
-  let lineas: Array<{ nombre: string; variante?: string; talla?: string; cantidad: number }> = [];
+  let lineas: Array<{
+    nombre: string;
+    variante?: string;
+    talla?: string;
+    tallas?: Record<string, string>;
+    cantidad: number;
+  }> = [];
   try {
     lineas = JSON.parse(pedidoRaw);
   } catch {
@@ -126,7 +133,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
       <p style="margin:0 0 18px">
         <strong>${esc(nombre)}</strong><br>
         Email: <a href="mailto:${esc(email)}">${esc(email)}</a><br>
-        Teléfono: ${esc(telefono)}
+        Teléfono: ${esc(telefono)}<br>
+        Equipo: ${esc(equipo)}
       </p>
       <h3 style="margin:0 0 6px">Artículos</h3>
       <table style="border-collapse:collapse;width:100%;font-size:14px">
@@ -175,7 +183,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
   const htmlComprador = `
     <div style="font-family:Arial,sans-serif;color:#212327;max-width:640px">
       <h2 style="color:#DC3C14;margin:0 0 4px">¡Gracias por tu pedido!</h2>
-      <p style="margin:0 0 18px;color:#666">Pedido <strong>${esc(numero)}</strong> · ${esc(new Date().toLocaleString("es-ES"))}</p>
+      <p style="margin:0 0 18px;color:#666">Pedido <strong>${esc(numero)}</strong> · ${esc(new Date().toLocaleString("es-ES"))} · Equipo: ${esc(equipo)}</p>
       <p style="margin:0 0 18px">
         Hola ${esc(nombre)}, hemos recibido tu pedido y el comprobante de pago.
         El club te contesta a este email en menos de 48 h para confirmar tallas y cerrar la entrega.
@@ -225,6 +233,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
         nombre,
         email,
         telefono,
+        equipo,
         notas,
         pedido: lineas,
         comprobante: {

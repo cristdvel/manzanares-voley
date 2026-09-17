@@ -157,10 +157,12 @@ mediante la función `functions/api/pedido.ts` (Cloudflare Pages Functions) y
 ## 6. Registro de pedidos en Google Sheets (el "Excel" descargable)
 
 Además del email, cada pedido se guarda como una fila en una hoja de Google
-Sheets: fecha, cliente, artículos, comprobante (enlace a Drive) y dos columnas
-libres — **Estado** y **Comentario interno** — para que el club anote cómo va
-cada pedido. Es opcional: sin configurar esto, la tienda sigue funcionando
-igual (solo por email).
+Sheets: fecha, cliente, equipo, producto, variante y la talla de cada prenda
+en su propia columna (Camiseta de juego, Camiseta de entreno, Malla, etc. —
+en blanco las que no aplican a ese pedido), cantidad, comprobante (enlace a
+Drive) y dos columnas libres — **Estado** y **Comentario interno** — para que
+el club anote cómo va cada pedido. Es opcional: sin configurar esto, la
+tienda sigue funcionando igual (solo por email).
 
 1. Crea una hoja de cálculo nueva en <https://sheets.new> y llámala p. ej.
    **"Pedidos tienda Manzanares"**.

@@ -6,9 +6,14 @@
  * los pedidos. Instrucciones completas en DEPLOY.md §6.
  *
  * Recibe (POST, JSON) desde functions/api/pedido.ts:
- *   { numero, nombre, email, telefono, notas,
- *     pedido: [{ nombre, variante, talla, cantidad }, ...],
+ *   { numero, nombre, email, telefono, equipo, notas,
+ *     pedido: [{ nombre, variante, talla, tallas, cantidad }, ...],
  *     comprobante: { nombre, tipo, base64 } }
+ *
+ * "tallas" trae la talla desglosada por prenda, p. ej.
+ * { "Camiseta de juego": "L", "Camiseta de entreno": "M" } para un pack, o
+ * { "Talla": "M" } para un artículo suelto — así cada prenda del pedido
+ * llega en su propia columna en vez de un único texto combinado.
  *
  * "numero" es el nº de pedido (p. ej. "MZV260915-4821"), generado ya en la
  * función de Cloudflare — se usa tal cual como primera columna de la hoja
@@ -23,13 +28,32 @@
 
 const HOJA = "Pedidos";
 const CARPETA_COMPROBANTES = "Comprobantes Tienda Manzanares";
+
+// Prendas que pueden aparecer en los packs, cada una en su propia columna
+// (ver tallasPack en src/data/productos.ts). Si el club añade un pack con
+// una prenda nueva, se añade aquí su etiqueta tal cual la genera
+// [slug].astro (p. ej. "Talla malla" → "Malla").
+const PRENDAS = [
+  "Camiseta de juego",
+  "Camiseta de entreno",
+  "Camiseta de calentamiento",
+  "Malla",
+  "Pantalón",
+  "Sudadera",
+];
+
 const CABECERA = [
   "Nº Pedido",
   "Fecha",
   "Nombre",
   "Email",
   "Teléfono",
-  "Pedido",
+  "Equipo",
+  "Producto",
+  "Variante",
+  "Talla",
+  ...PRENDAS,
+  "Cantidad",
   "Notas del cliente",
   "Comprobante",
   "Estado",
@@ -46,9 +70,10 @@ function doPost(e) {
       ? guardarComprobante(data.comprobante, numero)
       : "";
 
-    const lineas = (data.pedido || [])
-      .map((l) => `${l.nombre} · ${l.variante || "—"} · Talla ${l.talla || "—"} × ${l.cantidad}`)
-      .join("\n");
+    // Solo se pide un producto por pedido, así que basta con la primera línea.
+    const linea = (data.pedido || [])[0] || {};
+    const tallas = linea.tallas || {};
+    const columnasPrendas = PRENDAS.map((p) => tallas[p] || "");
 
     hoja.appendRow([
       numero,
@@ -56,7 +81,12 @@ function doPost(e) {
       data.nombre || "",
       data.email || "",
       data.telefono || "",
-      lineas,
+      data.equipo || "",
+      linea.nombre || "",
+      linea.variante || "",
+      tallas["Talla"] || "",
+      ...columnasPrendas,
+      linea.cantidad || "",
       data.notas || "",
       comprobanteUrl,
       "Pendiente",
@@ -77,10 +107,10 @@ function obtenerHoja() {
     hoja.appendRow(CABECERA);
     hoja.setFrozenRows(1);
     hoja.getRange(1, 1, 1, CABECERA.length).setFontWeight("bold");
-  } else if (hoja.getRange(1, 1).getValue() !== CABECERA[0]) {
+  } else if (hoja.getRange(1, 1, 1, CABECERA.length).getValues()[0].join("|") !== CABECERA.join("|")) {
     // La hoja ya existía con una cabecera de una versión anterior del
-    // script (p. ej. sin "Nº Pedido"): la reescribe para que no se
-    // desalineen las columnas con los datos nuevos.
+    // script (p. ej. sin las columnas por prenda): la reescribe para que
+    // no se desalineen las columnas con los datos nuevos.
     hoja.getRange(1, 1, 1, CABECERA.length).setValues([CABECERA]);
     hoja.getRange(1, 1, 1, CABECERA.length).setFontWeight("bold");
   }

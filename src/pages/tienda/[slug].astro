@@ -156,6 +156,10 @@ const breadcrumb = {
                 <input type="tel" id="p-tel" name="telefono" required autocomplete="tel" />
               </div>
               <div class="field">
+                <label for="p-equipo">Equipo <span class="req">*</span></label>
+                <input type="text" id="p-equipo" name="equipo" required placeholder="Ej. Cadete A Femenino" />
+              </div>
+              <div class="field">
                 <label for="p-notas">Notas</label>
                 <textarea id="p-notas" name="notas" rows="2" placeholder="Nombre y dorsal para la camiseta de juego, preferencia de diseño…"></textarea>
                 <span class="field-hint">
@@ -310,21 +314,28 @@ const breadcrumb = {
       .map((k) => opts[k])
       .join(" · ");
 
+    // tallas por prenda, p. ej. { "Camiseta de juego": "L", "Camiseta de entreno": "M" }
+    // (o { "Talla": "M" } para un artículo suelto), para que el pedido llegue
+    // desglosado en columnas separadas al excel de pedidos.
     const tallaKeys = keys.filter(esTallaKey);
+    const tallas: Record<string, string> = {};
+    tallaKeys.forEach((k) => {
+      const et = k.replace(/^talla\s*/i, "");
+      const etiqueta = et ? et[0].toUpperCase() + et.slice(1) : "Talla";
+      tallas[etiqueta] = opts[k];
+    });
     const talla =
       tallaKeys.length === 1 && tallaKeys[0] === "talla"
         ? opts["talla"]
-        : tallaKeys
-            .map((k) => {
-              const et = k.replace(/^talla\s*/i, "");
-              return (et ? et[0].toUpperCase() + et.slice(1) : "Talla") + ": " + opts[k];
-            })
+        : Object.entries(tallas)
+            .map(([k, v]) => `${k}: ${v}`)
             .join(" · ");
 
     const linea = {
       nombre: form.dataset.producto,
       variante,
       talla,
+      tallas,
       cantidad: Math.max(1, Math.min(20, parseInt(opts.cantidad || "1", 10))),
     };
 
