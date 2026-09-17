@@ -1,55 +1,10 @@
 ---
-import { amistosos } from "../data/amistosos";
+import AmistososTabs from "./AmistososTabs.astro";
 ---
 <div class="section" id="amistosos">
   <div class="container">
     <span class="eyebrow">Pretemporada</span>
     <h2 class="section-title">Amistosos por categoría</h2>
-
-    <div class="tabs" data-tabs="amistosos" role="tablist" aria-label="Categorías">
-      {amistosos.map((c, i) => (
-        <button
-          class={`tab${i === 0 ? " active" : ""}`}
-          data-cat={c.id}
-          role="tab"
-          aria-selected={i === 0 ? "true" : "false"}
-        >
-          {c.categoria}
-        </button>
-      ))}
-    </div>
-
-    {amistosos.map((c, i) => (
-      <div
-        class={`tab-panel${i === 0 ? " active" : ""}`}
-        data-tabgroup="amistosos"
-        data-cat={c.id}
-        role="tabpanel"
-      >
-        <ul class="cal-list">
-          {c.partidos.map((p) => (
-            <li class="cal-item">
-              <span class="cal-item__j" aria-hidden="true">🏐</span>
-              <span class="cal-item__fecha">
-                {p.fecha}
-                {p.hora && <><br /><small>{p.hora}</small></>}
-              </span>
-              <span class="cal-item__match">
-                <span class="is-mzv">Manzanares Voley</span>
-                <span class="cal-item__vs">vs</span>
-                <span>{p.rival}</span>
-              </span>
-              {p.lugar && (
-                <span class="cal-item__sede">
-                  📍 {p.lugar}
-                  {p.mapa && <> · <a href={p.mapa} target="_blank" rel="noopener">cómo llegar</a></>}
-                </span>
-              )}
-            </li>
-          ))}
-        </ul>
-        {c.nota && <p class="amistosos__nota">{c.nota}</p>}
-      </div>
-    ))}
+    <AmistososTabs />
   </div>
 </div>

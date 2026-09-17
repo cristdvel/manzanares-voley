@@ -1,5 +1,6 @@
 ---
 import { proximos, ultimos, temporada, fechaCorta, horaCorta } from "../data/competicion";
+import AmistososTabs from "./AmistososTabs.astro";
 
 const lista = proximos.slice(0, 3);
 ---
@@ -43,6 +44,30 @@ const lista = proximos.slice(0, 3);
       <p class="match__empty">El calendario de la temporada se publicará aquí en cuanto la Federación de Madrid lo confirme.</p>
     )}
 
-    <a href="/calendario" class="btn btn--outline">Ver calendario y clasificación →</a>
+    <div class="partidos__ctas">
+      <button type="button" class="btn btn--outline" id="toggle-amistosos" aria-expanded="false" aria-controls="amistosos-home">
+        🏐 Ver amistosos
+      </button>
+      <a href="/calendario" class="btn btn--outline">Ver calendario y clasificación →</a>
+    </div>
+
+    <div id="amistosos-home" class="amistosos-home" hidden>
+      <span class="eyebrow">Pretemporada</span>
+      <h3 class="amistosos-home__title">Amistosos por categoría</h3>
+      <AmistososTabs />
+    </div>
   </div>
 </div>
+
+<script>
+  const toggleBtn = document.getElementById("toggle-amistosos");
+  const panel = document.getElementById("amistosos-home");
+
+  toggleBtn?.addEventListener("click", () => {
+    const abrir = panel!.hidden;
+    panel!.hidden = !abrir;
+    toggleBtn.setAttribute("aria-expanded", String(abrir));
+    toggleBtn.textContent = abrir ? "🏐 Ocultar amistosos" : "🏐 Ver amistosos";
+    if (abrir) panel!.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  });
+</script>
