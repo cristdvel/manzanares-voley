@@ -59,4 +59,17 @@ export const amistosos: CategoriaAmistosos[] = [
       },
     ],
   },
+  {
+    id: "senior-master",
+    categoria: "Sénior · Torneo Máster",
+    partidos: [
+      {
+        fecha: "Sáb 26 sep",
+        hora: "10:00 · gran final 19:00",
+        rival: "III Torneo Máster «Villa de Zaratán» — Memorial Santos Antón",
+        lugar: "Pabellón Infanta Juana, Zaratán (Valladolid)",
+      },
+    ],
+    nota: "🏐 Manzanares Voley acude como invitado junto a Master Volley Spain, Master Volley Valladolid, Máster Mix Madrid, Vóley Máster Deusto y Los Abandonados por el Vóley. Entrada libre.",
+  },
 ];
