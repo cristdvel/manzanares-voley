@@ -2,6 +2,7 @@
 // Precios (€) confirmados por el club. El pago se hace por transferencia y el
 // comprobante se adjunta al tramitar el pedido.
 // Descripciones y características son de MUESTRA, pendientes de revisión del club.
+// Pendiente: fotos reales de toalla, taza, botella, bufanda, correa, llavero y banderín.
 
 export interface Variante {
   nombre: string;
@@ -17,7 +18,14 @@ export interface Imagen {
 export interface TallaGrupo {
   /** etiqueta del selector, p. ej. "Talla camisetas". */
   nombre: string;
-  tallas: string[];
+  /** mismas tallas para todo el mundo. Alternativa a "corte". */
+  tallas?: string[];
+  /**
+   * cuando la talla depende de un selector de corte (chica/chico) que se
+   * muestra junto a este grupo — el comprador elige el corte primero y la
+   * lista de tallas cambia según su elección.
+   */
+  corte?: { chica: string[]; chico: string[] };
 }
 
 export interface Producto {
@@ -32,7 +40,14 @@ export interface Producto {
   imagenes: Imagen[];
   caracteristicas: string[];
   variantes: Variante[];
-  tallas: string[];
+  /** mismas tallas para todo el mundo. Alternativa a "corte". Vacío si no hay tallas (accesorios). */
+  tallas?: string[];
+  /**
+   * cuando la talla depende de un selector de corte (chica/chico) — el
+   * comprador elige el corte primero y la lista de tallas cambia según su
+   * elección. Alternativa a "tallas".
+   */
+  corte?: { chica: string[]; chico: string[] };
   disponible: boolean;
   /** sólo packs: prendas que incluye, p. ej. "2 × Camiseta de juego". */
   incluye?: string[];
@@ -50,6 +65,10 @@ export interface Producto {
 const TALLAS = ["XS", "S", "M", "L", "XL"];
 const TALLAS_MALLA = ["7/8", "9/11", "12/14", "16", "S", "M", "L", "XL"];
 const TALLAS_ENTRENO = ["8", "12", "16", "S", "M", "L", "XL", "2XL"];
+const TALLAS_CAMISETA_JUEGO_CHICA = ["XS", "S", "M", "L", "XL", "2XL"];
+const TALLAS_CAMISETA_JUEGO_CHICO = ["7/8", "12/14", "16", "S", "M", "L", "XL"];
+const TALLAS_PANTALON = ["7/8", "9/11", "12/14", "16", "S", "M", "L", "XL"];
+const TALLAS_SUDADERA = ["7/8", "9/10", "11/12", "XS", "S", "M", "L", "XL", "2XL"];
 const TALLA_UNICA = ["Única"];
 
 export const productos: Producto[] = [
@@ -100,13 +119,13 @@ export const productos: Producto[] = [
       "Personalizable con nombre y dorsal en la camiseta de juego (indícalo en las notas)",
     ],
     variantes: [],
-    tallas: TALLAS,
+    tallas: TALLAS_CAMISETA_JUEGO_CHICA,
     tallasPack: [
-      { nombre: "Talla camiseta de juego", tallas: TALLAS },
+      { nombre: "Talla camiseta de juego", tallas: TALLAS_CAMISETA_JUEGO_CHICA },
       { nombre: "Talla camiseta de entreno", tallas: TALLAS_ENTRENO },
-      { nombre: "Talla camiseta de calentamiento", tallas: TALLAS },
+      { nombre: "Talla camiseta de calentamiento", tallas: TALLAS_ENTRENO },
       { nombre: "Talla malla", tallas: TALLAS_MALLA },
-      { nombre: "Talla sudadera", tallas: TALLAS },
+      { nombre: "Talla sudadera", tallas: TALLAS_SUDADERA },
     ],
     disponible: true,
   },
@@ -154,13 +173,13 @@ export const productos: Producto[] = [
       "Personalizable con nombre y dorsal en la camiseta de juego (indícalo en las notas)",
     ],
     variantes: [],
-    tallas: TALLAS,
+    tallas: TALLAS_CAMISETA_JUEGO_CHICO,
     tallasPack: [
-      { nombre: "Talla camiseta de juego", tallas: TALLAS },
+      { nombre: "Talla camiseta de juego", tallas: TALLAS_CAMISETA_JUEGO_CHICO },
       { nombre: "Talla camiseta de entreno", tallas: TALLAS_ENTRENO },
-      { nombre: "Talla camiseta de calentamiento", tallas: TALLAS },
-      { nombre: "Talla pantalón", tallas: TALLAS },
-      { nombre: "Talla sudadera", tallas: TALLAS },
+      { nombre: "Talla camiseta de calentamiento", tallas: TALLAS_ENTRENO },
+      { nombre: "Talla pantalón", tallas: TALLAS_PANTALON },
+      { nombre: "Talla sudadera", tallas: TALLAS_SUDADERA },
     ],
     disponible: true,
   },
@@ -192,9 +211,11 @@ export const productos: Producto[] = [
       "Personalizable con nombre y dorsal en la camiseta de juego (indícalo en las notas)",
     ],
     variantes: [],
-    tallas: TALLAS,
     tallasPack: [
-      { nombre: "Talla camiseta de juego", tallas: TALLAS },
+      {
+        nombre: "Talla camiseta de juego",
+        corte: { chica: TALLAS_CAMISETA_JUEGO_CHICA, chico: TALLAS_CAMISETA_JUEGO_CHICO },
+      },
       { nombre: "Talla camiseta de entreno", tallas: TALLAS_ENTRENO },
     ],
     disponible: true,
@@ -219,11 +240,11 @@ export const productos: Producto[] = [
       "Tejido técnico 100% poliéster, ligero y transpirable",
       "Sublimación total: el estampado no se agrieta ni se despega",
       "Costuras planas anti-rozaduras",
-      "Corte unisex; consulta la guía de tallas antes de pedir",
+      "Cortes distintos para chica y chico; elige el tuyo antes de la talla",
       "Personalizable con nombre y dorsal (indícalo en las notas del pedido)",
     ],
     variantes: [{ nombre: "Diseño", opciones: ["Gatos", "Claveles"] }],
-    tallas: TALLAS,
+    corte: { chica: TALLAS_CAMISETA_JUEGO_CHICA, chico: TALLAS_CAMISETA_JUEGO_CHICO },
     prenda: "Camiseta de juego",
     disponible: true,
   },
@@ -293,7 +314,7 @@ export const productos: Producto[] = [
       "Corte unisex",
     ],
     variantes: [],
-    tallas: TALLAS,
+    tallas: TALLAS_ENTRENO,
     prenda: "Camiseta de calentamiento",
     disponible: true,
   },
@@ -316,7 +337,7 @@ export const productos: Producto[] = [
       "Unisex",
     ],
     variantes: [],
-    tallas: TALLAS,
+    tallas: TALLAS_SUDADERA,
     prenda: "Sudadera",
     disponible: true,
   },
@@ -358,6 +379,100 @@ export const productos: Producto[] = [
     variantes: [],
     tallas: TALLA_UNICA,
     prenda: "Mochila",
+    disponible: true,
+  },
+  // TODO: falta foto real y descripción/características confirmadas por el
+  // club para estos 7 artículos (precios ya confirmados). De momento usan
+  // /img/equipacion/proximamente.svg como imagen provisional.
+  {
+    id: "toalla",
+    nombre: "Toalla oficial",
+    categoria: "Accesorios",
+    precio: 30,
+    resumen: "Toalla con el logo del club.",
+    descripcion: "Toalla oficial del club, con el logo de Manzanares Voley estampado.",
+    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
+    caracteristicas: ["Foto pendiente de subir por el club"],
+    variantes: [],
+    tallas: TALLA_UNICA,
+    disponible: true,
+  },
+  {
+    id: "taza",
+    nombre: "Taza oficial",
+    categoria: "Accesorios",
+    precio: 8,
+    resumen: "Taza con el logo del club.",
+    descripcion: "Taza oficial del club, con el logo de Manzanares Voley estampado.",
+    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
+    caracteristicas: ["Foto pendiente de subir por el club"],
+    variantes: [],
+    tallas: TALLA_UNICA,
+    disponible: true,
+  },
+  {
+    id: "botella",
+    nombre: "Botella oficial",
+    categoria: "Accesorios",
+    precio: 12,
+    resumen: "Botella reutilizable con el logo del club.",
+    descripcion: "Botella reutilizable oficial del club, con el logo de Manzanares Voley estampado.",
+    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
+    caracteristicas: ["Foto pendiente de subir por el club"],
+    variantes: [],
+    tallas: TALLA_UNICA,
+    disponible: true,
+  },
+  {
+    id: "bufanda",
+    nombre: "Bufanda oficial",
+    categoria: "Accesorios",
+    precio: 12,
+    resumen: "Bufanda con los colores del club.",
+    descripcion: "Bufanda oficial del club, con los colores y el logo de Manzanares Voley.",
+    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
+    caracteristicas: ["Foto pendiente de subir por el club"],
+    variantes: [],
+    tallas: TALLA_UNICA,
+    disponible: true,
+  },
+  {
+    id: "correa",
+    nombre: "Correa oficial",
+    categoria: "Accesorios",
+    precio: 3,
+    resumen: "Correa con el logo del club.",
+    descripcion: "Correa oficial del club, con el logo de Manzanares Voley estampado.",
+    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
+    caracteristicas: ["Foto pendiente de subir por el club"],
+    variantes: [],
+    tallas: TALLA_UNICA,
+    disponible: true,
+  },
+  {
+    id: "llavero",
+    nombre: "Llavero oficial",
+    categoria: "Accesorios",
+    precio: 3,
+    resumen: "Llavero con el logo del club.",
+    descripcion: "Llavero oficial del club, con el logo de Manzanares Voley.",
+    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
+    caracteristicas: ["Foto pendiente de subir por el club"],
+    variantes: [],
+    tallas: TALLA_UNICA,
+    disponible: true,
+  },
+  {
+    id: "banderin",
+    nombre: "Banderín oficial",
+    categoria: "Accesorios",
+    precio: 8,
+    resumen: "Banderín con el escudo del club.",
+    descripcion: "Banderín oficial del club, con el escudo de Manzanares Voley.",
+    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
+    caracteristicas: ["Foto pendiente de subir por el club"],
+    variantes: [],
+    tallas: TALLA_UNICA,
     disponible: true,
   },
 ];

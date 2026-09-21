@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#F5F2EB"/>
+  <circle cx="300" cy="240" r="90" fill="#DC3C14"/>
+  <path d="M300 165c-15 25-15 65 0 90M300 165c15 25 15 65 0 90M255 210h90M255 255h90" stroke="#F5F2EB" stroke-width="8" stroke-linecap="round" fill="none"/>
+  <text x="300" y="400" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#212327">Foto próximamente</text>
+  <text x="300" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#928F87">Manzanares Voley</text>
+</svg>

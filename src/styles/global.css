@@ -631,6 +631,7 @@ p:last-child{margin-bottom:0}
 .pdp__opts select,.pdp__opts input{width:100%;padding:10px 12px;border:1px solid var(--mzv-borde);border-radius:6px;font:inherit;background:#fff;color:var(--mzv-titulo)}
 .pdp__opts select:focus,.pdp__opts input:focus{outline:2px solid var(--mzv-naranja);outline-offset:1px}
 .pdp__qty{flex:0 0 88px}
+.pdp__corte-group{display:contents}
 .prod__opt--err{border-color:var(--mzv-naranja)!important;background:#fdf2ef}
 .pdp__sep{border:0;border-top:1px solid var(--mzv-borde);margin:22px 0}
 .pdp__form textarea{width:100%;padding:12px 14px;border:1px solid var(--mzv-borde);border-radius:6px;font:inherit;color:var(--mzv-titulo);resize:vertical}

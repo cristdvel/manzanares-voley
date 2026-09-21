@@ -117,21 +117,72 @@ const breadcrumb = {
                   </label>
                 ))}
                 {tallasPack.length > 0 ? (
-                  tallasPack.map((g) => (
+                  tallasPack.map((g) =>
+                    g.corte ? (
+                      <div class="pdp__corte-group" data-corte-group>
+                        <label>
+                          <span class="pdp__opt-lbl">Corte — {g.nombre.replace(/^Talla\s*/i, "")} <span class="req">*</span></span>
+                          <select data-opt={`Corte ${g.nombre}`} data-corte-select required>
+                            <option value="">Elige…</option>
+                            <option value="Chica">Chica</option>
+                            <option value="Chico">Chico</option>
+                          </select>
+                        </label>
+                        <label>
+                          <span class="pdp__opt-lbl">{g.nombre} <span class="req">*</span></span>
+                          <select
+                            data-opt={g.nombre}
+                            data-tallas-chica={JSON.stringify(g.corte.chica)}
+                            data-tallas-chico={JSON.stringify(g.corte.chico)}
+                            data-talla-select
+                            required
+                            disabled
+                          >
+                            <option value="">Elige el corte primero…</option>
+                          </select>
+                        </label>
+                      </div>
+                    ) : (
+                      <label>
+                        <span class="pdp__opt-lbl">{g.nombre} <span class="req">*</span></span>
+                        <select data-opt={g.nombre} required>
+                          <option value="">Elige…</option>
+                          {g.tallas!.map((t) => <option value={t}>{t}</option>)}
+                        </select>
+                      </label>
+                    ),
+                  )
+                ) : p.corte ? (
+                  <div class="pdp__corte-group" data-corte-group>
                     <label>
-                      <span class="pdp__opt-lbl">{g.nombre} <span class="req">*</span></span>
-                      <select data-opt={g.nombre} required>
+                      <span class="pdp__opt-lbl">Corte <span class="req">*</span></span>
+                      <select data-opt="Corte" data-corte-select required>
                         <option value="">Elige…</option>
-                        {g.tallas.map((t) => <option value={t}>{t}</option>)}
+                        <option value="Chica">Chica</option>
+                        <option value="Chico">Chico</option>
                       </select>
                     </label>
-                  ))
+                    <label>
+                      <span class="pdp__opt-lbl">Talla <span class="req">*</span></span>
+                      <select
+                        data-opt="talla"
+                        data-prenda={p.prenda ?? "Talla"}
+                        data-tallas-chica={JSON.stringify(p.corte.chica)}
+                        data-tallas-chico={JSON.stringify(p.corte.chico)}
+                        data-talla-select
+                        required
+                        disabled
+                      >
+                        <option value="">Elige el corte primero…</option>
+                      </select>
+                    </label>
+                  </div>
                 ) : (
                   <label>
                     <span class="pdp__opt-lbl">Talla <span class="req">*</span></span>
                     <select data-opt="talla" data-prenda={p.prenda ?? "Talla"} required>
-                      {p.tallas.length > 1 && <option value="">Elige…</option>}
-                      {p.tallas.map((t) => <option value={t}>{t}</option>)}
+                      {(p.tallas?.length ?? 0) > 1 && <option value="">Elige…</option>}
+                      {p.tallas?.map((t) => <option value={t}>{t}</option>)}
                     </select>
                   </label>
                 )}
@@ -253,7 +304,7 @@ const breadcrumb = {
     document.querySelectorAll<HTMLSelectElement>(".pdp__opts select[data-opt]"),
   ).filter((s) => {
     const k = s.dataset.opt || "";
-    return k !== "cantidad" && !esTallaKey(k);
+    return k !== "cantidad" && !esTallaKey(k) && !s.hasAttribute("data-corte-select");
   });
 
   function filtrarPorVariante(v: string) {
@@ -269,6 +320,28 @@ const breadcrumb = {
   varSelects.forEach((sel) => {
     sel.addEventListener("change", () => {
       if (sel.value) filtrarPorVariante(sel.value);
+    });
+  });
+
+  // Corte dependiente (chica/chico): la lista de tallas cambia según el
+  // corte elegido, en vez de mostrar una única tabla de tallas para todos.
+  document.querySelectorAll<HTMLElement>("[data-corte-group]").forEach((group) => {
+    const corteSel = group.querySelector<HTMLSelectElement>("[data-corte-select]");
+    const tallaSel = group.querySelector<HTMLSelectElement>("[data-talla-select]");
+    if (!corteSel || !tallaSel) return;
+    const tallasChica: string[] = JSON.parse(tallaSel.dataset.tallasChica || "[]");
+    const tallasChico: string[] = JSON.parse(tallaSel.dataset.tallasChico || "[]");
+    corteSel.addEventListener("change", () => {
+      const lista = corteSel.value === "Chica" ? tallasChica : corteSel.value === "Chico" ? tallasChico : [];
+      tallaSel.innerHTML = "";
+      if (!lista.length) {
+        tallaSel.disabled = true;
+        tallaSel.appendChild(new Option("Elige el corte primero…", ""));
+        return;
+      }
+      tallaSel.disabled = false;
+      tallaSel.appendChild(new Option("Elige…", ""));
+      lista.forEach((t) => tallaSel.appendChild(new Option(t, t)));
     });
   });
 
