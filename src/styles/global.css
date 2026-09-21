@@ -259,6 +259,7 @@ p:last-child{margin-bottom:0}
 .team{border:1px solid var(--mzv-borde);border-radius:12px;padding:26px}
 .team h3{font-size:20px;margin-bottom:6px}
 .team__div{font-size:14px;color:var(--mzv-naranja);font-weight:600}
+.team__grupo{font-size:13px;color:var(--mzv-texto);margin-top:2px}
 .team__meta{font-size:14px;color:var(--mzv-texto);margin-top:10px}
 .team__cal{font-size:13px;font-weight:600;margin-top:10px;color:var(--mzv-texto)}
 .team__cal--ok{color:var(--mzv-verde)}
