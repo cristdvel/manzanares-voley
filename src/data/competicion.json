@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-17T16:24:32.931Z",
+  "actualizado": "2026-09-21T09:41:15.066Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -293,23 +293,23 @@
               "aplazado": false
             },
             {
-              "id": 56750,
-              "jornada": 2,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "CV Bulldogs A",
-              "visitante": "Cvleganes.com A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 56751,
               "jornada": 2,
               "fechaHora": "2026-10-04T00:00:00.000Z",
               "local": "VP Madrid A Amarillo Juvenil Femenino",
               "visitante": "Feel Alcobendas Negro",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56750,
+              "jornada": 2,
+              "fechaHora": "2026-10-04T12:15:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": "Universidad Camilo Jose Cela, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
