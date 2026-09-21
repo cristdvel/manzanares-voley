@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-21T10:16:12.876Z",
+  "actualizado": "2026-09-21T17:57:03.381Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -2173,7 +2173,7 @@
         },
         {
           "pos": 10,
-          "equipo": "B. M. 2 Ciudad Getafe",
+          "equipo": "B. M. 2 De Mayo",
           "esManzanares": false,
           "pts": 0,
           "pj": 0,
@@ -2277,7 +2277,7 @@
               "jornada": 1,
               "fechaHora": "2026-10-04T15:00:00.000Z",
               "local": "CV Valdemoro Las Aguas Juvenil Femenino",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": "Juan Antonio Samaranch",
               "esManzanares": false,
               "esLocal": false,
@@ -2327,7 +2327,7 @@
               "id": 60890,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "Cvfuenlabrada",
               "pabellon": null,
               "esManzanares": false,
@@ -2400,7 +2400,7 @@
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "Manzanares Voley B",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": null,
               "esManzanares": true,
               "esLocal": true,
@@ -2461,7 +2461,7 @@
               "id": 60901,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "Club Voleibol Móstoles B",
               "pabellon": null,
               "esManzanares": false,
@@ -2558,7 +2558,7 @@
               "jornada": 5,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Abv Boadilla B",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -2596,7 +2596,7 @@
               "id": 60912,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "VP Madrid B Negro",
               "pabellon": null,
               "esManzanares": false,
@@ -2715,7 +2715,7 @@
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "VP Madrid C Blanco",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -2732,7 +2732,7 @@
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Voleibol Hispano Usera",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -2860,7 +2860,7 @@
               "id": 60934,
               "jornada": 9,
               "fechaHora": "2026-12-13T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "Cde Parla Voley Folder",
               "pabellon": null,
               "esManzanares": false,
@@ -2889,7 +2889,7 @@
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Arganvoley",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -2995,7 +2995,7 @@
               "id": 60945,
               "jornada": 11,
               "fechaHora": "2027-01-10T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "Cuv Alcorcón Blanco",
               "pabellon": null,
               "esManzanares": false,
@@ -3045,7 +3045,7 @@
               "id": 60949,
               "jornada": 12,
               "fechaHora": "2027-01-17T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "CV Valdemoro Las Aguas Juvenil Femenino",
               "pabellon": null,
               "esManzanares": false,
@@ -3131,7 +3131,7 @@
               "jornada": 13,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Cvfuenlabrada",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -3202,7 +3202,7 @@
               "id": 60962,
               "jornada": 14,
               "fechaHora": "2027-01-31T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "Manzanares Voley B",
               "pabellon": null,
               "esManzanares": true,
@@ -3265,7 +3265,7 @@
               "jornada": 15,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Club Voleibol Móstoles B",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -3360,7 +3360,7 @@
               "id": 60975,
               "jornada": 16,
               "fechaHora": "2027-02-21T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "Abv Boadilla B",
               "pabellon": null,
               "esManzanares": false,
@@ -3400,7 +3400,7 @@
               "jornada": 17,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "VP Madrid B Negro",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -3517,7 +3517,7 @@
               "id": 60988,
               "jornada": 18,
               "fechaHora": "2027-03-07T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "VP Madrid C Blanco",
               "pabellon": null,
               "esManzanares": false,
@@ -3534,7 +3534,7 @@
               "id": 60989,
               "jornada": 19,
               "fechaHora": "2027-03-14T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "Voleibol Hispano Usera",
               "pabellon": null,
               "esManzanares": false,
@@ -3664,7 +3664,7 @@
               "jornada": 20,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Cde Parla Voley Folder",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -3691,7 +3691,7 @@
               "id": 61002,
               "jornada": 21,
               "fechaHora": "2027-04-11T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
+              "local": "B. M. 2 De Mayo",
               "visitante": "Arganvoley",
               "pabellon": null,
               "esManzanares": false,
@@ -3799,7 +3799,7 @@
               "jornada": 22,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
-              "visitante": "B. M. 2 Ciudad Getafe",
+              "visitante": "B. M. 2 De Mayo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -3849,7 +3849,7 @@
           "jornada": 3,
           "fechaHora": "2026-10-18T00:00:00.000Z",
           "local": "Manzanares Voley B",
-          "visitante": "B. M. 2 Ciudad Getafe",
+          "visitante": "B. M. 2 De Mayo",
           "pabellon": null,
           "esManzanares": true,
           "esLocal": true,
@@ -3980,7 +3980,7 @@
           "id": 60962,
           "jornada": 14,
           "fechaHora": "2027-01-31T00:00:00.000Z",
-          "local": "B. M. 2 Ciudad Getafe",
+          "local": "B. M. 2 De Mayo",
           "visitante": "Manzanares Voley B",
           "pabellon": null,
           "esManzanares": true,
@@ -4231,7 +4231,7 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
-              "id": 63982,
+              "id": 64678,
               "jornada": 1,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Avp B Rafranjo",
@@ -4242,7 +4242,7 @@
               "aplazado": false
             },
             {
-              "id": 63983,
+              "id": 64679,
               "jornada": 1,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Salesianos San Miguel B",
@@ -4253,7 +4253,7 @@
               "aplazado": false
             },
             {
-              "id": 63984,
+              "id": 64680,
               "jornada": 1,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
@@ -4264,7 +4264,7 @@
               "aplazado": false
             },
             {
-              "id": 63985,
+              "id": 64681,
               "jornada": 1,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila Juvenil Femenino",
@@ -4275,7 +4275,7 @@
               "aplazado": false
             },
             {
-              "id": 63986,
+              "id": 64682,
               "jornada": 1,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Cde Parla Voley Parlazul Juvenil Femenino",
@@ -4293,7 +4293,7 @@
           "fecha": "2026-10-18T00:00:00.000Z",
           "partidos": [
             {
-              "id": 63987,
+              "id": 64683,
               "jornada": 2,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "Arcangel Rafael",
@@ -4304,7 +4304,7 @@
               "aplazado": false
             },
             {
-              "id": 63988,
+              "id": 64684,
               "jornada": 2,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "Manzanares Voley C",
@@ -4316,7 +4316,7 @@
               "jugado": false
             },
             {
-              "id": 63989,
+              "id": 64685,
               "jornada": 2,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "A.D.perales Blanco Juvenil Femenino",
@@ -4327,7 +4327,7 @@
               "aplazado": false
             },
             {
-              "id": 63990,
+              "id": 64686,
               "jornada": 2,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "Intervoley Fuenlabrada Juvenil Femenino",
@@ -4338,7 +4338,7 @@
               "aplazado": false
             },
             {
-              "id": 63991,
+              "id": 64687,
               "jornada": 2,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
@@ -4355,7 +4355,7 @@
           "fecha": "2026-10-25T00:00:00.000Z",
           "partidos": [
             {
-              "id": 63992,
+              "id": 64688,
               "jornada": 3,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Salesianos San Miguel B",
@@ -4366,7 +4366,7 @@
               "aplazado": false
             },
             {
-              "id": 63993,
+              "id": 64689,
               "jornada": 3,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
@@ -4378,7 +4378,7 @@
               "jugado": false
             },
             {
-              "id": 63994,
+              "id": 64690,
               "jornada": 3,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila Juvenil Femenino",
@@ -4389,7 +4389,7 @@
               "aplazado": false
             },
             {
-              "id": 63995,
+              "id": 64691,
               "jornada": 3,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
@@ -4400,7 +4400,7 @@
               "aplazado": false
             },
             {
-              "id": 63996,
+              "id": 64692,
               "jornada": 3,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Avp B Rafranjo",
@@ -4417,7 +4417,7 @@
           "fecha": "2026-11-08T00:00:00.000Z",
           "partidos": [
             {
-              "id": 63997,
+              "id": 64693,
               "jornada": 4,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Arcangel Rafael",
@@ -4428,7 +4428,7 @@
               "aplazado": false
             },
             {
-              "id": 63998,
+              "id": 64694,
               "jornada": 4,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Cde Parla Voley Parlazul Juvenil Femenino",
@@ -4439,7 +4439,7 @@
               "aplazado": false
             },
             {
-              "id": 63999,
+              "id": 64695,
               "jornada": 4,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Manzanares Voley C",
@@ -4451,7 +4451,7 @@
               "jugado": false
             },
             {
-              "id": 64000,
+              "id": 64696,
               "jornada": 4,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "A.D.perales Blanco Juvenil Femenino",
@@ -4462,7 +4462,7 @@
               "aplazado": false
             },
             {
-              "id": 64001,
+              "id": 64697,
               "jornada": 4,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Intervoley Fuenlabrada Juvenil Femenino",
@@ -4479,7 +4479,7 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64002,
+              "id": 64698,
               "jornada": 5,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Intervoley Fuenlabrada Juvenil Femenino",
@@ -4490,7 +4490,7 @@
               "aplazado": false
             },
             {
-              "id": 64003,
+              "id": 64699,
               "jornada": 5,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
@@ -4501,7 +4501,7 @@
               "aplazado": false
             },
             {
-              "id": 64004,
+              "id": 64700,
               "jornada": 5,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Avp B Rafranjo",
@@ -4513,7 +4513,7 @@
               "jugado": false
             },
             {
-              "id": 64005,
+              "id": 64701,
               "jornada": 5,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Salesianos San Miguel B",
@@ -4524,7 +4524,7 @@
               "aplazado": false
             },
             {
-              "id": 64006,
+              "id": 64702,
               "jornada": 5,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
@@ -4541,7 +4541,7 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64007,
+              "id": 64703,
               "jornada": 6,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Arcangel Rafael",
@@ -4552,7 +4552,7 @@
               "aplazado": false
             },
             {
-              "id": 64008,
+              "id": 64704,
               "jornada": 6,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila Juvenil Femenino",
@@ -4563,7 +4563,7 @@
               "aplazado": false
             },
             {
-              "id": 64009,
+              "id": 64705,
               "jornada": 6,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Cde Parla Voley Parlazul Juvenil Femenino",
@@ -4574,7 +4574,7 @@
               "aplazado": false
             },
             {
-              "id": 64010,
+              "id": 64706,
               "jornada": 6,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Manzanares Voley C",
@@ -4586,7 +4586,7 @@
               "jugado": false
             },
             {
-              "id": 64011,
+              "id": 64707,
               "jornada": 6,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "A.D.perales Blanco Juvenil Femenino",
@@ -4603,7 +4603,7 @@
           "fecha": "2026-12-13T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64012,
+              "id": 64708,
               "jornada": 7,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "A.D.perales Blanco Juvenil Femenino",
@@ -4614,7 +4614,7 @@
               "aplazado": false
             },
             {
-              "id": 64013,
+              "id": 64709,
               "jornada": 7,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Intervoley Fuenlabrada Juvenil Femenino",
@@ -4626,7 +4626,7 @@
               "jugado": false
             },
             {
-              "id": 64014,
+              "id": 64710,
               "jornada": 7,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
@@ -4637,7 +4637,7 @@
               "aplazado": false
             },
             {
-              "id": 64015,
+              "id": 64711,
               "jornada": 7,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Avp B Rafranjo",
@@ -4648,7 +4648,7 @@
               "aplazado": false
             },
             {
-              "id": 64016,
+              "id": 64712,
               "jornada": 7,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Salesianos San Miguel B",
@@ -4665,7 +4665,7 @@
           "fecha": "2026-12-20T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64017,
+              "id": 64713,
               "jornada": 8,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Arcangel Rafael",
@@ -4676,7 +4676,7 @@
               "aplazado": false
             },
             {
-              "id": 64018,
+              "id": 64714,
               "jornada": 8,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
@@ -4687,7 +4687,7 @@
               "aplazado": false
             },
             {
-              "id": 64019,
+              "id": 64715,
               "jornada": 8,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila Juvenil Femenino",
@@ -4698,7 +4698,7 @@
               "aplazado": false
             },
             {
-              "id": 64020,
+              "id": 64716,
               "jornada": 8,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Cde Parla Voley Parlazul Juvenil Femenino",
@@ -4709,7 +4709,7 @@
               "aplazado": false
             },
             {
-              "id": 64021,
+              "id": 64717,
               "jornada": 8,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Manzanares Voley C",
@@ -4727,7 +4727,7 @@
           "fecha": "2027-01-17T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64022,
+              "id": 64718,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Manzanares Voley C",
@@ -4739,7 +4739,7 @@
               "jugado": false
             },
             {
-              "id": 64023,
+              "id": 64719,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "A.D.perales Blanco Juvenil Femenino",
@@ -4750,7 +4750,7 @@
               "aplazado": false
             },
             {
-              "id": 64024,
+              "id": 64720,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Intervoley Fuenlabrada Juvenil Femenino",
@@ -4761,7 +4761,7 @@
               "aplazado": false
             },
             {
-              "id": 64025,
+              "id": 64721,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
@@ -4772,7 +4772,7 @@
               "aplazado": false
             },
             {
-              "id": 64026,
+              "id": 64722,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Avp B Rafranjo",
@@ -4789,7 +4789,7 @@
           "fecha": "2027-01-24T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64027,
+              "id": 64723,
               "jornada": 10,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Arcangel Rafael",
@@ -4800,7 +4800,7 @@
               "aplazado": false
             },
             {
-              "id": 64028,
+              "id": 64724,
               "jornada": 10,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
@@ -4811,7 +4811,7 @@
               "aplazado": false
             },
             {
-              "id": 64029,
+              "id": 64725,
               "jornada": 10,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Intervoley Fuenlabrada Juvenil Femenino",
@@ -4822,7 +4822,7 @@
               "aplazado": false
             },
             {
-              "id": 64030,
+              "id": 64726,
               "jornada": 10,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "A.D.perales Blanco Juvenil Femenino",
@@ -4833,7 +4833,7 @@
               "aplazado": false
             },
             {
-              "id": 64031,
+              "id": 64727,
               "jornada": 10,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Manzanares Voley C",
@@ -4851,7 +4851,7 @@
           "fecha": "2027-02-07T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64032,
+              "id": 64728,
               "jornada": 11,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Cde Parla Voley Parlazul Juvenil Femenino",
@@ -4862,7 +4862,7 @@
               "aplazado": false
             },
             {
-              "id": 64033,
+              "id": 64729,
               "jornada": 11,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila Juvenil Femenino",
@@ -4874,7 +4874,7 @@
               "jugado": false
             },
             {
-              "id": 64034,
+              "id": 64730,
               "jornada": 11,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
@@ -4885,7 +4885,7 @@
               "aplazado": false
             },
             {
-              "id": 64035,
+              "id": 64731,
               "jornada": 11,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Salesianos San Miguel B",
@@ -4896,7 +4896,7 @@
               "aplazado": false
             },
             {
-              "id": 64036,
+              "id": 64732,
               "jornada": 11,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Avp B Rafranjo",
@@ -4913,7 +4913,7 @@
           "fecha": "2027-02-21T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64037,
+              "id": 64733,
               "jornada": 12,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Arcangel Rafael",
@@ -4924,7 +4924,7 @@
               "aplazado": false
             },
             {
-              "id": 64038,
+              "id": 64734,
               "jornada": 12,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Intervoley Fuenlabrada Juvenil Femenino",
@@ -4935,7 +4935,7 @@
               "aplazado": false
             },
             {
-              "id": 64039,
+              "id": 64735,
               "jornada": 12,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "A.D.perales Blanco Juvenil Femenino",
@@ -4946,7 +4946,7 @@
               "aplazado": false
             },
             {
-              "id": 64040,
+              "id": 64736,
               "jornada": 12,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Manzanares Voley C",
@@ -4958,7 +4958,7 @@
               "jugado": false
             },
             {
-              "id": 64041,
+              "id": 64737,
               "jornada": 12,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Cde Parla Voley Parlazul Juvenil Femenino",
@@ -4975,7 +4975,7 @@
           "fecha": "2027-02-28T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64042,
+              "id": 64738,
               "jornada": 13,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila Juvenil Femenino",
@@ -4986,7 +4986,7 @@
               "aplazado": false
             },
             {
-              "id": 64043,
+              "id": 64739,
               "jornada": 13,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
@@ -4997,7 +4997,7 @@
               "aplazado": false
             },
             {
-              "id": 64044,
+              "id": 64740,
               "jornada": 13,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Salesianos San Miguel B",
@@ -5009,7 +5009,7 @@
               "jugado": false
             },
             {
-              "id": 64045,
+              "id": 64741,
               "jornada": 13,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Avp B Rafranjo",
@@ -5020,7 +5020,7 @@
               "aplazado": false
             },
             {
-              "id": 64046,
+              "id": 64742,
               "jornada": 13,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
@@ -5037,7 +5037,7 @@
           "fecha": "2027-03-07T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64047,
+              "id": 64743,
               "jornada": 14,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Arcangel Rafael",
@@ -5048,7 +5048,7 @@
               "aplazado": false
             },
             {
-              "id": 64048,
+              "id": 64744,
               "jornada": 14,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "A.D.perales Blanco Juvenil Femenino",
@@ -5059,7 +5059,7 @@
               "aplazado": false
             },
             {
-              "id": 64049,
+              "id": 64745,
               "jornada": 14,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Manzanares Voley C",
@@ -5071,7 +5071,7 @@
               "jugado": false
             },
             {
-              "id": 64050,
+              "id": 64746,
               "jornada": 14,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Cde Parla Voley Parlazul Juvenil Femenino",
@@ -5082,7 +5082,7 @@
               "aplazado": false
             },
             {
-              "id": 64051,
+              "id": 64747,
               "jornada": 14,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila Juvenil Femenino",
@@ -5099,7 +5099,7 @@
           "fecha": "2027-03-14T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64052,
+              "id": 64748,
               "jornada": 15,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
@@ -5110,7 +5110,7 @@
               "aplazado": false
             },
             {
-              "id": 64053,
+              "id": 64749,
               "jornada": 15,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Salesianos San Miguel B",
@@ -5121,7 +5121,7 @@
               "aplazado": false
             },
             {
-              "id": 64054,
+              "id": 64750,
               "jornada": 15,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Avp B Rafranjo",
@@ -5132,7 +5132,7 @@
               "aplazado": false
             },
             {
-              "id": 64055,
+              "id": 64751,
               "jornada": 15,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
@@ -5144,7 +5144,7 @@
               "jugado": false
             },
             {
-              "id": 64056,
+              "id": 64752,
               "jornada": 15,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Intervoley Fuenlabrada Juvenil Femenino",
@@ -5161,7 +5161,7 @@
           "fecha": "2027-04-04T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64057,
+              "id": 64753,
               "jornada": 16,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Arcangel Rafael",
@@ -5172,7 +5172,7 @@
               "aplazado": false
             },
             {
-              "id": 64058,
+              "id": 64754,
               "jornada": 16,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Manzanares Voley C",
@@ -5184,7 +5184,7 @@
               "jugado": false
             },
             {
-              "id": 64059,
+              "id": 64755,
               "jornada": 16,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Cde Parla Voley Parlazul Juvenil Femenino",
@@ -5195,7 +5195,7 @@
               "aplazado": false
             },
             {
-              "id": 64060,
+              "id": 64756,
               "jornada": 16,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila Juvenil Femenino",
@@ -5206,7 +5206,7 @@
               "aplazado": false
             },
             {
-              "id": 64061,
+              "id": 64757,
               "jornada": 16,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
@@ -5223,7 +5223,7 @@
           "fecha": "2027-04-11T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64062,
+              "id": 64758,
               "jornada": 17,
               "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Salesianos San Miguel B",
@@ -5234,7 +5234,7 @@
               "aplazado": false
             },
             {
-              "id": 64063,
+              "id": 64759,
               "jornada": 17,
               "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Avp B Rafranjo",
@@ -5245,7 +5245,7 @@
               "aplazado": false
             },
             {
-              "id": 64064,
+              "id": 64760,
               "jornada": 17,
               "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
@@ -5256,7 +5256,7 @@
               "aplazado": false
             },
             {
-              "id": 64065,
+              "id": 64761,
               "jornada": 17,
               "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Intervoley Fuenlabrada Juvenil Femenino",
@@ -5267,7 +5267,7 @@
               "aplazado": false
             },
             {
-              "id": 64066,
+              "id": 64762,
               "jornada": 17,
               "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "A.D.perales Blanco Juvenil Femenino",
@@ -5285,7 +5285,7 @@
           "fecha": "2027-04-18T00:00:00.000Z",
           "partidos": [
             {
-              "id": 64067,
+              "id": 64763,
               "jornada": 18,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Arcangel Rafael",
@@ -5297,7 +5297,7 @@
               "jugado": false
             },
             {
-              "id": 64068,
+              "id": 64764,
               "jornada": 18,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Cde Parla Voley Parlazul Juvenil Femenino",
@@ -5308,7 +5308,7 @@
               "aplazado": false
             },
             {
-              "id": 64069,
+              "id": 64765,
               "jornada": 18,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila Juvenil Femenino",
@@ -5319,7 +5319,7 @@
               "aplazado": false
             },
             {
-              "id": 64070,
+              "id": 64766,
               "jornada": 18,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
@@ -5330,7 +5330,7 @@
               "aplazado": false
             },
             {
-              "id": 64071,
+              "id": 64767,
               "jornada": 18,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Salesianos San Miguel B",
@@ -5345,7 +5345,7 @@
       ],
       "misPartidos": [
         {
-          "id": 63986,
+          "id": 64682,
           "jornada": 1,
           "fechaHora": "2026-10-11T00:00:00.000Z",
           "local": "Cde Parla Voley Parlazul Juvenil Femenino",
@@ -5357,7 +5357,7 @@
           "jugado": false
         },
         {
-          "id": 63988,
+          "id": 64684,
           "jornada": 2,
           "fechaHora": "2026-10-18T00:00:00.000Z",
           "local": "Manzanares Voley C",
@@ -5369,7 +5369,7 @@
           "jugado": false
         },
         {
-          "id": 63993,
+          "id": 64689,
           "jornada": 3,
           "fechaHora": "2026-10-25T00:00:00.000Z",
           "local": "Mirasur School Juvenil Femenino",
@@ -5381,7 +5381,7 @@
           "jugado": false
         },
         {
-          "id": 63999,
+          "id": 64695,
           "jornada": 4,
           "fechaHora": "2026-11-08T00:00:00.000Z",
           "local": "Manzanares Voley C",
@@ -5393,7 +5393,7 @@
           "jugado": false
         },
         {
-          "id": 64004,
+          "id": 64700,
           "jornada": 5,
           "fechaHora": "2026-11-15T00:00:00.000Z",
           "local": "Avp B Rafranjo",
@@ -5405,7 +5405,7 @@
           "jugado": false
         },
         {
-          "id": 64010,
+          "id": 64706,
           "jornada": 6,
           "fechaHora": "2026-11-29T00:00:00.000Z",
           "local": "Manzanares Voley C",
@@ -5417,7 +5417,7 @@
           "jugado": false
         },
         {
-          "id": 64013,
+          "id": 64709,
           "jornada": 7,
           "fechaHora": "2026-12-13T00:00:00.000Z",
           "local": "Intervoley Fuenlabrada Juvenil Femenino",
@@ -5429,7 +5429,7 @@
           "jugado": false
         },
         {
-          "id": 64021,
+          "id": 64717,
           "jornada": 8,
           "fechaHora": "2026-12-20T00:00:00.000Z",
           "local": "Manzanares Voley C",
@@ -5441,7 +5441,7 @@
           "jugado": false
         },
         {
-          "id": 64022,
+          "id": 64718,
           "jornada": 9,
           "fechaHora": "2027-01-17T00:00:00.000Z",
           "local": "Manzanares Voley C",
@@ -5453,7 +5453,7 @@
           "jugado": false
         },
         {
-          "id": 64031,
+          "id": 64727,
           "jornada": 10,
           "fechaHora": "2027-01-24T00:00:00.000Z",
           "local": "Manzanares Voley C",
@@ -5465,7 +5465,7 @@
           "jugado": false
         },
         {
-          "id": 64033,
+          "id": 64729,
           "jornada": 11,
           "fechaHora": "2027-02-07T00:00:00.000Z",
           "local": "C.d.b.colegio Aquila Juvenil Femenino",
@@ -5477,7 +5477,7 @@
           "jugado": false
         },
         {
-          "id": 64040,
+          "id": 64736,
           "jornada": 12,
           "fechaHora": "2027-02-21T00:00:00.000Z",
           "local": "Manzanares Voley C",
@@ -5489,7 +5489,7 @@
           "jugado": false
         },
         {
-          "id": 64044,
+          "id": 64740,
           "jornada": 13,
           "fechaHora": "2027-02-28T00:00:00.000Z",
           "local": "Salesianos San Miguel B",
@@ -5501,7 +5501,7 @@
           "jugado": false
         },
         {
-          "id": 64049,
+          "id": 64745,
           "jornada": 14,
           "fechaHora": "2027-03-07T00:00:00.000Z",
           "local": "Manzanares Voley C",
@@ -5513,7 +5513,7 @@
           "jugado": false
         },
         {
-          "id": 64055,
+          "id": 64751,
           "jornada": 15,
           "fechaHora": "2027-03-14T00:00:00.000Z",
           "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
@@ -5525,7 +5525,7 @@
           "jugado": false
         },
         {
-          "id": 64058,
+          "id": 64754,
           "jornada": 16,
           "fechaHora": "2027-04-04T00:00:00.000Z",
           "local": "Manzanares Voley C",
@@ -5537,7 +5537,7 @@
           "jugado": false
         },
         {
-          "id": 64066,
+          "id": 64762,
           "jornada": 17,
           "fechaHora": "2027-04-11T00:00:00.000Z",
           "local": "A.D.perales Blanco Juvenil Femenino",
@@ -5549,7 +5549,7 @@
           "jugado": false
         },
         {
-          "id": 64067,
+          "id": 64763,
           "jornada": 18,
           "fechaHora": "2027-04-18T00:00:00.000Z",
           "local": "Arcangel Rafael",
@@ -12360,19 +12360,6 @@
           "puntosContra": 0
         },
         {
-          "pos": 2,
-          "equipo": "Dragons Voleibol Moralzarzal Blanco B",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
           "pos": 3,
           "equipo": "Feel Alcobendas Rojo",
           "esManzanares": false,
@@ -12509,12 +12496,34 @@
           "fecha": "2026-10-04T00:00:00.000Z",
           "partidos": [
             {
+              "id": 59864,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T09:30:00.000Z",
+              "local": "Cd Newman A",
+              "visitante": "Cde Voleibol Colmenar A",
+              "pabellon": "Club Deportivo Newman",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 59860,
               "jornada": 1,
               "fechaHora": "2026-10-03T10:00:00.000Z",
               "local": "Sad Recuerdo A",
               "visitante": "Cde Vb Algete",
               "pabellon": "Recuerdo, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 59863,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T14:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal Blanco B",
+              "visitante": "Feel Alcobendas Rojo",
+              "pabellon": "Leonardo Da Vinci, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -12537,28 +12546,6 @@
               "fechaHora": "2026-10-04T00:00:00.000Z",
               "local": "Grupo Egido Pinto A",
               "visitante": "Intervoley Fuenlabrada",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 59863,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Dragons Voleibol Moralzarzal Blanco B",
-              "visitante": "Feel Alcobendas Rojo",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 59864,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Cd Newman A",
-              "visitante": "Cde Voleibol Colmenar A",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -14551,10 +14538,21 @@
             {
               "id": 58075,
               "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "fechaHora": "2026-10-03T18:30:00.000Z",
               "local": "CV Majadahonda A",
               "visitante": "CV Nueva Castilla",
-              "pabellon": null,
+              "pabellon": "Principe Felipe, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 58080,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T20:00:00.000Z",
+              "local": "Cd Newman A",
+              "visitante": "CV Bulldogs A",
+              "pabellon": "Club Deportivo Newman",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -14599,17 +14597,6 @@
               "fechaHora": "2026-10-04T00:00:00.000Z",
               "local": "Club Voleibol Torrelodones B",
               "visitante": "CV Madrid A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 58080,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Cd Newman A",
-              "visitante": "CV Bulldogs A",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -16591,10 +16578,10 @@
             {
               "id": 59589,
               "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "fechaHora": "2026-10-03T11:00:00.000Z",
               "local": "Club Voleibol Móstoles",
               "visitante": "CV Sanse",
-              "pabellon": null,
+              "pabellon": "Pau 4, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -18601,17 +18588,6 @@
               "aplazado": false
             },
             {
-              "id": 62174,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Cde Atlético Loeches Senior Masculino",
-              "visitante": "Maria Rodrigo",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 62175,
               "jornada": 1,
               "fechaHora": "2026-10-04T00:00:00.000Z",
@@ -18641,6 +18617,17 @@
               "local": "CV Getafe Verde",
               "visitante": "Cde Parla Voley Ortopedia Parla Senior Masculino",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 62174,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T17:00:00.000Z",
+              "local": "Cde Atlético Loeches Senior Masculino",
+              "visitante": "Maria Rodrigo",
+              "pabellon": "Pdm Jose Rodriguez",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -22106,6 +22093,17 @@
           "fecha": "2026-10-04T00:00:00.000Z",
           "partidos": [
             {
+              "id": 62964,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T09:30:00.000Z",
+              "local": "V-Valley CValcalá G2",
+              "visitante": "Cuv Alcorcón B",
+              "pabellon": "Espartales, Ciudad Deportiva",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 62960,
               "jornada": 1,
               "fechaHora": "2026-10-04T00:00:00.000Z",
@@ -22149,17 +22147,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 62964,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "V-Valley CValcalá G2",
-              "visitante": "Cuv Alcorcón B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 62965,
