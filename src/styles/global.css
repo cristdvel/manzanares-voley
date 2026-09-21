@@ -205,6 +205,8 @@ p:last-child{margin-bottom:0}
   letter-spacing:.04em;color:var(--mzv-naranja);margin:5px 0;
 }
 .match__meta{margin-top:16px;font-size:14px;color:var(--mzv-texto)}
+.match__meta a{color:var(--mzv-naranja);font-weight:600;text-decoration:none}
+.match__meta a:hover{text-decoration:underline}
 
 /* ---------- Franja tienda (inicio) ---------- */
 .tienda-strip .split{align-items:center}
