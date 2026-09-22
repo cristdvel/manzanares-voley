@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-21T23:02:50.053Z",
+  "actualizado": "2026-09-22T03:40:57.079Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -2217,17 +2217,6 @@
           "fecha": "2026-10-04T00:00:00.000Z",
           "partidos": [
             {
-              "id": 60881,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Arganvoley",
-              "visitante": "Voleibol Hispano Usera",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 60882,
               "jornada": 1,
               "fechaHora": "2026-10-04T00:00:00.000Z",
@@ -2260,6 +2249,17 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
+            },
+            {
+              "id": 60881,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T09:30:00.000Z",
+              "local": "Arganvoley",
+              "visitante": "Voleibol Hispano Usera",
+              "pabellon": "Centro Dotacional Integrado, Arganzuela",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             },
             {
               "id": 60886,
@@ -5794,13 +5794,15 @@
             {
               "id": 57148,
               "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "fechaHora": "2026-10-04T10:30:00.000Z",
               "local": "CV Las Rozas A",
               "visitante": "Manzanares Voley A",
-              "pabellon": null,
+              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
+              "direccion": "CALLE ACANTO, 8",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DEPORTIVO Y CULTURAL - LA MARAZUELA CALLE ACANTO, 8, LAS ROZAS DE MADRID",
               "jugado": false
             }
           ]
@@ -7343,13 +7345,15 @@
         {
           "id": 57148,
           "jornada": 1,
-          "fechaHora": "2026-10-04T00:00:00.000Z",
+          "fechaHora": "2026-10-04T10:30:00.000Z",
           "local": "CV Las Rozas A",
           "visitante": "Manzanares Voley A",
-          "pabellon": null,
+          "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "CALLE ACANTO, 8",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DEPORTIVO Y CULTURAL - LA MARAZUELA CALLE ACANTO, 8, LAS ROZAS DE MADRID",
           "jugado": false
         },
         {
@@ -7822,23 +7826,23 @@
               "aplazado": false
             },
             {
-              "id": 57286,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "CV Las Rozas A",
-              "visitante": "Cuv Alcorcón Azul",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57287,
               "jornada": 1,
               "fechaHora": "2026-10-04T00:00:00.000Z",
               "local": "CV Collado Villalba",
               "visitante": "Ucam Torrejón",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57286,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T13:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Cuv Alcorcón Azul",
+              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -9854,6 +9858,17 @@
               "aplazado": false
             },
             {
+              "id": 61168,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T19:00:00.000Z",
+              "local": "CV Las Rozas B",
+              "visitante": "Saint Louis",
+              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 61164,
               "jornada": 1,
               "fechaHora": "2026-10-04T00:00:00.000Z",
@@ -9886,17 +9901,6 @@
               "esLocal": false,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 61168,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "CV Las Rozas B",
-              "visitante": "Saint Louis",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 61163,
@@ -25486,19 +25490,6 @@
       "categoria": "Juvenil Femenino B"
     },
     {
-      "id": 57148,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T00:00:00.000Z",
-      "local": "CV Las Rozas A",
-      "visitante": "Manzanares Voley A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Cadete Femenino A"
-    },
-    {
       "id": 57282,
       "jornada": 1,
       "fechaHora": "2026-10-04T00:00:00.000Z",
@@ -25549,6 +25540,19 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Sénior Femenino"
+    },
+    {
+      "id": 59593,
+      "jornada": 1,
+      "fechaHora": "2026-10-04T00:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Chv1995 A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Infantil Masculino"
     }
   ],
   "ultimos": []
