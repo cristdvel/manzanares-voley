@@ -2,7 +2,7 @@
 // Precios (€) confirmados por el club. El pago se hace por transferencia y el
 // comprobante se adjunta al tramitar el pedido.
 // Descripciones y características son de MUESTRA, pendientes de revisión del club.
-// Pendiente: fotos reales de toalla, taza, botella, bufanda, correa, llavero y banderín.
+// Pendiente: fotos reales de correa y llavero; precio del imán.
 
 export interface Variante {
   nombre: string;
@@ -391,8 +391,8 @@ export const productos: Producto[] = [
     precio: 30,
     resumen: "Toalla con el logo del club.",
     descripcion: "Toalla oficial del club, con el logo de Manzanares Voley estampado.",
-    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
-    caracteristicas: ["Foto pendiente de subir por el club"],
+    imagenes: [{ src: "/img/equipacion/toalla.jpg" }],
+    caracteristicas: ["Estampado a color con el logo del 10º aniversario"],
     variantes: [],
     tallas: TALLA_UNICA,
     disponible: true,
@@ -404,8 +404,8 @@ export const productos: Producto[] = [
     precio: 8,
     resumen: "Taza con el logo del club.",
     descripcion: "Taza oficial del club, con el logo de Manzanares Voley estampado.",
-    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
-    caracteristicas: ["Foto pendiente de subir por el club"],
+    imagenes: [{ src: "/img/equipacion/taza.jpg" }],
+    caracteristicas: ["Estampado a color con el logo del 10º aniversario"],
     variantes: [],
     tallas: TALLA_UNICA,
     disponible: true,
@@ -416,9 +416,9 @@ export const productos: Producto[] = [
     categoria: "Accesorios",
     precio: 12,
     resumen: "Botella reutilizable con el logo del club.",
-    descripcion: "Botella reutilizable oficial del club, con el logo de Manzanares Voley estampado.",
-    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
-    caracteristicas: ["Foto pendiente de subir por el club"],
+    descripcion: "Botella reutilizable oficial del club, con el logo de Manzanares Voley estampado y mosquetón para engancharla a la mochila.",
+    imagenes: [{ src: "/img/equipacion/botella.jpg" }, { src: "/img/equipacion/botella-2.jpg" }],
+    caracteristicas: ["Con mosquetón para enganchar a la mochila"],
     variantes: [],
     tallas: TALLA_UNICA,
     disponible: true,
@@ -430,8 +430,8 @@ export const productos: Producto[] = [
     precio: 12,
     resumen: "Bufanda con los colores del club.",
     descripcion: "Bufanda oficial del club, con los colores y el logo de Manzanares Voley.",
-    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
-    caracteristicas: ["Foto pendiente de subir por el club"],
+    imagenes: [{ src: "/img/equipacion/bufanda.jpg" }],
+    caracteristicas: ["Estampado a color con el logo del 10º aniversario"],
     variantes: [],
     tallas: TALLA_UNICA,
     disponible: true,
@@ -468,9 +468,23 @@ export const productos: Producto[] = [
     categoria: "Accesorios",
     precio: 8,
     resumen: "Banderín con el escudo del club.",
-    descripcion: "Banderín oficial del club, con el escudo de Manzanares Voley.",
-    imagenes: [{ src: "/img/equipacion/proximamente.svg" }],
-    caracteristicas: ["Foto pendiente de subir por el club"],
+    descripcion: "Banderín oficial del club, con el escudo de Manzanares Voley y flecos.",
+    imagenes: [{ src: "/img/equipacion/banderin.jpg" }],
+    caracteristicas: ["Con flecos y cordón para colgar"],
+    variantes: [],
+    tallas: TALLA_UNICA,
+    disponible: true,
+  },
+  // TODO: precio del imán pendiente de confirmar por el club.
+  {
+    id: "iman",
+    nombre: "Imán oficial",
+    categoria: "Accesorios",
+    precio: 0,
+    resumen: "Imán de nevera con el logo del club.",
+    descripcion: "Imán de nevera oficial del club, con el logo de Manzanares Voley.",
+    imagenes: [{ src: "/img/equipacion/imanes.jpg" }],
+    caracteristicas: ["Foto de muestra; precio pendiente de confirmar por el club"],
     variantes: [],
     tallas: TALLA_UNICA,
     disponible: true,
