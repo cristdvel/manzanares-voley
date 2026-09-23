@@ -334,3 +334,36 @@ ningún script de Google — sigue funcionando exactamente igual que ahora.
 5. En GA4 → **Informes → Tiempo real** (o DebugView con el modo de depuración
    activado) deberían empezar a aparecer las sesiones y eventos en cuanto
    las tags correspondientes estén publicadas en GTM.
+
+---
+
+## 9. Formulario de inscripción (email + Excel)
+
+El formulario de inscripción de la home (`#inscripciones`) funciona igual
+que los pedidos de la tienda: al enviarse, manda un email al club y guarda
+una fila en Google Sheets — reutiliza **las mismas** variables de entorno
+de Cloudflare que ya tienes configuradas para los pedidos
+(`RESEND_API_KEY`, `PEDIDOS_TO`, `PEDIDOS_FROM`, `SHEETS_WEBHOOK_URL`), así
+que **no hay nada nuevo que configurar en Cloudflare**.
+
+Lo único pendiente es actualizar el Apps Script de tu Google Sheet, porque
+ahora también sabe registrar inscripciones en una pestaña nueva
+**"Inscripciones"** (separada de "Pedidos"):
+
+1. Abre tu hoja de cálculo → **Extensiones → Apps Script**.
+2. Borra el código actual y pega el contenido actualizado de
+   [`scripts/apps-script-pedidos.gs`](scripts/apps-script-pedidos.gs).
+3. **Implementar → Gestionar implementaciones → editar (lápiz) → Nueva
+   versión** (guardar el archivo no es suficiente, hay que publicar la
+   nueva versión para que el cambio llegue a la web).
+4. Haz una inscripción de prueba desde la home: debería llegarte el email
+   a `manzanaresvoley@gmail.com` (o al `PEDIDOS_TO` que tengas configurado)
+   y aparecer una fila nueva en la pestaña **"Inscripciones"** de la hoja
+   (se crea sola la primera vez, igual que pasó con "Pedidos").
+
+> La pestaña "Inscripciones" guarda: fecha, nombre del jugador/a, fecha de
+> nacimiento, categoría orientativa (calculada automáticamente por edad),
+> nombre del tutor, teléfono, email, experiencia previa y si autoriza el
+> uso de imágenes — más las dos columnas libres "Estado" y "Comentario
+> interno" para que el club apunte cómo va cada solicitud, igual que en
+> "Pedidos".

@@ -313,6 +313,7 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
             catHint.classList.remove("show");
             return;
           }
+          catHint.dataset.categoria = cat || "";
           if (cat === null) {
             catHint.textContent =
               "Aún por debajo de la edad mínima (9 años). Escríbenos y te avisamos cuando pueda empezar.";
@@ -358,8 +359,13 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
             });
           });
 
+          var errEl = document.getElementById("insc-error");
+          var submitBtn = form.querySelector('button[type="submit"]');
+          var textoBtn = submitBtn ? submitBtn.textContent : "";
+
           form.addEventListener("submit", function (e) {
             e.preventDefault();
+            if (errEl) errEl.hidden = true;
             var ok = true;
             requeridos.forEach(function (campo) {
               if (!validaCampo(campo)) ok = false;
@@ -370,11 +376,47 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
               if (primerError) primerError.scrollIntoView({ behavior: "smooth", block: "center" });
               return;
             }
-            form.style.display = "none";
-            success.classList.add("show");
-            success.scrollIntoView({ behavior: "smooth", block: "center" });
-            window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({ event: "solicitud_inscripcion" });
+
+            var fd = new FormData(form);
+            fd.set("categoria", catHint.dataset.categoria || "");
+
+            if (submitBtn) {
+              submitBtn.disabled = true;
+              submitBtn.textContent = "Enviando…";
+            }
+
+            fetch("/api/inscripcion", { method: "POST", body: fd })
+              .then(function (res) {
+                return res
+                  .json()
+                  .catch(function () {
+                    return {};
+                  })
+                  .then(function (data) {
+                    return { ok: res.ok && data.ok, error: data.error };
+                  });
+              })
+              .then(function (result) {
+                if (!result.ok) throw new Error(result.error || "No se pudo enviar la inscripción.");
+                form.style.display = "none";
+                success.classList.add("show");
+                success.scrollIntoView({ behavior: "smooth", block: "center" });
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push({ event: "solicitud_inscripcion" });
+              })
+              .catch(function (err) {
+                if (errEl) {
+                  errEl.textContent = err.message + " Si sigue fallando, escríbenos por email.";
+                  errEl.hidden = false;
+                  errEl.scrollIntoView({ behavior: "smooth", block: "center" });
+                }
+              })
+              .finally(function () {
+                if (submitBtn) {
+                  submitBtn.disabled = false;
+                  submitBtn.textContent = textoBtn;
+                }
+              });
           });
         }
 

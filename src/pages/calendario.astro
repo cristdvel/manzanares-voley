@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import Amistosos from "../components/Amistosos.astro";
 import Calendario from "../components/Calendario.astro";
 import Clasificacion from "../components/Clasificacion.astro";
+import Resultados from "../components/Resultados.astro";
 import { temporada, actualizadoTexto, proximos, grupos } from "../data/competicion";
 import { site } from "../data/site";
 
@@ -66,6 +67,9 @@ const eventSchemas = proximos
           <button type="button" class="btn btn--primary" id="toggle-vista-calendario" aria-pressed="true">
             📅 Calendario
           </button>
+          <button type="button" class="btn btn--outline" id="toggle-vista-resultados" aria-pressed="false">
+            🏐 Resultados
+          </button>
           <button type="button" class="btn btn--outline" id="toggle-vista-clasificacion" aria-pressed="false">
             🏆 Clasificación
           </button>
@@ -76,6 +80,9 @@ const eventSchemas = proximos
     <div id="vista-calendario">
       <Calendario tabGroupName="equipo" mostrarSelector={false} />
     </div>
+    <div id="vista-resultados" hidden>
+      <Resultados tabGroupName="equipo" mostrarSelector={false} />
+    </div>
     <div id="vista-clasificacion" hidden>
       <Clasificacion full={true} tabGroupName="equipo" mostrarSelector={false} />
     </div>
@@ -84,24 +91,32 @@ const eventSchemas = proximos
 </Base>
 
 <script>
-  const btnCal = document.getElementById("toggle-vista-calendario") as HTMLButtonElement | null;
-  const btnClasif = document.getElementById("toggle-vista-clasificacion") as HTMLButtonElement | null;
-  const vistaCal = document.getElementById("vista-calendario");
-  const vistaClasif = document.getElementById("vista-clasificacion");
+  type Vista = "calendario" | "resultados" | "clasificacion";
 
-  function mostrarVista(vista: "calendario" | "clasificacion") {
-    const esCalendario = vista === "calendario";
-    if (vistaCal) vistaCal.hidden = !esCalendario;
-    if (vistaClasif) vistaClasif.hidden = esCalendario;
-    [btnCal, btnClasif].forEach((b) => b?.classList.remove("btn--primary", "btn--outline"));
-    btnCal?.classList.add(esCalendario ? "btn--primary" : "btn--outline");
-    btnClasif?.classList.add(esCalendario ? "btn--outline" : "btn--primary");
-    btnCal?.setAttribute("aria-pressed", String(esCalendario));
-    btnClasif?.setAttribute("aria-pressed", String(!esCalendario));
+  const botones: Record<Vista, HTMLButtonElement | null> = {
+    calendario: document.getElementById("toggle-vista-calendario") as HTMLButtonElement | null,
+    resultados: document.getElementById("toggle-vista-resultados") as HTMLButtonElement | null,
+    clasificacion: document.getElementById("toggle-vista-clasificacion") as HTMLButtonElement | null,
+  };
+  const vistas: Record<Vista, HTMLElement | null> = {
+    calendario: document.getElementById("vista-calendario"),
+    resultados: document.getElementById("vista-resultados"),
+    clasificacion: document.getElementById("vista-clasificacion"),
+  };
+
+  function mostrarVista(actual: Vista) {
+    (Object.keys(vistas) as Vista[]).forEach((v) => {
+      const activa = v === actual;
+      if (vistas[v]) vistas[v]!.hidden = !activa;
+      botones[v]?.classList.remove("btn--primary", "btn--outline");
+      botones[v]?.classList.add(activa ? "btn--primary" : "btn--outline");
+      botones[v]?.setAttribute("aria-pressed", String(activa));
+    });
   }
 
-  btnCal?.addEventListener("click", () => mostrarVista("calendario"));
-  btnClasif?.addEventListener("click", () => mostrarVista("clasificacion"));
+  (Object.keys(botones) as Vista[]).forEach((v) => {
+    botones[v]?.addEventListener("click", () => mostrarVista(v));
+  });
 
   document.getElementById("hero-ver-calendario")?.addEventListener("click", () => {
     mostrarVista("calendario");

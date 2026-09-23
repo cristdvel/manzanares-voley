@@ -1,0 +1,61 @@
+---
+import { grupos, fechaCorta } from "../data/competicion";
+
+interface Props {
+  /** nombre del grupo de pestañas; compártelo con Calendario/Clasificación
+   * para que un mismo selector pilote los tres a la vez. */
+  tabGroupName?: string;
+  /** oculta el <select> propio, por si ya lo pinta otro componente con el
+   * mismo tabGroupName en la misma página. */
+  mostrarSelector?: boolean;
+}
+const { tabGroupName = "resultados", mostrarSelector = true } = Astro.props;
+---
+<div class="section" id="resultados">
+  <div class="container">
+    <span class="eyebrow">Partidos jugados</span>
+    <h2 class="section-title">Resultados</h2>
+
+    {mostrarSelector && (
+      <>
+        <label class="cat-select-label" for={`select-${tabGroupName}`}>Elige tu equipo</label>
+        <select id={`select-${tabGroupName}`} class="cat-select" data-tabs={tabGroupName} aria-label="Categorías">
+          {grupos.map((g, i) => (
+            <option value={String(g.grupoId)} selected={i === 0}>{g.categoria}</option>
+          ))}
+        </select>
+      </>
+    )}
+
+    {grupos.map((g, i) => {
+      const jugados = g.misPartidos.filter((p) => p.jugado);
+      return (
+        <div
+          class={`tab-panel${i === 0 ? " active" : ""}`}
+          data-tabgroup={tabGroupName}
+          data-cat={String(g.grupoId)}
+          role="tabpanel"
+        >
+          <p class="clasif__division">{g.division} · {g.fase}</p>
+          {jugados.length > 0 ? (
+            <ol class="cal-list">
+              {jugados.map((p) => (
+                <li class="cal-item is-done">
+                  <span class="cal-item__j">J{p.jornada}</span>
+                  <span class="cal-item__fecha">{fechaCorta(p.fechaHora)}</span>
+                  <span class="cal-item__match">
+                    <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
+                    <span class="cal-item__vs">{p.resultado}</span>
+                    <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
+                  </span>
+                </li>
+              ))}
+            </ol>
+          ) : (
+            <p class="match__empty">Este equipo todavía no ha jugado ningún partido esta temporada.</p>
+          )}
+        </div>
+      );
+    })}
+  </div>
+</div>
