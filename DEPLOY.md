@@ -197,3 +197,81 @@ tienda sigue funcionando igual (solo por email).
 > el comprador vea la página de confirmación. Si nunca aparece, revisa en
 > Apps Script → **Ejecuciones** (icono de reloj a la izquierda) los últimos
 > intentos y su error.
+
+---
+
+## 7. Notificaciones push de partidos (PWA)
+
+El sitio ya es una PWA instalable con caché offline (manifest, iconos y
+`public/sw.js` — no requiere configuración). Esta sección es solo para
+activar el botón **"🔔 Avisos de partidos"**, que manda una notificación
+push el día antes de cada partido federado. Es opcional: sin esto, la PWA
+se instala y funciona offline igual, simplemente no aparece el botón.
+
+Hacen falta tres cosas en Cloudflare y varios secretos en GitHub.
+
+### 7.1. Espacio de almacenamiento (KV) para las suscripciones
+
+1. Cloudflare → **Workers & Pages → KV** (menú lateral) → **Create a namespace**.
+   Nómbralo p. ej. `manzanares-push-subs`.
+2. Copia el **Namespace ID** que te da (lo necesitas en el paso 7.3).
+3. Ve a tu proyecto Pages → **Settings → Functions → KV namespace bindings**
+   → **Add binding**:
+   - Variable name: `PUSH_SUBS`
+   - KV namespace: el que acabas de crear.
+4. Vuelve a desplegar (cualquier push) para que el binding esté activo.
+
+### 7.2. Clave pública en el build de Cloudflare Pages
+
+En **Settings → Environment variables** del proyecto Pages, añade (entornos
+*Production* y *Preview*):
+
+```
+PUBLIC_VAPID_PUBLIC_KEY = BBxOtlOkj2LXlx4wUq1weA_86z362zkl0yptzd2_6ybdDDCJ7P9cG0BQ4Cer2AYJqsS2ZuyvGmT6vgbMVgzJTFY
+```
+
+> Esta es la clave **pública** generada para este proyecto — no es secreta,
+> va incrustada en el JavaScript del navegador. La clave **privada** (abajo)
+> nunca va en Cloudflare Pages, solo en los secretos de GitHub.
+
+Vuelve a desplegar para que el botón "Avisos de partidos" aparezca en la web.
+
+### 7.3. Secretos en GitHub (para el envío)
+
+El envío lo hace la GitHub Action `.github/workflows/match-reminders.yml`
+(cada 12 h) ejecutando `scripts/send-match-reminders.mjs`, que lee el
+calendario ya descargado y manda los avisos por la API de Web Push. En
+GitHub → **Settings → Secrets and variables → Actions → New repository
+secret**, añade:
+
+| Secreto | Valor |
+| :-- | :-- |
+| `VAPID_PUBLIC_KEY` | `BBxOtlOkj2LXlx4wUq1weA_86z362zkl0yptzd2_6ybdDDCJ7P9cG0BQ4Cer2AYJqsS2ZuyvGmT6vgbMVgzJTFY` |
+| `VAPID_PRIVATE_KEY` | `n9LLESWeWQq-3C6pxC2hpv63gEBBS9PrLf7aLMm3usU` |
+| `VAPID_SUBJECT` | `mailto:manzanaresvoley@gmail.com` |
+| `CF_ACCOUNT_ID` | El ID de cuenta de Cloudflare (barra lateral derecha de cualquier página del dashboard) |
+| `CF_KV_NAMESPACE_ID` | El Namespace ID del paso 7.1 |
+| `CF_API_TOKEN` | Un token de API — créalo en **Mi perfil → API Tokens → Create Token → Edit Cloudflare Workers** (o un token personalizado con permiso *Workers KV Storage: Edit*) |
+
+> Guarda `VAPID_PRIVATE_KEY` en un sitio seguro (gestor de contraseñas):
+> quien la tenga puede mandar notificaciones a nombre del club. Si se
+> filtrara, genera un par de claves nuevo (`npx web-push generate-vapid-keys`)
+> y actualiza los tres sitios donde aparece (GitHub, Cloudflare Pages, y
+> vuelve a desplegar).
+
+### 7.4. Probarlo
+
+1. Con todo lo anterior desplegado, entra a la web desde un navegador que
+   soporte notificaciones (Chrome/Edge en Android o escritorio; en iPhone
+   hace falta tener la PWA **instalada** primero — Safari no ofrece push a
+   pestañas sueltas).
+2. Pulsa **"🔔 Avisos de partidos"** en "Próximos partidos" y acepta el
+   permiso de notificaciones.
+3. En GitHub → pestaña **Actions** → "Avisos de partidos (push)" →
+   **Run workflow** para lanzarlo a mano sin esperar al cron, y revisa el
+   log: dice cuántos partidos había en la ventana de 12-36 h y a cuántas
+   suscripciones se ha mandado el aviso.
+
+> Solo avisa de partidos **federados** (los que tienen fecha y hora real de
+> la Federación en `/calendario`). Los amistosos no tienen hora exacta
+> verificable automáticamente, así que de momento no generan avisos push.

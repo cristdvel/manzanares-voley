@@ -1,6 +1,7 @@
 ---
 import { proximos, ultimos, temporada, fechaCorta, horaCorta } from "../data/competicion";
 import AmistososTabs from "./AmistososTabs.astro";
+import PushSub from "./PushSub.astro";
 
 const lista = proximos.slice(0, 3);
 ---
@@ -64,6 +65,7 @@ const lista = proximos.slice(0, 3);
         🏐 Ver amistosos
       </button>
       <a href="/calendario" class="btn btn--outline">Ver calendario y clasificación →</a>
+      <PushSub />
     </div>
   </div>
 </div>
