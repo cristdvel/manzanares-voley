@@ -275,3 +275,62 @@ secret**, añade:
 > Solo avisa de partidos **federados** (los que tienen fecha y hora real de
 > la Federación en `/calendario`). Los amistosos no tienen hora exacta
 > verificable automáticamente, así que de momento no generan avisos push.
+
+---
+
+## 8. Analítica (Google Tag Manager + GA4 + Consent Mode v2)
+
+El lado del código ya está listo: Consent Mode v2 por defecto (denegado
+hasta que el visitante acepte en el banner de cookies), el snippet de GTM
+(solo se activa si hay contenedor configurado) y dos eventos ya instrumentados
+en `dataLayer` para lo que no se puede medir solo con GTM (envían formularios
+propios, sin recarga de página):
+
+| Evento (`dataLayer`) | Cuándo se dispara | Parámetros |
+| :-- | :-- | :-- |
+| `solicitud_inscripcion` | Al validar y enviar el formulario de inscripción (home, `#inscripciones`) | — |
+| `pedido_realizado` | Al confirmarse un pedido en la tienda (antes de redirigir a `/tienda/gracias`) | `numero_pedido`, `producto`, `valor` (precio × cantidad) |
+
+El resto de eventos de la propuesta (ficha de producto vista, CTA del
+header, contacto del footer, tab de equipo) se configuran **enteramente
+dentro de GTM** con triggers de "Vista de página" y "Clic" — no requieren
+tocar el código.
+
+### 8.1. Crear el contenedor GTM y la propiedad GA4
+
+Esto lo hace quien lleve la analítica (no es un paso de despliegue del
+código): en <https://tagmanager.google.com>, crear un contenedor **Web**
+para `manzanaresvoley.com` (te da un ID `GTM-XXXXXXX`), y en
+<https://analytics.google.com> crear la propiedad GA4 y añadir su tag de
+configuración dentro del propio contenedor GTM (no hace falta tocar este
+repo para eso). Configura ahí también el **Consent Mode v2** del contenedor
+(Google ofrece una plantilla de "Consent Initialization" — con este sitio,
+como el `gtag('consent', 'default', …)` ya se manda desde el código antes
+de que cargue GTM, no hace falta añadir la inicialización de consentimiento
+dentro de GTM, solo las tags con su ajuste de consentimiento requerido).
+
+### 8.2. Activar el contenedor en la web
+
+En Cloudflare → tu proyecto Pages → **Settings → Environment variables**
+(entornos *Production* y *Preview*), añade:
+
+```
+PUBLIC_GTM_ID = GTM-XXXXXXX
+```
+
+Vuelve a desplegar (cualquier push). Sin esta variable, el sitio no carga
+ningún script de Google — sigue funcionando exactamente igual que ahora.
+
+### 8.3. Probarlo
+
+1. Con `PUBLIC_GTM_ID` desplegado, entra a la web y abre GTM → tu
+   contenedor → **Vista previa** (Preview), pega la URL del sitio.
+2. Acepta el banner de cookies: debería verse un evento `consent` con las
+   cuatro señales en `granted` (antes de aceptar, deben salir en `denied`).
+3. Envía el formulario de inscripción: debe verse el evento
+   `solicitud_inscripcion`.
+4. Haz un pedido de prueba en la tienda: debe verse `pedido_realizado` con
+   `numero_pedido`, `producto` y `valor`.
+5. En GA4 → **Informes → Tiempo real** (o DebugView con el modo de depuración
+   activado) deberían empezar a aparecer las sesiones y eventos en cuanto
+   las tags correspondientes estén publicadas en GTM.

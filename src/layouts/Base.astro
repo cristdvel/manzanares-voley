@@ -17,6 +17,10 @@ const {
   noindex = false,
 } = Astro.props;
 
+// Google Tag Manager: se activa solo si hay contenedor configurado en el
+// build (Cloudflare Pages → Environment variables). Ver DEPLOY.md §8.
+const GTM_ID = import.meta.env.PUBLIC_GTM_ID || "";
+
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const ogImage = new URL(image, site.url).href;
 const isHome = Astro.url.pathname === "/";
@@ -66,6 +70,38 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Consent Mode v2: por defecto denegado hasta que el banner de -->
+    <!-- cookies (ver más abajo) diga lo contrario. Debe ir antes que GTM. -->
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        wait_for_update: 500,
+      });
+      try {
+        if (localStorage.getItem("mzv-consent") === "accept") {
+          gtag("consent", "update", {
+            ad_storage: "granted",
+            analytics_storage: "granted",
+            ad_user_data: "granted",
+            ad_personalization: "granted",
+          });
+        }
+      } catch (e) {}
+    </script>
+    {GTM_ID && (
+      <script
+        is:inline
+        set:html={`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`}
+      />
+    )}
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -97,6 +133,16 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
     <script type="application/ld+json" set:html={JSON.stringify(allSchemas)} />
   </head>
   <body class={isHome ? "is-home" : undefined}>
+    {GTM_ID && (
+      <noscript>
+        <iframe
+          src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        />
+      </noscript>
+    )}
     <a href="#contenido" class="skip-link">Saltar al contenido</a>
     <button type="button" id="pwa-install-btn" class="pwa-install-btn" hidden>📲 Instalar app</button>
     <slot />
@@ -303,6 +349,8 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
             form.style.display = "none";
             success.classList.add("show");
             success.scrollIntoView({ behavior: "smooth", block: "center" });
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({ event: "solicitud_inscripcion" });
           });
         }
 
@@ -336,6 +384,15 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
         function applyConsent(v) {
           document.documentElement.setAttribute("data-consent", v);
           if (v === "accept") loadEmbeds();
+          if (window.gtag) {
+            var estado = v === "accept" ? "granted" : "denied";
+            window.gtag("consent", "update", {
+              ad_storage: estado,
+              analytics_storage: estado,
+              ad_user_data: estado,
+              ad_personalization: estado,
+            });
+          }
         }
         var banner = document.getElementById("cookie-banner");
         var stored = getConsent();

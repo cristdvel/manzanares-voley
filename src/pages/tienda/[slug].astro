@@ -105,7 +105,7 @@ const breadcrumb = {
               </div>
             )}
 
-            <form id="pedido-form" class="pdp__form" data-producto={p.nombre} novalidate>
+            <form id="pedido-form" class="pdp__form" data-producto={p.nombre} data-precio={p.precio} novalidate>
               <div class="pdp__opts">
                 {p.variantes.map((v) => (
                   <label>
@@ -427,6 +427,14 @@ const breadcrumb = {
       const res = await fetch("/api/pedido", { method: "POST", body: fd });
       const data = await res.json().catch(() => ({}));
       if (res.ok && data.ok) {
+        (window as any).dataLayer = (window as any).dataLayer || [];
+        (window as any).dataLayer.push({
+          event: "pedido_realizado",
+          numero_pedido: data.numero,
+          producto: form.dataset.producto,
+          valor: Number(form.dataset.precio || "0") * linea.cantidad,
+        });
+
         const params = new URLSearchParams({
           pedido: data.numero || "",
           producto: (form.dataset.producto as string) || "",
