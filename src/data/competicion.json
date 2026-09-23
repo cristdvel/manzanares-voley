@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-23T11:05:34.954Z",
+  "actualizado": "2026-09-23T16:16:11.527Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -2237,17 +2237,6 @@
               "aplazado": false
             },
             {
-              "id": 59594,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "VP Madrid A Amarillo",
-              "visitante": "Cuv Alcorcón A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 59590,
               "jornada": 1,
               "fechaHora": "2026-10-04T10:00:00.000Z",
@@ -2271,6 +2260,17 @@
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
               "jugado": false
+            },
+            {
+              "id": 59594,
+              "jornada": 1,
+              "fechaHora": "2026-10-18T11:15:00.000Z",
+              "local": "VP Madrid A Amarillo",
+              "visitante": "Cuv Alcorcón A",
+              "pabellon": "Ceip La Rioja",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -6354,6 +6354,17 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 62968,
+              "jornada": 2,
+              "fechaHora": "2026-10-10T10:00:00.000Z",
+              "local": "A.D.perales",
+              "visitante": "V-Valley CValcalá G2",
+              "pabellon": "Pabellon Deportivo Perales Del Rio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 62966,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
@@ -6370,17 +6381,6 @@
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Cuv Alcorcón B",
               "visitante": "Cvleganes.com B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 62968,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "A.D.perales",
-              "visitante": "V-Valley CValcalá G2",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -9874,23 +9874,23 @@
           "fecha": "2026-10-04T00:00:00.000Z",
           "partidos": [
             {
+              "id": 56748,
+              "jornada": 2,
+              "fechaHora": "2026-10-03T13:00:00.000Z",
+              "local": "Assa Abloy Sanse",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 56746,
               "jornada": 2,
               "fechaHora": "2026-10-03T15:30:00.000Z",
               "local": "Chv1995 A",
               "visitante": "V-Valley CValcalá G1",
               "pabellon": "Pabellón 5 Torres",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 56748,
-              "jornada": 2,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Assa Abloy Sanse",
-              "visitante": "Ucam Torrejón A",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -15409,7 +15409,7 @@
             {
               "id": 62602,
               "jornada": 2,
-              "fechaHora": "2026-10-10T18:00:00.000Z",
+              "fechaHora": "2026-10-10T20:00:00.000Z",
               "local": "Salesianos Estrecho Bosco Juvenil Masculino",
               "visitante": "Cuv Alcorcón B",
               "pabellon": "Salesianos Estrecho",
@@ -17376,23 +17376,23 @@
           "fecha": "2026-10-04T00:00:00.000Z",
           "partidos": [
             {
+              "id": 57284,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T11:30:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 57285,
               "jornada": 1,
               "fechaHora": "2026-10-03T16:00:00.000Z",
               "local": "Cvleganes.com",
               "visitante": "CV Nueva Castilla",
               "pabellon": "Emilia Pardo Bazan, Pabellon",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 57284,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "V-Valley CValcalá G1",
-              "visitante": "Cde Parla Voley Ortopedia A",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -24147,17 +24147,6 @@
               "aplazado": false
             },
             {
-              "id": 62177,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "CV Getafe Verde",
-              "visitante": "Cde Parla Voley Ortopedia Parla Senior Masculino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 62176,
               "jornada": 1,
               "fechaHora": "2026-10-04T16:00:00.000Z",
@@ -24178,6 +24167,17 @@
               "local": "Cde Atlético Loeches Senior Masculino",
               "visitante": "Maria Rodrigo",
               "pabellon": "Pdm Jose Rodriguez",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 62177,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T18:00:00.000Z",
+              "local": "CV Getafe Verde",
+              "visitante": "Cde Parla Voley Ortopedia Parla Senior Masculino",
+              "pabellon": "Cerrobuenavista, Polideportivo Municipal",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
