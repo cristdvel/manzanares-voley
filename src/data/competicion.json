@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-23T16:16:11.527Z",
+  "actualizado": "2026-09-23T22:44:50.944Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -19468,17 +19468,6 @@
               "aplazado": false
             },
             {
-              "id": 61166,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Stars Sport Madrid",
-              "visitante": "B. M. 2 De Mayo",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 61163,
               "jornada": 1,
               "fechaHora": "2026-10-04T12:00:00.000Z",
@@ -19524,6 +19513,17 @@
               "direccion": "SENDA DE MAFALDA S/N",
               "mapa": "https://www.google.com/maps/search/?api=1&query=CERROBUENAVISTA, POLIDEPORTIVO MUNICIPAL SENDA DE MAFALDA S/N, GETAFE",
               "jugado": false
+            },
+            {
+              "id": 61166,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T17:00:00.000Z",
+              "local": "Stars Sport Madrid",
+              "visitante": "B. M. 2 De Mayo",
+              "pabellon": "Colegio Zazuar",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
