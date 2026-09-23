@@ -232,6 +232,11 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
           if (group.tagName === "SELECT") {
             group.addEventListener("change", function () {
               mostrarCat(group.value);
+              window.dataLayer = window.dataLayer || [];
+              window.dataLayer.push({
+                event: "seleccion_equipo",
+                categoria: group.options[group.selectedIndex] ? group.options[group.selectedIndex].text : "",
+              });
             });
             return;
           }
