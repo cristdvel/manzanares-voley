@@ -1,0 +1,22 @@
+---
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+<Base title="Sin conexión | Manzanares Voley" description="Página sin conexión." noindex={true}>
+  <Header />
+  <main id="contenido">
+    <div class="page-hero">
+      <div class="container center">
+        <span class="eyebrow">Sin conexión</span>
+        <h1>No hay internet ahora mismo</h1>
+        <p>Esta página no se había guardado para verla sin conexión. Conéctate y vuelve a intentarlo.</p>
+        <div class="page-cta">
+          <button type="button" class="btn btn--primary" onclick="location.reload()">Reintentar</button>
+          <a href="/" class="btn btn--outline-light">Ir al inicio</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Base>

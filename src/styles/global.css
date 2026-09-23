@@ -552,6 +552,15 @@ p:last-child{margin-bottom:0}
 .skip-link:focus{top:12px}
 :focus-visible{outline:3px solid var(--mzv-naranja);outline-offset:2px;border-radius:2px}
 
+/* ---------- Instalar como app (PWA) ---------- */
+.pwa-install-btn{
+  position:fixed;right:16px;bottom:90px;z-index:160;
+  background:var(--mzv-naranja);color:#fff;border:0;border-radius:999px;
+  padding:12px 20px;font:inherit;font-weight:600;font-size:14px;
+  box-shadow:0 12px 28px rgba(0,0,0,.25);cursor:pointer;
+}
+.pwa-install-btn:hover{background:var(--mzv-naranja-hov)}
+
 /* ---------- Consentimiento de cookies ---------- */
 .cookie-banner{
   position:fixed;left:16px;right:16px;bottom:16px;z-index:150;max-width:720px;margin:0 auto;

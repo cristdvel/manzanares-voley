@@ -73,7 +73,8 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
     <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large"} />
 
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
 
     <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/anton-latin.woff2" as="font" type="font/woff2" crossorigin />
@@ -97,6 +98,7 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
   </head>
   <body class={isHome ? "is-home" : undefined}>
     <a href="#contenido" class="skip-link">Saltar al contenido</a>
+    <button type="button" id="pwa-install-btn" class="pwa-install-btn" hidden>📲 Instalar app</button>
     <slot />
 
     <div id="cookie-banner" class="cookie-banner" hidden>
@@ -366,6 +368,39 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
               box.appendChild(f);
             }
           });
+        });
+      })();
+    </script>
+
+    <script is:inline>
+      // ---- PWA: registro del service worker (caché offline) ----
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/sw.js").catch(function () {});
+        });
+      }
+
+      // ---- PWA: botón "Instalar app", solo visible cuando el navegador lo permite ----
+      (function () {
+        var deferredPrompt = null;
+        var btn = document.getElementById("pwa-install-btn");
+        window.addEventListener("beforeinstallprompt", function (e) {
+          e.preventDefault();
+          deferredPrompt = e;
+          if (btn) btn.hidden = false;
+        });
+        if (btn) {
+          btn.addEventListener("click", function () {
+            if (!deferredPrompt) return;
+            deferredPrompt.prompt();
+            deferredPrompt.userChoice.finally(function () {
+              deferredPrompt = null;
+              btn.hidden = true;
+            });
+          });
+        }
+        window.addEventListener("appinstalled", function () {
+          if (btn) btn.hidden = true;
         });
       })();
     </script>
