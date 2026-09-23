@@ -3,8 +3,14 @@ import { grupos, hayResultados, actualizadoTexto } from "../data/competicion";
 
 interface Props {
   full?: boolean;
+  /** nombre del grupo de pestañas; compártelo con Calendario para que un
+   * mismo selector pilote los dos a la vez. */
+  tabGroupName?: string;
+  /** oculta el <select> propio, por si ya lo pinta otro componente con el
+   * mismo tabGroupName en la misma página. */
+  mostrarSelector?: boolean;
 }
-const { full = false } = Astro.props;
+const { full = false, tabGroupName = "clasif", mostrarSelector = true } = Astro.props;
 ---
 <div class="section section--crema" id="clasificacion">
   <div class="container">
@@ -16,23 +22,21 @@ const { full = false } = Astro.props;
       {!hayResultados && " La competición arranca el 27 de septiembre de 2026."}
     </p>
 
-    <div class="tabs" data-tabs="clasif" role="tablist" aria-label="Categorías de competición">
-      {grupos.map((g, i) => (
-        <button
-          class={`tab${i === 0 ? " active" : ""}`}
-          data-cat={String(g.grupoId)}
-          role="tab"
-          aria-selected={i === 0 ? "true" : "false"}
-        >
-          {g.categoria}
-        </button>
-      ))}
-    </div>
+    {mostrarSelector && (
+      <>
+        <label class="cat-select-label" for={`select-${tabGroupName}`}>Elige tu equipo</label>
+        <select id={`select-${tabGroupName}`} class="cat-select" data-tabs={tabGroupName} aria-label="Categorías de competición">
+          {grupos.map((g, i) => (
+            <option value={String(g.grupoId)} selected={i === 0}>{g.categoria}</option>
+          ))}
+        </select>
+      </>
+    )}
 
     {grupos.map((g, i) => (
       <div
         class={`tab-panel${i === 0 ? " active" : ""}`}
-        data-tabgroup="clasif"
+        data-tabgroup={tabGroupName}
         data-cat={String(g.grupoId)}
         role="tabpanel"
       >

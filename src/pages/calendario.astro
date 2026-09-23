@@ -5,7 +5,7 @@ import Footer from "../components/Footer.astro";
 import Amistosos from "../components/Amistosos.astro";
 import Calendario from "../components/Calendario.astro";
 import Clasificacion from "../components/Clasificacion.astro";
-import { temporada, actualizadoTexto, proximos } from "../data/competicion";
+import { temporada, actualizadoTexto, proximos, grupos } from "../data/competicion";
 import { site } from "../data/site";
 
 const eventSchemas = proximos
@@ -44,16 +44,71 @@ const eventSchemas = proximos
         <p>Partidos, resultados y clasificación de los equipos federados de Manzanares Voley, con datos oficiales de la Federación de Madrid de Voleibol.</p>
         <div class="page-cta">
           <a href="#amistosos" class="btn btn--outline-light">Ver amistosos</a>
-          <a href="#calendario" class="btn btn--outline-light">Ver calendario</a>
-          <a href="#clasificacion" class="btn btn--primary">Ver clasificación</a>
+          <button type="button" id="hero-ver-calendario" class="btn btn--outline-light">Ver calendario</button>
+          <button type="button" id="hero-ver-clasificacion" class="btn btn--primary">Ver clasificación</button>
         </div>
         <p class="page-hero__meta">Actualizado · {actualizadoTexto()}</p>
       </div>
     </div>
 
     <Amistosos />
-    <Calendario />
-    <Clasificacion full={true} />
+
+    <div class="section" id="equipo-picker">
+      <div class="container">
+        <span class="eyebrow">Liga federada</span>
+        <h2 class="section-title">Elige tu equipo</h2>
+        <select id="select-equipo" class="cat-select" data-tabs="equipo" aria-label="Categorías">
+          {grupos.map((g, i) => (
+            <option value={String(g.grupoId)} selected={i === 0}>{g.categoria}</option>
+          ))}
+        </select>
+        <div class="partidos__ctas">
+          <button type="button" class="btn btn--primary" id="toggle-vista-calendario" aria-pressed="true">
+            📅 Calendario
+          </button>
+          <button type="button" class="btn btn--outline" id="toggle-vista-clasificacion" aria-pressed="false">
+            🏆 Clasificación
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="vista-calendario">
+      <Calendario tabGroupName="equipo" mostrarSelector={false} />
+    </div>
+    <div id="vista-clasificacion" hidden>
+      <Clasificacion full={true} tabGroupName="equipo" mostrarSelector={false} />
+    </div>
   </main>
   <Footer />
 </Base>
+
+<script>
+  const btnCal = document.getElementById("toggle-vista-calendario") as HTMLButtonElement | null;
+  const btnClasif = document.getElementById("toggle-vista-clasificacion") as HTMLButtonElement | null;
+  const vistaCal = document.getElementById("vista-calendario");
+  const vistaClasif = document.getElementById("vista-clasificacion");
+
+  function mostrarVista(vista: "calendario" | "clasificacion") {
+    const esCalendario = vista === "calendario";
+    if (vistaCal) vistaCal.hidden = !esCalendario;
+    if (vistaClasif) vistaClasif.hidden = esCalendario;
+    [btnCal, btnClasif].forEach((b) => b?.classList.remove("btn--primary", "btn--outline"));
+    btnCal?.classList.add(esCalendario ? "btn--primary" : "btn--outline");
+    btnClasif?.classList.add(esCalendario ? "btn--outline" : "btn--primary");
+    btnCal?.setAttribute("aria-pressed", String(esCalendario));
+    btnClasif?.setAttribute("aria-pressed", String(!esCalendario));
+  }
+
+  btnCal?.addEventListener("click", () => mostrarVista("calendario"));
+  btnClasif?.addEventListener("click", () => mostrarVista("clasificacion"));
+
+  document.getElementById("hero-ver-calendario")?.addEventListener("click", () => {
+    mostrarVista("calendario");
+    document.getElementById("equipo-picker")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  document.getElementById("hero-ver-clasificacion")?.addEventListener("click", () => {
+    mostrarVista("clasificacion");
+    document.getElementById("equipo-picker")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+</script>

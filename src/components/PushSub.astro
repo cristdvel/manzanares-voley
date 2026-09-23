@@ -31,6 +31,18 @@ const VAPID_PUBLIC_KEY = import.meta.env.PUBLIC_VAPID_PUBLIC_KEY || "";
   const btn = document.getElementById("push-subscribe-btn") as HTMLButtonElement | null;
   const soportado =
     "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
+  const esIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+
+  if (btn && !soportado && esIOS) {
+    // Safari en iPhone/iPad solo da Push API a apps instaladas en la
+    // pantalla de inicio: se explica en vez de ocultar el botón sin más.
+    btn.hidden = false;
+    btn.addEventListener("click", () => {
+      alert(
+        'Para recibir avisos de partidos en iPhone, primero instala la app: pulsa "📲 Instalar app" y ábrela desde el icono de la pantalla de inicio. Desde ahí ya podrás activar los avisos.',
+      );
+    });
+  }
 
   if (btn && soportado) {
     btn.hidden = false;

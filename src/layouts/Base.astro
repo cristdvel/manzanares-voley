@@ -145,6 +145,12 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
     )}
     <a href="#contenido" class="skip-link">Saltar al contenido</a>
     <button type="button" id="pwa-install-btn" class="pwa-install-btn" hidden>📲 Instalar app</button>
+    <div id="pwa-install-modal" class="pwa-install-modal" hidden>
+      <div class="pwa-install-modal__box">
+        <button type="button" class="pwa-install-modal__close" aria-label="Cerrar">✕</button>
+        <p id="pwa-install-modal__text"></p>
+      </div>
+    </div>
     <slot />
 
     <div id="cookie-banner" class="cookie-banner" hidden>
@@ -206,28 +212,40 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
         }
 
         // ---- Tabs (agrupados por [data-tabs]) ----
+        // Admite dos formatos: pastillas .tab (clic) o un <select> (cambio) —
+        // ambos activan el .tab-panel[data-tabgroup] cuyo data-cat coincida.
+        // Varios controles distintos pueden compartir el mismo nombre de
+        // grupo para pilotar paneles en más de un componente a la vez.
         document.querySelectorAll("[data-tabs]").forEach(function (group) {
           var name = group.getAttribute("data-tabs");
           var scope = group.closest("section") || document;
-          var tabs = Array.prototype.slice.call(group.querySelectorAll(".tab"));
           var panels = Array.prototype.slice.call(
             scope.querySelectorAll('.tab-panel[data-tabgroup="' + name + '"]'),
           );
+
+          function mostrarCat(cat) {
+            panels.forEach(function (p) {
+              p.classList.toggle("active", p.getAttribute("data-cat") === cat);
+            });
+          }
+
+          if (group.tagName === "SELECT") {
+            group.addEventListener("change", function () {
+              mostrarCat(group.value);
+            });
+            return;
+          }
+
+          var tabs = Array.prototype.slice.call(group.querySelectorAll(".tab"));
           tabs.forEach(function (tab) {
             tab.addEventListener("click", function () {
               tabs.forEach(function (t) {
                 t.classList.remove("active");
                 t.setAttribute("aria-selected", "false");
               });
-              panels.forEach(function (p) {
-                p.classList.remove("active");
-              });
               tab.classList.add("active");
               tab.setAttribute("aria-selected", "true");
-              var target = panels.filter(function (p) {
-                return p.getAttribute("data-cat") === tab.dataset.cat;
-              })[0];
-              if (target) target.classList.add("active");
+              mostrarCat(tab.dataset.cat);
             });
           });
         });
@@ -237,11 +255,17 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
           var m = /^#equipo-(\d+)$/.exec(window.location.hash);
           if (!m) return;
           var id = m[1];
-          ["cal", "clasif"].forEach(function (name) {
-            var tab = document.querySelector(
-              '[data-tabs="' + name + '"] .tab[data-cat="' + id + '"]',
-            );
-            if (tab) tab.click();
+          ["equipo", "cal", "clasif"].forEach(function (name) {
+            var group = document.querySelector('[data-tabs="' + name + '"]');
+            if (!group) return;
+            if (group.tagName === "SELECT") {
+              if (!group.querySelector('option[value="' + id + '"]')) return;
+              group.value = id;
+              group.dispatchEvent(new Event("change"));
+            } else {
+              var tab = group.querySelector('.tab[data-cat="' + id + '"]');
+              if (tab) tab.click();
+            }
           });
           var destino = document.getElementById("calendario");
           if (destino) destino.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -437,23 +461,67 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
         });
       }
 
-      // ---- PWA: botón "Instalar app", solo visible cuando el navegador lo permite ----
+      // ---- PWA: botón "Instalar app" ----
+      // En Chrome/Edge (escritorio o Android) suele aparecer el evento
+      // beforeinstallprompt y se instala con un clic. En iPhone/iPad Safari
+      // nunca dispara ese evento (restricción de Apple), así que ahí se
+      // muestra el botón igualmente y, al pulsarlo, se explican los pasos
+      // manuales (Compartir → Añadir a pantalla de inicio).
       (function () {
         var deferredPrompt = null;
         var btn = document.getElementById("pwa-install-btn");
+        var modal = document.getElementById("pwa-install-modal");
+        var modalText = document.getElementById("pwa-install-modal__text");
+        var modalClose = modal ? modal.querySelector(".pwa-install-modal__close") : null;
+
+        function esStandalone() {
+          return (
+            window.matchMedia("(display-mode: standalone)").matches ||
+            window.navigator.standalone === true
+          );
+        }
+        var esIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+        var esAndroid = /android/i.test(navigator.userAgent);
+
+        if (btn && !esStandalone() && (esIOS || esAndroid)) {
+          btn.hidden = false;
+        }
+
         window.addEventListener("beforeinstallprompt", function (e) {
           e.preventDefault();
           deferredPrompt = e;
           if (btn) btn.hidden = false;
         });
+
+        function mostrarInstrucciones() {
+          if (!modal || !modalText) return;
+          modalText.innerHTML = esIOS
+            ? "Para instalar la app en iPhone/iPad:<br>1. Toca el botón <strong>Compartir</strong> (el cuadrado con la flecha hacia arriba) en la barra de Safari.<br>2. Elige <strong>«Añadir a pantalla de inicio»</strong>.<br>3. Confirma pulsando <strong>«Añadir»</strong>."
+            : "Para instalar la app:<br>1. Toca el menú <strong>⋮</strong> del navegador (arriba a la derecha).<br>2. Elige <strong>«Instalar app»</strong> o <strong>«Añadir a pantalla de inicio»</strong>.<br>3. Confirma la instalación.";
+          modal.hidden = false;
+        }
+
         if (btn) {
           btn.addEventListener("click", function () {
-            if (!deferredPrompt) return;
-            deferredPrompt.prompt();
-            deferredPrompt.userChoice.finally(function () {
-              deferredPrompt = null;
-              btn.hidden = true;
-            });
+            if (deferredPrompt) {
+              deferredPrompt.prompt();
+              deferredPrompt.userChoice.finally(function () {
+                deferredPrompt = null;
+                btn.hidden = true;
+              });
+              return;
+            }
+            mostrarInstrucciones();
+          });
+        }
+        if (modalClose) {
+          modalClose.addEventListener("click", function () {
+            modal.hidden = true;
+          });
+        }
+        if (modal) {
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) modal.hidden = true;
           });
         }
         window.addEventListener("appinstalled", function () {

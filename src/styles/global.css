@@ -248,6 +248,16 @@ p:last-child{margin-bottom:0}
 
 /* ---------- Equipos: tabs ---------- */
 .tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:36px}
+.cat-select-label{
+  display:block;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;
+  color:var(--mzv-texto);margin-bottom:8px;
+}
+.cat-select{
+  display:block;width:100%;max-width:420px;margin-bottom:32px;padding:13px 16px;
+  border:1px solid var(--mzv-borde);border-radius:10px;font:inherit;font-weight:600;
+  font-size:15px;color:var(--mzv-titulo);background:#fff;cursor:pointer;
+}
+.cat-select:focus{outline:2px solid var(--mzv-naranja);outline-offset:1px;border-color:var(--mzv-naranja)}
 .tab{
   font-family:Inter,sans-serif;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.06em;
   padding:10px 18px;border-radius:999px;border:1px solid var(--mzv-borde);background:#fff;color:var(--mzv-texto);
@@ -560,6 +570,19 @@ p:last-child{margin-bottom:0}
   box-shadow:0 12px 28px rgba(0,0,0,.25);cursor:pointer;
 }
 .pwa-install-btn:hover{background:var(--mzv-naranja-hov)}
+.pwa-install-modal{
+  position:fixed;inset:0;z-index:400;background:rgba(15,15,17,.6);
+  display:flex;align-items:center;justify-content:center;padding:20px;
+}
+.pwa-install-modal__box{
+  position:relative;background:#fff;border-radius:14px;padding:30px 26px;
+  max-width:360px;box-shadow:0 24px 60px rgba(0,0,0,.3);
+}
+.pwa-install-modal__box p{margin:0;font-size:15px;line-height:1.6;color:var(--mzv-titulo)}
+.pwa-install-modal__close{
+  position:absolute;top:10px;right:10px;width:30px;height:30px;border:0;border-radius:50%;
+  background:var(--mzv-crema);color:var(--mzv-titulo);font-size:15px;cursor:pointer;
+}
 
 /* ---------- Consentimiento de cookies ---------- */
 .cookie-banner{

@@ -1,28 +1,36 @@
 ---
 import { grupos, temporada, fechaCorta, horaCorta } from "../data/competicion";
+
+interface Props {
+  /** nombre del grupo de pestañas; compártelo con otro componente (p. ej.
+   * Clasificacion) para que un mismo selector pilote los dos a la vez. */
+  tabGroupName?: string;
+  /** oculta el <select> propio, por si ya lo pinta otro componente con el
+   * mismo tabGroupName en la misma página. */
+  mostrarSelector?: boolean;
+}
+const { tabGroupName = "cal", mostrarSelector = true } = Astro.props;
 ---
 <div class="section" id="calendario">
   <div class="container">
     <span class="eyebrow">Temporada {temporada}</span>
     <h2 class="section-title">Calendario</h2>
 
-    <div class="tabs" data-tabs="cal" role="tablist" aria-label="Categorías">
-      {grupos.map((g, i) => (
-        <button
-          class={`tab${i === 0 ? " active" : ""}`}
-          data-cat={String(g.grupoId)}
-          role="tab"
-          aria-selected={i === 0 ? "true" : "false"}
-        >
-          {g.categoria}
-        </button>
-      ))}
-    </div>
+    {mostrarSelector && (
+      <>
+        <label class="cat-select-label" for={`select-${tabGroupName}`}>Elige tu equipo</label>
+        <select id={`select-${tabGroupName}`} class="cat-select" data-tabs={tabGroupName} aria-label="Categorías">
+          {grupos.map((g, i) => (
+            <option value={String(g.grupoId)} selected={i === 0}>{g.categoria}</option>
+          ))}
+        </select>
+      </>
+    )}
 
     {grupos.map((g, i) => (
       <div
         class={`tab-panel${i === 0 ? " active" : ""}`}
-        data-tabgroup="cal"
+        data-tabgroup={tabGroupName}
         data-cat={String(g.grupoId)}
         role="tabpanel"
       >

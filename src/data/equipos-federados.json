@@ -2,18 +2,18 @@
   "clubId": "120",
   "temporada": "2026/2027",
   "grupos": [
+    { "categoria": "Infantil Femenino", "grupoId": 34047 },
+    { "categoria": "Infantil Masculino", "grupoId": 34021 },
+    { "categoria": "Cadete Femenino A", "grupoId": 33922 },
+    { "categoria": "Cadete Masculino A", "grupoId": 34252 },
+    { "categoria": "Cadete Masculino B", "grupoId": 34259 },
     { "categoria": "Juvenil Femenino A", "grupoId": 33929 },
     { "categoria": "Juvenil Femenino B", "grupoId": 34173 },
     { "categoria": "Juvenil Femenino C", "grupoId": 34200 },
-    { "categoria": "Cadete Femenino A", "grupoId": 33922 },
+    { "categoria": "Juvenil Masculino", "grupoId": 34244 },
     { "categoria": "Junior Femenino A", "grupoId": 33941 },
     { "categoria": "Junior Femenino B", "grupoId": 34215 },
-    { "categoria": "Infantil Femenino", "grupoId": 34047 },
     { "categoria": "Sénior Femenino", "grupoId": 34075 },
-    { "categoria": "Infantil Masculino", "grupoId": 34021 },
-    { "categoria": "Sénior Masculino", "grupoId": 34234 },
-    { "categoria": "Juvenil Masculino", "grupoId": 34244 },
-    { "categoria": "Cadete Masculino A", "grupoId": 34252 },
-    { "categoria": "Cadete Masculino B", "grupoId": 34259 }
+    { "categoria": "Sénior Masculino", "grupoId": 34234 }
   ]
 }
