@@ -21,6 +21,26 @@ export interface CategoriaAmistosos {
 
 export const amistosos: CategoriaAmistosos[] = [
   {
+    id: "alevin-fem",
+    categoria: "Alevín Femenino",
+    partidos: [
+      {
+        fecha: "Sáb 26 sep",
+        hora: "09:30",
+        rival: "AVP",
+        lugar: "Pabellón CEIP José Hierro, Pinto (entrada puerta trasera)",
+        mapa: "https://maps.apple/p/buKCcH31Q.RnmT",
+      },
+      {
+        fecha: "Sáb 26 sep",
+        hora: "10:30",
+        rival: "CV Alcalá B",
+        lugar: "Pabellón CEIP José Hierro, Pinto (entrada puerta trasera)",
+        mapa: "https://maps.apple/p/buKCcH31Q.RnmT",
+      },
+    ],
+  },
+  {
     id: "infantil-a-fem",
     categoria: "Infantil A Femenino",
     partidos: [
@@ -36,26 +56,102 @@ export const amistosos: CategoriaAmistosos[] = [
         rival: "Por confirmar",
         lugar: "Pinto · Pol. Príncipe de Asturias",
       },
+      {
+        fecha: "Sáb 26 sep",
+        hora: "17:30",
+        rival: "San Justo",
+        lugar: "San Justo",
+      },
     ],
     nota: "🏐 Domingo 4 de octubre comenzamos la liga de locales.",
   },
   {
-    id: "alevin-fem",
-    categoria: "Alevín Femenino",
+    id: "infantil-b-fem",
+    categoria: "Infantil B Femenino",
     partidos: [
       {
         fecha: "Sáb 26 sep",
-        hora: "09:30",
-        rival: "AVP",
-        lugar: "Pabellón CEIP José Hierro (entrada puerta trasera)",
-        mapa: "https://maps.apple/p/buKCcH31Q.RnmT",
+        hora: "09:15–12:00",
+        rival: "CDV",
+        lugar: "CDV",
       },
+    ],
+  },
+  {
+    id: "cadete-a-fem",
+    categoria: "Cadete A Femenino",
+    partidos: [
       {
         fecha: "Sáb 26 sep",
-        hora: "10:30",
-        rival: "CV Alcalá B",
-        lugar: "Pabellón CEIP José Hierro (entrada puerta trasera)",
-        mapa: "https://maps.apple/p/buKCcH31Q.RnmT",
+        hora: "10:00–11:30",
+        rival: "Pinto 2ª",
+        lugar: "Pinto",
+      },
+    ],
+  },
+  {
+    id: "cadete-c-fem",
+    categoria: "Cadete C Femenino",
+    partidos: [
+      {
+        fecha: "Dom 27 sep",
+        hora: "16:30",
+        rival: "AVP",
+        lugar: "Parla",
+      },
+      {
+        fecha: "Dom 27 sep",
+        hora: "17:30",
+        rival: "Perales",
+        lugar: "Parla",
+      },
+    ],
+  },
+  {
+    id: "cadete-masc-a",
+    categoria: "Cadete Masculino A",
+    partidos: [
+      {
+        fecha: "Dom 27 sep",
+        hora: "13:00–16:00",
+        rival: "Pinto Juvenil 2ª",
+        lugar: "Pinto",
+      },
+    ],
+  },
+  {
+    id: "juvenil-c-fem",
+    categoria: "Juvenil C Femenino",
+    partidos: [
+      {
+        fecha: "Dom 27 sep",
+        hora: "19:30",
+        rival: "AVP A",
+        lugar: "Parla",
+      },
+      {
+        fecha: "Dom 27 sep",
+        hora: "20:30",
+        rival: "AVP B",
+        lugar: "Parla",
+      },
+    ],
+  },
+  {
+    id: "juvenil-masc",
+    categoria: "Juvenil Masculino",
+    partidos: [
+      {
+        fecha: "Dom 27 sep",
+        hora: "12:00",
+        rival: "AVP",
+        lugar: "Parla",
+      },
+      {
+        fecha: "Dom 27 sep",
+        hora: "16:00",
+        rival: "Perales",
+        lugar: "Parla",
       },
     ],
   },
