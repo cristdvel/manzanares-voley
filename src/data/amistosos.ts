@@ -88,13 +88,13 @@ export const amistosos: CategoriaAmistosos[] = [
     categoria: "Cadete C Femenino",
     partidos: [
       {
-        fecha: "Dom 27 sep",
+        fecha: "Sáb 26 sep",
         hora: "16:30",
         rival: "AVP",
         lugar: "Parla",
       },
       {
-        fecha: "Dom 27 sep",
+        fecha: "Sáb 26 sep",
         hora: "17:30",
         rival: "Perales",
         lugar: "Parla",
@@ -106,9 +106,9 @@ export const amistosos: CategoriaAmistosos[] = [
     categoria: "Cadete Masculino A",
     partidos: [
       {
-        fecha: "Dom 27 sep",
+        fecha: "Sáb 26 sep",
         hora: "13:00–16:00",
-        rival: "Pinto Juvenil 2ª",
+        rival: "Pinto 1ª",
         lugar: "Pinto",
       },
     ],
@@ -118,13 +118,13 @@ export const amistosos: CategoriaAmistosos[] = [
     categoria: "Juvenil C Femenino",
     partidos: [
       {
-        fecha: "Dom 27 sep",
+        fecha: "Sáb 26 sep",
         hora: "19:30",
         rival: "AVP A",
         lugar: "Parla",
       },
       {
-        fecha: "Dom 27 sep",
+        fecha: "Sáb 26 sep",
         hora: "20:30",
         rival: "AVP B",
         lugar: "Parla",
@@ -150,14 +150,26 @@ export const amistosos: CategoriaAmistosos[] = [
     ],
   },
   {
-    id: "senior-master",
-    categoria: "Sénior · Torneo Máster",
+    id: "senior-masc",
+    categoria: "Sénior Masculino",
     partidos: [
       {
         fecha: "Sáb 26 sep",
         hora: "10:00 · gran final 19:00",
         rival: "III Torneo Máster «Villa de Zaratán» — Memorial Santos Antón",
         lugar: "Pabellón Infanta Juana, Zaratán (Valladolid)",
+      },
+      {
+        fecha: "Dom 27 sep",
+        hora: "17:30",
+        rival: "Por confirmar",
+        lugar: "Parla",
+      },
+      {
+        fecha: "Dom 27 sep",
+        hora: "20:30",
+        rival: "Por confirmar",
+        lugar: "Parla",
       },
     ],
     nota: "🏐 Manzanares Voley acude como invitado junto a Master Volley Spain, Master Volley Valladolid, Máster Mix Madrid, Vóley Máster Deusto y Los Abandonados por el Vóley. Entrada libre.",
