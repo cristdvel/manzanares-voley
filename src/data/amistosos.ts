@@ -56,6 +56,12 @@ export const amistosos: CategoriaAmistosos[] = [
         rival: "San Justo",
         lugar: "Pinto · Pol. Príncipe de Asturias",
       },
+      {
+        fecha: "Sáb 26 sep",
+        hora: "17:30",
+        rival: "Por confirmar",
+        lugar: "San Justo",
+      },
     ],
     nota: "🏐 Domingo 4 de octubre comenzamos la liga de locales.",
   },
