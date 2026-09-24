@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-24T08:25:57.871Z",
+  "actualizado": "2026-09-24T09:03:23.758Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -195,10 +195,10 @@
             {
               "id": 59865,
               "jornada": 1,
-              "fechaHora": "2026-10-03T16:00:00.000Z",
+              "fechaHora": "2026-10-04T09:30:00.000Z",
               "local": "CV Madrid A",
               "visitante": "Club Voleibol Torrelodones A",
-              "pabellon": "Colegio Greenfield",
+              "pabellon": "Torrelodones, Polideportivo Municipal",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -2354,6 +2354,17 @@
           "fecha": "2026-10-18T00:00:00.000Z",
           "partidos": [
             {
+              "id": 70099,
+              "jornada": 3,
+              "fechaHora": "2026-10-17T11:15:00.000Z",
+              "local": "Claret Madrid B",
+              "visitante": "Salesianos Estrecho Bosco B",
+              "pabellon": "Colegio Claret",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 70096,
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
@@ -2386,17 +2397,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 70099,
-              "jornada": 3,
-              "fechaHora": "2026-10-18T00:00:00.000Z",
-              "local": "Claret Madrid B",
-              "visitante": "Salesianos Estrecho Bosco B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 70100,
@@ -8492,6 +8492,17 @@
           "fecha": "2026-10-18T00:00:00.000Z",
           "partidos": [
             {
+              "id": 67164,
+              "jornada": 3,
+              "fechaHora": "2026-10-17T13:00:00.000Z",
+              "local": "Claret Madrid A",
+              "visitante": "Cde Parla Voley Parlazul B",
+              "pabellon": "Colegio Claret",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 67162,
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
@@ -8513,17 +8524,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 67164,
-              "jornada": 3,
-              "fechaHora": "2026-10-18T00:00:00.000Z",
-              "local": "Claret Madrid A",
-              "visitante": "Cde Parla Voley Parlazul B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 67165,
@@ -28296,12 +28296,12 @@
               "fechaHora": "2026-10-04T19:00:00.000Z",
               "local": "Abv Boadilla B",
               "visitante": "Manzanares Voley Senior Femenino",
-              "pabellon": "Rey Felipe Vi, Pabellon Deportivo",
+              "pabellon": "Angel Nieto, Boadilla",
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
-              "direccion": "CALLE MIGUEL ANGEL CANTERO OLIVA, 1D",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=REY FELIPE VI, PABELLON DEPORTIVO CALLE MIGUEL ANGEL CANTERO OLIVA, 1D, BOADILLA DEL MONTE",
+              "direccion": "CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=ANGEL NIETO, BOADILLA CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15, BOADILLA DEL MONTE",
               "jugado": false
             },
             {
@@ -29858,12 +29858,12 @@
           "fechaHora": "2026-10-04T19:00:00.000Z",
           "local": "Abv Boadilla B",
           "visitante": "Manzanares Voley Senior Femenino",
-          "pabellon": "Rey Felipe Vi, Pabellon Deportivo",
+          "pabellon": "Angel Nieto, Boadilla",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "direccion": "CALLE MIGUEL ANGEL CANTERO OLIVA, 1D",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=REY FELIPE VI, PABELLON DEPORTIVO CALLE MIGUEL ANGEL CANTERO OLIVA, 1D, BOADILLA DEL MONTE",
+          "direccion": "CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=ANGEL NIETO, BOADILLA CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15, BOADILLA DEL MONTE",
           "jugado": false
         },
         {
