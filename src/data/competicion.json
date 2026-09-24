@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-24T16:38:21.050Z",
+  "actualizado": "2026-09-24T23:03:09.787Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -14416,6 +14416,17 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 63236,
+              "jornada": 1,
+              "fechaHora": "2026-10-10T15:30:00.000Z",
+              "local": "Avengers Lfimolière Vva. Cañada",
+              "visitante": "CV Guadarrama",
+              "pabellon": "Santiago Apostol, Complejo Deportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 63233,
               "jornada": 1,
               "fechaHora": "2026-10-11T00:00:00.000Z",
@@ -14448,17 +14459,6 @@
               "esLocal": false,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 63236,
-              "jornada": 1,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Avengers Lfimolière Vva. Cañada",
-              "visitante": "CV Guadarrama",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 63237,
