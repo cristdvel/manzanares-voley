@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-24T09:03:23.758Z",
+  "actualizado": "2026-09-24T16:38:21.050Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -2204,7 +2204,18 @@
           "fecha": "2026-10-04T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70085,
+              "id": 73262,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T10:00:00.000Z",
+              "local": "Cuv Alcorcón Blanco",
+              "visitante": "Cuv Alcorcón Naranja",
+              "pabellon": "Los Cantos, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73263,
               "jornada": 1,
               "fechaHora": "2026-10-03T10:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -2215,7 +2226,18 @@
               "aplazado": false
             },
             {
-              "id": 70087,
+              "id": 73267,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T10:00:00.000Z",
+              "local": "A.D.perales",
+              "visitante": "Stars Sport Madrid Verde",
+              "pabellon": "Pabellon Deportivo Perales Del Rio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73265,
               "jornada": 1,
               "fechaHora": "2026-10-03T10:30:00.000Z",
               "local": "Manzanares Voley B",
@@ -2229,7 +2251,7 @@
               "jugado": false
             },
             {
-              "id": 70088,
+              "id": 73266,
               "jornada": 1,
               "fechaHora": "2026-10-03T11:00:00.000Z",
               "local": "Claret Madrid B",
@@ -2240,29 +2262,7 @@
               "aplazado": false
             },
             {
-              "id": 70084,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Cuv Alcorcón Blanco",
-              "visitante": "Cuv Alcorcón Naranja",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70089,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "A.D.perales",
-              "visitante": "Stars Sport Madrid Verde",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70086,
+              "id": 73264,
               "jornada": 1,
               "fechaHora": "2026-10-04T13:00:00.000Z",
               "local": "Avp A Rasán",
@@ -2279,21 +2279,7 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70093,
-              "jornada": 2,
-              "fechaHora": "2026-10-10T16:00:00.000Z",
-              "local": "Salesianos Estrecho Bosco B",
-              "visitante": "Manzanares Voley B",
-              "pabellon": "Salesianos Estrecho",
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "direccion": "FRANCOS RODRÍGUEZ, 5 (SÁBADOS POR LA TARDE Y DOMINGOS ENTRADA POR C/ PAMPLONA 12)",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=SALESIANOS ESTRECHO FRANCOS RODRÍGUEZ, 5 (SÁBADOS POR LA TARDE Y DOMINGOS ENTRADA POR C/ PAMPLONA 12) , MADRID",
-              "jugado": false
-            },
-            {
-              "id": 70090,
+              "id": 73268,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -2304,7 +2290,7 @@
               "aplazado": false
             },
             {
-              "id": 70091,
+              "id": 73269,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Salesianos San Miguel",
@@ -2315,7 +2301,7 @@
               "aplazado": false
             },
             {
-              "id": 70092,
+              "id": 73270,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Club Deportivo Loreto Madrid",
@@ -2326,7 +2312,19 @@
               "aplazado": false
             },
             {
-              "id": 70094,
+              "id": 73271,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T00:00:00.000Z",
+              "local": "Salesianos Estrecho Bosco B",
+              "visitante": "Manzanares Voley B",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 73272,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -2337,7 +2335,7 @@
               "aplazado": false
             },
             {
-              "id": 70095,
+              "id": 73273,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
@@ -2354,18 +2352,7 @@
           "fecha": "2026-10-18T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70099,
-              "jornada": 3,
-              "fechaHora": "2026-10-17T11:15:00.000Z",
-              "local": "Claret Madrid B",
-              "visitante": "Salesianos Estrecho Bosco B",
-              "pabellon": "Colegio Claret",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70096,
+              "id": 73274,
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -2376,7 +2363,7 @@
               "aplazado": false
             },
             {
-              "id": 70097,
+              "id": 73275,
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "Avp A Rasán",
@@ -2387,7 +2374,7 @@
               "aplazado": false
             },
             {
-              "id": 70098,
+              "id": 73276,
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "Manzanares Voley B",
@@ -2399,7 +2386,18 @@
               "jugado": false
             },
             {
-              "id": 70100,
+              "id": 73277,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T00:00:00.000Z",
+              "local": "Claret Madrid B",
+              "visitante": "Salesianos Estrecho Bosco B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73278,
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "A.D.perales",
@@ -2410,7 +2408,7 @@
               "aplazado": false
             },
             {
-              "id": 70101,
+              "id": 73279,
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -2427,18 +2425,7 @@
           "fecha": "2026-10-25T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70103,
-              "jornada": 4,
-              "fechaHora": "2026-10-24T17:30:00.000Z",
-              "local": "Club Deportivo Loreto Madrid",
-              "visitante": "Stars Sport Madrid Verde",
-              "pabellon": "Club Deportivo Loreto Madrid",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70102,
+              "id": 73280,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -2449,7 +2436,18 @@
               "aplazado": false
             },
             {
-              "id": 70104,
+              "id": 73281,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "local": "Club Deportivo Loreto Madrid",
+              "visitante": "Stars Sport Madrid Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73282,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Salesianos Estrecho Bosco B",
@@ -2460,7 +2458,7 @@
               "aplazado": false
             },
             {
-              "id": 70105,
+              "id": 73283,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -2471,7 +2469,7 @@
               "aplazado": false
             },
             {
-              "id": 70106,
+              "id": 73284,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
@@ -2483,7 +2481,7 @@
               "jugado": false
             },
             {
-              "id": 70107,
+              "id": 73285,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -2500,7 +2498,7 @@
           "fecha": "2026-11-08T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70108,
+              "id": 73286,
               "jornada": 5,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Avp A Rasán",
@@ -2511,7 +2509,7 @@
               "aplazado": false
             },
             {
-              "id": 70109,
+              "id": 73287,
               "jornada": 5,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Manzanares Voley B",
@@ -2523,7 +2521,7 @@
               "jugado": false
             },
             {
-              "id": 70110,
+              "id": 73288,
               "jornada": 5,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Claret Madrid B",
@@ -2534,7 +2532,7 @@
               "aplazado": false
             },
             {
-              "id": 70111,
+              "id": 73289,
               "jornada": 5,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "A.D.perales",
@@ -2545,7 +2543,7 @@
               "aplazado": false
             },
             {
-              "id": 70112,
+              "id": 73290,
               "jornada": 5,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -2556,7 +2554,7 @@
               "aplazado": false
             },
             {
-              "id": 70113,
+              "id": 73291,
               "jornada": 5,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Salesianos San Miguel",
@@ -2573,7 +2571,7 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70114,
+              "id": 73292,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Avp A Rasán",
@@ -2585,7 +2583,7 @@
               "jugado": false
             },
             {
-              "id": 70115,
+              "id": 73293,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -2596,7 +2594,7 @@
               "aplazado": false
             },
             {
-              "id": 70116,
+              "id": 73294,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Salesianos Estrecho Bosco B",
@@ -2607,7 +2605,7 @@
               "aplazado": false
             },
             {
-              "id": 70117,
+              "id": 73295,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -2618,7 +2616,7 @@
               "aplazado": false
             },
             {
-              "id": 70118,
+              "id": 73296,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
@@ -2629,7 +2627,7 @@
               "aplazado": false
             },
             {
-              "id": 70119,
+              "id": 73297,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -2646,18 +2644,7 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70125,
-              "jornada": 7,
-              "fechaHora": "2026-11-21T17:30:00.000Z",
-              "local": "Club Deportivo Loreto Madrid",
-              "visitante": "Salesianos Estrecho Bosco B",
-              "pabellon": "Club Deportivo Loreto Madrid",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70120,
+              "id": 73298,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Manzanares Voley B",
@@ -2669,7 +2656,7 @@
               "jugado": false
             },
             {
-              "id": 70121,
+              "id": 73299,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Claret Madrid B",
@@ -2680,7 +2667,7 @@
               "aplazado": false
             },
             {
-              "id": 70122,
+              "id": 73300,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "A.D.perales",
@@ -2691,7 +2678,7 @@
               "aplazado": false
             },
             {
-              "id": 70123,
+              "id": 73301,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -2702,11 +2689,22 @@
               "aplazado": false
             },
             {
-              "id": 70124,
+              "id": 73302,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Salesianos San Miguel",
               "visitante": "Cde Parla Voley Folder C",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73303,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "local": "Club Deportivo Loreto Madrid",
+              "visitante": "Salesianos Estrecho Bosco B",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -2719,7 +2717,7 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70126,
+              "id": 73304,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -2730,7 +2728,7 @@
               "aplazado": false
             },
             {
-              "id": 70127,
+              "id": 73305,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -2741,7 +2739,7 @@
               "aplazado": false
             },
             {
-              "id": 70128,
+              "id": 73306,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
@@ -2752,7 +2750,7 @@
               "aplazado": false
             },
             {
-              "id": 70129,
+              "id": 73307,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -2763,7 +2761,7 @@
               "aplazado": false
             },
             {
-              "id": 70130,
+              "id": 73308,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Avp A Rasán",
@@ -2774,7 +2772,7 @@
               "aplazado": false
             },
             {
-              "id": 70131,
+              "id": 73309,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Manzanares Voley B",
@@ -2792,18 +2790,7 @@
           "fecha": "2026-12-13T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70136,
-              "jornada": 9,
-              "fechaHora": "2026-12-12T17:30:00.000Z",
-              "local": "Club Deportivo Loreto Madrid",
-              "visitante": "Cuv Alcorcón Blanco",
-              "pabellon": "Club Deportivo Loreto Madrid",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70132,
+              "id": 73310,
               "jornada": 9,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Claret Madrid B",
@@ -2814,7 +2801,7 @@
               "aplazado": false
             },
             {
-              "id": 70133,
+              "id": 73311,
               "jornada": 9,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "A.D.perales",
@@ -2826,7 +2813,7 @@
               "jugado": false
             },
             {
-              "id": 70134,
+              "id": 73312,
               "jornada": 9,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -2837,7 +2824,7 @@
               "aplazado": false
             },
             {
-              "id": 70135,
+              "id": 73313,
               "jornada": 9,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Salesianos San Miguel",
@@ -2848,7 +2835,18 @@
               "aplazado": false
             },
             {
-              "id": 70137,
+              "id": 73314,
+              "jornada": 9,
+              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "local": "Club Deportivo Loreto Madrid",
+              "visitante": "Cuv Alcorcón Blanco",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73315,
               "jornada": 9,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Salesianos Estrecho Bosco B",
@@ -2865,7 +2863,7 @@
           "fecha": "2026-12-20T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70138,
+              "id": 73316,
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -2876,7 +2874,7 @@
               "aplazado": false
             },
             {
-              "id": 70139,
+              "id": 73317,
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
@@ -2887,7 +2885,7 @@
               "aplazado": false
             },
             {
-              "id": 70140,
+              "id": 73318,
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -2898,7 +2896,7 @@
               "aplazado": false
             },
             {
-              "id": 70141,
+              "id": 73319,
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Avp A Rasán",
@@ -2909,7 +2907,7 @@
               "aplazado": false
             },
             {
-              "id": 70142,
+              "id": 73320,
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Manzanares Voley B",
@@ -2921,7 +2919,7 @@
               "jugado": false
             },
             {
-              "id": 70143,
+              "id": 73321,
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Claret Madrid B",
@@ -2938,18 +2936,7 @@
           "fecha": "2027-01-10T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70147,
-              "jornada": 11,
-              "fechaHora": "2027-01-09T17:30:00.000Z",
-              "local": "Club Deportivo Loreto Madrid",
-              "visitante": "Avp A Rasán",
-              "pabellon": "Club Deportivo Loreto Madrid",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70144,
+              "id": 73322,
               "jornada": 11,
               "fechaHora": "2027-01-10T00:00:00.000Z",
               "local": "A.D.perales",
@@ -2960,7 +2947,7 @@
               "aplazado": false
             },
             {
-              "id": 70145,
+              "id": 73323,
               "jornada": 11,
               "fechaHora": "2027-01-10T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -2971,7 +2958,7 @@
               "aplazado": false
             },
             {
-              "id": 70146,
+              "id": 73324,
               "jornada": 11,
               "fechaHora": "2027-01-10T00:00:00.000Z",
               "local": "Salesianos San Miguel",
@@ -2983,7 +2970,18 @@
               "jugado": false
             },
             {
-              "id": 70148,
+              "id": 73325,
+              "jornada": 11,
+              "fechaHora": "2027-01-10T00:00:00.000Z",
+              "local": "Club Deportivo Loreto Madrid",
+              "visitante": "Avp A Rasán",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73326,
               "jornada": 11,
               "fechaHora": "2027-01-10T00:00:00.000Z",
               "local": "Salesianos Estrecho Bosco B",
@@ -2994,7 +2992,7 @@
               "aplazado": false
             },
             {
-              "id": 70149,
+              "id": 73327,
               "jornada": 11,
               "fechaHora": "2027-01-10T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -3011,21 +3009,7 @@
           "fecha": "2027-01-17T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70153,
-              "jornada": 12,
-              "fechaHora": "2027-01-16T17:30:00.000Z",
-              "local": "Club Deportivo Loreto Madrid",
-              "visitante": "Manzanares Voley B",
-              "pabellon": "Club Deportivo Loreto Madrid",
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "direccion": "CALLE GENERAL PARDIÑAS 52",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=CLUB DEPORTIVO LORETO MADRID CALLE GENERAL PARDIÑAS 52, MADRID",
-              "jugado": false
-            },
-            {
-              "id": 70150,
+              "id": 73328,
               "jornada": 12,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -3036,7 +3020,7 @@
               "aplazado": false
             },
             {
-              "id": 70151,
+              "id": 73329,
               "jornada": 12,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -3047,7 +3031,7 @@
               "aplazado": false
             },
             {
-              "id": 70152,
+              "id": 73330,
               "jornada": 12,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Salesianos Estrecho Bosco B",
@@ -3058,7 +3042,19 @@
               "aplazado": false
             },
             {
-              "id": 70154,
+              "id": 73331,
+              "jornada": 12,
+              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "local": "Club Deportivo Loreto Madrid",
+              "visitante": "Manzanares Voley B",
+              "pabellon": null,
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "jugado": false
+            },
+            {
+              "id": 73332,
               "jornada": 12,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Salesianos San Miguel",
@@ -3069,7 +3065,7 @@
               "aplazado": false
             },
             {
-              "id": 70155,
+              "id": 73333,
               "jornada": 12,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -3086,7 +3082,7 @@
           "fecha": "2027-01-24T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70156,
+              "id": 73334,
               "jornada": 13,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -3097,7 +3093,7 @@
               "aplazado": false
             },
             {
-              "id": 70157,
+              "id": 73335,
               "jornada": 13,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "A.D.perales",
@@ -3108,7 +3104,7 @@
               "aplazado": false
             },
             {
-              "id": 70158,
+              "id": 73336,
               "jornada": 13,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Claret Madrid B",
@@ -3119,7 +3115,7 @@
               "aplazado": false
             },
             {
-              "id": 70159,
+              "id": 73337,
               "jornada": 13,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Manzanares Voley B",
@@ -3131,7 +3127,7 @@
               "jugado": false
             },
             {
-              "id": 70160,
+              "id": 73338,
               "jornada": 13,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Avp A Rasán",
@@ -3142,7 +3138,7 @@
               "aplazado": false
             },
             {
-              "id": 70161,
+              "id": 73339,
               "jornada": 13,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -3159,18 +3155,7 @@
           "fecha": "2027-01-31T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70166,
-              "jornada": 14,
-              "fechaHora": "2027-01-30T17:30:00.000Z",
-              "local": "Club Deportivo Loreto Madrid",
-              "visitante": "A.D.perales",
-              "pabellon": "Club Deportivo Loreto Madrid",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70162,
+              "id": 73340,
               "jornada": 14,
               "fechaHora": "2027-01-31T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -3181,7 +3166,7 @@
               "aplazado": false
             },
             {
-              "id": 70163,
+              "id": 73341,
               "jornada": 14,
               "fechaHora": "2027-01-31T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
@@ -3192,7 +3177,7 @@
               "aplazado": false
             },
             {
-              "id": 70164,
+              "id": 73342,
               "jornada": 14,
               "fechaHora": "2027-01-31T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -3204,7 +3189,7 @@
               "jugado": false
             },
             {
-              "id": 70165,
+              "id": 73343,
               "jornada": 14,
               "fechaHora": "2027-01-31T00:00:00.000Z",
               "local": "Salesianos Estrecho Bosco B",
@@ -3215,7 +3200,18 @@
               "aplazado": false
             },
             {
-              "id": 70167,
+              "id": 73344,
+              "jornada": 14,
+              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "local": "Club Deportivo Loreto Madrid",
+              "visitante": "A.D.perales",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73345,
               "jornada": 14,
               "fechaHora": "2027-01-31T00:00:00.000Z",
               "local": "Salesianos San Miguel",
@@ -3232,7 +3228,7 @@
           "fecha": "2027-02-07T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70168,
+              "id": 73346,
               "jornada": 15,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Salesianos San Miguel",
@@ -3243,7 +3239,7 @@
               "aplazado": false
             },
             {
-              "id": 70169,
+              "id": 73347,
               "jornada": 15,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -3254,7 +3250,7 @@
               "aplazado": false
             },
             {
-              "id": 70170,
+              "id": 73348,
               "jornada": 15,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "A.D.perales",
@@ -3265,7 +3261,7 @@
               "aplazado": false
             },
             {
-              "id": 70171,
+              "id": 73349,
               "jornada": 15,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Claret Madrid B",
@@ -3276,7 +3272,7 @@
               "aplazado": false
             },
             {
-              "id": 70172,
+              "id": 73350,
               "jornada": 15,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Manzanares Voley B",
@@ -3288,7 +3284,7 @@
               "jugado": false
             },
             {
-              "id": 70173,
+              "id": 73351,
               "jornada": 15,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Avp A Rasán",
@@ -3305,18 +3301,7 @@
           "fecha": "2027-02-21T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70179,
-              "jornada": 16,
-              "fechaHora": "2027-02-20T17:30:00.000Z",
-              "local": "Club Deportivo Loreto Madrid",
-              "visitante": "Salesianos San Miguel",
-              "pabellon": "Club Deportivo Loreto Madrid",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70174,
+              "id": 73352,
               "jornada": 16,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -3327,7 +3312,7 @@
               "aplazado": false
             },
             {
-              "id": 70175,
+              "id": 73353,
               "jornada": 16,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -3339,7 +3324,7 @@
               "jugado": false
             },
             {
-              "id": 70176,
+              "id": 73354,
               "jornada": 16,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
@@ -3350,7 +3335,7 @@
               "aplazado": false
             },
             {
-              "id": 70177,
+              "id": 73355,
               "jornada": 16,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -3361,11 +3346,22 @@
               "aplazado": false
             },
             {
-              "id": 70178,
+              "id": 73356,
               "jornada": 16,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Salesianos Estrecho Bosco B",
               "visitante": "Stars Sport Madrid Verde",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73357,
+              "jornada": 16,
+              "fechaHora": "2027-02-21T00:00:00.000Z",
+              "local": "Club Deportivo Loreto Madrid",
+              "visitante": "Salesianos San Miguel",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -3378,18 +3374,18 @@
           "fecha": "2027-02-28T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70180,
+              "id": 73358,
               "jornada": 17,
-              "fechaHora": "2027-02-27T17:30:00.000Z",
+              "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Club Deportivo Loreto Madrid",
               "visitante": "Cuv Alcorcón Naranja",
-              "pabellon": "Club Deportivo Loreto Madrid",
+              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
             },
             {
-              "id": 70181,
+              "id": 73359,
               "jornada": 17,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Salesianos San Miguel",
@@ -3400,7 +3396,7 @@
               "aplazado": false
             },
             {
-              "id": 70182,
+              "id": 73360,
               "jornada": 17,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -3411,7 +3407,7 @@
               "aplazado": false
             },
             {
-              "id": 70183,
+              "id": 73361,
               "jornada": 17,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "A.D.perales",
@@ -3422,7 +3418,7 @@
               "aplazado": false
             },
             {
-              "id": 70184,
+              "id": 73362,
               "jornada": 17,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Claret Madrid B",
@@ -3433,7 +3429,7 @@
               "aplazado": false
             },
             {
-              "id": 70185,
+              "id": 73363,
               "jornada": 17,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Manzanares Voley B",
@@ -3451,7 +3447,7 @@
           "fecha": "2027-03-07T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70186,
+              "id": 73364,
               "jornada": 18,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -3462,7 +3458,7 @@
               "aplazado": false
             },
             {
-              "id": 70187,
+              "id": 73365,
               "jornada": 18,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Salesianos Estrecho Bosco B",
@@ -3473,7 +3469,7 @@
               "aplazado": false
             },
             {
-              "id": 70188,
+              "id": 73366,
               "jornada": 18,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -3485,7 +3481,7 @@
               "jugado": false
             },
             {
-              "id": 70189,
+              "id": 73367,
               "jornada": 18,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Avp A Rasán",
@@ -3496,7 +3492,7 @@
               "aplazado": false
             },
             {
-              "id": 70190,
+              "id": 73368,
               "jornada": 18,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -3507,7 +3503,7 @@
               "aplazado": false
             },
             {
-              "id": 70191,
+              "id": 73369,
               "jornada": 18,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
@@ -3524,18 +3520,7 @@
           "fecha": "2027-03-14T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70193,
-              "jornada": 19,
-              "fechaHora": "2027-03-13T17:30:00.000Z",
-              "local": "Club Deportivo Loreto Madrid",
-              "visitante": "Cde Parla Voley Folder C",
-              "pabellon": "Club Deportivo Loreto Madrid",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70192,
+              "id": 73370,
               "jornada": 19,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Salesianos Estrecho Bosco B",
@@ -3546,7 +3531,18 @@
               "aplazado": false
             },
             {
-              "id": 70194,
+              "id": 73371,
+              "jornada": 19,
+              "fechaHora": "2027-03-14T00:00:00.000Z",
+              "local": "Club Deportivo Loreto Madrid",
+              "visitante": "Cde Parla Voley Folder C",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73372,
               "jornada": 19,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Salesianos San Miguel",
@@ -3557,7 +3553,7 @@
               "aplazado": false
             },
             {
-              "id": 70195,
+              "id": 73373,
               "jornada": 19,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -3568,7 +3564,7 @@
               "aplazado": false
             },
             {
-              "id": 70196,
+              "id": 73374,
               "jornada": 19,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "A.D.perales",
@@ -3579,7 +3575,7 @@
               "aplazado": false
             },
             {
-              "id": 70197,
+              "id": 73375,
               "jornada": 19,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Claret Madrid B",
@@ -3597,7 +3593,7 @@
           "fecha": "2027-04-04T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70198,
+              "id": 73376,
               "jornada": 20,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -3608,7 +3604,7 @@
               "aplazado": false
             },
             {
-              "id": 70199,
+              "id": 73377,
               "jornada": 20,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Manzanares Voley B",
@@ -3620,7 +3616,7 @@
               "jugado": false
             },
             {
-              "id": 70200,
+              "id": 73378,
               "jornada": 20,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Avp A Rasán",
@@ -3631,7 +3627,7 @@
               "aplazado": false
             },
             {
-              "id": 70201,
+              "id": 73379,
               "jornada": 20,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -3642,7 +3638,7 @@
               "aplazado": false
             },
             {
-              "id": 70202,
+              "id": 73380,
               "jornada": 20,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
@@ -3653,7 +3649,7 @@
               "aplazado": false
             },
             {
-              "id": 70203,
+              "id": 73381,
               "jornada": 20,
               "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -3670,18 +3666,7 @@
           "fecha": "2027-04-11T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70206,
-              "jornada": 21,
-              "fechaHora": "2027-04-10T17:30:00.000Z",
-              "local": "Club Deportivo Loreto Madrid",
-              "visitante": "Cde Parla Voley Multiopticas B",
-              "pabellon": "Club Deportivo Loreto Madrid",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 70204,
+              "id": 73382,
               "jornada": 21,
               "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Cde Parla Voley Folder C",
@@ -3692,7 +3677,7 @@
               "aplazado": false
             },
             {
-              "id": 70205,
+              "id": 73383,
               "jornada": 21,
               "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Salesianos Estrecho Bosco B",
@@ -3703,7 +3688,18 @@
               "aplazado": false
             },
             {
-              "id": 70207,
+              "id": 73384,
+              "jornada": 21,
+              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "local": "Club Deportivo Loreto Madrid",
+              "visitante": "Cde Parla Voley Multiopticas B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 73385,
               "jornada": 21,
               "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Salesianos San Miguel",
@@ -3714,7 +3710,7 @@
               "aplazado": false
             },
             {
-              "id": 70208,
+              "id": 73386,
               "jornada": 21,
               "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Stars Sport Madrid Verde",
@@ -3726,7 +3722,7 @@
               "jugado": false
             },
             {
-              "id": 70209,
+              "id": 73387,
               "jornada": 21,
               "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "A.D.perales",
@@ -3743,7 +3739,7 @@
           "fecha": "2027-04-18T00:00:00.000Z",
           "partidos": [
             {
-              "id": 70210,
+              "id": 73388,
               "jornada": 22,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Cuv Alcorcón Naranja",
@@ -3754,7 +3750,7 @@
               "aplazado": false
             },
             {
-              "id": 70211,
+              "id": 73389,
               "jornada": 22,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Claret Madrid B",
@@ -3765,7 +3761,7 @@
               "aplazado": false
             },
             {
-              "id": 70212,
+              "id": 73390,
               "jornada": 22,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Manzanares Voley B",
@@ -3777,7 +3773,7 @@
               "jugado": false
             },
             {
-              "id": 70213,
+              "id": 73391,
               "jornada": 22,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Avp A Rasán",
@@ -3788,7 +3784,7 @@
               "aplazado": false
             },
             {
-              "id": 70214,
+              "id": 73392,
               "jornada": 22,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Cde Parla Voley Multiopticas B",
@@ -3799,7 +3795,7 @@
               "aplazado": false
             },
             {
-              "id": 70215,
+              "id": 73393,
               "jornada": 22,
               "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
@@ -3814,7 +3810,7 @@
       ],
       "misPartidos": [
         {
-          "id": 70087,
+          "id": 73265,
           "jornada": 1,
           "fechaHora": "2026-10-03T10:30:00.000Z",
           "local": "Manzanares Voley B",
@@ -3828,21 +3824,19 @@
           "jugado": false
         },
         {
-          "id": 70093,
+          "id": 73271,
           "jornada": 2,
-          "fechaHora": "2026-10-10T16:00:00.000Z",
+          "fechaHora": "2026-10-11T00:00:00.000Z",
           "local": "Salesianos Estrecho Bosco B",
           "visitante": "Manzanares Voley B",
-          "pabellon": "Salesianos Estrecho",
+          "pabellon": null,
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "direccion": "FRANCOS RODRÍGUEZ, 5 (SÁBADOS POR LA TARDE Y DOMINGOS ENTRADA POR C/ PAMPLONA 12)",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=SALESIANOS ESTRECHO FRANCOS RODRÍGUEZ, 5 (SÁBADOS POR LA TARDE Y DOMINGOS ENTRADA POR C/ PAMPLONA 12) , MADRID",
           "jugado": false
         },
         {
-          "id": 70098,
+          "id": 73276,
           "jornada": 3,
           "fechaHora": "2026-10-18T00:00:00.000Z",
           "local": "Manzanares Voley B",
@@ -3854,7 +3848,7 @@
           "jugado": false
         },
         {
-          "id": 70106,
+          "id": 73284,
           "jornada": 4,
           "fechaHora": "2026-10-25T00:00:00.000Z",
           "local": "Cuv Alcorcón Blanco",
@@ -3866,7 +3860,7 @@
           "jugado": false
         },
         {
-          "id": 70109,
+          "id": 73287,
           "jornada": 5,
           "fechaHora": "2026-11-08T00:00:00.000Z",
           "local": "Manzanares Voley B",
@@ -3878,7 +3872,7 @@
           "jugado": false
         },
         {
-          "id": 70114,
+          "id": 73292,
           "jornada": 6,
           "fechaHora": "2026-11-15T00:00:00.000Z",
           "local": "Avp A Rasán",
@@ -3890,7 +3884,7 @@
           "jugado": false
         },
         {
-          "id": 70120,
+          "id": 73298,
           "jornada": 7,
           "fechaHora": "2026-11-22T00:00:00.000Z",
           "local": "Manzanares Voley B",
@@ -3902,7 +3896,7 @@
           "jugado": false
         },
         {
-          "id": 70131,
+          "id": 73309,
           "jornada": 8,
           "fechaHora": "2026-11-29T00:00:00.000Z",
           "local": "Manzanares Voley B",
@@ -3914,7 +3908,7 @@
           "jugado": false
         },
         {
-          "id": 70133,
+          "id": 73311,
           "jornada": 9,
           "fechaHora": "2026-12-13T00:00:00.000Z",
           "local": "A.D.perales",
@@ -3926,7 +3920,7 @@
           "jugado": false
         },
         {
-          "id": 70142,
+          "id": 73320,
           "jornada": 10,
           "fechaHora": "2026-12-20T00:00:00.000Z",
           "local": "Manzanares Voley B",
@@ -3938,7 +3932,7 @@
           "jugado": false
         },
         {
-          "id": 70146,
+          "id": 73324,
           "jornada": 11,
           "fechaHora": "2027-01-10T00:00:00.000Z",
           "local": "Salesianos San Miguel",
@@ -3950,21 +3944,19 @@
           "jugado": false
         },
         {
-          "id": 70153,
+          "id": 73331,
           "jornada": 12,
-          "fechaHora": "2027-01-16T17:30:00.000Z",
+          "fechaHora": "2027-01-17T00:00:00.000Z",
           "local": "Club Deportivo Loreto Madrid",
           "visitante": "Manzanares Voley B",
-          "pabellon": "Club Deportivo Loreto Madrid",
+          "pabellon": null,
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "direccion": "CALLE GENERAL PARDIÑAS 52",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=CLUB DEPORTIVO LORETO MADRID CALLE GENERAL PARDIÑAS 52, MADRID",
           "jugado": false
         },
         {
-          "id": 70159,
+          "id": 73337,
           "jornada": 13,
           "fechaHora": "2027-01-24T00:00:00.000Z",
           "local": "Manzanares Voley B",
@@ -3976,7 +3968,7 @@
           "jugado": false
         },
         {
-          "id": 70164,
+          "id": 73342,
           "jornada": 14,
           "fechaHora": "2027-01-31T00:00:00.000Z",
           "local": "Cde Parla Voley Folder C",
@@ -3988,7 +3980,7 @@
           "jugado": false
         },
         {
-          "id": 70172,
+          "id": 73350,
           "jornada": 15,
           "fechaHora": "2027-02-07T00:00:00.000Z",
           "local": "Manzanares Voley B",
@@ -4000,7 +3992,7 @@
           "jugado": false
         },
         {
-          "id": 70175,
+          "id": 73353,
           "jornada": 16,
           "fechaHora": "2027-02-21T00:00:00.000Z",
           "local": "Cde Parla Voley Multiopticas B",
@@ -4012,7 +4004,7 @@
           "jugado": false
         },
         {
-          "id": 70185,
+          "id": 73363,
           "jornada": 17,
           "fechaHora": "2027-02-28T00:00:00.000Z",
           "local": "Manzanares Voley B",
@@ -4024,7 +4016,7 @@
           "jugado": false
         },
         {
-          "id": 70188,
+          "id": 73366,
           "jornada": 18,
           "fechaHora": "2027-03-07T00:00:00.000Z",
           "local": "Cuv Alcorcón Naranja",
@@ -4036,7 +4028,7 @@
           "jugado": false
         },
         {
-          "id": 70197,
+          "id": 73375,
           "jornada": 19,
           "fechaHora": "2027-03-14T00:00:00.000Z",
           "local": "Claret Madrid B",
@@ -4048,7 +4040,7 @@
           "jugado": false
         },
         {
-          "id": 70199,
+          "id": 73377,
           "jornada": 20,
           "fechaHora": "2027-04-04T00:00:00.000Z",
           "local": "Manzanares Voley B",
@@ -4060,7 +4052,7 @@
           "jugado": false
         },
         {
-          "id": 70208,
+          "id": 73386,
           "jornada": 21,
           "fechaHora": "2027-04-11T00:00:00.000Z",
           "local": "Stars Sport Madrid Verde",
@@ -4072,7 +4064,7 @@
           "jugado": false
         },
         {
-          "id": 70212,
+          "id": 73390,
           "jornada": 22,
           "fechaHora": "2027-04-18T00:00:00.000Z",
           "local": "Manzanares Voley B",
@@ -6302,7 +6294,7 @@
             {
               "id": 57146,
               "jornada": 1,
-              "fechaHora": "2026-10-03T12:00:00.000Z",
+              "fechaHora": "2026-10-03T12:45:00.000Z",
               "local": "CV Collado Villalba A",
               "visitante": "Dragons Voleibol Moralzarzal A",
               "pabellon": "Antonio Machado, Colegio",
@@ -10375,6 +10367,17 @@
           "fecha": "2026-10-04T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72137,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T11:00:00.000Z",
+              "local": "A.D.perales Blanco",
+              "visitante": "Cde Parla Voley Maxcolchon E Cadete Femenino",
+              "pabellon": "Pabellon Deportivo Perales Del Rio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72135,
               "jornada": 1,
               "fechaHora": "2026-10-03T12:00:00.000Z",
@@ -10389,12 +10392,12 @@
               "jugado": false
             },
             {
-              "id": 72134,
+              "id": 72139,
               "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Avp A Pozo Red",
-              "visitante": "Descansa...",
-              "pabellon": null,
+              "fechaHora": "2026-10-03T12:00:00.000Z",
+              "local": "CV Nueva Castilla B Cadete Femenino",
+              "visitante": "C.d.b.colegio Aquila 2",
+              "pabellon": "Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -10402,20 +10405,20 @@
             {
               "id": 72136,
               "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "fechaHora": "2026-10-03T16:00:00.000Z",
               "local": "CV Aranjuez",
               "visitante": "CV Getafe Verde",
-              "pabellon": null,
+              "pabellon": "Santa Teresa",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
             },
             {
-              "id": 72137,
+              "id": 72134,
               "jornada": 1,
               "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "A.D.perales Blanco",
-              "visitante": "Cde Parla Voley Maxcolchon E Cadete Femenino",
+              "local": "Avp A Pozo Red",
+              "visitante": "Descansa...",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -10431,17 +10434,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 72139,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "CV Nueva Castilla B Cadete Femenino",
-              "visitante": "C.d.b.colegio Aquila 2",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             }
           ]
         },
@@ -10449,6 +10441,17 @@
           "numero": 2,
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
+            {
+              "id": 72145,
+              "jornada": 2,
+              "fechaHora": "2026-10-10T11:30:00.000Z",
+              "local": "Avp A Pozo Red",
+              "visitante": "Cde Parla Voley Folder D Cadete Femenino",
+              "pabellon": "Pabellon Ceip Jose Hierro",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
             {
               "id": 72140,
               "jornada": 2,
@@ -10504,17 +10507,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 72145,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Avp A Pozo Red",
-              "visitante": "Cde Parla Voley Folder D Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             }
           ]
         },
@@ -10596,6 +10588,17 @@
           "fecha": "2026-10-25T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72156,
+              "jornada": 4,
+              "fechaHora": "2026-10-24T16:00:00.000Z",
+              "local": "Avp A Pozo Red",
+              "visitante": "A.D.perales Blanco",
+              "pabellon": "Pabellon Ceip Jose Hierro",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72152,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
@@ -10639,17 +10642,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 72156,
-              "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "Avp A Pozo Red",
-              "visitante": "A.D.perales Blanco",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 72157,
@@ -10742,6 +10734,17 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72168,
+              "jornada": 6,
+              "fechaHora": "2026-11-14T15:00:00.000Z",
+              "local": "Avp A Pozo Red",
+              "visitante": "CV Nueva Castilla B Cadete Femenino",
+              "pabellon": "Pabellón Ceip José Hierro",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72164,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -10785,17 +10788,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 72168,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Avp A Pozo Red",
-              "visitante": "CV Nueva Castilla B Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 72169,
@@ -10911,17 +10903,6 @@
               "jugado": false
             },
             {
-              "id": 72178,
-              "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Avp A Pozo Red",
-              "visitante": "Mirasur School Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 72179,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
@@ -10950,6 +10931,17 @@
               "local": "A.D.perales Blanco",
               "visitante": "Cvd Fuenlabrada Cadete Femenino",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 72178,
+              "jornada": 8,
+              "fechaHora": "2026-11-29T13:00:00.000Z",
+              "local": "Avp A Pozo Red",
+              "visitante": "Mirasur School Cadete Femenino",
+              "pabellon": "Pabellon Ceip Jose Hierro",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -11034,6 +11026,17 @@
           "fecha": "2026-12-20T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72189,
+              "jornada": 10,
+              "fechaHora": "2026-12-19T15:00:00.000Z",
+              "local": "Avp A Pozo Red",
+              "visitante": "CV Getafe Verde",
+              "pabellon": "Pabellon Ceip Jose Hierro",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72188,
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
@@ -11044,17 +11047,6 @@
               "esLocal": false,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 72189,
-              "jornada": 10,
-              "fechaHora": "2026-12-20T00:00:00.000Z",
-              "local": "Avp A Pozo Red",
-              "visitante": "CV Getafe Verde",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 72190,
@@ -20013,7 +20005,7 @@
             {
               "id": 64678,
               "jornada": 1,
-              "fechaHora": "2026-10-11T10:00:00.000Z",
+              "fechaHora": "2026-10-11T11:00:00.000Z",
               "local": "Avp B Rafranjo",
               "visitante": "Arcangel Rafael",
               "pabellon": "Pabellón Ceip José Hierro",
@@ -31605,7 +31597,7 @@
       "categoria": "Juvenil Femenino A"
     },
     {
-      "id": 70087,
+      "id": 73265,
       "jornada": 1,
       "fechaHora": "2026-10-03T10:30:00.000Z",
       "local": "Manzanares Voley B",
