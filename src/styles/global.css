@@ -584,6 +584,20 @@ p:last-child{margin-bottom:0}
   background:var(--mzv-crema);color:var(--mzv-titulo);font-size:15px;cursor:pointer;
 }
 
+/* ---------- Preferencias de avisos push por equipo ---------- */
+.push-prefs-modal__box{max-width:400px;max-height:80vh;overflow-y:auto}
+.push-prefs__title{margin:0 0 8px;font-size:18px;color:var(--mzv-titulo)}
+.push-prefs__hint{margin:0 0 16px;font-size:13px;line-height:1.5;color:var(--mzv-texto-suave,#666)}
+.push-prefs__opcion{
+  display:flex;align-items:center;gap:10px;padding:8px 0;font-size:14px;color:var(--mzv-titulo);
+  cursor:pointer;
+}
+.push-prefs__opcion input{width:16px;height:16px;flex:none}
+.push-prefs__opcion--todos{font-weight:600;border-bottom:1px solid var(--mzv-crema);margin-bottom:4px}
+.push-prefs__lista{display:flex;flex-direction:column}
+.push-prefs__acciones{display:flex;flex-direction:column;gap:10px;margin-top:18px}
+.push-prefs__acciones .btn{width:100%;justify-content:center}
+
 /* ---------- Consentimiento de cookies ---------- */
 .cookie-banner{
   position:fixed;left:16px;right:16px;bottom:16px;z-index:150;max-width:720px;margin:0 auto;

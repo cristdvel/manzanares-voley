@@ -8,7 +8,9 @@
  * llamar a la Federación) y las suscripciones guardadas en un namespace de
  * Cloudflare KV (las guarda functions/api/push-subscribe.ts cuando alguien
  * pulsa "Avisos de partidos" en la web), a los que accede por la API REST
- * de Cloudflare porque esta Action no puede leer el KV directamente.
+ * de Cloudflare porque esta Action no puede leer el KV directamente. Cada
+ * suscripción puede llevar una lista "categorias" (equipos elegidos en el
+ * panel de la web); si está vacía se avisa de todos los equipos.
  *
  * Marca cada partido ya avisado con una clave "notified:<id>" (3 días de
  * validez) para no mandar el mismo aviso dos veces aunque el cron se
@@ -132,10 +134,15 @@ async function main() {
     const payload = JSON.stringify({ title, body, url: "/calendario" });
 
     let enviados = 0;
+    let interesados = 0;
     for (const key of subKeys) {
       const raw = await kvGet(key);
       if (!raw) continue;
       const subscription = JSON.parse(raw);
+      // "categorias" vacío o ausente = quiere avisos de todos los equipos.
+      const categorias = Array.isArray(subscription.categorias) ? subscription.categorias : [];
+      if (categorias.length > 0 && !categorias.includes(p.categoria)) continue;
+      interesados++;
       try {
         await webpush.sendNotification(subscription, payload);
         enviados++;
@@ -147,7 +154,7 @@ async function main() {
         }
       }
     }
-    console.log(`  ✓ "${title}" — enviado a ${enviados}/${subKeys.length}`);
+    console.log(`  ✓ "${title}" — enviado a ${enviados}/${interesados} (de ${subKeys.length} suscripciones totales)`);
     await kvPut(`notified:${p.id}`, "1", 60 * 60 * 24 * 3); // 3 días de margen
   }
 }

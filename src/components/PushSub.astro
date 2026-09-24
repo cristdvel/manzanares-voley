@@ -1,21 +1,54 @@
 ---
 // Botón "Avisos de partidos": suscribe/desuscribe al comprador de
-// notificaciones push. Solo se muestra si hay clave VAPID pública
-// configurada en el build (PUBLIC_VAPID_PUBLIC_KEY) y el navegador soporta
-// Push API. El envío real de avisos lo hace scripts/send-match-reminders.mjs
-// vía cron — ver DEPLOY.md §7.
+// notificaciones push y deja elegir de qué equipos concretos quiere avisos
+// (o de todos). Solo se muestra si hay clave VAPID pública configurada en
+// el build (PUBLIC_VAPID_PUBLIC_KEY) y el navegador soporta Push API. El
+// envío real de avisos lo hace scripts/send-match-reminders.mjs vía cron,
+// filtrando por la lista de categorías guardada junto a la suscripción —
+// ver DEPLOY.md §7.
+import equiposFederados from "../data/equipos-federados.json";
 const VAPID_PUBLIC_KEY = import.meta.env.PUBLIC_VAPID_PUBLIC_KEY || "";
+const categorias = equiposFederados.grupos.map((g) => g.categoria);
 ---
 {VAPID_PUBLIC_KEY && (
-  <button
-    type="button"
-    class="btn btn--outline"
-    id="push-subscribe-btn"
-    data-vapid={VAPID_PUBLIC_KEY}
-    hidden
-  >
-    🔔 Avisos de partidos
-  </button>
+  <>
+    <button
+      type="button"
+      class="btn btn--outline"
+      id="push-subscribe-btn"
+      data-vapid={VAPID_PUBLIC_KEY}
+      hidden
+    >
+      🔔 Avisos de partidos
+    </button>
+
+    <div class="pwa-install-modal push-prefs-modal" id="push-prefs-modal" hidden>
+      <div class="pwa-install-modal__box push-prefs-modal__box">
+        <button type="button" class="pwa-install-modal__close" id="push-prefs-close" aria-label="Cerrar">✕</button>
+        <h3 class="push-prefs__title">¿De qué equipos quieres avisos?</h3>
+        <p class="push-prefs__hint">Te avisaremos el día antes de cada partido de liga federada de los equipos que elijas.</p>
+
+        <label class="push-prefs__opcion push-prefs__opcion--todos">
+          <input type="checkbox" id="push-cat-todos" checked />
+          Todos los equipos
+        </label>
+
+        <div class="push-prefs__lista" id="push-prefs-lista">
+          {categorias.map((cat) => (
+            <label class="push-prefs__opcion">
+              <input type="checkbox" class="push-cat" value={cat} />
+              {cat}
+            </label>
+          ))}
+        </div>
+
+        <div class="push-prefs__acciones">
+          <button type="button" class="btn btn--primary" id="push-prefs-guardar">Guardar avisos</button>
+          <button type="button" class="btn btn--outline" id="push-prefs-quitar" hidden>🔕 Quitar todos los avisos</button>
+        </div>
+      </div>
+    </div>
+  </>
 )}
 
 <script>
@@ -28,10 +61,74 @@ const VAPID_PUBLIC_KEY = import.meta.env.PUBLIC_VAPID_PUBLIC_KEY || "";
     return outputArray;
   }
 
+  const LS_KEY = "mzv-push-categorias";
+
   const btn = document.getElementById("push-subscribe-btn") as HTMLButtonElement | null;
+  const modal = document.getElementById("push-prefs-modal") as HTMLDivElement | null;
+  const closeBtn = document.getElementById("push-prefs-close") as HTMLButtonElement | null;
+  const todosCheck = document.getElementById("push-cat-todos") as HTMLInputElement | null;
+  const catChecks = Array.from(document.querySelectorAll<HTMLInputElement>(".push-cat"));
+  const guardarBtn = document.getElementById("push-prefs-guardar") as HTMLButtonElement | null;
+  const quitarBtn = document.getElementById("push-prefs-quitar") as HTMLButtonElement | null;
+
   const soportado =
     "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
   const esIOS = /iphone|ipad|ipod/i.test(navigator.userAgent);
+
+  function leerCategoriasGuardadas(): string[] {
+    try {
+      const raw = localStorage.getItem(LS_KEY);
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function guardarCategorias(cats: string[]) {
+    try {
+      localStorage.setItem(LS_KEY, JSON.stringify(cats));
+    } catch {
+      /* localStorage no disponible: sin persistencia, no es crítico */
+    }
+  }
+
+  function aplicarSeleccionAlPanel(cats: string[]) {
+    const todos = cats.length === 0;
+    if (todosCheck) todosCheck.checked = todos;
+    for (const c of catChecks) {
+      c.checked = !todos && cats.includes(c.value);
+      c.disabled = todos;
+    }
+  }
+
+  todosCheck?.addEventListener("change", () => {
+    const todos = todosCheck.checked;
+    for (const c of catChecks) {
+      c.disabled = todos;
+      if (todos) c.checked = false;
+    }
+  });
+
+  for (const c of catChecks) {
+    c.addEventListener("change", () => {
+      if (c.checked && todosCheck) todosCheck.checked = false;
+    });
+  }
+
+  function abrirPanel() {
+    if (!modal) return;
+    aplicarSeleccionAlPanel(leerCategoriasGuardadas());
+    modal.hidden = false;
+  }
+
+  function cerrarPanel() {
+    if (modal) modal.hidden = true;
+  }
+
+  closeBtn?.addEventListener("click", cerrarPanel);
+  modal?.addEventListener("click", (e) => {
+    if (e.target === modal) cerrarPanel();
+  });
 
   if (btn && !soportado && esIOS) {
     // Safari en iPhone/iPad solo da Push API a apps instaladas en la
@@ -50,17 +147,61 @@ const VAPID_PUBLIC_KEY = import.meta.env.PUBLIC_VAPID_PUBLIC_KEY || "";
     const actualizarEstado = async () => {
       const reg = await navigator.serviceWorker.ready;
       const sub = await reg.pushManager.getSubscription();
-      btn.textContent = sub ? "🔕 Quitar avisos de partidos" : "🔔 Avisos de partidos";
+      btn.textContent = sub ? "🔔 Avisos activados · editar" : "🔔 Avisos de partidos";
+      if (quitarBtn) quitarBtn.hidden = !sub;
     };
 
     navigator.serviceWorker.ready.then(actualizarEstado).catch(() => {});
 
-    btn.addEventListener("click", async () => {
-      btn.disabled = true;
+    btn.addEventListener("click", abrirPanel);
+
+    guardarBtn?.addEventListener("click", async () => {
+      guardarBtn.disabled = true;
+      try {
+        const reg = await navigator.serviceWorker.ready;
+        let sub = await reg.pushManager.getSubscription();
+
+        if (!sub) {
+          if (Notification.permission === "denied") {
+            alert(
+              "Has bloqueado las notificaciones para este sitio. Actívalas desde los ajustes del navegador para recibir avisos de partidos.",
+            );
+            return;
+          }
+          const permiso = await Notification.requestPermission();
+          if (permiso !== "granted") return;
+
+          sub = await reg.pushManager.subscribe({
+            userVisibleOnly: true,
+            applicationServerKey: urlBase64ToUint8Array(btn.dataset.vapid || ""),
+          });
+        }
+
+        const categoriasElegidas = todosCheck?.checked
+          ? []
+          : catChecks.filter((c) => c.checked).map((c) => c.value);
+
+        await fetch("/api/push-subscribe", {
+          method: "POST",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify({ subscription: sub.toJSON(), categorias: categoriasElegidas }),
+        });
+
+        guardarCategorias(categoriasElegidas);
+        await actualizarEstado();
+        cerrarPanel();
+      } catch (err) {
+        console.error("No se pudo guardar la preferencia de avisos:", err);
+      } finally {
+        guardarBtn.disabled = false;
+      }
+    });
+
+    quitarBtn?.addEventListener("click", async () => {
+      quitarBtn.disabled = true;
       try {
         const reg = await navigator.serviceWorker.ready;
         const existente = await reg.pushManager.getSubscription();
-
         if (existente) {
           await fetch("/api/push-subscribe", {
             method: "DELETE",
@@ -68,36 +209,14 @@ const VAPID_PUBLIC_KEY = import.meta.env.PUBLIC_VAPID_PUBLIC_KEY || "";
             body: JSON.stringify({ endpoint: existente.endpoint }),
           }).catch(() => {});
           await existente.unsubscribe();
-          await actualizarEstado();
-          return;
         }
-
-        if (Notification.permission === "denied") {
-          alert(
-            "Has bloqueado las notificaciones para este sitio. Actívalas desde los ajustes del navegador para recibir avisos de partidos.",
-          );
-          return;
-        }
-
-        const permiso = await Notification.requestPermission();
-        if (permiso !== "granted") return;
-
-        const sub = await reg.pushManager.subscribe({
-          userVisibleOnly: true,
-          applicationServerKey: urlBase64ToUint8Array(btn.dataset.vapid || ""),
-        });
-
-        await fetch("/api/push-subscribe", {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({ subscription: sub.toJSON() }),
-        });
-
+        guardarCategorias([]);
         await actualizarEstado();
+        cerrarPanel();
       } catch (err) {
-        console.error("No se pudo cambiar el estado de las notificaciones:", err);
+        console.error("No se pudo quitar la suscripción:", err);
       } finally {
-        btn.disabled = false;
+        quitarBtn.disabled = false;
       }
     });
   }

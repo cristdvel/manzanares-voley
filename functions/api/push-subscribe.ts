@@ -3,6 +3,11 @@
  * de notificaciones push en el KV "PUSH_SUBS", para poder avisar de próximos
  * partidos desde scripts/send-match-reminders.mjs. Ver DEPLOY.md §7.
  *
+ * El POST admite una lista opcional "categorias" (nombres tal cual aparecen
+ * en equipos-federados.json, p. ej. "Cadete Femenino B") para que la
+ * persona solo reciba avisos de esos equipos. Una lista vacía o ausente
+ * significa "todos los equipos" (comportamiento por defecto).
+ *
  * Bindings (Pages → Settings → Functions → KV namespace bindings):
  *   PUSH_SUBS (obligatoria) — namespace donde se guardan las suscripciones
  */
@@ -33,7 +38,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     return json({ ok: false, error: "Las notificaciones no están configuradas." }, 500);
   }
 
-  let body: { subscription?: PushSubscriptionJSONLike };
+  let body: { subscription?: PushSubscriptionJSONLike; categorias?: unknown };
   try {
     body = await request.json();
   } catch {
@@ -45,7 +50,11 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     return json({ ok: false, error: "Suscripción no válida." }, 400);
   }
 
-  await env.PUSH_SUBS.put("sub:" + sub.endpoint, JSON.stringify(sub));
+  const categorias = Array.isArray(body?.categorias)
+    ? body.categorias.filter((c): c is string => typeof c === "string")
+    : [];
+
+  await env.PUSH_SUBS.put("sub:" + sub.endpoint, JSON.stringify({ ...sub, categorias }));
   return json({ ok: true });
 };
 

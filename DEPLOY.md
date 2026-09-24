@@ -265,8 +265,14 @@ secret**, añade:
    soporte notificaciones (Chrome/Edge en Android o escritorio; en iPhone
    hace falta tener la PWA **instalada** primero — Safari no ofrece push a
    pestañas sueltas).
-2. Pulsa **"🔔 Avisos de partidos"** en "Próximos partidos" y acepta el
-   permiso de notificaciones.
+2. Pulsa **"🔔 Avisos de partidos"** en "Próximos partidos": se abre un
+   panel para elegir "Todos los equipos" o marcar solo los equipos
+   concretos de los que se quiere aviso (la lista sale de
+   `equipos-federados.json`). Al pulsar "Guardar avisos" pide el permiso de
+   notificaciones si hace falta y guarda la elección junto a la suscripción
+   en el KV. Se puede reabrir el panel en cualquier momento (el botón pasa a
+   decir "🔔 Avisos activados · editar") para cambiar los equipos elegidos o
+   pulsar "🔕 Quitar todos los avisos".
 3. En GitHub → pestaña **Actions** → "Avisos de partidos (push)" →
    **Run workflow** para lanzarlo a mano sin esperar al cron, y revisa el
    log: dice cuántos partidos había en la ventana de 12-36 h y a cuántas
