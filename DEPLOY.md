@@ -288,58 +288,155 @@ secret**, añade:
 
 El lado del código ya está listo: Consent Mode v2 por defecto (denegado
 hasta que el visitante acepte en el banner de cookies), el snippet de GTM
-(solo se activa si hay contenedor configurado) y dos eventos ya instrumentados
-en `dataLayer` para lo que no se puede medir solo con GTM (envían formularios
-propios, sin recarga de página):
+(solo se activa si hay contenedor configurado) y tres eventos ya
+instrumentados en `dataLayer` para lo que no se puede medir solo con GTM
+(cambios de selector y envíos de formulario propios, sin recarga de
+página):
 
 | Evento (`dataLayer`) | Cuándo se dispara | Parámetros |
 | :-- | :-- | :-- |
+| `seleccion_equipo` | Al elegir un equipo en el desplegable de Calendario/Resultados/Clasificación | `categoria` (texto del equipo elegido) |
 | `solicitud_inscripcion` | Al validar y enviar el formulario de inscripción (home, `#inscripciones`) | — |
 | `pedido_realizado` | Al confirmarse un pedido en la tienda (antes de redirigir a `/tienda/gracias`) | `numero_pedido`, `producto`, `valor` (precio × cantidad) |
 
-El resto de eventos de la propuesta (ficha de producto vista, CTA del
-header, contacto del footer, tab de equipo) se configuran **enteramente
-dentro de GTM** con triggers de "Vista de página" y "Clic" — no requieren
-tocar el código.
+Todo lo de abajo se hace en las webs de Google, sin tocar este repo salvo
+el paso 8.2 (variable de entorno en Cloudflare).
 
-### 8.1. Crear el contenedor GTM y la propiedad GA4
+### 8.1. Crear la propiedad de GA4
 
-Esto lo hace quien lleve la analítica (no es un paso de despliegue del
-código): en <https://tagmanager.google.com>, crear un contenedor **Web**
-para `manzanaresvoley.com` (te da un ID `GTM-XXXXXXX`), y en
-<https://analytics.google.com> crear la propiedad GA4 y añadir su tag de
-configuración dentro del propio contenedor GTM (no hace falta tocar este
-repo para eso). Configura ahí también el **Consent Mode v2** del contenedor
-(Google ofrece una plantilla de "Consent Initialization" — con este sitio,
-como el `gtag('consent', 'default', …)` ya se manda desde el código antes
-de que cargue GTM, no hace falta añadir la inicialización de consentimiento
-dentro de GTM, solo las tags con su ajuste de consentimiento requerido).
+1. Entra a <https://analytics.google.com> con la cuenta de Google del club
+   (`manzanaresvoley@gmail.com`).
+2. Icono de engranaje "Administrar" (abajo a la izquierda) → columna
+   **Cuenta** → "Crear cuenta" → nombre "Club Voleibol Manzanares" →
+   siguiente → siguiente → Crear (acepta el acuerdo de tratamiento de datos).
+3. Columna **Propiedad** → "Crear propiedad" → nombre "Manzanares Voley —
+   Web", zona horaria "España", moneda "Euro (EUR)" → Siguiente.
+4. Datos del negocio: tamaño y sector "Deportes" → Crear → acepta los
+   términos de GA4.
+5. "Empezar a recopilar datos" → elige **Web**.
+6. Configurar flujo de datos: URL `https://manzanaresvoley.com`, nombre del
+   flujo "Web principal" → Crear flujo.
+7. Te muestra un **ID de medición** con forma `G-XXXXXXXXXX` — apúntalo,
+   se usa dentro de GTM en el paso 8.5 (no hace falta pegar ningún código
+   en la web).
 
-### 8.2. Activar el contenedor en la web
+### 8.2. Crear el contenedor de GTM y activarlo en Cloudflare
 
-En Cloudflare → tu proyecto Pages → **Settings → Environment variables**
-(entornos *Production* y *Preview*), añade:
+1. Entra a <https://tagmanager.google.com> → "Crear cuenta".
+2. Nombre de cuenta: "Club Voleibol Manzanares". País: España.
+3. Nombre del contenedor: "manzanaresvoley.com". Plataforma de destino:
+   **Web** → Crear → acepta los términos.
+4. Te da un **ID de contenedor** con forma `GTM-XXXXXXX` — apúntalo. No
+   pegues el snippet de instalación a mano: el sitio ya lo carga solo en
+   cuanto configures la variable de entorno.
+5. En Cloudflare → tu proyecto Pages → **Settings → Environment variables**
+   (entornos *Production* y *Preview*), añade:
 
-```
-PUBLIC_GTM_ID = GTM-XXXXXXX
-```
+   ```
+   PUBLIC_GTM_ID = GTM-XXXXXXX
+   ```
 
-Vuelve a desplegar (cualquier push). Sin esta variable, el sitio no carga
-ningún script de Google — sigue funcionando exactamente igual que ahora.
+   Vuelve a desplegar (cualquier push). Sin esta variable, el sitio no
+   carga ningún script de Google — sigue funcionando igual que ahora.
 
-### 8.3. Probarlo
+### 8.3. Activar el soporte de Consent Mode en el contenedor
 
-1. Con `PUBLIC_GTM_ID` desplegado, entra a la web y abre GTM → tu
-   contenedor → **Vista previa** (Preview), pega la URL del sitio.
-2. Acepta el banner de cookies: debería verse un evento `consent` con las
-   cuatro señales en `granted` (antes de aceptar, deben salir en `denied`).
-3. Envía el formulario de inscripción: debe verse el evento
-   `solicitud_inscripcion`.
-4. Haz un pedido de prueba en la tienda: debe verse `pedido_realizado` con
-   `numero_pedido`, `producto` y `valor`.
-5. En GA4 → **Informes → Tiempo real** (o DebugView con el modo de depuración
-   activado) deberían empezar a aparecer las sesiones y eventos en cuanto
-   las tags correspondientes estén publicadas en GTM.
+Dentro del contenedor GTM → icono de engranaje **Admin** → columna
+Contenedor → **Configuración del contenedor** → marca **"Habilitar
+información general sobre el consentimiento" (Enable consent overview)** →
+Guardar. Con esto activado, GTM detecta solo las señales de consentimiento
+que el sitio ya manda con `gtag('consent', …)` antes de cargar GTM, y no
+disparará las tags de analítica hasta que `analytics_storage` esté
+`granted` (es decir, hasta que la persona acepte el banner de cookies).
+
+### 8.4. Variables de capa de datos (para leer los parámetros de los eventos)
+
+Espacio de trabajo → **Variables** → pestaña "Variables definidas por el
+usuario" → "Nueva" → tipo **Variable de capa de datos**. Crea estas
+cuatro (nombre de variable = nombre exacto en `dataLayer`):
+
+| Nombre de la variable en GTM | Nombre de variable de capa de datos |
+| :-- | :-- |
+| DLV - categoria | `categoria` |
+| DLV - numero_pedido | `numero_pedido` |
+| DLV - producto | `producto` |
+| DLV - valor | `valor` |
+
+### 8.5. Activadores (uno por evento personalizado)
+
+**Activadores** → "Nuevo" → tipo **Evento personalizado**. Crea tres,
+con el nombre de evento exactamente igual (sin comodines):
+
+- `EP - seleccion_equipo` → nombre de evento: `seleccion_equipo`
+- `EP - solicitud_inscripcion` → nombre de evento: `solicitud_inscripcion`
+- `EP - pedido_realizado` → nombre de evento: `pedido_realizado`
+
+### 8.6. Etiqueta de configuración de GA4
+
+**Etiquetas** → "Nueva" → tipo **Google Analytics: Configuración de GA4**
+(en contenedores nuevos puede llamarse "Etiqueta de Google"):
+
+- ID de medición: pega el `G-XXXXXXXXXX` del paso 8.1.
+- Activador: **All Pages** (Todas las páginas).
+- Nombre de la etiqueta: `GA4 - Configuración` → Guardar.
+
+### 8.7. Etiquetas de evento (una por cada evento de la tabla)
+
+Para cada una: **Etiquetas** → "Nueva" → tipo **Google Analytics: Evento
+de GA4** → en "Etiqueta de configuración" selecciona `GA4 - Configuración`
+(la del paso anterior).
+
+**a) Selección de equipo**
+- Nombre del evento: `seleccion_equipo`
+- Parámetros del evento: `categoria` = `{{DLV - categoria}}`
+- Activador: `EP - seleccion_equipo`
+- Nombre de la etiqueta: `GA4 - Selección de equipo`
+
+**b) Solicitud de inscripción**
+- Nombre del evento: `solicitud_inscripcion`
+- Sin parámetros adicionales
+- Activador: `EP - solicitud_inscripcion`
+- Nombre de la etiqueta: `GA4 - Solicitud de inscripción`
+
+**c) Pedido realizado**
+- Nombre del evento: `pedido_realizado`
+- Parámetros del evento: `numero_pedido` = `{{DLV - numero_pedido}}`,
+  `producto` = `{{DLV - producto}}`, `valor` = `{{DLV - valor}}`
+- Activador: `EP - pedido_realizado`
+- Nombre de la etiqueta: `GA4 - Pedido realizado`
+
+### 8.8. Probarlo con la Vista previa
+
+1. GTM → botón **Vista previa** (Preview, arriba a la derecha) → pega la
+   URL del sitio → Connect. Se abre el sitio con Tag Assistant conectado
+   en otra pestaña.
+2. Acepta el banner de cookies: en Tag Assistant debe verse un evento
+   `consent` con las cuatro señales en `granted` (antes de aceptar deben
+   salir en `denied`), y justo después debe dispararse `GA4 -
+   Configuración`.
+3. Cambia de equipo en el selector de `/calendario`: debe verse el evento
+   `seleccion_equipo` y disparar la etiqueta `GA4 - Selección de equipo`
+   con el parámetro `categoria` correcto.
+4. Envía el formulario de inscripción de prueba: debe verse
+   `solicitud_inscripcion` disparando su etiqueta.
+5. Haz un pedido de prueba en la tienda: debe verse `pedido_realizado`
+   disparando su etiqueta con los 3 parámetros rellenos.
+6. En GA4 → **Informes → Tiempo real** (o **Configurar → DebugView** con
+   el modo de depuración activado en Tag Assistant) deberían aparecer las
+   sesiones y los 3 eventos en cuanto se disparen sus etiquetas.
+
+### 8.9. Marcar los eventos clave (conversiones) en GA4
+
+Una vez lleguen datos reales: GA4 → Admin → columna Propiedad → **Eventos**
+→ busca `solicitud_inscripcion` y `pedido_realizado` → activa el interruptor
+**"Marcar como evento clave"** en ambos. Así aparecen como conversiones en
+los informes.
+
+### 8.10. Publicar el contenedor
+
+GTM → botón **Enviar** (Submit, arriba a la derecha) → nombre de versión
+p. ej. "Config inicial GA4 + eventos" → **Publicar**. Hasta este paso todo
+lo anterior solo se ve en modo Vista previa — nadie más recibe datos.
 
 ---
 
