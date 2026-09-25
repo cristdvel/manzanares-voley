@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-25T16:43:58.179Z",
+  "actualizado": "2026-09-25T23:08:13.599Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -25580,17 +25580,6 @@
               "aplazado": false
             },
             {
-              "id": 61168,
-              "jornada": 1,
-              "fechaHora": "2026-10-03T19:00:00.000Z",
-              "local": "CV Las Rozas B",
-              "visitante": "Saint Louis",
-              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 61163,
               "jornada": 1,
               "fechaHora": "2026-10-04T12:00:00.000Z",
@@ -25644,6 +25633,17 @@
               "local": "Stars Sport Madrid",
               "visitante": "B. M. 2 De Mayo",
               "pabellon": "Colegio Zazuar",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 61168,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T19:00:00.000Z",
+              "local": "CV Las Rozas B",
+              "visitante": "Saint Louis",
+              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
