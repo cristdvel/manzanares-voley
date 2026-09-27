@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-27T04:04:11.854Z",
+  "actualizado": "2026-09-27T13:34:28.582Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -15761,6 +15761,19 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "CV Las Rozas A",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 1,
+          "puntosFavor": 99,
+          "puntosContra": 75
+        },
+        {
+          "pos": 2,
           "equipo": "Feel Alcobendas Negro",
           "esManzanares": false,
           "pts": 3,
@@ -15773,7 +15786,7 @@
           "puntosContra": 68
         },
         {
-          "pos": 2,
+          "pos": 3,
           "equipo": "Cvleganes.com A",
           "esManzanares": false,
           "pts": 2,
@@ -15786,7 +15799,7 @@
           "puntosContra": 91
         },
         {
-          "pos": 3,
+          "pos": 4,
           "equipo": "Assa Abloy Sanse",
           "esManzanares": false,
           "pts": 2,
@@ -15799,7 +15812,7 @@
           "puntosContra": 97
         },
         {
-          "pos": 4,
+          "pos": 5,
           "equipo": "Baumit CV Collado Villalba",
           "esManzanares": false,
           "pts": 1,
@@ -15812,7 +15825,7 @@
           "puntosContra": 99
         },
         {
-          "pos": 5,
+          "pos": 6,
           "equipo": "Club Voleibol Móstoles A",
           "esManzanares": false,
           "pts": 1,
@@ -15825,7 +15838,7 @@
           "puntosContra": 105
         },
         {
-          "pos": 6,
+          "pos": 7,
           "equipo": "Ucam Torrejón A",
           "esManzanares": false,
           "pts": 0,
@@ -15838,7 +15851,7 @@
           "puntosContra": 96
         },
         {
-          "pos": 7,
+          "pos": 8,
           "equipo": "Manzanares Voley A",
           "esManzanares": true,
           "pts": 0,
@@ -15851,7 +15864,20 @@
           "puntosContra": 97
         },
         {
-          "pos": 8,
+          "pos": 9,
+          "equipo": "V-Valley CValcalá G1",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 1,
+          "setsContra": 3,
+          "puntosFavor": 75,
+          "puntosContra": 99
+        },
+        {
+          "pos": 10,
           "equipo": "CV Bulldogs A",
           "esManzanares": false,
           "pts": 0,
@@ -15862,32 +15888,6 @@
           "setsContra": 3,
           "puntosFavor": 68,
           "puntosContra": 76
-        },
-        {
-          "pos": 9,
-          "equipo": "CV Las Rozas A",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 10,
-          "equipo": "V-Valley CValcalá G1",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
         },
         {
           "pos": 11,
