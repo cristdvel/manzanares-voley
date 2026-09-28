@@ -33,6 +33,11 @@ import Clasificacion from "./Clasificacion.astro";
             <h3>{eq.nombre}</h3>
             <div class="team__div">{eq.division}</div>
             {eq.grupo && <div class="team__grupo">Grupo {eq.grupo}</div>}
+            {eq.plazas && (
+              <div class={`team__plazas${eq.plazas === "Completa" ? " team__plazas--completa" : " team__plazas--ok"}`}>
+                {eq.plazas}
+              </div>
+            )}
             {cat.id.startsWith("federado") && (
               eq.calendario && eq.grupoId ? (
                 <a href={`/calendario#equipo-${eq.grupoId}`} class="team__cal team__cal--ok team__cal--link">

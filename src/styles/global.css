@@ -277,6 +277,9 @@ p:last-child{margin-bottom:0}
 .team__cal--ok{color:var(--mzv-verde)}
 .team__cal--link{display:inline-block;text-decoration:none;cursor:pointer}
 .team__cal--link:hover{text-decoration:underline}
+.team__plazas{font-size:13px;font-weight:600;margin-top:10px}
+.team__plazas--ok{color:var(--mzv-verde)}
+.team__plazas--completa{color:var(--mzv-naranja)}
 
 /* ---------- Fotos de equipos ---------- */
 .team-photos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}

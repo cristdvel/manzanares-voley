@@ -17,6 +17,8 @@ export interface Equipo {
    * muestra bajo la división para no confundirlo con el nombre del equipo.
    */
   grupo?: string;
+  /** plazas libres del grupo de escuela, p. ej. "Quedan 2 plazas" o "Completa". */
+  plazas?: string;
 }
 
 export interface Categoria {
@@ -80,6 +82,22 @@ export const categorias: Categoria[] = [
     equipos: [
       { nombre: "Alevín", division: "Liga Municipal · Mixto" },
       { nombre: "Infantil", division: "Liga Municipal · Mixto" },
+    ],
+  },
+  {
+    id: "escuelas",
+    label: "Escuelas",
+    equipos: [
+      { nombre: "Mixto Sénior", division: "Escuela Cebada", plazas: "Completa" },
+      { nombre: "Juvenil Femenino", division: "Escuela Aluche", plazas: "Quedan plazas" },
+      { nombre: "Cadete Femenino 2012", division: "Escuela Cebada", plazas: "Quedan 2 plazas" },
+      { nombre: "Infantil Femenino 2013", division: "Escuela Fundí", plazas: "Queda 1 plaza" },
+      { nombre: "Cadete Femenino 2011", division: "Escuela Fundí", plazas: "Quedan 2 plazas" },
+      { nombre: "Cadete Femenino", division: "Escuela Aluche", plazas: "Quedan plazas" },
+      { nombre: "Infantil Femenino", division: "Escuela Aluche", plazas: "Quedan plazas" },
+      { nombre: "Infantil Mixto", division: "Escuela Gallur", plazas: "Quedan plazas" },
+      { nombre: "Alevín Masculino", division: "Escuela Cebada", plazas: "Quedan plazas" },
+      { nombre: "Alevín y Benjamín", division: "Escuela Gallur", plazas: "Quedan plazas" },
     ],
   },
 ];
