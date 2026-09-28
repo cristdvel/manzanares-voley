@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-27T19:35:11.105Z",
+  "actualizado": "2026-09-28T04:05:17.607Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -15839,6 +15839,19 @@
         },
         {
           "pos": 7,
+          "equipo": "VP Madrid A Amarillo Juvenil Femenino",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 1,
+          "puntosFavor": 92,
+          "puntosContra": 78
+        },
+        {
+          "pos": 8,
           "equipo": "Ucam Torrejón A",
           "esManzanares": false,
           "pts": 0,
@@ -15851,7 +15864,7 @@
           "puntosContra": 96
         },
         {
-          "pos": 8,
+          "pos": 9,
           "equipo": "Manzanares Voley A",
           "esManzanares": true,
           "pts": 0,
@@ -15864,7 +15877,20 @@
           "puntosContra": 97
         },
         {
-          "pos": 9,
+          "pos": 10,
+          "equipo": "Chv1995 A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 1,
+          "setsContra": 3,
+          "puntosFavor": 78,
+          "puntosContra": 92
+        },
+        {
+          "pos": 11,
           "equipo": "V-Valley CValcalá G1",
           "esManzanares": false,
           "pts": 0,
@@ -15877,7 +15903,7 @@
           "puntosContra": 99
         },
         {
-          "pos": 10,
+          "pos": 12,
           "equipo": "CV Bulldogs A",
           "esManzanares": false,
           "pts": 0,
@@ -15888,32 +15914,6 @@
           "setsContra": 3,
           "puntosFavor": 68,
           "puntosContra": 76
-        },
-        {
-          "pos": 11,
-          "equipo": "Chv1995 A",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 1,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 12,
-          "equipo": "VP Madrid A Amarillo Juvenil Femenino",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 1,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
         }
       ],
       "jornadas": [
