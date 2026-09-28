@@ -29,27 +29,38 @@ import { dirname, join } from "node:path";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-const { CF_ACCOUNT_ID, CF_KV_NAMESPACE_ID, CF_API_TOKEN, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY, VAPID_SUBJECT } =
-  process.env;
+// .trim() por si el secreto de GitHub se guardó con un salto de línea o
+// espacio de más al pegarlo — un token así rompe fetch() con "Headers.append:
+// ... is an invalid header value" en cuanto kvGet/kvPut necesitan usarlo.
+const {
+  CF_ACCOUNT_ID = "",
+  CF_KV_NAMESPACE_ID = "",
+  CF_API_TOKEN = "",
+  VAPID_PUBLIC_KEY = "",
+  VAPID_PRIVATE_KEY = "",
+  VAPID_SUBJECT = "",
+} = process.env;
 
-for (const [nombre, valor] of Object.entries({
-  CF_ACCOUNT_ID,
-  CF_KV_NAMESPACE_ID,
-  CF_API_TOKEN,
-  VAPID_PUBLIC_KEY,
-  VAPID_PRIVATE_KEY,
-  VAPID_SUBJECT,
-})) {
+const env = {
+  CF_ACCOUNT_ID: CF_ACCOUNT_ID.trim(),
+  CF_KV_NAMESPACE_ID: CF_KV_NAMESPACE_ID.trim(),
+  CF_API_TOKEN: CF_API_TOKEN.trim(),
+  VAPID_PUBLIC_KEY: VAPID_PUBLIC_KEY.trim(),
+  VAPID_PRIVATE_KEY: VAPID_PRIVATE_KEY.trim(),
+  VAPID_SUBJECT: VAPID_SUBJECT.trim(),
+};
+
+for (const [nombre, valor] of Object.entries(env)) {
   if (!valor) {
     console.error(`✗ Falta la variable de entorno ${nombre}.`);
     process.exit(1);
   }
 }
 
-webpush.setVapidDetails(VAPID_SUBJECT, VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY);
+webpush.setVapidDetails(env.VAPID_SUBJECT, env.VAPID_PUBLIC_KEY, env.VAPID_PRIVATE_KEY);
 
-const KV_BASE = `https://api.cloudflare.com/client/v4/accounts/${CF_ACCOUNT_ID}/storage/kv/namespaces/${CF_KV_NAMESPACE_ID}`;
-const kvHeaders = { Authorization: `Bearer ${CF_API_TOKEN}` };
+const KV_BASE = `https://api.cloudflare.com/client/v4/accounts/${env.CF_ACCOUNT_ID}/storage/kv/namespaces/${env.CF_KV_NAMESPACE_ID}`;
+const kvHeaders = { Authorization: `Bearer ${env.CF_API_TOKEN}` };
 
 async function kvListKeys(prefix) {
   const nombres = [];
