@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-28T10:47:39.751Z",
+  "actualizado": "2026-09-28T16:31:31.136Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -246,17 +246,6 @@
               "aplazado": false
             },
             {
-              "id": 59866,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Cde Vb Algete",
-              "visitante": "Club Voleibol Torrelodones A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 59867,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
@@ -302,6 +291,17 @@
               "direccion": "PLAZA DUQUE DE PASTRANA, 5",
               "mapa": "https://www.google.com/maps/search/?api=1&query=RECUERDO, COLEGIO PLAZA DUQUE DE PASTRANA, 5, MADRID",
               "jugado": false
+            },
+            {
+              "id": 59866,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T09:30:00.000Z",
+              "local": "Cde Vb Algete",
+              "visitante": "Club Voleibol Torrelodones A",
+              "pabellon": "Duque De Algete, Polideportivo Municipal",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -383,17 +383,6 @@
           "fecha": "2026-10-25T00:00:00.000Z",
           "partidos": [
             {
-              "id": 59878,
-              "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "Cde Vb Algete",
-              "visitante": "Cde Voleibol Colmenar A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 59879,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
@@ -448,6 +437,17 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
+            },
+            {
+              "id": 59878,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T11:30:00.000Z",
+              "local": "Cde Vb Algete",
+              "visitante": "Cde Voleibol Colmenar A",
+              "pabellon": "Duque De Algete, Polideportivo Municipal",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -4331,6 +4331,17 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 59598,
+              "jornada": 2,
+              "fechaHora": "2026-10-10T11:00:00.000Z",
+              "local": "CV Tres Cantos",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": "Espacio Enrique Mas, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 59595,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
@@ -4363,17 +4374,6 @@
               "esLocal": false,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 59598,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "CV Tres Cantos",
-              "visitante": "CV Collado Villalba A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 59599,
@@ -10461,6 +10461,17 @@
               "aplazado": false
             },
             {
+              "id": 72143,
+              "jornada": 2,
+              "fechaHora": "2026-10-10T16:00:00.000Z",
+              "local": "CV Getafe Verde",
+              "visitante": "A.D.perales Blanco",
+              "pabellon": "Ignacio Pinedo, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72140,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
@@ -10488,17 +10499,6 @@
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon E Cadete Femenino",
               "visitante": "Cvd Fuenlabrada Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 72143,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "CV Getafe Verde",
-              "visitante": "A.D.perales Blanco",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -14439,6 +14439,20 @@
               "aplazado": false
             },
             {
+              "id": 63235,
+              "jornada": 1,
+              "fechaHora": "2026-10-10T18:00:00.000Z",
+              "local": "CV Getafe Azul",
+              "visitante": "Manzanares Voley B",
+              "pabellon": "Ignacio Pinedo, Pabellon",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "C/ VELARDE S/N",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=IGNACIO PINEDO, PABELLON C/ VELARDE S/N, GETAFE",
+              "jugado": false
+            },
+            {
               "id": 63233,
               "jornada": 1,
               "fechaHora": "2026-10-11T00:00:00.000Z",
@@ -14459,18 +14473,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 63235,
-              "jornada": 1,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "CV Getafe Azul",
-              "visitante": "Manzanares Voley B",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 63237,
@@ -15544,13 +15546,15 @@
         {
           "id": 63235,
           "jornada": 1,
-          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "fechaHora": "2026-10-10T18:00:00.000Z",
           "local": "CV Getafe Azul",
           "visitante": "Manzanares Voley B",
-          "pabellon": null,
+          "pabellon": "Ignacio Pinedo, Pabellon",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "C/ VELARDE S/N",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=IGNACIO PINEDO, PABELLON C/ VELARDE S/N, GETAFE",
           "jugado": false
         },
         {
@@ -16080,6 +16084,20 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 56757,
+              "jornada": 3,
+              "fechaHora": "2026-10-10T15:00:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "Manzanares Voley A",
+              "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "AV. VIRGEN DEL VAL, 8",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=LA NEVERA (PABELLÓN DEMETRIO LOZANO) AV. VIRGEN DEL VAL, 8, ALCALÁ DE HENARES",
+              "jugado": false
+            },
+            {
               "id": 56752,
               "jornada": 3,
               "fechaHora": "2026-10-11T00:00:00.000Z",
@@ -16133,18 +16151,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 56757,
-              "jornada": 3,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "V-Valley CValcalá G1",
-              "visitante": "Manzanares Voley A",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
             }
           ]
         },
@@ -17568,13 +17574,15 @@
         {
           "id": 56757,
           "jornada": 3,
-          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "fechaHora": "2026-10-10T15:00:00.000Z",
           "local": "V-Valley CValcalá G1",
           "visitante": "Manzanares Voley A",
-          "pabellon": null,
+          "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "AV. VIRGEN DEL VAL, 8",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=LA NEVERA (PABELLÓN DEMETRIO LOZANO) AV. VIRGEN DEL VAL, 8, ALCALÁ DE HENARES",
           "jugado": false
         },
         {
@@ -21538,6 +21546,17 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 62599,
+              "jornada": 2,
+              "fechaHora": "2026-10-10T18:00:00.000Z",
+              "local": "CV Getafe Azul",
+              "visitante": "CV Guadarrama",
+              "pabellon": "Ignacio Pinedo, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 62602,
               "jornada": 2,
               "fechaHora": "2026-10-10T20:00:00.000Z",
@@ -21554,17 +21573,6 @@
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Descansa...",
               "visitante": "Club Voleibol Plaza Castilla",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 62599,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "CV Getafe Azul",
-              "visitante": "CV Guadarrama",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -23582,18 +23590,6 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
-              "id": 57288,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Manzanares Voley A",
-              "visitante": "Ucam Torrejón",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
-            },
-            {
               "id": 57289,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
@@ -23647,6 +23643,20 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 57288,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T17:30:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Ucam Torrejón",
+              "pabellon": "Colegio Greenfield",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
+              "jugado": false
             }
           ]
         },
@@ -25129,13 +25139,15 @@
         {
           "id": 57288,
           "jornada": 2,
-          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "fechaHora": "2026-10-11T17:30:00.000Z",
           "local": "Manzanares Voley A",
           "visitante": "Ucam Torrejón",
-          "pabellon": null,
+          "pabellon": "Colegio Greenfield",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
           "jugado": false
         },
         {
@@ -25663,22 +25675,36 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
-              "id": 61170,
+              "id": 61171,
               "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Cde Voleibol Colmenar B",
-              "visitante": "CV Bulldogs B Junior Femenino",
-              "pabellon": null,
+              "fechaHora": "2026-10-10T18:00:00.000Z",
+              "local": "Cd Newman B",
+              "visitante": "CV Las Rozas B",
+              "pabellon": "Club Deportivo Newman",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
             },
             {
-              "id": 61171,
+              "id": 61173,
+              "jornada": 2,
+              "fechaHora": "2026-10-10T18:00:00.000Z",
+              "local": "Manzanares Voley B Junior Femenino",
+              "visitante": "Stars Sport Madrid",
+              "pabellon": "Colegio Nueva Castilla (Nuevo)",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "CALLE MAZATERON, 12",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+              "jugado": false
+            },
+            {
+              "id": 61170,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Cd Newman B",
-              "visitante": "CV Las Rozas B",
+              "local": "Cde Voleibol Colmenar B",
+              "visitante": "CV Bulldogs B Junior Femenino",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -25694,18 +25720,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 61173,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Manzanares Voley B Junior Femenino",
-              "visitante": "Stars Sport Madrid",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 61174,
@@ -27779,13 +27793,15 @@
         {
           "id": 61173,
           "jornada": 2,
-          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "fechaHora": "2026-10-10T18:00:00.000Z",
           "local": "Manzanares Voley B Junior Femenino",
           "visitante": "Stars Sport Madrid",
-          "pabellon": null,
+          "pabellon": "Colegio Nueva Castilla (Nuevo)",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "CALLE MAZATERON, 12",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
           "jugado": false
         },
         {
@@ -28326,6 +28342,20 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 58085,
+              "jornada": 2,
+              "fechaHora": "2026-10-09T20:30:00.000Z",
+              "local": "Manzanares Voley Senior Femenino",
+              "visitante": "CV Sanse A",
+              "pabellon": "Colegio Greenfield",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
+              "jugado": false
+            },
+            {
               "id": 58081,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
@@ -28359,35 +28389,23 @@
               "aplazado": false
             },
             {
-              "id": 58084,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Salesianos San Miguel B",
-              "visitante": "Circe Fisioterapia CV Collado Villalba",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 58085,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Manzanares Voley Senior Femenino",
-              "visitante": "CV Sanse A",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
-            },
-            {
               "id": 58086,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "CV Majadahonda A",
               "visitante": "Abv Boadilla B",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 58084,
+              "jornada": 2,
+              "fechaHora": "2026-10-11T12:00:00.000Z",
+              "local": "Salesianos San Miguel B",
+              "visitante": "Circe Fisioterapia CV Collado Villalba",
+              "pabellon": "San Miguel, Colegio Salesianos",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -29873,13 +29891,15 @@
         {
           "id": 58085,
           "jornada": 2,
-          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "fechaHora": "2026-10-09T20:30:00.000Z",
           "local": "Manzanares Voley Senior Femenino",
           "visitante": "CV Sanse A",
-          "pabellon": null,
+          "pabellon": "Colegio Greenfield",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
           "jugado": false
         },
         {
@@ -30331,6 +30351,20 @@
               "aplazado": false
             },
             {
+              "id": 62180,
+              "jornada": 2,
+              "fechaHora": "2026-10-10T20:00:00.000Z",
+              "local": "Manzanares Voley",
+              "visitante": "Adc Sanfermin",
+              "pabellon": "Colegio Nueva Castilla (Nuevo)",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "CALLE MAZATERON, 12",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+              "jugado": false
+            },
+            {
               "id": 62178,
               "jornada": 2,
               "fechaHora": "2026-10-11T00:00:00.000Z",
@@ -30351,18 +30385,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 62180,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Manzanares Voley",
-              "visitante": "Adc Sanfermin",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 62181,
@@ -31388,13 +31410,15 @@
         {
           "id": 62180,
           "jornada": 2,
-          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "fechaHora": "2026-10-10T20:00:00.000Z",
           "local": "Manzanares Voley",
           "visitante": "Adc Sanfermin",
-          "pabellon": null,
+          "pabellon": "Colegio Nueva Castilla (Nuevo)",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "CALLE MAZATERON, 12",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
           "jugado": false
         },
         {
