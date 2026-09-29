@@ -442,15 +442,34 @@ lo anterior solo se ve en modo Vista previa — nadie más recibe datos.
 
 ## 9. Formulario de inscripción (email + Excel)
 
-El formulario de inscripción de la home (`#inscripciones`) funciona igual
-que los pedidos de la tienda: al enviarse, manda un email al club y guarda
-una fila en Google Sheets — reutiliza **las mismas** variables de entorno
-de Cloudflare que ya tienes configuradas para los pedidos
-(`RESEND_API_KEY`, `PEDIDOS_TO`, `PEDIDOS_FROM`, `SHEETS_WEBHOOK_URL`), así
-que **no hay nada nuevo que configurar en Cloudflare**.
+El formulario de inscripción de la home (`#inscripciones`) funciona como
+los pedidos de la tienda (email al club + fila en Google Sheets), pero con
+**su propio remitente y formato de email**, distinto del de "Tienda
+Manzanares Voley" — para que quien reciba el correo vea de un vistazo que
+es una inscripción y no un pedido.
 
-Lo único pendiente es actualizar el Apps Script de tu Google Sheet, porque
-ahora también sabe registrar inscripciones en una pestaña nueva
+Variables de entorno nuevas en Cloudflare Pages → tu proyecto → **Settings
+→ Environment variables** (entornos *Production* y *Preview*; `RESEND_API_KEY`
+y `SHEETS_WEBHOOK_URL` ya están puestas de cuando configuraste los pedidos,
+no hace falta repetirlas):
+
+```
+INSCRIPCIONES_FROM = Inscripciones Manzanares Voley <inscripciones@manzanaresvoley.com>
+INSCRIPCIONES_TO   = manzanaresvoley@gmail.com
+```
+
+> `INSCRIPCIONES_FROM` necesita que `inscripciones@` esté en el **mismo
+> dominio ya verificado en Resend** que usa `pedidos@` — si `manzanaresvoley.com`
+> ya está verificado (Resend → Domains), cualquier dirección `algo@manzanaresvoley.com`
+> funciona sin configurar nada más ahí. Si no pones esta variable, el
+> correo sale desde `onboarding@resend.dev` (funciona pero no del dominio
+> propio). `INSCRIPCIONES_TO` es opcional — sin ella cae en
+> `manzanaresvoley@gmail.com` igual que antes.
+
+Vuelve a desplegar (cualquier push) para que la variable esté disponible.
+
+Lo único pendiente además es actualizar el Apps Script de tu Google Sheet,
+porque ahora también sabe registrar inscripciones en una pestaña nueva
 **"Inscripciones"** (separada de "Pedidos"):
 
 1. Abre tu hoja de cálculo → **Extensiones → Apps Script**.
@@ -460,9 +479,11 @@ ahora también sabe registrar inscripciones en una pestaña nueva
    versión** (guardar el archivo no es suficiente, hay que publicar la
    nueva versión para que el cambio llegue a la web).
 4. Haz una inscripción de prueba desde la home: debería llegarte el email
-   a `manzanaresvoley@gmail.com` (o al `PEDIDOS_TO` que tengas configurado)
-   y aparecer una fila nueva en la pestaña **"Inscripciones"** de la hoja
-   (se crea sola la primera vez, igual que pasó con "Pedidos").
+   desde `inscripciones@manzanaresvoley.com` (o desde `onboarding@resend.dev`
+   si no configuraste `INSCRIPCIONES_FROM`) a `manzanaresvoley@gmail.com`
+   (o al `INSCRIPCIONES_TO` que tengas configurado), y aparecer una fila
+   nueva en la pestaña **"Inscripciones"** de la hoja (se crea sola la
+   primera vez, igual que pasó con "Pedidos").
 
 > La pestaña "Inscripciones" guarda: fecha, nombre del jugador/a, fecha de
 > nacimiento, categoría orientativa (calculada automáticamente por edad),

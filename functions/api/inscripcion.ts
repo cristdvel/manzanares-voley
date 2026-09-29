@@ -1,21 +1,23 @@
 /**
  * Cloudflare Pages Function — recibe una solicitud de inscripción del
- * formulario de la home, la envía por email al club y la registra en la
- * hoja de Google Sheets (pestaña "Inscripciones"), igual que los pedidos
- * de la tienda. Reutiliza las mismas variables de entorno que
- * functions/api/pedido.ts — ver DEPLOY.md §9.
+ * formulario de la home, la envía por email al club (con su propio
+ * remitente y formato, distinto del de los pedidos de la tienda) y la
+ * registra en la hoja de Google Sheets (pestaña "Inscripciones"). El envío
+ * a Sheets reutiliza SHEETS_WEBHOOK_URL de functions/api/pedido.ts — ver
+ * DEPLOY.md §9.
  *
  * Variables de entorno (Pages → Settings → Environment variables):
- *   RESEND_API_KEY     (obligatoria)  clave de API de Resend
- *   PEDIDOS_TO         (opcional)     destino; por defecto manzanaresvoley@gmail.com
- *   PEDIDOS_FROM       (opcional)     remitente verificado en Resend
- *   SHEETS_WEBHOOK_URL (opcional)     URL del Apps Script Web App que registra la inscripción
+ *   RESEND_API_KEY      (obligatoria)  clave de API de Resend
+ *   INSCRIPCIONES_TO    (opcional)     destino; por defecto manzanaresvoley@gmail.com
+ *   INSCRIPCIONES_FROM  (opcional)     remitente verificado en Resend, p. ej.
+ *                                      "Inscripciones Manzanares Voley <inscripciones@manzanaresvoley.com>"
+ *   SHEETS_WEBHOOK_URL  (opcional)     URL del Apps Script Web App que registra la inscripción
  */
 
 interface Env {
   RESEND_API_KEY: string;
-  PEDIDOS_TO?: string;
-  PEDIDOS_FROM?: string;
+  INSCRIPCIONES_TO?: string;
+  INSCRIPCIONES_FROM?: string;
   SHEETS_WEBHOOK_URL?: string;
 }
 
@@ -76,7 +78,10 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
 
   const html = `
     <div style="font-family:Arial,sans-serif;color:#212327;max-width:640px">
-      <h2 style="color:#DC3C14;margin:0 0 4px">Nueva solicitud de inscripción</h2>
+      <p style="margin:0 0 14px;text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:700;color:#A0C828">
+        Manzanares Voley · Escuela e inscripciones
+      </p>
+      <h2 style="color:#212327;margin:0 0 4px">Nueva solicitud de inscripción</h2>
       <p style="margin:0 0 18px;color:#666">${esc(new Date().toLocaleString("es-ES"))}</p>
       <h3 style="margin:0 0 6px">Deportista</h3>
       <p style="margin:0 0 18px">
@@ -101,8 +106,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
       "content-type": "application/json",
     },
     body: JSON.stringify({
-      from: env.PEDIDOS_FROM || "Manzanares Voley <onboarding@resend.dev>",
-      to: [env.PEDIDOS_TO || "manzanaresvoley@gmail.com"],
+      from: env.INSCRIPCIONES_FROM || "Inscripciones Manzanares Voley <onboarding@resend.dev>",
+      to: [env.INSCRIPCIONES_TO || "manzanaresvoley@gmail.com"],
       reply_to: email,
       subject: `Nueva inscripción — ${nombre}`,
       html,
