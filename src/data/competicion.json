@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-29T10:27:29.919Z",
+  "actualizado": "2026-09-29T17:47:01.409Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -235,6 +235,20 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 59871,
+              "jornada": 2,
+              "fechaHora": "2026-10-09T18:30:00.000Z",
+              "local": "Sad Recuerdo A",
+              "visitante": "Manzanares Voley A",
+              "pabellon": "Recuerdo, Colegio",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "PLAZA DUQUE DE PASTRANA, 5",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=RECUERDO, COLEGIO PLAZA DUQUE DE PASTRANA, 5, MADRID",
+              "jugado": false
+            },
+            {
               "id": 59867,
               "jornada": 2,
               "fechaHora": "2026-10-10T09:30:00.000Z",
@@ -277,20 +291,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 59871,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Sad Recuerdo A",
-              "visitante": "Manzanares Voley A",
-              "pabellon": "Recuerdo, Colegio",
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "direccion": "PLAZA DUQUE DE PASTRANA, 5",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=RECUERDO, COLEGIO PLAZA DUQUE DE PASTRANA, 5, MADRID",
-              "jugado": false
             },
             {
               "id": 59866,
@@ -1784,7 +1784,7 @@
         {
           "id": 59871,
           "jornada": 2,
-          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "fechaHora": "2026-10-09T18:30:00.000Z",
           "local": "Sad Recuerdo A",
           "visitante": "Manzanares Voley A",
           "pabellon": "Recuerdo, Colegio",
@@ -8352,6 +8352,17 @@
           "fecha": "2026-10-04T00:00:00.000Z",
           "partidos": [
             {
+              "id": 67154,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T09:45:00.000Z",
+              "local": "Nuestra Señora Del Pilar Cadete Femenino",
+              "visitante": "Stars Sport Madrid Azul",
+              "pabellon": "Nuestra Señora Del Pilar",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 67150,
               "jornada": 1,
               "fechaHora": "2026-10-03T10:00:00.000Z",
@@ -8394,17 +8405,6 @@
               "local": "Gsd Las Suertes",
               "visitante": "C.d.v. Vallecas Cadete Femenino",
               "pabellon": "Gsd Las Suertes",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 67154,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Nuestra Señora Del Pilar Cadete Femenino",
-              "visitante": "Stars Sport Madrid Azul",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -30315,17 +30315,6 @@
               "aplazado": false
             },
             {
-              "id": 62175,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Adc Sanfermin",
-              "visitante": "CV Nueva Castilla Senior Masculino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 62176,
               "jornada": 1,
               "fechaHora": "2026-10-04T16:00:00.000Z",
@@ -30357,6 +30346,17 @@
               "local": "CV Getafe Verde",
               "visitante": "Cde Parla Voley Ortopedia Parla Senior Masculino",
               "pabellon": "Cerrobuenavista, Polideportivo Municipal",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 62175,
+              "jornada": 1,
+              "fechaHora": "2026-10-04T18:30:00.000Z",
+              "local": "Adc Sanfermin",
+              "visitante": "CV Nueva Castilla Senior Masculino",
+              "pabellon": "Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
