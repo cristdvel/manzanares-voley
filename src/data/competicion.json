@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-09-29T23:29:05.179Z",
+  "actualizado": "2026-09-30T08:30:46.745Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -8427,6 +8427,17 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 67156,
+              "jornada": 2,
+              "fechaHora": "2026-10-07T20:00:00.000Z",
+              "local": "Las Nieves A",
+              "visitante": "C.d.v. Vallecas Cadete Femenino",
+              "pabellon": "Las Nieves, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 67160,
               "jornada": 2,
               "fechaHora": "2026-10-10T09:30:00.000Z",
@@ -8469,17 +8480,6 @@
               "local": "Stars Sport Madrid Azul",
               "visitante": "Gsd Las Suertes",
               "pabellon": "Colegio Zazuar",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 67156,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Las Nieves A",
-              "visitante": "C.d.v. Vallecas Cadete Femenino",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -10537,6 +10537,17 @@
           "fecha": "2026-10-18T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72149,
+              "jornada": 3,
+              "fechaHora": "2026-10-17T18:00:00.000Z",
+              "local": "Cvd Fuenlabrada Cadete Femenino",
+              "visitante": "CV Getafe Verde",
+              "pabellon": "La Cueva, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72146,
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
@@ -10569,17 +10580,6 @@
               "esLocal": false,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 72149,
-              "jornada": 3,
-              "fechaHora": "2026-10-18T00:00:00.000Z",
-              "local": "Cvd Fuenlabrada Cadete Femenino",
-              "visitante": "CV Getafe Verde",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 72150,
@@ -10683,6 +10683,17 @@
           "fecha": "2026-11-08T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72160,
+              "jornada": 5,
+              "fechaHora": "2026-11-07T20:00:00.000Z",
+              "local": "Cvd Fuenlabrada Cadete Femenino",
+              "visitante": "Avp A Pozo Red",
+              "pabellon": "La Cueva, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72158,
               "jornada": 5,
               "fechaHora": "2026-11-08T00:00:00.000Z",
@@ -10699,17 +10710,6 @@
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "A.D.perales Blanco",
               "visitante": "Cde Parla Voley Folder D Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 72160,
-              "jornada": 5,
-              "fechaHora": "2026-11-08T00:00:00.000Z",
-              "local": "Cvd Fuenlabrada Cadete Femenino",
-              "visitante": "Avp A Pozo Red",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -10829,22 +10829,22 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
-              "id": 72170,
+              "id": 72171,
               "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "A.D.perales Blanco",
-              "visitante": "Descansa...",
-              "pabellon": null,
+              "fechaHora": "2026-11-21T16:00:00.000Z",
+              "local": "Cvd Fuenlabrada Cadete Femenino",
+              "visitante": "CV Aranjuez",
+              "pabellon": "La Cueva, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
             },
             {
-              "id": 72171,
+              "id": 72170,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Cvd Fuenlabrada Cadete Femenino",
-              "visitante": "CV Aranjuez",
+              "local": "A.D.perales Blanco",
+              "visitante": "Descansa...",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -11059,6 +11059,17 @@
               "aplazado": false
             },
             {
+              "id": 72193,
+              "jornada": 10,
+              "fechaHora": "2026-12-19T20:00:00.000Z",
+              "local": "Cvd Fuenlabrada Cadete Femenino",
+              "visitante": "CV Nueva Castilla B Cadete Femenino",
+              "pabellon": "La Cueva, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72188,
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
@@ -11098,17 +11109,6 @@
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "A.D.perales Blanco",
               "visitante": "C.d.b.colegio Aquila 2",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 72193,
-              "jornada": 10,
-              "fechaHora": "2026-12-20T00:00:00.000Z",
-              "local": "Cvd Fuenlabrada Cadete Femenino",
-              "visitante": "CV Nueva Castilla B Cadete Femenino",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -11267,6 +11267,17 @@
           "fecha": "2027-01-24T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72208,
+              "jornada": 13,
+              "fechaHora": "2027-01-23T20:00:00.000Z",
+              "local": "Cvd Fuenlabrada Cadete Femenino",
+              "visitante": "Cde Parla Voley Maxcolchon E Cadete Femenino",
+              "pabellon": "La Cueva, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72206,
               "jornada": 13,
               "fechaHora": "2027-01-24T00:00:00.000Z",
@@ -11283,17 +11294,6 @@
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "CV Nueva Castilla B Cadete Femenino",
               "visitante": "Mirasur School Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 72208,
-              "jornada": 13,
-              "fechaHora": "2027-01-24T00:00:00.000Z",
-              "local": "Cvd Fuenlabrada Cadete Femenino",
-              "visitante": "Cde Parla Voley Maxcolchon E Cadete Femenino",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -11413,6 +11413,20 @@
           "fecha": "2027-02-07T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72221,
+              "jornada": 15,
+              "fechaHora": "2027-02-06T16:00:00.000Z",
+              "local": "Cvd Fuenlabrada Cadete Femenino",
+              "visitante": "Manzanares Voley C Cadete Femenino",
+              "pabellon": "La Cueva, Polideportivo",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "CUBA, 33",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=LA CUEVA, POLIDEPORTIVO CUBA, 33, FUENLABRADA",
+              "jugado": false
+            },
+            {
               "id": 72218,
               "jornada": 15,
               "fechaHora": "2027-02-07T00:00:00.000Z",
@@ -11444,18 +11458,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 72221,
-              "jornada": 15,
-              "fechaHora": "2027-02-07T00:00:00.000Z",
-              "local": "Cvd Fuenlabrada Cadete Femenino",
-              "visitante": "Manzanares Voley C Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 72222,
@@ -11559,6 +11561,17 @@
           "fecha": "2027-02-28T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72234,
+              "jornada": 17,
+              "fechaHora": "2027-02-27T16:00:00.000Z",
+              "local": "Cvd Fuenlabrada Cadete Femenino",
+              "visitante": "Cde Parla Voley Folder D Cadete Femenino",
+              "pabellon": "La Cueva, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72230,
               "jornada": 17,
               "fechaHora": "2027-02-28T00:00:00.000Z",
@@ -11598,17 +11611,6 @@
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "CV Nueva Castilla B Cadete Femenino",
               "visitante": "Avp A Pozo Red",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 72234,
-              "jornada": 17,
-              "fechaHora": "2027-02-28T00:00:00.000Z",
-              "local": "Cvd Fuenlabrada Cadete Femenino",
-              "visitante": "Cde Parla Voley Folder D Cadete Femenino",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -11705,6 +11707,17 @@
           "fecha": "2027-03-14T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72247,
+              "jornada": 19,
+              "fechaHora": "2027-03-13T16:00:00.000Z",
+              "local": "Cvd Fuenlabrada Cadete Femenino",
+              "visitante": "A.D.perales Blanco",
+              "pabellon": "La Cueva, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72242,
               "jornada": 19,
               "fechaHora": "2027-03-14T00:00:00.000Z",
@@ -11755,17 +11768,6 @@
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "CV Nueva Castilla B Cadete Femenino",
               "visitante": "CV Aranjuez",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 72247,
-              "jornada": 19,
-              "fechaHora": "2027-03-14T00:00:00.000Z",
-              "local": "Cvd Fuenlabrada Cadete Femenino",
-              "visitante": "A.D.perales Blanco",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -11924,22 +11926,22 @@
           "fecha": "2027-04-18T00:00:00.000Z",
           "partidos": [
             {
-              "id": 72260,
+              "id": 72261,
               "jornada": 22,
-              "fechaHora": "2027-04-18T00:00:00.000Z",
-              "local": "Descansa...",
-              "visitante": "CV Nueva Castilla B Cadete Femenino",
-              "pabellon": null,
+              "fechaHora": "2027-04-17T16:00:00.000Z",
+              "local": "Cvd Fuenlabrada Cadete Femenino",
+              "visitante": "C.d.b.colegio Aquila 2",
+              "pabellon": "La Cueva, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
             },
             {
-              "id": 72261,
+              "id": 72260,
               "jornada": 22,
               "fechaHora": "2027-04-18T00:00:00.000Z",
-              "local": "Cvd Fuenlabrada Cadete Femenino",
-              "visitante": "C.d.b.colegio Aquila 2",
+              "local": "Descansa...",
+              "visitante": "CV Nueva Castilla B Cadete Femenino",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -12169,13 +12171,15 @@
         {
           "id": 72221,
           "jornada": 15,
-          "fechaHora": "2027-02-07T00:00:00.000Z",
+          "fechaHora": "2027-02-06T16:00:00.000Z",
           "local": "Cvd Fuenlabrada Cadete Femenino",
           "visitante": "Manzanares Voley C Cadete Femenino",
-          "pabellon": null,
+          "pabellon": "La Cueva, Polideportivo",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "CUBA, 33",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=LA CUEVA, POLIDEPORTIVO CUBA, 33, FUENLABRADA",
           "jugado": false
         },
         {
@@ -30368,6 +30372,17 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 62181,
+              "jornada": 2,
+              "fechaHora": "2026-10-10T12:00:00.000Z",
+              "local": "CV Nueva Castilla Senior Masculino",
+              "visitante": "Sad Municipal Loeches",
+              "pabellon": "Nueva Castilla",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 62182,
               "jornada": 2,
               "fechaHora": "2026-10-10T17:00:00.000Z",
@@ -30399,17 +30414,6 @@
               "local": "Descansa...",
               "visitante": "CV Getafe Verde",
               "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 62181,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T12:00:00.000Z",
-              "local": "CV Nueva Castilla Senior Masculino",
-              "visitante": "Sad Municipal Loeches",
-              "pabellon": "Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
