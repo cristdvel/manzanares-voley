@@ -8,6 +8,7 @@ import Clasificacion from "../components/Clasificacion.astro";
 import Resultados from "../components/Resultados.astro";
 import { temporada, actualizadoTexto, proximos, grupos } from "../data/competicion";
 import { site } from "../data/site";
+import { amistososVigentes } from "../data/amistosos";
 
 const eventSchemas = proximos
   .filter((p) => p.fechaHora)
@@ -44,7 +45,9 @@ const eventSchemas = proximos
         <h1>Calendario y clasificación</h1>
         <p>Partidos, resultados y clasificación de los equipos federados de Manzanares Voley, con datos oficiales de la Federación de Madrid de Voleibol.</p>
         <div class="page-cta">
-          <a href="#amistosos" class="btn btn--outline-light">Ver amistosos</a>
+          {amistososVigentes.length > 0 && (
+            <a href="#amistosos" class="btn btn--outline-light">Ver amistosos</a>
+          )}
           <button type="button" id="hero-ver-calendario" class="btn btn--outline-light">Ver calendario</button>
           <button type="button" id="hero-ver-clasificacion" class="btn btn--primary">Ver clasificación</button>
         </div>

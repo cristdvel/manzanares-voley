@@ -2,7 +2,7 @@
 // Tabs + listado de amistosos por categoría, sin envoltorio de sección:
 // se usa tanto en la página /calendario (dentro de <Amistosos />) como
 // empotrado en el toggle de la home (ver <Partidos />).
-import { amistosos } from "../data/amistosos";
+import { amistososVigentes as amistosos } from "../data/amistosos";
 ---
 <div class="tabs" data-tabs="amistosos" role="tablist" aria-label="Categorías">
   {amistosos.map((c, i) => (

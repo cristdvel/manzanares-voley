@@ -1,11 +1,14 @@
 ---
 import { proximos, ultimos, temporada, fechaCorta, horaCorta } from "../data/competicion";
+import { amistososVigentes } from "../data/amistosos";
 import AmistososTabs from "./AmistososTabs.astro";
 import PushSub from "./PushSub.astro";
 
 const PAGINA = 3;
-const paginas = Array.from({ length: Math.ceil(proximos.length / PAGINA) }, (_, i) =>
-  proximos.slice(i * PAGINA, i * PAGINA + PAGINA),
+const MAX_PAGINAS = 2;
+const visibles = proximos.slice(0, PAGINA * MAX_PAGINAS);
+const paginas = Array.from({ length: Math.ceil(visibles.length / PAGINA) }, (_, i) =>
+  visibles.slice(i * PAGINA, i * PAGINA + PAGINA),
 );
 ---
 <div class="section">
@@ -84,7 +87,7 @@ const paginas = Array.from({ length: Math.ceil(proximos.length / PAGINA) }, (_, 
         </a>
       )}
 
-      {paginas.length === 0 && ultimos.length > 0 ? (
+      {paginas.length === 0 && ultimos.length > 0 && (
         <div class="partidos__grid">
           {ultimos.slice(0, 3).map((p) => (
             <article class="match">
@@ -98,19 +101,21 @@ const paginas = Array.from({ length: Math.ceil(proximos.length / PAGINA) }, (_, 
             </article>
           ))}
         </div>
-      ) : (
-        <p class="match__empty">El calendario de la temporada se publicará aquí en cuanto la Federación de Madrid lo confirme.</p>
       )}
     </div>
 
-    <div id="vista-amistosos" hidden>
-      <AmistososTabs />
-    </div>
+    {amistososVigentes.length > 0 && (
+      <div id="vista-amistosos" hidden>
+        <AmistososTabs />
+      </div>
+    )}
 
     <div class="partidos__ctas">
-      <button type="button" class="btn btn--outline" id="toggle-amistosos" aria-expanded="false">
-        🏐 Ver amistosos
-      </button>
+      {amistososVigentes.length > 0 && (
+        <button type="button" class="btn btn--outline" id="toggle-amistosos" aria-expanded="false">
+          🏐 Ver amistosos
+        </button>
+      )}
       <a href="/calendario" class="btn btn--outline">Ver calendario y clasificación →</a>
       <PushSub />
     </div>

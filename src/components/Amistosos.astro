@@ -1,10 +1,13 @@
 ---
 import AmistososTabs from "./AmistososTabs.astro";
+import { amistososVigentes } from "../data/amistosos";
 ---
-<div class="section" id="amistosos">
-  <div class="container">
-    <span class="eyebrow">Pretemporada</span>
-    <h2 class="section-title">Amistosos por categoría</h2>
-    <AmistososTabs />
+{amistososVigentes.length > 0 && (
+  <div class="section" id="amistosos">
+    <div class="container">
+      <span class="eyebrow">Pretemporada</span>
+      <h2 class="section-title">Amistosos por categoría</h2>
+      <AmistososTabs />
+    </div>
   </div>
-</div>
+)}
