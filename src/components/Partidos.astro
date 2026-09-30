@@ -70,6 +70,10 @@ const paginas = Array.from({ length: Math.ceil(visibles.length / PAGINA) }, (_, 
           >
             ›
           </button>
+
+          <a href="/calendario" class="btn btn--outline partidos__ver-mas" id="ver-mas-partidos" hidden>
+            Ver más partidos →
+          </a>
         </div>
       ) : null}
 
@@ -79,12 +83,6 @@ const paginas = Array.from({ length: Math.ceil(visibles.length / PAGINA) }, (_, 
             <span class={`partidos-slider__dot${i === 0 ? " active" : ""}`} data-pagina={i}></span>
           ))}
         </div>
-      )}
-
-      {paginas.length > 0 && (
-        <a href="/calendario" class="btn btn--outline partidos__ver-mas" id="ver-mas-partidos" hidden>
-          Ver más partidos →
-        </a>
       )}
 
       {paginas.length === 0 && ultimos.length > 0 && (

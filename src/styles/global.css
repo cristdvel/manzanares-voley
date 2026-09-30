@@ -186,7 +186,7 @@ p:last-child{margin-bottom:0}
 
 /* ---------- Partidos ---------- */
 .partidos__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:0}
-.partidos__ver-mas{display:block;width:max-content;margin:24px auto 0}
+.partidos__ver-mas{flex:none;white-space:nowrap}
 
 .partidos-slider{position:relative;display:flex;align-items:center;gap:12px;margin-bottom:16px}
 .partidos-slider__viewport{overflow:hidden;flex:1;min-width:0}
@@ -202,8 +202,10 @@ p:last-child{margin-bottom:0}
 .partidos-slider__dot{width:8px;height:8px;border-radius:50%;background:var(--mzv-borde);cursor:pointer}
 .partidos-slider__dot.active{background:var(--mzv-naranja)}
 @media (max-width:700px){
-  .partidos-slider{gap:6px}
+  .partidos-slider{gap:6px;flex-wrap:wrap}
   .partidos-slider__arrow{width:36px;height:36px;font-size:17px}
+  .partidos-slider__viewport{flex-basis:100%;order:-1}
+  .partidos__ver-mas{font-size:13px;padding:10px 14px}
 }
 .match{
   border:1px solid var(--mzv-borde);border-radius:10px;padding:28px;text-align:center;background:#fff;
