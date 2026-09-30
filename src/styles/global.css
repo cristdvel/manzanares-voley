@@ -198,7 +198,7 @@ p:last-child{margin-bottom:0}
   display:flex;align-items:center;justify-content:center;transition:background .2s ease,color .2s ease;
 }
 .partidos-slider__arrow:hover{background:var(--mzv-naranja);color:#fff;border-color:var(--mzv-naranja)}
-.partidos-slider__dots{display:flex;justify-content:center;gap:8px;margin:18px 0 0}
+.partidos-slider__dots{display:flex;justify-content:center;gap:8px;margin:18px 0 32px}
 .partidos-slider__dot{width:8px;height:8px;border-radius:50%;background:var(--mzv-borde);cursor:pointer}
 .partidos-slider__dot.active{background:var(--mzv-naranja)}
 @media (max-width:700px){
