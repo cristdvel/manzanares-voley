@@ -155,7 +155,7 @@ async function main() {
   const proximos = todos
     .filter((p) => !p.jugado && p.fechaHora && new Date(p.fechaHora).getTime() >= ahora - 864e5)
     .sort((a, b) => a.fechaHora.localeCompare(b.fechaHora))
-    .slice(0, 8);
+    .slice(0, 30);
   const ultimos = todos
     .filter((p) => p.jugado)
     .sort((a, b) => (b.fechaHora || "").localeCompare(a.fechaHora || ""))

@@ -3,7 +3,8 @@ import { proximos, ultimos, temporada, fechaCorta, horaCorta } from "../data/com
 import AmistososTabs from "./AmistososTabs.astro";
 import PushSub from "./PushSub.astro";
 
-const lista = proximos.slice(0, 3);
+const resumen = proximos.slice(0, 3);
+const resto = proximos.slice(3);
 ---
 <div class="section">
   <div class="container">
@@ -11,32 +12,73 @@ const lista = proximos.slice(0, 3);
     <h2 class="section-title" id="partidos-title">Próximos partidos</h2>
 
     <div id="vista-proximos">
-      {lista.length > 0 ? (
-        <div class="partidos__grid">
-          {lista.map((p) => (
-            <article class="match">
-              <span class="badge">{p.categoria}</span>
-              <p class="match__teams">
-                <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
-                <span class="vs">vs</span>
-                <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
-              </p>
-              <p class="match__meta">
-                Jornada {p.jornada} · {fechaCorta(p.fechaHora)}{horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
-                {p.pabellon && (
-                  <>
-                    <br />
-                    {p.mapa ? (
-                      <a href={p.mapa} target="_blank" rel="noopener">📍 {p.pabellon}</a>
-                    ) : (
-                      p.pabellon
-                    )}
-                  </>
-                )}
-              </p>
-            </article>
-          ))}
-        </div>
+      {resumen.length > 0 ? (
+        <>
+          <div class="partidos__grid">
+            {resumen.map((p) => (
+              <article class="match">
+                <span class="badge">{p.categoria}</span>
+                <p class="match__teams">
+                  <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
+                  <span class="vs">vs</span>
+                  <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
+                </p>
+                <p class="match__meta">
+                  Jornada {p.jornada} · {fechaCorta(p.fechaHora)}{horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
+                  {p.pabellon && (
+                    <>
+                      <br />
+                      {p.mapa ? (
+                        <a href={p.mapa} target="_blank" rel="noopener">📍 {p.pabellon}</a>
+                      ) : (
+                        p.pabellon
+                      )}
+                    </>
+                  )}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          {resto.length > 0 && (
+            <>
+              <div class="partidos__grid" id="partidos-resto" hidden>
+                {resto.map((p) => (
+                  <article class="match">
+                    <span class="badge">{p.categoria}</span>
+                    <p class="match__teams">
+                      <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
+                      <span class="vs">vs</span>
+                      <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
+                    </p>
+                    <p class="match__meta">
+                      Jornada {p.jornada} · {fechaCorta(p.fechaHora)}{horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
+                      {p.pabellon && (
+                        <>
+                          <br />
+                          {p.mapa ? (
+                            <a href={p.mapa} target="_blank" rel="noopener">📍 {p.pabellon}</a>
+                          ) : (
+                            p.pabellon
+                          )}
+                        </>
+                      )}
+                    </p>
+                  </article>
+                ))}
+              </div>
+              <button
+                type="button"
+                class="btn btn--outline partidos__ver-todos"
+                id="toggle-resto"
+                aria-expanded="false"
+                data-total={proximos.length}
+              >
+                Ver todos los partidos de esta jornada ({proximos.length})
+              </button>
+            </>
+          )}
+        </>
       ) : ultimos.length > 0 ? (
         <div class="partidos__grid">
           {ultimos.slice(0, 3).map((p) => (
@@ -71,6 +113,18 @@ const lista = proximos.slice(0, 3);
 </div>
 
 <script>
+  const toggleResto = document.getElementById("toggle-resto") as HTMLButtonElement | null;
+  const partidosResto = document.getElementById("partidos-resto") as HTMLDivElement | null;
+
+  toggleResto?.addEventListener("click", () => {
+    const mostrar = partidosResto!.hidden;
+    partidosResto!.hidden = !mostrar;
+    toggleResto.setAttribute("aria-expanded", String(mostrar));
+    toggleResto.textContent = mostrar
+      ? "Ver menos partidos"
+      : `Ver todos los partidos de esta jornada (${toggleResto.dataset.total})`;
+  });
+
   const toggleBtn = document.getElementById("toggle-amistosos") as HTMLButtonElement | null;
   const eyebrow = document.getElementById("partidos-eyebrow");
   const title = document.getElementById("partidos-title");
