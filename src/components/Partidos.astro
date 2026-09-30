@@ -3,8 +3,10 @@ import { proximos, ultimos, temporada, fechaCorta, horaCorta } from "../data/com
 import AmistososTabs from "./AmistososTabs.astro";
 import PushSub from "./PushSub.astro";
 
-const resumen = proximos.slice(0, 3);
-const resto = proximos.slice(3);
+const PAGINA = 3;
+const paginas = Array.from({ length: Math.ceil(proximos.length / PAGINA) }, (_, i) =>
+  proximos.slice(i * PAGINA, i * PAGINA + PAGINA),
+);
 ---
 <div class="section">
   <div class="container">
@@ -12,74 +14,77 @@ const resto = proximos.slice(3);
     <h2 class="section-title" id="partidos-title">Próximos partidos</h2>
 
     <div id="vista-proximos">
-      {resumen.length > 0 ? (
-        <>
-          <div class="partidos__grid">
-            {resumen.map((p) => (
-              <article class="match">
-                <span class="badge">{p.categoria}</span>
-                <p class="match__teams">
-                  <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
-                  <span class="vs">vs</span>
-                  <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
-                </p>
-                <p class="match__meta">
-                  Jornada {p.jornada} · {fechaCorta(p.fechaHora)}{horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
-                  {p.pabellon && (
-                    <>
-                      <br />
-                      {p.mapa ? (
-                        <a href={p.mapa} target="_blank" rel="noopener">📍 {p.pabellon}</a>
-                      ) : (
-                        p.pabellon
-                      )}
-                    </>
-                  )}
-                </p>
-              </article>
-            ))}
+      {paginas.length > 0 ? (
+        <div class="partidos-slider">
+          <button
+            type="button"
+            class="partidos-slider__arrow partidos-slider__arrow--prev"
+            id="slider-prev"
+            aria-label="Partidos anteriores"
+            hidden
+          >
+            ‹
+          </button>
+
+          <div class="partidos-slider__viewport">
+            <div class="partidos-slider__track" id="slider-track" style={`--paginas:${paginas.length}`}>
+              {paginas.map((pagina) => (
+                <div class="partidos-slider__pagina partidos__grid">
+                  {pagina.map((p) => (
+                    <article class="match">
+                      <span class="badge">{p.categoria}</span>
+                      <p class="match__teams">
+                        <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
+                        <span class="vs">vs</span>
+                        <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
+                      </p>
+                      <p class="match__meta">
+                        Jornada {p.jornada} · {fechaCorta(p.fechaHora)}{horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
+                        {p.pabellon && (
+                          <>
+                            <br />
+                            {p.mapa ? (
+                              <a href={p.mapa} target="_blank" rel="noopener">📍 {p.pabellon}</a>
+                            ) : (
+                              p.pabellon
+                            )}
+                          </>
+                        )}
+                      </p>
+                    </article>
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
 
-          {resto.length > 0 && (
-            <>
-              <div class="partidos__grid" id="partidos-resto" hidden>
-                {resto.map((p) => (
-                  <article class="match">
-                    <span class="badge">{p.categoria}</span>
-                    <p class="match__teams">
-                      <span class={p.esLocal ? "is-mzv" : ""}>{p.local}</span>
-                      <span class="vs">vs</span>
-                      <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
-                    </p>
-                    <p class="match__meta">
-                      Jornada {p.jornada} · {fechaCorta(p.fechaHora)}{horaCorta(p.fechaHora) ? ` · ${horaCorta(p.fechaHora)}` : ""}
-                      {p.pabellon && (
-                        <>
-                          <br />
-                          {p.mapa ? (
-                            <a href={p.mapa} target="_blank" rel="noopener">📍 {p.pabellon}</a>
-                          ) : (
-                            p.pabellon
-                          )}
-                        </>
-                      )}
-                    </p>
-                  </article>
-                ))}
-              </div>
-              <button
-                type="button"
-                class="btn btn--outline partidos__ver-todos"
-                id="toggle-resto"
-                aria-expanded="false"
-                data-total={proximos.length}
-              >
-                Ver todos los partidos de esta jornada ({proximos.length})
-              </button>
-            </>
-          )}
-        </>
-      ) : ultimos.length > 0 ? (
+          <button
+            type="button"
+            class="partidos-slider__arrow partidos-slider__arrow--next"
+            id="slider-next"
+            aria-label="Más partidos"
+            hidden={paginas.length <= 1}
+          >
+            ›
+          </button>
+        </div>
+      ) : null}
+
+      {paginas.length > 1 && (
+        <div class="partidos-slider__dots" id="slider-dots" role="tablist" aria-label="Página de partidos">
+          {paginas.map((_, i) => (
+            <span class={`partidos-slider__dot${i === 0 ? " active" : ""}`} data-pagina={i}></span>
+          ))}
+        </div>
+      )}
+
+      {paginas.length > 0 && (
+        <a href="/calendario" class="btn btn--outline partidos__ver-mas" id="ver-mas-partidos" hidden>
+          Ver más partidos →
+        </a>
+      )}
+
+      {paginas.length === 0 && ultimos.length > 0 ? (
         <div class="partidos__grid">
           {ultimos.slice(0, 3).map((p) => (
             <article class="match">
@@ -113,17 +118,43 @@ const resto = proximos.slice(3);
 </div>
 
 <script>
-  const toggleResto = document.getElementById("toggle-resto") as HTMLButtonElement | null;
-  const partidosResto = document.getElementById("partidos-resto") as HTMLDivElement | null;
+  // ---- Slider de "Próximos partidos": páginas de 3 en 3 con flechas ----
+  const track = document.getElementById("slider-track") as HTMLDivElement | null;
+  const prevBtn = document.getElementById("slider-prev") as HTMLButtonElement | null;
+  const nextBtn = document.getElementById("slider-next") as HTMLButtonElement | null;
+  const dots = Array.from(document.querySelectorAll<HTMLSpanElement>(".partidos-slider__dot"));
+  const verMas = document.getElementById("ver-mas-partidos") as HTMLAnchorElement | null;
 
-  toggleResto?.addEventListener("click", () => {
-    const mostrar = partidosResto!.hidden;
-    partidosResto!.hidden = !mostrar;
-    toggleResto.setAttribute("aria-expanded", String(mostrar));
-    toggleResto.textContent = mostrar
-      ? "Ver menos partidos"
-      : `Ver todos los partidos de esta jornada (${toggleResto.dataset.total})`;
-  });
+  if (track) {
+    const totalPaginas = Number(track.style.getPropertyValue("--paginas")) || 1;
+    let pagina = 0;
+
+    function render() {
+      if (!track) return;
+      track.style.transform = `translateX(-${pagina * 100}%)`;
+      if (prevBtn) prevBtn.hidden = pagina === 0;
+      if (nextBtn) nextBtn.hidden = pagina >= totalPaginas - 1;
+      if (verMas) verMas.hidden = pagina < totalPaginas - 1;
+      dots.forEach((d, i) => d.classList.toggle("active", i === pagina));
+    }
+
+    prevBtn?.addEventListener("click", () => {
+      pagina = Math.max(0, pagina - 1);
+      render();
+    });
+    nextBtn?.addEventListener("click", () => {
+      pagina = Math.min(totalPaginas - 1, pagina + 1);
+      render();
+    });
+    dots.forEach((d, i) => {
+      d.addEventListener("click", () => {
+        pagina = i;
+        render();
+      });
+    });
+
+    render();
+  }
 
   const toggleBtn = document.getElementById("toggle-amistosos") as HTMLButtonElement | null;
   const eyebrow = document.getElementById("partidos-eyebrow");
