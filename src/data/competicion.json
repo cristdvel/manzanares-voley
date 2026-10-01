@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-01T11:32:51.801Z",
+  "actualizado": "2026-10-01T20:50:28.443Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -25747,23 +25747,23 @@
               "jugado": false
             },
             {
+              "id": 61175,
+              "jornada": 2,
+              "fechaHora": "2026-10-10T18:00:00.000Z",
+              "local": "CV Yma Majadahonda Junior Femenino",
+              "visitante": "Chv1995 Arganzuela",
+              "pabellon": "Principe Felipe, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 61172,
               "jornada": 2,
               "fechaHora": "2026-10-10T18:30:00.000Z",
               "local": "Saint Louis Morillon",
               "visitante": "CV Getafe Azul",
               "pabellon": "Colegio Saint Louis Des Francais",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 61175,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "CV Yma Majadahonda Junior Femenino",
-              "visitante": "Chv1995 Arganzuela",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
