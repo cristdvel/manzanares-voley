@@ -1,13 +1,17 @@
 /**
  * Cloudflare Pages Function — recibe un pedido de la tienda con el comprobante
- * de pago adjunto, envía por email al club el pedido completo (con adjunto) y
- * al comprador una confirmación con su nº de pedido, y lo registra en una
- * hoja de Google Sheets (vía un Apps Script Web App) para tener un listado
- * descargable de todos los pedidos. Ver DEPLOY.md §6.
+ * de pago adjunto, envía al comprador una confirmación con su nº de pedido, y
+ * lo registra en una hoja de Google Sheets (vía un Apps Script Web App), que
+ * también guarda el comprobante en Drive. Ver DEPLOY.md §6.
+ *
+ * El club ya NO recibe un email por cada pedido — solo se entera por la hoja
+ * de cálculo, que resume y manda por email cuántos pedidos nuevos hay los
+ * lunes, miércoles y viernes (lo hace el propio Apps Script, ver
+ * scripts/apps-script-pedidos.gs → enviarResumenPeriodico).
  *
  * Variables de entorno (Pages → Settings → Environment variables):
- *   RESEND_API_KEY     (obligatoria)  clave de API de Resend
- *   PEDIDOS_TO         (opcional)     destino; por defecto manzanaresvoley@gmail.com
+ *   RESEND_API_KEY     (obligatoria)  clave de API de Resend (confirmación al comprador)
+ *   PEDIDOS_TO         (opcional)     reply-to de la confirmación; por defecto manzanaresvoley@gmail.com
  *   PEDIDOS_FROM       (opcional)     remitente verificado en Resend
  *   SHEETS_WEBHOOK_URL (opcional)     URL del Apps Script Web App que registra el pedido
  */
@@ -125,61 +129,13 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
     )
     .join("");
 
-  const html = `
-    <div style="font-family:Arial,sans-serif;color:#212327;max-width:640px">
-      <h2 style="color:#DC3C14;margin:0 0 4px">Nuevo pedido de la tienda — ${esc(numero)}</h2>
-      <p style="margin:0 0 18px;color:#666">${esc(new Date().toLocaleString("es-ES"))}</p>
-      <h3 style="margin:0 0 6px">Cliente</h3>
-      <p style="margin:0 0 18px">
-        <strong>${esc(nombre)}</strong><br>
-        Email: <a href="mailto:${esc(email)}">${esc(email)}</a><br>
-        Teléfono: ${esc(telefono)}<br>
-        Equipo: ${esc(equipo)}
-      </p>
-      <h3 style="margin:0 0 6px">Artículos</h3>
-      <table style="border-collapse:collapse;width:100%;font-size:14px">
-        <thead><tr>
-          <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #212327">Artículo</th>
-          <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #212327">Variante</th>
-          <th style="text-align:left;padding:6px 10px;border-bottom:2px solid #212327">Talla</th>
-          <th style="padding:6px 10px;border-bottom:2px solid #212327">Uds.</th>
-        </tr></thead>
-        <tbody>${filas}</tbody>
-      </table>
-      ${notas ? `<h3 style="margin:18px 0 6px">Notas</h3><p style="margin:0;white-space:pre-wrap">${esc(notas)}</p>` : ""}
-      <p style="margin:18px 0 0;color:#666;font-size:13px">
-        Comprobante de pago adjunto: <strong>${esc(nombreArchivo)}</strong>
-      </p>
-    </div>`;
-
   const attachment = {
     filename: nombreArchivo,
     content: toBase64(await file.arrayBuffer()),
   };
 
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${env.RESEND_API_KEY}`,
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      from: env.PEDIDOS_FROM || "Tienda Manzanares Voley <onboarding@resend.dev>",
-      to: [env.PEDIDOS_TO || "manzanaresvoley@gmail.com"],
-      reply_to: email,
-      subject: `Pedido ${numero} — ${nombre}`,
-      html,
-      attachments: [attachment],
-    }),
-  });
-
-  if (!res.ok) {
-    const detail = await res.text().catch(() => "");
-    return json({ ok: false, error: "No se pudo enviar el pedido.", detail }, 502);
-  }
-
   // Confirmación al comprador: en segundo plano, no bloquea la respuesta.
-  // Si falla, el pedido ya está recibido por el club de todas formas.
+  // Si falla, el pedido ya ha quedado registrado en la hoja de todas formas.
   const htmlComprador = `
     <div style="font-family:Arial,sans-serif;color:#212327;max-width:640px">
       <h2 style="color:#DC3C14;margin:0 0 4px">¡Gracias por tu pedido!</h2>
@@ -222,7 +178,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
 
   // Registro en Google Sheets: en segundo plano (waitUntil), sin esperar a
   // que Apps Script termine — así no se cuelga la respuesta al cliente si
-  // Google tarda. El pedido ya se ha enviado por email de todas formas.
+  // Google tarda. Esta es la única vía por la que el club se entera del
+  // pedido (ya no hay email individual, ver cabecera del archivo).
   if (env.SHEETS_WEBHOOK_URL) {
     const registro = fetch(env.SHEETS_WEBHOOK_URL, {
       method: "POST",

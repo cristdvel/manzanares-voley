@@ -30,11 +30,35 @@
  * (por una versión anterior), se reescribe para que no se desalineen las
  * columnas. En "Pedidos", el comprobante se guarda además en una carpeta de
  * Drive con el nº de pedido como nombre de archivo.
+ *
+ * NI los pedidos NI las inscripciones mandan ya un email individual al
+ * club — la única vía para enterarse es esta hoja. En su lugar:
+ *
+ *  - Cada fila nueva se marca en naranja con letra blanca (columna "Estado"
+ *    en "Pendiente" por defecto) y lleva un desplegable: "Pendiente" →
+ *    "Pedido" (en Pedidos) o "Pendiente" → "Contactado" (en Inscripciones).
+ *    En cuanto se cambia el desplegable al segundo valor, esa fila vuelve
+ *    al formato normal sola (ver onEdit). Si se vuelve a poner en
+ *    "Pendiente", se resalta otra vez.
+ *  - Los lunes, miércoles y viernes, enviarResumenPeriodico() manda UN
+ *    único correo a manzanaresvoley@gmail.com con cuántos pedidos e
+ *    inscripciones nuevas ha habido desde el último resumen, con esta hoja
+ *    adjunta en .xlsx. Hay que ejecutar configurarTriggers() una vez a mano
+ *    desde el editor para programarlo — ver DEPLOY.md §6.4.
  */
 
 const HOJA_PEDIDOS = "Pedidos";
 const HOJA_INSCRIPCIONES = "Inscripciones";
 const CARPETA_COMPROBANTES = "Comprobantes Tienda Manzanares";
+const DESTINATARIO_RESUMEN = "manzanaresvoley@gmail.com";
+
+const COLOR_PENDIENTE_FONDO = "#DC3C14";
+const COLOR_PENDIENTE_TEXTO = "#FFFFFF";
+
+const ESTADOS_PEDIDOS = ["Pendiente", "Pedido"];
+const ESTADO_PEDIDO_RESUELTO = "Pedido";
+const ESTADOS_INSCRIPCIONES = ["Pendiente", "Contactado"];
+const ESTADO_INSCRIPCION_RESUELTO = "Contactado";
 
 // Toda prenda que puede llevar talla, tanto en los packs (ver tallasPack en
 // src/data/productos.ts) como en los artículos sueltos (ver el campo
@@ -96,7 +120,7 @@ function doPost(e) {
 }
 
 function registrarPedido(data) {
-  const hoja = obtenerOCrearHoja(HOJA_PEDIDOS, CABECERA_PEDIDOS);
+  const hoja = obtenerOCrearHoja(HOJA_PEDIDOS, CABECERA_PEDIDOS, ESTADOS_PEDIDOS);
   const numero = data.numero || "";
 
   const comprobanteUrl = data.comprobante && data.comprobante.base64
@@ -125,11 +149,13 @@ function registrarPedido(data) {
     "",
   ]);
 
+  resaltarPendiente(hoja, hoja.getLastRow(), CABECERA_PEDIDOS.length);
+
   return respuesta({ ok: true, numero: numero });
 }
 
 function registrarInscripcion(data) {
-  const hoja = obtenerOCrearHoja(HOJA_INSCRIPCIONES, CABECERA_INSCRIPCIONES);
+  const hoja = obtenerOCrearHoja(HOJA_INSCRIPCIONES, CABECERA_INSCRIPCIONES, ESTADOS_INSCRIPCIONES);
 
   hoja.appendRow([
     new Date(),
@@ -145,10 +171,12 @@ function registrarInscripcion(data) {
     "",
   ]);
 
+  resaltarPendiente(hoja, hoja.getLastRow(), CABECERA_INSCRIPCIONES.length);
+
   return respuesta({ ok: true });
 }
 
-function obtenerOCrearHoja(nombreHoja, cabecera) {
+function obtenerOCrearHoja(nombreHoja, cabecera, estados) {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   let hoja = ss.getSheetByName(nombreHoja);
   if (!hoja) {
@@ -163,7 +191,135 @@ function obtenerOCrearHoja(nombreHoja, cabecera) {
     hoja.getRange(1, 1, 1, cabecera.length).setValues([cabecera]);
     hoja.getRange(1, 1, 1, cabecera.length).setFontWeight("bold");
   }
+  aplicarValidacionEstado(hoja, cabecera, estados);
   return hoja;
+}
+
+/** Desplegable "Estado" en toda la columna (hasta la fila 1000), para que ya
+ * esté listo incluso en las filas que todavía no existen. */
+function aplicarValidacionEstado(hoja, cabecera, estados) {
+  const colEstado = cabecera.indexOf("Estado") + 1;
+  if (!colEstado) return;
+  const regla = SpreadsheetApp.newDataValidation()
+    .requireValueInList(estados, true)
+    .setAllowInvalid(false)
+    .build();
+  hoja.getRange(2, colEstado, 999).setDataValidation(regla);
+}
+
+function resaltarPendiente(hoja, fila, numColumnas) {
+  hoja.getRange(fila, 1, 1, numColumnas)
+    .setBackground(COLOR_PENDIENTE_FONDO)
+    .setFontColor(COLOR_PENDIENTE_TEXTO);
+}
+
+function quitarResaltado(hoja, fila, numColumnas) {
+  hoja.getRange(fila, 1, 1, numColumnas).setBackground(null).setFontColor(null);
+}
+
+/**
+ * Trigger simple: se ejecuta solo al editar la hoja a mano (no cuando este
+ * script escribe filas nuevas vía appendRow). En cuanto alguien cambia el
+ * desplegable "Estado" de una fila de Pedidos a "Pedido", o de Inscripciones
+ * a "Contactado", esa fila pierde el resaltado naranja; si se vuelve a poner
+ * en "Pendiente" (o cualquier otro valor), se resalta de nuevo.
+ */
+function onEdit(e) {
+  if (!e || !e.range) return;
+  if (e.range.getNumRows() > 1 || e.range.getNumColumns() > 1) return; // edición múltiple: se ignora
+  if (e.range.getRow() === 1) return; // cabecera
+
+  const hoja = e.range.getSheet();
+  const nombreHoja = hoja.getName();
+
+  let cabecera, estadoResuelto;
+  if (nombreHoja === HOJA_PEDIDOS) {
+    cabecera = CABECERA_PEDIDOS;
+    estadoResuelto = ESTADO_PEDIDO_RESUELTO;
+  } else if (nombreHoja === HOJA_INSCRIPCIONES) {
+    cabecera = CABECERA_INSCRIPCIONES;
+    estadoResuelto = ESTADO_INSCRIPCION_RESUELTO;
+  } else {
+    return;
+  }
+
+  const colEstado = cabecera.indexOf("Estado") + 1;
+  if (!colEstado || e.range.getColumn() !== colEstado) return;
+
+  const fila = e.range.getRow();
+  if (e.range.getValue() === estadoResuelto) {
+    quitarResaltado(hoja, fila, cabecera.length);
+  } else {
+    resaltarPendiente(hoja, fila, cabecera.length);
+  }
+}
+
+/**
+ * Resumen periódico: cuenta cuántas filas nuevas hay en "Pedidos" e
+ * "Inscripciones" desde el último envío (guarda la última fila contada en
+ * PropertiesService) y manda UN correo con el total y esta hoja adjunta en
+ * .xlsx. Si no hay nada nuevo en ninguna de las dos, no manda nada.
+ *
+ * No se ejecuta sola: hace falta llamar una vez a configurarTriggers() (ver
+ * más abajo) para programarla los lunes, miércoles y viernes.
+ */
+function enviarResumenPeriodico() {
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const props = PropertiesService.getScriptProperties();
+
+  const hojaPedidos = ss.getSheetByName(HOJA_PEDIDOS);
+  const hojaInscripciones = ss.getSheetByName(HOJA_INSCRIPCIONES);
+
+  const filaPedidosActual = hojaPedidos ? hojaPedidos.getLastRow() : 1;
+  const filaInscripcionesActual = hojaInscripciones ? hojaInscripciones.getLastRow() : 1;
+
+  const filaPedidosAnterior = Number(props.getProperty("ultimaFilaPedidos")) || 1;
+  const filaInscripcionesAnterior = Number(props.getProperty("ultimaFilaInscripciones")) || 1;
+
+  const nuevosPedidos = Math.max(0, filaPedidosActual - filaPedidosAnterior);
+  const nuevasInscripciones = Math.max(0, filaInscripcionesActual - filaInscripcionesAnterior);
+
+  props.setProperty("ultimaFilaPedidos", String(filaPedidosActual));
+  props.setProperty("ultimaFilaInscripciones", String(filaInscripcionesActual));
+
+  if (nuevosPedidos === 0 && nuevasInscripciones === 0) {
+    return; // nada que contar: no se manda un correo vacío
+  }
+
+  const asunto = "Actualización desde manzanaresvoley.com";
+  const cuerpo =
+    "Se han actualizado los Excel con " + nuevosPedidos + " pedido(s) nuevo(s) y " +
+    nuevasInscripciones + " inscripción(es) nueva(s).";
+
+  const url = "https://docs.google.com/spreadsheets/d/" + ss.getId() + "/export?format=xlsx";
+  const respuestaExport = UrlFetchApp.fetch(url, {
+    headers: { Authorization: "Bearer " + ScriptApp.getOAuthToken() },
+  });
+  const adjunto = respuestaExport.getBlob().setName(ss.getName() + ".xlsx");
+
+  MailApp.sendEmail({
+    to: DESTINATARIO_RESUMEN,
+    subject: asunto,
+    body: cuerpo,
+    attachments: [adjunto],
+  });
+}
+
+/**
+ * Ejecutar UNA SOLA VEZ a mano desde el editor de Apps Script (▶, con esta
+ * función seleccionada en el desplegable de arriba) para programar
+ * enviarResumenPeriodico() los lunes, miércoles y viernes a las 9:00. Si se
+ * vuelve a ejecutar, borra antes los triggers anteriores para no duplicar
+ * los envíos.
+ */
+function configurarTriggers() {
+  ScriptApp.getProjectTriggers().forEach((t) => {
+    if (t.getHandlerFunction() === "enviarResumenPeriodico") ScriptApp.deleteTrigger(t);
+  });
+
+  [ScriptApp.WeekDay.MONDAY, ScriptApp.WeekDay.WEDNESDAY, ScriptApp.WeekDay.FRIDAY].forEach((dia) => {
+    ScriptApp.newTrigger("enviarResumenPeriodico").timeBased().onWeekDay(dia).atHour(9).create();
+  });
 }
 
 function guardarComprobante(comprobante, numero) {

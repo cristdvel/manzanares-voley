@@ -125,9 +125,14 @@ Cuando el dominio resuelva, Claude comprueba:
 
 ## 5. Pedidos de la tienda (email con Resend)
 
-El formulario de `/tienda` envía cada pedido + el comprobante adjunto por email
-mediante la función `functions/api/pedido.ts` (Cloudflare Pages Functions) y
-**Resend**. Sin configurar la clave, el formulario devuelve un error controlado.
+El formulario de `/tienda` manda al **comprador** un email de confirmación con
+su nº de pedido, mediante la función `functions/api/pedido.ts` (Cloudflare
+Pages Functions) y **Resend**. Sin configurar la clave, el formulario devuelve
+un error controlado.
+
+> El club ya **no** recibe un email por cada pedido — solo se entera por la
+> hoja de Google Sheets del §6, que manda un resumen los lunes, miércoles y
+> viernes (§6.4). Resend aquí es solo para la confirmación al comprador.
 
 1. Crea una cuenta en <https://resend.com> (plan gratuito: 3.000 emails/mes).
 2. **API Keys** → *Create API Key* (permiso *Sending access*). Copia la clave `re_...`.
@@ -137,7 +142,7 @@ mediante la función `functions/api/pedido.ts` (Cloudflare Pages Functions) y
    | Nombre           | Valor                                             |
    | :--------------- | :------------------------------------------------ |
    | `RESEND_API_KEY` | la clave `re_...`                                 |
-   | `PEDIDOS_TO`     | `manzanaresvoley@gmail.com` (opcional, es el valor por defecto) |
+   | `PEDIDOS_TO`     | `manzanaresvoley@gmail.com` (opcional; es el reply-to de la confirmación al comprador) |
    | `PEDIDOS_FROM`   | `Tienda Manzanares Voley <pedidos@manzanaresvoley.com>` (opcional) |
 
 4. **Remitente:**
@@ -156,13 +161,15 @@ mediante la función `functions/api/pedido.ts` (Cloudflare Pages Functions) y
 
 ## 6. Registro de pedidos en Google Sheets (el "Excel" descargable)
 
-Además del email, cada pedido se guarda como una fila en una hoja de Google
-Sheets: fecha, cliente, equipo, producto, variante y la talla de cada prenda
-en su propia columna (Camiseta de juego, Camiseta de entreno, Malla, etc. —
-en blanco las que no aplican a ese pedido), cantidad, comprobante (enlace a
-Drive) y dos columnas libres — **Estado** y **Comentario interno** — para que
-el club anote cómo va cada pedido. Es opcional: sin configurar esto, la
-tienda sigue funcionando igual (solo por email).
+Cada pedido se guarda como una fila en una hoja de Google Sheets: fecha,
+cliente, equipo, producto, variante y la talla de cada prenda en su propia
+columna (Camiseta de juego, Camiseta de entreno, Malla, etc. — en blanco las
+que no aplican a ese pedido), cantidad, comprobante (enlace a Drive), una
+columna **Estado** con desplegable y "Comentario interno" libre. Esta hoja es
+ahora la única forma en que el club se entera de los pedidos nuevos (ver
+§6.4) — sin configurarla, la tienda sigue funcionando pero nadie se entera de
+los pedidos salvo abriendo esta hoja a mano, así que no es opcional de
+verdad.
 
 1. Crea una hoja de cálculo nueva en <https://sheets.new> y llámala p. ej.
    **"Pedidos tienda Manzanares"**.
@@ -185,7 +192,7 @@ tienda sigue funcionando igual (solo por email).
    con el comprobante subido a una carpeta de Drive llamada "Comprobantes
    Tienda Manzanares" con el nº de pedido como nombre de archivo.
 7. **Panel de pedidos:** la propia hoja de cálculo hace de panel — filtra,
-   ordena, escribe en "Estado"/"Comentario interno", o **Archivo → Descargar →
+   ordena, escribe en "Comentario interno", o **Archivo → Descargar →
    Microsoft Excel (.xlsx)** cuando quieras el Excel offline.
 
 > Si más adelante cambias el código del Apps Script, tienes que volver a
@@ -197,6 +204,53 @@ tienda sigue funcionando igual (solo por email).
 > el comprador vea la página de confirmación. Si nunca aparece, revisa en
 > Apps Script → **Ejecuciones** (icono de reloj a la izquierda) los últimos
 > intentos y su error.
+
+### 6.1. Cómo funciona el Estado (naranja → normal)
+
+Cada fila nueva sale en **naranja con letra blanca** y con "Estado" en
+**"Pendiente"** (es un desplegable, no hay que escribirlo a mano). En cuanto
+cambias ese desplegable:
+
+- A **"Pedido"** → la fila entera vuelve sola al formato normal (fondo
+  blanco, letra negra).
+- De vuelta a **"Pendiente"** → se resalta en naranja otra vez.
+
+Esto lo hace la función `onEdit` del Apps Script en cuanto detecta el cambio
+en la columna "Estado" — no hace falta guardar ni ejecutar nada, funciona
+en cuanto editas la celda desde la propia hoja.
+
+### 6.2. Cómo funciona el Estado en Inscripciones
+
+Igual que en Pedidos, pero el desplegable de la hoja "Inscripciones" (§9) va
+de **"Pendiente"** a **"Contactado"** en vez de a "Pedido".
+
+### 6.3. Resumen por email (lunes, miércoles y viernes)
+
+Ni los pedidos ni las inscripciones mandan ya un email individual al club —
+lo sustituye un único resumen periódico, que manda la función
+`enviarResumenPeriodico()` del propio Apps Script con el nº de pedidos
+nuevos, el nº de inscripciones nuevas y esta hoja adjunta en `.xlsx`.
+
+**Hay que activarlo una sola vez:**
+
+1. Abre el editor de Apps Script de esta misma hoja (el de §6, paso 2).
+2. En el desplegable de funciones de arriba (al lado de ▶ Ejecutar), elige
+   **`configurarTriggers`**.
+3. Pulsa **▶ Ejecutar**. La primera vez pedirá autorizar permisos nuevos
+   (enviar email y exportar la hoja) — acepta con la misma cuenta de Google.
+4. Listo: a partir de ahí, `enviarResumenPeriodico` se dispara sola los
+   lunes, miércoles y viernes a las 9:00 (hora del script). Si no ha habido
+   ningún pedido ni inscripción nueva desde el último resumen, no manda nada
+   ese día.
+
+> Si quieres cambiar la hora o los días, edita el array de días y
+> `.atHour(9)` dentro de `configurarTriggers()` en el `.gs` y vuelve a
+> ejecutar esa función (borra los triggers anteriores antes de crear los
+> nuevos, así que es seguro repetirlo).
+
+> Para probarlo sin esperar al lunes: selecciona **`enviarResumenPeriodico`**
+> en el mismo desplegable y pulsa ▶ Ejecutar directamente — manda el resumen
+> al momento con lo que haya pendiente de contar.
 
 ---
 
@@ -440,37 +494,20 @@ lo anterior solo se ve en modo Vista previa — nadie más recibe datos.
 
 ---
 
-## 9. Formulario de inscripción (email + Excel)
+## 9. Formulario de inscripción (Excel, sin email individual)
 
-El formulario de inscripción de la home (`#inscripciones`) funciona como
-los pedidos de la tienda (email al club + fila en Google Sheets), pero con
-**su propio remitente y formato de email**, distinto del de "Tienda
-Manzanares Voley" — para que quien reciba el correo vea de un vistazo que
-es una inscripción y no un pedido.
+El formulario de inscripción de la home (`#inscripciones`) funciona como los
+pedidos de la tienda: cada inscripción se guarda como fila en una pestaña
+**"Inscripciones"** de la misma hoja de Google Sheets del §6, con su propio
+desplegable de Estado (**"Pendiente" → "Contactado"**, ver §6.2) y entra en
+el mismo resumen de lunes/miércoles/viernes (§6.3). A diferencia de los
+pedidos, **no manda ningún email aparte** ni al comprador ni al club — la
+única variable de entorno que necesita es `SHEETS_WEBHOOK_URL`, la misma que
+ya configuraste en el §6, no hay que añadir nada nuevo en Cloudflare.
 
-Variables de entorno nuevas en Cloudflare Pages → tu proyecto → **Settings
-→ Environment variables** (entornos *Production* y *Preview*; `RESEND_API_KEY`
-y `SHEETS_WEBHOOK_URL` ya están puestas de cuando configuraste los pedidos,
-no hace falta repetirlas):
-
-```
-INSCRIPCIONES_FROM = Inscripciones Manzanares Voley <inscripciones@manzanaresvoley.com>
-INSCRIPCIONES_TO   = manzanaresvoley@gmail.com
-```
-
-> `INSCRIPCIONES_FROM` necesita que `inscripciones@` esté en el **mismo
-> dominio ya verificado en Resend** que usa `pedidos@` — si `manzanaresvoley.com`
-> ya está verificado (Resend → Domains), cualquier dirección `algo@manzanaresvoley.com`
-> funciona sin configurar nada más ahí. Si no pones esta variable, el
-> correo sale desde `onboarding@resend.dev` (funciona pero no del dominio
-> propio). `INSCRIPCIONES_TO` es opcional — sin ella cae en
-> `manzanaresvoley@gmail.com` igual que antes.
-
-Vuelve a desplegar (cualquier push) para que la variable esté disponible.
-
-Lo único pendiente además es actualizar el Apps Script de tu Google Sheet,
-porque ahora también sabe registrar inscripciones en una pestaña nueva
-**"Inscripciones"** (separada de "Pedidos"):
+Lo único pendiente es tener el Apps Script actualizado (si ya hiciste el
+§6 con la versión actual de `scripts/apps-script-pedidos.gs`, esto ya está
+hecho):
 
 1. Abre tu hoja de cálculo → **Extensiones → Apps Script**.
 2. Borra el código actual y pega el contenido actualizado de
@@ -478,16 +515,11 @@ porque ahora también sabe registrar inscripciones en una pestaña nueva
 3. **Implementar → Gestionar implementaciones → editar (lápiz) → Nueva
    versión** (guardar el archivo no es suficiente, hay que publicar la
    nueva versión para que el cambio llegue a la web).
-4. Haz una inscripción de prueba desde la home: debería llegarte el email
-   desde `inscripciones@manzanaresvoley.com` (o desde `onboarding@resend.dev`
-   si no configuraste `INSCRIPCIONES_FROM`) a `manzanaresvoley@gmail.com`
-   (o al `INSCRIPCIONES_TO` que tengas configurado), y aparecer una fila
-   nueva en la pestaña **"Inscripciones"** de la hoja (se crea sola la
-   primera vez, igual que pasó con "Pedidos").
+4. Haz una inscripción de prueba desde la home: debería aparecer, en
+   naranja con letra blanca, una fila nueva en la pestaña **"Inscripciones"**
+   de la hoja (se crea sola la primera vez, igual que "Pedidos").
 
 > La pestaña "Inscripciones" guarda: fecha, nombre del jugador/a, fecha de
 > nacimiento, categoría orientativa (calculada automáticamente por edad),
-> nombre del tutor, teléfono, email, experiencia previa y si autoriza el
-> uso de imágenes — más las dos columnas libres "Estado" y "Comentario
-> interno" para que el club apunte cómo va cada solicitud, igual que en
-> "Pedidos".
+> nombre del tutor, teléfono, email, experiencia previa, si autoriza el uso
+> de imágenes, **Estado** (desplegable) y "Comentario interno" libre.

@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-01T04:34:00.632Z",
+  "actualizado": "2026-10-01T11:32:51.801Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -321,6 +321,17 @@
               "aplazado": false
             },
             {
+              "id": 59874,
+              "jornada": 3,
+              "fechaHora": "2026-10-17T11:15:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal Blanco B",
+              "visitante": "Coslada Voley A",
+              "pabellon": "Moralzarzal, Pol (Ciudad Deportiva Navafria)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 59872,
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
@@ -338,17 +349,6 @@
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "Grupo Egido Pinto A",
               "visitante": "Sad Recuerdo A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 59874,
-              "jornada": 3,
-              "fechaHora": "2026-10-18T00:00:00.000Z",
-              "local": "Dragons Voleibol Moralzarzal Blanco B",
-              "visitante": "Coslada Voley A",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -10391,6 +10391,17 @@
           "fecha": "2026-10-04T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72138,
+              "jornada": 1,
+              "fechaHora": "2026-10-03T10:00:00.000Z",
+              "local": "Cvd Fuenlabrada Cadete Femenino",
+              "visitante": "Mirasur School Cadete Femenino",
+              "pabellon": "La Cueva, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72135,
               "jornada": 1,
               "fechaHora": "2026-10-03T12:00:00.000Z",
@@ -10443,17 +10454,6 @@
               "fechaHora": "2026-10-04T00:00:00.000Z",
               "local": "Avp A Pozo Red",
               "visitante": "Descansa...",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 72138,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
-              "local": "Cvd Fuenlabrada Cadete Femenino",
-              "visitante": "Mirasur School Cadete Femenino",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -23637,17 +23637,6 @@
               "aplazado": false
             },
             {
-              "id": 57292,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "CV Sanse",
-              "visitante": "V-Valley CValcalá G1",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57293,
               "jornada": 2,
               "fechaHora": "2026-10-11T16:00:00.000Z",
@@ -23690,6 +23679,17 @@
               "local": "CV Nueva Castilla",
               "visitante": "CV Las Rozas A",
               "pabellon": "Nueva Castilla",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57292,
+              "jornada": 2,
+              "fechaHora": "2026-10-12T10:30:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false

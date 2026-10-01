@@ -1,31 +1,24 @@
 /**
  * Cloudflare Pages Function — recibe una solicitud de inscripción del
- * formulario de la home, la envía por email al club (con su propio
- * remitente y formato, distinto del de los pedidos de la tienda) y la
- * registra en la hoja de Google Sheets (pestaña "Inscripciones"). El envío
- * a Sheets reutiliza SHEETS_WEBHOOK_URL de functions/api/pedido.ts — ver
+ * formulario de la home y la registra en la hoja de Google Sheets (pestaña
+ * "Inscripciones"), vía el mismo Apps Script Web App que los pedidos — ver
  * DEPLOY.md §9.
  *
+ * El club ya NO recibe un email por cada inscripción — solo se entera por
+ * la hoja de cálculo, que resume y manda por email cuántas inscripciones
+ * nuevas hay los lunes, miércoles y viernes (lo hace el propio Apps Script,
+ * ver scripts/apps-script-pedidos.gs → enviarResumenPeriodico). Por eso esta
+ * función SÍ espera la respuesta del Apps Script antes de contestar al
+ * navegador: es el único sitio donde queda constancia de la inscripción, así
+ * que si falla el registro hay que avisar a quien rellenó el formulario en
+ * vez de decirle "recibido" en falso.
+ *
  * Variables de entorno (Pages → Settings → Environment variables):
- *   RESEND_API_KEY      (obligatoria)  clave de API de Resend
- *   INSCRIPCIONES_TO    (opcional)     destino; por defecto manzanaresvoley@gmail.com
- *   INSCRIPCIONES_FROM  (opcional)     remitente verificado en Resend, p. ej.
- *                                      "Inscripciones Manzanares Voley <inscripciones@manzanaresvoley.com>"
- *   SHEETS_WEBHOOK_URL  (opcional)     URL del Apps Script Web App que registra la inscripción
+ *   SHEETS_WEBHOOK_URL (obligatoria)  URL del Apps Script Web App que registra la inscripción
  */
 
 interface Env {
-  RESEND_API_KEY: string;
-  INSCRIPCIONES_TO?: string;
-  INSCRIPCIONES_FROM?: string;
   SHEETS_WEBHOOK_URL?: string;
-}
-
-function esc(s: unknown): string {
-  return String(s ?? "")
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;");
 }
 
 const EXPERIENCIA_LABEL: Record<string, string> = {
@@ -34,15 +27,15 @@ const EXPERIENCIA_LABEL: Record<string, string> = {
   "3+": "Más de 3 años",
 };
 
-export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUntil }) => {
+export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
   const json = (data: unknown, status = 200) =>
     new Response(JSON.stringify(data), {
       status,
       headers: { "content-type": "application/json" },
     });
 
-  if (!env.RESEND_API_KEY) {
-    return json({ ok: false, error: "El envío de inscripciones no está configurado." }, 500);
+  if (!env.SHEETS_WEBHOOK_URL) {
+    return json({ ok: false, error: "El registro de inscripciones no está configurado." }, 500);
   }
 
   let form: FormData;
@@ -76,52 +69,8 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
 
   const experienciaTexto = EXPERIENCIA_LABEL[experiencia] || experiencia || "—";
 
-  const html = `
-    <div style="font-family:Arial,sans-serif;color:#212327;max-width:640px">
-      <p style="margin:0 0 14px;text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:700;color:#A0C828">
-        Manzanares Voley · Escuela e inscripciones
-      </p>
-      <h2 style="color:#212327;margin:0 0 4px">Nueva solicitud de inscripción</h2>
-      <p style="margin:0 0 18px;color:#666">${esc(new Date().toLocaleString("es-ES"))}</p>
-      <h3 style="margin:0 0 6px">Deportista</h3>
-      <p style="margin:0 0 18px">
-        <strong>${esc(nombre)}</strong><br>
-        Fecha de nacimiento: ${esc(dob)}<br>
-        ${categoria ? `Categoría orientativa: <strong>${esc(categoria)}</strong><br>` : ""}
-        Experiencia previa: ${esc(experienciaTexto)}<br>
-        Autoriza uso de imágenes: ${imagenes ? "Sí" : "No"}
-      </p>
-      <h3 style="margin:0 0 6px">Contacto (padre / madre / tutor)</h3>
-      <p style="margin:0 0 18px">
-        <strong>${esc(tutor)}</strong><br>
-        Email: <a href="mailto:${esc(email)}">${esc(email)}</a><br>
-        Teléfono: ${esc(telefono)}
-      </p>
-    </div>`;
-
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${env.RESEND_API_KEY}`,
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      from: env.INSCRIPCIONES_FROM || "Inscripciones Manzanares Voley <onboarding@resend.dev>",
-      to: [env.INSCRIPCIONES_TO || "manzanaresvoley@gmail.com"],
-      reply_to: email,
-      subject: `Nueva inscripción — ${nombre}`,
-      html,
-    }),
-  });
-
-  if (!res.ok) {
-    const detail = await res.text().catch(() => "");
-    return json({ ok: false, error: "No se pudo enviar la inscripción.", detail }, 502);
-  }
-
-  // Registro en Google Sheets: en segundo plano, igual que los pedidos.
-  if (env.SHEETS_WEBHOOK_URL) {
-    const registro = fetch(env.SHEETS_WEBHOOK_URL, {
+  try {
+    const res = await fetch(env.SHEETS_WEBHOOK_URL, {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
@@ -135,8 +84,14 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
         experiencia: experienciaTexto,
         imagenes,
       }),
-    }).catch((err) => console.error("No se pudo registrar la inscripción en Sheets:", err));
-    waitUntil(registro);
+    });
+    const data = (await res.json().catch(() => ({}))) as { ok?: boolean };
+    if (!res.ok || !data.ok) {
+      return json({ ok: false, error: "No se pudo registrar la inscripción." }, 502);
+    }
+  } catch (err) {
+    console.error("No se pudo registrar la inscripción en Sheets:", err);
+    return json({ ok: false, error: "No se pudo registrar la inscripción." }, 502);
   }
 
   return json({ ok: true });
