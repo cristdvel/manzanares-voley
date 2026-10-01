@@ -229,7 +229,11 @@ de **"Pendiente"** a **"Contactado"** en vez de a "Pedido".
 Ni los pedidos ni las inscripciones mandan ya un email individual al club —
 lo sustituye un único resumen periódico, que manda la función
 `enviarResumenPeriodico()` del propio Apps Script con el nº de pedidos
-nuevos, el nº de inscripciones nuevas y esta hoja adjunta en `.xlsx`.
+nuevos, el nº de inscripciones nuevas y esta hoja adjunta en `.xlsx`. Se
+manda **siempre**, los tres días: si no ha habido ningún pedido ni
+inscripción nueva desde el último resumen, el correo lo dice igual ("No ha
+habido pedidos ni inscripciones nuevas desde el último resumen"), no se
+queda en silencio.
 
 **Hay que activarlo una sola vez:**
 
@@ -239,12 +243,10 @@ nuevos, el nº de inscripciones nuevas y esta hoja adjunta en `.xlsx`.
 3. Pulsa **▶ Ejecutar**. La primera vez pedirá autorizar permisos nuevos
    (enviar email y exportar la hoja) — acepta con la misma cuenta de Google.
 4. Listo: a partir de ahí, `enviarResumenPeriodico` se dispara sola los
-   lunes, miércoles y viernes a las 9:00 (hora del script). Si no ha habido
-   ningún pedido ni inscripción nueva desde el último resumen, no manda nada
-   ese día.
+   lunes, miércoles y viernes a las 8:00 (hora del script).
 
 > Si quieres cambiar la hora o los días, edita el array de días y
-> `.atHour(9)` dentro de `configurarTriggers()` en el `.gs` y vuelve a
+> `.atHour(8)` dentro de `configurarTriggers()` en el `.gs` y vuelve a
 > ejecutar esa función (borra los triggers anteriores antes de crear los
 > nuevos, así que es seguro repetirlo).
 

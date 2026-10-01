@@ -40,11 +40,12 @@
  *    En cuanto se cambia el desplegable al segundo valor, esa fila vuelve
  *    al formato normal sola (ver onEdit). Si se vuelve a poner en
  *    "Pendiente", se resalta otra vez.
- *  - Los lunes, miércoles y viernes, enviarResumenPeriodico() manda UN
- *    único correo a manzanaresvoley@gmail.com con cuántos pedidos e
- *    inscripciones nuevas ha habido desde el último resumen, con esta hoja
- *    adjunta en .xlsx. Hay que ejecutar configurarTriggers() una vez a mano
- *    desde el editor para programarlo — ver DEPLOY.md §6.4.
+ *  - Los lunes, miércoles y viernes a las 8:00, enviarResumenPeriodico()
+ *    manda SIEMPRE un correo a manzanaresvoley@gmail.com con esta hoja
+ *    adjunta en .xlsx: si hubo pedidos o inscripciones nuevas desde el
+ *    último resumen, dice cuántas; si no hubo ninguna, lo dice también (no
+ *    se queda callado). Hay que ejecutar configurarTriggers() una vez a
+ *    mano desde el editor para programarlo — ver DEPLOY.md §6.3.
  */
 
 const HOJA_PEDIDOS = "Pedidos";
@@ -257,8 +258,9 @@ function onEdit(e) {
 /**
  * Resumen periódico: cuenta cuántas filas nuevas hay en "Pedidos" e
  * "Inscripciones" desde el último envío (guarda la última fila contada en
- * PropertiesService) y manda UN correo con el total y esta hoja adjunta en
- * .xlsx. Si no hay nada nuevo en ninguna de las dos, no manda nada.
+ * PropertiesService) y manda SIEMPRE un correo con esta hoja adjunta en
+ * .xlsx — también cuando no hay nada nuevo, para confirmar que sigue
+ * funcionando y que de verdad no hubo movimiento.
  *
  * No se ejecuta sola: hace falta llamar una vez a configurarTriggers() (ver
  * más abajo) para programarla los lunes, miércoles y viernes.
@@ -282,14 +284,12 @@ function enviarResumenPeriodico() {
   props.setProperty("ultimaFilaPedidos", String(filaPedidosActual));
   props.setProperty("ultimaFilaInscripciones", String(filaInscripcionesActual));
 
-  if (nuevosPedidos === 0 && nuevasInscripciones === 0) {
-    return; // nada que contar: no se manda un correo vacío
-  }
-
   const asunto = "Actualización desde manzanaresvoley.com";
   const cuerpo =
-    "Se han actualizado los Excel con " + nuevosPedidos + " pedido(s) nuevo(s) y " +
-    nuevasInscripciones + " inscripción(es) nueva(s).";
+    nuevosPedidos === 0 && nuevasInscripciones === 0
+      ? "No ha habido pedidos ni inscripciones nuevas desde el último resumen."
+      : "Se han actualizado los Excel con " + nuevosPedidos + " pedido(s) nuevo(s) y " +
+        nuevasInscripciones + " inscripción(es) nueva(s).";
 
   const url = "https://docs.google.com/spreadsheets/d/" + ss.getId() + "/export?format=xlsx";
   const respuestaExport = UrlFetchApp.fetch(url, {
@@ -308,7 +308,7 @@ function enviarResumenPeriodico() {
 /**
  * Ejecutar UNA SOLA VEZ a mano desde el editor de Apps Script (▶, con esta
  * función seleccionada en el desplegable de arriba) para programar
- * enviarResumenPeriodico() los lunes, miércoles y viernes a las 9:00. Si se
+ * enviarResumenPeriodico() los lunes, miércoles y viernes a las 8:00. Si se
  * vuelve a ejecutar, borra antes los triggers anteriores para no duplicar
  * los envíos.
  */
@@ -318,7 +318,7 @@ function configurarTriggers() {
   });
 
   [ScriptApp.WeekDay.MONDAY, ScriptApp.WeekDay.WEDNESDAY, ScriptApp.WeekDay.FRIDAY].forEach((dia) => {
-    ScriptApp.newTrigger("enviarResumenPeriodico").timeBased().onWeekDay(dia).atHour(9).create();
+    ScriptApp.newTrigger("enviarResumenPeriodico").timeBased().onWeekDay(dia).atHour(8).create();
   });
 }
 
