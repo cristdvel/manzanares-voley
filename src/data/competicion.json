@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-01T20:50:28.443Z",
+  "actualizado": "2026-10-02T14:30:38.225Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -321,6 +321,17 @@
               "aplazado": false
             },
             {
+              "id": 59877,
+              "jornada": 3,
+              "fechaHora": "2026-10-17T11:00:00.000Z",
+              "local": "Club Voleibol Torrelodones A",
+              "visitante": "Cde Voleibol Colmenar A",
+              "pabellon": "Torrelodones, Polideportivo Municipal",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 59874,
               "jornada": 3,
               "fechaHora": "2026-10-17T11:15:00.000Z",
@@ -360,17 +371,6 @@
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "CV Madrid A",
               "visitante": "Feel Alcobendas Rojo",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 59877,
-              "jornada": 3,
-              "fechaHora": "2026-10-18T00:00:00.000Z",
-              "local": "Club Voleibol Torrelodones A",
-              "visitante": "Cde Voleibol Colmenar A",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -4335,6 +4335,20 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 59597,
+              "jornada": 2,
+              "fechaHora": "2026-10-09T20:30:00.000Z",
+              "local": "Cde Parla Voley Parlazul",
+              "visitante": "Manzanares Voley A",
+              "pabellon": "Miguel Hernandez, Ceip",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
+              "jugado": false
+            },
+            {
               "id": 59596,
               "jornada": 2,
               "fechaHora": "2026-10-10T11:30:00.000Z",
@@ -4377,20 +4391,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 59597,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Cde Parla Voley Parlazul",
-              "visitante": "Manzanares Voley A",
-              "pabellon": "La Cantueña, Pabellon",
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "direccion": "PROLONGACION CALLE SALAMANCA",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=LA CANTUEÑA, PABELLON PROLONGACION CALLE SALAMANCA, PARLA",
-              "jugado": false
             },
             {
               "id": 59599,
@@ -5884,15 +5884,15 @@
         {
           "id": 59597,
           "jornada": 2,
-          "fechaHora": "2026-10-11T00:00:00.000Z",
+          "fechaHora": "2026-10-09T20:30:00.000Z",
           "local": "Cde Parla Voley Parlazul",
           "visitante": "Manzanares Voley A",
-          "pabellon": "La Cantueña, Pabellon",
+          "pabellon": "Miguel Hernandez, Ceip",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "direccion": "PROLONGACION CALLE SALAMANCA",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=LA CANTUEÑA, PABELLON PROLONGACION CALLE SALAMANCA, PARLA",
+          "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
           "jugado": false
         },
         {
@@ -12505,6 +12505,17 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 62971,
+              "jornada": 2,
+              "fechaHora": "2026-10-03T13:15:00.000Z",
+              "local": "Club Voleibol Móstoles B",
+              "visitante": "Club Voleibol Plaza Castilla A",
+              "pabellon": "Pau 4, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 62968,
               "jornada": 2,
               "fechaHora": "2026-10-10T10:00:00.000Z",
@@ -12522,17 +12533,6 @@
               "local": "Cuv Alcorcón B",
               "visitante": "Cvleganes.com B",
               "pabellon": "Los Cantos, Polideportivo",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 62971,
-              "jornada": 2,
-              "fechaHora": "2026-10-10T13:00:00.000Z",
-              "local": "Club Voleibol Móstoles B",
-              "visitante": "Club Voleibol Plaza Castilla A",
-              "pabellon": "Pau 4, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -16108,6 +16108,17 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 56753,
+              "jornada": 3,
+              "fechaHora": "2026-10-08T18:30:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": "Europa, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 56757,
               "jornada": 3,
               "fechaHora": "2026-10-10T15:00:00.000Z",
@@ -16150,17 +16161,6 @@
               "local": "Feel Alcobendas Negro",
               "visitante": "Chv1995 A",
               "pabellon": "Luis Buñuel, Pabellon",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 56753,
-              "jornada": 3,
-              "fechaHora": "2026-10-11T13:30:00.000Z",
-              "local": "Cvleganes.com A",
-              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
-              "pabellon": "Emilia Pardo Bazan, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -23564,7 +23564,7 @@
             {
               "id": 57285,
               "jornada": 1,
-              "fechaHora": "2026-10-03T16:00:00.000Z",
+              "fechaHora": "2026-10-04T12:00:00.000Z",
               "local": "Cvleganes.com",
               "visitante": "CV Nueva Castilla",
               "pabellon": "Emilia Pardo Bazan, Pabellon",
@@ -28498,23 +28498,23 @@
               "jugado": false
             },
             {
-              "id": 58090,
-              "jornada": 3,
-              "fechaHora": "2026-10-18T00:00:00.000Z",
-              "local": "Club Voleibol Torrelodones B",
-              "visitante": "Salesianos San Miguel B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 58092,
               "jornada": 3,
               "fechaHora": "2026-10-18T00:00:00.000Z",
               "local": "CV Bulldogs A",
               "visitante": "CV Madrid A",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 58090,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T19:00:00.000Z",
+              "local": "Club Voleibol Torrelodones B",
+              "visitante": "Salesianos San Miguel B",
+              "pabellon": "Torrelodones, Polideportivo Municipal",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31879,6 +31879,21 @@
       "categoria": "Infantil Femenino A"
     },
     {
+      "id": 59597,
+      "jornada": 2,
+      "fechaHora": "2026-10-09T20:30:00.000Z",
+      "local": "Cde Parla Voley Parlazul",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "Miguel Hernandez, Ceip",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
+      "jugado": false,
+      "categoria": "Infantil Masculino"
+    },
+    {
       "id": 58085,
       "jornada": 2,
       "fechaHora": "2026-10-09T20:30:00.000Z",
@@ -32027,21 +32042,6 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
       "jugado": false,
       "categoria": "Sénior Masculino"
-    },
-    {
-      "id": 59597,
-      "jornada": 2,
-      "fechaHora": "2026-10-11T00:00:00.000Z",
-      "local": "Cde Parla Voley Parlazul",
-      "visitante": "Manzanares Voley A",
-      "pabellon": "La Cantueña, Pabellon",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "PROLONGACION CALLE SALAMANCA",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=LA CANTUEÑA, PABELLON PROLONGACION CALLE SALAMANCA, PARLA",
-      "jugado": false,
-      "categoria": "Infantil Masculino"
     },
     {
       "id": 64682,
