@@ -35,6 +35,13 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 // (sin imprimir el valor) para que se pueda corregir el secreto de verdad.
 function limpiar(nombre) {
   const partes = (process.env[nombre] || "").split(/\s+/).filter(Boolean);
+  // Cloudflare muestra bajo el token un `curl ... -H "Authorization: Bearer <token>"`
+  // de ejemplo; si se pegó ese bloque entero, el token es lo que sigue a "Bearer".
+  const i = partes.indexOf("Bearer");
+  if (i !== -1 && partes[i + 1]) {
+    console.warn(`⚠ ${nombre} parece el comando curl de ejemplo de Cloudflare en vez del token solo; se extrae el token. Conviene volver a guardar solo el token.`);
+    return partes[i + 1].replace(/["'\\]/g, "");
+  }
   if (partes.length > 1) {
     console.warn(`⚠ ${nombre} tiene ${partes.length} fragmentos separados por espacios o saltos de línea; se usa solo el primero. Vuelve a guardar el secreto sin saltos de línea.`);
   }
