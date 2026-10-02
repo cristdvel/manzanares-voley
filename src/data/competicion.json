@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-02T14:30:38.225Z",
+  "actualizado": "2026-10-02T20:23:44.823Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -21728,7 +21728,7 @@
             {
               "id": 62613,
               "jornada": 4,
-              "fechaHora": "2026-10-24T18:00:00.000Z",
+              "fechaHora": "2026-10-24T20:00:00.000Z",
               "local": "Salesianos Estrecho Bosco",
               "visitante": "VP Madrid B Negro B",
               "pabellon": "Salesianos Estrecho",
@@ -23562,17 +23562,6 @@
               "aplazado": false
             },
             {
-              "id": 57285,
-              "jornada": 1,
-              "fechaHora": "2026-10-04T12:00:00.000Z",
-              "local": "Cvleganes.com",
-              "visitante": "CV Nueva Castilla",
-              "pabellon": "Emilia Pardo Bazan, Pabellon",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57286,
               "jornada": 1,
               "fechaHora": "2026-10-04T13:00:00.000Z",
@@ -23618,6 +23607,17 @@
               "direccion": "RONDA DEL SUR, 4",
               "mapa": "https://www.google.com/maps/search/?api=1&query=C.D.M. ENTREVÍAS RONDA DEL SUR, 4, MADRID",
               "jugado": false
+            },
+            {
+              "id": 57285,
+              "jornada": 1,
+              "fechaHora": "2026-11-01T17:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": "Europa, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
