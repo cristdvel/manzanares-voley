@@ -29,32 +29,33 @@ import { dirname, join } from "node:path";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
-// .trim() por si el secreto de GitHub se guardó con un salto de línea o
-// espacio de más al pegarlo — un token así rompe fetch() con "Headers.append:
-// ... is an invalid header value" en cuanto kvGet/kvPut necesitan usarlo.
-const {
-  CF_ACCOUNT_ID = "",
-  CF_KV_NAMESPACE_ID = "",
-  CF_API_TOKEN = "",
-  VAPID_PUBLIC_KEY = "",
-  VAPID_PRIVATE_KEY = "",
-  VAPID_SUBJECT = "",
-} = process.env;
+// Un secreto de GitHub pegado con un salto de línea o espacio —también en
+// medio, no solo en los extremos— rompe fetch() con "Headers.append: ... is an
+// invalid header value". Se queda con el primer fragmento sin espacios y avisa
+// (sin imprimir el valor) para que se pueda corregir el secreto de verdad.
+function limpiar(nombre) {
+  const partes = (process.env[nombre] || "").split(/\s+/).filter(Boolean);
+  if (partes.length > 1) {
+    console.warn(`⚠ ${nombre} tiene ${partes.length} fragmentos separados por espacios o saltos de línea; se usa solo el primero. Vuelve a guardar el secreto sin saltos de línea.`);
+  }
+  return partes[0] || "";
+}
 
-const env = {
-  CF_ACCOUNT_ID: CF_ACCOUNT_ID.trim(),
-  CF_KV_NAMESPACE_ID: CF_KV_NAMESPACE_ID.trim(),
-  CF_API_TOKEN: CF_API_TOKEN.trim(),
-  VAPID_PUBLIC_KEY: VAPID_PUBLIC_KEY.trim(),
-  VAPID_PRIVATE_KEY: VAPID_PRIVATE_KEY.trim(),
-  VAPID_SUBJECT: VAPID_SUBJECT.trim(),
-};
+const env = Object.fromEntries(
+  ["CF_ACCOUNT_ID", "CF_KV_NAMESPACE_ID", "CF_API_TOKEN", "VAPID_PUBLIC_KEY", "VAPID_PRIVATE_KEY", "VAPID_SUBJECT"].map(
+    (n) => [n, limpiar(n)],
+  ),
+);
 
 for (const [nombre, valor] of Object.entries(env)) {
   if (!valor) {
     console.error(`✗ Falta la variable de entorno ${nombre}.`);
     process.exit(1);
   }
+}
+if (!/^[\x21-\x7e]+$/.test(env.CF_API_TOKEN)) {
+  console.error("✗ CF_API_TOKEN contiene caracteres no válidos (revisa que no tenga comillas tipográficas, tildes o símbolos raros).");
+  process.exit(1);
 }
 
 webpush.setVapidDetails(env.VAPID_SUBJECT, env.VAPID_PUBLIC_KEY, env.VAPID_PRIVATE_KEY);
@@ -80,7 +81,8 @@ async function kvListKeys(prefix) {
 
 async function kvGet(key) {
   const res = await fetch(`${KV_BASE}/values/${encodeURIComponent(key)}`, { headers: kvHeaders });
-  if (!res.ok) return null;
+  if (res.status === 404) return null;
+  if (!res.ok) throw new Error(`Error leyendo KV (${res.status}): revisa CF_API_TOKEN, CF_ACCOUNT_ID y CF_KV_NAMESPACE_ID.`);
   return res.text();
 }
 
