@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-02T20:23:44.823Z",
+  "actualizado": "2026-10-03T04:08:51.124Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -23628,7 +23628,7 @@
             {
               "id": 57291,
               "jornada": 2,
-              "fechaHora": "2026-10-10T18:15:00.000Z",
+              "fechaHora": "2026-10-11T00:00:00.000Z",
               "local": "Cde Parla Voley Ortopedia A",
               "visitante": "Cvleganes.com",
               "pabellon": "Miguel Hernandez, Ceip",
@@ -28378,6 +28378,17 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
+              "id": 58086,
+              "jornada": 2,
+              "fechaHora": "2026-10-09T20:00:00.000Z",
+              "local": "CV Majadahonda A",
+              "visitante": "Abv Boadilla B",
+              "pabellon": "Principe Felipe, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 58085,
               "jornada": 2,
               "fechaHora": "2026-10-09T20:30:00.000Z",
@@ -28390,17 +28401,6 @@
               "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
               "jugado": false
-            },
-            {
-              "id": 58086,
-              "jornada": 2,
-              "fechaHora": "2026-10-10T20:00:00.000Z",
-              "local": "CV Majadahonda A",
-              "visitante": "Abv Boadilla B",
-              "pabellon": "Principe Felipe, Polideportivo",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 58084,
