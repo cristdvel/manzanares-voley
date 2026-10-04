@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-04T13:45:30.055Z",
+  "actualizado": "2026-10-04T19:15:33.490Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -77,6 +77,32 @@
         },
         {
           "pos": 6,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 2,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 2,
+          "setsContra": 1,
+          "puntosFavor": 73,
+          "puntosContra": 72
+        },
+        {
+          "pos": 7,
+          "equipo": "Coslada Voley A",
+          "esManzanares": false,
+          "pts": 1,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 1,
+          "setsContra": 2,
+          "puntosFavor": 72,
+          "puntosContra": 73
+        },
+        {
+          "pos": 8,
           "equipo": "Club Voleibol Torrelodones A",
           "esManzanares": false,
           "pts": 0,
@@ -89,7 +115,7 @@
           "puntosContra": 98
         },
         {
-          "pos": 7,
+          "pos": 9,
           "equipo": "Dragons Voleibol Moralzarzal Blanco B",
           "esManzanares": false,
           "pts": 0,
@@ -102,7 +128,7 @@
           "puntosContra": 75
         },
         {
-          "pos": 8,
+          "pos": 10,
           "equipo": "Cde Voleibol Colmenar A",
           "esManzanares": false,
           "pts": 0,
@@ -115,7 +141,7 @@
           "puntosContra": 76
         },
         {
-          "pos": 9,
+          "pos": 11,
           "equipo": "Intervoley Fuenlabrada",
           "esManzanares": false,
           "pts": 0,
@@ -128,7 +154,7 @@
           "puntosContra": 75
         },
         {
-          "pos": 10,
+          "pos": 12,
           "equipo": "Cde Vb Algete",
           "esManzanares": false,
           "pts": 0,
@@ -139,32 +165,6 @@
           "setsContra": 3,
           "puntosFavor": 42,
           "puntosContra": 75
-        },
-        {
-          "pos": 12,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 13,
-          "equipo": "Coslada Voley A",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
         }
       ],
       "jornadas": [
@@ -4164,6 +4164,32 @@
         },
         {
           "pos": 5,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 1,
+          "puntosFavor": 97,
+          "puntosContra": 60
+        },
+        {
+          "pos": 6,
+          "equipo": "Chv1995 A",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 0,
+          "setsFavor": 1,
+          "setsContra": 3,
+          "puntosFavor": 60,
+          "puntosContra": 97
+        },
+        {
+          "pos": 7,
           "equipo": "CV Tres Cantos",
           "esManzanares": false,
           "pts": 0,
@@ -4176,7 +4202,7 @@
           "puntosContra": 75
         },
         {
-          "pos": 6,
+          "pos": 8,
           "equipo": "Cde Parla Voley Parlazul",
           "esManzanares": false,
           "pts": 0,
@@ -4189,7 +4215,7 @@
           "puntosContra": 75
         },
         {
-          "pos": 7,
+          "pos": 9,
           "equipo": "CV Sanse",
           "esManzanares": false,
           "pts": 0,
@@ -4202,7 +4228,7 @@
           "puntosContra": 75
         },
         {
-          "pos": 8,
+          "pos": 10,
           "equipo": "Cvleganes.com B",
           "esManzanares": false,
           "pts": 0,
@@ -4215,7 +4241,7 @@
           "puntosContra": 75
         },
         {
-          "pos": 9,
+          "pos": 11,
           "equipo": "VP Madrid A Amarillo",
           "esManzanares": false,
           "pts": 0,
@@ -4228,37 +4254,11 @@
           "puntosContra": 0
         },
         {
-          "pos": 10,
+          "pos": 12,
           "equipo": "Cuv Alcorcón A",
           "esManzanares": false,
           "pts": 0,
           "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 11,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
-          "pts": 0,
-          "pj": 1,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 12,
-          "equipo": "Chv1995 A",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 1,
           "pg": 0,
           "pp": 0,
           "setsFavor": 0,
@@ -6199,6 +6199,32 @@
         },
         {
           "pos": 4,
+          "equipo": "CV Sanse Rojo",
+          "esManzanares": false,
+          "pts": 2,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 2,
+          "puntosFavor": 107,
+          "puntosContra": 106
+        },
+        {
+          "pos": 5,
+          "equipo": "Club Voleibol Móstoles A",
+          "esManzanares": false,
+          "pts": 1,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 2,
+          "setsContra": 3,
+          "puntosFavor": 106,
+          "puntosContra": 107
+        },
+        {
+          "pos": 6,
           "equipo": "Feel Alcobendas Negro",
           "esManzanares": false,
           "pts": 0,
@@ -6211,7 +6237,7 @@
           "puntosContra": 10
         },
         {
-          "pos": 5,
+          "pos": 7,
           "equipo": "Dragons Voleibol Moralzarzal A",
           "esManzanares": false,
           "pts": 0,
@@ -6224,7 +6250,7 @@
           "puntosContra": 91
         },
         {
-          "pos": 6,
+          "pos": 8,
           "equipo": "Cvleganes.com B",
           "esManzanares": false,
           "pts": 0,
@@ -6237,7 +6263,7 @@
           "puntosContra": 98
         },
         {
-          "pos": 7,
+          "pos": 9,
           "equipo": "VP Madrid A Amarillo",
           "esManzanares": false,
           "pts": 0,
@@ -6250,7 +6276,7 @@
           "puntosContra": 76
         },
         {
-          "pos": 8,
+          "pos": 10,
           "equipo": "A. D. Voleibol Rivas Verde",
           "esManzanares": false,
           "pts": 0,
@@ -6263,20 +6289,7 @@
           "puntosContra": 16
         },
         {
-          "pos": 9,
-          "equipo": "CV Sanse Rojo",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 10,
+          "pos": 11,
           "equipo": "CV Las Rozas A",
           "esManzanares": false,
           "pts": 0,
@@ -6289,24 +6302,11 @@
           "puntosContra": 0
         },
         {
-          "pos": 11,
+          "pos": 12,
           "equipo": "Manzanares Voley A",
           "esManzanares": true,
           "pts": 0,
           "pj": 1,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 12,
-          "equipo": "Club Voleibol Móstoles A",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
           "pg": 0,
           "pp": 0,
           "setsFavor": 0,
@@ -8519,6 +8519,17 @@
           "fecha": "2026-10-18T00:00:00.000Z",
           "partidos": [
             {
+              "id": 67165,
+              "jornada": 3,
+              "fechaHora": "2026-10-17T09:45:00.000Z",
+              "local": "Nuestra Señora Del Pilar Cadete Femenino",
+              "visitante": "CV Nueva Castilla A",
+              "pabellon": "Nuestra Señora Del Pilar",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 67164,
               "jornada": 3,
               "fechaHora": "2026-10-17T13:00:00.000Z",
@@ -8551,17 +8562,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 67165,
-              "jornada": 3,
-              "fechaHora": "2026-10-18T00:00:00.000Z",
-              "local": "Nuestra Señora Del Pilar Cadete Femenino",
-              "visitante": "CV Nueva Castilla A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 67166,
@@ -12324,13 +12324,13 @@
           "equipo": "A. D. Voleibol Rivas",
           "esManzanares": false,
           "pts": 0,
-          "pj": 0,
+          "pj": 1,
           "pg": 0,
-          "pp": 0,
+          "pp": 1,
           "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
+          "setsContra": 3,
+          "puntosFavor": 57,
+          "puntosContra": 75
         },
         {
           "pos": 4,
@@ -12427,14 +12427,14 @@
           "pos": 11,
           "equipo": "Dragons Voleibol Moralzarzal",
           "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
           "pp": 0,
-          "setsFavor": 0,
+          "setsFavor": 3,
           "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
+          "puntosFavor": 75,
+          "puntosContra": 57
         }
       ],
       "jornadas": [
@@ -15810,6 +15810,32 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "VP Madrid A Amarillo Juvenil Femenino",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 2,
+          "pg": 2,
+          "pp": 0,
+          "setsFavor": 6,
+          "setsContra": 1,
+          "puntosFavor": 172,
+          "puntosContra": 151
+        },
+        {
+          "pos": 2,
+          "equipo": "CV Las Rozas A",
+          "esManzanares": false,
+          "pts": 5,
+          "pj": 2,
+          "pg": 2,
+          "pp": 0,
+          "setsFavor": 6,
+          "setsContra": 3,
+          "puntosFavor": 209,
+          "puntosContra": 172
+        },
+        {
+          "pos": 3,
           "equipo": "Ucam Torrejón A",
           "esManzanares": false,
           "pts": 5,
@@ -15822,7 +15848,7 @@
           "puntosContra": 195
         },
         {
-          "pos": 2,
+          "pos": 4,
           "equipo": "Cvleganes.com A",
           "esManzanares": false,
           "pts": 4,
@@ -15835,46 +15861,7 @@
           "puntosContra": 129
         },
         {
-          "pos": 3,
-          "equipo": "CV Las Rozas A",
-          "esManzanares": false,
-          "pts": 3,
-          "pj": 1,
-          "pg": 1,
-          "pp": 0,
-          "setsFavor": 3,
-          "setsContra": 1,
-          "puntosFavor": 99,
-          "puntosContra": 75
-        },
-        {
-          "pos": 4,
-          "equipo": "VP Madrid A Amarillo Juvenil Femenino",
-          "esManzanares": false,
-          "pts": 3,
-          "pj": 1,
-          "pg": 1,
-          "pp": 0,
-          "setsFavor": 3,
-          "setsContra": 1,
-          "puntosFavor": 92,
-          "puntosContra": 78
-        },
-        {
           "pos": 5,
-          "equipo": "Feel Alcobendas Negro",
-          "esManzanares": false,
-          "pts": 3,
-          "pj": 1,
-          "pg": 1,
-          "pp": 0,
-          "setsFavor": 3,
-          "setsContra": 0,
-          "puntosFavor": 76,
-          "puntosContra": 68
-        },
-        {
-          "pos": 6,
           "equipo": "Chv1995 A",
           "esManzanares": false,
           "pts": 3,
@@ -15885,6 +15872,19 @@
           "setsContra": 3,
           "puntosFavor": 154,
           "puntosContra": 144
+        },
+        {
+          "pos": 6,
+          "equipo": "Feel Alcobendas Negro",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 2,
+          "pg": 1,
+          "pp": 1,
+          "setsFavor": 3,
+          "setsContra": 3,
+          "puntosFavor": 149,
+          "puntosContra": 148
         },
         {
           "pos": 7,
@@ -15929,14 +15929,14 @@
           "pos": 10,
           "equipo": "Manzanares Voley A",
           "esManzanares": true,
-          "pts": 1,
-          "pj": 1,
+          "pts": 2,
+          "pj": 2,
           "pg": 0,
-          "pp": 1,
-          "setsFavor": 2,
-          "setsContra": 3,
-          "puntosFavor": 96,
-          "puntosContra": 97
+          "pp": 2,
+          "setsFavor": 4,
+          "setsContra": 6,
+          "puntosFavor": 193,
+          "puntosContra": 207
         },
         {
           "pos": 11,
@@ -17901,6 +17901,19 @@
         },
         {
           "pos": 4,
+          "equipo": "CV Valdemoro Las Aguas Juvenil Femenino",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 1,
+          "puntosFavor": 92,
+          "puntosContra": 73
+        },
+        {
+          "pos": 5,
           "equipo": "VP Madrid B Negro",
           "esManzanares": false,
           "pts": 2,
@@ -17913,7 +17926,7 @@
           "puntosContra": 63
         },
         {
-          "pos": 5,
+          "pos": 6,
           "equipo": "Manzanares Voley B",
           "esManzanares": true,
           "pts": 1,
@@ -17926,7 +17939,20 @@
           "puntosContra": 75
         },
         {
-          "pos": 6,
+          "pos": 7,
+          "equipo": "B. M. 2 Ciudad Getafe",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 1,
+          "setsContra": 3,
+          "puntosFavor": 73,
+          "puntosContra": 92
+        },
+        {
+          "pos": 8,
           "equipo": "VP Madrid C Blanco",
           "esManzanares": false,
           "pts": 0,
@@ -17939,7 +17965,7 @@
           "puntosContra": 95
         },
         {
-          "pos": 7,
+          "pos": 9,
           "equipo": "Abv Boadilla B",
           "esManzanares": false,
           "pts": 0,
@@ -17952,7 +17978,7 @@
           "puntosContra": 96
         },
         {
-          "pos": 8,
+          "pos": 10,
           "equipo": "Cde Parla Voley Folder",
           "esManzanares": false,
           "pts": 0,
@@ -17965,8 +17991,8 @@
           "puntosContra": 75
         },
         {
-          "pos": 9,
-          "equipo": "Arganvoley",
+          "pos": 11,
+          "equipo": "Voleibol Hispano Usera",
           "esManzanares": false,
           "pts": 0,
           "pj": 1,
@@ -17978,34 +18004,8 @@
           "puntosContra": 0
         },
         {
-          "pos": 10,
-          "equipo": "CV Valdemoro Las Aguas Juvenil Femenino",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 11,
-          "equipo": "B. M. 2 Ciudad Getafe",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
           "pos": 12,
-          "equipo": "Voleibol Hispano Usera",
+          "equipo": "Arganvoley",
           "esManzanares": false,
           "pts": 0,
           "pj": 1,
@@ -21368,58 +21368,19 @@
       "clasificacion": [
         {
           "pos": 1,
-          "equipo": "Cuv Alcorcón B",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
+          "equipo": "Manzanares Voley",
+          "esManzanares": true,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
           "pp": 0,
-          "setsFavor": 0,
+          "setsFavor": 3,
           "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
+          "puntosFavor": 75,
+          "puntosContra": 42
         },
         {
           "pos": 2,
-          "equipo": "Chv1995 A",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 3,
-          "equipo": "Manzanares Voley",
-          "esManzanares": true,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 4,
-          "equipo": "CV Aranjuez",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 5,
           "equipo": "A.D.perales",
           "esManzanares": false,
           "pts": 3,
@@ -21430,6 +21391,45 @@
           "setsContra": 0,
           "puntosFavor": 75,
           "puntosContra": 51
+        },
+        {
+          "pos": 3,
+          "equipo": "CV Getafe Azul",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 0,
+          "puntosFavor": 75,
+          "puntosContra": 58
+        },
+        {
+          "pos": 4,
+          "equipo": "CV Aranjuez",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 1,
+          "puntosFavor": 98,
+          "puntosContra": 89
+        },
+        {
+          "pos": 5,
+          "equipo": "Club Voleibol Plaza Castilla",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 1,
+          "puntosFavor": 94,
+          "puntosContra": 89
         },
         {
           "pos": 6,
@@ -21446,6 +21446,19 @@
         },
         {
           "pos": 7,
+          "equipo": "Cuv Alcorcón B",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 1,
+          "setsContra": 3,
+          "puntosFavor": 89,
+          "puntosContra": 98
+        },
+        {
+          "pos": 8,
           "equipo": "VP Madrid B Negro B",
           "esManzanares": false,
           "pts": 0,
@@ -21458,7 +21471,7 @@
           "puntosContra": 75
         },
         {
-          "pos": 8,
+          "pos": 9,
           "equipo": "Club Voleibol Torrelodones",
           "esManzanares": false,
           "pts": 0,
@@ -21471,34 +21484,21 @@
           "puntosContra": 75
         },
         {
-          "pos": 9,
-          "equipo": "CV Getafe Azul",
-          "esManzanares": false,
-          "pts": 3,
-          "pj": 1,
-          "pg": 1,
-          "pp": 0,
-          "setsFavor": 3,
-          "setsContra": 0,
-          "puntosFavor": 75,
-          "puntosContra": 58
-        },
-        {
           "pos": 10,
-          "equipo": "Club Voleibol Plaza Castilla",
+          "equipo": "Salesianos Estrecho Bosco",
           "esManzanares": false,
-          "pts": 3,
+          "pts": 0,
           "pj": 1,
-          "pg": 1,
-          "pp": 0,
-          "setsFavor": 3,
-          "setsContra": 1,
-          "puntosFavor": 94,
-          "puntosContra": 89
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 0,
+          "setsContra": 3,
+          "puntosFavor": 42,
+          "puntosContra": 75
         },
         {
           "pos": 11,
-          "equipo": "Salesianos Estrecho Bosco",
+          "equipo": "Chv1995 A",
           "esManzanares": false,
           "pts": 0,
           "pj": 0,
@@ -23403,6 +23403,32 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "Feel Alcobendas",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 0,
+          "puntosFavor": 75,
+          "puntosContra": 33
+        },
+        {
+          "pos": 2,
+          "equipo": "Ucam Torrejón",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 0,
+          "puntosFavor": 75,
+          "puntosContra": 52
+        },
+        {
+          "pos": 3,
           "equipo": "V-Valley CValcalá G1",
           "esManzanares": false,
           "pts": 3,
@@ -23415,7 +23441,33 @@
           "puntosContra": 59
         },
         {
-          "pos": 2,
+          "pos": 4,
+          "equipo": "VP Madrid A Amarillo",
+          "esManzanares": false,
+          "pts": 2,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 2,
+          "puntosFavor": 105,
+          "puntosContra": 98
+        },
+        {
+          "pos": 5,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 1,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 2,
+          "setsContra": 3,
+          "puntosFavor": 98,
+          "puntosContra": 105
+        },
+        {
+          "pos": 6,
           "equipo": "CV Las Rozas A",
           "esManzanares": false,
           "pts": 0,
@@ -23428,7 +23480,7 @@
           "puntosContra": 11
         },
         {
-          "pos": 3,
+          "pos": 7,
           "equipo": "Cde Parla Voley Ortopedia A",
           "esManzanares": false,
           "pts": 0,
@@ -23441,7 +23493,7 @@
           "puntosContra": 78
         },
         {
-          "pos": 4,
+          "pos": 8,
           "equipo": "Cuv Alcorcón Azul",
           "esManzanares": false,
           "pts": 0,
@@ -23454,87 +23506,35 @@
           "puntosContra": 15
         },
         {
-          "pos": 5,
-          "equipo": "Cvleganes.com",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 6,
-          "equipo": "CV Sanse",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 7,
-          "equipo": "Feel Alcobendas",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 8,
-          "equipo": "Ucam Torrejón",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
           "pos": 9,
-          "equipo": "VP Madrid A Amarillo",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 10,
           "equipo": "CV Collado Villalba",
           "esManzanares": false,
           "pts": 0,
-          "pj": 0,
+          "pj": 1,
           "pg": 0,
-          "pp": 0,
+          "pp": 1,
           "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
+          "setsContra": 3,
+          "puntosFavor": 52,
+          "puntosContra": 75
+        },
+        {
+          "pos": 10,
+          "equipo": "CV Sanse",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 0,
+          "setsContra": 3,
+          "puntosFavor": 33,
+          "puntosContra": 75
         },
         {
           "pos": 11,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
+          "equipo": "Cvleganes.com",
+          "esManzanares": false,
           "pts": 0,
           "pj": 0,
           "pg": 0,
@@ -25451,6 +25451,32 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "Stars Sport Madrid",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 0,
+          "puntosFavor": 75,
+          "puntosContra": 45
+        },
+        {
+          "pos": 2,
+          "equipo": "Chv1995 B",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 0,
+          "puntosFavor": 75,
+          "puntosContra": 53
+        },
+        {
+          "pos": 3,
           "equipo": "Salesianos Estrecho Auxiliadora",
           "esManzanares": false,
           "pts": 3,
@@ -25463,7 +25489,7 @@
           "puntosContra": 62
         },
         {
-          "pos": 2,
+          "pos": 4,
           "equipo": "Cde Voleibol Colmenar A",
           "esManzanares": false,
           "pts": 0,
@@ -25476,7 +25502,7 @@
           "puntosContra": 6
         },
         {
-          "pos": 3,
+          "pos": 5,
           "equipo": "CV Yma Majadahonda Junior Femenino",
           "esManzanares": false,
           "pts": 0,
@@ -25489,7 +25515,33 @@
           "puntosContra": 77
         },
         {
-          "pos": 4,
+          "pos": 6,
+          "equipo": "Chv1995 Arganzuela",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 0,
+          "setsContra": 3,
+          "puntosFavor": 53,
+          "puntosContra": 75
+        },
+        {
+          "pos": 7,
+          "equipo": "B. M. 2 De Mayo",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 0,
+          "setsContra": 3,
+          "puntosFavor": 45,
+          "puntosContra": 75
+        },
+        {
+          "pos": 8,
           "equipo": "Cde Voleibol Colmenar B",
           "esManzanares": false,
           "pts": 0,
@@ -25502,61 +25554,9 @@
           "puntosContra": 15
         },
         {
-          "pos": 5,
-          "equipo": "B. M. 2 De Mayo",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 6,
-          "equipo": "Chv1995 B",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 7,
+          "pos": 9,
           "equipo": "Manzanares Voley B Junior Femenino",
           "esManzanares": true,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 8,
-          "equipo": "Saint Louis Morillon",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 9,
-          "equipo": "Cd Newman B",
-          "esManzanares": false,
           "pts": 0,
           "pj": 1,
           "pg": 0,
@@ -25568,7 +25568,7 @@
         },
         {
           "pos": 10,
-          "equipo": "CV Bulldogs B Junior Femenino",
+          "equipo": "Saint Louis Morillon",
           "esManzanares": false,
           "pts": 0,
           "pj": 1,
@@ -25581,10 +25581,10 @@
         },
         {
           "pos": 11,
-          "equipo": "CV Las Rozas B",
+          "equipo": "Cd Newman B",
           "esManzanares": false,
           "pts": 0,
-          "pj": 0,
+          "pj": 1,
           "pg": 0,
           "pp": 0,
           "setsFavor": 0,
@@ -25594,10 +25594,10 @@
         },
         {
           "pos": 12,
-          "equipo": "CV Getafe Azul",
+          "equipo": "CV Bulldogs B Junior Femenino",
           "esManzanares": false,
           "pts": 0,
-          "pj": 0,
+          "pj": 1,
           "pg": 0,
           "pp": 0,
           "setsFavor": 0,
@@ -25607,10 +25607,10 @@
         },
         {
           "pos": 13,
-          "equipo": "Stars Sport Madrid",
+          "equipo": "CV Las Rozas B",
           "esManzanares": false,
           "pts": 0,
-          "pj": 0,
+          "pj": 1,
           "pg": 0,
           "pp": 0,
           "setsFavor": 0,
@@ -25620,10 +25620,10 @@
         },
         {
           "pos": 14,
-          "equipo": "Chv1995 Arganzuela",
+          "equipo": "CV Getafe Azul",
           "esManzanares": false,
           "pts": 0,
-          "pj": 0,
+          "pj": 1,
           "pg": 0,
           "pp": 0,
           "setsFavor": 0,
@@ -30203,111 +30203,111 @@
       "clasificacion": [
         {
           "pos": 1,
-          "equipo": "Avp Servi-Cop",
+          "equipo": "Maria Rodrigo",
           "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
           "pp": 0,
-          "setsFavor": 0,
+          "setsFavor": 3,
           "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
+          "puntosFavor": 75,
+          "puntosContra": 33
         },
         {
           "pos": 2,
-          "equipo": "Maria Rodrigo",
+          "equipo": "CV Nueva Castilla Senior Masculino",
           "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
           "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
+          "setsFavor": 3,
+          "setsContra": 1,
+          "puntosFavor": 98,
+          "puntosContra": 65
         },
         {
           "pos": 3,
-          "equipo": "CV Nueva Castilla Senior Masculino",
+          "equipo": "Cde Parla Voley Ortopedia Parla Senior Masculino",
           "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
           "pp": 0,
-          "setsFavor": 0,
+          "setsFavor": 3,
           "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
+          "puntosFavor": 75,
+          "puntosContra": 59
         },
         {
           "pos": 4,
           "equipo": "Manzanares Voley",
           "esManzanares": true,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
           "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
+          "setsFavor": 3,
+          "setsContra": 1,
+          "puntosFavor": 94,
+          "puntosContra": 82
         },
         {
           "pos": 5,
-          "equipo": "Cde Parla Voley Ortopedia Parla Senior Masculino",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 6,
-          "equipo": "CV Getafe Verde",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 0,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
-        },
-        {
-          "pos": 7,
           "equipo": "CV Getafe Rojo",
           "esManzanares": false,
           "pts": 0,
-          "pj": 0,
+          "pj": 1,
           "pg": 0,
-          "pp": 0,
-          "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
+          "pp": 1,
+          "setsFavor": 1,
+          "setsContra": 3,
+          "puntosFavor": 82,
+          "puntosContra": 94
         },
         {
-          "pos": 8,
+          "pos": 6,
           "equipo": "Adc Sanfermin",
           "esManzanares": false,
           "pts": 0,
-          "pj": 0,
+          "pj": 1,
           "pg": 0,
-          "pp": 0,
+          "pp": 1,
+          "setsFavor": 1,
+          "setsContra": 3,
+          "puntosFavor": 65,
+          "puntosContra": 98
+        },
+        {
+          "pos": 7,
+          "equipo": "CV Getafe Verde",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
           "setsFavor": 0,
-          "setsContra": 0,
-          "puntosFavor": 0,
-          "puntosContra": 0
+          "setsContra": 3,
+          "puntosFavor": 59,
+          "puntosContra": 75
+        },
+        {
+          "pos": 8,
+          "equipo": "Sad Municipal Loeches",
+          "esManzanares": false,
+          "pts": 0,
+          "pj": 1,
+          "pg": 0,
+          "pp": 1,
+          "setsFavor": 0,
+          "setsContra": 3,
+          "puntosFavor": 33,
+          "puntosContra": 75
         },
         {
           "pos": 9,
-          "equipo": "Sad Municipal Loeches",
+          "equipo": "Avp Servi-Cop",
           "esManzanares": false,
           "pts": 0,
           "pj": 0,
@@ -31667,21 +31667,6 @@
   ],
   "proximos": [
     {
-      "id": 62963,
-      "jornada": 1,
-      "fechaHora": "2026-10-03T14:30:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "A.D.perales",
-      "pabellon": "Colegio Greenfield",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-      "jugado": false,
-      "categoria": "Cadete Masculino A"
-    },
-    {
       "id": 57148,
       "jornada": 1,
       "fechaHora": "2026-10-04T10:30:00.000Z",
@@ -32111,6 +32096,19 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Infantil Femenino B"
+    },
+    {
+      "id": 59604,
+      "jornada": 3,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "CV Tres Cantos",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Infantil Masculino"
     }
   ],
   "ultimos": []
