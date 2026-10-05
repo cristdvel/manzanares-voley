@@ -109,8 +109,12 @@ async function fetchGrupo({ categoria, grupoId }, clubId) {
           const iso = toIso(f, h);
           if (iso) p.fechaHora = iso;
         }
-        p.jugado = !!d.finalizado;
-        if (d.finalizado) {
+        // La Federación tarda en marcar "finalizado", pero el marcador y los
+        // puntos de partido ya cuentan en la clasificación: con puntos
+        // asignados se da por jugado.
+        const puntosAsignados = Number(d.puntos_local) + Number(d.puntos_visitante) > 0;
+        p.jugado = !!d.finalizado || puntosAsignados;
+        if (p.jugado) {
           p.setsLocal = Number(d.sets_local);
           p.setsVisitante = Number(d.sets_visitante);
           p.resultado = `${d.sets_local}-${d.sets_visitante}`;

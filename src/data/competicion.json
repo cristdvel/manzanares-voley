@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-05T04:28:16.427Z",
+  "actualizado": "2026-10-05T07:24:10.364Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -239,7 +239,10 @@
               "aplazado": false,
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 2,
+              "setsVisitante": 3,
+              "resultado": "2-3"
             }
           ]
         },
@@ -1792,7 +1795,10 @@
           "aplazado": false,
           "direccion": "GALLUR 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 2,
+          "setsVisitante": 3,
+          "resultado": "2-3"
         },
         {
           "id": 59871,
@@ -2265,7 +2271,10 @@
               "aplazado": false,
               "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 0,
+              "setsVisitante": 3,
+              "resultado": "0-3"
             },
             {
               "id": 73266,
@@ -3842,7 +3851,10 @@
           "aplazado": false,
           "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
           "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 0,
+          "setsVisitante": 3,
+          "resultado": "0-3"
         },
         {
           "id": 73271,
@@ -4328,7 +4340,10 @@
               "aplazado": false,
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 1,
+              "resultado": "3-1"
             },
             {
               "id": 59594,
@@ -5892,7 +5907,10 @@
           "aplazado": false,
           "direccion": "GALLUR 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 1,
+          "resultado": "3-1"
         },
         {
           "id": 59597,
@@ -6365,7 +6383,10 @@
               "aplazado": false,
               "direccion": "CALLE ACANTO, 8",
               "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DEPORTIVO Y CULTURAL - LA MARAZUELA CALLE ACANTO, 8, LAS ROZAS DE MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 0,
+              "resultado": "3-0"
             },
             {
               "id": 57147,
@@ -7940,7 +7961,10 @@
           "aplazado": false,
           "direccion": "CALLE ACANTO, 8",
           "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DEPORTIVO Y CULTURAL - LA MARAZUELA CALLE ACANTO, 8, LAS ROZAS DE MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0"
         },
         {
           "id": 57149,
@@ -8402,7 +8426,10 @@
               "aplazado": false,
               "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 2,
+              "resultado": "3-2"
             },
             {
               "id": 67153,
@@ -9988,7 +10015,10 @@
           "aplazado": false,
           "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
           "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 2,
+          "resultado": "3-2"
         },
         {
           "id": 67160,
@@ -10426,7 +10456,10 @@
               "aplazado": false,
               "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
               "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 2,
+              "setsVisitante": 3,
+              "resultado": "2-3"
             },
             {
               "id": 72137,
@@ -12025,7 +12058,10 @@
           "aplazado": false,
           "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
           "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 2,
+          "setsVisitante": 3,
+          "resultado": "2-3"
         },
         {
           "id": 72144,
@@ -12465,7 +12501,10 @@
               "aplazado": false,
               "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 0,
+              "resultado": "3-0"
             },
             {
               "id": 62960,
@@ -14062,7 +14101,10 @@
           "aplazado": false,
           "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
           "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0"
         },
         {
           "id": 62969,
@@ -16004,7 +16046,10 @@
               "aplazado": false,
               "direccion": "LA PLATA, S/N",
               "mapa": "https://www.google.com/maps/search/?api=1&query=M-4  (SONIA ABEJÓN), PABELLÓN MUNICIPAL LA PLATA, S/N, TORREJON DE ARDOZ",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 2,
+              "resultado": "3-2"
             },
             {
               "id": 56743,
@@ -16101,7 +16146,10 @@
               "aplazado": false,
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 2,
+              "setsVisitante": 3,
+              "resultado": "2-3"
             },
             {
               "id": 56751,
@@ -17592,7 +17640,10 @@
           "aplazado": false,
           "direccion": "LA PLATA, S/N",
           "mapa": "https://www.google.com/maps/search/?api=1&query=M-4  (SONIA ABEJÓN), PABELLÓN MUNICIPAL LA PLATA, S/N, TORREJON DE ARDOZ",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 2,
+          "resultado": "3-2"
         },
         {
           "id": 56747,
@@ -17606,7 +17657,10 @@
           "aplazado": false,
           "direccion": "GALLUR 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 2,
+          "setsVisitante": 3,
+          "resultado": "2-3"
         },
         {
           "id": 56757,
@@ -18078,7 +18132,10 @@
               "aplazado": false,
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 2,
+              "setsVisitante": 3,
+              "resultado": "2-3"
             },
             {
               "id": 60883,
@@ -19642,7 +19699,10 @@
           "aplazado": false,
           "direccion": "GALLUR 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 2,
+          "setsVisitante": 3,
+          "resultado": "2-3"
         },
         {
           "id": 60889,
@@ -21571,7 +21631,10 @@
               "aplazado": false,
               "direccion": "CALLE MAZATERON, 12",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 0,
+              "resultado": "3-0"
             },
             {
               "id": 62594,
@@ -23135,7 +23198,10 @@
           "aplazado": false,
           "direccion": "CALLE MAZATERON, 12",
           "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0"
         },
         {
           "id": 62603,
@@ -23619,7 +23685,10 @@
               "aplazado": false,
               "direccion": "RONDA DEL SUR, 4",
               "mapa": "https://www.google.com/maps/search/?api=1&query=C.D.M. ENTREVÍAS RONDA DEL SUR, 4, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 2,
+              "resultado": "3-2"
             },
             {
               "id": 57285,
@@ -25183,7 +25252,10 @@
           "aplazado": false,
           "direccion": "RONDA DEL SUR, 4",
           "mapa": "https://www.google.com/maps/search/?api=1&query=C.D.M. ENTREVÍAS RONDA DEL SUR, 4, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 2,
+          "resultado": "3-2"
         },
         {
           "id": 57288,
@@ -25693,7 +25765,10 @@
               "aplazado": false,
               "direccion": "SENDA DE MAFALDA S/N",
               "mapa": "https://www.google.com/maps/search/?api=1&query=CERROBUENAVISTA, POLIDEPORTIVO MUNICIPAL SENDA DE MAFALDA S/N, GETAFE",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 0,
+              "setsVisitante": 3,
+              "resultado": "0-3"
             },
             {
               "id": 61166,
@@ -27837,7 +27912,10 @@
           "aplazado": false,
           "direccion": "SENDA DE MAFALDA S/N",
           "mapa": "https://www.google.com/maps/search/?api=1&query=CERROBUENAVISTA, POLIDEPORTIVO MUNICIPAL SENDA DE MAFALDA S/N, GETAFE",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 0,
+          "setsVisitante": 3,
+          "resultado": "0-3"
         },
         {
           "id": 61173,
@@ -28371,7 +28449,10 @@
               "aplazado": false,
               "direccion": "CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15",
               "mapa": "https://www.google.com/maps/search/?api=1&query=ANGEL NIETO, BOADILLA CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15, BOADILLA DEL MONTE",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 1,
+              "setsVisitante": 3,
+              "resultado": "1-3"
             },
             {
               "id": 58079,
@@ -29935,7 +30016,10 @@
           "aplazado": false,
           "direccion": "CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15",
           "mapa": "https://www.google.com/maps/search/?api=1&query=ANGEL NIETO, BOADILLA CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15, BOADILLA DEL MONTE",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 1,
+          "setsVisitante": 3,
+          "resultado": "1-3"
         },
         {
           "id": 58085,
@@ -30347,7 +30431,10 @@
               "aplazado": false,
               "direccion": "SENDA DE MAFALDA S/N",
               "mapa": "https://www.google.com/maps/search/?api=1&query=CERROBUENAVISTA, POLIDEPORTIVO MUNICIPAL SENDA DE MAFALDA S/N, GETAFE",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 1,
+              "setsVisitante": 3,
+              "resultado": "1-3"
             },
             {
               "id": 62174,
@@ -31454,7 +31541,10 @@
           "aplazado": false,
           "direccion": "SENDA DE MAFALDA S/N",
           "mapa": "https://www.google.com/maps/search/?api=1&query=CERROBUENAVISTA, POLIDEPORTIVO MUNICIPAL SENDA DE MAFALDA S/N, GETAFE",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 1,
+          "setsVisitante": 3,
+          "resultado": "1-3"
         },
         {
           "id": 62180,
@@ -31666,156 +31756,6 @@
     }
   ],
   "proximos": [
-    {
-      "id": 57148,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T10:30:00.000Z",
-      "local": "CV Las Rozas A",
-      "visitante": "Manzanares Voley A",
-      "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CALLE ACANTO, 8",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DEPORTIVO Y CULTURAL - LA MARAZUELA CALLE ACANTO, 8, LAS ROZAS DE MADRID",
-      "jugado": false,
-      "categoria": "Cadete Femenino A"
-    },
-    {
-      "id": 59593,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T12:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Chv1995 A",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Infantil Masculino"
-    },
-    {
-      "id": 60885,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T12:00:00.000Z",
-      "local": "Manzanares Voley B",
-      "visitante": "VP Madrid B Negro",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Juvenil Femenino B"
-    },
-    {
-      "id": 59861,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T14:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Coslada Voley A",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Infantil Femenino A"
-    },
-    {
-      "id": 56747,
-      "jornada": 2,
-      "fechaHora": "2026-10-04T14:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "CV Las Rozas A",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Juvenil Femenino A"
-    },
-    {
-      "id": 61167,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T16:00:00.000Z",
-      "local": "CV Getafe Azul",
-      "visitante": "Manzanares Voley B Junior Femenino",
-      "pabellon": "Cerrobuenavista, Polideportivo Municipal",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "SENDA DE MAFALDA S/N",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=CERROBUENAVISTA, POLIDEPORTIVO MUNICIPAL SENDA DE MAFALDA S/N, GETAFE",
-      "jugado": false,
-      "categoria": "Junior Femenino B"
-    },
-    {
-      "id": 62176,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T16:00:00.000Z",
-      "local": "CV Getafe Rojo",
-      "visitante": "Manzanares Voley",
-      "pabellon": "Cerrobuenavista, Polideportivo Municipal",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "SENDA DE MAFALDA S/N",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=CERROBUENAVISTA, POLIDEPORTIVO MUNICIPAL SENDA DE MAFALDA S/N, GETAFE",
-      "jugado": false,
-      "categoria": "Sénior Masculino"
-    },
-    {
-      "id": 62593,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T17:30:00.000Z",
-      "local": "Manzanares Voley",
-      "visitante": "Salesianos Estrecho Bosco",
-      "pabellon": "Colegio Nueva Castilla (Nuevo)",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CALLE MAZATERON, 12",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-      "jugado": false,
-      "categoria": "Juvenil Masculino"
-    },
-    {
-      "id": 57282,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T19:00:00.000Z",
-      "local": "VP Madrid A Amarillo",
-      "visitante": "Manzanares Voley A",
-      "pabellon": "C.d.m. Entrevías",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "RONDA DEL SUR, 4",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=C.D.M. ENTREVÍAS RONDA DEL SUR, 4, MADRID",
-      "jugado": false,
-      "categoria": "Junior Femenino A"
-    },
-    {
-      "id": 58076,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T19:00:00.000Z",
-      "local": "Abv Boadilla B",
-      "visitante": "Manzanares Voley Senior Femenino",
-      "pabellon": "Angel Nieto, Boadilla",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=ANGEL NIETO, BOADILLA CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15, BOADILLA DEL MONTE",
-      "jugado": false,
-      "categoria": "Sénior Femenino"
-    },
     {
       "id": 59871,
       "jornada": 2,
@@ -32109,7 +32049,282 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Infantil Masculino"
+    },
+    {
+      "id": 57160,
+      "jornada": 3,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Ucam Torrejón A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Femenino A"
+    },
+    {
+      "id": 67163,
+      "jornada": 3,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Manzanares Voley B Cadete Femenino",
+      "visitante": "Cuv Alcorcón Blanco",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Femenino B"
+    },
+    {
+      "id": 72148,
+      "jornada": 3,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "A.D.perales Blanco",
+      "visitante": "Manzanares Voley C Cadete Femenino",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Femenino C"
+    },
+    {
+      "id": 62974,
+      "jornada": 3,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Mintonette CV Pozuelo",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Masculino A"
+    },
+    {
+      "id": 63241,
+      "jornada": 2,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Manzanares Voley B",
+      "visitante": "Voleibol Hispano Usera",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Masculino B"
+    },
+    {
+      "id": 56758,
+      "jornada": 4,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Chv1995 A",
+      "visitante": "Manzanares Voley A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino A"
+    },
+    {
+      "id": 60896,
+      "jornada": 3,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Manzanares Voley B",
+      "visitante": "B. M. 2 Ciudad Getafe",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino B"
+    },
+    {
+      "id": 64684,
+      "jornada": 2,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Manzanares Voley C",
+      "visitante": "C.d.b.colegio Aquila Juvenil Femenino",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino C"
+    },
+    {
+      "id": 62604,
+      "jornada": 3,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Manzanares Voley",
+      "visitante": "Descansa...",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Masculino"
+    },
+    {
+      "id": 57294,
+      "jornada": 3,
+      "fechaHora": "2026-10-18T00:00:00.000Z",
+      "local": "Feel Alcobendas",
+      "visitante": "Manzanares Voley A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Junior Femenino A"
     }
   ],
-  "ultimos": []
+  "ultimos": [
+    {
+      "id": 57282,
+      "jornada": 1,
+      "fechaHora": "2026-10-04T19:00:00.000Z",
+      "local": "VP Madrid A Amarillo",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "C.d.m. Entrevías",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "RONDA DEL SUR, 4",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=C.D.M. ENTREVÍAS RONDA DEL SUR, 4, MADRID",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 2,
+      "resultado": "3-2",
+      "categoria": "Junior Femenino A"
+    },
+    {
+      "id": 58076,
+      "jornada": 1,
+      "fechaHora": "2026-10-04T19:00:00.000Z",
+      "local": "Abv Boadilla B",
+      "visitante": "Manzanares Voley Senior Femenino",
+      "pabellon": "Angel Nieto, Boadilla",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=ANGEL NIETO, BOADILLA CARRETERA DE BOADILLA A POZUELO KILÓMETRO 15, BOADILLA DEL MONTE",
+      "jugado": true,
+      "setsLocal": 1,
+      "setsVisitante": 3,
+      "resultado": "1-3",
+      "categoria": "Sénior Femenino"
+    },
+    {
+      "id": 62593,
+      "jornada": 1,
+      "fechaHora": "2026-10-04T17:30:00.000Z",
+      "local": "Manzanares Voley",
+      "visitante": "Salesianos Estrecho Bosco",
+      "pabellon": "Colegio Nueva Castilla (Nuevo)",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "CALLE MAZATERON, 12",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 0,
+      "resultado": "3-0",
+      "categoria": "Juvenil Masculino"
+    },
+    {
+      "id": 61167,
+      "jornada": 1,
+      "fechaHora": "2026-10-04T16:00:00.000Z",
+      "local": "CV Getafe Azul",
+      "visitante": "Manzanares Voley B Junior Femenino",
+      "pabellon": "Cerrobuenavista, Polideportivo Municipal",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "SENDA DE MAFALDA S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=CERROBUENAVISTA, POLIDEPORTIVO MUNICIPAL SENDA DE MAFALDA S/N, GETAFE",
+      "jugado": true,
+      "setsLocal": 0,
+      "setsVisitante": 3,
+      "resultado": "0-3",
+      "categoria": "Junior Femenino B"
+    },
+    {
+      "id": 62176,
+      "jornada": 1,
+      "fechaHora": "2026-10-04T16:00:00.000Z",
+      "local": "CV Getafe Rojo",
+      "visitante": "Manzanares Voley",
+      "pabellon": "Cerrobuenavista, Polideportivo Municipal",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "SENDA DE MAFALDA S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=CERROBUENAVISTA, POLIDEPORTIVO MUNICIPAL SENDA DE MAFALDA S/N, GETAFE",
+      "jugado": true,
+      "setsLocal": 1,
+      "setsVisitante": 3,
+      "resultado": "1-3",
+      "categoria": "Sénior Masculino"
+    },
+    {
+      "id": 59861,
+      "jornada": 1,
+      "fechaHora": "2026-10-04T14:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Coslada Voley A",
+      "pabellon": "Gallur , Cdm",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "GALLUR 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+      "jugado": true,
+      "setsLocal": 2,
+      "setsVisitante": 3,
+      "resultado": "2-3",
+      "categoria": "Infantil Femenino A"
+    },
+    {
+      "id": 56747,
+      "jornada": 2,
+      "fechaHora": "2026-10-04T14:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "CV Las Rozas A",
+      "pabellon": "Gallur , Cdm",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "GALLUR 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+      "jugado": true,
+      "setsLocal": 2,
+      "setsVisitante": 3,
+      "resultado": "2-3",
+      "categoria": "Juvenil Femenino A"
+    },
+    {
+      "id": 59593,
+      "jornada": 1,
+      "fechaHora": "2026-10-04T12:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Chv1995 A",
+      "pabellon": "Gallur , Cdm",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "GALLUR 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 1,
+      "resultado": "3-1",
+      "categoria": "Infantil Masculino"
+    }
+  ]
 }
