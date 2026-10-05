@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-04T22:49:07.724Z",
+  "actualizado": "2026-10-05T04:28:16.427Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -77,29 +77,29 @@
         },
         {
           "pos": 6,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
+          "equipo": "Coslada Voley A",
+          "esManzanares": false,
           "pts": 2,
           "pj": 1,
           "pg": 1,
           "pp": 0,
-          "setsFavor": 2,
-          "setsContra": 1,
-          "puntosFavor": 73,
-          "puntosContra": 72
+          "setsFavor": 3,
+          "setsContra": 2,
+          "puntosFavor": 112,
+          "puntosContra": 92
         },
         {
           "pos": 7,
-          "equipo": "Coslada Voley A",
-          "esManzanares": false,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
           "pts": 1,
           "pj": 1,
           "pg": 0,
           "pp": 1,
-          "setsFavor": 1,
-          "setsContra": 2,
-          "puntosFavor": 72,
-          "puntosContra": 73
+          "setsFavor": 2,
+          "setsContra": 3,
+          "puntosFavor": 92,
+          "puntosContra": 112
         },
         {
           "pos": 8,
@@ -4125,6 +4125,19 @@
         },
         {
           "pos": 2,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 1,
+          "puntosFavor": 97,
+          "puntosContra": 60
+        },
+        {
+          "pos": 3,
           "equipo": "Club Voleibol Móstoles",
           "esManzanares": false,
           "pts": 3,
@@ -4137,7 +4150,7 @@
           "puntosContra": 54
         },
         {
-          "pos": 3,
+          "pos": 4,
           "equipo": "CV Collado Villalba A",
           "esManzanares": false,
           "pts": 3,
@@ -4150,7 +4163,7 @@
           "puntosContra": 58
         },
         {
-          "pos": 4,
+          "pos": 5,
           "equipo": "V-Valley CValcalá G1",
           "esManzanares": false,
           "pts": 3,
@@ -4163,26 +4176,13 @@
           "puntosContra": 60
         },
         {
-          "pos": 5,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
-          "pts": 0,
-          "pj": 1,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 3,
-          "setsContra": 1,
-          "puntosFavor": 97,
-          "puntosContra": 60
-        },
-        {
           "pos": 6,
           "equipo": "Chv1995 A",
           "esManzanares": false,
           "pts": 0,
           "pj": 1,
           "pg": 0,
-          "pp": 0,
+          "pp": 1,
           "setsFavor": 1,
           "setsContra": 3,
           "puntosFavor": 60,
@@ -17914,6 +17914,19 @@
         },
         {
           "pos": 5,
+          "equipo": "Voleibol Hispano Usera",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 0,
+          "puntosFavor": 76,
+          "puntosContra": 65
+        },
+        {
+          "pos": 6,
           "equipo": "VP Madrid B Negro",
           "esManzanares": false,
           "pts": 2,
@@ -17926,7 +17939,7 @@
           "puntosContra": 93
         },
         {
-          "pos": 6,
+          "pos": 7,
           "equipo": "Manzanares Voley B",
           "esManzanares": true,
           "pts": 1,
@@ -17937,19 +17950,6 @@
           "setsContra": 3,
           "puntosFavor": 93,
           "puntosContra": 111
-        },
-        {
-          "pos": 7,
-          "equipo": "Voleibol Hispano Usera",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 1,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 3,
-          "setsContra": 0,
-          "puntosFavor": 76,
-          "puntosContra": 65
         },
         {
           "pos": 8,
@@ -17997,7 +17997,7 @@
           "pts": 0,
           "pj": 1,
           "pg": 0,
-          "pp": 0,
+          "pp": 1,
           "setsFavor": 0,
           "setsContra": 3,
           "puntosFavor": 65,
@@ -28194,6 +28194,19 @@
         },
         {
           "pos": 4,
+          "equipo": "Salesianos San Miguel B",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 1,
+          "pg": 1,
+          "pp": 0,
+          "setsFavor": 3,
+          "setsContra": 0,
+          "puntosFavor": 78,
+          "puntosContra": 67
+        },
+        {
+          "pos": 5,
           "equipo": "Manzanares Voley Senior Femenino",
           "esManzanares": true,
           "pts": 3,
@@ -28206,7 +28219,7 @@
           "puntosContra": 93
         },
         {
-          "pos": 5,
+          "pos": 6,
           "equipo": "CV Bulldogs A",
           "esManzanares": false,
           "pts": 2,
@@ -28219,7 +28232,7 @@
           "puntosContra": 93
         },
         {
-          "pos": 6,
+          "pos": 7,
           "equipo": "Cd Newman A",
           "esManzanares": false,
           "pts": 1,
@@ -28230,19 +28243,6 @@
           "setsContra": 3,
           "puntosFavor": 93,
           "puntosContra": 98
-        },
-        {
-          "pos": 7,
-          "equipo": "Salesianos San Miguel B",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 1,
-          "pg": 0,
-          "pp": 0,
-          "setsFavor": 3,
-          "setsContra": 0,
-          "puntosFavor": 78,
-          "puntosContra": 67
         },
         {
           "pos": 8,
@@ -28290,7 +28290,7 @@
           "pts": 0,
           "pj": 1,
           "pg": 0,
-          "pp": 0,
+          "pp": 1,
           "setsFavor": 0,
           "setsContra": 3,
           "puntosFavor": 67,
