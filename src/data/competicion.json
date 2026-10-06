@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-06T11:03:36.521Z",
+  "actualizado": "2026-10-06T18:01:36.141Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -6515,17 +6515,6 @@
               "aplazado": false
             },
             {
-              "id": 57156,
-              "jornada": 3,
-              "fechaHora": "2026-10-17T11:00:00.000Z",
-              "local": "Feel Alcobendas Negro",
-              "visitante": "CV Sanse Rojo",
-              "pabellon": "Luis Buñuel, Pabellon",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57158,
               "jornada": 3,
               "fechaHora": "2026-10-17T12:15:00.000Z",
@@ -6571,6 +6560,17 @@
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
               "jugado": false
+            },
+            {
+              "id": 57156,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T19:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Sanse Rojo",
+              "pabellon": "Luis Buñuel, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -23756,17 +23756,6 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
-              "id": 57291,
-              "jornada": 2,
-              "fechaHora": "2026-10-11T00:00:00.000Z",
-              "local": "Cde Parla Voley Ortopedia A",
-              "visitante": "Cvleganes.com",
-              "pabellon": "Miguel Hernandez, Ceip",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57293,
               "jornada": 2,
               "fechaHora": "2026-10-11T16:00:00.000Z",
@@ -23820,6 +23809,17 @@
               "local": "CV Sanse",
               "visitante": "V-Valley CValcalá G1",
               "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57291,
+              "jornada": 2,
+              "fechaHora": "2026-10-12T19:00:00.000Z",
+              "local": "Cde Parla Voley Ortopedia A",
+              "visitante": "Cvleganes.com",
+              "pabellon": "Miguel Hernandez, Ceip",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -30532,17 +30532,6 @@
           "fecha": "2026-10-11T00:00:00.000Z",
           "partidos": [
             {
-              "id": 62181,
-              "jornada": 2,
-              "fechaHora": "2026-10-10T12:00:00.000Z",
-              "local": "CV Nueva Castilla Senior Masculino",
-              "visitante": "Sad Municipal Loeches",
-              "pabellon": "Nueva Castilla",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 62182,
               "jornada": 2,
               "fechaHora": "2026-10-10T17:00:00.000Z",
@@ -30585,6 +30574,17 @@
               "local": "Cde Parla Voley Ortopedia Parla Senior Masculino",
               "visitante": "CV Getafe Rojo",
               "pabellon": "Miguel Hernandez, Ceip",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 62181,
+              "jornada": 2,
+              "fechaHora": "2026-10-17T16:00:00.000Z",
+              "local": "CV Nueva Castilla Senior Masculino",
+              "visitante": "Sad Municipal Loeches",
+              "pabellon": "Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
