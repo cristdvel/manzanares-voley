@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-07T10:26:54.550Z",
+  "actualizado": "2026-10-07T21:02:56.270Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -10340,6 +10340,19 @@
         },
         {
           "pos": 6,
+          "equipo": "C.d.v. Vallecas Cadete Femenino",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 2,
+          "pg": 1,
+          "pp": 1,
+          "setsFavor": 4,
+          "setsContra": 4,
+          "puntosFavor": 182,
+          "puntosContra": 173
+        },
+        {
+          "pos": 7,
           "equipo": "Manzanares Voley B Cadete Femenino",
           "esManzanares": true,
           "pts": 2,
@@ -10352,7 +10365,7 @@
           "puntosContra": 96
         },
         {
-          "pos": 7,
+          "pos": 8,
           "equipo": "CV Nueva Castilla A",
           "esManzanares": false,
           "pts": 1,
@@ -10365,20 +10378,20 @@
           "puntosContra": 104
         },
         {
-          "pos": 8,
-          "equipo": "C.d.v. Vallecas Cadete Femenino",
+          "pos": 9,
+          "equipo": "Las Nieves A",
           "esManzanares": false,
           "pts": 0,
-          "pj": 1,
+          "pj": 2,
           "pg": 0,
-          "pp": 1,
-          "setsFavor": 1,
-          "setsContra": 3,
-          "puntosFavor": 90,
-          "puntosContra": 90
+          "pp": 2,
+          "setsFavor": 2,
+          "setsContra": 6,
+          "puntosFavor": 160,
+          "puntosContra": 194
         },
         {
-          "pos": 9,
+          "pos": 10,
           "equipo": "VP Madrid C Blanco C",
           "esManzanares": false,
           "pts": 0,
@@ -10389,19 +10402,6 @@
           "setsContra": 3,
           "puntosFavor": 72,
           "puntosContra": 95
-        },
-        {
-          "pos": 10,
-          "equipo": "Las Nieves A",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 1,
-          "pg": 0,
-          "pp": 1,
-          "setsFavor": 1,
-          "setsContra": 3,
-          "puntosFavor": 77,
-          "puntosContra": 102
         },
         {
           "pos": 11,
@@ -20293,23 +20293,23 @@
           "fecha": "2026-10-18T00:00:00.000Z",
           "partidos": [
             {
+              "id": 60893,
+              "jornada": 3,
+              "fechaHora": "2026-10-17T16:30:00.000Z",
+              "local": "Cuv Alcorcón Blanco",
+              "visitante": "Voleibol Hispano Usera",
+              "pabellon": "Los Cantos, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 60895,
               "jornada": 3,
               "fechaHora": "2026-10-17T18:00:00.000Z",
               "local": "Cvfuenlabrada",
               "visitante": "Cde Parla Voley Folder",
               "pabellon": "La Cueva, Polideportivo",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 60893,
-              "jornada": 3,
-              "fechaHora": "2026-10-18T00:00:00.000Z",
-              "local": "Cuv Alcorcón Blanco",
-              "visitante": "Voleibol Hispano Usera",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -20413,23 +20413,23 @@
               "jugado": false
             },
             {
-              "id": 60903,
-              "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "Arganvoley",
-              "visitante": "Cvfuenlabrada",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 60904,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Cuv Alcorcón Blanco",
               "visitante": "CV Valdemoro Las Aguas Juvenil Femenino",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 60903,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T09:30:00.000Z",
+              "local": "Arganvoley",
+              "visitante": "Cvfuenlabrada",
+              "pabellon": "Centro Dotacional Integrado, Arganzuela",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -22314,10 +22314,10 @@
             {
               "id": 64691,
               "jornada": 3,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "fechaHora": "2026-10-25T11:00:00.000Z",
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
               "visitante": "Arcangel Juv A",
-              "pabellon": null,
+              "pabellon": "El Alamo, Ies",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -22413,17 +22413,6 @@
               "aplazado": false
             },
             {
-              "id": 64699,
-              "jornada": 5,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
-              "visitante": "A.D.perales Blanco Juvenil Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 64701,
               "jornada": 5,
               "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -22441,6 +22430,17 @@
               "local": "Mirasur School Juvenil Femenino",
               "visitante": "C.d.b.colegio Aquila Juvenil Femenino",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 64699,
+              "jornada": 5,
+              "fechaHora": "2026-11-15T10:00:00.000Z",
+              "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
+              "visitante": "A.D.perales Blanco Juvenil Femenino",
+              "pabellon": "El Alamo, Ies",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
