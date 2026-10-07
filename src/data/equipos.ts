@@ -29,11 +29,9 @@ export interface Categoria {
 
 // Roster de la temporada 2026/2027 facilitado por el club (11 sep 2026).
 //
-// A día de hoy (24 sep 2026) solo el Alevín femenino sigue sin grupo
-// federado publicado por la Federación, así que es el único que aún no
-// puede mostrar calendario ni clasificación real (calendario:true en el
-// resto). En cuanto FMVoley lo dé de alta, se añade su grupoId a
-// equipos-federados.json y el scraper lo recoge solo.
+// Todos los equipos federados tienen ya su grupo en la Federación (el
+// Alevín femenino se dio de alta el 7 oct 2026: 1ª Aut. Zonal, grupo B), así
+// que todos muestran calendario y clasificación reales (calendario:true).
 export const categorias: Categoria[] = [
   {
     id: "federado-masculino",
@@ -50,7 +48,7 @@ export const categorias: Categoria[] = [
     id: "federado-femenino",
     label: "Federado femenino",
     equipos: [
-      { nombre: "Alevín", division: "Liga federada" },
+      { nombre: "Alevín", division: "1ª División Aut. Zonal", calendario: true, grupoId: 34338, grupo: "B" },
       { nombre: "Infantil A", division: "2ª División Aut. Preferente", calendario: true, grupoId: 34047, grupo: "B" },
       { nombre: "Infantil B", division: "2ª División Aut. Zonal", calendario: true, grupoId: 34099, grupo: "C" },
       { nombre: "Cadete A", division: "1ª División Aut. Preferente", calendario: true, grupoId: 33922 },

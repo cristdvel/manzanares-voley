@@ -125,7 +125,7 @@ function textoAviso(p) {
   const hora = String(fecha.getUTCHours()).padStart(2, "0") + ":" + String(fecha.getUTCMinutes()).padStart(2, "0");
   return {
     title: `Mañana juega ${p.categoria}`,
-    body: `${p.local} vs ${p.visitante} · ${hora}${p.pabellon ? " · " + p.pabellon : ""}`,
+    body: `${p.local} vs ${p.visitante}${hora === "00:00" ? "" : " · " + hora}${p.pabellon ? " · " + p.pabellon : ""}`,
   };
 }
 

@@ -2,6 +2,7 @@
   "clubId": "120",
   "temporada": "2026/2027",
   "grupos": [
+    { "categoria": "Alevín Femenino", "grupoId": 34338 },
     { "categoria": "Infantil Femenino A", "grupoId": 34047 },
     { "categoria": "Infantil Femenino B", "grupoId": 34099 },
     { "categoria": "Infantil Masculino", "grupoId": 34021 },
