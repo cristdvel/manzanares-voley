@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-08T04:53:05.326Z",
+  "actualizado": "2026-10-08T15:16:35.705Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -160,7 +160,7 @@
           "fecha": "2026-10-25T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74664,
+              "id": 75792,
               "jornada": 1,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Arganvoley",
@@ -171,7 +171,7 @@
               "aplazado": false
             },
             {
-              "id": 74666,
+              "id": 75794,
               "jornada": 1,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
@@ -182,7 +182,7 @@
               "aplazado": false
             },
             {
-              "id": 74667,
+              "id": 75795,
               "jornada": 1,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
@@ -194,7 +194,7 @@
               "jugado": false
             },
             {
-              "id": 74668,
+              "id": 75796,
               "jornada": 1,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
@@ -205,7 +205,7 @@
               "aplazado": false
             },
             {
-              "id": 74669,
+              "id": 75797,
               "jornada": 1,
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
@@ -216,9 +216,9 @@
               "aplazado": false
             },
             {
-              "id": 74665,
+              "id": 75793,
               "jornada": 1,
-              "fechaHora": "2026-10-25T09:30:00.000Z",
+              "fechaHora": "2026-10-25T12:00:00.000Z",
               "local": "Avp B Yagüe",
               "visitante": "Avp A Pozo Red",
               "pabellon": "Pabellón Ceip José Hierro",
@@ -233,7 +233,7 @@
           "fecha": "2026-11-08T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74670,
+              "id": 75798,
               "jornada": 2,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Descansa...",
@@ -244,7 +244,7 @@
               "aplazado": false
             },
             {
-              "id": 74671,
+              "id": 75799,
               "jornada": 2,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
@@ -255,7 +255,7 @@
               "aplazado": false
             },
             {
-              "id": 74672,
+              "id": 75800,
               "jornada": 2,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
@@ -266,7 +266,7 @@
               "aplazado": false
             },
             {
-              "id": 74673,
+              "id": 75801,
               "jornada": 2,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
@@ -278,7 +278,7 @@
               "jugado": false
             },
             {
-              "id": 74675,
+              "id": 75803,
               "jornada": 2,
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "Arganvoley",
@@ -289,7 +289,7 @@
               "aplazado": false
             },
             {
-              "id": 74674,
+              "id": 75802,
               "jornada": 2,
               "fechaHora": "2026-11-08T10:00:00.000Z",
               "local": "Avp A Pozo Red",
@@ -306,7 +306,7 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74676,
+              "id": 75804,
               "jornada": 3,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Avp B Yagüe",
@@ -317,7 +317,7 @@
               "aplazado": false
             },
             {
-              "id": 74677,
+              "id": 75805,
               "jornada": 3,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
@@ -328,7 +328,7 @@
               "aplazado": false
             },
             {
-              "id": 74678,
+              "id": 75806,
               "jornada": 3,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
@@ -340,7 +340,7 @@
               "jugado": false
             },
             {
-              "id": 74679,
+              "id": 75807,
               "jornada": 3,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
@@ -351,7 +351,7 @@
               "aplazado": false
             },
             {
-              "id": 74680,
+              "id": 75808,
               "jornada": 3,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
@@ -362,7 +362,7 @@
               "aplazado": false
             },
             {
-              "id": 74681,
+              "id": 75809,
               "jornada": 3,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
@@ -379,7 +379,7 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74685,
+              "id": 75813,
               "jornada": 4,
               "fechaHora": "2026-11-21T10:00:00.000Z",
               "local": "Avp A Pozo Red",
@@ -390,7 +390,7 @@
               "aplazado": false
             },
             {
-              "id": 74687,
+              "id": 75815,
               "jornada": 4,
               "fechaHora": "2026-11-21T13:00:00.000Z",
               "local": "Avp B Yagüe",
@@ -401,7 +401,7 @@
               "aplazado": false
             },
             {
-              "id": 74682,
+              "id": 75810,
               "jornada": 4,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Descansa...",
@@ -412,7 +412,7 @@
               "aplazado": false
             },
             {
-              "id": 74683,
+              "id": 75811,
               "jornada": 4,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
@@ -423,7 +423,7 @@
               "aplazado": false
             },
             {
-              "id": 74684,
+              "id": 75812,
               "jornada": 4,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
@@ -434,7 +434,7 @@
               "aplazado": false
             },
             {
-              "id": 74686,
+              "id": 75814,
               "jornada": 4,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Arganvoley",
@@ -452,7 +452,7 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74688,
+              "id": 75816,
               "jornada": 5,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
@@ -463,7 +463,7 @@
               "aplazado": false
             },
             {
-              "id": 74689,
+              "id": 75817,
               "jornada": 5,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
@@ -475,7 +475,7 @@
               "jugado": false
             },
             {
-              "id": 74690,
+              "id": 75818,
               "jornada": 5,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
@@ -486,7 +486,7 @@
               "aplazado": false
             },
             {
-              "id": 74691,
+              "id": 75819,
               "jornada": 5,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
@@ -497,7 +497,7 @@
               "aplazado": false
             },
             {
-              "id": 74692,
+              "id": 75820,
               "jornada": 5,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
@@ -508,7 +508,7 @@
               "aplazado": false
             },
             {
-              "id": 74693,
+              "id": 75821,
               "jornada": 5,
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
@@ -525,7 +525,7 @@
           "fecha": "2026-12-13T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74697,
+              "id": 75825,
               "jornada": 6,
               "fechaHora": "2026-12-12T09:30:00.000Z",
               "local": "Avp A Pozo Red",
@@ -536,7 +536,7 @@
               "aplazado": false
             },
             {
-              "id": 74694,
+              "id": 75822,
               "jornada": 6,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
@@ -548,7 +548,7 @@
               "jugado": false
             },
             {
-              "id": 74695,
+              "id": 75823,
               "jornada": 6,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Descansa...",
@@ -559,7 +559,7 @@
               "aplazado": false
             },
             {
-              "id": 74696,
+              "id": 75824,
               "jornada": 6,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
@@ -570,7 +570,7 @@
               "aplazado": false
             },
             {
-              "id": 74698,
+              "id": 75826,
               "jornada": 6,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Arganvoley",
@@ -581,7 +581,7 @@
               "aplazado": false
             },
             {
-              "id": 74699,
+              "id": 75827,
               "jornada": 6,
               "fechaHora": "2026-12-13T09:30:00.000Z",
               "local": "Avp B Yagüe",
@@ -598,7 +598,7 @@
           "fecha": "2026-12-20T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74700,
+              "id": 75828,
               "jornada": 7,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
@@ -610,7 +610,7 @@
               "jugado": false
             },
             {
-              "id": 74701,
+              "id": 75829,
               "jornada": 7,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
@@ -621,7 +621,7 @@
               "aplazado": false
             },
             {
-              "id": 74702,
+              "id": 75830,
               "jornada": 7,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
@@ -632,7 +632,7 @@
               "aplazado": false
             },
             {
-              "id": 74703,
+              "id": 75831,
               "jornada": 7,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
@@ -643,7 +643,7 @@
               "aplazado": false
             },
             {
-              "id": 74704,
+              "id": 75832,
               "jornada": 7,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
@@ -654,7 +654,7 @@
               "aplazado": false
             },
             {
-              "id": 74705,
+              "id": 75833,
               "jornada": 7,
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
@@ -671,7 +671,7 @@
           "fecha": "2027-01-10T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74707,
+              "id": 75835,
               "jornada": 8,
               "fechaHora": "2027-01-09T10:00:00.000Z",
               "local": "Avp A Pozo Red",
@@ -682,7 +682,18 @@
               "aplazado": false
             },
             {
-              "id": 74706,
+              "id": 75837,
+              "jornada": 8,
+              "fechaHora": "2027-01-09T12:30:00.000Z",
+              "local": "Avp B Yagüe",
+              "visitante": "CV Nueva Castilla Alevin Femenino",
+              "pabellon": "Pabellón Ceip José Hierro",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 75834,
               "jornada": 8,
               "fechaHora": "2027-01-10T00:00:00.000Z",
               "local": "Descansa...",
@@ -693,7 +704,7 @@
               "aplazado": false
             },
             {
-              "id": 74708,
+              "id": 75836,
               "jornada": 8,
               "fechaHora": "2027-01-10T00:00:00.000Z",
               "local": "Arganvoley",
@@ -704,7 +715,7 @@
               "aplazado": false
             },
             {
-              "id": 74710,
+              "id": 75838,
               "jornada": 8,
               "fechaHora": "2027-01-10T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
@@ -715,7 +726,7 @@
               "aplazado": false
             },
             {
-              "id": 74711,
+              "id": 75839,
               "jornada": 8,
               "fechaHora": "2027-01-10T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
@@ -725,17 +736,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 74709,
-              "jornada": 8,
-              "fechaHora": "2027-01-10T12:30:00.000Z",
-              "local": "Avp B Yagüe",
-              "visitante": "CV Nueva Castilla Alevin Femenino",
-              "pabellon": "Pabellón Ceip José Hierro",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             }
           ]
         },
@@ -744,7 +744,7 @@
           "fecha": "2027-01-17T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74712,
+              "id": 75840,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
@@ -755,7 +755,7 @@
               "aplazado": false
             },
             {
-              "id": 74713,
+              "id": 75841,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
@@ -767,7 +767,7 @@
               "jugado": false
             },
             {
-              "id": 74714,
+              "id": 75842,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
@@ -778,7 +778,7 @@
               "aplazado": false
             },
             {
-              "id": 74715,
+              "id": 75843,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
@@ -789,7 +789,7 @@
               "aplazado": false
             },
             {
-              "id": 74716,
+              "id": 75844,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
@@ -800,7 +800,7 @@
               "aplazado": false
             },
             {
-              "id": 74717,
+              "id": 75845,
               "jornada": 9,
               "fechaHora": "2027-01-17T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
@@ -817,7 +817,7 @@
           "fecha": "2027-01-24T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74720,
+              "id": 75848,
               "jornada": 10,
               "fechaHora": "2027-01-23T10:00:00.000Z",
               "local": "Avp B Yagüe",
@@ -828,7 +828,7 @@
               "aplazado": false
             },
             {
-              "id": 74718,
+              "id": 75846,
               "jornada": 10,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Descansa...",
@@ -839,7 +839,7 @@
               "aplazado": false
             },
             {
-              "id": 74719,
+              "id": 75847,
               "jornada": 10,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Arganvoley",
@@ -850,7 +850,7 @@
               "aplazado": false
             },
             {
-              "id": 74721,
+              "id": 75849,
               "jornada": 10,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
@@ -861,7 +861,7 @@
               "aplazado": false
             },
             {
-              "id": 74722,
+              "id": 75850,
               "jornada": 10,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
@@ -873,7 +873,7 @@
               "jugado": false
             },
             {
-              "id": 74723,
+              "id": 75851,
               "jornada": 10,
               "fechaHora": "2027-01-24T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
@@ -890,7 +890,7 @@
           "fecha": "2027-01-31T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74729,
+              "id": 75857,
               "jornada": 11,
               "fechaHora": "2027-01-30T10:00:00.000Z",
               "local": "Avp A Pozo Red",
@@ -901,7 +901,7 @@
               "aplazado": false
             },
             {
-              "id": 74724,
+              "id": 75852,
               "jornada": 11,
               "fechaHora": "2027-01-31T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
@@ -912,7 +912,7 @@
               "aplazado": false
             },
             {
-              "id": 74725,
+              "id": 75853,
               "jornada": 11,
               "fechaHora": "2027-01-31T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
@@ -923,7 +923,7 @@
               "aplazado": false
             },
             {
-              "id": 74726,
+              "id": 75854,
               "jornada": 11,
               "fechaHora": "2027-01-31T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
@@ -935,7 +935,7 @@
               "jugado": false
             },
             {
-              "id": 74727,
+              "id": 75855,
               "jornada": 11,
               "fechaHora": "2027-01-31T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
@@ -946,7 +946,7 @@
               "aplazado": false
             },
             {
-              "id": 74728,
+              "id": 75856,
               "jornada": 11,
               "fechaHora": "2027-01-31T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
@@ -963,7 +963,7 @@
           "fecha": "2027-02-07T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74731,
+              "id": 75859,
               "jornada": 12,
               "fechaHora": "2027-02-06T10:00:00.000Z",
               "local": "Avp A Pozo Red",
@@ -974,7 +974,7 @@
               "aplazado": false
             },
             {
-              "id": 74730,
+              "id": 75858,
               "jornada": 12,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Descansa...",
@@ -985,7 +985,7 @@
               "aplazado": false
             },
             {
-              "id": 74732,
+              "id": 75860,
               "jornada": 12,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
@@ -996,7 +996,7 @@
               "aplazado": false
             },
             {
-              "id": 74733,
+              "id": 75861,
               "jornada": 12,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
@@ -1008,7 +1008,7 @@
               "jugado": false
             },
             {
-              "id": 74734,
+              "id": 75862,
               "jornada": 12,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
@@ -1019,7 +1019,7 @@
               "aplazado": false
             },
             {
-              "id": 74735,
+              "id": 75863,
               "jornada": 12,
               "fechaHora": "2027-02-07T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
@@ -1036,7 +1036,7 @@
           "fecha": "2027-02-14T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74741,
+              "id": 75869,
               "jornada": 13,
               "fechaHora": "2027-02-13T10:00:00.000Z",
               "local": "Avp B Yagüe",
@@ -1047,7 +1047,7 @@
               "aplazado": false
             },
             {
-              "id": 74736,
+              "id": 75864,
               "jornada": 13,
               "fechaHora": "2027-02-14T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
@@ -1058,7 +1058,7 @@
               "aplazado": false
             },
             {
-              "id": 74737,
+              "id": 75865,
               "jornada": 13,
               "fechaHora": "2027-02-14T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
@@ -1069,7 +1069,7 @@
               "aplazado": false
             },
             {
-              "id": 74738,
+              "id": 75866,
               "jornada": 13,
               "fechaHora": "2027-02-14T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
@@ -1080,7 +1080,7 @@
               "aplazado": false
             },
             {
-              "id": 74739,
+              "id": 75867,
               "jornada": 13,
               "fechaHora": "2027-02-14T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
@@ -1092,7 +1092,7 @@
               "jugado": false
             },
             {
-              "id": 74740,
+              "id": 75868,
               "jornada": 13,
               "fechaHora": "2027-02-14T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
@@ -1109,7 +1109,7 @@
           "fecha": "2027-02-21T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74744,
+              "id": 75872,
               "jornada": 14,
               "fechaHora": "2027-02-20T10:00:00.000Z",
               "local": "Avp A Pozo Red",
@@ -1123,7 +1123,7 @@
               "jugado": false
             },
             {
-              "id": 74742,
+              "id": 75870,
               "jornada": 14,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Descansa...",
@@ -1134,7 +1134,7 @@
               "aplazado": false
             },
             {
-              "id": 74743,
+              "id": 75871,
               "jornada": 14,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Arganvoley",
@@ -1145,7 +1145,7 @@
               "aplazado": false
             },
             {
-              "id": 74745,
+              "id": 75873,
               "jornada": 14,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
@@ -1156,7 +1156,7 @@
               "aplazado": false
             },
             {
-              "id": 74746,
+              "id": 75874,
               "jornada": 14,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
@@ -1167,7 +1167,7 @@
               "aplazado": false
             },
             {
-              "id": 74747,
+              "id": 75875,
               "jornada": 14,
               "fechaHora": "2027-02-21T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
@@ -1184,7 +1184,7 @@
           "fecha": "2027-02-28T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74748,
+              "id": 75876,
               "jornada": 15,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
@@ -1195,7 +1195,7 @@
               "aplazado": false
             },
             {
-              "id": 74749,
+              "id": 75877,
               "jornada": 15,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
@@ -1206,7 +1206,7 @@
               "aplazado": false
             },
             {
-              "id": 74750,
+              "id": 75878,
               "jornada": 15,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
@@ -1217,7 +1217,7 @@
               "aplazado": false
             },
             {
-              "id": 74751,
+              "id": 75879,
               "jornada": 15,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
@@ -1228,7 +1228,7 @@
               "aplazado": false
             },
             {
-              "id": 74752,
+              "id": 75880,
               "jornada": 15,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
@@ -1240,7 +1240,7 @@
               "jugado": false
             },
             {
-              "id": 74753,
+              "id": 75881,
               "jornada": 15,
               "fechaHora": "2027-02-28T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
@@ -1257,7 +1257,7 @@
           "fecha": "2027-03-07T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74755,
+              "id": 75883,
               "jornada": 16,
               "fechaHora": "2027-03-06T10:00:00.000Z",
               "local": "Avp B Yagüe",
@@ -1271,7 +1271,7 @@
               "jugado": false
             },
             {
-              "id": 74757,
+              "id": 75885,
               "jornada": 16,
               "fechaHora": "2027-03-06T12:30:00.000Z",
               "local": "Avp A Pozo Red",
@@ -1282,7 +1282,7 @@
               "aplazado": false
             },
             {
-              "id": 74754,
+              "id": 75882,
               "jornada": 16,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Descansa...",
@@ -1293,7 +1293,7 @@
               "aplazado": false
             },
             {
-              "id": 74756,
+              "id": 75884,
               "jornada": 16,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Arganvoley",
@@ -1304,7 +1304,7 @@
               "aplazado": false
             },
             {
-              "id": 74758,
+              "id": 75886,
               "jornada": 16,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
@@ -1315,7 +1315,7 @@
               "aplazado": false
             },
             {
-              "id": 74759,
+              "id": 75887,
               "jornada": 16,
               "fechaHora": "2027-03-07T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
@@ -1332,7 +1332,7 @@
           "fecha": "2027-03-14T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74760,
+              "id": 75888,
               "jornada": 17,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
@@ -1343,7 +1343,7 @@
               "aplazado": false
             },
             {
-              "id": 74761,
+              "id": 75889,
               "jornada": 17,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
@@ -1354,7 +1354,7 @@
               "aplazado": false
             },
             {
-              "id": 74762,
+              "id": 75890,
               "jornada": 17,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
@@ -1365,7 +1365,7 @@
               "aplazado": false
             },
             {
-              "id": 74763,
+              "id": 75891,
               "jornada": 17,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
@@ -1376,7 +1376,7 @@
               "aplazado": false
             },
             {
-              "id": 74764,
+              "id": 75892,
               "jornada": 17,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
@@ -1387,7 +1387,7 @@
               "aplazado": false
             },
             {
-              "id": 74765,
+              "id": 75893,
               "jornada": 17,
               "fechaHora": "2027-03-14T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
@@ -1402,12 +1402,12 @@
         },
         {
           "numero": 18,
-          "fecha": "2027-03-21T00:00:00.000Z",
+          "fecha": "2027-04-04T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74766,
+              "id": 75894,
               "jornada": 18,
-              "fechaHora": "2027-03-20T10:00:00.000Z",
+              "fechaHora": "2027-04-03T10:00:00.000Z",
               "local": "Avp A Pozo Red",
               "visitante": "Grupo Egido Pinto B Alevin Femenino",
               "pabellon": "Pabellón Ceip José Hierro",
@@ -1416,9 +1416,9 @@
               "aplazado": false
             },
             {
-              "id": 74770,
+              "id": 75898,
               "jornada": 18,
-              "fechaHora": "2027-03-20T12:30:00.000Z",
+              "fechaHora": "2027-04-03T12:30:00.000Z",
               "local": "Avp B Yagüe",
               "visitante": "Mirasur School Alevin Femenino",
               "pabellon": "Pabellón Ceip José Hierro",
@@ -1427,9 +1427,9 @@
               "aplazado": false
             },
             {
-              "id": 74767,
+              "id": 75895,
               "jornada": 18,
-              "fechaHora": "2027-03-21T00:00:00.000Z",
+              "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
               "visitante": "CV Madrid B Alevin Femenino",
               "pabellon": null,
@@ -1438,9 +1438,9 @@
               "aplazado": false
             },
             {
-              "id": 74768,
+              "id": 75896,
               "jornada": 18,
-              "fechaHora": "2027-03-21T00:00:00.000Z",
+              "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Descansa...",
               "visitante": "Manzanares Voley Alevin Femenino",
               "pabellon": null,
@@ -1450,9 +1450,9 @@
               "jugado": false
             },
             {
-              "id": 74769,
+              "id": 75897,
               "jornada": 18,
-              "fechaHora": "2027-03-21T00:00:00.000Z",
+              "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
               "visitante": "C.d.b.colegio Aquila",
               "pabellon": null,
@@ -1461,9 +1461,9 @@
               "aplazado": false
             },
             {
-              "id": 74771,
+              "id": 75899,
               "jornada": 18,
-              "fechaHora": "2027-03-21T00:00:00.000Z",
+              "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Arganvoley",
               "visitante": "CV Nueva Castilla Alevin Femenino",
               "pabellon": null,
@@ -1475,12 +1475,12 @@
         },
         {
           "numero": 19,
-          "fecha": "2027-03-28T00:00:00.000Z",
+          "fecha": "2027-04-11T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74772,
+              "id": 75900,
               "jornada": 19,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
               "visitante": "Descansa...",
               "pabellon": null,
@@ -1489,9 +1489,9 @@
               "aplazado": false
             },
             {
-              "id": 74773,
+              "id": 75901,
               "jornada": 19,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
               "visitante": "Avp A Pozo Red",
               "pabellon": null,
@@ -1500,9 +1500,9 @@
               "aplazado": false
             },
             {
-              "id": 74774,
+              "id": 75902,
               "jornada": 19,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
               "visitante": "Arganvoley",
               "pabellon": null,
@@ -1511,9 +1511,9 @@
               "aplazado": false
             },
             {
-              "id": 74775,
+              "id": 75903,
               "jornada": 19,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
               "visitante": "Avp B Yagüe",
               "pabellon": null,
@@ -1522,9 +1522,9 @@
               "aplazado": false
             },
             {
-              "id": 74776,
+              "id": 75904,
               "jornada": 19,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
               "visitante": "Cde Parla Voley Maxcolchon C Alevin Femenino",
               "pabellon": null,
@@ -1533,9 +1533,9 @@
               "aplazado": false
             },
             {
-              "id": 74777,
+              "id": 75905,
               "jornada": 19,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-11T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
               "visitante": "Manzanares Voley Alevin Femenino",
               "pabellon": null,
@@ -1548,12 +1548,12 @@
         },
         {
           "numero": 20,
-          "fecha": "2027-04-04T00:00:00.000Z",
+          "fecha": "2027-04-18T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74781,
+              "id": 75909,
               "jornada": 20,
-              "fechaHora": "2027-04-03T10:00:00.000Z",
+              "fechaHora": "2027-04-17T10:00:00.000Z",
               "local": "Avp B Yagüe",
               "visitante": "Grupo Egido Pinto B Alevin Femenino",
               "pabellon": "Pabellón Ceip José Hierro",
@@ -1562,20 +1562,9 @@
               "aplazado": false
             },
             {
-              "id": 74783,
+              "id": 75906,
               "jornada": 20,
-              "fechaHora": "2027-04-03T12:30:00.000Z",
-              "local": "Avp A Pozo Red",
-              "visitante": "Cde Parla Voley Folder B",
-              "pabellon": "Pabellón Ceip José Hierro",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 74778,
-              "jornada": 20,
-              "fechaHora": "2027-04-04T00:00:00.000Z",
+              "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Descansa...",
               "visitante": "C.d.b.colegio Aquila",
               "pabellon": null,
@@ -1584,9 +1573,9 @@
               "aplazado": false
             },
             {
-              "id": 74779,
+              "id": 75907,
               "jornada": 20,
-              "fechaHora": "2027-04-04T00:00:00.000Z",
+              "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
               "visitante": "Mirasur School Alevin Femenino",
               "pabellon": null,
@@ -1596,9 +1585,9 @@
               "jugado": false
             },
             {
-              "id": 74780,
+              "id": 75908,
               "jornada": 20,
-              "fechaHora": "2027-04-04T00:00:00.000Z",
+              "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
               "visitante": "CV Nueva Castilla Alevin Femenino",
               "pabellon": null,
@@ -1607,12 +1596,23 @@
               "aplazado": false
             },
             {
-              "id": 74782,
+              "id": 75910,
               "jornada": 20,
-              "fechaHora": "2027-04-04T00:00:00.000Z",
+              "fechaHora": "2027-04-18T00:00:00.000Z",
               "local": "Arganvoley",
               "visitante": "CV Madrid B Alevin Femenino",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 75911,
+              "jornada": 20,
+              "fechaHora": "2027-04-18T09:30:00.000Z",
+              "local": "Avp A Pozo Red",
+              "visitante": "Cde Parla Voley Folder B",
+              "pabellon": "Pabellón Ceip José Hierro",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -1621,12 +1621,12 @@
         },
         {
           "numero": 21,
-          "fecha": "2027-04-11T00:00:00.000Z",
+          "fecha": "2027-04-25T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74784,
+              "id": 75912,
               "jornada": 21,
-              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "fechaHora": "2027-04-25T00:00:00.000Z",
               "local": "Avp A Pozo Red",
               "visitante": "Descansa...",
               "pabellon": null,
@@ -1635,9 +1635,9 @@
               "aplazado": false
             },
             {
-              "id": 74785,
+              "id": 75913,
               "jornada": 21,
-              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "fechaHora": "2027-04-25T00:00:00.000Z",
               "local": "Cde Parla Voley Folder B",
               "visitante": "Arganvoley",
               "pabellon": null,
@@ -1646,9 +1646,9 @@
               "aplazado": false
             },
             {
-              "id": 74786,
+              "id": 75914,
               "jornada": 21,
-              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "fechaHora": "2027-04-25T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
               "visitante": "Avp B Yagüe",
               "pabellon": null,
@@ -1657,9 +1657,9 @@
               "aplazado": false
             },
             {
-              "id": 74787,
+              "id": 75915,
               "jornada": 21,
-              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "fechaHora": "2027-04-25T00:00:00.000Z",
               "local": "Grupo Egido Pinto B Alevin Femenino",
               "visitante": "Cde Parla Voley Maxcolchon C Alevin Femenino",
               "pabellon": null,
@@ -1668,9 +1668,9 @@
               "aplazado": false
             },
             {
-              "id": 74788,
+              "id": 75916,
               "jornada": 21,
-              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "fechaHora": "2027-04-25T00:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
               "visitante": "Manzanares Voley Alevin Femenino",
               "pabellon": null,
@@ -1680,9 +1680,9 @@
               "jugado": false
             },
             {
-              "id": 74789,
+              "id": 75917,
               "jornada": 21,
-              "fechaHora": "2027-04-11T00:00:00.000Z",
+              "fechaHora": "2027-04-25T00:00:00.000Z",
               "local": "Mirasur School Alevin Femenino",
               "visitante": "C.d.b.colegio Aquila",
               "pabellon": null,
@@ -1694,23 +1694,12 @@
         },
         {
           "numero": 22,
-          "fecha": "2027-04-18T00:00:00.000Z",
+          "fecha": "2027-05-09T00:00:00.000Z",
           "partidos": [
             {
-              "id": 74794,
+              "id": 75918,
               "jornada": 22,
-              "fechaHora": "2027-04-17T10:00:00.000Z",
-              "local": "Avp B Yagüe",
-              "visitante": "Cde Parla Voley Folder B",
-              "pabellon": "Pabellón Ceip José Hierro",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 74790,
-              "jornada": 22,
-              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "fechaHora": "2027-05-09T00:00:00.000Z",
               "local": "Descansa...",
               "visitante": "Mirasur School Alevin Femenino",
               "pabellon": null,
@@ -1719,9 +1708,9 @@
               "aplazado": false
             },
             {
-              "id": 74791,
+              "id": 75919,
               "jornada": 22,
-              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "fechaHora": "2027-05-09T00:00:00.000Z",
               "local": "C.d.b.colegio Aquila",
               "visitante": "CV Nueva Castilla Alevin Femenino",
               "pabellon": null,
@@ -1730,9 +1719,9 @@
               "aplazado": false
             },
             {
-              "id": 74792,
+              "id": 75920,
               "jornada": 22,
-              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "fechaHora": "2027-05-09T00:00:00.000Z",
               "local": "Manzanares Voley Alevin Femenino",
               "visitante": "Grupo Egido Pinto B Alevin Femenino",
               "pabellon": null,
@@ -1742,9 +1731,9 @@
               "jugado": false
             },
             {
-              "id": 74793,
+              "id": 75921,
               "jornada": 22,
-              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "fechaHora": "2027-05-09T00:00:00.000Z",
               "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
               "visitante": "CV Madrid B Alevin Femenino",
               "pabellon": null,
@@ -1753,9 +1742,20 @@
               "aplazado": false
             },
             {
-              "id": 74795,
+              "id": 75922,
               "jornada": 22,
-              "fechaHora": "2027-04-18T00:00:00.000Z",
+              "fechaHora": "2027-05-09T00:00:00.000Z",
+              "local": "Avp B Yagüe",
+              "visitante": "Cde Parla Voley Folder B",
+              "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 75923,
+              "jornada": 22,
+              "fechaHora": "2027-05-09T00:00:00.000Z",
               "local": "Arganvoley",
               "visitante": "Avp A Pozo Red",
               "pabellon": null,
@@ -1768,7 +1768,7 @@
       ],
       "misPartidos": [
         {
-          "id": 74667,
+          "id": 75795,
           "jornada": 1,
           "fechaHora": "2026-10-25T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
@@ -1780,7 +1780,7 @@
           "jugado": false
         },
         {
-          "id": 74673,
+          "id": 75801,
           "jornada": 2,
           "fechaHora": "2026-11-08T00:00:00.000Z",
           "local": "Cde Parla Voley Folder B",
@@ -1792,7 +1792,7 @@
           "jugado": false
         },
         {
-          "id": 74678,
+          "id": 75806,
           "jornada": 3,
           "fechaHora": "2026-11-15T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
@@ -1804,7 +1804,7 @@
           "jugado": false
         },
         {
-          "id": 74686,
+          "id": 75814,
           "jornada": 4,
           "fechaHora": "2026-11-22T00:00:00.000Z",
           "local": "Arganvoley",
@@ -1816,7 +1816,7 @@
           "jugado": false
         },
         {
-          "id": 74689,
+          "id": 75817,
           "jornada": 5,
           "fechaHora": "2026-11-29T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
@@ -1828,7 +1828,7 @@
           "jugado": false
         },
         {
-          "id": 74694,
+          "id": 75822,
           "jornada": 6,
           "fechaHora": "2026-12-13T00:00:00.000Z",
           "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
@@ -1840,7 +1840,7 @@
           "jugado": false
         },
         {
-          "id": 74700,
+          "id": 75828,
           "jornada": 7,
           "fechaHora": "2026-12-20T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
@@ -1852,7 +1852,7 @@
           "jugado": false
         },
         {
-          "id": 74711,
+          "id": 75839,
           "jornada": 8,
           "fechaHora": "2027-01-10T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
@@ -1864,7 +1864,7 @@
           "jugado": false
         },
         {
-          "id": 74713,
+          "id": 75841,
           "jornada": 9,
           "fechaHora": "2027-01-17T00:00:00.000Z",
           "local": "Mirasur School Alevin Femenino",
@@ -1876,7 +1876,7 @@
           "jugado": false
         },
         {
-          "id": 74722,
+          "id": 75850,
           "jornada": 10,
           "fechaHora": "2027-01-24T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
@@ -1888,7 +1888,7 @@
           "jugado": false
         },
         {
-          "id": 74726,
+          "id": 75854,
           "jornada": 11,
           "fechaHora": "2027-01-31T00:00:00.000Z",
           "local": "Grupo Egido Pinto B Alevin Femenino",
@@ -1900,7 +1900,7 @@
           "jugado": false
         },
         {
-          "id": 74733,
+          "id": 75861,
           "jornada": 12,
           "fechaHora": "2027-02-07T00:00:00.000Z",
           "local": "CV Madrid B Alevin Femenino",
@@ -1912,7 +1912,7 @@
           "jugado": false
         },
         {
-          "id": 74739,
+          "id": 75867,
           "jornada": 13,
           "fechaHora": "2027-02-14T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
@@ -1924,7 +1924,7 @@
           "jugado": false
         },
         {
-          "id": 74744,
+          "id": 75872,
           "jornada": 14,
           "fechaHora": "2027-02-20T10:00:00.000Z",
           "local": "Avp A Pozo Red",
@@ -1938,7 +1938,7 @@
           "jugado": false
         },
         {
-          "id": 74752,
+          "id": 75880,
           "jornada": 15,
           "fechaHora": "2027-02-28T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
@@ -1950,7 +1950,7 @@
           "jugado": false
         },
         {
-          "id": 74755,
+          "id": 75883,
           "jornada": 16,
           "fechaHora": "2027-03-06T10:00:00.000Z",
           "local": "Avp B Yagüe",
@@ -1964,7 +1964,7 @@
           "jugado": false
         },
         {
-          "id": 74765,
+          "id": 75893,
           "jornada": 17,
           "fechaHora": "2027-03-14T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
@@ -1976,9 +1976,9 @@
           "jugado": false
         },
         {
-          "id": 74768,
+          "id": 75896,
           "jornada": 18,
-          "fechaHora": "2027-03-21T00:00:00.000Z",
+          "fechaHora": "2027-04-04T00:00:00.000Z",
           "local": "Descansa...",
           "visitante": "Manzanares Voley Alevin Femenino",
           "pabellon": null,
@@ -1988,9 +1988,9 @@
           "jugado": false
         },
         {
-          "id": 74777,
+          "id": 75905,
           "jornada": 19,
-          "fechaHora": "2027-03-28T00:00:00.000Z",
+          "fechaHora": "2027-04-11T00:00:00.000Z",
           "local": "C.d.b.colegio Aquila",
           "visitante": "Manzanares Voley Alevin Femenino",
           "pabellon": null,
@@ -2000,9 +2000,9 @@
           "jugado": false
         },
         {
-          "id": 74779,
+          "id": 75907,
           "jornada": 20,
-          "fechaHora": "2027-04-04T00:00:00.000Z",
+          "fechaHora": "2027-04-18T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
           "visitante": "Mirasur School Alevin Femenino",
           "pabellon": null,
@@ -2012,9 +2012,9 @@
           "jugado": false
         },
         {
-          "id": 74788,
+          "id": 75916,
           "jornada": 21,
-          "fechaHora": "2027-04-11T00:00:00.000Z",
+          "fechaHora": "2027-04-25T00:00:00.000Z",
           "local": "CV Nueva Castilla Alevin Femenino",
           "visitante": "Manzanares Voley Alevin Femenino",
           "pabellon": null,
@@ -2024,9 +2024,9 @@
           "jugado": false
         },
         {
-          "id": 74792,
+          "id": 75920,
           "jornada": 22,
-          "fechaHora": "2027-04-18T00:00:00.000Z",
+          "fechaHora": "2027-05-09T00:00:00.000Z",
           "local": "Manzanares Voley Alevin Femenino",
           "visitante": "Grupo Egido Pinto B Alevin Femenino",
           "pabellon": null,
@@ -2405,20 +2405,6 @@
               "aplazado": false
             },
             {
-              "id": 59872,
-              "jornada": 3,
-              "fechaHora": "2026-10-18T12:00:00.000Z",
-              "local": "Manzanares Voley A",
-              "visitante": "Cde Vb Algete",
-              "pabellon": "Gallur , Cdm",
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "direccion": "GALLUR 2",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-              "jugado": false
-            },
-            {
               "id": 59876,
               "jornada": 3,
               "fechaHora": "2026-10-18T18:00:00.000Z",
@@ -2428,6 +2414,20 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 59872,
+              "jornada": 3,
+              "fechaHora": "2026-10-23T19:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Cde Vb Algete",
+              "pabellon": "Pabellón Ies Al-Satt",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "VEREDA DE LA LOBERA, S/N",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN IES AL-SATT VEREDA DE LA LOBERA, S/N, ALGETE",
+              "jugado": false
             }
           ]
         },
@@ -2447,22 +2447,22 @@
               "aplazado": false
             },
             {
-              "id": 59879,
+              "id": 59880,
               "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "Feel Alcobendas Rojo",
-              "visitante": "Club Voleibol Torrelodones A",
-              "pabellon": null,
+              "fechaHora": "2026-10-24T13:00:00.000Z",
+              "local": "Intervoley Fuenlabrada",
+              "visitante": "CV Madrid A",
+              "pabellon": "Juan De La Cierva, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
             },
             {
-              "id": 59880,
+              "id": 59879,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "Intervoley Fuenlabrada",
-              "visitante": "CV Madrid A",
+              "local": "Feel Alcobendas Rojo",
+              "visitante": "Club Voleibol Torrelodones A",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -3854,15 +3854,15 @@
         {
           "id": 59872,
           "jornada": 3,
-          "fechaHora": "2026-10-18T12:00:00.000Z",
+          "fechaHora": "2026-10-23T19:00:00.000Z",
           "local": "Manzanares Voley A",
           "visitante": "Cde Vb Algete",
-          "pabellon": "Gallur , Cdm",
+          "pabellon": "Pabellón Ies Al-Satt",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
-          "direccion": "GALLUR 2",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+          "direccion": "VEREDA DE LA LOBERA, S/N",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN IES AL-SATT VEREDA DE LA LOBERA, S/N, ALGETE",
           "jugado": false
         },
         {
@@ -10628,12 +10628,12 @@
               "fechaHora": "2026-10-17T12:00:00.000Z",
               "local": "Manzanares Voley B Cadete Femenino",
               "visitante": "Cuv Alcorcón Blanco",
-              "pabellon": "Colegio Nueva Castilla (Nuevo)",
+              "pabellon": "Colegio Greenfield",
               "esManzanares": true,
               "esLocal": true,
               "aplazado": false,
-              "direccion": "CALLE MAZATERON, 12",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+              "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
               "jugado": false
             },
             {
@@ -12097,12 +12097,12 @@
           "fechaHora": "2026-10-17T12:00:00.000Z",
           "local": "Manzanares Voley B Cadete Femenino",
           "visitante": "Cuv Alcorcón Blanco",
-          "pabellon": "Colegio Nueva Castilla (Nuevo)",
+          "pabellon": "Colegio Greenfield",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
-          "direccion": "CALLE MAZATERON, 12",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+          "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
           "jugado": false
         },
         {
@@ -14094,7 +14094,7 @@
             {
               "id": 72265,
               "jornada": 22,
-              "fechaHora": "2027-04-18T11:00:00.000Z",
+              "fechaHora": "2027-04-18T12:30:00.000Z",
               "local": "Avp A Pozo Red",
               "visitante": "Manzanares Voley C Cadete Femenino",
               "pabellon": "Pabellón Ceip José Hierro",
@@ -14375,7 +14375,7 @@
         {
           "id": 72265,
           "jornada": 22,
-          "fechaHora": "2027-04-18T11:00:00.000Z",
+          "fechaHora": "2027-04-18T12:30:00.000Z",
           "local": "Avp A Pozo Red",
           "visitante": "Manzanares Voley C Cadete Femenino",
           "pabellon": "Pabellón Ceip José Hierro",
@@ -16770,7 +16770,7 @@
             {
               "id": 63250,
               "jornada": 4,
-              "fechaHora": "2026-11-07T17:30:00.000Z",
+              "fechaHora": "2026-11-07T19:30:00.000Z",
               "local": "Santa Isabel La Asunción",
               "visitante": "Voleibol Hispano Usera",
               "pabellon": "Asunción Cuesta Blanca, Colegio",
@@ -16892,6 +16892,17 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
+              "id": 63261,
+              "jornada": 6,
+              "fechaHora": "2026-11-28T19:30:00.000Z",
+              "local": "Santa Isabel La Asunción",
+              "visitante": "Cvfuenlabrada",
+              "pabellon": "Asunción Cuesta Blanca, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 63258,
               "jornada": 6,
               "fechaHora": "2026-11-29T00:00:00.000Z",
@@ -16919,17 +16930,6 @@
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Parla Voley Multiopticas",
               "visitante": "CV Majadahonda",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 63261,
-              "jornada": 6,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Santa Isabel La Asunción",
-              "visitante": "Cvfuenlabrada",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -17018,7 +17018,7 @@
             {
               "id": 63272,
               "jornada": 8,
-              "fechaHora": "2026-12-19T18:00:00.000Z",
+              "fechaHora": "2026-12-19T19:30:00.000Z",
               "local": "Santa Isabel La Asunción",
               "visitante": "CV Guadarrama",
               "pabellon": "Asunción Cuesta Blanca, Colegio",
@@ -22255,23 +22255,23 @@
               "aplazado": false
             },
             {
+              "id": 64683,
+              "jornada": 2,
+              "fechaHora": "2026-10-18T09:00:00.000Z",
+              "local": "Arcangel Juv A",
+              "visitante": "Cde Parla Voley Parlazul Juvenil Femenino",
+              "pabellon": "Arcangel Internacional School",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 64685,
               "jornada": 2,
               "fechaHora": "2026-10-18T09:30:00.000Z",
               "local": "A.D.perales Blanco Juvenil Femenino",
               "visitante": "Mirasur School Juvenil Femenino",
               "pabellon": "Cerrobuenavista, Polideportivo Municipal",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 64683,
-              "jornada": 2,
-              "fechaHora": "2026-10-18T10:00:00.000Z",
-              "local": "Arcangel Juv A",
-              "visitante": "Cde Parla Voley Parlazul Juvenil Femenino",
-              "pabellon": "Arcangel Internacional School",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -25899,23 +25899,23 @@
               "jugado": false
             },
             {
-              "id": 57297,
-              "jornada": 3,
-              "fechaHora": "2026-10-17T19:00:00.000Z",
-              "local": "CV Las Rozas A",
-              "visitante": "Cde Parla Voley Ortopedia A",
-              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57296,
               "jornada": 3,
               "fechaHora": "2026-10-17T19:30:00.000Z",
               "local": "Cvleganes.com",
               "visitante": "CV Sanse",
               "pabellon": "Emilia Pardo Bazan, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57297,
+              "jornada": 3,
+              "fechaHora": "2026-10-18T12:30:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -33058,10 +33058,10 @@
             {
               "id": 62217,
               "jornada": 9,
-              "fechaHora": "2027-01-17T00:00:00.000Z",
+              "fechaHora": "2027-01-17T19:00:00.000Z",
               "local": "Avp Servi-Cop",
               "visitante": "Sad Municipal Loeches",
-              "pabellon": null,
+              "pabellon": "Pabellón Ceip José Hierro",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -33182,10 +33182,10 @@
             {
               "id": 62227,
               "jornada": 11,
-              "fechaHora": "2027-01-31T00:00:00.000Z",
+              "fechaHora": "2027-01-31T19:00:00.000Z",
               "local": "Avp Servi-Cop",
               "visitante": "Maria Rodrigo",
-              "pabellon": null,
+              "pabellon": "Pabellón Ceip José Hierro",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -33292,18 +33292,6 @@
               "aplazado": false
             },
             {
-              "id": 62236,
-              "jornada": 13,
-              "fechaHora": "2027-02-21T00:00:00.000Z",
-              "local": "Avp Servi-Cop",
-              "visitante": "Manzanares Voley",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
-            },
-            {
               "id": 62237,
               "jornada": 13,
               "fechaHora": "2027-02-21T00:00:00.000Z",
@@ -33313,6 +33301,20 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 62236,
+              "jornada": 13,
+              "fechaHora": "2027-02-21T19:00:00.000Z",
+              "local": "Avp Servi-Cop",
+              "visitante": "Manzanares Voley",
+              "pabellon": "Pabellón Ceip José Hierro",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "AVENIDA DEL SISTEMA SOLAR, 101A",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN CEIP JOSÉ HIERRO  AVENIDA DEL SISTEMA SOLAR, 101A, PARLA",
+              "jugado": false
             }
           ]
         },
@@ -33405,17 +33407,6 @@
               "aplazado": false
             },
             {
-              "id": 62245,
-              "jornada": 15,
-              "fechaHora": "2027-03-07T00:00:00.000Z",
-              "local": "Avp Servi-Cop",
-              "visitante": "CV Getafe Verde",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 62246,
               "jornada": 15,
               "fechaHora": "2027-03-07T00:00:00.000Z",
@@ -33437,6 +33428,17 @@
               "esLocal": false,
               "aplazado": false,
               "jugado": false
+            },
+            {
+              "id": 62245,
+              "jornada": 15,
+              "fechaHora": "2027-03-07T19:00:00.000Z",
+              "local": "Avp Servi-Cop",
+              "visitante": "CV Getafe Verde",
+              "pabellon": "Pabellón Ceip José Hierro",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -33518,17 +33520,6 @@
               "aplazado": false
             },
             {
-              "id": 62254,
-              "jornada": 17,
-              "fechaHora": "2027-04-11T00:00:00.000Z",
-              "local": "Avp Servi-Cop",
-              "visitante": "Adc Sanfermin",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 62255,
               "jornada": 17,
               "fechaHora": "2027-04-11T00:00:00.000Z",
@@ -33561,6 +33552,17 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
+            },
+            {
+              "id": 62254,
+              "jornada": 17,
+              "fechaHora": "2027-04-11T19:00:00.000Z",
+              "local": "Avp Servi-Cop",
+              "visitante": "Adc Sanfermin",
+              "pabellon": "Pabellón Ceip José Hierro",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -33782,13 +33784,15 @@
         {
           "id": 62236,
           "jornada": 13,
-          "fechaHora": "2027-02-21T00:00:00.000Z",
+          "fechaHora": "2027-02-21T19:00:00.000Z",
           "local": "Avp Servi-Cop",
           "visitante": "Manzanares Voley",
-          "pabellon": null,
+          "pabellon": "Pabellón Ceip José Hierro",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "AVENIDA DEL SISTEMA SOLAR, 101A",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN CEIP JOSÉ HIERRO  AVENIDA DEL SISTEMA SOLAR, 101A, PARLA",
           "jugado": false
         },
         {
@@ -34116,12 +34120,12 @@
       "fechaHora": "2026-10-17T12:00:00.000Z",
       "local": "Manzanares Voley B Cadete Femenino",
       "visitante": "Cuv Alcorcón Blanco",
-      "pabellon": "Colegio Nueva Castilla (Nuevo)",
+      "pabellon": "Colegio Greenfield",
       "esManzanares": true,
       "esLocal": true,
       "aplazado": false,
-      "direccion": "CALLE MAZATERON, 12",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+      "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
       "jugado": false,
       "categoria": "Cadete Femenino B"
     },
@@ -34229,21 +34233,6 @@
       "categoria": "Juvenil Masculino"
     },
     {
-      "id": 59872,
-      "jornada": 3,
-      "fechaHora": "2026-10-18T12:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Cde Vb Algete",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Infantil Femenino A"
-    },
-    {
       "id": 59604,
       "jornada": 3,
       "fechaHora": "2026-10-18T12:00:00.000Z",
@@ -34302,6 +34291,21 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN  5 TORRES CALLE ARENAL DE MAUDES, 8, MADRID",
       "jugado": false,
       "categoria": "Juvenil Femenino A"
+    },
+    {
+      "id": 60896,
+      "jornada": 3,
+      "fechaHora": "2026-10-18T17:30:00.000Z",
+      "local": "Manzanares Voley B",
+      "visitante": "B. M. 2 Ciudad Getafe",
+      "pabellon": "Colegio Nueva Castilla (Nuevo)",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "CALLE MAZATERON, 12",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+      "jugado": false,
+      "categoria": "Juvenil Femenino B"
     }
   ],
   "ultimos": [
