@@ -1,11 +1,12 @@
 /**
  * Envía notificaciones push a quien se haya suscrito, avisando de los
- * partidos federados de Manzanares Voley que empiezan en las próximas
- * 12-36 horas (para que llegue "el día antes"). Se ejecuta desde una
- * GitHub Action con cron — ver DEPLOY.md §7.
+ * partidos de Manzanares Voley (liga federada y Juegos Municipales) que
+ * empiezan en las próximas 12-36 horas (para que llegue "el día antes").
+ * Se ejecuta desde una GitHub Action con cron — ver DEPLOY.md §7.
  *
- * Lee el calendario ya descargado en src/data/competicion.json (no vuelve a
- * llamar a la Federación) y las suscripciones guardadas en un namespace de
+ * Lee los calendarios ya descargados en src/data/competicion.json y
+ * src/data/municipales.json (no vuelve a llamar a ninguna fuente externa) y
+ * las suscripciones guardadas en un namespace de
  * Cloudflare KV (las guarda functions/api/push-subscribe.ts cuando alguien
  * pulsa "Avisos de partidos" en la web), a los que accede por la API REST
  * de Cloudflare porque esta Action no puede leer el KV directamente. Cada
@@ -20,7 +21,7 @@
  *   CF_ACCOUNT_ID, CF_KV_NAMESPACE_ID, CF_API_TOKEN — acceso al KV
  *   VAPID_PUBLIC_KEY, VAPID_PRIVATE_KEY, VAPID_SUBJECT — firma de los envíos
  *
- * Uso: node scripts/send-match-reminders.mjs
+ * Uso: node scripts/send-match-reminders.mjs [--dry-run]
  */
 import webpush from "web-push";
 import { readFile } from "node:fs/promises";
@@ -54,18 +55,23 @@ const env = Object.fromEntries(
   ),
 );
 
-for (const [nombre, valor] of Object.entries(env)) {
-  if (!valor) {
-    console.error(`✗ Falta la variable de entorno ${nombre}.`);
+// --dry-run: lista qué partidos entrarían en la ventana y a qué filtro de
+// equipo corresponden, sin tocar el KV ni mandar nada (no pide secretos).
+const DRY = process.argv.includes("--dry-run");
+
+if (!DRY) {
+  for (const [nombre, valor] of Object.entries(env)) {
+    if (!valor) {
+      console.error(`✗ Falta la variable de entorno ${nombre}.`);
+      process.exit(1);
+    }
+  }
+  if (!/^[\x21-\x7e]+$/.test(env.CF_API_TOKEN)) {
+    console.error("✗ CF_API_TOKEN contiene caracteres no válidos (revisa que no tenga comillas tipográficas, tildes o símbolos raros).");
     process.exit(1);
   }
+  webpush.setVapidDetails(env.VAPID_SUBJECT, env.VAPID_PUBLIC_KEY, env.VAPID_PRIVATE_KEY);
 }
-if (!/^[\x21-\x7e]+$/.test(env.CF_API_TOKEN)) {
-  console.error("✗ CF_API_TOKEN contiene caracteres no válidos (revisa que no tenga comillas tipográficas, tildes o símbolos raros).");
-  process.exit(1);
-}
-
-webpush.setVapidDetails(env.VAPID_SUBJECT, env.VAPID_PUBLIC_KEY, env.VAPID_PRIVATE_KEY);
 
 const KV_BASE = `https://api.cloudflare.com/client/v4/accounts/${env.CF_ACCOUNT_ID}/storage/kv/namespaces/${env.CF_KV_NAMESPACE_ID}`;
 const kvHeaders = { Authorization: `Bearer ${env.CF_API_TOKEN}` };
@@ -108,23 +114,66 @@ async function kvDelete(key) {
 const HORAS_DESDE = 12;
 const HORAS_HASTA = 36;
 
+async function leerJson(ruta) {
+  try {
+    return JSON.parse(await readFile(join(ROOT, ruta), "utf8"));
+  } catch {
+    return null;
+  }
+}
+
+const horaPublicada = (iso) => {
+  const d = new Date(iso);
+  return d.getUTCHours() !== 0 || d.getUTCMinutes() !== 0;
+};
+
+/**
+ * Partidos del club en la ventana de aviso, de la liga federada y de los
+ * Juegos Municipales. Cada uno lleva:
+ *   clave    — para marcarlo como ya avisado en el KV ("notified:<clave>")
+ *   filtro   — valor que debe estar en la lista "categorias" de la suscripción
+ *              (nombre del equipo federado, o "mun:<id>" para un municipal)
+ *   etiqueta — nombre que sale en el título del aviso
+ * De los municipales solo se avisa si ya hay hora publicada: el Ayuntamiento
+ * pone antes una fecha orientativa que puede cambiar, y los descansos y
+ * partidos aplazados no se avisan.
+ */
 async function partidosEnVentana() {
-  const raw = JSON.parse(await readFile(join(ROOT, "src/data/competicion.json"), "utf8"));
   const ahora = Date.now();
   const desde = ahora + HORAS_DESDE * 3600e3;
   const hasta = ahora + HORAS_HASTA * 3600e3;
-  return (raw.proximos || []).filter((p) => {
+  const enVentana = (p) => {
     if (!p.fechaHora) return false;
     const t = new Date(p.fechaHora).getTime();
     return t >= desde && t <= hasta;
-  });
+  };
+
+  const federados = ((await leerJson("src/data/competicion.json"))?.proximos || [])
+    .filter(enVentana)
+    .map((p) => ({ ...p, clave: String(p.id), filtro: p.categoria, etiqueta: p.categoria }));
+
+  const municipales = ((await leerJson("src/data/municipales.json"))?.grupos || []).flatMap((g) =>
+    g.misPartidos
+      .filter(
+        (p) =>
+          !p.jugado &&
+          !p.aplazado &&
+          !/descansa/i.test(`${p.local} ${p.visitante}`) &&
+          p.fechaHora &&
+          horaPublicada(p.fechaHora) &&
+          enVentana(p),
+      )
+      .map((p) => ({ ...p, clave: `m${p.id}`, filtro: `mun:${g.id}`, etiqueta: `${g.categoria} (municipal)` })),
+  );
+
+  return [...federados, ...municipales];
 }
 
 function textoAviso(p) {
   const fecha = new Date(p.fechaHora);
   const hora = String(fecha.getUTCHours()).padStart(2, "0") + ":" + String(fecha.getUTCMinutes()).padStart(2, "0");
   return {
-    title: `Mañana juega ${p.categoria}`,
+    title: `Mañana juega ${p.etiqueta}`,
     body: `${p.local} vs ${p.visitante}${hora === "00:00" ? "" : " · " + hora}${p.pabellon ? " · " + p.pabellon : ""}`,
   };
 }
@@ -136,9 +185,18 @@ async function main() {
     return;
   }
 
+  if (DRY) {
+    console.log(`[dry-run] ${partidos.length} partido(s) en la ventana (no se envía nada):`);
+    for (const p of partidos) {
+      const { title, body } = textoAviso(p);
+      console.log(`  · [${p.filtro}] ${title} — ${body}`);
+    }
+    return;
+  }
+
   const pendientes = [];
   for (const p of partidos) {
-    const yaAvisado = await kvGet(`notified:${p.id}`);
+    const yaAvisado = await kvGet(`notified:${p.clave}`);
     if (!yaAvisado) pendientes.push(p);
   }
   if (pendientes.length === 0) {
@@ -161,7 +219,7 @@ async function main() {
       const subscription = JSON.parse(raw);
       // "categorias" vacío o ausente = quiere avisos de todos los equipos.
       const categorias = Array.isArray(subscription.categorias) ? subscription.categorias : [];
-      if (categorias.length > 0 && !categorias.includes(p.categoria)) continue;
+      if (categorias.length > 0 && !categorias.includes(p.filtro)) continue;
       interesados++;
       try {
         await webpush.sendNotification(subscription, payload);
@@ -175,7 +233,7 @@ async function main() {
       }
     }
     console.log(`  ✓ "${title}" — enviado a ${enviados}/${interesados} (de ${subKeys.length} suscripciones totales)`);
-    await kvPut(`notified:${p.id}`, "1", 60 * 60 * 24 * 3); // 3 días de margen
+    await kvPut(`notified:${p.clave}`, "1", 60 * 60 * 24 * 3); // 3 días de margen
   }
 }
 

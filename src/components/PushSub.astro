@@ -7,8 +7,12 @@
 // filtrando por la lista de categorías guardada junto a la suscripción —
 // ver DEPLOY.md §7.
 import equiposFederados from "../data/equipos-federados.json";
+import equiposMunicipales from "../data/equipos-municipales.json";
 const VAPID_PUBLIC_KEY = import.meta.env.PUBLIC_VAPID_PUBLIC_KEY || "";
-const categorias = equiposFederados.grupos.map((g) => g.categoria);
+// Valor que se guarda con la suscripción y que usa send-match-reminders.mjs
+// para filtrar: el nombre del equipo federado, o "mun:<id>" para un municipal.
+const federados = equiposFederados.grupos.map((g) => ({ valor: g.categoria, nombre: g.categoria }));
+const municipales = equiposMunicipales.equipos.map((e) => ({ valor: `mun:${e.id}`, nombre: e.nombre }));
 ---
 {VAPID_PUBLIC_KEY && (
   <>
@@ -26,7 +30,7 @@ const categorias = equiposFederados.grupos.map((g) => g.categoria);
       <div class="pwa-install-modal__box push-prefs-modal__box">
         <button type="button" class="pwa-install-modal__close" id="push-prefs-close" aria-label="Cerrar">✕</button>
         <h3 class="push-prefs__title">¿De qué equipos quieres avisos?</h3>
-        <p class="push-prefs__hint">Te avisaremos el día antes de cada partido de liga federada de los equipos que elijas.</p>
+        <p class="push-prefs__hint">Te avisaremos el día antes de cada partido (liga federada y juegos municipales) de los equipos que elijas.</p>
 
         <label class="push-prefs__opcion push-prefs__opcion--todos">
           <input type="checkbox" id="push-cat-todos" checked />
@@ -34,10 +38,18 @@ const categorias = equiposFederados.grupos.map((g) => g.categoria);
         </label>
 
         <div class="push-prefs__lista" id="push-prefs-lista">
-          {categorias.map((cat) => (
+          <p class="push-prefs__grupo">Liga federada</p>
+          {federados.map((e) => (
             <label class="push-prefs__opcion">
-              <input type="checkbox" class="push-cat" value={cat} />
-              {cat}
+              <input type="checkbox" class="push-cat" value={e.valor} />
+              {e.nombre}
+            </label>
+          ))}
+          <p class="push-prefs__grupo">Juegos municipales</p>
+          {municipales.map((e) => (
+            <label class="push-prefs__opcion">
+              <input type="checkbox" class="push-cat" value={e.valor} />
+              {e.nombre}
             </label>
           ))}
         </div>

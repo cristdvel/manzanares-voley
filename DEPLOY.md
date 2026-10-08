@@ -334,9 +334,15 @@ secret**, añade:
    log: dice cuántos partidos había en la ventana de 12-36 h y a cuántas
    suscripciones se ha mandado el aviso.
 
-> Solo avisa de partidos **federados** (los que tienen fecha y hora real de
-> la Federación en `/calendario`). Los amistosos no tienen hora exacta
-> verificable automáticamente, así que de momento no generan avisos push.
+> Avisa de los partidos de la **liga federada** y de los **Juegos Municipales**
+> (§10). De los municipales solo cuando el Ayuntamiento ya ha publicado la
+> hora: antes pone una fecha orientativa que puede cambiar, y los descansos y
+> aplazados no se avisan. Quien eligió "Todos los equipos" recibe también los
+> municipales; quien marcó equipos concretos solo los que marcó (en el panel
+> hay dos bloques: Liga federada y Juegos municipales). Los amistosos no
+> tienen hora exacta verificable automáticamente, así que no generan avisos.
+> Para ver qué avisaría ahora mismo, sin mandar nada:
+> `node scripts/send-match-reminders.mjs --dry-run`.
 
 ---
 

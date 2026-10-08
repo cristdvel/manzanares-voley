@@ -633,6 +633,8 @@ p:last-child{margin-bottom:0}
 .push-prefs__opcion input{width:16px;height:16px;flex:none}
 .push-prefs__opcion--todos{font-weight:600;border-bottom:1px solid var(--mzv-crema);margin-bottom:4px}
 .push-prefs__lista{display:flex;flex-direction:column}
+.push-prefs__grupo{margin:14px 0 4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--mzv-naranja)}
+.push-prefs__grupo:first-child{margin-top:4px}
 .push-prefs__acciones{display:flex;flex-direction:column;gap:10px;margin-top:18px}
 .push-prefs__acciones .btn{width:100%;justify-content:center}
 

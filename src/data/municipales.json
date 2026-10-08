@@ -1,12 +1,13 @@
 {
-  "actualizado": "2026-10-08T08:19:12.630Z",
+  "actualizado": "2026-10-08T08:31:03.642Z",
   "temporada": "2026/2027",
   "fuente": "https://datos.madrid.es/dataset/211549-0-juegos-deportivos-actual",
   "datosDel": "2026-10-07",
   "grupos": [
     {
+      "id": "benjamin-mixto",
       "grupoId": 800000,
-      "categoria": "Benjamín mixto · T. Bretón Manzanares",
+      "categoria": "Benjamín Mixto · T. Bretón Manzanares",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",
@@ -17,8 +18,9 @@
       "aviso": "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente."
     },
     {
+      "id": "alevin-mixto",
       "grupoId": 800001,
-      "categoria": "Alevín mixto · T. Bretón Manzanares",
+      "categoria": "Alevín Mixto · T. Bretón Manzanares",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",
@@ -29,8 +31,9 @@
       "aviso": "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente."
     },
     {
+      "id": "infantil-mixto",
       "grupoId": 800002,
-      "categoria": "Infantil mixto",
+      "categoria": "Infantil Mixto",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",
@@ -41,8 +44,9 @@
       "aviso": "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente."
     },
     {
+      "id": "infantil-fem-naranja",
       "grupoId": 800003,
-      "categoria": "Infantil femenino naranja",
+      "categoria": "Infantil Femenino Naranja",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",
@@ -53,8 +57,9 @@
       "aviso": "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente."
     },
     {
+      "id": "infantil-fem-azul",
       "grupoId": 800004,
-      "categoria": "Infantil femenino azul",
+      "categoria": "Infantil Femenino Azul",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",
@@ -65,8 +70,9 @@
       "aviso": "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente."
     },
     {
+      "id": "infantil-fem",
       "grupoId": 800005,
-      "categoria": "Infantil femenino",
+      "categoria": "Infantil Femenino",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",
@@ -77,8 +83,9 @@
       "aviso": "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente."
     },
     {
+      "id": "cadete-fem",
       "grupoId": 800006,
-      "categoria": "Cadete femenino",
+      "categoria": "Cadete Femenino",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",
@@ -89,8 +96,9 @@
       "aviso": "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente."
     },
     {
+      "id": "cadete-fem-azul",
       "grupoId": 800007,
-      "categoria": "Cadete femenino azul",
+      "categoria": "Cadete Femenino Azul",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",
@@ -101,8 +109,9 @@
       "aviso": "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente."
     },
     {
+      "id": "cadete-fem-naranja",
       "grupoId": 800008,
-      "categoria": "Cadete femenino naranja",
+      "categoria": "Cadete Femenino Naranja",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",
@@ -113,8 +122,9 @@
       "aviso": "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente."
     },
     {
+      "id": "juvenil-fem-2010",
       "grupoId": 800009,
-      "categoria": "Juvenil femenino 2010",
+      "categoria": "Juvenil Femenino 2010",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",
@@ -125,8 +135,9 @@
       "aviso": "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente."
     },
     {
+      "id": "juvenil-fem-blanco",
       "grupoId": 800010,
-      "categoria": "Juvenil femenino blanco",
+      "categoria": "Juvenil Femenino Blanco",
       "division": "Juegos Deportivos Municipales",
       "competicion": "Juegos Deportivos Municipales",
       "fase": "Calendario pendiente de publicación",

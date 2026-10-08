@@ -190,6 +190,7 @@ async function main() {
       console.warn(`⚠ "${e.nombre}" encaja con equipos distintos (${[...nombresDistintos].join(" / ")}); se mezclan. Afina su "equipo" o fija "codigoEquipo" en equipos-municipales.json.`);
     }
     const base = {
+      id: e.id,
       grupoId: 800000 + i,
       categoria: e.nombre,
       division: "Juegos Deportivos Municipales",

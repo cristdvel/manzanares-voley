@@ -3,10 +3,12 @@
  * de notificaciones push en el KV "PUSH_SUBS", para poder avisar de próximos
  * partidos desde scripts/send-match-reminders.mjs. Ver DEPLOY.md §7.
  *
- * El POST admite una lista opcional "categorias" (nombres tal cual aparecen
- * en equipos-federados.json, p. ej. "Cadete Femenino B") para que la
- * persona solo reciba avisos de esos equipos. Una lista vacía o ausente
- * significa "todos los equipos" (comportamiento por defecto).
+ * El POST admite una lista opcional "categorias" para que la persona solo
+ * reciba avisos de esos equipos: el nombre tal cual aparece en
+ * equipos-federados.json (p. ej. "Cadete Femenino B") o, para los equipos de
+ * los Juegos Municipales, "mun:<id>" (id de equipos-municipales.json). Una
+ * lista vacía o ausente significa "todos los equipos" (comportamiento por
+ * defecto).
  *
  * Bindings (Pages → Settings → Functions → KV namespace bindings):
  *   PUSH_SUBS (obligatoria) — namespace donde se guardan las suscripciones

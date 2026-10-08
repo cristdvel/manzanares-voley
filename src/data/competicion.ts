@@ -42,6 +42,8 @@ export interface Jornada {
 }
 
 export interface Grupo {
+  /** id estable del equipo en equipos-municipales.json; solo en los municipales. */
+  id?: string;
   grupoId: number;
   categoria: string;
   division: string;
