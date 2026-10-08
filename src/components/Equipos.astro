@@ -38,6 +38,11 @@ import Clasificacion from "./Clasificacion.astro";
                 {eq.plazas}
               </div>
             )}
+            {cat.id.startsWith("municipal") && (
+              <a href="/calendario#municipales" class="team__cal team__cal--ok team__cal--link">
+                ✓ Ver calendario y clasificación →
+              </a>
+            )}
             {cat.id.startsWith("federado") && (
               eq.calendario && eq.grupoId ? (
                 <a href={`/calendario#equipo-${eq.grupoId}`} class="team__cal team__cal--ok team__cal--link">

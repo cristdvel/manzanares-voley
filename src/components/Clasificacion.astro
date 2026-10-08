@@ -1,5 +1,6 @@
 ---
-import { grupos, hayResultados, actualizadoTexto } from "../data/competicion";
+import { grupos as gruposFederados, hayResultados, actualizadoTexto } from "../data/competicion";
+import type { Grupo } from "../data/competicion";
 
 interface Props {
   full?: boolean;
@@ -9,17 +10,40 @@ interface Props {
   /** oculta el <select> propio, por si ya lo pinta otro componente con el
    * mismo tabGroupName en la misma página. */
   mostrarSelector?: boolean;
+  /** equipos a mostrar; por defecto los federados. */
+  grupos?: Grupo[];
+  /** id de la sección, para poder tener federados y municipales en la misma página. */
+  anchorId?: string;
+  /** texto bajo el título; por defecto el de la liga federada. */
+  intro?: string;
+  /** texto del enlace al origen de los datos de cada grupo. */
+  enlaceTexto?: string;
+  /** pie con la fecha de actualización; por defecto la de la Federación. */
+  pie?: string;
 }
-const { full = false, tabGroupName = "clasif", mostrarSelector = true } = Astro.props;
+const {
+  full = false,
+  tabGroupName = "clasif",
+  mostrarSelector = true,
+  grupos = gruposFederados,
+  anchorId = "clasificacion",
+  intro,
+  enlaceTexto = "Ficha del grupo en fmvoley.com ↗",
+  pie,
+} = Astro.props;
 ---
-<div class="section section--crema" id="clasificacion">
+<div class="section section--crema" id={anchorId}>
   <div class="container">
     <span class="eyebrow">Clasificaciones y resultados</span>
     <h2 class="section-title">La liga, en directo</h2>
     <p class="clasif__intro">
-      Clasificación de los equipos federados de Manzanares Voley, con datos de la
-      Federación de Madrid de Voleibol.
-      {!hayResultados && " La competición arranca el 27 de septiembre de 2026."}
+      {intro ?? (
+        <>
+          Clasificación de los equipos federados de Manzanares Voley, con datos de la
+          Federación de Madrid de Voleibol.
+          {!hayResultados && " La competición arranca el 27 de septiembre de 2026."}
+        </>
+      )}
     </p>
 
     {mostrarSelector && (
@@ -41,42 +65,48 @@ const { full = false, tabGroupName = "clasif", mostrarSelector = true } = Astro.
         role="tabpanel"
       >
         <p class="clasif__division">{g.division} · {g.fase}</p>
-        <div class="tabla-wrap">
-          <table class="tabla-clasif">
-            <thead>
-              <tr>
-                <th class="c">#</th>
-                <th>Equipo</th>
-                <th class="c">PJ</th>
-                <th class="c">PG</th>
-                <th class="c">PP</th>
-                <th class="c">Sets</th>
-                <th class="c">Pts</th>
-              </tr>
-            </thead>
-            <tbody>
-              {g.clasificacion.map((f) => (
-                <tr class={f.esManzanares ? "is-mzv" : ""}>
-                  <td class="c">{f.pos}</td>
-                  <td>{f.equipo}</td>
-                  <td class="c">{f.pj}</td>
-                  <td class="c">{f.pg}</td>
-                  <td class="c">{f.pp}</td>
-                  <td class="c">{f.setsFavor}-{f.setsContra}</td>
-                  <td class="c b">{f.pts}</td>
+        {g.clasificacion.length > 0 ? (
+          <div class="tabla-wrap">
+            <table class="tabla-clasif">
+              <thead>
+                <tr>
+                  <th class="c">#</th>
+                  <th>Equipo</th>
+                  <th class="c">PJ</th>
+                  <th class="c">PG</th>
+                  <th class="c">PP</th>
+                  <th class="c">Sets</th>
+                  <th class="c">Pts</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody>
+                {g.clasificacion.map((f) => (
+                  <tr class={f.esManzanares ? "is-mzv" : ""}>
+                    <td class="c">{f.pos}</td>
+                    <td>{f.equipo}</td>
+                    <td class="c">{f.pj}</td>
+                    <td class="c">{f.pg}</td>
+                    <td class="c">{f.pp}</td>
+                    <td class="c">{f.setsFavor}-{f.setsContra}</td>
+                    <td class="c b">{f.pts}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ) : (
+          <p class="match__empty">
+            {g.aviso ?? "La clasificación de este equipo se publicará cuando empiece la competición."}
+          </p>
+        )}
         <a href={g.urlFmvoley} target="_blank" rel="noopener" class="clasif__link">
-          Ficha del grupo en fmvoley.com ↗
+          {enlaceTexto}
         </a>
       </div>
     ))}
 
     <p class="clasif__foot">
-      Actualizado automáticamente · {actualizadoTexto()}
+      {pie ?? `Actualizado automáticamente · ${actualizadoTexto()}`}
       {!full && <> · <a href="/calendario">ver calendario completo →</a></>}
     </p>
   </div>

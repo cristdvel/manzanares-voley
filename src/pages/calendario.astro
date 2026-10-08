@@ -7,8 +7,11 @@ import Calendario from "../components/Calendario.astro";
 import Clasificacion from "../components/Clasificacion.astro";
 import Resultados from "../components/Resultados.astro";
 import { temporada, actualizadoTexto, proximos, grupos } from "../data/competicion";
+import { gruposMunicipales, datosDelTexto } from "../data/municipales";
 import { site } from "../data/site";
 import { amistososVigentes } from "../data/amistosos";
+
+const datosMunicipales = datosDelTexto();
 
 const eventSchemas = proximos
   .filter((p) => p.fechaHora)
@@ -30,11 +33,17 @@ const eventSchemas = proximos
     organizer: { "@type": "Organization", name: "Federación de Madrid de Voleibol" },
     superEvent: { "@type": "SportsOrganization", name: "Manzanares Voley", "@id": site.url + "#org" },
   }));
+
+const introMunicipal =
+  "Calendario, resultados y clasificación de los equipos de Manzanares Voley en los Juegos Deportivos Municipales de Madrid, con datos abiertos del Ayuntamiento.";
+const pieMunicipal = datosMunicipales
+  ? `Datos del Ayuntamiento de Madrid del ${datosMunicipales} · se actualizan cada miércoles`
+  : "Datos del Ayuntamiento de Madrid · se actualizan cada miércoles";
 ---
 
 <Base
   title="Calendario y clasificación | Manzanares Voley"
-  description="Calendario, resultados y clasificación de los equipos federados del Club Voleibol Manzanares, con datos de la Federación de Madrid de Voleibol."
+  description="Calendario, resultados y clasificación de los equipos federados y de los Juegos Deportivos Municipales del Club Voleibol Manzanares, con datos de la Federación de Madrid de Voleibol y del Ayuntamiento de Madrid."
   schemas={eventSchemas}
 >
   <Header />
@@ -43,7 +52,7 @@ const eventSchemas = proximos
       <div class="container">
         <span class="eyebrow">Competición · {temporada}</span>
         <h1>Calendario y clasificación</h1>
-        <p>Partidos, resultados y clasificación de los equipos federados de Manzanares Voley, con datos oficiales de la Federación de Madrid de Voleibol.</p>
+        <p>Partidos, resultados y clasificación de los equipos de Manzanares Voley: liga federada (Federación de Madrid de Voleibol) y Juegos Deportivos Municipales (Ayuntamiento de Madrid).</p>
         <div class="page-cta">
           {amistososVigentes.length > 0 && (
             <a href="#amistosos" class="btn btn--outline-light">Ver amistosos</a>
@@ -51,82 +60,168 @@ const eventSchemas = proximos
           <button type="button" id="hero-ver-calendario" class="btn btn--outline-light">Ver calendario</button>
           <button type="button" id="hero-ver-clasificacion" class="btn btn--primary">Ver clasificación</button>
         </div>
-        <p class="page-hero__meta">Actualizado · {actualizadoTexto()}</p>
+        <p class="page-hero__meta">Liga federada actualizada · {actualizadoTexto()}</p>
       </div>
     </div>
 
     <Amistosos />
 
-    <div class="section" id="equipo-picker">
+    <div class="section modo-picker" id="modo-picker">
       <div class="container">
-        <span class="eyebrow">Liga federada</span>
-        <h2 class="section-title">Elige tu equipo</h2>
-        <select id="select-equipo" class="cat-select" data-tabs="equipo" aria-label="Categorías">
-          {grupos.map((g, i) => (
-            <option value={String(g.grupoId)} selected={i === 0}>{g.categoria}</option>
-          ))}
-        </select>
-        <div class="partidos__ctas">
-          <button type="button" class="btn btn--primary" id="toggle-vista-calendario" aria-pressed="true">
-            📅 Calendario
+        <span class="eyebrow">Tipo de competición</span>
+        <div class="modo-switch" role="group" aria-label="Tipo de competición">
+          <button type="button" class="modo-switch__btn is-active" data-modo-btn="federada" aria-pressed="true">
+            Liga federada
           </button>
-          <button type="button" class="btn btn--outline" id="toggle-vista-resultados" aria-pressed="false">
-            🏐 Resultados
-          </button>
-          <button type="button" class="btn btn--outline" id="toggle-vista-clasificacion" aria-pressed="false">
-            🏆 Clasificación
+          <button type="button" class="modo-switch__btn" data-modo-btn="municipal" aria-pressed="false">
+            Juegos municipales
           </button>
         </div>
       </div>
     </div>
 
-    <div id="vista-calendario">
-      <Calendario tabGroupName="equipo" mostrarSelector={false} />
+    <div data-modo-panel="federada">
+      <div class="section" data-picker>
+        <div class="container">
+          <span class="eyebrow">Liga federada</span>
+          <h2 class="section-title">Elige tu equipo</h2>
+          <select id="select-equipo" class="cat-select" data-tabs="equipo" aria-label="Categorías">
+            {grupos.map((g, i) => (
+              <option value={String(g.grupoId)} selected={i === 0}>{g.categoria}</option>
+            ))}
+          </select>
+          <div class="partidos__ctas">
+            <button type="button" class="btn btn--primary" data-vista-btn="calendario" aria-pressed="true">
+              📅 Calendario
+            </button>
+            <button type="button" class="btn btn--outline" data-vista-btn="resultados" aria-pressed="false">
+              🏐 Resultados
+            </button>
+            <button type="button" class="btn btn--outline" data-vista-btn="clasificacion" aria-pressed="false">
+              🏆 Clasificación
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div data-vista-panel="calendario">
+        <Calendario tabGroupName="equipo" mostrarSelector={false} />
+      </div>
+      <div data-vista-panel="resultados" hidden>
+        <Resultados tabGroupName="equipo" mostrarSelector={false} />
+      </div>
+      <div data-vista-panel="clasificacion" hidden>
+        <Clasificacion full={true} tabGroupName="equipo" mostrarSelector={false} />
+      </div>
     </div>
-    <div id="vista-resultados" hidden>
-      <Resultados tabGroupName="equipo" mostrarSelector={false} />
-    </div>
-    <div id="vista-clasificacion" hidden>
-      <Clasificacion full={true} tabGroupName="equipo" mostrarSelector={false} />
+
+    <div data-modo-panel="municipal" id="juegos-municipales" hidden>
+      <div class="section" data-picker>
+        <div class="container">
+          <span class="eyebrow">Juegos municipales</span>
+          <h2 class="section-title">Elige tu equipo</h2>
+          <select id="select-municipal" class="cat-select" data-tabs="municipal" aria-label="Equipos municipales">
+            {gruposMunicipales.map((g, i) => (
+              <option value={String(g.grupoId)} selected={i === 0}>{g.categoria}</option>
+            ))}
+          </select>
+          <div class="partidos__ctas">
+            <button type="button" class="btn btn--primary" data-vista-btn="calendario" aria-pressed="true">
+              📅 Calendario
+            </button>
+            <button type="button" class="btn btn--outline" data-vista-btn="resultados" aria-pressed="false">
+              🏐 Resultados
+            </button>
+            <button type="button" class="btn btn--outline" data-vista-btn="clasificacion" aria-pressed="false">
+              🏆 Clasificación
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div data-vista-panel="calendario">
+        <Calendario tabGroupName="municipal" mostrarSelector={false} grupos={gruposMunicipales} anchorId="mun-calendario" />
+      </div>
+      <div data-vista-panel="resultados" hidden>
+        <Resultados tabGroupName="municipal" mostrarSelector={false} grupos={gruposMunicipales} anchorId="mun-resultados" />
+      </div>
+      <div data-vista-panel="clasificacion" hidden>
+        <Clasificacion
+          full={true}
+          tabGroupName="municipal"
+          mostrarSelector={false}
+          grupos={gruposMunicipales}
+          anchorId="mun-clasificacion"
+          intro={introMunicipal}
+          enlaceTexto="Datos abiertos del Ayuntamiento de Madrid ↗"
+          pie={pieMunicipal}
+        />
+      </div>
     </div>
   </main>
   <Footer />
 </Base>
 
 <script>
+  type Modo = "federada" | "municipal";
   type Vista = "calendario" | "resultados" | "clasificacion";
 
-  const botones: Record<Vista, HTMLButtonElement | null> = {
-    calendario: document.getElementById("toggle-vista-calendario") as HTMLButtonElement | null,
-    resultados: document.getElementById("toggle-vista-resultados") as HTMLButtonElement | null,
-    clasificacion: document.getElementById("toggle-vista-clasificacion") as HTMLButtonElement | null,
-  };
-  const vistas: Record<Vista, HTMLElement | null> = {
-    calendario: document.getElementById("vista-calendario"),
-    resultados: document.getElementById("vista-resultados"),
-    clasificacion: document.getElementById("vista-clasificacion"),
-  };
+  const paneles = Array.from(document.querySelectorAll<HTMLElement>("[data-modo-panel]"));
+  const botonesModo = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-modo-btn]"));
 
-  function mostrarVista(actual: Vista) {
-    (Object.keys(vistas) as Vista[]).forEach((v) => {
-      const activa = v === actual;
-      if (vistas[v]) vistas[v]!.hidden = !activa;
-      botones[v]?.classList.remove("btn--primary", "btn--outline");
-      botones[v]?.classList.add(activa ? "btn--primary" : "btn--outline");
-      botones[v]?.setAttribute("aria-pressed", String(activa));
+  function mostrarVista(panel: HTMLElement, actual: Vista) {
+    panel.querySelectorAll<HTMLElement>("[data-vista-panel]").forEach((v) => {
+      v.hidden = v.dataset.vistaPanel !== actual;
+    });
+    panel.querySelectorAll<HTMLButtonElement>("[data-vista-btn]").forEach((b) => {
+      const activa = b.dataset.vistaBtn === actual;
+      b.classList.remove("btn--primary", "btn--outline");
+      b.classList.add(activa ? "btn--primary" : "btn--outline");
+      b.setAttribute("aria-pressed", String(activa));
     });
   }
 
-  (Object.keys(botones) as Vista[]).forEach((v) => {
-    botones[v]?.addEventListener("click", () => mostrarVista(v));
+  function panelActivo(): HTMLElement | undefined {
+    return paneles.find((p) => !p.hidden);
+  }
+
+  function mostrarModo(modo: Modo, actualizarHash = true) {
+    paneles.forEach((p) => {
+      p.hidden = p.dataset.modoPanel !== modo;
+    });
+    botonesModo.forEach((b) => {
+      const activo = b.dataset.modoBtn === modo;
+      b.classList.toggle("is-active", activo);
+      b.setAttribute("aria-pressed", String(activo));
+    });
+    if (actualizarHash) {
+      const url = window.location.pathname + window.location.search + (modo === "municipal" ? "#municipales" : "");
+      history.replaceState(null, "", url);
+    }
+  }
+
+  botonesModo.forEach((b) => {
+    b.addEventListener("click", () => mostrarModo(b.dataset.modoBtn as Modo));
   });
 
-  document.getElementById("hero-ver-calendario")?.addEventListener("click", () => {
-    mostrarVista("calendario");
-    document.getElementById("equipo-picker")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  paneles.forEach((panel) => {
+    panel.querySelectorAll<HTMLButtonElement>("[data-vista-btn]").forEach((b) => {
+      b.addEventListener("click", () => mostrarVista(panel, b.dataset.vistaBtn as Vista));
+    });
   });
-  document.getElementById("hero-ver-clasificacion")?.addEventListener("click", () => {
-    mostrarVista("clasificacion");
-    document.getElementById("equipo-picker")?.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
+
+  function irAlSelector(vista: Vista) {
+    const panel = panelActivo();
+    if (!panel) return;
+    mostrarVista(panel, vista);
+    panel.querySelector("[data-picker]")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  document.getElementById("hero-ver-calendario")?.addEventListener("click", () => irAlSelector("calendario"));
+  document.getElementById("hero-ver-clasificacion")?.addEventListener("click", () => irAlSelector("clasificacion"));
+
+  // Enlace directo: /calendario#municipales abre los Juegos Municipales.
+  if (window.location.hash === "#municipales") {
+    mostrarModo("municipal", false);
+    document.getElementById("modo-picker")?.scrollIntoView({ block: "start" });
+  }
 </script>

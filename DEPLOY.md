@@ -525,3 +525,40 @@ hecho):
 > nacimiento, categoría orientativa (calculada automáticamente por edad),
 > nombre del tutor, teléfono, email, experiencia previa, si autoriza el uso
 > de imágenes, **Estado** (desplegable) y "Comentario interno" libre.
+
+---
+
+## 10. Juegos Deportivos Municipales (calendario, resultados y clasificación)
+
+`/calendario` tiene un selector **Liga federada | Juegos municipales**. La parte
+municipal sale de los **datos abiertos del Ayuntamiento de Madrid** (conjunto
+"Competiciones deportivas municipales de deportes colectivos. Temporada en
+curso" en <https://datos.madrid.es/dataset/211549-0-juegos-deportivos-actual>),
+que el Ayuntamiento renueva **cada miércoles**. No hace falta configurar nada
+en Cloudflare ni en Google.
+
+- **Descarga automática:** la GitHub Action `.github/workflows/municipales.yml`
+  ejecuta `scripts/fetch-municipales.mjs` los miércoles por la tarde y una vez
+  al día, y si hay cambios hace commit de `src/data/municipales.json` (eso
+  redespliega la web sola). Se puede lanzar a mano en GitHub → Actions →
+  "Actualizar juegos municipales" → *Run workflow*. Si el portal del
+  Ayuntamiento falla un día, la Action no se rompe: conserva los datos
+  anteriores.
+- **Qué equipos salen:** los de `src/data/equipos-municipales.json` (11 en
+  2026/2027). Cada uno se localiza en los datos por **categoría + sexo + nombre
+  del equipo** (expresiones regulares). El año pasado el club aparecía como
+  `MANZANARES VOLEY AZUL/NARANJA/BLANCO/ROJO` y `T. BRETON MANZANARES VOLEY`.
+- **Hasta que haya datos:** las categorías base arrancan el **14 de noviembre**
+  (inscripción hasta el 20 de octubre) y hoy el Ayuntamiento solo ha publicado
+  voleibol sénior, así que cada equipo muestra "Todavía no hay calendario
+  publicado". Aparecerá solo en cuanto el Ayuntamiento lo suba.
+- **Cuando aparezcan los equipos, hay que comprobar el emparejamiento:** abre la
+  Action o ejecuta `node scripts/fetch-municipales.mjs` y mira el log. Si un
+  equipo del club no se encuentra o se mezcla con otro (el log avisa con
+  "encaja con equipos distintos"), ajusta su campo `equipo` en
+  `equipos-municipales.json` o fija su `codigoEquipo` (número de la columna
+  `Codigo_equipo` del CSV).
+- **Qué muestra cada equipo:** todos sus partidos (liga, finales y Copa de
+  Primavera, con la competición indicada en cada uno), los resultados y la
+  clasificación del grupo en el que juega ahora (sets a favor-en contra y
+  puntos). Las jornadas de descanso salen como "Descansa".

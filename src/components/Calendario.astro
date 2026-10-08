@@ -1,5 +1,6 @@
 ---
-import { grupos, temporada, fechaCorta, horaCorta } from "../data/competicion";
+import { grupos as gruposFederados, temporada, fechaCorta, horaCorta } from "../data/competicion";
+import type { Grupo } from "../data/competicion";
 
 interface Props {
   /** nombre del grupo de pestañas; compártelo con otro componente (p. ej.
@@ -8,10 +9,19 @@ interface Props {
   /** oculta el <select> propio, por si ya lo pinta otro componente con el
    * mismo tabGroupName en la misma página. */
   mostrarSelector?: boolean;
+  /** equipos a mostrar; por defecto los federados. */
+  grupos?: Grupo[];
+  /** id de la sección, para poder tener federados y municipales en la misma página. */
+  anchorId?: string;
 }
-const { tabGroupName = "cal", mostrarSelector = true } = Astro.props;
+const {
+  tabGroupName = "cal",
+  mostrarSelector = true,
+  grupos = gruposFederados,
+  anchorId = "calendario",
+} = Astro.props;
 ---
-<div class="section" id="calendario">
+<div class="section" id={anchorId}>
   <div class="container">
     <span class="eyebrow">Temporada {temporada}</span>
     <h2 class="section-title">Calendario</h2>
@@ -35,6 +45,7 @@ const { tabGroupName = "cal", mostrarSelector = true } = Astro.props;
         role="tabpanel"
       >
         <p class="clasif__division">{g.division} · {g.fase}</p>
+        {g.misPartidos.length === 0 && g.aviso && <p class="match__empty">{g.aviso}</p>}
         <ol class="cal-list">
           {g.misPartidos.map((p) => (
             <li class={`cal-item${p.jugado ? " is-done" : ""}`}>
@@ -49,9 +60,10 @@ const { tabGroupName = "cal", mostrarSelector = true } = Astro.props;
                 <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
               </span>
               {p.aplazado && <span class="cal-item__tag">Aplazado</span>}
-              {p.pabellon && (
+              {(p.pabellon || p.fase) && (
                 <span class="cal-item__sede">
-                  📍 {p.pabellon}
+                  {p.fase && <>{p.fase}{p.pabellon ? " · " : ""}</>}
+                  {p.pabellon && <>📍 {p.pabellon}</>}
                   {p.mapa && <> · <a href={p.mapa} target="_blank" rel="noopener">cómo llegar</a></>}
                 </span>
               )}

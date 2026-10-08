@@ -31,6 +31,8 @@ export interface Partido {
   setsLocal?: number;
   setsVisitante?: number;
   categoria?: string;
+  /** competición a la que pertenece (p. ej. "Copa Primavera 2026"); solo en los municipales. */
+  fase?: string;
 }
 
 export interface Jornada {
@@ -49,6 +51,8 @@ export interface Grupo {
   clasificacion: FilaClasificacion[];
   jornadas: Jornada[];
   misPartidos: Partido[];
+  /** texto a mostrar cuando el equipo aún no tiene datos publicados; solo en los municipales. */
+  aviso?: string;
 }
 
 export interface Competicion {

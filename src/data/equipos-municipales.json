@@ -1,0 +1,16 @@
+{
+  "_comentario": "Equipos del club en los Juegos Deportivos Municipales de Madrid (temporada 2026/2027). Cada equipo se localiza en los datos abiertos del Ayuntamiento por categoría + sexo + nombre del equipo. 'categoria' y 'equipo' son expresiones regulares (sin tildes, en mayúsculas) y 'sexo' es X (mixto) o F (femenino). El año pasado el club aparecía como 'MANZANARES VOLEY AZUL/NARANJA/BLANCO/ROJO' y 'T. BRETON MANZANARES VOLEY'. Si un equipo no aparece o se cruza con otro, ajusta su 'equipo' o fija su código con 'codigoEquipo' (número que sale en el CSV, columna Codigo_equipo).",
+  "equipos": [
+    { "id": "benjamin-mixto", "nombre": "Benjamín mixto · T. Bretón Manzanares", "categoria": "BENJAMIN", "sexo": "X", "equipo": "BRETON" },
+    { "id": "alevin-mixto", "nombre": "Alevín mixto · T. Bretón Manzanares", "categoria": "ALEVIN", "sexo": "X", "equipo": "BRETON" },
+    { "id": "infantil-mixto", "nombre": "Infantil mixto", "categoria": "INFANTIL", "sexo": "X", "equipo": "MANZANARES" },
+    { "id": "infantil-fem-naranja", "nombre": "Infantil femenino naranja", "categoria": "INFANTIL", "sexo": "F", "equipo": "MANZANARES.*NARANJA" },
+    { "id": "infantil-fem-azul", "nombre": "Infantil femenino azul", "categoria": "INFANTIL", "sexo": "F", "equipo": "MANZANARES.*AZUL" },
+    { "id": "infantil-fem", "nombre": "Infantil femenino", "categoria": "INFANTIL", "sexo": "F", "equipo": "MANZANARES(?!.*(NARANJA|AZUL))" },
+    { "id": "cadete-fem", "nombre": "Cadete femenino", "categoria": "CADETE", "sexo": "F", "equipo": "MANZANARES(?!.*(NARANJA|AZUL))" },
+    { "id": "cadete-fem-azul", "nombre": "Cadete femenino azul", "categoria": "CADETE", "sexo": "F", "equipo": "MANZANARES.*AZUL" },
+    { "id": "cadete-fem-naranja", "nombre": "Cadete femenino naranja", "categoria": "CADETE", "sexo": "F", "equipo": "MANZANARES.*NARANJA" },
+    { "id": "juvenil-fem-2010", "nombre": "Juvenil femenino 2010", "categoria": "JUVENIL", "sexo": "F", "equipo": "MANZANARES(?!.*BLANCO)" },
+    { "id": "juvenil-fem-blanco", "nombre": "Juvenil femenino blanco", "categoria": "JUVENIL", "sexo": "F", "equipo": "MANZANARES.*BLANCO" }
+  ]
+}
