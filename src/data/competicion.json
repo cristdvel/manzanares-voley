@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-09T08:56:41.215Z",
+  "actualizado": "2026-10-09T20:35:39.869Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -2049,14 +2049,14 @@
           "pos": 1,
           "equipo": "Sad Recuerdo A",
           "esManzanares": false,
-          "pts": 3,
-          "pj": 1,
-          "pg": 1,
+          "pts": 6,
+          "pj": 2,
+          "pg": 2,
           "pp": 0,
-          "setsFavor": 3,
+          "setsFavor": 6,
           "setsContra": 0,
-          "puntosFavor": 75,
-          "puntosContra": 42
+          "puntosFavor": 150,
+          "puntosContra": 80
         },
         {
           "pos": 2,
@@ -2128,13 +2128,13 @@
           "equipo": "Manzanares Voley A",
           "esManzanares": true,
           "pts": 1,
-          "pj": 1,
+          "pj": 2,
           "pg": 0,
-          "pp": 1,
+          "pp": 2,
           "setsFavor": 2,
-          "setsContra": 3,
-          "puntosFavor": 92,
-          "puntosContra": 112
+          "setsContra": 6,
+          "puntosFavor": 130,
+          "puntosContra": 187
         },
         {
           "pos": 8,
@@ -2297,7 +2297,10 @@
               "aplazado": false,
               "direccion": "PLAZA DUQUE DE PASTRANA, 5",
               "mapa": "https://www.google.com/maps/search/?api=1&query=RECUERDO, COLEGIO PLAZA DUQUE DE PASTRANA, 5, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 0,
+              "resultado": "3-0"
             },
             {
               "id": 59867,
@@ -3849,7 +3852,10 @@
           "aplazado": false,
           "direccion": "PLAZA DUQUE DE PASTRANA, 5",
           "mapa": "https://www.google.com/maps/search/?api=1&query=RECUERDO, COLEGIO PLAZA DUQUE DE PASTRANA, 5, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0"
         },
         {
           "id": 59872,
@@ -6171,6 +6177,19 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 6,
+          "pj": 2,
+          "pg": 2,
+          "pp": 0,
+          "setsFavor": 6,
+          "setsContra": 1,
+          "puntosFavor": 172,
+          "puntosContra": 112
+        },
+        {
+          "pos": 2,
           "equipo": "Cvleganes.com A",
           "esManzanares": false,
           "pts": 3,
@@ -6181,19 +6200,6 @@
           "setsContra": 0,
           "puntosFavor": 75,
           "puntosContra": 34
-        },
-        {
-          "pos": 2,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
-          "pts": 3,
-          "pj": 1,
-          "pg": 1,
-          "pp": 0,
-          "setsFavor": 3,
-          "setsContra": 1,
-          "puntosFavor": 97,
-          "puntosContra": 60
         },
         {
           "pos": 3,
@@ -6265,13 +6271,13 @@
           "equipo": "Cde Parla Voley Parlazul",
           "esManzanares": false,
           "pts": 0,
-          "pj": 1,
+          "pj": 2,
           "pg": 0,
-          "pp": 1,
+          "pp": 2,
           "setsFavor": 0,
-          "setsContra": 3,
-          "puntosFavor": 58,
-          "puntosContra": 75
+          "setsContra": 6,
+          "puntosFavor": 110,
+          "puntosContra": 150
         },
         {
           "pos": 9,
@@ -6421,7 +6427,10 @@
               "aplazado": false,
               "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
               "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 0,
+              "setsVisitante": 3,
+              "resultado": "0-3"
             },
             {
               "id": 59596,
@@ -7973,7 +7982,10 @@
           "aplazado": false,
           "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
           "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 0,
+          "setsVisitante": 3,
+          "resultado": "0-3"
         },
         {
           "id": 59604,
@@ -30397,6 +30409,19 @@
         },
         {
           "pos": 6,
+          "equipo": "CV Majadahonda A",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 2,
+          "pg": 1,
+          "pp": 1,
+          "setsFavor": 3,
+          "setsContra": 4,
+          "puntosFavor": 156,
+          "puntosContra": 144
+        },
+        {
+          "pos": 7,
           "equipo": "CV Bulldogs A",
           "esManzanares": false,
           "pts": 2,
@@ -30409,7 +30434,7 @@
           "puntosContra": 93
         },
         {
-          "pos": 7,
+          "pos": 8,
           "equipo": "Cd Newman A",
           "esManzanares": false,
           "pts": 1,
@@ -30422,20 +30447,20 @@
           "puntosContra": 98
         },
         {
-          "pos": 8,
+          "pos": 9,
           "equipo": "Abv Boadilla B",
           "esManzanares": false,
           "pts": 0,
-          "pj": 1,
+          "pj": 2,
           "pg": 0,
-          "pp": 1,
-          "setsFavor": 1,
-          "setsContra": 3,
-          "puntosFavor": 93,
-          "puntosContra": 100
+          "pp": 2,
+          "setsFavor": 2,
+          "setsContra": 6,
+          "puntosFavor": 162,
+          "puntosContra": 198
         },
         {
-          "pos": 9,
+          "pos": 10,
           "equipo": "Circe Fisioterapia CV Collado Villalba",
           "esManzanares": false,
           "pts": 0,
@@ -30448,7 +30473,7 @@
           "puntosContra": 98
         },
         {
-          "pos": 10,
+          "pos": 11,
           "equipo": "Club Voleibol Torrelodones B",
           "esManzanares": false,
           "pts": 0,
@@ -30461,7 +30486,7 @@
           "puntosContra": 98
         },
         {
-          "pos": 11,
+          "pos": 12,
           "equipo": "CV Sanse A",
           "esManzanares": false,
           "pts": 0,
@@ -30472,19 +30497,6 @@
           "setsContra": 3,
           "puntosFavor": 67,
           "puntosContra": 78
-        },
-        {
-          "pos": 12,
-          "equipo": "CV Majadahonda A",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 1,
-          "pg": 0,
-          "pp": 1,
-          "setsFavor": 0,
-          "setsContra": 3,
-          "puntosFavor": 58,
-          "puntosContra": 75
         }
       ],
       "jornadas": [
@@ -33864,36 +33876,6 @@
   ],
   "proximos": [
     {
-      "id": 59871,
-      "jornada": 2,
-      "fechaHora": "2026-10-09T18:30:00.000Z",
-      "local": "Sad Recuerdo A",
-      "visitante": "Manzanares Voley A",
-      "pabellon": "Recuerdo, Colegio",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "PLAZA DUQUE DE PASTRANA, 5",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=RECUERDO, COLEGIO PLAZA DUQUE DE PASTRANA, 5, MADRID",
-      "jugado": false,
-      "categoria": "Infantil Femenino A"
-    },
-    {
-      "id": 59597,
-      "jornada": 2,
-      "fechaHora": "2026-10-09T20:30:00.000Z",
-      "local": "Cde Parla Voley Parlazul",
-      "visitante": "Manzanares Voley A",
-      "pabellon": "Miguel Hernandez, Ceip",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
-      "jugado": false,
-      "categoria": "Infantil Masculino"
-    },
-    {
       "id": 58085,
       "jornada": 2,
       "fechaHora": "2026-10-09T20:30:00.000Z",
@@ -34310,9 +34292,75 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
       "jugado": false,
       "categoria": "Juvenil Femenino B"
+    },
+    {
+      "id": 59872,
+      "jornada": 3,
+      "fechaHora": "2026-10-23T19:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Cde Vb Algete",
+      "pabellon": "Pabellón Ies Al-Satt",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "VEREDA DE LA LOBERA, S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN IES AL-SATT VEREDA DE LA LOBERA, S/N, ALGETE",
+      "jugado": false,
+      "categoria": "Infantil Femenino A"
+    },
+    {
+      "id": 57162,
+      "jornada": 4,
+      "fechaHora": "2026-10-24T13:30:00.000Z",
+      "local": "Dragons Voleibol Moralzarzal A",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "Moralzarzal, Pol (Ciudad Deportiva Navafria)",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CALLE CAÑADA 50",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=MORALZARZAL, POL (CIUDAD DEPORTIVA NAVAFRIA) CALLE CAÑADA 50, MORALZARZAL",
+      "jugado": false,
+      "categoria": "Cadete Femenino A"
     }
   ],
   "ultimos": [
+    {
+      "id": 59597,
+      "jornada": 2,
+      "fechaHora": "2026-10-09T20:30:00.000Z",
+      "local": "Cde Parla Voley Parlazul",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "Miguel Hernandez, Ceip",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
+      "jugado": true,
+      "setsLocal": 0,
+      "setsVisitante": 3,
+      "resultado": "0-3",
+      "categoria": "Infantil Masculino"
+    },
+    {
+      "id": 59871,
+      "jornada": 2,
+      "fechaHora": "2026-10-09T18:30:00.000Z",
+      "local": "Sad Recuerdo A",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "Recuerdo, Colegio",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "PLAZA DUQUE DE PASTRANA, 5",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=RECUERDO, COLEGIO PLAZA DUQUE DE PASTRANA, 5, MADRID",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 0,
+      "resultado": "3-0",
+      "categoria": "Infantil Femenino A"
+    },
     {
       "id": 57282,
       "jornada": 1,
@@ -34420,42 +34468,6 @@
       "setsVisitante": 3,
       "resultado": "2-3",
       "categoria": "Infantil Femenino A"
-    },
-    {
-      "id": 56747,
-      "jornada": 2,
-      "fechaHora": "2026-10-04T14:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "CV Las Rozas A",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": true,
-      "setsLocal": 2,
-      "setsVisitante": 3,
-      "resultado": "2-3",
-      "categoria": "Juvenil Femenino A"
-    },
-    {
-      "id": 59593,
-      "jornada": 1,
-      "fechaHora": "2026-10-04T12:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Chv1995 A",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": true,
-      "setsLocal": 3,
-      "setsVisitante": 1,
-      "resultado": "3-1",
-      "categoria": "Infantil Masculino"
     }
   ]
 }
