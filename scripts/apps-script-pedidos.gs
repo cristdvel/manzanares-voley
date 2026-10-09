@@ -41,10 +41,11 @@
  *    al formato normal sola (ver onEdit). Si se vuelve a poner en
  *    "Pendiente", se resalta otra vez.
  *  - Los lunes, miércoles y viernes a las 8:00, enviarResumenPeriodico()
- *    manda SIEMPRE un correo a manzanaresvoley@gmail.com con esta hoja
- *    adjunta en .xlsx: si hubo pedidos o inscripciones nuevas desde el
- *    último resumen, dice cuántas; si no hubo ninguna, lo dice también (no
- *    se queda callado). Hay que ejecutar configurarTriggers() una vez a
+ *    manda SIEMPRE un correo a manzanaresvoley@gmail.com con el enlace a
+ *    cada pestaña de la hoja online (sin Excel adjunto): si hubo pedidos o
+ *    inscripciones nuevas desde el último resumen, dice cuántas; si no hubo
+ *    ninguna, lo dice también (no se queda callado). Hay que ejecutar
+ *    configurarTriggers() una vez a
  *    mano desde el editor para programarlo — ver DEPLOY.md §6.3.
  */
 
@@ -258,9 +259,13 @@ function onEdit(e) {
 /**
  * Resumen periódico: cuenta cuántas filas nuevas hay en "Pedidos" e
  * "Inscripciones" desde el último envío (guarda la última fila contada en
- * PropertiesService) y manda SIEMPRE un correo con esta hoja adjunta en
- * .xlsx — también cuando no hay nada nuevo, para confirmar que sigue
- * funcionando y que de verdad no hubo movimiento.
+ * PropertiesService) y manda SIEMPRE un correo con el recuento y el enlace a
+ * cada pestaña de la hoja online — también cuando no hay nada nuevo, para
+ * confirmar que sigue funcionando y que de verdad no hubo movimiento.
+ *
+ * No lleva el Excel adjunto a propósito: un adjunto es una copia fija y los
+ * cambios que se hacen en él (p. ej. el Estado) no llegan a la hoja real, así
+ * que se perdían al reabrirlo. Con el enlace se abre siempre el documento vivo.
  *
  * No se ejecuta sola: hace falta llamar una vez a configurarTriggers() (ver
  * más abajo) para programarla los lunes, miércoles y viernes.
@@ -284,30 +289,23 @@ function enviarResumenPeriodico() {
   props.setProperty("ultimaFilaPedidos", String(filaPedidosActual));
   props.setProperty("ultimaFilaInscripciones", String(filaInscripcionesActual));
 
-  const asunto = "Actualización desde manzanaresvoley.com";
-  // El .xlsx adjunto es solo una FOTO de la hoja en el momento del envío: lo que
-  // se cambie en él (p. ej. el Estado) no llega a la hoja real y, al volver a
-  // abrir el adjunto, aparece siempre como estaba. Por eso el correo lleva el
-  // enlace a la hoja online, que es donde hay que cambiar los Estados.
+  const base = ss.getUrl();
+  const enlaces = [];
+  if (hojaPedidos) enlaces.push("Pedidos de la tienda:\n" + base + "#gid=" + hojaPedidos.getSheetId());
+  if (hojaInscripciones) enlaces.push("Inscripciones:\n" + base + "#gid=" + hojaInscripciones.getSheetId());
+
   const cuerpo =
     (nuevosPedidos === 0 && nuevasInscripciones === 0
       ? "No ha habido pedidos ni inscripciones nuevas desde el último resumen."
       : "Se han actualizado los Excel con " + nuevosPedidos + " pedido(s) nuevo(s) y " +
         nuevasInscripciones + " inscripción(es) nueva(s).") +
-    "\n\nHOJA ONLINE (aquí se cambian los Estados y se guardan solos):\n" + ss.getUrl() +
-    "\n\nEl Excel adjunto es solo una copia de hoy: los cambios que hagas en él NO se guardan en la hoja online.";
-
-  const url = "https://docs.google.com/spreadsheets/d/" + ss.getId() + "/export?format=xlsx";
-  const respuestaExport = UrlFetchApp.fetch(url, {
-    headers: { Authorization: "Bearer " + ScriptApp.getOAuthToken() },
-  });
-  const adjunto = respuestaExport.getBlob().setName(ss.getName() + ".xlsx");
+    "\n\nAbre la hoja online para ver y cambiar el Estado (los cambios se guardan solos):\n\n" +
+    (enlaces.length ? enlaces.join("\n\n") : base);
 
   MailApp.sendEmail({
     to: DESTINATARIO_RESUMEN,
-    subject: asunto,
+    subject: "Actualización desde manzanaresvoley.com",
     body: cuerpo,
-    attachments: [adjunto],
   });
 }
 

@@ -229,8 +229,10 @@ de **"Pendiente"** a **"Contactado"** en vez de a "Pedido".
 Ni los pedidos ni las inscripciones mandan ya un email individual al club —
 lo sustituye un único resumen periódico, que manda la función
 `enviarResumenPeriodico()` del propio Apps Script con el nº de pedidos
-nuevos, el nº de inscripciones nuevas y esta hoja adjunta en `.xlsx`. Se
-manda **siempre**, los tres días: si no ha habido ningún pedido ni
+nuevos, el nº de inscripciones nuevas y un **enlace a cada pestaña de la hoja
+online** (Pedidos e Inscripciones). No lleva Excel adjunto a propósito: un
+adjunto es una copia fija y los cambios hechos en él no llegan a la hoja real.
+Se manda **siempre**, los tres días: si no ha habido ningún pedido ni
 inscripción nueva desde el último resumen, el correo lo dice igual ("No ha
 habido pedidos ni inscripciones nuevas desde el último resumen"), no se
 queda en silencio.
@@ -241,7 +243,7 @@ queda en silencio.
 2. En el desplegable de funciones de arriba (al lado de ▶ Ejecutar), elige
    **`configurarTriggers`**.
 3. Pulsa **▶ Ejecutar**. La primera vez pedirá autorizar permisos nuevos
-   (enviar email y exportar la hoja) — acepta con la misma cuenta de Google.
+   (enviar email) — acepta con la misma cuenta de Google.
 4. Listo: a partir de ahí, `enviarResumenPeriodico` se dispara sola los
    lunes, miércoles y viernes a las 8:00 (hora del script).
 
@@ -251,10 +253,9 @@ queda en silencio.
 > nuevos, así que es seguro repetirlo).
 
 > **Dónde cambiar los Estados:** siempre en la **hoja online de Google Sheets**
-> (el correo trae el enlace), donde los cambios se guardan solos al instante.
-> El `.xlsx` adjunto es solo una copia del día del envío: si se edita y se
-> cierra, los cambios se quedan en ese archivo y no llegan a la hoja, y al
-> volver a abrir el adjunto del correo aparece siempre como estaba.
+> (el correo trae el enlace a cada pestaña), donde los cambios se guardan
+> solos al instante. Si se descarga la hoja como `.xlsx` y se edita fuera
+> (Archivo → Descargar), esos cambios no vuelven a la hoja online.
 
 > Para probarlo sin esperar al lunes: selecciona **`enviarResumenPeriodico`**
 > en el mismo desplegable y pulsa ▶ Ejecutar directamente — manda el resumen
