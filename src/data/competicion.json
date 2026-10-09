@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-08T21:04:11.361Z",
+  "actualizado": "2026-10-09T08:56:41.215Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -23919,17 +23919,6 @@
               "aplazado": false
             },
             {
-              "id": 62611,
-              "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "Club Voleibol Torrelodones",
-              "visitante": "Club Voleibol Plaza Castilla",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 62612,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
@@ -23962,6 +23951,17 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
+            },
+            {
+              "id": 62611,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T09:30:00.000Z",
+              "local": "Club Voleibol Torrelodones",
+              "visitante": "Club Voleibol Plaza Castilla",
+              "pabellon": "Torrelodones, Polideportivo Municipal",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },

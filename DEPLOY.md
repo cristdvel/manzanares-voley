@@ -250,6 +250,12 @@ queda en silencio.
 > ejecutar esa función (borra los triggers anteriores antes de crear los
 > nuevos, así que es seguro repetirlo).
 
+> **Dónde cambiar los Estados:** siempre en la **hoja online de Google Sheets**
+> (el correo trae el enlace), donde los cambios se guardan solos al instante.
+> El `.xlsx` adjunto es solo una copia del día del envío: si se edita y se
+> cierra, los cambios se quedan en ese archivo y no llegan a la hoja, y al
+> volver a abrir el adjunto del correo aparece siempre como estaba.
+
 > Para probarlo sin esperar al lunes: selecciona **`enviarResumenPeriodico`**
 > en el mismo desplegable y pulsa ▶ Ejecutar directamente — manda el resumen
 > al momento con lo que haya pendiente de contar.

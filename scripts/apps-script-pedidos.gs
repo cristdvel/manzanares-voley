@@ -285,11 +285,17 @@ function enviarResumenPeriodico() {
   props.setProperty("ultimaFilaInscripciones", String(filaInscripcionesActual));
 
   const asunto = "Actualización desde manzanaresvoley.com";
+  // El .xlsx adjunto es solo una FOTO de la hoja en el momento del envío: lo que
+  // se cambie en él (p. ej. el Estado) no llega a la hoja real y, al volver a
+  // abrir el adjunto, aparece siempre como estaba. Por eso el correo lleva el
+  // enlace a la hoja online, que es donde hay que cambiar los Estados.
   const cuerpo =
-    nuevosPedidos === 0 && nuevasInscripciones === 0
+    (nuevosPedidos === 0 && nuevasInscripciones === 0
       ? "No ha habido pedidos ni inscripciones nuevas desde el último resumen."
       : "Se han actualizado los Excel con " + nuevosPedidos + " pedido(s) nuevo(s) y " +
-        nuevasInscripciones + " inscripción(es) nueva(s).";
+        nuevasInscripciones + " inscripción(es) nueva(s).") +
+    "\n\nHOJA ONLINE (aquí se cambian los Estados y se guardan solos):\n" + ss.getUrl() +
+    "\n\nEl Excel adjunto es solo una copia de hoy: los cambios que hagas en él NO se guardan en la hoja online.";
 
   const url = "https://docs.google.com/spreadsheets/d/" + ss.getId() + "/export?format=xlsx";
   const respuestaExport = UrlFetchApp.fetch(url, {
