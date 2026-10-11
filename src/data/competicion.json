@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-11T19:57:28.088Z",
+  "actualizado": "2026-10-11T23:32:42.039Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -6577,10 +6577,10 @@
             {
               "id": 59607,
               "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "fechaHora": "2026-10-24T18:30:00.000Z",
               "local": "CV Sanse",
               "visitante": "Chv1995 A",
-              "pabellon": null,
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -8653,6 +8653,17 @@
               "jugado": false
             },
             {
+              "id": 57165,
+              "jornada": 4,
+              "fechaHora": "2026-10-24T18:30:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 57161,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
@@ -8680,17 +8691,6 @@
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Cvleganes.com B",
               "visitante": "VP Madrid A Amarillo",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 57165,
-              "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "CV Sanse Rojo",
-              "visitante": "CV Collado Villalba A",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -26072,17 +26072,6 @@
               "aplazado": false
             },
             {
-              "id": 57303,
-              "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "CV Sanse",
-              "visitante": "CV Las Rozas A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57304,
               "jornada": 4,
               "fechaHora": "2026-10-25T00:00:00.000Z",
@@ -26100,6 +26089,17 @@
               "local": "Feel Alcobendas",
               "visitante": "V-Valley CValcalá G1",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57303,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T17:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "CV Las Rozas A",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
