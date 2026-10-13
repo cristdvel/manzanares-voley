@@ -365,7 +365,7 @@ export const productos: Producto[] = [
     id: "mochila",
     nombre: "Mochila oficial",
     categoria: "Accesorios",
-    precio: 26,
+    precio: 32,
     resumen: "Mochila negra con compartimento inferior para el calzado.",
     descripcion:
       "Mochila negra con compartimento inferior separado para el calzado y el logo del club estampado. La que usan todos los equipos para entrenar y competir.",
