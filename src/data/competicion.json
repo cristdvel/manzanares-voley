@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T09:20:44.056Z",
+  "actualizado": "2026-10-14T16:42:08.484Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -8630,7 +8630,7 @@
             {
               "id": 57160,
               "jornada": 3,
-              "fechaHora": "2026-10-18T14:00:00.000Z",
+              "fechaHora": "2026-10-18T12:30:00.000Z",
               "local": "Manzanares Voley A",
               "visitante": "Ucam Torrejón A",
               "pabellon": "Gallur , Cdm",
@@ -10082,7 +10082,7 @@
         {
           "id": 57160,
           "jornada": 3,
-          "fechaHora": "2026-10-18T14:00:00.000Z",
+          "fechaHora": "2026-10-18T12:30:00.000Z",
           "local": "Manzanares Voley A",
           "visitante": "Ucam Torrejón A",
           "pabellon": "Gallur , Cdm",
@@ -20507,17 +20507,6 @@
               "aplazado": false
             },
             {
-              "id": 60899,
-              "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "Voleibol Hispano Usera",
-              "visitante": "VP Madrid B Negro",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 60903,
               "jornada": 4,
               "fechaHora": "2026-10-25T09:30:00.000Z",
@@ -20552,6 +20541,17 @@
               "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
               "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
               "jugado": false
+            },
+            {
+              "id": 60899,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T19:00:00.000Z",
+              "local": "Voleibol Hispano Usera",
+              "visitante": "VP Madrid B Negro",
+              "pabellon": "Orcasur, Cdm",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -34206,7 +34206,7 @@
     {
       "id": 57160,
       "jornada": 3,
-      "fechaHora": "2026-10-18T14:00:00.000Z",
+      "fechaHora": "2026-10-18T12:30:00.000Z",
       "local": "Manzanares Voley A",
       "visitante": "Ucam Torrejón A",
       "pabellon": "Gallur , Cdm",
