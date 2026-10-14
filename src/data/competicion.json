@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-13T18:58:14.363Z",
+  "actualizado": "2026-10-14T09:20:44.056Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -193,17 +193,6 @@
               "aplazado": false
             },
             {
-              "id": 75794,
-              "jornada": 1,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
-              "visitante": "Cde Parla Voley Folder B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 75793,
               "jornada": 1,
               "fechaHora": "2026-10-25T12:00:00.000Z",
@@ -227,6 +216,17 @@
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
               "jugado": false
+            },
+            {
+              "id": 75794,
+              "jornada": 1,
+              "fechaHora": "2026-10-25T14:00:00.000Z",
+              "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
+              "visitante": "Cde Parla Voley Folder B",
+              "pabellon": "La Cantueña, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -234,6 +234,20 @@
           "numero": 2,
           "fecha": "2026-11-08T00:00:00.000Z",
           "partidos": [
+            {
+              "id": 75801,
+              "jornada": 2,
+              "fechaHora": "2026-10-18T09:30:00.000Z",
+              "local": "Cde Parla Voley Folder B",
+              "visitante": "Manzanares Voley Alevin",
+              "pabellon": "Miguel Hernandez, Ceip",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
+              "jugado": false
+            },
             {
               "id": 75798,
               "jornada": 2,
@@ -266,18 +280,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 75801,
-              "jornada": 2,
-              "fechaHora": "2026-11-08T00:00:00.000Z",
-              "local": "Cde Parla Voley Folder B",
-              "visitante": "Manzanares Voley Alevin",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 75803,
@@ -1770,6 +1772,20 @@
       ],
       "misPartidos": [
         {
+          "id": 75801,
+          "jornada": 2,
+          "fechaHora": "2026-10-18T09:30:00.000Z",
+          "local": "Cde Parla Voley Folder B",
+          "visitante": "Manzanares Voley Alevin",
+          "pabellon": "Miguel Hernandez, Ceip",
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
+          "jugado": false
+        },
+        {
           "id": 75795,
           "jornada": 1,
           "fechaHora": "2026-10-25T12:00:00.000Z",
@@ -1781,18 +1797,6 @@
           "aplazado": false,
           "direccion": "GALLUR 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-          "jugado": false
-        },
-        {
-          "id": 75801,
-          "jornada": 2,
-          "fechaHora": "2026-11-08T00:00:00.000Z",
-          "local": "Cde Parla Voley Folder B",
-          "visitante": "Manzanares Voley Alevin",
-          "pabellon": null,
-          "esManzanares": true,
-          "esLocal": false,
-          "aplazado": false,
           "jugado": false
         },
         {
@@ -6208,19 +6212,6 @@
         },
         {
           "pos": 2,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
-          "pts": 6,
-          "pj": 2,
-          "pg": 2,
-          "pp": 0,
-          "setsFavor": 6,
-          "setsContra": 1,
-          "puntosFavor": 172,
-          "puntosContra": 112
-        },
-        {
-          "pos": 3,
           "equipo": "CV Collado Villalba A",
           "esManzanares": false,
           "pts": 6,
@@ -6231,6 +6222,19 @@
           "setsContra": 0,
           "puntosFavor": 150,
           "puntosContra": 106
+        },
+        {
+          "pos": 3,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 6,
+          "pj": 2,
+          "pg": 2,
+          "pp": 0,
+          "setsFavor": 6,
+          "setsContra": 1,
+          "puntosFavor": 172,
+          "puntosContra": 112
         },
         {
           "pos": 4,
@@ -8263,19 +8267,6 @@
       "clasificacion": [
         {
           "pos": 1,
-          "equipo": "Cvleganes.com A",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 2,
-          "pg": 2,
-          "pp": 0,
-          "setsFavor": 6,
-          "setsContra": 1,
-          "puntosFavor": 173,
-          "puntosContra": 122
-        },
-        {
-          "pos": 2,
           "equipo": "Ucam Torrejón A",
           "esManzanares": false,
           "pts": 6,
@@ -8286,6 +8277,19 @@
           "setsContra": 0,
           "puntosFavor": 151,
           "puntosContra": 112
+        },
+        {
+          "pos": 2,
+          "equipo": "Cvleganes.com A",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 2,
+          "pg": 2,
+          "pp": 0,
+          "setsFavor": 6,
+          "setsContra": 1,
+          "puntosFavor": 173,
+          "puntosContra": 122
         },
         {
           "pos": 3,
@@ -14527,6 +14531,19 @@
         },
         {
           "pos": 6,
+          "equipo": "Club Voleibol Plaza Castilla A",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 2,
+          "pg": 1,
+          "pp": 1,
+          "setsFavor": 3,
+          "setsContra": 3,
+          "puntosFavor": 128,
+          "puntosContra": 118
+        },
+        {
+          "pos": 7,
           "equipo": "Cuv Alcorcón B",
           "esManzanares": false,
           "pts": 3,
@@ -14539,7 +14556,7 @@
           "puntosContra": 182
         },
         {
-          "pos": 7,
+          "pos": 8,
           "equipo": "A.D.perales",
           "esManzanares": false,
           "pts": 2,
@@ -14552,7 +14569,7 @@
           "puntosContra": 156
         },
         {
-          "pos": 8,
+          "pos": 9,
           "equipo": "V-Valley CValcalá G2",
           "esManzanares": false,
           "pts": 1,
@@ -14563,19 +14580,6 @@
           "setsContra": 5,
           "puntosFavor": 167,
           "puntosContra": 198
-        },
-        {
-          "pos": 9,
-          "equipo": "Club Voleibol Plaza Castilla A",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 1,
-          "pg": 0,
-          "pp": 1,
-          "setsFavor": 0,
-          "setsContra": 3,
-          "puntosFavor": 53,
-          "puntosContra": 75
         },
         {
           "pos": 10,
@@ -14595,13 +14599,13 @@
           "equipo": "Mintonette CV Pozuelo",
           "esManzanares": false,
           "pts": 0,
-          "pj": 1,
+          "pj": 2,
           "pg": 0,
-          "pp": 1,
+          "pp": 2,
           "setsFavor": 0,
-          "setsContra": 3,
-          "puntosFavor": 16,
-          "puntosContra": 75
+          "setsContra": 6,
+          "puntosFavor": 59,
+          "puntosContra": 150
         }
       ],
       "jornadas": [
@@ -14651,10 +14655,10 @@
             {
               "id": 62961,
               "jornada": 1,
-              "fechaHora": "2026-10-04T00:00:00.000Z",
+              "fechaHora": "2026-10-04T13:00:00.000Z",
               "local": "Club Voleibol Plaza Castilla A",
               "visitante": "Mintonette CV Pozuelo",
-              "pabellon": null,
+              "pabellon": "Colegio Mater Immaculada",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -27765,19 +27769,6 @@
       "clasificacion": [
         {
           "pos": 1,
-          "equipo": "Cde Voleibol Colmenar A",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 2,
-          "pg": 2,
-          "pp": 0,
-          "setsFavor": 6,
-          "setsContra": 1,
-          "puntosFavor": 165,
-          "puntosContra": 102
-        },
-        {
-          "pos": 2,
           "equipo": "Saint Louis Morillon",
           "esManzanares": false,
           "pts": 6,
@@ -27790,20 +27781,7 @@
           "puntosContra": 96
         },
         {
-          "pos": 3,
-          "equipo": "Manzanares Voley B Junior Femenino",
-          "esManzanares": true,
-          "pts": 6,
-          "pj": 2,
-          "pg": 2,
-          "pp": 0,
-          "setsFavor": 6,
-          "setsContra": 1,
-          "puntosFavor": 166,
-          "puntosContra": 111
-        },
-        {
-          "pos": 4,
+          "pos": 2,
           "equipo": "Salesianos Estrecho Auxiliadora",
           "esManzanares": false,
           "pts": 6,
@@ -27814,6 +27792,32 @@
           "setsContra": 0,
           "puntosFavor": 153,
           "puntosContra": 124
+        },
+        {
+          "pos": 3,
+          "equipo": "Cde Voleibol Colmenar A",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 2,
+          "pg": 2,
+          "pp": 0,
+          "setsFavor": 6,
+          "setsContra": 1,
+          "puntosFavor": 165,
+          "puntosContra": 102
+        },
+        {
+          "pos": 4,
+          "equipo": "Manzanares Voley B Junior Femenino",
+          "esManzanares": true,
+          "pts": 6,
+          "pj": 2,
+          "pg": 2,
+          "pp": 0,
+          "setsFavor": 6,
+          "setsContra": 1,
+          "puntosFavor": 166,
+          "puntosContra": 111
         },
         {
           "pos": 5,
@@ -30485,19 +30489,6 @@
       "clasificacion": [
         {
           "pos": 1,
-          "equipo": "CV Madrid A",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 2,
-          "pg": 2,
-          "pp": 0,
-          "setsFavor": 6,
-          "setsContra": 1,
-          "puntosFavor": 173,
-          "puntosContra": 119
-        },
-        {
-          "pos": 2,
           "equipo": "CV Nueva Castilla",
           "esManzanares": false,
           "pts": 6,
@@ -30508,6 +30499,19 @@
           "setsContra": 0,
           "puntosFavor": 150,
           "puntosContra": 123
+        },
+        {
+          "pos": 2,
+          "equipo": "CV Madrid A",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 2,
+          "pg": 2,
+          "pp": 0,
+          "setsFavor": 6,
+          "setsContra": 1,
+          "puntosFavor": 173,
+          "puntosContra": 119
         },
         {
           "pos": 3,
@@ -34170,6 +34174,21 @@
       "categoria": "Juvenil Masculino"
     },
     {
+      "id": 75801,
+      "jornada": 2,
+      "fechaHora": "2026-10-18T09:30:00.000Z",
+      "local": "Cde Parla Voley Folder B",
+      "visitante": "Manzanares Voley Alevin",
+      "pabellon": "Miguel Hernandez, Ceip",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CALLE SANTANDER (ESQUINA CALLE CUENCA)",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=MIGUEL HERNANDEZ, CEIP CALLE SANTANDER (ESQUINA CALLE CUENCA), PARLA",
+      "jugado": false,
+      "categoria": "Alevín Femenino"
+    },
+    {
       "id": 59604,
       "jornada": 3,
       "fechaHora": "2026-10-18T12:00:00.000Z",
@@ -34468,21 +34487,6 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
       "jugado": false,
       "categoria": "Juvenil Femenino A"
-    },
-    {
-      "id": 57300,
-      "jornada": 4,
-      "fechaHora": "2026-10-25T17:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Cuv Alcorcón Azul",
-      "pabellon": "Colegio Nueva Castilla (Nuevo)",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CALLE MAZATERON, 12",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-      "jugado": false,
-      "categoria": "Junior Femenino A"
     }
   ],
   "ultimos": [
