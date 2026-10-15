@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-14T23:00:19.613Z",
+  "actualizado": "2026-10-15T03:32:46.160Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -249,6 +249,17 @@
               "jugado": false
             },
             {
+              "id": 75803,
+              "jornada": 2,
+              "fechaHora": "2026-11-07T11:30:00.000Z",
+              "local": "Arganvoley",
+              "visitante": "Avp B Yagüe",
+              "pabellon": "Centro Dotacional Integrado, Arganzuela",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 75798,
               "jornada": 2,
               "fechaHora": "2026-11-08T00:00:00.000Z",
@@ -276,17 +287,6 @@
               "fechaHora": "2026-11-08T00:00:00.000Z",
               "local": "CV Madrid B Alevin Femenino",
               "visitante": "C.d.b.colegio Aquila",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 75803,
-              "jornada": 2,
-              "fechaHora": "2026-11-08T00:00:00.000Z",
-              "local": "Arganvoley",
-              "visitante": "Avp B Yagüe",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
