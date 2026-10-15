@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T03:32:46.160Z",
+  "actualizado": "2026-10-15T08:55:52.921Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -24038,20 +24038,6 @@
               "aplazado": false
             },
             {
-              "id": 62615,
-              "jornada": 4,
-              "fechaHora": "2026-10-24T18:00:00.000Z",
-              "local": "Manzanares Voley",
-              "visitante": "Cuv Alcorcón B",
-              "pabellon": "Colegio Nueva Castilla (Nuevo)",
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "direccion": "CALLE MAZATERON, 12",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-              "jugado": false
-            },
-            {
               "id": 62613,
               "jornada": 4,
               "fechaHora": "2026-10-24T20:00:00.000Z",
@@ -24094,6 +24080,20 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 62615,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T16:30:00.000Z",
+              "local": "Manzanares Voley",
+              "visitante": "Cuv Alcorcón B",
+              "pabellon": "Los Cantos, Polideportivo",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "AV LOS CANTOS, 28",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=LOS CANTOS, POLIDEPORTIVO AV LOS CANTOS, 28, ALCORCON",
+              "jugado": false
             }
           ]
         },
@@ -25462,15 +25462,15 @@
         {
           "id": 62615,
           "jornada": 4,
-          "fechaHora": "2026-10-24T18:00:00.000Z",
+          "fechaHora": "2026-10-25T16:30:00.000Z",
           "local": "Manzanares Voley",
           "visitante": "Cuv Alcorcón B",
-          "pabellon": "Colegio Nueva Castilla (Nuevo)",
+          "pabellon": "Los Cantos, Polideportivo",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
-          "direccion": "CALLE MAZATERON, 12",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+          "direccion": "AV LOS CANTOS, 28",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=LOS CANTOS, POLIDEPORTIVO AV LOS CANTOS, 28, ALCORCON",
           "jugado": false
         },
         {
@@ -34369,21 +34369,6 @@
       "categoria": "Cadete Femenino A"
     },
     {
-      "id": 62615,
-      "jornada": 4,
-      "fechaHora": "2026-10-24T18:00:00.000Z",
-      "local": "Manzanares Voley",
-      "visitante": "Cuv Alcorcón B",
-      "pabellon": "Colegio Nueva Castilla (Nuevo)",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CALLE MAZATERON, 12",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-      "jugado": false,
-      "categoria": "Juvenil Masculino"
-    },
-    {
       "id": 64689,
       "jornada": 3,
       "fechaHora": "2026-10-24T19:30:00.000Z",
@@ -34487,6 +34472,21 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
       "jugado": false,
       "categoria": "Juvenil Femenino A"
+    },
+    {
+      "id": 62615,
+      "jornada": 4,
+      "fechaHora": "2026-10-25T16:30:00.000Z",
+      "local": "Manzanares Voley",
+      "visitante": "Cuv Alcorcón B",
+      "pabellon": "Los Cantos, Polideportivo",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "AV LOS CANTOS, 28",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=LOS CANTOS, POLIDEPORTIVO AV LOS CANTOS, 28, ALCORCON",
+      "jugado": false,
+      "categoria": "Juvenil Masculino"
     }
   ],
   "ultimos": [
