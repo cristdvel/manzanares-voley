@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T08:55:52.921Z",
+  "actualizado": "2026-10-15T16:27:13.465Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -14870,6 +14870,17 @@
               "jugado": false
             },
             {
+              "id": 62983,
+              "jornada": 4,
+              "fechaHora": "2026-10-24T11:30:00.000Z",
+              "local": "Club Voleibol Plaza Castilla A",
+              "visitante": "A. D. Voleibol Rivas",
+              "pabellon": "Asunción Cuesta Blanca, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 62980,
               "jornada": 4,
               "fechaHora": "2026-10-24T13:30:00.000Z",
@@ -14897,17 +14908,6 @@
               "fechaHora": "2026-10-25T00:00:00.000Z",
               "local": "Descansa...",
               "visitante": "Cuv Alcorcón B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 62983,
-              "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
-              "local": "Club Voleibol Plaza Castilla A",
-              "visitante": "A. D. Voleibol Rivas",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -30917,17 +30917,6 @@
               "jugado": false
             },
             {
-              "id": 58097,
-              "jornada": 4,
-              "fechaHora": "2026-10-24T20:00:00.000Z",
-              "local": "CV Majadahonda A",
-              "visitante": "Circe Fisioterapia CV Collado Villalba",
-              "pabellon": "Principe Felipe, Polideportivo",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 58095,
               "jornada": 4,
               "fechaHora": "2026-10-25T14:00:00.000Z",
@@ -30945,6 +30934,17 @@
               "local": "Abv Boadilla B",
               "visitante": "CV Sanse A",
               "pabellon": "Angel Nieto, Boadilla",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 58097,
+              "jornada": 4,
+              "fechaHora": "2026-10-25T19:45:00.000Z",
+              "local": "CV Majadahonda A",
+              "visitante": "Circe Fisioterapia CV Collado Villalba",
+              "pabellon": "Antonio Machado, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
