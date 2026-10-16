@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-15T16:27:13.465Z",
+  "actualizado": "2026-10-16T08:48:07.095Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -4601,6 +4601,17 @@
               "aplazado": false
             },
             {
+              "id": 73288,
+              "jornada": 5,
+              "fechaHora": "2026-11-07T13:00:00.000Z",
+              "local": "Claret Madrid B",
+              "visitante": "Cuv Alcorcón Blanco",
+              "pabellon": "Colegio Claret",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 73287,
               "jornada": 5,
               "fechaHora": "2026-11-08T00:00:00.000Z",
@@ -4611,17 +4622,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 73288,
-              "jornada": 5,
-              "fechaHora": "2026-11-08T00:00:00.000Z",
-              "local": "Claret Madrid B",
-              "visitante": "Cuv Alcorcón Blanco",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 73289,
@@ -10802,6 +10802,17 @@
           "fecha": "2026-11-08T00:00:00.000Z",
           "partidos": [
             {
+              "id": 67175,
+              "jornada": 5,
+              "fechaHora": "2026-11-07T15:00:00.000Z",
+              "local": "Claret Madrid A",
+              "visitante": "Grupo Egido Pinto B",
+              "pabellon": "Colegio Claret",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 67174,
               "jornada": 5,
               "fechaHora": "2026-11-08T00:00:00.000Z",
@@ -10812,17 +10823,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 67175,
-              "jornada": 5,
-              "fechaHora": "2026-11-08T00:00:00.000Z",
-              "local": "Claret Madrid A",
-              "visitante": "Grupo Egido Pinto B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 67176,
