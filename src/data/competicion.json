@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-18T18:28:56.574Z",
+  "actualizado": "2026-10-18T22:15:53.000Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -8324,6 +8324,19 @@
         },
         {
           "pos": 4,
+          "equipo": "Feel Alcobendas Negro",
+          "esManzanares": false,
+          "pts": 7,
+          "pj": 3,
+          "pg": 3,
+          "pp": 0,
+          "setsFavor": 9,
+          "setsContra": 4,
+          "puntosFavor": 288,
+          "puntosContra": 237
+        },
+        {
+          "pos": 5,
           "equipo": "VP Madrid A Amarillo",
           "esManzanares": false,
           "pts": 6,
@@ -8334,19 +8347,6 @@
           "setsContra": 3,
           "puntosFavor": 204,
           "puntosContra": 172
-        },
-        {
-          "pos": 5,
-          "equipo": "Feel Alcobendas Negro",
-          "esManzanares": false,
-          "pts": 5,
-          "pj": 2,
-          "pg": 2,
-          "pp": 0,
-          "setsFavor": 6,
-          "setsContra": 2,
-          "puntosFavor": 181,
-          "puntosContra": 144
         },
         {
           "pos": 6,
@@ -8363,6 +8363,19 @@
         },
         {
           "pos": 7,
+          "equipo": "CV Sanse Rojo",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 3,
+          "pg": 1,
+          "pp": 2,
+          "setsFavor": 5,
+          "setsContra": 8,
+          "puntosFavor": 247,
+          "puntosContra": 288
+        },
+        {
+          "pos": 8,
           "equipo": "Dragons Voleibol Moralzarzal A",
           "esManzanares": false,
           "pts": 3,
@@ -8375,7 +8388,7 @@
           "puntosContra": 249
         },
         {
-          "pos": 8,
+          "pos": 9,
           "equipo": "Manzanares Voley A",
           "esManzanares": true,
           "pts": 3,
@@ -8386,19 +8399,6 @@
           "setsContra": 6,
           "puntosFavor": 180,
           "puntosContra": 215
-        },
-        {
-          "pos": 9,
-          "equipo": "CV Sanse Rojo",
-          "esManzanares": false,
-          "pts": 2,
-          "pj": 2,
-          "pg": 1,
-          "pp": 1,
-          "setsFavor": 3,
-          "setsContra": 5,
-          "puntosFavor": 154,
-          "puntosContra": 181
         },
         {
           "pos": 10,
@@ -18063,6 +18063,19 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "VP Madrid A Amarillo Juvenil Femenino",
+          "esManzanares": false,
+          "pts": 11,
+          "pj": 4,
+          "pg": 4,
+          "pp": 0,
+          "setsFavor": 12,
+          "setsContra": 3,
+          "puntosFavor": 346,
+          "puntosContra": 318
+        },
+        {
+          "pos": 2,
           "equipo": "Ucam Torrejón A",
           "esManzanares": false,
           "pts": 11,
@@ -18073,19 +18086,6 @@
           "setsContra": 4,
           "puntosFavor": 369,
           "puntosContra": 325
-        },
-        {
-          "pos": 2,
-          "equipo": "VP Madrid A Amarillo Juvenil Femenino",
-          "esManzanares": false,
-          "pts": 8,
-          "pj": 3,
-          "pg": 3,
-          "pp": 0,
-          "setsFavor": 9,
-          "setsContra": 3,
-          "puntosFavor": 271,
-          "puntosContra": 252
         },
         {
           "pos": 3,
@@ -18170,13 +18170,13 @@
           "equipo": "Baumit CV Collado Villalba",
           "esManzanares": false,
           "pts": 5,
-          "pj": 3,
+          "pj": 4,
           "pg": 1,
-          "pp": 2,
+          "pp": 3,
           "setsFavor": 7,
-          "setsContra": 6,
-          "puntosFavor": 268,
-          "puntosContra": 259
+          "setsContra": 9,
+          "puntosFavor": 334,
+          "puntosContra": 334
         },
         {
           "pos": 10,
@@ -34127,21 +34127,6 @@
   ],
   "proximos": [
     {
-      "id": 64684,
-      "jornada": 2,
-      "fechaHora": "2026-10-17T20:00:00.000Z",
-      "local": "Manzanares Voley C",
-      "visitante": "C.d.b.colegio Aquila Juvenil Femenino",
-      "pabellon": "Colegio Nueva Castilla (Nuevo)",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CALLE MAZATERON, 12",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-      "jugado": false,
-      "categoria": "Juvenil Femenino C"
-    },
-    {
       "id": 62604,
       "jornada": 3,
       "fechaHora": "2026-10-18T00:00:00.000Z",
@@ -34555,6 +34540,19 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Cadete Masculino A"
+    },
+    {
+      "id": 63252,
+      "jornada": 4,
+      "fechaHora": "2026-11-08T00:00:00.000Z",
+      "local": "Manzanares Voley B",
+      "visitante": "Cvfuenlabrada",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Masculino B"
     }
   ],
   "ultimos": [
