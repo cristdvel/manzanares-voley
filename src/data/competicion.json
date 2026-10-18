@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-17T21:59:27.446Z",
+  "actualizado": "2026-10-18T08:37:21.696Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -22195,14 +22195,14 @@
           "pos": 1,
           "equipo": "Cde Parla Voley Parlazul Juvenil Femenino",
           "esManzanares": false,
-          "pts": 3,
-          "pj": 1,
-          "pg": 1,
+          "pts": 6,
+          "pj": 2,
+          "pg": 2,
           "pp": 0,
-          "setsFavor": 3,
+          "setsFavor": 6,
           "setsContra": 0,
-          "puntosFavor": 75,
-          "puntosContra": 45
+          "puntosFavor": 150,
+          "puntosContra": 96
         },
         {
           "pos": 2,
@@ -22219,19 +22219,6 @@
         },
         {
           "pos": 3,
-          "equipo": "Arcangel Juv A",
-          "esManzanares": false,
-          "pts": 2,
-          "pj": 1,
-          "pg": 1,
-          "pp": 0,
-          "setsFavor": 3,
-          "setsContra": 2,
-          "puntosFavor": 114,
-          "puntosContra": 110
-        },
-        {
-          "pos": 4,
           "equipo": "Mirasur School Juvenil Femenino",
           "esManzanares": false,
           "pts": 2,
@@ -22242,6 +22229,19 @@
           "setsContra": 2,
           "puntosFavor": 95,
           "puntosContra": 99
+        },
+        {
+          "pos": 4,
+          "equipo": "Arcangel Juv A",
+          "esManzanares": false,
+          "pts": 2,
+          "pj": 2,
+          "pg": 1,
+          "pp": 1,
+          "setsFavor": 3,
+          "setsContra": 5,
+          "puntosFavor": 165,
+          "puntosContra": 185
         },
         {
           "pos": 5,
