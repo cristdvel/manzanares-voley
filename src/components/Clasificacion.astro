@@ -72,11 +72,11 @@ const {
                 <tr>
                   <th class="c">#</th>
                   <th>Equipo</th>
+                  <th class="c">Pts</th>
                   <th class="c">PJ</th>
                   <th class="c">PG</th>
                   <th class="c">PP</th>
                   <th class="c">Sets</th>
-                  <th class="c">Pts</th>
                 </tr>
               </thead>
               <tbody>
@@ -84,11 +84,11 @@ const {
                   <tr class={f.esManzanares ? "is-mzv" : ""}>
                     <td class="c">{f.pos}</td>
                     <td>{f.equipo}</td>
+                    <td class="c b">{f.pts}</td>
                     <td class="c">{f.pj}</td>
                     <td class="c">{f.pg}</td>
                     <td class="c">{f.pp}</td>
                     <td class="c">{f.setsFavor}-{f.setsContra}</td>
-                    <td class="c b">{f.pts}</td>
                   </tr>
                 ))}
               </tbody>
