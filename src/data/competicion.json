@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-18T22:15:53.000Z",
+  "actualizado": "2026-10-19T03:35:18.154Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -34127,19 +34127,6 @@
   ],
   "proximos": [
     {
-      "id": 62604,
-      "jornada": 3,
-      "fechaHora": "2026-10-18T00:00:00.000Z",
-      "local": "Manzanares Voley",
-      "visitante": "Descansa...",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Juvenil Masculino"
-    },
-    {
       "id": 59872,
       "jornada": 3,
       "fechaHora": "2026-10-23T19:00:00.000Z",
@@ -34553,6 +34540,19 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Cadete Masculino B"
+    },
+    {
+      "id": 56780,
+      "jornada": 7,
+      "fechaHora": "2026-11-08T00:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "CV Bulldogs A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino A"
     }
   ],
   "ultimos": [
