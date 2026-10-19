@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-19T09:39:29.011Z",
+  "actualizado": "2026-10-19T18:26:11.768Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -18611,17 +18611,6 @@
           "fecha": "2026-11-01T00:00:00.000Z",
           "partidos": [
             {
-              "id": 56770,
-              "jornada": 6,
-              "fechaHora": "2026-11-01T00:00:00.000Z",
-              "local": "Cvleganes.com A",
-              "visitante": "Baumit CV Collado Villalba",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 56771,
               "jornada": 6,
               "fechaHora": "2026-11-01T00:00:00.000Z",
@@ -18650,6 +18639,17 @@
               "local": "Feel Alcobendas Negro",
               "visitante": "Ucam Torrejón A",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56770,
+              "jornada": 6,
+              "fechaHora": "2026-11-01T10:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Baumit CV Collado Villalba",
+              "pabellon": "Europa, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26237,25 +26237,16 @@
             {
               "id": 57306,
               "jornada": 5,
-              "fechaHora": "2026-11-01T00:00:00.000Z",
+              "fechaHora": "2026-10-31T11:00:00.000Z",
               "local": "V-Valley CValcalá G1",
               "visitante": "Manzanares Voley A",
-              "pabellon": null,
+              "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
+              "direccion": "AV. VIRGEN DEL VAL, 8",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=LA NEVERA (PABELLÓN DEMETRIO LOZANO) AV. VIRGEN DEL VAL, 8, ALCALÁ DE HENARES",
               "jugado": false
-            },
-            {
-              "id": 57307,
-              "jornada": 5,
-              "fechaHora": "2026-11-01T00:00:00.000Z",
-              "local": "Cvleganes.com",
-              "visitante": "Feel Alcobendas",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 57308,
@@ -26280,23 +26271,34 @@
               "aplazado": false
             },
             {
-              "id": 57310,
-              "jornada": 5,
-              "fechaHora": "2026-11-01T00:00:00.000Z",
-              "local": "Ucam Torrejón",
-              "visitante": "Cde Parla Voley Ortopedia A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57311,
               "jornada": 5,
               "fechaHora": "2026-11-01T00:00:00.000Z",
               "local": "Cuv Alcorcón Azul",
               "visitante": "CV Nueva Castilla",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57310,
+              "jornada": 5,
+              "fechaHora": "2026-11-01T11:00:00.000Z",
+              "local": "Ucam Torrejón",
+              "visitante": "Cde Parla Voley Ortopedia A",
+              "pabellon": "M-4 (Sonia Abejón), Pabellón Municipal",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57307,
+              "jornada": 5,
+              "fechaHora": "2026-11-01T12:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "Feel Alcobendas",
+              "pabellon": "Europa, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -27614,13 +27616,15 @@
         {
           "id": 57306,
           "jornada": 5,
-          "fechaHora": "2026-11-01T00:00:00.000Z",
+          "fechaHora": "2026-10-31T11:00:00.000Z",
           "local": "V-Valley CValcalá G1",
           "visitante": "Manzanares Voley A",
-          "pabellon": null,
+          "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "AV. VIRGEN DEL VAL, 8",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=LA NEVERA (PABELLÓN DEMETRIO LOZANO) AV. VIRGEN DEL VAL, 8, ALCALÁ DE HENARES",
           "jugado": false
         },
         {
@@ -28331,10 +28335,10 @@
             {
               "id": 61186,
               "jornada": 4,
-              "fechaHora": "2026-10-25T00:00:00.000Z",
+              "fechaHora": "2026-10-24T20:00:00.000Z",
               "local": "Cd Newman B",
               "visitante": "Stars Sport Madrid",
-              "pabellon": null,
+              "pabellon": "Club Deportivo Newman",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -28390,29 +28394,6 @@
               "aplazado": false
             },
             {
-              "id": 61192,
-              "jornada": 5,
-              "fechaHora": "2026-11-01T00:00:00.000Z",
-              "local": "Chv1995 B",
-              "visitante": "B. M. 2 De Mayo",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 61193,
-              "jornada": 5,
-              "fechaHora": "2026-11-01T00:00:00.000Z",
-              "local": "Cde Voleibol Colmenar A",
-              "visitante": "Manzanares Voley B Junior Femenino",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
-            },
-            {
               "id": 61194,
               "jornada": 5,
               "fechaHora": "2026-11-01T00:00:00.000Z",
@@ -28446,6 +28427,17 @@
               "aplazado": false
             },
             {
+              "id": 61192,
+              "jornada": 5,
+              "fechaHora": "2026-11-01T11:00:00.000Z",
+              "local": "Chv1995 B",
+              "visitante": "B. M. 2 De Mayo",
+              "pabellon": "Pabellón 5 Torres",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 61191,
               "jornada": 5,
               "fechaHora": "2026-11-01T17:00:00.000Z",
@@ -28455,6 +28447,20 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 61193,
+              "jornada": 5,
+              "fechaHora": "2026-11-01T18:00:00.000Z",
+              "local": "Cde Voleibol Colmenar A",
+              "visitante": "Manzanares Voley B Junior Femenino",
+              "pabellon": "Lorenzo Rico",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "HUERTAS, S/N",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=LORENZO RICO HUERTAS, S/N, COLMENAR VIEJO",
+              "jugado": false
             }
           ]
         },
@@ -28519,23 +28525,23 @@
               "jugado": false
             },
             {
-              "id": 61204,
-              "jornada": 6,
-              "fechaHora": "2026-11-08T00:00:00.000Z",
-              "local": "B. M. 2 De Mayo",
-              "visitante": "CV Yma Majadahonda Junior Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 61201,
               "jornada": 6,
               "fechaHora": "2026-11-08T09:30:00.000Z",
               "local": "Cd Newman B",
               "visitante": "Chv1995 Arganzuela",
               "pabellon": "Club Deportivo Newman",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 61204,
+              "jornada": 6,
+              "fechaHora": "2026-11-08T17:30:00.000Z",
+              "local": "B. M. 2 De Mayo",
+              "visitante": "CV Yma Majadahonda Junior Femenino",
+              "pabellon": "Amanecer, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -30292,13 +30298,15 @@
         {
           "id": 61193,
           "jornada": 5,
-          "fechaHora": "2026-11-01T00:00:00.000Z",
+          "fechaHora": "2026-11-01T18:00:00.000Z",
           "local": "Cde Voleibol Colmenar A",
           "visitante": "Manzanares Voley B Junior Femenino",
-          "pabellon": null,
+          "pabellon": "Lorenzo Rico",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "HUERTAS, S/N",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=LORENZO RICO HUERTAS, S/N, COLMENAR VIEJO",
           "jugado": false
         },
         {
@@ -34399,28 +34407,17 @@
     {
       "id": 57306,
       "jornada": 5,
-      "fechaHora": "2026-11-01T00:00:00.000Z",
+      "fechaHora": "2026-10-31T11:00:00.000Z",
       "local": "V-Valley CValcalá G1",
       "visitante": "Manzanares Voley A",
-      "pabellon": null,
+      "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
       "esManzanares": true,
       "esLocal": false,
       "aplazado": false,
+      "direccion": "AV. VIRGEN DEL VAL, 8",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=LA NEVERA (PABELLÓN DEMETRIO LOZANO) AV. VIRGEN DEL VAL, 8, ALCALÁ DE HENARES",
       "jugado": false,
       "categoria": "Junior Femenino A"
-    },
-    {
-      "id": 61193,
-      "jornada": 5,
-      "fechaHora": "2026-11-01T00:00:00.000Z",
-      "local": "Cde Voleibol Colmenar A",
-      "visitante": "Manzanares Voley B Junior Femenino",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Junior Femenino B"
     },
     {
       "id": 56772,
@@ -34436,6 +34433,21 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=PAU 4, POLIDEPORTIVO C/ PERSEO 95, MOSTOLES",
       "jugado": false,
       "categoria": "Juvenil Femenino A"
+    },
+    {
+      "id": 61193,
+      "jornada": 5,
+      "fechaHora": "2026-11-01T18:00:00.000Z",
+      "local": "Cde Voleibol Colmenar A",
+      "visitante": "Manzanares Voley B Junior Femenino",
+      "pabellon": "Lorenzo Rico",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "HUERTAS, S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=LORENZO RICO HUERTAS, S/N, COLMENAR VIEJO",
+      "jugado": false,
+      "categoria": "Junior Femenino B"
     },
     {
       "id": 59885,
