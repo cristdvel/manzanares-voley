@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-20T16:28:00.935Z",
+  "actualizado": "2026-10-21T08:30:14.026Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -2601,6 +2601,17 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 59893,
+              "jornada": 6,
+              "fechaHora": "2026-11-14T10:30:00.000Z",
+              "local": "Sad Recuerdo A",
+              "visitante": "CV Madrid A",
+              "pabellon": "Recuerdo, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 59891,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -2617,17 +2628,6 @@
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Coslada Voley A",
               "visitante": "Club Voleibol Torrelodones A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 59893,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Sad Recuerdo A",
-              "visitante": "CV Madrid A",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
