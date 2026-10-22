@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-21T23:02:58.783Z",
+  "actualizado": "2026-10-22T03:36:47.739Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -32977,6 +32977,20 @@
           "fecha": "2026-11-08T00:00:00.000Z",
           "partidos": [
             {
+              "id": 62191,
+              "jornada": 4,
+              "fechaHora": "2026-11-07T20:00:00.000Z",
+              "local": "Manzanares Voley",
+              "visitante": "Avp Servi-Cop",
+              "pabellon": "Pabellon Ceip Jose Hierro",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "AVENIDA SISTEMA SOLAR 8",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON CEIP JOSE HIERRO  AVENIDA SISTEMA SOLAR 8, PARLA",
+              "jugado": false
+            },
+            {
               "id": 62188,
               "jornada": 4,
               "fechaHora": "2026-11-08T00:00:00.000Z",
@@ -33008,18 +33022,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 62191,
-              "jornada": 4,
-              "fechaHora": "2026-11-08T00:00:00.000Z",
-              "local": "Manzanares Voley",
-              "visitante": "Avp Servi-Cop",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 62192,
@@ -33957,13 +33959,15 @@
         {
           "id": 62191,
           "jornada": 4,
-          "fechaHora": "2026-11-08T00:00:00.000Z",
+          "fechaHora": "2026-11-07T20:00:00.000Z",
           "local": "Manzanares Voley",
           "visitante": "Avp Servi-Cop",
-          "pabellon": null,
+          "pabellon": "Pabellon Ceip Jose Hierro",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "AVENIDA SISTEMA SOLAR 8",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON CEIP JOSE HIERRO  AVENIDA SISTEMA SOLAR 8, PARLA",
           "jugado": false
         },
         {
@@ -34456,6 +34460,21 @@
       "categoria": "Junior Femenino B"
     },
     {
+      "id": 62191,
+      "jornada": 4,
+      "fechaHora": "2026-11-07T20:00:00.000Z",
+      "local": "Manzanares Voley",
+      "visitante": "Avp Servi-Cop",
+      "pabellon": "Pabellon Ceip Jose Hierro",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "AVENIDA SISTEMA SOLAR 8",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON CEIP JOSE HIERRO  AVENIDA SISTEMA SOLAR 8, PARLA",
+      "jugado": false,
+      "categoria": "Sénior Masculino"
+    },
+    {
       "id": 59885,
       "jornada": 5,
       "fechaHora": "2026-11-08T00:00:00.000Z",
@@ -34558,19 +34577,6 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Cadete Masculino B"
-    },
-    {
-      "id": 56780,
-      "jornada": 7,
-      "fechaHora": "2026-11-08T00:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "CV Bulldogs A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Juvenil Femenino A"
     }
   ],
   "ultimos": [
