@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-22T03:36:47.739Z",
+  "actualizado": "2026-10-22T16:45:12.392Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -6239,14 +6239,14 @@
           "pos": 3,
           "equipo": "Club Voleibol Móstoles",
           "esManzanares": false,
-          "pts": 8,
+          "pts": 9,
           "pj": 3,
           "pg": 3,
           "pp": 0,
-          "setsFavor": 8,
+          "setsFavor": 9,
           "setsContra": 1,
-          "puntosFavor": 227,
-          "puntosContra": 177
+          "puntosFavor": 252,
+          "puntosContra": 193
         },
         {
           "pos": 4,
@@ -6276,19 +6276,6 @@
         },
         {
           "pos": 6,
-          "equipo": "V-Valley CValcalá G1",
-          "esManzanares": false,
-          "pts": 4,
-          "pj": 3,
-          "pg": 1,
-          "pp": 2,
-          "setsFavor": 3,
-          "setsContra": 5,
-          "puntosFavor": 155,
-          "puntosContra": 185
-        },
-        {
-          "pos": 7,
           "equipo": "Chv1995 A",
           "esManzanares": false,
           "pts": 3,
@@ -6301,7 +6288,7 @@
           "puntosContra": 290
         },
         {
-          "pos": 8,
+          "pos": 7,
           "equipo": "VP Madrid A Amarillo",
           "esManzanares": false,
           "pts": 3,
@@ -6314,7 +6301,7 @@
           "puntosContra": 261
         },
         {
-          "pos": 9,
+          "pos": 8,
           "equipo": "Cvleganes.com B",
           "esManzanares": false,
           "pts": 3,
@@ -6325,6 +6312,19 @@
           "setsContra": 7,
           "puntosFavor": 221,
           "puntosContra": 249
+        },
+        {
+          "pos": 9,
+          "equipo": "V-Valley CValcalá G1",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 3,
+          "pg": 1,
+          "pp": 2,
+          "setsFavor": 3,
+          "setsContra": 6,
+          "puntosFavor": 171,
+          "puntosContra": 210
         },
         {
           "pos": 10,
@@ -31109,7 +31109,7 @@
             {
               "id": 58101,
               "jornada": 5,
-              "fechaHora": "2026-11-08T19:00:00.000Z",
+              "fechaHora": "2026-11-08T18:00:00.000Z",
               "local": "Club Voleibol Torrelodones B",
               "visitante": "CV Majadahonda A",
               "pabellon": "Torrelodones, Polideportivo Municipal",
