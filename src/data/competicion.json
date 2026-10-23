@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-23T09:09:20.887Z",
+  "actualizado": "2026-10-23T16:36:09.930Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -193,17 +193,6 @@
               "aplazado": false
             },
             {
-              "id": 75793,
-              "jornada": 1,
-              "fechaHora": "2026-10-25T12:00:00.000Z",
-              "local": "Avp B Yagüe",
-              "visitante": "Avp A Pozo Red",
-              "pabellon": "Pabellón Ceip José Hierro",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 75795,
               "jornada": 1,
               "fechaHora": "2026-10-25T12:00:00.000Z",
@@ -216,6 +205,17 @@
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
               "jugado": false
+            },
+            {
+              "id": 75793,
+              "jornada": 1,
+              "fechaHora": "2026-10-25T13:00:00.000Z",
+              "local": "Avp B Yagüe",
+              "visitante": "Avp A Pozo Red",
+              "pabellon": "Pabellón Ceip José Hierro",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             },
             {
               "id": 75794,
