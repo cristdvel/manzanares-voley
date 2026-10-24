@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-23T22:56:06.434Z",
+  "actualizado": "2026-10-24T08:42:15.872Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -4135,6 +4135,19 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "A.D.perales",
+          "esManzanares": false,
+          "pts": 9,
+          "pj": 4,
+          "pg": 3,
+          "pp": 1,
+          "setsFavor": 11,
+          "setsContra": 5,
+          "puntosFavor": 357,
+          "puntosContra": 307
+        },
+        {
+          "pos": 2,
           "equipo": "Cuv Alcorcón Naranja",
           "esManzanares": false,
           "pts": 7,
@@ -4147,7 +4160,7 @@
           "puntosContra": 235
         },
         {
-          "pos": 2,
+          "pos": 3,
           "equipo": "Club Deportivo Loreto Madrid",
           "esManzanares": false,
           "pts": 7,
@@ -4160,7 +4173,7 @@
           "puntosContra": 263
         },
         {
-          "pos": 3,
+          "pos": 4,
           "equipo": "Avp A Rasán",
           "esManzanares": false,
           "pts": 7,
@@ -4173,7 +4186,7 @@
           "puntosContra": 139
         },
         {
-          "pos": 4,
+          "pos": 5,
           "equipo": "Claret Madrid B",
           "esManzanares": false,
           "pts": 7,
@@ -4186,7 +4199,7 @@
           "puntosContra": 178
         },
         {
-          "pos": 5,
+          "pos": 6,
           "equipo": "Cde Parla Voley Multiopticas B",
           "esManzanares": false,
           "pts": 7,
@@ -4199,7 +4212,7 @@
           "puntosContra": 207
         },
         {
-          "pos": 6,
+          "pos": 7,
           "equipo": "Manzanares Voley B",
           "esManzanares": true,
           "pts": 6,
@@ -4210,19 +4223,6 @@
           "setsContra": 3,
           "puntosFavor": 205,
           "puntosContra": 156
-        },
-        {
-          "pos": 7,
-          "equipo": "A.D.perales",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 3,
-          "pg": 2,
-          "pp": 1,
-          "setsFavor": 8,
-          "setsContra": 5,
-          "puntosFavor": 282,
-          "puntosContra": 260
         },
         {
           "pos": 8,
@@ -4281,13 +4281,13 @@
           "equipo": "Salesianos Estrecho Bosco B",
           "esManzanares": false,
           "pts": 0,
-          "pj": 3,
+          "pj": 4,
           "pg": 0,
-          "pp": 3,
+          "pp": 4,
           "setsFavor": 0,
-          "setsContra": 9,
-          "puntosFavor": 73,
-          "puntosContra": 225
+          "setsContra": 12,
+          "puntosFavor": 120,
+          "puntosContra": 300
         }
       ],
       "jornadas": [
