@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-24T18:37:22.347Z",
+  "actualizado": "2026-10-24T22:16:41.816Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -27924,6 +27924,19 @@
         },
         {
           "pos": 4,
+          "equipo": "Cd Newman B",
+          "esManzanares": false,
+          "pts": 9,
+          "pj": 4,
+          "pg": 3,
+          "pp": 1,
+          "setsFavor": 9,
+          "setsContra": 3,
+          "puntosFavor": 280,
+          "puntosContra": 233
+        },
+        {
+          "pos": 5,
           "equipo": "Chv1995 B",
           "esManzanares": false,
           "pts": 9,
@@ -27934,19 +27947,6 @@
           "setsContra": 4,
           "puntosFavor": 325,
           "puntosContra": 263
-        },
-        {
-          "pos": 5,
-          "equipo": "Cd Newman B",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 3,
-          "pg": 2,
-          "pp": 1,
-          "setsFavor": 6,
-          "setsContra": 3,
-          "puntosFavor": 204,
-          "puntosContra": 172
         },
         {
           "pos": 6,
@@ -27979,13 +27979,13 @@
           "equipo": "Stars Sport Madrid",
           "esManzanares": false,
           "pts": 3,
-          "pj": 3,
+          "pj": 4,
           "pg": 1,
-          "pp": 2,
+          "pp": 3,
           "setsFavor": 4,
-          "setsContra": 6,
-          "puntosFavor": 207,
-          "puntosContra": 211
+          "setsContra": 9,
+          "puntosFavor": 268,
+          "puntosContra": 287
         },
         {
           "pos": 9,
@@ -30636,14 +30636,14 @@
           "pos": 2,
           "equipo": "Cde Parla Voley Ortopedia",
           "esManzanares": false,
-          "pts": 9,
-          "pj": 3,
-          "pg": 3,
+          "pts": 12,
+          "pj": 4,
+          "pg": 4,
           "pp": 0,
-          "setsFavor": 9,
-          "setsContra": 2,
-          "puntosFavor": 264,
-          "puntosContra": 195
+          "setsFavor": 12,
+          "setsContra": 3,
+          "puntosFavor": 363,
+          "puntosContra": 276
         },
         {
           "pos": 3,
@@ -30663,16 +30663,29 @@
           "equipo": "Manzanares Voley Senior Femenino",
           "esManzanares": true,
           "pts": 7,
-          "pj": 3,
+          "pj": 4,
           "pg": 2,
-          "pp": 1,
+          "pp": 2,
           "setsFavor": 8,
-          "setsContra": 4,
-          "puntosFavor": 263,
-          "puntosContra": 259
+          "setsContra": 7,
+          "puntosFavor": 310,
+          "puntosContra": 335
         },
         {
           "pos": 5,
+          "equipo": "Club Voleibol Torrelodones B",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 4,
+          "pg": 2,
+          "pp": 2,
+          "setsFavor": 8,
+          "setsContra": 6,
+          "puntosFavor": 301,
+          "puntosContra": 296
+        },
+        {
+          "pos": 6,
           "equipo": "Circe Fisioterapia CV Collado Villalba",
           "esManzanares": false,
           "pts": 5,
@@ -30685,7 +30698,7 @@
           "puntosContra": 269
         },
         {
-          "pos": 6,
+          "pos": 7,
           "equipo": "CV Majadahonda A",
           "esManzanares": false,
           "pts": 5,
@@ -30696,19 +30709,6 @@
           "setsContra": 6,
           "puntosFavor": 259,
           "puntosContra": 235
-        },
-        {
-          "pos": 7,
-          "equipo": "Club Voleibol Torrelodones B",
-          "esManzanares": false,
-          "pts": 3,
-          "pj": 3,
-          "pg": 1,
-          "pp": 2,
-          "setsFavor": 5,
-          "setsContra": 6,
-          "puntosFavor": 225,
-          "puntosContra": 249
         },
         {
           "pos": 8,
@@ -30728,13 +30728,13 @@
           "equipo": "CV Bulldogs A",
           "esManzanares": false,
           "pts": 3,
-          "pj": 3,
+          "pj": 4,
           "pg": 1,
-          "pp": 2,
-          "setsFavor": 5,
-          "setsContra": 8,
-          "puntosFavor": 275,
-          "puntosContra": 281
+          "pp": 3,
+          "setsFavor": 6,
+          "setsContra": 11,
+          "puntosFavor": 356,
+          "puntosContra": 380
         },
         {
           "pos": 10,
@@ -31049,7 +31049,10 @@
               "aplazado": false,
               "direccion": "CALLE MAZATERON, 12",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 0,
+              "setsVisitante": 3,
+              "resultado": "0-3"
             },
             {
               "id": 58095,
@@ -32467,7 +32470,10 @@
           "aplazado": false,
           "direccion": "CALLE MAZATERON, 12",
           "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 0,
+          "setsVisitante": 3,
+          "resultado": "0-3"
         },
         {
           "id": 58102,
@@ -34202,21 +34208,6 @@
       "categoria": "Juvenil Femenino C"
     },
     {
-      "id": 58096,
-      "jornada": 4,
-      "fechaHora": "2026-10-24T20:00:00.000Z",
-      "local": "Manzanares Voley Senior Femenino",
-      "visitante": "Club Voleibol Torrelodones B",
-      "pabellon": "Colegio Nueva Castilla (Nuevo)",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CALLE MAZATERON, 12",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-      "jugado": false,
-      "categoria": "Sénior Femenino"
-    },
-    {
       "id": 59610,
       "jornada": 4,
       "fechaHora": "2026-10-25T09:30:00.000Z",
@@ -34607,9 +34598,42 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=CLUB DEPORTIVO NEWMAN C/ AVENIDA DE GUADALAJARA, 28, MADRID",
       "jugado": false,
       "categoria": "Sénior Femenino"
+    },
+    {
+      "id": 73292,
+      "jornada": 6,
+      "fechaHora": "2026-11-14T13:00:00.000Z",
+      "local": "Avp A Rasán",
+      "visitante": "Manzanares Voley B",
+      "pabellon": "Pabellón Ceip José Hierro",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "AVENIDA DEL SISTEMA SOLAR, 101A",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN CEIP JOSÉ HIERRO  AVENIDA DEL SISTEMA SOLAR, 101A, PARLA",
+      "jugado": false,
+      "categoria": "Infantil Femenino B"
     }
   ],
   "ultimos": [
+    {
+      "id": 58096,
+      "jornada": 4,
+      "fechaHora": "2026-10-24T20:00:00.000Z",
+      "local": "Manzanares Voley Senior Femenino",
+      "visitante": "Club Voleibol Torrelodones B",
+      "pabellon": "Colegio Nueva Castilla (Nuevo)",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "CALLE MAZATERON, 12",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+      "jugado": true,
+      "setsLocal": 0,
+      "setsVisitante": 3,
+      "resultado": "0-3",
+      "categoria": "Sénior Femenino"
+    },
     {
       "id": 57162,
       "jornada": 4,
@@ -34735,24 +34759,6 @@
       "setsVisitante": 2,
       "resultado": "3-2",
       "categoria": "Infantil Femenino A"
-    },
-    {
-      "id": 60896,
-      "jornada": 3,
-      "fechaHora": "2026-10-18T17:30:00.000Z",
-      "local": "Manzanares Voley B",
-      "visitante": "B. M. 2 Ciudad Getafe",
-      "pabellon": "Colegio Nueva Castilla (Nuevo)",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CALLE MAZATERON, 12",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-      "jugado": true,
-      "setsLocal": 3,
-      "setsVisitante": 0,
-      "resultado": "3-0",
-      "categoria": "Juvenil Femenino B"
     }
   ]
 }
