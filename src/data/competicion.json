@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-27T09:45:01.735Z",
+  "actualizado": "2026-10-27T17:35:57.176Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -462,6 +462,20 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
+              "id": 75817,
+              "jornada": 5,
+              "fechaHora": "2026-11-15T09:30:00.000Z",
+              "local": "Manzanares Voley Alevin",
+              "visitante": "Avp B Yagüe",
+              "pabellon": "Pabellon Ceip Jose Hierro",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "AVENIDA SISTEMA SOLAR 8",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON CEIP JOSE HIERRO  AVENIDA SISTEMA SOLAR 8, PARLA",
+              "jugado": false
+            },
+            {
               "id": 75816,
               "jornada": 5,
               "fechaHora": "2026-11-29T00:00:00.000Z",
@@ -471,18 +485,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 75817,
-              "jornada": 5,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Manzanares Voley Alevin",
-              "visitante": "Avp B Yagüe",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 75818,
@@ -1824,6 +1826,20 @@
           "jugado": false
         },
         {
+          "id": 75817,
+          "jornada": 5,
+          "fechaHora": "2026-11-15T09:30:00.000Z",
+          "local": "Manzanares Voley Alevin",
+          "visitante": "Avp B Yagüe",
+          "pabellon": "Pabellon Ceip Jose Hierro",
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "direccion": "AVENIDA SISTEMA SOLAR 8",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON CEIP JOSE HIERRO  AVENIDA SISTEMA SOLAR 8, PARLA",
+          "jugado": false
+        },
+        {
           "id": 75814,
           "jornada": 4,
           "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -1832,18 +1848,6 @@
           "pabellon": null,
           "esManzanares": true,
           "esLocal": false,
-          "aplazado": false,
-          "jugado": false
-        },
-        {
-          "id": 75817,
-          "jornada": 5,
-          "fechaHora": "2026-11-29T00:00:00.000Z",
-          "local": "Manzanares Voley Alevin",
-          "visitante": "Avp B Yagüe",
-          "pabellon": null,
-          "esManzanares": true,
-          "esLocal": true,
           "aplazado": false,
           "jugado": false
         },
@@ -10906,20 +10910,6 @@
               "aplazado": false
             },
             {
-              "id": 67174,
-              "jornada": 5,
-              "fechaHora": "2026-11-07T11:45:00.000Z",
-              "local": "Manzanares Voley B Cadete Femenino",
-              "visitante": "Las Nieves A",
-              "pabellon": "Colegio Greenfield",
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-              "jugado": false
-            },
-            {
               "id": 67175,
               "jornada": 5,
               "fechaHora": "2026-11-07T13:00:00.000Z",
@@ -10929,6 +10919,20 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 67174,
+              "jornada": 5,
+              "fechaHora": "2026-11-07T17:00:00.000Z",
+              "local": "Manzanares Voley B Cadete Femenino",
+              "visitante": "Las Nieves A",
+              "pabellon": "Las Nieves, Colegio",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "CALLE DE ALCALÁ, 589",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=LAS NIEVES, COLEGIO CALLE DE ALCALÁ, 589, MADRID",
+              "jugado": false
             },
             {
               "id": 67177,
@@ -12268,15 +12272,15 @@
         {
           "id": 67174,
           "jornada": 5,
-          "fechaHora": "2026-11-07T11:45:00.000Z",
+          "fechaHora": "2026-11-07T17:00:00.000Z",
           "local": "Manzanares Voley B Cadete Femenino",
           "visitante": "Las Nieves A",
-          "pabellon": "Colegio Greenfield",
+          "pabellon": "Las Nieves, Colegio",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
-          "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
+          "direccion": "CALLE DE ALCALÁ, 589",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=LAS NIEVES, COLEGIO CALLE DE ALCALÁ, 589, MADRID",
           "jugado": false
         },
         {
@@ -13074,18 +13078,6 @@
               "aplazado": false
             },
             {
-              "id": 72167,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Manzanares Voley C Cadete Femenino",
-              "visitante": "C.d.b.colegio Aquila 2",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
-            },
-            {
               "id": 72169,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -13095,6 +13087,20 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 72167,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T09:30:00.000Z",
+              "local": "Manzanares Voley C Cadete Femenino",
+              "visitante": "C.d.b.colegio Aquila 2",
+              "pabellon": "Colegio Aquila",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "CALLE DEL PLANETA JÚPITER, 2",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO AQUILA CALLE DEL PLANETA JÚPITER, 2, PARLA",
+              "jugado": false
             }
           ]
         },
@@ -14357,13 +14363,15 @@
         {
           "id": 72167,
           "jornada": 6,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-15T09:30:00.000Z",
           "local": "Manzanares Voley C Cadete Femenino",
           "visitante": "C.d.b.colegio Aquila 2",
-          "pabellon": null,
+          "pabellon": "Colegio Aquila",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "CALLE DEL PLANETA JÚPITER, 2",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO AQUILA CALLE DEL PLANETA JÚPITER, 2, PARLA",
           "jugado": false
         },
         {
@@ -26454,10 +26462,10 @@
             {
               "id": 57316,
               "jornada": 6,
-              "fechaHora": "2026-11-07T15:00:00.000Z",
+              "fechaHora": "2026-11-07T13:30:00.000Z",
               "local": "VP Madrid A Amarillo",
               "visitante": "CV Collado Villalba",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Ceip La Rioja",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -34374,21 +34382,6 @@
       "categoria": "Infantil Femenino B"
     },
     {
-      "id": 67174,
-      "jornada": 5,
-      "fechaHora": "2026-11-07T11:45:00.000Z",
-      "local": "Manzanares Voley B Cadete Femenino",
-      "visitante": "Las Nieves A",
-      "pabellon": "Colegio Greenfield",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-      "jugado": false,
-      "categoria": "Cadete Femenino B"
-    },
-    {
       "id": 63252,
       "jornada": 4,
       "fechaHora": "2026-11-07T13:00:00.000Z",
@@ -34432,6 +34425,21 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
       "jugado": false,
       "categoria": "Juvenil Femenino B"
+    },
+    {
+      "id": 67174,
+      "jornada": 5,
+      "fechaHora": "2026-11-07T17:00:00.000Z",
+      "local": "Manzanares Voley B Cadete Femenino",
+      "visitante": "Las Nieves A",
+      "pabellon": "Las Nieves, Colegio",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "CALLE DE ALCALÁ, 589",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=LAS NIEVES, COLEGIO CALLE DE ALCALÁ, 589, MADRID",
+      "jugado": false,
+      "categoria": "Cadete Femenino B"
     },
     {
       "id": 59885,
@@ -34677,19 +34685,6 @@
       "categoria": "Cadete Femenino B"
     },
     {
-      "id": 72167,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Manzanares Voley C Cadete Femenino",
-      "visitante": "C.d.b.colegio Aquila 2",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Cadete Femenino C"
-    },
-    {
       "id": 62990,
       "jornada": 6,
       "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -34727,6 +34722,19 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Juvenil Femenino A"
+    },
+    {
+      "id": 60915,
+      "jornada": 6,
+      "fechaHora": "2026-11-15T00:00:00.000Z",
+      "local": "Cuv Alcorcón Blanco",
+      "visitante": "Manzanares Voley B",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino B"
     }
   ],
   "ultimos": [
