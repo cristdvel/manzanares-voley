@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-28T14:54:19.774Z",
+  "actualizado": "2026-10-28T20:49:17.412Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -20846,17 +20846,6 @@
               "aplazado": false
             },
             {
-              "id": 60914,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Arganvoley",
-              "visitante": "Club Voleibol Móstoles B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 60915,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -20875,6 +20864,17 @@
               "local": "CV Valdemoro Las Aguas Juvenil Femenino",
               "visitante": "Cvfuenlabrada",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 60914,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T09:30:00.000Z",
+              "local": "Arganvoley",
+              "visitante": "Club Voleibol Móstoles B",
+              "pabellon": "Centro Dotacional Integrado, Arganzuela",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
