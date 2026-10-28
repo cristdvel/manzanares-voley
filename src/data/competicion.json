@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-28T07:51:34.379Z",
+  "actualizado": "2026-10-28T14:54:19.774Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -11020,13 +11020,15 @@
             {
               "id": 67185,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T14:00:00.000Z",
               "local": "Manzanares Voley B Cadete Femenino",
               "visitante": "Claret Madrid A",
-              "pabellon": null,
+              "pabellon": "Gallur , Cdm",
               "esManzanares": true,
               "esLocal": true,
               "aplazado": false,
+              "direccion": "GALLUR 2",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
               "jugado": false
             }
           ]
@@ -12286,13 +12288,15 @@
         {
           "id": 67185,
           "jornada": 6,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-15T14:00:00.000Z",
           "local": "Manzanares Voley B Cadete Femenino",
           "visitante": "Claret Madrid A",
-          "pabellon": null,
+          "pabellon": "Gallur , Cdm",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "GALLUR 2",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
           "jugado": false
         },
         {
@@ -16991,7 +16995,7 @@
             {
               "id": 63252,
               "jornada": 4,
-              "fechaHora": "2026-11-07T13:00:00.000Z",
+              "fechaHora": "2026-11-07T11:45:00.000Z",
               "local": "Manzanares Voley B",
               "visitante": "Cvfuenlabrada",
               "pabellon": "Colegio Greenfield",
@@ -17972,7 +17976,7 @@
         {
           "id": 63252,
           "jornada": 4,
-          "fechaHora": "2026-11-07T13:00:00.000Z",
+          "fechaHora": "2026-11-07T11:45:00.000Z",
           "local": "Manzanares Voley B",
           "visitante": "Cvfuenlabrada",
           "pabellon": "Colegio Greenfield",
@@ -18719,7 +18723,7 @@
               "fechaHora": "2026-10-30T18:30:00.000Z",
               "local": "Chv1995 A",
               "visitante": "Assa Abloy Sanse",
-              "pabellon": "Ceip Antonio Fontán",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -20736,7 +20740,7 @@
             {
               "id": 60910,
               "jornada": 5,
-              "fechaHora": "2026-11-07T09:30:00.000Z",
+              "fechaHora": "2026-11-07T11:30:00.000Z",
               "local": "VP Madrid B Negro",
               "visitante": "VP Madrid C Blanco",
               "pabellon": "Ceip La Rioja",
@@ -31206,23 +31210,23 @@
           "fecha": "2026-11-08T00:00:00.000Z",
           "partidos": [
             {
+              "id": 58103,
+              "jornada": 5,
+              "fechaHora": "2026-11-06T20:45:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "Salesianos San Miguel B",
+              "pabellon": "Ies Sapere Aude",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 58100,
               "jornada": 5,
               "fechaHora": "2026-11-07T20:00:00.000Z",
               "local": "Circe Fisioterapia CV Collado Villalba",
               "visitante": "Abv Boadilla B",
               "pabellon": "Antonio Machado, Colegio",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 58103,
-              "jornada": 5,
-              "fechaHora": "2026-11-08T00:00:00.000Z",
-              "local": "CV Bulldogs A",
-              "visitante": "Salesianos San Miguel B",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -34388,7 +34392,7 @@
     {
       "id": 63252,
       "jornada": 4,
-      "fechaHora": "2026-11-07T13:00:00.000Z",
+      "fechaHora": "2026-11-07T11:45:00.000Z",
       "local": "Manzanares Voley B",
       "visitante": "Cvfuenlabrada",
       "pabellon": "Colegio Greenfield",
@@ -34676,19 +34680,6 @@
       "categoria": "Cadete Femenino A"
     },
     {
-      "id": 67185,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Manzanares Voley B Cadete Femenino",
-      "visitante": "Claret Madrid A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Cadete Femenino B"
-    },
-    {
       "id": 62990,
       "jornada": 6,
       "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -34739,6 +34730,19 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Juvenil Femenino B"
+    },
+    {
+      "id": 62627,
+      "jornada": 6,
+      "fechaHora": "2026-11-15T00:00:00.000Z",
+      "local": "Manzanares Voley",
+      "visitante": "VP Madrid B Negro B",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Masculino"
     }
   ],
   "ultimos": [
