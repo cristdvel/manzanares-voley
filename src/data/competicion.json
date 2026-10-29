@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-28T20:49:17.412Z",
+  "actualizado": "2026-10-29T14:59:17.741Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -11038,6 +11038,20 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
+              "id": 67187,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T09:45:00.000Z",
+              "local": "Nuestra Señora Del Pilar Cadete Femenino",
+              "visitante": "Manzanares Voley B Cadete Femenino",
+              "pabellon": "Nuestra Señora Del Pilar",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "CALLE AYALA 47",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=NUESTRA SEÑORA DEL PILAR CALLE AYALA 47, MADRID",
+              "jugado": false
+            },
+            {
               "id": 67186,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -11047,18 +11061,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 67187,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Nuestra Señora Del Pilar Cadete Femenino",
-              "visitante": "Manzanares Voley B Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 67188,
@@ -11186,10 +11188,10 @@
             {
               "id": 67198,
               "jornada": 9,
-              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "fechaHora": "2026-12-12T09:45:00.000Z",
               "local": "Nuestra Señora Del Pilar Cadete Femenino",
               "visitante": "Las Nieves A",
-              "pabellon": null,
+              "pabellon": "Nuestra Señora Del Pilar",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -12302,13 +12304,15 @@
         {
           "id": 67187,
           "jornada": 7,
-          "fechaHora": "2026-11-22T00:00:00.000Z",
+          "fechaHora": "2026-11-21T09:45:00.000Z",
           "local": "Nuestra Señora Del Pilar Cadete Femenino",
           "visitante": "Manzanares Voley B Cadete Femenino",
-          "pabellon": null,
+          "pabellon": "Nuestra Señora Del Pilar",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "CALLE AYALA 47",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=NUESTRA SEÑORA DEL PILAR CALLE AYALA 47, MADRID",
           "jugado": false
         },
         {
@@ -22925,6 +22929,17 @@
           "fecha": "2026-12-20T00:00:00.000Z",
           "partidos": [
             {
+              "id": 64715,
+              "jornada": 8,
+              "fechaHora": "2026-12-19T10:00:00.000Z",
+              "local": "C.d.b.colegio Aquila Juvenil Femenino",
+              "visitante": "Cde Union Voleibol El Alamo Juvenil Femenino",
+              "pabellon": "Colegio Aquila",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 64713,
               "jornada": 8,
               "fechaHora": "2026-12-20T00:00:00.000Z",
@@ -22941,17 +22956,6 @@
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
               "visitante": "Avp B Rafranjo",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 64715,
-              "jornada": 8,
-              "fechaHora": "2026-12-20T00:00:00.000Z",
-              "local": "C.d.b.colegio Aquila Juvenil Femenino",
-              "visitante": "Cde Union Voleibol El Alamo Juvenil Femenino",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
