@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-30T14:52:59.687Z",
+  "actualizado": "2026-10-30T20:28:15.325Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -18197,6 +18197,19 @@
         },
         {
           "pos": 3,
+          "equipo": "Assa Abloy Sanse",
+          "esManzanares": false,
+          "pts": 11,
+          "pj": 6,
+          "pg": 4,
+          "pp": 2,
+          "setsFavor": 15,
+          "setsContra": 11,
+          "puntosFavor": 584,
+          "puntosContra": 535
+        },
+        {
+          "pos": 4,
           "equipo": "Cvleganes.com A",
           "esManzanares": false,
           "pts": 10,
@@ -18209,7 +18222,7 @@
           "puntosContra": 438
         },
         {
-          "pos": 4,
+          "pos": 5,
           "equipo": "Feel Alcobendas Negro",
           "esManzanares": false,
           "pts": 10,
@@ -18222,7 +18235,7 @@
           "puntosContra": 372
         },
         {
-          "pos": 5,
+          "pos": 6,
           "equipo": "Club Voleibol Móstoles A",
           "esManzanares": false,
           "pts": 9,
@@ -18233,19 +18246,6 @@
           "setsContra": 8,
           "puntosFavor": 414,
           "puntosContra": 405
-        },
-        {
-          "pos": 6,
-          "equipo": "Assa Abloy Sanse",
-          "esManzanares": false,
-          "pts": 9,
-          "pj": 5,
-          "pg": 3,
-          "pp": 2,
-          "setsFavor": 12,
-          "setsContra": 9,
-          "puntosFavor": 475,
-          "puntosContra": 436
         },
         {
           "pos": 7,
@@ -18275,6 +18275,19 @@
         },
         {
           "pos": 9,
+          "equipo": "Chv1995 A",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 6,
+          "pg": 1,
+          "pp": 5,
+          "setsFavor": 10,
+          "setsContra": 15,
+          "puntosFavor": 487,
+          "puntosContra": 534
+        },
+        {
+          "pos": 10,
           "equipo": "Baumit CV Collado Villalba",
           "esManzanares": false,
           "pts": 5,
@@ -18285,19 +18298,6 @@
           "setsContra": 12,
           "puntosFavor": 404,
           "puntosContra": 432
-        },
-        {
-          "pos": 10,
-          "equipo": "Chv1995 A",
-          "esManzanares": false,
-          "pts": 5,
-          "pj": 5,
-          "pg": 1,
-          "pp": 4,
-          "setsFavor": 8,
-          "setsContra": 12,
-          "puntosFavor": 388,
-          "puntosContra": 425
         },
         {
           "pos": 11,
@@ -28042,14 +28042,14 @@
           "pos": 4,
           "equipo": "Cd Newman B",
           "esManzanares": false,
-          "pts": 9,
-          "pj": 4,
-          "pg": 3,
+          "pts": 12,
+          "pj": 5,
+          "pg": 4,
           "pp": 1,
-          "setsFavor": 9,
+          "setsFavor": 12,
           "setsContra": 3,
-          "puntosFavor": 280,
-          "puntosContra": 233
+          "puntosFavor": 355,
+          "puntosContra": 283
         },
         {
           "pos": 5,
@@ -28079,19 +28079,6 @@
         },
         {
           "pos": 7,
-          "equipo": "Salesianos Estrecho Auxiliadora",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 4,
-          "pg": 2,
-          "pp": 2,
-          "setsFavor": 7,
-          "setsContra": 6,
-          "puntosFavor": 289,
-          "puntosContra": 302
-        },
-        {
-          "pos": 8,
           "equipo": "CV Bulldogs B Junior Femenino",
           "esManzanares": false,
           "pts": 6,
@@ -28102,6 +28089,19 @@
           "setsContra": 7,
           "puntosFavor": 280,
           "puntosContra": 287
+        },
+        {
+          "pos": 8,
+          "equipo": "Salesianos Estrecho Auxiliadora",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 5,
+          "pg": 2,
+          "pp": 3,
+          "setsFavor": 7,
+          "setsContra": 9,
+          "puntosFavor": 339,
+          "puntosContra": 377
         },
         {
           "pos": 9,
