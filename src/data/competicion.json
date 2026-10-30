@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-29T14:59:17.741Z",
+  "actualizado": "2026-10-30T14:52:59.687Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -33212,6 +33212,17 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
+              "id": 62197,
+              "jornada": 5,
+              "fechaHora": "2026-11-07T15:00:00.000Z",
+              "local": "Adc Sanfermin",
+              "visitante": "CV Getafe Rojo",
+              "pabellon": "Orcasur, Cdm",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 62193,
               "jornada": 5,
               "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -33240,17 +33251,6 @@
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Sad Municipal Loeches",
               "visitante": "CV Getafe Verde",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 62197,
-              "jornada": 5,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Adc Sanfermin",
-              "visitante": "CV Getafe Rojo",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
