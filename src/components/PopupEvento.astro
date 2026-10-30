@@ -1,0 +1,129 @@
+---
+// Ventana emergente con el cartel de un evento benéfico que apoya el club.
+// Usa el <dialog> nativo (foco atrapado, Esc y fondo bloqueado de serie).
+// Se abre una vez por visitante (vuelve a salir a los 3 días si no lo ha
+// aceptado) y desaparece sola cuando pasa el evento — ver "FIN".
+const evento = {
+  clave: "mzv-popup-zoe",
+  // El día siguiente a las 00:00 (hora de Madrid, CET en noviembre): el 22 de
+  // noviembre se muestra entero.
+  fin: "2026-11-23T00:00:00+01:00",
+  enlace: "https://www.noisolation.com/es/event/proyecto-zoe-torneo-benefico-de-padel",
+  imagen: "/img/eventos/proyecto-zoe.webp",
+  alt: "Cartel del Proyecto Zoe, torneo benéfico de pádel: domingo 22 de noviembre desde las 10:00 en Indie Padel Club (Madrid). Inscripción de 45 euros por persona, donación desgravable. El 100 % de la recaudación es para el robot AV1.",
+};
+const vigente = Date.now() < Date.parse(evento.fin);
+---
+{vigente && (
+  <dialog
+    id="popup-evento"
+    class="popup-evento"
+    aria-labelledby="popup-evento-titulo"
+    data-clave={evento.clave}
+    data-fin={evento.fin}
+  >
+    <button type="button" class="popup-evento__close" data-popup-cerrar aria-label="Cerrar">✕</button>
+    <div class="popup-evento__grid">
+      <img
+        class="popup-evento__img"
+        src={evento.imagen}
+        alt={evento.alt}
+        width="900"
+        height="1204"
+        decoding="async"
+      />
+      <div class="popup-evento__body">
+        <span class="eyebrow">Torneo benéfico de pádel</span>
+        <h2 id="popup-evento-titulo" class="popup-evento__titulo">Apoyamos el Proyecto Zoe</h2>
+        <p>
+          Desde el Club Voleibol Manzanares apoyamos este torneo benéfico y recomendamos a toda
+          nuestra comunidad <strong>apuntarse y colaborar con la causa</strong>.
+        </p>
+        <p>
+          El 100 % de la recaudación se destina a la compra y mantenimiento de un robot AV1, que
+          permite a niños y niñas en tratamiento médico de larga duración seguir asistiendo a clase
+          y relacionándose con sus compañeros y profesores.
+        </p>
+        <ul class="popup-evento__datos">
+          <li><strong>Domingo 22 de noviembre</strong>, desde las 10:00</li>
+          <li>Indie Padel Club (Madrid)</li>
+          <li>Inscripción: 45 € por persona (donación desgravable)</li>
+        </ul>
+        <div class="popup-evento__acciones">
+          <a
+            class="btn btn--primary"
+            href={evento.enlace}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-popup-cta
+          >
+            Apuntarme al torneo
+          </a>
+          <button type="button" class="btn btn--outline" data-popup-cerrar>Ahora no</button>
+        </div>
+        <p class="popup-evento__org">
+          Organizan la Fundación STEM con Zoe, No Isolation y la Federación Española de Familias de
+          Cáncer Infantil.
+        </p>
+      </div>
+    </div>
+  </dialog>
+)}
+
+<script>
+  const dlg = document.getElementById("popup-evento") as HTMLDialogElement | null;
+
+  if (dlg && typeof dlg.showModal === "function") {
+    const clave = dlg.dataset.clave || "mzv-popup";
+    const fin = Date.parse(dlg.dataset.fin || "");
+    const DIAS_ENTRE_AVISOS = 3;
+
+    const leer = (): number => {
+      try {
+        return Number(localStorage.getItem(clave)) || 0;
+      } catch {
+        return 0;
+      }
+    };
+    const guardar = (t: number) => {
+      try {
+        localStorage.setItem(clave, String(t));
+      } catch {
+        /* sin localStorage: se mostrará en cada visita, no es crítico */
+      }
+    };
+
+    dlg.querySelectorAll("[data-popup-cerrar]").forEach((b) => b.addEventListener("click", () => dlg.close()));
+    // Clic fuera de la caja (en el fondo): el <dialog> recibe el clic él mismo.
+    dlg.addEventListener("click", (e) => {
+      if (e.target === dlg) dlg.close();
+    });
+    dlg.addEventListener("close", () => guardar(Date.now()));
+    // Quien ya ha ido al enlace no vuelve a ver el aviso.
+    dlg.querySelector("[data-popup-cta]")?.addEventListener("click", () => {
+      guardar(Date.now() + 365 * 864e5);
+    });
+
+    const vigente = !Number.isNaN(fin) && Date.now() < fin;
+    const visto = Date.now() - leer() < DIAS_ENTRE_AVISOS * 864e5;
+
+    if (vigente && !visto) {
+      const abrir = () => {
+        if (!dlg.open) dlg.showModal();
+      };
+      // Pequeña espera para no taparle la página nada más llegar; y si el
+      // banner de cookies está a la vista se espera a que responda (o 15 s).
+      setTimeout(() => {
+        const banner = document.getElementById("cookie-banner");
+        if (banner && !banner.hidden) {
+          banner.addEventListener("click", (e) => {
+            if ((e.target as HTMLElement).closest("[data-cookie]")) setTimeout(abrir, 600);
+          });
+          setTimeout(abrir, 15000);
+        } else {
+          abrir();
+        }
+      }, 1500);
+    }
+  }
+</script>

@@ -622,6 +622,44 @@ p:last-child{margin-bottom:0}
   background:var(--mzv-crema);color:var(--mzv-titulo);font-size:15px;cursor:pointer;
 }
 
+/* ---------- Ventana emergente de evento benéfico ---------- */
+.popup-evento{
+  width:min(880px,94vw);max-width:none;max-height:92vh;margin:auto;padding:0;border:0;border-radius:18px;
+  background:#fff;color:var(--mzv-texto);overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.4);
+}
+.popup-evento::backdrop{background:rgba(15,15,17,.66)}
+.popup-evento[open]{animation:popup-in .28s ease}
+@keyframes popup-in{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.popup-evento[open]{animation:none}}
+body:has(.popup-evento[open]){overflow:hidden}
+.popup-evento__close{
+  position:absolute;top:10px;right:10px;z-index:2;width:36px;height:36px;border:0;border-radius:50%;
+  background:rgba(15,15,17,.65);color:#fff;font-size:16px;line-height:1;cursor:pointer;
+}
+.popup-evento__close:hover{background:rgba(15,15,17,.85)}
+.popup-evento__close:focus-visible,.popup-evento .btn:focus-visible{outline:2px solid var(--mzv-naranja);outline-offset:2px}
+.popup-evento__grid{display:grid;grid-template-columns:1fr}
+.popup-evento__img{display:block;width:100%;height:auto;max-height:58vh;object-fit:contain;background:#25447a}
+.popup-evento__body{display:flex;flex-direction:column;gap:12px;padding:24px 22px 22px}
+.popup-evento__titulo{margin:0;font-size:clamp(26px,5vw,34px);line-height:1.1;color:var(--mzv-titulo)}
+.popup-evento__body p{margin:0;font-size:15px;line-height:1.6}
+.popup-evento__body strong{color:var(--mzv-titulo)}
+.popup-evento__datos{
+  list-style:none;margin:2px 0;padding:12px 14px;background:var(--mzv-crema);border-radius:10px;
+  font-size:14px;line-height:1.55;color:var(--mzv-titulo);display:flex;flex-direction:column;gap:2px;
+}
+.popup-evento__acciones{
+  display:flex;flex-wrap:wrap;gap:10px;margin:4px -22px 0;padding:12px 22px;
+  position:sticky;bottom:0;background:#fff;box-shadow:0 -10px 14px -10px rgba(0,0,0,.18);
+}
+.popup-evento__body .popup-evento__org{font-size:12px;line-height:1.5;color:var(--mzv-texto)}
+@media (min-width:760px){
+  .popup-evento__grid{grid-template-columns:340px 1fr}
+  .popup-evento__img{max-height:none;height:100%;object-fit:cover}
+  .popup-evento__body{padding:30px 30px 26px;align-self:center}
+  .popup-evento__acciones{position:static;margin:4px 0 0;padding:0;background:none;box-shadow:none}
+}
+
 /* ---------- Preferencias de avisos push por equipo ---------- */
 .push-prefs-modal__box{max-width:400px;max-height:80vh;overflow-y:auto}
 .push-prefs__title{margin:0 0 8px;font-size:18px;color:var(--mzv-titulo)}
