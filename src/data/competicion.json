@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-30T20:28:15.325Z",
+  "actualizado": "2026-10-31T04:27:14.984Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -28003,14 +28003,14 @@
           "pos": 1,
           "equipo": "Saint Louis Morillon",
           "esManzanares": false,
-          "pts": 12,
-          "pj": 4,
-          "pg": 4,
+          "pts": 15,
+          "pj": 5,
+          "pg": 5,
           "pp": 0,
-          "setsFavor": 12,
+          "setsFavor": 15,
           "setsContra": 0,
-          "puntosFavor": 301,
-          "puntosContra": 196
+          "puntosFavor": 376,
+          "puntosContra": 217
         },
         {
           "pos": 2,
@@ -28134,13 +28134,13 @@
           "equipo": "Chv1995 Arganzuela",
           "esManzanares": false,
           "pts": 3,
-          "pj": 4,
+          "pj": 5,
           "pg": 1,
-          "pp": 3,
+          "pp": 4,
           "setsFavor": 3,
-          "setsContra": 9,
-          "puntosFavor": 227,
-          "puntosContra": 280
+          "setsContra": 12,
+          "puntosFavor": 248,
+          "puntosContra": 355
         },
         {
           "pos": 12,
