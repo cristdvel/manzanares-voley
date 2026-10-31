@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31T04:27:14.984Z",
+  "actualizado": "2026-10-31T14:21:16.653Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -6312,6 +6312,19 @@
         },
         {
           "pos": 6,
+          "equipo": "CV Sanse",
+          "esManzanares": false,
+          "pts": 7,
+          "pj": 5,
+          "pg": 2,
+          "pp": 3,
+          "setsFavor": 9,
+          "setsContra": 9,
+          "puntosFavor": 379,
+          "puntosContra": 363
+        },
+        {
+          "pos": 7,
           "equipo": "VP Madrid A Amarillo",
           "esManzanares": false,
           "pts": 6,
@@ -6324,7 +6337,7 @@
           "puntosContra": 323
         },
         {
-          "pos": 7,
+          "pos": 8,
           "equipo": "Cvleganes.com B",
           "esManzanares": false,
           "pts": 6,
@@ -6335,19 +6348,6 @@
           "setsContra": 8,
           "puntosFavor": 321,
           "puntosContra": 325
-        },
-        {
-          "pos": 8,
-          "equipo": "CV Sanse",
-          "esManzanares": false,
-          "pts": 4,
-          "pj": 4,
-          "pg": 1,
-          "pp": 3,
-          "setsFavor": 6,
-          "setsContra": 9,
-          "puntosFavor": 304,
-          "puntosContra": 323
         },
         {
           "pos": 9,
@@ -6393,13 +6393,13 @@
           "equipo": "CV Tres Cantos",
           "esManzanares": false,
           "pts": 0,
-          "pj": 4,
+          "pj": 5,
           "pg": 0,
-          "pp": 4,
+          "pp": 5,
           "setsFavor": 0,
-          "setsContra": 12,
-          "puntosFavor": 198,
-          "puntosContra": 300
+          "setsContra": 15,
+          "puntosFavor": 238,
+          "puntosContra": 375
         }
       ],
       "jornadas": [
@@ -25926,6 +25926,19 @@
         },
         {
           "pos": 2,
+          "equipo": "V-Valley CValcalá G1",
+          "esManzanares": false,
+          "pts": 12,
+          "pj": 5,
+          "pg": 4,
+          "pp": 1,
+          "setsFavor": 12,
+          "setsContra": 3,
+          "puntosFavor": 355,
+          "puntosContra": 277
+        },
+        {
+          "pos": 3,
           "equipo": "Ucam Torrejón",
           "esManzanares": false,
           "pts": 12,
@@ -25938,7 +25951,7 @@
           "puntosContra": 292
         },
         {
-          "pos": 3,
+          "pos": 4,
           "equipo": "Feel Alcobendas",
           "esManzanares": false,
           "pts": 10,
@@ -25951,7 +25964,7 @@
           "puntosContra": 267
         },
         {
-          "pos": 4,
+          "pos": 5,
           "equipo": "Cvleganes.com",
           "esManzanares": false,
           "pts": 9,
@@ -25962,19 +25975,6 @@
           "setsContra": 0,
           "puntosFavor": 231,
           "puntosContra": 176
-        },
-        {
-          "pos": 5,
-          "equipo": "V-Valley CValcalá G1",
-          "esManzanares": false,
-          "pts": 9,
-          "pj": 4,
-          "pg": 3,
-          "pp": 1,
-          "setsFavor": 9,
-          "setsContra": 3,
-          "puntosFavor": 280,
-          "puntosContra": 238
         },
         {
           "pos": 6,
@@ -26007,13 +26007,13 @@
           "equipo": "Manzanares Voley A",
           "esManzanares": true,
           "pts": 4,
-          "pj": 4,
+          "pj": 5,
           "pg": 1,
-          "pp": 3,
+          "pp": 4,
           "setsFavor": 7,
-          "setsContra": 9,
-          "puntosFavor": 335,
-          "puntosContra": 355
+          "setsContra": 12,
+          "puntosFavor": 374,
+          "puntosContra": 430
         },
         {
           "pos": 9,
@@ -26397,7 +26397,10 @@
               "aplazado": false,
               "direccion": "AV. VIRGEN DEL VAL, 8",
               "mapa": "https://www.google.com/maps/search/?api=1&query=LA NEVERA (PABELLÓN DEMETRIO LOZANO) AV. VIRGEN DEL VAL, 8, ALCALÁ DE HENARES",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 0,
+              "resultado": "3-0"
             },
             {
               "id": 57310,
@@ -27781,7 +27784,10 @@
           "aplazado": false,
           "direccion": "AV. VIRGEN DEL VAL, 8",
           "mapa": "https://www.google.com/maps/search/?api=1&query=LA NEVERA (PABELLÓN DEMETRIO LOZANO) AV. VIRGEN DEL VAL, 8, ALCALÁ DE HENARES",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0"
         },
         {
           "id": 57313,
@@ -34319,21 +34325,6 @@
   ],
   "proximos": [
     {
-      "id": 57306,
-      "jornada": 5,
-      "fechaHora": "2026-10-31T11:00:00.000Z",
-      "local": "V-Valley CValcalá G1",
-      "visitante": "Manzanares Voley A",
-      "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "AV. VIRGEN DEL VAL, 8",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=LA NEVERA (PABELLÓN DEMETRIO LOZANO) AV. VIRGEN DEL VAL, 8, ALCALÁ DE HENARES",
-      "jugado": false,
-      "categoria": "Junior Femenino A"
-    },
-    {
       "id": 56772,
       "jornada": 6,
       "fechaHora": "2026-11-01T16:00:00.000Z",
@@ -34747,9 +34738,40 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Juvenil Masculino"
+    },
+    {
+      "id": 57318,
+      "jornada": 7,
+      "fechaHora": "2026-11-15T00:00:00.000Z",
+      "local": "Cvleganes.com",
+      "visitante": "Manzanares Voley A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Junior Femenino A"
     }
   ],
   "ultimos": [
+    {
+      "id": 57306,
+      "jornada": 5,
+      "fechaHora": "2026-10-31T11:00:00.000Z",
+      "local": "V-Valley CValcalá G1",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "AV. VIRGEN DEL VAL, 8",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=LA NEVERA (PABELLÓN DEMETRIO LOZANO) AV. VIRGEN DEL VAL, 8, ALCALÁ DE HENARES",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 0,
+      "resultado": "3-0",
+      "categoria": "Junior Femenino A"
+    },
     {
       "id": 60902,
       "jornada": 4,
@@ -34875,24 +34897,6 @@
       "setsVisitante": 0,
       "resultado": "3-0",
       "categoria": "Alevín Femenino"
-    },
-    {
-      "id": 72155,
-      "jornada": 4,
-      "fechaHora": "2026-10-25T12:00:00.000Z",
-      "local": "Manzanares Voley C Cadete Femenino",
-      "visitante": "Cvd Fuenlabrada Cadete Femenino",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": true,
-      "setsLocal": 3,
-      "setsVisitante": 1,
-      "resultado": "3-1",
-      "categoria": "Cadete Femenino C"
     }
   ]
 }
