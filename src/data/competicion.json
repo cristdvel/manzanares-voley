@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31T14:21:16.653Z",
+  "actualizado": "2026-10-31T19:45:29.073Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -18173,14 +18173,14 @@
           "pos": 1,
           "equipo": "VP Madrid A Amarillo Juvenil Femenino",
           "esManzanares": false,
-          "pts": 14,
-          "pj": 5,
-          "pg": 5,
+          "pts": 16,
+          "pj": 6,
+          "pg": 6,
           "pp": 0,
-          "setsFavor": 15,
-          "setsContra": 3,
-          "puntosFavor": 421,
-          "puntosContra": 368
+          "setsFavor": 18,
+          "setsContra": 5,
+          "puntosFavor": 532,
+          "puntosContra": 452
         },
         {
           "pos": 2,
@@ -18251,14 +18251,14 @@
           "pos": 7,
           "equipo": "CV Las Rozas A",
           "esManzanares": false,
-          "pts": 7,
-          "pj": 5,
+          "pts": 8,
+          "pj": 6,
           "pg": 3,
-          "pp": 2,
-          "setsFavor": 10,
-          "setsContra": 11,
-          "puntosFavor": 442,
-          "puntosContra": 442
+          "pp": 3,
+          "setsFavor": 12,
+          "setsContra": 14,
+          "puntosFavor": 526,
+          "puntosContra": 553
         },
         {
           "pos": 8,
@@ -28061,14 +28061,14 @@
           "pos": 5,
           "equipo": "CV Las Rozas B",
           "esManzanares": false,
-          "pts": 9,
-          "pj": 4,
-          "pg": 3,
+          "pts": 12,
+          "pj": 5,
+          "pg": 4,
           "pp": 1,
-          "setsFavor": 9,
+          "setsFavor": 12,
           "setsContra": 3,
-          "puntosFavor": 283,
-          "puntosContra": 243
+          "puntosFavor": 358,
+          "puntosContra": 300
         },
         {
           "pos": 6,
@@ -28085,19 +28085,6 @@
         },
         {
           "pos": 7,
-          "equipo": "CV Bulldogs B Junior Femenino",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 4,
-          "pg": 2,
-          "pp": 2,
-          "setsFavor": 6,
-          "setsContra": 7,
-          "puntosFavor": 280,
-          "puntosContra": 287
-        },
-        {
-          "pos": 8,
           "equipo": "Salesianos Estrecho Auxiliadora",
           "esManzanares": false,
           "pts": 6,
@@ -28110,17 +28097,30 @@
           "puntosContra": 377
         },
         {
-          "pos": 9,
+          "pos": 8,
           "equipo": "Stars Sport Madrid",
           "esManzanares": false,
-          "pts": 3,
-          "pj": 4,
-          "pg": 1,
+          "pts": 6,
+          "pj": 5,
+          "pg": 2,
           "pp": 3,
-          "setsFavor": 4,
-          "setsContra": 9,
-          "puntosFavor": 268,
-          "puntosContra": 287
+          "setsFavor": 7,
+          "setsContra": 10,
+          "puntosFavor": 366,
+          "puntosContra": 363
+        },
+        {
+          "pos": 9,
+          "equipo": "CV Bulldogs B Junior Femenino",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 5,
+          "pg": 2,
+          "pp": 3,
+          "setsFavor": 7,
+          "setsContra": 10,
+          "puntosFavor": 356,
+          "puntosContra": 385
         },
         {
           "pos": 10,
@@ -28179,13 +28179,13 @@
           "equipo": "CV Getafe Azul",
           "esManzanares": false,
           "pts": 0,
-          "pj": 4,
+          "pj": 5,
           "pg": 0,
-          "pp": 4,
+          "pp": 5,
           "setsFavor": 0,
-          "setsContra": 12,
-          "puntosFavor": 168,
-          "puntosContra": 300
+          "setsContra": 15,
+          "puntosFavor": 225,
+          "puntosContra": 375
         }
       ],
       "jornadas": [
