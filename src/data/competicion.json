@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-31T19:45:29.073Z",
+  "actualizado": "2026-11-01T14:47:03.533Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -18184,6 +18184,19 @@
         },
         {
           "pos": 2,
+          "equipo": "Cvleganes.com A",
+          "esManzanares": false,
+          "pts": 13,
+          "pj": 6,
+          "pg": 5,
+          "pp": 1,
+          "setsFavor": 17,
+          "setsContra": 10,
+          "puntosFavor": 587,
+          "puntosContra": 502
+        },
+        {
+          "pos": 3,
           "equipo": "Ucam Torrejón A",
           "esManzanares": false,
           "pts": 11,
@@ -18196,7 +18209,7 @@
           "puntosContra": 400
         },
         {
-          "pos": 3,
+          "pos": 4,
           "equipo": "Assa Abloy Sanse",
           "esManzanares": false,
           "pts": 11,
@@ -18207,19 +18220,6 @@
           "setsContra": 11,
           "puntosFavor": 584,
           "puntosContra": 535
-        },
-        {
-          "pos": 4,
-          "equipo": "Cvleganes.com A",
-          "esManzanares": false,
-          "pts": 10,
-          "pj": 5,
-          "pg": 4,
-          "pp": 1,
-          "setsFavor": 14,
-          "setsContra": 9,
-          "puntosFavor": 488,
-          "puntosContra": 438
         },
         {
           "pos": 5,
@@ -18291,39 +18291,39 @@
           "equipo": "Baumit CV Collado Villalba",
           "esManzanares": false,
           "pts": 5,
-          "pj": 5,
+          "pj": 6,
           "pg": 1,
-          "pp": 4,
-          "setsFavor": 8,
-          "setsContra": 12,
-          "puntosFavor": 404,
-          "puntosContra": 432
+          "pp": 5,
+          "setsFavor": 9,
+          "setsContra": 15,
+          "puntosFavor": 468,
+          "puntosContra": 531
         },
         {
           "pos": 11,
-          "equipo": "V-Valley CValcalá G1",
+          "equipo": "CV Bulldogs A",
           "esManzanares": false,
-          "pts": 2,
-          "pj": 5,
+          "pts": 4,
+          "pj": 6,
           "pg": 1,
-          "pp": 4,
-          "setsFavor": 4,
-          "setsContra": 14,
-          "puntosFavor": 351,
-          "puntosContra": 435
+          "pp": 5,
+          "setsFavor": 5,
+          "setsContra": 15,
+          "puntosFavor": 418,
+          "puntosContra": 455
         },
         {
           "pos": 12,
-          "equipo": "CV Bulldogs A",
+          "equipo": "V-Valley CValcalá G1",
           "esManzanares": false,
-          "pts": 1,
-          "pj": 5,
-          "pg": 0,
+          "pts": 2,
+          "pj": 6,
+          "pg": 1,
           "pp": 5,
-          "setsFavor": 2,
-          "setsContra": 15,
-          "puntosFavor": 343,
-          "puntosContra": 407
+          "setsFavor": 4,
+          "setsContra": 17,
+          "puntosFavor": 399,
+          "puntosContra": 510
         }
       ],
       "jornadas": [
@@ -25913,6 +25913,32 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "Ucam Torrejón",
+          "esManzanares": false,
+          "pts": 15,
+          "pj": 5,
+          "pg": 5,
+          "pp": 0,
+          "setsFavor": 15,
+          "setsContra": 3,
+          "puntosFavor": 436,
+          "puntosContra": 356
+        },
+        {
+          "pos": 2,
+          "equipo": "Feel Alcobendas",
+          "esManzanares": false,
+          "pts": 13,
+          "pj": 5,
+          "pg": 4,
+          "pp": 1,
+          "setsFavor": 14,
+          "setsContra": 5,
+          "puntosFavor": 453,
+          "puntosContra": 352
+        },
+        {
+          "pos": 3,
           "equipo": "CV Las Rozas A",
           "esManzanares": false,
           "pts": 12,
@@ -25925,7 +25951,7 @@
           "puntosContra": 216
         },
         {
-          "pos": 2,
+          "pos": 4,
           "equipo": "V-Valley CValcalá G1",
           "esManzanares": false,
           "pts": 12,
@@ -25938,43 +25964,17 @@
           "puntosContra": 277
         },
         {
-          "pos": 3,
-          "equipo": "Ucam Torrejón",
-          "esManzanares": false,
-          "pts": 12,
-          "pj": 4,
-          "pg": 4,
-          "pp": 0,
-          "setsFavor": 12,
-          "setsContra": 3,
-          "puntosFavor": 360,
-          "puntosContra": 292
-        },
-        {
-          "pos": 4,
-          "equipo": "Feel Alcobendas",
-          "esManzanares": false,
-          "pts": 10,
-          "pj": 4,
-          "pg": 3,
-          "pp": 1,
-          "setsFavor": 11,
-          "setsContra": 4,
-          "puntosFavor": 350,
-          "puntosContra": 267
-        },
-        {
           "pos": 5,
           "equipo": "Cvleganes.com",
           "esManzanares": false,
           "pts": 9,
-          "pj": 3,
+          "pj": 4,
           "pg": 3,
-          "pp": 0,
-          "setsFavor": 9,
-          "setsContra": 0,
-          "puntosFavor": 231,
-          "puntosContra": 176
+          "pp": 1,
+          "setsFavor": 10,
+          "setsContra": 3,
+          "puntosFavor": 316,
+          "puntosContra": 279
         },
         {
           "pos": 6,
@@ -26046,13 +26046,13 @@
           "equipo": "Cde Parla Voley Ortopedia A",
           "esManzanares": false,
           "pts": 0,
-          "pj": 4,
+          "pj": 5,
           "pg": 0,
-          "pp": 4,
+          "pp": 5,
           "setsFavor": 0,
-          "setsContra": 12,
-          "puntosFavor": 239,
-          "puntosContra": 309
+          "setsContra": 15,
+          "puntosFavor": 303,
+          "puntosContra": 385
         },
         {
           "pos": 12,
@@ -28074,14 +28074,14 @@
           "pos": 6,
           "equipo": "Chv1995 B",
           "esManzanares": false,
-          "pts": 9,
-          "pj": 4,
-          "pg": 3,
+          "pts": 12,
+          "pj": 5,
+          "pg": 4,
           "pp": 1,
-          "setsFavor": 10,
+          "setsFavor": 13,
           "setsContra": 4,
-          "puntosFavor": 325,
-          "puntosContra": 263
+          "puntosFavor": 400,
+          "puntosContra": 301
         },
         {
           "pos": 7,
@@ -28166,13 +28166,13 @@
           "equipo": "B. M. 2 De Mayo",
           "esManzanares": false,
           "pts": 0,
-          "pj": 4,
+          "pj": 5,
           "pg": 0,
-          "pp": 4,
+          "pp": 5,
           "setsFavor": 0,
-          "setsContra": 12,
-          "puntosFavor": 201,
-          "puntosContra": 301
+          "setsContra": 15,
+          "puntosFavor": 239,
+          "puntosContra": 376
         },
         {
           "pos": 14,
