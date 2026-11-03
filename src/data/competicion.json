@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-02T17:54:22.858Z",
+  "actualizado": "2026-11-03T02:02:22.378Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -316,12 +316,34 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 75809,
+              "jornada": 3,
+              "fechaHora": "2026-11-14T10:00:00.000Z",
+              "local": "CV Nueva Castilla Alevin Femenino",
+              "visitante": "Grupo Egido Pinto B Alevin Femenino",
+              "pabellon": "Nueva Castilla",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 75808,
               "jornada": 3,
               "fechaHora": "2026-11-14T15:30:00.000Z",
               "local": "Mirasur School Alevin Femenino",
               "visitante": "CV Madrid B Alevin Femenino",
               "pabellon": "Colegio Mirasur, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 75805,
+              "jornada": 3,
+              "fechaHora": "2026-11-14T16:00:00.000Z",
+              "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
+              "visitante": "Arganvoley",
+              "pabellon": "Miguel Hernandez, Ceip",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -338,17 +360,6 @@
               "aplazado": false
             },
             {
-              "id": 75805,
-              "jornada": 3,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
-              "visitante": "Arganvoley",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 75806,
               "jornada": 3,
               "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -359,17 +370,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 75809,
-              "jornada": 3,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Nueva Castilla Alevin Femenino",
-              "visitante": "Grupo Egido Pinto B Alevin Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 75807,
@@ -4703,6 +4703,17 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 73295,
+              "jornada": 6,
+              "fechaHora": "2026-11-14T09:30:00.000Z",
+              "local": "Cde Parla Voley Folder C",
+              "visitante": "Stars Sport Madrid Verde",
+              "pabellon": "Miguel Hernandez, Ceip",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 73292,
               "jornada": 6,
               "fechaHora": "2026-11-14T13:00:00.000Z",
@@ -4728,22 +4739,11 @@
               "aplazado": false
             },
             {
-              "id": 73293,
+              "id": 73297,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cuv Alcorcón Naranja",
-              "visitante": "Club Deportivo Loreto Madrid",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 73295,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cde Parla Voley Folder C",
-              "visitante": "Stars Sport Madrid Verde",
+              "local": "Cde Parla Voley Multiopticas B",
+              "visitante": "Claret Madrid B",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -4752,21 +4752,21 @@
             {
               "id": 73296,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T11:30:00.000Z",
               "local": "Cuv Alcorcón Blanco",
               "visitante": "A.D.perales",
-              "pabellon": null,
+              "pabellon": "Los Cantos, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
             },
             {
-              "id": 73297,
+              "id": 73293,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cde Parla Voley Multiopticas B",
-              "visitante": "Claret Madrid B",
-              "pabellon": null,
+              "fechaHora": "2026-11-15T16:30:00.000Z",
+              "local": "Cuv Alcorcón Naranja",
+              "visitante": "Club Deportivo Loreto Madrid",
+              "pabellon": "Los Cantos, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -6808,13 +6808,38 @@
             {
               "id": 59619,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-14T12:45:00.000Z",
               "local": "CV Sanse",
               "visitante": "Cde Parla Voley Parlazul",
-              "pabellon": null,
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 59624,
+              "jornada": 6,
+              "fechaHora": "2026-11-14T17:30:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "CV Collado Villalba A",
+              "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 59623,
+              "jornada": 6,
+              "fechaHora": "2026-11-14T18:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "Manzanares Voley A",
+              "pabellon": "Europa, Pabellon",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "AV ALEMANIA, 2",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=EUROPA, PABELLON AV ALEMANIA, 2, LEGANES",
+              "jugado": false
             },
             {
               "id": 59620,
@@ -6830,33 +6855,10 @@
             {
               "id": 59621,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T09:30:00.000Z",
               "local": "Cvleganes.com A",
               "visitante": "Cuv Alcorcón A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 59623,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cvleganes.com B",
-              "visitante": "Manzanares Voley A",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
-            },
-            {
-              "id": 59624,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "V-Valley CValcalá G1",
-              "visitante": "CV Collado Villalba A",
-              "pabellon": null,
+              "pabellon": "Emilia Pardo Bazan, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -8118,13 +8120,15 @@
         {
           "id": 59623,
           "jornada": 6,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-14T18:00:00.000Z",
           "local": "Cvleganes.com B",
           "visitante": "Manzanares Voley A",
-          "pabellon": null,
+          "pabellon": "Europa, Pabellon",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "AV ALEMANIA, 2",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=EUROPA, PABELLON AV ALEMANIA, 2, LEGANES",
           "jugado": false
         },
         {
@@ -8890,12 +8894,12 @@
               "aplazado": false
             },
             {
-              "id": 57175,
+              "id": 57177,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "A. D. Voleibol Rivas Verde",
-              "visitante": "Ucam Torrejón A",
-              "pabellon": null,
+              "fechaHora": "2026-11-14T16:00:00.000Z",
+              "local": "CV Sanse Rojo",
+              "visitante": "CV Las Rozas A",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -8903,33 +8907,24 @@
             {
               "id": 57176,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-14T16:30:00.000Z",
               "local": "Cvleganes.com B",
               "visitante": "Manzanares Voley A",
-              "pabellon": null,
+              "pabellon": "Emilia Pardo Bazan, Pabellon",
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
+              "direccion": "AV PORTUGAL, S/N",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
               "jugado": false
             },
             {
-              "id": 57177,
+              "id": 57175,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Sanse Rojo",
-              "visitante": "CV Las Rozas A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 57178,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cvleganes.com A",
-              "visitante": "VP Madrid A Amarillo",
-              "pabellon": null,
+              "fechaHora": "2026-11-15T10:00:00.000Z",
+              "local": "A. D. Voleibol Rivas Verde",
+              "visitante": "Ucam Torrejón A",
+              "pabellon": "Jose Hierro, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -8941,6 +8936,17 @@
               "local": "Club Voleibol Móstoles A",
               "visitante": "Dragons Voleibol Moralzarzal A",
               "pabellon": "Pau 4, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57178,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T16:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": "Emilia Pardo Bazan, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -10202,13 +10208,15 @@
         {
           "id": 57176,
           "jornada": 6,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-14T16:30:00.000Z",
           "local": "Cvleganes.com B",
           "visitante": "Manzanares Voley A",
-          "pabellon": null,
+          "pabellon": "Emilia Pardo Bazan, Pabellon",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "AV PORTUGAL, S/N",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
           "jugado": false
         },
         {
@@ -10985,17 +10993,6 @@
               "aplazado": false
             },
             {
-              "id": 67181,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Nueva Castilla A",
-              "visitante": "Stars Sport Madrid Azul",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 67182,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -11009,10 +11006,21 @@
             {
               "id": 67183,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T09:30:00.000Z",
               "local": "Cuv Alcorcón Blanco",
               "visitante": "Gsd Las Suertes",
-              "pabellon": null,
+              "pabellon": "Los Cantos, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 67181,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T11:00:00.000Z",
+              "local": "CV Nueva Castilla A",
+              "visitante": "Stars Sport Madrid Azul",
+              "pabellon": "Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -13042,6 +13050,17 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72169,
+              "jornada": 6,
+              "fechaHora": "2026-11-14T13:00:00.000Z",
+              "local": "Cde Parla Voley Folder D Cadete Femenino",
+              "visitante": "Cvd Fuenlabrada Cadete Femenino",
+              "pabellon": "Miguel Hernandez, Ceip",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72168,
               "jornada": 6,
               "fechaHora": "2026-11-14T15:00:00.000Z",
@@ -13080,17 +13099,6 @@
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "CV Getafe Verde",
               "visitante": "Mirasur School Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 72169,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cde Parla Voley Folder D Cadete Femenino",
-              "visitante": "Cvd Fuenlabrada Cadete Femenino",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -15158,16 +15166,15 @@
               "aplazado": false
             },
             {
-              "id": 62990,
+              "id": 62993,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "A. D. Voleibol Rivas",
-              "visitante": "Manzanares Voley A",
-              "pabellon": null,
-              "esManzanares": true,
+              "fechaHora": "2026-11-14T18:00:00.000Z",
+              "local": "Mintonette CV Pozuelo",
+              "visitante": "VP Madrid B Negro B",
+              "pabellon": "Carlos Ruiz, Polideportivo",
+              "esManzanares": false,
               "esLocal": false,
-              "aplazado": false,
-              "jugado": false
+              "aplazado": false
             },
             {
               "id": 62991,
@@ -15181,15 +15188,18 @@
               "aplazado": false
             },
             {
-              "id": 62993,
+              "id": 62990,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Mintonette CV Pozuelo",
-              "visitante": "VP Madrid B Negro B",
-              "pabellon": null,
-              "esManzanares": false,
+              "fechaHora": "2026-11-15T15:00:00.000Z",
+              "local": "A. D. Voleibol Rivas",
+              "visitante": "Manzanares Voley A",
+              "pabellon": "Jose Hierro, Polideportivo",
+              "esManzanares": true,
               "esLocal": false,
-              "aplazado": false
+              "aplazado": false,
+              "direccion": "AV JOSE HIERRO 86",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=JOSE HIERRO, POLIDEPORTIVO AV JOSE HIERRO 86, RIVAS-VACIAMADRID",
+              "jugado": false
             }
           ]
         },
@@ -16448,13 +16458,15 @@
         {
           "id": 62990,
           "jornada": 6,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-15T15:00:00.000Z",
           "local": "A. D. Voleibol Rivas",
           "visitante": "Manzanares Voley A",
-          "pabellon": null,
+          "pabellon": "Jose Hierro, Polideportivo",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "AV JOSE HIERRO 86",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=JOSE HIERRO, POLIDEPORTIVO AV JOSE HIERRO 86, RIVAS-VACIAMADRID",
           "jugado": false
         },
         {
@@ -17072,6 +17084,17 @@
               "aplazado": false
             },
             {
+              "id": 63255,
+              "jornada": 5,
+              "fechaHora": "2026-11-14T16:00:00.000Z",
+              "local": "CV Majadahonda",
+              "visitante": "Santa Isabel La Asunción",
+              "pabellon": "Principe Felipe, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 63253,
               "jornada": 5,
               "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -17082,17 +17105,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 63255,
-              "jornada": 5,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Majadahonda",
-              "visitante": "Santa Isabel La Asunción",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 63257,
@@ -18875,6 +18887,31 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 56786,
+              "jornada": 8,
+              "fechaHora": "2026-11-14T18:00:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "CV Las Rozas A",
+              "pabellon": "Europa, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56784,
+              "jornada": 8,
+              "fechaHora": "2026-11-14T20:00:00.000Z",
+              "local": "VP Madrid A Amarillo Juvenil Femenino",
+              "visitante": "Manzanares Voley A",
+              "pabellon": "Ceip La Rioja",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "CALLE DE LEÓN FELIPE 3, PUENTE DE VALLECAS",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=CEIP LA RIOJA CALLE DE LEÓN FELIPE 3, PUENTE DE VALLECAS, MADRID",
+              "jugado": false
+            },
+            {
               "id": 56782,
               "jornada": 8,
               "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -18884,29 +18921,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 56783,
-              "jornada": 8,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Bulldogs A",
-              "visitante": "Assa Abloy Sanse",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 56784,
-              "jornada": 8,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "VP Madrid A Amarillo Juvenil Femenino",
-              "visitante": "Manzanares Voley A",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 56785,
@@ -18920,12 +18934,12 @@
               "aplazado": false
             },
             {
-              "id": 56786,
+              "id": 56783,
               "jornada": 8,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cvleganes.com A",
-              "visitante": "CV Las Rozas A",
-              "pabellon": null,
+              "fechaHora": "2026-11-15T10:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "Assa Abloy Sanse",
+              "pabellon": "Universidad Camilo Jose Cela, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -18933,10 +18947,10 @@
             {
               "id": 56787,
               "jornada": 8,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T11:00:00.000Z",
               "local": "Baumit CV Collado Villalba",
               "visitante": "Ucam Torrejón A",
-              "pabellon": null,
+              "pabellon": "Antonio Machado, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -20086,13 +20100,15 @@
         {
           "id": 56784,
           "jornada": 8,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-14T20:00:00.000Z",
           "local": "VP Madrid A Amarillo Juvenil Femenino",
           "visitante": "Manzanares Voley A",
-          "pabellon": null,
+          "pabellon": "Ceip La Rioja",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "CALLE DE LEÓN FELIPE 3, PUENTE DE VALLECAS",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=CEIP LA RIOJA CALLE DE LEÓN FELIPE 3, PUENTE DE VALLECAS, MADRID",
           "jugado": false
         },
         {
@@ -20823,46 +20839,12 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
-              "id": 60912,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "B. M. 2 Ciudad Getafe",
-              "visitante": "VP Madrid B Negro",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 60913,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-14T18:00:00.000Z",
               "local": "Cde Parla Voley Folder",
               "visitante": "Abv Boadilla B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 60915,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cuv Alcorcón Blanco",
-              "visitante": "Manzanares Voley B",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
-            },
-            {
-              "id": 60916,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Valdemoro Las Aguas Juvenil Femenino",
-              "visitante": "Cvfuenlabrada",
-              "pabellon": null,
+              "pabellon": "Miguel Hernandez, Ceip",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -20874,6 +20856,42 @@
               "local": "Arganvoley",
               "visitante": "Club Voleibol Móstoles B",
               "pabellon": "Centro Dotacional Integrado, Arganzuela",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 60915,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T11:30:00.000Z",
+              "local": "Cuv Alcorcón Blanco",
+              "visitante": "Manzanares Voley B",
+              "pabellon": "Los Cantos, Polideportivo",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "AV LOS CANTOS, 28",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=LOS CANTOS, POLIDEPORTIVO AV LOS CANTOS, 28, ALCORCON",
+              "jugado": false
+            },
+            {
+              "id": 60912,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T15:00:00.000Z",
+              "local": "B. M. 2 Ciudad Getafe",
+              "visitante": "VP Madrid B Negro",
+              "pabellon": "Amanecer, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 60916,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T17:00:00.000Z",
+              "local": "CV Valdemoro Las Aguas Juvenil Femenino",
+              "visitante": "Cvfuenlabrada",
+              "pabellon": "Juan Antonio Samaranch",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -22148,13 +22166,15 @@
         {
           "id": 60915,
           "jornada": 6,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-15T11:30:00.000Z",
           "local": "Cuv Alcorcón Blanco",
           "visitante": "Manzanares Voley B",
-          "pabellon": null,
+          "pabellon": "Los Cantos, Polideportivo",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "AV LOS CANTOS, 28",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=LOS CANTOS, POLIDEPORTIVO AV LOS CANTOS, 28, ALCORCON",
           "jugado": false
         },
         {
@@ -24401,10 +24421,10 @@
             {
               "id": 62622,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-14T19:00:00.000Z",
               "local": "Cuv Alcorcón B",
               "visitante": "A.D.perales",
-              "pabellon": null,
+              "pabellon": "Los Cantos, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26547,33 +26567,24 @@
             {
               "id": 57318,
               "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T11:30:00.000Z",
               "local": "Cvleganes.com",
               "visitante": "Manzanares Voley A",
-              "pabellon": null,
+              "pabellon": "Emilia Pardo Bazan, Pabellon",
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
+              "direccion": "AV PORTUGAL, S/N",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
               "jugado": false
             },
             {
               "id": 57319,
               "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T13:30:00.000Z",
               "local": "CV Las Rozas A",
               "visitante": "V-Valley CValcalá G1",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 57320,
-              "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Collado Villalba",
-              "visitante": "Feel Alcobendas",
-              "pabellon": null,
+              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26581,10 +26592,10 @@
             {
               "id": 57321,
               "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T15:30:00.000Z",
               "local": "Ucam Torrejón",
               "visitante": "VP Madrid A Amarillo",
-              "pabellon": null,
+              "pabellon": "M-4 (Sonia Abejón), Pabellón Municipal",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26592,10 +26603,10 @@
             {
               "id": 57322,
               "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T16:30:00.000Z",
               "local": "Cuv Alcorcón Azul",
               "visitante": "CV Sanse",
-              "pabellon": null,
+              "pabellon": "Los Cantos, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26603,10 +26614,21 @@
             {
               "id": 57323,
               "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T17:00:00.000Z",
               "local": "CV Nueva Castilla",
               "visitante": "Cde Parla Voley Ortopedia A",
-              "pabellon": null,
+              "pabellon": "Nueva Castilla",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57320,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T18:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "Feel Alcobendas",
+              "pabellon": "Antonio Machado, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -27812,13 +27834,15 @@
         {
           "id": 57318,
           "jornada": 7,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-15T11:30:00.000Z",
           "local": "Cvleganes.com",
           "visitante": "Manzanares Voley A",
-          "pabellon": null,
+          "pabellon": "Emilia Pardo Bazan, Pabellon",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "AV PORTUGAL, S/N",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
           "jugado": false
         },
         {
@@ -28731,20 +28755,9 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
-              "id": 61210,
-              "jornada": 7,
-              "fechaHora": "2026-11-14T16:00:00.000Z",
-              "local": "Salesianos Estrecho Auxiliadora",
-              "visitante": "CV Las Rozas B",
-              "pabellon": "Salesianos Estrecho",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 61206,
               "jornada": 7,
-              "fechaHora": "2026-11-14T20:00:00.000Z",
+              "fechaHora": "2026-11-14T16:00:00.000Z",
               "local": "CV Yma Majadahonda Junior Femenino",
               "visitante": "Manzanares Voley B Junior Femenino",
               "pabellon": "Principe Felipe, Polideportivo",
@@ -28756,12 +28769,12 @@
               "jugado": false
             },
             {
-              "id": 61205,
+              "id": 61210,
               "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "B. M. 2 De Mayo",
-              "visitante": "Cde Voleibol Colmenar B",
-              "pabellon": null,
+              "fechaHora": "2026-11-14T16:00:00.000Z",
+              "local": "Salesianos Estrecho Auxiliadora",
+              "visitante": "CV Las Rozas B",
+              "pabellon": "Salesianos Estrecho",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -28772,17 +28785,6 @@
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Chv1995 B",
               "visitante": "Saint Louis Morillon",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 61208,
-              "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cde Voleibol Colmenar A",
-              "visitante": "Cd Newman B",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -28806,6 +28808,28 @@
               "local": "Stars Sport Madrid",
               "visitante": "CV Getafe Azul",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 61205,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T15:00:00.000Z",
+              "local": "B. M. 2 De Mayo",
+              "visitante": "Cde Voleibol Colmenar B",
+              "pabellon": "Amanecer, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 61208,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T17:30:00.000Z",
+              "local": "Cde Voleibol Colmenar A",
+              "visitante": "Cd Newman B",
+              "pabellon": "Lorenzo Rico",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -30512,7 +30536,7 @@
         {
           "id": 61206,
           "jornada": 7,
-          "fechaHora": "2026-11-14T20:00:00.000Z",
+          "fechaHora": "2026-11-14T16:00:00.000Z",
           "local": "CV Yma Majadahonda Junior Femenino",
           "visitante": "Manzanares Voley B Junior Femenino",
           "pabellon": "Principe Felipe, Polideportivo",
@@ -31311,23 +31335,23 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
-              "id": 58105,
+              "id": 58110,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Nueva Castilla",
-              "visitante": "Cde Parla Voley Ortopedia",
-              "pabellon": null,
+              "fechaHora": "2026-11-14T16:00:00.000Z",
+              "local": "CV Sanse A",
+              "visitante": "Circe Fisioterapia CV Collado Villalba",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
             },
             {
-              "id": 58106,
+              "id": 58108,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Salesianos San Miguel B",
-              "visitante": "CV Madrid A",
-              "pabellon": null,
+              "fechaHora": "2026-11-14T20:00:00.000Z",
+              "local": "CV Majadahonda A",
+              "visitante": "Cd Newman A",
+              "pabellon": "Principe Felipe, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31345,12 +31369,23 @@
               "jugado": false
             },
             {
-              "id": 58108,
+              "id": 58106,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Majadahonda A",
-              "visitante": "Cd Newman A",
-              "pabellon": null,
+              "fechaHora": "2026-11-15T13:30:00.000Z",
+              "local": "Salesianos San Miguel B",
+              "visitante": "CV Madrid A",
+              "pabellon": "San Miguel, Colegio Salesianos",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 58105,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T19:00:00.000Z",
+              "local": "CV Nueva Castilla",
+              "visitante": "Cde Parla Voley Ortopedia",
+              "pabellon": "Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31358,21 +31393,10 @@
             {
               "id": 58109,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T19:00:00.000Z",
               "local": "Abv Boadilla B",
               "visitante": "Club Voleibol Torrelodones B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 58110,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Sanse A",
-              "visitante": "Circe Fisioterapia CV Collado Villalba",
-              "pabellon": null,
+              "pabellon": "Ceip Principe Don Felipe",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -34611,7 +34635,7 @@
     {
       "id": 61206,
       "jornada": 7,
-      "fechaHora": "2026-11-14T20:00:00.000Z",
+      "fechaHora": "2026-11-14T16:00:00.000Z",
       "local": "CV Yma Majadahonda Junior Femenino",
       "visitante": "Manzanares Voley B Junior Femenino",
       "pabellon": "Principe Felipe, Polideportivo",
@@ -34622,6 +34646,51 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=PRINCIPE FELIPE, POLIDEPORTIVO AV GUADARRAMA, 7, MAJADAHONDA",
       "jugado": false,
       "categoria": "Junior Femenino B"
+    },
+    {
+      "id": 57176,
+      "jornada": 6,
+      "fechaHora": "2026-11-14T16:30:00.000Z",
+      "local": "Cvleganes.com B",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "Emilia Pardo Bazan, Pabellon",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "AV PORTUGAL, S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
+      "jugado": false,
+      "categoria": "Cadete Femenino A"
+    },
+    {
+      "id": 59623,
+      "jornada": 6,
+      "fechaHora": "2026-11-14T18:00:00.000Z",
+      "local": "Cvleganes.com B",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "Europa, Pabellon",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "AV ALEMANIA, 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=EUROPA, PABELLON AV ALEMANIA, 2, LEGANES",
+      "jugado": false,
+      "categoria": "Infantil Masculino"
+    },
+    {
+      "id": 56784,
+      "jornada": 8,
+      "fechaHora": "2026-11-14T20:00:00.000Z",
+      "local": "VP Madrid A Amarillo Juvenil Femenino",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "Ceip La Rioja",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CALLE DE LEÓN FELIPE 3, PUENTE DE VALLECAS",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=CEIP LA RIOJA CALLE DE LEÓN FELIPE 3, PUENTE DE VALLECAS, MADRID",
+      "jugado": false,
+      "categoria": "Juvenil Femenino A"
     },
     {
       "id": 75806,
@@ -34650,45 +34719,6 @@
       "categoria": "Infantil Femenino A"
     },
     {
-      "id": 59623,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Cvleganes.com B",
-      "visitante": "Manzanares Voley A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Infantil Masculino"
-    },
-    {
-      "id": 57176,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Cvleganes.com B",
-      "visitante": "Manzanares Voley A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Cadete Femenino A"
-    },
-    {
-      "id": 62990,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "A. D. Voleibol Rivas",
-      "visitante": "Manzanares Voley A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Cadete Masculino A"
-    },
-    {
       "id": 63253,
       "jornada": 5,
       "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -34700,32 +34730,6 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Cadete Masculino B"
-    },
-    {
-      "id": 56784,
-      "jornada": 8,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "VP Madrid A Amarillo Juvenil Femenino",
-      "visitante": "Manzanares Voley A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Juvenil Femenino A"
-    },
-    {
-      "id": 60915,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Cuv Alcorcón Blanco",
-      "visitante": "Manzanares Voley B",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Juvenil Femenino B"
     },
     {
       "id": 62627,
@@ -34741,19 +34745,6 @@
       "categoria": "Juvenil Masculino"
     },
     {
-      "id": 57318,
-      "jornada": 7,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Cvleganes.com",
-      "visitante": "Manzanares Voley A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Junior Femenino A"
-    },
-    {
       "id": 58107,
       "jornada": 6,
       "fechaHora": "2026-11-15T00:00:00.000Z",
@@ -34765,6 +34756,51 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Sénior Femenino"
+    },
+    {
+      "id": 75817,
+      "jornada": 5,
+      "fechaHora": "2026-11-15T09:30:00.000Z",
+      "local": "Manzanares Voley Alevin",
+      "visitante": "Avp B Yagüe",
+      "pabellon": "Pabellon Ceip Jose Hierro",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "AVENIDA SISTEMA SOLAR 8",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON CEIP JOSE HIERRO  AVENIDA SISTEMA SOLAR 8, PARLA",
+      "jugado": false,
+      "categoria": "Alevín Femenino"
+    },
+    {
+      "id": 72167,
+      "jornada": 6,
+      "fechaHora": "2026-11-15T09:30:00.000Z",
+      "local": "Manzanares Voley C Cadete Femenino",
+      "visitante": "C.d.b.colegio Aquila 2",
+      "pabellon": "Colegio Aquila",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "CALLE DEL PLANETA JÚPITER, 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO AQUILA CALLE DEL PLANETA JÚPITER, 2, PARLA",
+      "jugado": false,
+      "categoria": "Cadete Femenino C"
+    },
+    {
+      "id": 64700,
+      "jornada": 5,
+      "fechaHora": "2026-11-15T11:00:00.000Z",
+      "local": "Avp B Rafranjo",
+      "visitante": "Manzanares Voley C",
+      "pabellon": "Pabellón Ceip José Hierro",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "AVENIDA DEL SISTEMA SOLAR, 101A",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN CEIP JOSÉ HIERRO  AVENIDA DEL SISTEMA SOLAR, 101A, PARLA",
+      "jugado": false,
+      "categoria": "Juvenil Femenino C"
     }
   ],
   "ultimos": [
