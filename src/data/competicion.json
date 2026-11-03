@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-03T02:02:22.378Z",
+  "actualizado": "2026-11-03T08:44:20.461Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -327,6 +327,20 @@
               "aplazado": false
             },
             {
+              "id": 75806,
+              "jornada": 3,
+              "fechaHora": "2026-11-14T15:15:00.000Z",
+              "local": "Manzanares Voley Alevin",
+              "visitante": "Avp A Pozo Red",
+              "pabellon": "Gallur , Cdm",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "GALLUR 2",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+              "jugado": false
+            },
+            {
               "id": 75808,
               "jornada": 3,
               "fechaHora": "2026-11-14T15:30:00.000Z",
@@ -358,18 +372,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 75806,
-              "jornada": 3,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Manzanares Voley Alevin",
-              "visitante": "Avp A Pozo Red",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 75807,
@@ -1816,13 +1818,15 @@
         {
           "id": 75806,
           "jornada": 3,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-14T15:15:00.000Z",
           "local": "Manzanares Voley Alevin",
           "visitante": "Avp A Pozo Red",
-          "pabellon": null,
+          "pabellon": "Gallur , Cdm",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "GALLUR 2",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
           "jugado": false
         },
         {
@@ -2643,25 +2647,13 @@
             {
               "id": 59892,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T10:00:00.000Z",
               "local": "Coslada Voley A",
               "visitante": "Club Voleibol Torrelodones A",
-              "pabellon": null,
+              "pabellon": "El Olivo, Polideportivo Municipal",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 59894,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Manzanares Voley A",
-              "visitante": "Cd Newman A",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 59895,
@@ -2673,6 +2665,20 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 59894,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T12:00:00.000Z",
+              "local": "Manzanares Voley A",
+              "visitante": "Cd Newman A",
+              "pabellon": "Gallur , Cdm",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "GALLUR 2",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+              "jugado": false
             },
             {
               "id": 59890,
@@ -3942,13 +3948,15 @@
         {
           "id": 59894,
           "jornada": 6,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-15T12:00:00.000Z",
           "local": "Manzanares Voley A",
           "visitante": "Cd Newman A",
-          "pabellon": null,
+          "pabellon": "Gallur , Cdm",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "GALLUR 2",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
           "jugado": false
         },
         {
@@ -4739,20 +4747,9 @@
               "aplazado": false
             },
             {
-              "id": 73297,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Cde Parla Voley Multiopticas B",
-              "visitante": "Claret Madrid B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 73296,
               "jornada": 6,
-              "fechaHora": "2026-11-15T11:30:00.000Z",
+              "fechaHora": "2026-11-15T15:30:00.000Z",
               "local": "Cuv Alcorcón Blanco",
               "visitante": "A.D.perales",
               "pabellon": "Los Cantos, Polideportivo",
@@ -4761,9 +4758,20 @@
               "aplazado": false
             },
             {
+              "id": 73297,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T16:00:00.000Z",
+              "local": "Cde Parla Voley Multiopticas B",
+              "visitante": "Claret Madrid B",
+              "pabellon": "Miguel Hernandez, Ceip",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 73293,
               "jornada": 6,
-              "fechaHora": "2026-11-15T16:30:00.000Z",
+              "fechaHora": "2026-11-15T17:30:00.000Z",
               "local": "Cuv Alcorcón Naranja",
               "visitante": "Club Deportivo Loreto Madrid",
               "pabellon": "Los Cantos, Polideportivo",
@@ -6828,6 +6836,17 @@
               "aplazado": false
             },
             {
+              "id": 59620,
+              "jornada": 6,
+              "fechaHora": "2026-11-14T18:00:00.000Z",
+              "local": "CV Tres Cantos",
+              "visitante": "Chv1995 A",
+              "pabellon": "Espacio Enrique Mas, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 59623,
               "jornada": 6,
               "fechaHora": "2026-11-14T18:00:00.000Z",
@@ -6840,17 +6859,6 @@
               "direccion": "AV ALEMANIA, 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=EUROPA, PABELLON AV ALEMANIA, 2, LEGANES",
               "jugado": false
-            },
-            {
-              "id": 59620,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Tres Cantos",
-              "visitante": "Chv1995 A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 59621,
@@ -10982,34 +10990,12 @@
               "aplazado": false
             },
             {
-              "id": 67180,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Las Nieves A",
-              "visitante": "VP Madrid C Blanco C",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 67182,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-14T19:30:00.000Z",
               "local": "Cde Parla Voley Parlazul B",
               "visitante": "C.d.v. Vallecas Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 67183,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T09:30:00.000Z",
-              "local": "Cuv Alcorcón Blanco",
-              "visitante": "Gsd Las Suertes",
-              "pabellon": "Los Cantos, Polideportivo",
+              "pabellon": "Miguel Hernandez, Ceip",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -11021,6 +11007,28 @@
               "local": "CV Nueva Castilla A",
               "visitante": "Stars Sport Madrid Azul",
               "pabellon": "Nueva Castilla",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 67180,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T11:30:00.000Z",
+              "local": "Las Nieves A",
+              "visitante": "VP Madrid C Blanco C",
+              "pabellon": "Las Nieves, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 67183,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T13:30:00.000Z",
+              "local": "Cuv Alcorcón Blanco",
+              "visitante": "Gsd Las Suertes",
+              "pabellon": "Los Cantos, Polideportivo",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -12995,8 +13003,8 @@
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
-              "direccion": "PICO DE LA CIERVA, 4",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA PICO DE LA CIERVA, 4, MADRID",
+              "direccion": "C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID, MADRID",
               "jugado": false
             },
             {
@@ -13094,17 +13102,6 @@
               "aplazado": false
             },
             {
-              "id": 72166,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Getafe Verde",
-              "visitante": "Mirasur School Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 72167,
               "jornada": 6,
               "fechaHora": "2026-11-15T09:30:00.000Z",
@@ -13117,6 +13114,17 @@
               "direccion": "CALLE DEL PLANETA JÚPITER, 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO AQUILA CALLE DEL PLANETA JÚPITER, 2, PARLA",
               "jugado": false
+            },
+            {
+              "id": 72166,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T16:00:00.000Z",
+              "local": "CV Getafe Verde",
+              "visitante": "Mirasur School Cadete Femenino",
+              "pabellon": "Cerrobuenavista, Polideportivo Municipal",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -14372,8 +14380,8 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "direccion": "PICO DE LA CIERVA, 4",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA PICO DE LA CIERVA, 4, MADRID",
+          "direccion": "C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID, MADRID",
           "jugado": false
         },
         {
@@ -17097,25 +17105,16 @@
             {
               "id": 63253,
               "jornada": 5,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T12:00:00.000Z",
               "local": "Manzanares Voley B",
               "visitante": "Salesianos Estrecho Bosco Cadete Masculino",
-              "pabellon": null,
+              "pabellon": "Gallur , Cdm",
               "esManzanares": true,
               "esLocal": true,
               "aplazado": false,
+              "direccion": "GALLUR 2",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
               "jugado": false
-            },
-            {
-              "id": 63257,
-              "jornada": 5,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Getafe Azul",
-              "visitante": "Avengers Lfimolière Vva. Cañada",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 63256,
@@ -17124,6 +17123,17 @@
               "local": "Voleibol Hispano Usera",
               "visitante": "Parla Voley Multiopticas",
               "pabellon": "Orcasur, Cdm",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 63257,
+              "jornada": 5,
+              "fechaHora": "2026-11-15T16:00:00.000Z",
+              "local": "CV Getafe Azul",
+              "visitante": "Avengers Lfimolière Vva. Cañada",
+              "pabellon": "Cerrobuenavista, Polideportivo Municipal",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -18006,13 +18016,15 @@
         {
           "id": 63253,
           "jornada": 5,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-15T12:00:00.000Z",
           "local": "Manzanares Voley B",
           "visitante": "Salesianos Estrecho Bosco Cadete Masculino",
-          "pabellon": null,
+          "pabellon": "Gallur , Cdm",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "GALLUR 2",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
           "jugado": false
         },
         {
@@ -24408,6 +24420,17 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 62626,
+              "jornada": 6,
+              "fechaHora": "2026-11-14T15:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "CV Guadarrama",
+              "pabellon": "Pabellón 5 Torres",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 62625,
               "jornada": 6,
               "fechaHora": "2026-11-14T18:00:00.000Z",
@@ -24452,26 +24475,17 @@
               "aplazado": false
             },
             {
-              "id": 62626,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Chv1995 A",
-              "visitante": "CV Guadarrama",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 62627,
               "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T14:00:00.000Z",
               "local": "Manzanares Voley",
               "visitante": "VP Madrid B Negro B",
-              "pabellon": null,
+              "pabellon": "Gallur , Cdm",
               "esManzanares": true,
               "esLocal": true,
               "aplazado": false,
+              "direccion": "GALLUR 2",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
               "jugado": false
             }
           ]
@@ -25726,13 +25740,15 @@
         {
           "id": 62627,
           "jornada": 6,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-15T14:00:00.000Z",
           "local": "Manzanares Voley",
           "visitante": "VP Madrid B Negro B",
-          "pabellon": null,
+          "pabellon": "Gallur , Cdm",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "GALLUR 2",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
           "jugado": false
         },
         {
@@ -27664,7 +27680,7 @@
             {
               "id": 57408,
               "jornada": 22,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Manzanares Voley A",
               "visitante": "CV Collado Villalba",
               "pabellon": null,
@@ -27676,7 +27692,7 @@
             {
               "id": 57409,
               "jornada": 22,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "CV Las Rozas A",
               "visitante": "Ucam Torrejón",
               "pabellon": null,
@@ -27687,7 +27703,7 @@
             {
               "id": 57410,
               "jornada": 22,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Cvleganes.com",
               "visitante": "Cuv Alcorcón Azul",
               "pabellon": null,
@@ -27698,7 +27714,7 @@
             {
               "id": 57411,
               "jornada": 22,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "V-Valley CValcalá G1",
               "visitante": "CV Nueva Castilla",
               "pabellon": null,
@@ -27709,7 +27725,7 @@
             {
               "id": 57412,
               "jornada": 22,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "Feel Alcobendas",
               "visitante": "Cde Parla Voley Ortopedia A",
               "pabellon": null,
@@ -27720,7 +27736,7 @@
             {
               "id": 57413,
               "jornada": 22,
-              "fechaHora": "2027-03-28T00:00:00.000Z",
+              "fechaHora": "2027-04-04T00:00:00.000Z",
               "local": "VP Madrid A Amarillo",
               "visitante": "CV Sanse",
               "pabellon": null,
@@ -28016,7 +28032,7 @@
         {
           "id": 57408,
           "jornada": 22,
-          "fechaHora": "2027-03-28T00:00:00.000Z",
+          "fechaHora": "2027-04-04T00:00:00.000Z",
           "local": "Manzanares Voley A",
           "visitante": "CV Collado Villalba",
           "pabellon": null,
@@ -28780,23 +28796,12 @@
               "aplazado": false
             },
             {
-              "id": 61207,
-              "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Chv1995 B",
-              "visitante": "Saint Louis Morillon",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 61209,
               "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-14T18:00:00.000Z",
               "local": "Chv1995 Arganzuela",
               "visitante": "CV Bulldogs B Junior Femenino",
-              "pabellon": null,
+              "pabellon": "Ies Blanca Fernandez Ochoa",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -28804,10 +28809,21 @@
             {
               "id": 61211,
               "jornada": 7,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
+              "fechaHora": "2026-11-15T10:00:00.000Z",
               "local": "Stars Sport Madrid",
               "visitante": "CV Getafe Azul",
-              "pabellon": null,
+              "pabellon": "Nueva Castilla",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 61207,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T12:00:00.000Z",
+              "local": "Chv1995 B",
+              "visitante": "Saint Louis Morillon",
+              "pabellon": "Pabellón 5 Torres",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -28826,7 +28842,7 @@
             {
               "id": 61208,
               "jornada": 7,
-              "fechaHora": "2026-11-15T17:30:00.000Z",
+              "fechaHora": "2026-11-15T17:00:00.000Z",
               "local": "Cde Voleibol Colmenar A",
               "visitante": "Cd Newman B",
               "pabellon": "Lorenzo Rico",
@@ -31357,18 +31373,6 @@
               "aplazado": false
             },
             {
-              "id": 58107,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Manzanares Voley Senior Femenino",
-              "visitante": "CV Bulldogs A",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
-            },
-            {
               "id": 58106,
               "jornada": 6,
               "fechaHora": "2026-11-15T13:30:00.000Z",
@@ -31378,6 +31382,20 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 58107,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T17:00:00.000Z",
+              "local": "Manzanares Voley Senior Femenino",
+              "visitante": "CV Bulldogs A",
+              "pabellon": "Colegio Nueva Castilla (Nuevo)",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "CALLE MAZATERON, 12",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+              "jugado": false
             },
             {
               "id": 58105,
@@ -32658,13 +32676,15 @@
         {
           "id": 58107,
           "jornada": 6,
-          "fechaHora": "2026-11-15T00:00:00.000Z",
+          "fechaHora": "2026-11-15T17:00:00.000Z",
           "local": "Manzanares Voley Senior Femenino",
           "visitante": "CV Bulldogs A",
-          "pabellon": null,
+          "pabellon": "Colegio Nueva Castilla (Nuevo)",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "direccion": "CALLE MAZATERON, 12",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
           "jugado": false
         },
         {
@@ -34419,8 +34439,8 @@
       "esManzanares": true,
       "esLocal": false,
       "aplazado": false,
-      "direccion": "PICO DE LA CIERVA, 4",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA PICO DE LA CIERVA, 4, MADRID",
+      "direccion": "C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID, MADRID",
       "jugado": false,
       "categoria": "Cadete Femenino C"
     },
@@ -34633,6 +34653,21 @@
       "categoria": "Infantil Femenino B"
     },
     {
+      "id": 75806,
+      "jornada": 3,
+      "fechaHora": "2026-11-14T15:15:00.000Z",
+      "local": "Manzanares Voley Alevin",
+      "visitante": "Avp A Pozo Red",
+      "pabellon": "Gallur , Cdm",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "GALLUR 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+      "jugado": false,
+      "categoria": "Alevín Femenino"
+    },
+    {
       "id": 61206,
       "jornada": 7,
       "fechaHora": "2026-11-14T16:00:00.000Z",
@@ -34693,71 +34728,6 @@
       "categoria": "Juvenil Femenino A"
     },
     {
-      "id": 75806,
-      "jornada": 3,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Manzanares Voley Alevin",
-      "visitante": "Avp A Pozo Red",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Alevín Femenino"
-    },
-    {
-      "id": 59894,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Cd Newman A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Infantil Femenino A"
-    },
-    {
-      "id": 63253,
-      "jornada": 5,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Manzanares Voley B",
-      "visitante": "Salesianos Estrecho Bosco Cadete Masculino",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Cadete Masculino B"
-    },
-    {
-      "id": 62627,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Manzanares Voley",
-      "visitante": "VP Madrid B Negro B",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Juvenil Masculino"
-    },
-    {
-      "id": 58107,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T00:00:00.000Z",
-      "local": "Manzanares Voley Senior Femenino",
-      "visitante": "CV Bulldogs A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Sénior Femenino"
-    },
-    {
       "id": 75817,
       "jornada": 5,
       "fechaHora": "2026-11-15T09:30:00.000Z",
@@ -34801,6 +34771,66 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN CEIP JOSÉ HIERRO  AVENIDA DEL SISTEMA SOLAR, 101A, PARLA",
       "jugado": false,
       "categoria": "Juvenil Femenino C"
+    },
+    {
+      "id": 60915,
+      "jornada": 6,
+      "fechaHora": "2026-11-15T11:30:00.000Z",
+      "local": "Cuv Alcorcón Blanco",
+      "visitante": "Manzanares Voley B",
+      "pabellon": "Los Cantos, Polideportivo",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "AV LOS CANTOS, 28",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=LOS CANTOS, POLIDEPORTIVO AV LOS CANTOS, 28, ALCORCON",
+      "jugado": false,
+      "categoria": "Juvenil Femenino B"
+    },
+    {
+      "id": 57318,
+      "jornada": 7,
+      "fechaHora": "2026-11-15T11:30:00.000Z",
+      "local": "Cvleganes.com",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "Emilia Pardo Bazan, Pabellon",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "AV PORTUGAL, S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
+      "jugado": false,
+      "categoria": "Junior Femenino A"
+    },
+    {
+      "id": 59894,
+      "jornada": 6,
+      "fechaHora": "2026-11-15T12:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Cd Newman A",
+      "pabellon": "Gallur , Cdm",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "GALLUR 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+      "jugado": false,
+      "categoria": "Infantil Femenino A"
+    },
+    {
+      "id": 63253,
+      "jornada": 5,
+      "fechaHora": "2026-11-15T12:00:00.000Z",
+      "local": "Manzanares Voley B",
+      "visitante": "Salesianos Estrecho Bosco Cadete Masculino",
+      "pabellon": "Gallur , Cdm",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "GALLUR 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+      "jugado": false,
+      "categoria": "Cadete Masculino B"
     }
   ],
   "ultimos": [
