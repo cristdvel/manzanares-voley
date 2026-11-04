@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-04T11:54:42.944Z",
+  "actualizado": "2026-11-04T19:31:44.717Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -448,13 +448,15 @@
             {
               "id": 75814,
               "jornada": 4,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "fechaHora": "2026-11-22T09:30:00.000Z",
               "local": "Arganvoley",
               "visitante": "Manzanares Voley Alevin",
-              "pabellon": null,
+              "pabellon": "Centro Dotacional Integrado, Arganzuela",
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
+              "direccion": "CANARIAS 17",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DOTACIONAL INTEGRADO, ARGANZUELA CANARIAS 17, MADRID",
               "jugado": false
             }
           ]
@@ -1846,13 +1848,15 @@
         {
           "id": 75814,
           "jornada": 4,
-          "fechaHora": "2026-11-22T00:00:00.000Z",
+          "fechaHora": "2026-11-22T09:30:00.000Z",
           "local": "Arganvoley",
           "visitante": "Manzanares Voley Alevin",
-          "pabellon": null,
+          "pabellon": "Centro Dotacional Integrado, Arganzuela",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "CANARIAS 17",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DOTACIONAL INTEGRADO, ARGANZUELA CANARIAS 17, MADRID",
           "jugado": false
         },
         {
@@ -8559,7 +8563,7 @@
               "fechaHora": "2026-10-04T13:30:00.000Z",
               "local": "VP Madrid A Amarillo",
               "visitante": "Ucam Torrejón A",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -8676,7 +8680,7 @@
               "fechaHora": "2026-10-17T12:15:00.000Z",
               "local": "VP Madrid A Amarillo",
               "visitante": "A. D. Voleibol Rivas Verde",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -10714,7 +10718,7 @@
               "fechaHora": "2026-10-10T13:30:00.000Z",
               "local": "VP Madrid C Blanco C",
               "visitante": "Nuestra Señora Del Pilar Cadete Femenino",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -10859,7 +10863,7 @@
               "fechaHora": "2026-10-24T13:30:00.000Z",
               "local": "VP Madrid C Blanco C",
               "visitante": "C.d.v. Vallecas Cadete Femenino",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -14941,7 +14945,7 @@
               "fechaHora": "2026-10-17T12:15:00.000Z",
               "local": "VP Madrid B Negro B",
               "visitante": "Cuv Alcorcón B",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -18426,7 +18430,7 @@
               "fechaHora": "2026-09-27T16:00:00.000Z",
               "local": "VP Madrid A Amarillo Juvenil Femenino",
               "visitante": "Chv1995 A",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -18504,7 +18508,7 @@
               "fechaHora": "2026-10-04T16:15:00.000Z",
               "local": "VP Madrid A Amarillo Juvenil Femenino",
               "visitante": "Feel Alcobendas Negro",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -18660,7 +18664,7 @@
               "fechaHora": "2026-10-18T18:30:00.000Z",
               "local": "VP Madrid A Amarillo Juvenil Femenino",
               "visitante": "Baumit CV Collado Villalba",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -18903,6 +18907,17 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 56783,
+              "jornada": 8,
+              "fechaHora": "2026-11-14T10:00:00.000Z",
+              "local": "CV Bulldogs A",
+              "visitante": "Assa Abloy Sanse",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 56782,
               "jornada": 8,
               "fechaHora": "2026-11-14T11:00:00.000Z",
@@ -18948,17 +18963,6 @@
               "direccion": "CALLE DE LEÓN FELIPE 3, PUENTE DE VALLECAS",
               "mapa": "https://www.google.com/maps/search/?api=1&query=CEIP LA RIOJA CALLE DE LEÓN FELIPE 3, PUENTE DE VALLECAS, MADRID",
               "jugado": false
-            },
-            {
-              "id": 56783,
-              "jornada": 8,
-              "fechaHora": "2026-11-15T10:00:00.000Z",
-              "local": "CV Bulldogs A",
-              "visitante": "Assa Abloy Sanse",
-              "pabellon": "Universidad Camilo Jose Cela, Pabellon",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 56787,
@@ -20595,12 +20599,12 @@
               "fechaHora": "2026-10-11T18:00:00.000Z",
               "local": "VP Madrid C Blanco",
               "visitante": "Manzanares Voley B",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
-              "direccion": "RONDA DEL SUR, 4",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=C.D.M. ENTREVÍAS RONDA DEL SUR, 4, MADRID",
+              "direccion": "C/ RONDA DEL SUR, 4",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=CDM ENTREVÍAS C/ RONDA DEL SUR, 4, MADRID",
               "jugado": true,
               "setsLocal": 1,
               "setsVisitante": 3,
@@ -20707,7 +20711,7 @@
               "fechaHora": "2026-10-24T15:45:00.000Z",
               "local": "VP Madrid C Blanco",
               "visitante": "Abv Boadilla B",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -22120,12 +22124,12 @@
           "fechaHora": "2026-10-11T18:00:00.000Z",
           "local": "VP Madrid C Blanco",
           "visitante": "Manzanares Voley B",
-          "pabellon": "C.d.m. Entrevías",
+          "pabellon": "Cdm Entrevías",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "direccion": "RONDA DEL SUR, 4",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=C.D.M. ENTREVÍAS RONDA DEL SUR, 4, MADRID",
+          "direccion": "C/ RONDA DEL SUR, 4",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=CDM ENTREVÍAS C/ RONDA DEL SUR, 4, MADRID",
           "jugado": true,
           "setsLocal": 1,
           "setsVisitante": 3,
@@ -24080,7 +24084,7 @@
               "fechaHora": "2026-10-04T09:30:00.000Z",
               "local": "VP Madrid B Negro B",
               "visitante": "CV Getafe Azul",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -24203,7 +24207,7 @@
               "fechaHora": "2026-10-17T14:30:00.000Z",
               "local": "VP Madrid B Negro B",
               "visitante": "CV Aranjuez",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -24376,7 +24380,7 @@
               "fechaHora": "2026-11-08T09:30:00.000Z",
               "local": "VP Madrid B Negro B",
               "visitante": "Chv1995 A",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26169,12 +26173,12 @@
               "fechaHora": "2026-10-04T19:00:00.000Z",
               "local": "VP Madrid A Amarillo",
               "visitante": "Manzanares Voley A",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
-              "direccion": "RONDA DEL SUR, 4",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=C.D.M. ENTREVÍAS RONDA DEL SUR, 4, MADRID",
+              "direccion": "C/ RONDA DEL SUR, 4",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=CDM ENTREVÍAS C/ RONDA DEL SUR, 4, MADRID",
               "jugado": true,
               "setsLocal": 3,
               "setsVisitante": 2,
@@ -26203,7 +26207,7 @@
               "fechaHora": "2026-10-11T16:00:00.000Z",
               "local": "VP Madrid A Amarillo",
               "visitante": "Feel Alcobendas",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26398,7 +26402,7 @@
               "fechaHora": "2026-10-25T18:30:00.000Z",
               "local": "VP Madrid A Amarillo",
               "visitante": "Cvleganes.com",
-              "pabellon": "C.d.m. Entrevías",
+              "pabellon": "Cdm Entrevías",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -27758,12 +27762,12 @@
           "fechaHora": "2026-10-04T19:00:00.000Z",
           "local": "VP Madrid A Amarillo",
           "visitante": "Manzanares Voley A",
-          "pabellon": "C.d.m. Entrevías",
+          "pabellon": "Cdm Entrevías",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "direccion": "RONDA DEL SUR, 4",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=C.D.M. ENTREVÍAS RONDA DEL SUR, 4, MADRID",
+          "direccion": "C/ RONDA DEL SUR, 4",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=CDM ENTREVÍAS C/ RONDA DEL SUR, 4, MADRID",
           "jugado": true,
           "setsLocal": 3,
           "setsVisitante": 2,
@@ -33293,6 +33297,20 @@
               "aplazado": false
             },
             {
+              "id": 62194,
+              "jornada": 5,
+              "fechaHora": "2026-11-21T16:00:00.000Z",
+              "local": "Maria Rodrigo",
+              "visitante": "Manzanares Voley",
+              "pabellon": "Ies Maria Rodrigo",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "CALLE TALAMANCA DEL JARAMA, 2",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=IES MARIA RODRIGO CALLE TALAMANCA DEL JARAMA, 2, MADRID",
+              "jugado": false
+            },
+            {
               "id": 62193,
               "jornada": 5,
               "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -33302,18 +33320,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 62194,
-              "jornada": 5,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Maria Rodrigo",
-              "visitante": "Manzanares Voley",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 62196,
@@ -34217,13 +34223,15 @@
         {
           "id": 62194,
           "jornada": 5,
-          "fechaHora": "2026-11-22T00:00:00.000Z",
+          "fechaHora": "2026-11-21T16:00:00.000Z",
           "local": "Maria Rodrigo",
           "visitante": "Manzanares Voley",
-          "pabellon": null,
+          "pabellon": "Ies Maria Rodrigo",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "CALLE TALAMANCA DEL JARAMA, 2",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=IES MARIA RODRIGO CALLE TALAMANCA DEL JARAMA, 2, MADRID",
           "jugado": false
         },
         {
