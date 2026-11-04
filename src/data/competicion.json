@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-03T19:10:40.540Z",
+  "actualizado": "2026-11-04T11:54:42.944Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -13084,23 +13084,23 @@
               "aplazado": false
             },
             {
-              "id": 72164,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "CV Aranjuez",
-              "visitante": "A.D.perales Blanco",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 72165,
               "jornada": 6,
               "fechaHora": "2026-11-15T00:00:00.000Z",
               "local": "Descansa...",
               "visitante": "Cde Parla Voley Maxcolchon E Cadete Femenino",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 72164,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T09:30:00.000Z",
+              "local": "CV Aranjuez",
+              "visitante": "A.D.perales Blanco",
+              "pabellon": "Santa Teresa",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -15070,17 +15070,6 @@
           "fecha": "2026-11-08T00:00:00.000Z",
           "partidos": [
             {
-              "id": 62986,
-              "jornada": 5,
-              "fechaHora": "2026-11-07T09:30:00.000Z",
-              "local": "V-Valley CValcalá G2",
-              "visitante": "Club Voleibol Móstoles B",
-              "pabellon": "Espartales, Ciudad Deportiva",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 62987,
               "jornada": 5,
               "fechaHora": "2026-11-07T16:00:00.000Z",
@@ -15137,6 +15126,17 @@
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
               "jugado": false
+            },
+            {
+              "id": 62986,
+              "jornada": 5,
+              "fechaHora": "2027-02-13T09:30:00.000Z",
+              "local": "V-Valley CValcalá G2",
+              "visitante": "Club Voleibol Móstoles B",
+              "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -18903,6 +18903,17 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 56782,
+              "jornada": 8,
+              "fechaHora": "2026-11-14T11:00:00.000Z",
+              "local": "Chv1995 A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": "Pabellón 5 Torres",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 56785,
               "jornada": 8,
               "fechaHora": "2026-11-14T13:30:00.000Z",
@@ -18937,17 +18948,6 @@
               "direccion": "CALLE DE LEÓN FELIPE 3, PUENTE DE VALLECAS",
               "mapa": "https://www.google.com/maps/search/?api=1&query=CEIP LA RIOJA CALLE DE LEÓN FELIPE 3, PUENTE DE VALLECAS, MADRID",
               "jugado": false
-            },
-            {
-              "id": 56782,
-              "jornada": 8,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Chv1995 A",
-              "visitante": "Club Voleibol Móstoles A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 56783,
