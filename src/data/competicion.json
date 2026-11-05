@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-05T11:56:14.155Z",
+  "actualizado": "2026-11-05T19:39:26.139Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -28949,6 +28949,17 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
+              "id": 61221,
+              "jornada": 9,
+              "fechaHora": "2026-11-28T20:00:00.000Z",
+              "local": "CV Yma Majadahonda Junior Femenino",
+              "visitante": "Cd Newman B",
+              "pabellon": "Club Deportivo Newman",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 61219,
               "jornada": 9,
               "fechaHora": "2026-11-29T00:00:00.000Z",
@@ -28966,17 +28977,6 @@
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "B. M. 2 De Mayo",
               "visitante": "Saint Louis Morillon",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 61221,
-              "jornada": 9,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "CV Yma Majadahonda Junior Femenino",
-              "visitante": "Cd Newman B",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -33288,7 +33288,7 @@
             {
               "id": 62197,
               "jornada": 5,
-              "fechaHora": "2026-11-07T15:00:00.000Z",
+              "fechaHora": "2026-11-07T14:20:00.000Z",
               "local": "Adc Sanfermin",
               "visitante": "CV Getafe Rojo",
               "pabellon": "Orcasur, Cdm",
