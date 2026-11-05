@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-04T19:31:44.717Z",
+  "actualizado": "2026-11-05T11:56:14.155Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -26709,23 +26709,23 @@
               "aplazado": false
             },
             {
-              "id": 57328,
-              "jornada": 8,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "V-Valley CValcalá G1",
-              "visitante": "CV Collado Villalba",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57329,
               "jornada": 8,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Cvleganes.com",
               "visitante": "CV Las Rozas A",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57328,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T11:30:00.000Z",
+              "local": "V-Valley CValcalá G1",
+              "visitante": "CV Collado Villalba",
+              "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31359,6 +31359,20 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 58107,
+              "jornada": 6,
+              "fechaHora": "2026-11-13T20:45:00.000Z",
+              "local": "Manzanares Voley Senior Femenino",
+              "visitante": "CV Bulldogs A",
+              "pabellon": "Colegio Greenfield",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
+              "jugado": false
+            },
+            {
               "id": 58110,
               "jornada": 6,
               "fechaHora": "2026-11-14T16:00:00.000Z",
@@ -31390,20 +31404,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 58107,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T17:00:00.000Z",
-              "local": "Manzanares Voley Senior Femenino",
-              "visitante": "CV Bulldogs A",
-              "pabellon": "Colegio Nueva Castilla (Nuevo)",
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "direccion": "CALLE MAZATERON, 12",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-              "jugado": false
             },
             {
               "id": 58105,
@@ -32684,15 +32684,15 @@
         {
           "id": 58107,
           "jornada": 6,
-          "fechaHora": "2026-11-15T17:00:00.000Z",
+          "fechaHora": "2026-11-13T20:45:00.000Z",
           "local": "Manzanares Voley Senior Femenino",
           "visitante": "CV Bulldogs A",
-          "pabellon": "Colegio Nueva Castilla (Nuevo)",
+          "pabellon": "Colegio Greenfield",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
-          "direccion": "CALLE MAZATERON, 12",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+          "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
           "jugado": false
         },
         {
@@ -34650,6 +34650,21 @@
       "categoria": "Junior Femenino B"
     },
     {
+      "id": 58107,
+      "jornada": 6,
+      "fechaHora": "2026-11-13T20:45:00.000Z",
+      "local": "Manzanares Voley Senior Femenino",
+      "visitante": "CV Bulldogs A",
+      "pabellon": "Colegio Greenfield",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
+      "jugado": false,
+      "categoria": "Sénior Femenino"
+    },
+    {
       "id": 73292,
       "jornada": 6,
       "fechaHora": "2026-11-14T13:00:00.000Z",
@@ -34828,21 +34843,6 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
       "jugado": false,
       "categoria": "Infantil Femenino A"
-    },
-    {
-      "id": 63253,
-      "jornada": 5,
-      "fechaHora": "2026-11-15T12:00:00.000Z",
-      "local": "Manzanares Voley B",
-      "visitante": "Salesianos Estrecho Bosco Cadete Masculino",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Cadete Masculino B"
     }
   ],
   "ultimos": [
