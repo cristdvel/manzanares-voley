@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T00:50:00.906Z",
+  "actualizado": "2026-11-06T11:52:02.556Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -2704,10 +2704,10 @@
             {
               "id": 59896,
               "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "fechaHora": "2026-11-21T16:00:00.000Z",
               "local": "Dragons Voleibol Moralzarzal Blanco B",
               "visitante": "Cde Vb Algete",
-              "pabellon": null,
+              "pabellon": "Moralzarzal, Pol (Ciudad Deportiva Navafria)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -4726,6 +4726,17 @@
               "aplazado": false
             },
             {
+              "id": 73294,
+              "jornada": 6,
+              "fechaHora": "2026-11-14T12:00:00.000Z",
+              "local": "Salesianos Estrecho Bosco B",
+              "visitante": "Salesianos San Miguel",
+              "pabellon": "Salesianos Estrecho",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 73292,
               "jornada": 6,
               "fechaHora": "2026-11-14T13:00:00.000Z",
@@ -4738,17 +4749,6 @@
               "direccion": "AVENIDA DEL SISTEMA SOLAR, 101A",
               "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN CEIP JOSÉ HIERRO  AVENIDA DEL SISTEMA SOLAR, 101A, PARLA",
               "jugado": false
-            },
-            {
-              "id": 73294,
-              "jornada": 6,
-              "fechaHora": "2026-11-14T18:00:00.000Z",
-              "local": "Salesianos Estrecho Bosco B",
-              "visitante": "Salesianos San Miguel",
-              "pabellon": "Salesianos Estrecho",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 73296,
@@ -8970,6 +8970,17 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
+              "id": 57184,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T18:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal A",
+              "visitante": "A. D. Voleibol Rivas Verde",
+              "pabellon": "Moralzarzal, Pol (Ciudad Deportiva Navafria)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 57179,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -9020,17 +9031,6 @@
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Ucam Torrejón A",
               "visitante": "Cvleganes.com B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 57184,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Dragons Voleibol Moralzarzal A",
-              "visitante": "A. D. Voleibol Rivas Verde",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -11206,6 +11206,20 @@
           "fecha": "2026-12-13T00:00:00.000Z",
           "partidos": [
             {
+              "id": 67200,
+              "jornada": 9,
+              "fechaHora": "2026-11-13T20:00:00.000Z",
+              "local": "C.d.v. Vallecas Cadete Femenino",
+              "visitante": "Manzanares Voley B Cadete Femenino",
+              "pabellon": "Virgen Del Cerro, Colegio",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "C/ JADRAQUE S/N",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=VIRGEN DEL CERRO, COLEGIO C/ JADRAQUE S/N, MADRID",
+              "jugado": false
+            },
+            {
               "id": 67198,
               "jornada": 9,
               "fechaHora": "2026-12-12T09:45:00.000Z",
@@ -11259,20 +11273,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 67200,
-              "jornada": 9,
-              "fechaHora": "2026-12-13T12:00:00.000Z",
-              "local": "C.d.v. Vallecas Cadete Femenino",
-              "visitante": "Manzanares Voley B Cadete Femenino",
-              "pabellon": "Virgen Del Cerro, Colegio",
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "direccion": "C/ JADRAQUE S/N",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=VIRGEN DEL CERRO, COLEGIO C/ JADRAQUE S/N, MADRID",
-              "jugado": false
             }
           ]
         },
@@ -12310,6 +12310,20 @@
           "jugado": false
         },
         {
+          "id": 67200,
+          "jornada": 9,
+          "fechaHora": "2026-11-13T20:00:00.000Z",
+          "local": "C.d.v. Vallecas Cadete Femenino",
+          "visitante": "Manzanares Voley B Cadete Femenino",
+          "pabellon": "Virgen Del Cerro, Colegio",
+          "esManzanares": true,
+          "esLocal": false,
+          "aplazado": false,
+          "direccion": "C/ JADRAQUE S/N",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=VIRGEN DEL CERRO, COLEGIO C/ JADRAQUE S/N, MADRID",
+          "jugado": false
+        },
+        {
           "id": 67185,
           "jornada": 6,
           "fechaHora": "2026-11-15T14:00:00.000Z",
@@ -12347,20 +12361,6 @@
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
-          "jugado": false
-        },
-        {
-          "id": 67200,
-          "jornada": 9,
-          "fechaHora": "2026-12-13T12:00:00.000Z",
-          "local": "C.d.v. Vallecas Cadete Femenino",
-          "visitante": "Manzanares Voley B Cadete Femenino",
-          "pabellon": "Virgen Del Cerro, Colegio",
-          "esManzanares": true,
-          "esLocal": false,
-          "aplazado": false,
-          "direccion": "C/ JADRAQUE S/N",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=VIRGEN DEL CERRO, COLEGIO C/ JADRAQUE S/N, MADRID",
           "jugado": false
         },
         {
@@ -13011,8 +13011,8 @@
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
-              "direccion": "C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID, MADRID",
+              "direccion": "C/ PICO DE LA CIERVA,4",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
               "jugado": false
             },
             {
@@ -14388,8 +14388,8 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "direccion": "C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID, MADRID",
+          "direccion": "C/ PICO DE LA CIERVA,4",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
           "jugado": false
         },
         {
@@ -22785,23 +22785,23 @@
           "fecha": "2026-11-15T00:00:00.000Z",
           "partidos": [
             {
+              "id": 64698,
+              "jornada": 5,
+              "fechaHora": "2026-11-13T20:15:00.000Z",
+              "local": "Intervoley Fuenlabrada",
+              "visitante": "Arcangel Juv A",
+              "pabellon": "Juan De La Cierva, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 64702,
               "jornada": 5,
               "fechaHora": "2026-11-14T17:15:00.000Z",
               "local": "Mirasur School Juvenil Femenino",
               "visitante": "C.d.b.colegio Aquila Juvenil Femenino",
               "pabellon": "Colegio Mirasur, Pabellon",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 64698,
-              "jornada": 5,
-              "fechaHora": "2026-11-15T00:00:00.000Z",
-              "local": "Intervoley Fuenlabrada",
-              "visitante": "Arcangel Juv A",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -33350,6 +33350,20 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
+              "id": 62202,
+              "jornada": 6,
+              "fechaHora": "2026-11-14T19:00:00.000Z",
+              "local": "Manzanares Voley",
+              "visitante": "CV Nueva Castilla Senior Masculino",
+              "pabellon": "Nueva Castilla",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "C/ PICO DE LA CIERVA,4",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
+              "jugado": false
+            },
+            {
               "id": 62198,
               "jornada": 6,
               "fechaHora": "2026-11-29T00:00:00.000Z",
@@ -33392,18 +33406,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 62202,
-              "jornada": 6,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Manzanares Voley",
-              "visitante": "CV Nueva Castilla Senior Masculino",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "jugado": false
             }
           ]
         },
@@ -34221,6 +34223,20 @@
           "jugado": false
         },
         {
+          "id": 62202,
+          "jornada": 6,
+          "fechaHora": "2026-11-14T19:00:00.000Z",
+          "local": "Manzanares Voley",
+          "visitante": "CV Nueva Castilla Senior Masculino",
+          "pabellon": "Nueva Castilla",
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "direccion": "C/ PICO DE LA CIERVA,4",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
+          "jugado": false
+        },
+        {
           "id": 62194,
           "jornada": 5,
           "fechaHora": "2026-11-21T16:00:00.000Z",
@@ -34232,18 +34248,6 @@
           "aplazado": false,
           "direccion": "CALLE TALAMANCA DEL JARAMA, 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=IES MARIA RODRIGO CALLE TALAMANCA DEL JARAMA, 2, MADRID",
-          "jugado": false
-        },
-        {
-          "id": 62202,
-          "jornada": 6,
-          "fechaHora": "2026-11-29T00:00:00.000Z",
-          "local": "Manzanares Voley",
-          "visitante": "CV Nueva Castilla Senior Masculino",
-          "pabellon": null,
-          "esManzanares": true,
-          "esLocal": true,
-          "aplazado": false,
           "jugado": false
         },
         {
@@ -34451,8 +34455,8 @@
       "esManzanares": true,
       "esLocal": false,
       "aplazado": false,
-      "direccion": "C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C. DE MAZATERÓN, 12, VILLA DE VALLECAS, 28051 MADRID, MADRID",
+      "direccion": "C/ PICO DE LA CIERVA,4",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
       "jugado": false,
       "categoria": "Cadete Femenino C"
     },
@@ -34650,6 +34654,21 @@
       "categoria": "Junior Femenino B"
     },
     {
+      "id": 67200,
+      "jornada": 9,
+      "fechaHora": "2026-11-13T20:00:00.000Z",
+      "local": "C.d.v. Vallecas Cadete Femenino",
+      "visitante": "Manzanares Voley B Cadete Femenino",
+      "pabellon": "Virgen Del Cerro, Colegio",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "C/ JADRAQUE S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=VIRGEN DEL CERRO, COLEGIO C/ JADRAQUE S/N, MADRID",
+      "jugado": false,
+      "categoria": "Cadete Femenino B"
+    },
+    {
       "id": 58107,
       "jornada": 6,
       "fechaHora": "2026-11-13T20:45:00.000Z",
@@ -34740,6 +34759,21 @@
       "categoria": "Infantil Masculino"
     },
     {
+      "id": 62202,
+      "jornada": 6,
+      "fechaHora": "2026-11-14T19:00:00.000Z",
+      "local": "Manzanares Voley",
+      "visitante": "CV Nueva Castilla Senior Masculino",
+      "pabellon": "Nueva Castilla",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "C/ PICO DE LA CIERVA,4",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
+      "jugado": false,
+      "categoria": "Sénior Masculino"
+    },
+    {
       "id": 56784,
       "jornada": 8,
       "fechaHora": "2026-11-14T20:00:00.000Z",
@@ -34813,36 +34847,6 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=LOS CANTOS, POLIDEPORTIVO AV LOS CANTOS, 28, ALCORCON",
       "jugado": false,
       "categoria": "Juvenil Femenino B"
-    },
-    {
-      "id": 57318,
-      "jornada": 7,
-      "fechaHora": "2026-11-15T11:30:00.000Z",
-      "local": "Cvleganes.com",
-      "visitante": "Manzanares Voley A",
-      "pabellon": "Emilia Pardo Bazan, Pabellon",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "AV PORTUGAL, S/N",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
-      "jugado": false,
-      "categoria": "Junior Femenino A"
-    },
-    {
-      "id": 59894,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T12:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Cd Newman A",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Infantil Femenino A"
     }
   ],
   "ultimos": [
