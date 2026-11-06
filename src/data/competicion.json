@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-05T19:39:26.139Z",
+  "actualizado": "2026-11-06T00:50:00.906Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -4790,6 +4790,17 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
+              "id": 73299,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T12:30:00.000Z",
+              "local": "Claret Madrid B",
+              "visitante": "Avp A Rasán",
+              "pabellon": "Colegio Claret",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 73303,
               "jornada": 7,
               "fechaHora": "2026-11-21T17:30:00.000Z",
@@ -4811,17 +4822,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 73299,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Claret Madrid B",
-              "visitante": "Avp A Rasán",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 73300,
@@ -11074,10 +11074,10 @@
             {
               "id": 67186,
               "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "fechaHora": "2026-11-21T14:30:00.000Z",
               "local": "Claret Madrid A",
               "visitante": "Las Nieves A",
-              "pabellon": null,
+              "pabellon": "Colegio Claret",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -11133,6 +11133,17 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
+              "id": 67197,
+              "jornada": 8,
+              "fechaHora": "2026-11-28T12:30:00.000Z",
+              "local": "Claret Madrid A",
+              "visitante": "Nuestra Señora Del Pilar Cadete Femenino",
+              "pabellon": "Colegio Claret",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 67192,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
@@ -11187,17 +11198,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 67197,
-              "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Claret Madrid A",
-              "visitante": "Nuestra Señora Del Pilar Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             }
           ]
         },
