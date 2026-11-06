@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T18:58:26.126Z",
+  "actualizado": "2026-11-06T23:58:30.649Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -30843,6 +30843,19 @@
         },
         {
           "pos": 3,
+          "equipo": "Salesianos San Miguel B",
+          "esManzanares": false,
+          "pts": 9,
+          "pj": 5,
+          "pg": 3,
+          "pp": 2,
+          "setsFavor": 10,
+          "setsContra": 7,
+          "puntosFavor": 384,
+          "puntosContra": 384
+        },
+        {
+          "pos": 4,
           "equipo": "CV Madrid A",
           "esManzanares": false,
           "pts": 8,
@@ -30855,7 +30868,7 @@
           "puntosContra": 330
         },
         {
-          "pos": 4,
+          "pos": 5,
           "equipo": "CV Majadahonda A",
           "esManzanares": false,
           "pts": 7,
@@ -30868,7 +30881,7 @@
           "puntosContra": 313
         },
         {
-          "pos": 5,
+          "pos": 6,
           "equipo": "Manzanares Voley Senior Femenino",
           "esManzanares": true,
           "pts": 7,
@@ -30881,7 +30894,7 @@
           "puntosContra": 335
         },
         {
-          "pos": 6,
+          "pos": 7,
           "equipo": "Club Voleibol Torrelodones B",
           "esManzanares": false,
           "pts": 6,
@@ -30892,19 +30905,6 @@
           "setsContra": 6,
           "puntosFavor": 301,
           "puntosContra": 296
-        },
-        {
-          "pos": 7,
-          "equipo": "Salesianos San Miguel B",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 4,
-          "pg": 2,
-          "pp": 2,
-          "setsFavor": 7,
-          "setsContra": 6,
-          "puntosFavor": 296,
-          "puntosContra": 293
         },
         {
           "pos": 8,
@@ -30924,13 +30924,13 @@
           "equipo": "CV Bulldogs A",
           "esManzanares": false,
           "pts": 3,
-          "pj": 4,
+          "pj": 5,
           "pg": 1,
-          "pp": 3,
-          "setsFavor": 6,
-          "setsContra": 11,
-          "puntosFavor": 356,
-          "puntosContra": 380
+          "pp": 4,
+          "setsFavor": 7,
+          "setsContra": 14,
+          "puntosFavor": 447,
+          "puntosContra": 468
         },
         {
           "pos": 10,
