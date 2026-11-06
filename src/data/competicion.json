@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-06T11:52:02.556Z",
+  "actualizado": "2026-11-06T18:58:26.126Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -2702,23 +2702,23 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
+              "id": 59897,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T11:00:00.000Z",
+              "local": "Cd Newman A",
+              "visitante": "Grupo Egido Pinto A",
+              "pabellon": "Club Deportivo Newman",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 59896,
               "jornada": 7,
               "fechaHora": "2026-11-21T16:00:00.000Z",
               "local": "Dragons Voleibol Moralzarzal Blanco B",
               "visitante": "Cde Vb Algete",
               "pabellon": "Moralzarzal, Pol (Ciudad Deportiva Navafria)",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 59897,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Cd Newman A",
-              "visitante": "Grupo Egido Pinto A",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -22442,6 +22442,19 @@
         },
         {
           "pos": 4,
+          "equipo": "C.d.b.colegio Aquila Juvenil Femenino",
+          "esManzanares": false,
+          "pts": 4,
+          "pj": 3,
+          "pg": 2,
+          "pp": 1,
+          "setsFavor": 6,
+          "setsContra": 7,
+          "puntosFavor": 265,
+          "puntosContra": 289
+        },
+        {
+          "pos": 5,
           "equipo": "Intervoley Fuenlabrada",
           "esManzanares": false,
           "pts": 4,
@@ -22452,19 +22465,6 @@
           "setsContra": 3,
           "puntosFavor": 174,
           "puntosContra": 140
-        },
-        {
-          "pos": 5,
-          "equipo": "C.d.b.colegio Aquila Juvenil Femenino",
-          "esManzanares": false,
-          "pts": 2,
-          "pj": 2,
-          "pg": 1,
-          "pp": 1,
-          "setsFavor": 3,
-          "setsContra": 5,
-          "puntosFavor": 152,
-          "puntosContra": 177
         },
         {
           "pos": 6,
@@ -22509,14 +22509,14 @@
           "pos": 9,
           "equipo": "Manzanares Voley C",
           "esManzanares": true,
-          "pts": 0,
-          "pj": 2,
+          "pts": 1,
+          "pj": 3,
           "pg": 0,
-          "pp": 2,
-          "setsFavor": 0,
-          "setsContra": 6,
-          "puntosFavor": 86,
-          "puntosContra": 150
+          "pp": 3,
+          "setsFavor": 2,
+          "setsContra": 9,
+          "puntosFavor": 198,
+          "puntosContra": 263
         }
       ],
       "jornadas": [
@@ -22647,7 +22647,10 @@
               "aplazado": true,
               "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 2,
+              "setsVisitante": 3,
+              "resultado": "2-3"
             }
           ]
         },
@@ -22865,10 +22868,10 @@
             {
               "id": 64703,
               "jornada": 6,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "fechaHora": "2026-11-28T20:00:00.000Z",
               "local": "Arcangel Juv A",
               "visitante": "Mirasur School Juvenil Femenino",
-              "pabellon": null,
+              "pabellon": "Arcangel Internacional School",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -23319,23 +23322,23 @@
               "jugado": false
             },
             {
-              "id": 64742,
-              "jornada": 13,
-              "fechaHora": "2027-02-28T00:00:00.000Z",
-              "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
-              "visitante": "Intervoley Fuenlabrada",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 64741,
               "jornada": 13,
               "fechaHora": "2027-02-28T10:00:00.000Z",
               "local": "Avp B Rafranjo",
               "visitante": "A.D.perales Blanco Juvenil Femenino",
               "pabellon": "Pabellón Ceip José Hierro",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 64742,
+              "jornada": 13,
+              "fechaHora": "2027-02-28T10:00:00.000Z",
+              "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
+              "visitante": "Intervoley Fuenlabrada",
+              "pabellon": "El Alamo, Ies",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -23700,7 +23703,10 @@
           "aplazado": true,
           "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
           "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 2,
+          "setsVisitante": 3,
+          "resultado": "2-3"
         },
         {
           "id": 64695,
@@ -28909,17 +28915,6 @@
               "aplazado": false
             },
             {
-              "id": 61216,
-              "jornada": 8,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Cd Newman B",
-              "visitante": "Chv1995 B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 61217,
               "jornada": 8,
               "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -28941,6 +28936,17 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
+            },
+            {
+              "id": 61216,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T09:30:00.000Z",
+              "local": "Cd Newman B",
+              "visitante": "Chv1995 B",
+              "pabellon": "Club Deportivo Newman",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -31456,17 +31462,6 @@
               "aplazado": false
             },
             {
-              "id": 58113,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Cd Newman A",
-              "visitante": "Abv Boadilla B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 58114,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -31496,6 +31491,17 @@
               "local": "Cde Parla Voley Ortopedia",
               "visitante": "Salesianos San Miguel B",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 58113,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T11:00:00.000Z",
+              "local": "Cd Newman A",
+              "visitante": "Abv Boadilla B",
+              "pabellon": "Club Deportivo Newman",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -34401,21 +34407,6 @@
   ],
   "proximos": [
     {
-      "id": 78620,
-      "jornada": 2,
-      "fechaHora": "2026-11-06T19:00:00.000Z",
-      "local": "Manzanares Voley C",
-      "visitante": "C.d.b.colegio Aquila Juvenil Femenino",
-      "pabellon": "Colegio Greenfield",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": true,
-      "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-      "jugado": false,
-      "categoria": "Juvenil Femenino C"
-    },
-    {
       "id": 73287,
       "jornada": 5,
       "fechaHora": "2026-11-07T10:00:00.000Z",
@@ -34847,9 +34838,42 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=LOS CANTOS, POLIDEPORTIVO AV LOS CANTOS, 28, ALCORCON",
       "jugado": false,
       "categoria": "Juvenil Femenino B"
+    },
+    {
+      "id": 57318,
+      "jornada": 7,
+      "fechaHora": "2026-11-15T11:30:00.000Z",
+      "local": "Cvleganes.com",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "Emilia Pardo Bazan, Pabellon",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "AV PORTUGAL, S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
+      "jugado": false,
+      "categoria": "Junior Femenino A"
     }
   ],
   "ultimos": [
+    {
+      "id": 78620,
+      "jornada": 2,
+      "fechaHora": "2026-11-06T19:00:00.000Z",
+      "local": "Manzanares Voley C",
+      "visitante": "C.d.b.colegio Aquila Juvenil Femenino",
+      "pabellon": "Colegio Greenfield",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": true,
+      "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
+      "jugado": true,
+      "setsLocal": 2,
+      "setsVisitante": 3,
+      "resultado": "2-3",
+      "categoria": "Juvenil Femenino C"
+    },
     {
       "id": 61193,
       "jornada": 5,
@@ -34975,24 +34999,6 @@
       "setsVisitante": 0,
       "resultado": "3-0",
       "categoria": "Juvenil Masculino"
-    },
-    {
-      "id": 59883,
-      "jornada": 4,
-      "fechaHora": "2026-10-25T14:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Grupo Egido Pinto A",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": true,
-      "setsLocal": 0,
-      "setsVisitante": 3,
-      "resultado": "0-3",
-      "categoria": "Infantil Femenino A"
     }
   ]
 }
