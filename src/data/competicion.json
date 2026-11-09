@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-08T20:14:43.274Z",
+  "actualizado": "2026-11-09T04:58:30.886Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -19024,6 +19024,17 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
+              "id": 56792,
+              "jornada": 9,
+              "fechaHora": "2026-11-21T18:30:00.000Z",
+              "local": "Assa Abloy Sanse",
+              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 56788,
               "jornada": 9,
               "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -19067,17 +19078,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 56792,
-              "jornada": 9,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Assa Abloy Sanse",
-              "visitante": "VP Madrid A Amarillo Juvenil Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 56793,
@@ -20431,6 +20431,19 @@
         },
         {
           "pos": 7,
+          "equipo": "Abv Boadilla B",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 5,
+          "pg": 2,
+          "pp": 3,
+          "setsFavor": 9,
+          "setsContra": 12,
+          "puntosFavor": 432,
+          "puntosContra": 456
+        },
+        {
+          "pos": 8,
           "equipo": "Voleibol Hispano Usera",
           "esManzanares": false,
           "pts": 4,
@@ -20443,7 +20456,7 @@
           "puntosContra": 437
         },
         {
-          "pos": 8,
+          "pos": 9,
           "equipo": "Cde Parla Voley Folder",
           "esManzanares": false,
           "pts": 4,
@@ -20454,19 +20467,6 @@
           "setsContra": 12,
           "puntosFavor": 325,
           "puntosContra": 381
-        },
-        {
-          "pos": 9,
-          "equipo": "Abv Boadilla B",
-          "esManzanares": false,
-          "pts": 3,
-          "pj": 4,
-          "pg": 1,
-          "pp": 3,
-          "setsFavor": 6,
-          "setsContra": 11,
-          "puntosFavor": 334,
-          "puntosContra": 384
         },
         {
           "pos": 10,
@@ -20499,13 +20499,13 @@
           "equipo": "B. M. 2 Ciudad Getafe",
           "esManzanares": false,
           "pts": 0,
-          "pj": 4,
+          "pj": 5,
           "pg": 0,
-          "pp": 4,
-          "setsFavor": 1,
-          "setsContra": 12,
-          "puntosFavor": 198,
-          "puntosContra": 317
+          "pp": 5,
+          "setsFavor": 2,
+          "setsContra": 15,
+          "puntosFavor": 270,
+          "puntosContra": 415
         }
       ],
       "jornadas": [
@@ -26143,16 +26143,29 @@
           "equipo": "Cuv Alcorcón Azul",
           "esManzanares": false,
           "pts": 3,
-          "pj": 5,
+          "pj": 6,
           "pg": 1,
-          "pp": 4,
+          "pp": 5,
           "setsFavor": 6,
-          "setsContra": 14,
-          "puntosFavor": 376,
-          "puntosContra": 447
+          "setsContra": 17,
+          "puntosFavor": 427,
+          "puntosContra": 522
         },
         {
           "pos": 11,
+          "equipo": "Cde Parla Voley Ortopedia A",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 6,
+          "pg": 1,
+          "pp": 5,
+          "setsFavor": 3,
+          "setsContra": 15,
+          "puntosFavor": 378,
+          "puntosContra": 436
+        },
+        {
+          "pos": 12,
           "equipo": "CV Sanse",
           "esManzanares": false,
           "pts": 0,
@@ -26163,19 +26176,6 @@
           "setsContra": 18,
           "puntosFavor": 345,
           "puntosContra": 493
-        },
-        {
-          "pos": 12,
-          "equipo": "Cde Parla Voley Ortopedia A",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 5,
-          "pg": 0,
-          "pp": 5,
-          "setsFavor": 0,
-          "setsContra": 15,
-          "puntosFavor": 303,
-          "puntosContra": 385
         }
       ],
       "jornadas": [
@@ -26739,17 +26739,6 @@
               "jugado": false
             },
             {
-              "id": 57325,
-              "jornada": 8,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "CV Sanse",
-              "visitante": "CV Nueva Castilla",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57326,
               "jornada": 8,
               "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -26789,6 +26778,17 @@
               "local": "V-Valley CValcalá G1",
               "visitante": "CV Collado Villalba",
               "pabellon": "La Nevera (Pabellón Demetrio Lozano)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57325,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T19:00:00.000Z",
+              "local": "CV Sanse",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -34485,19 +34485,6 @@
   ],
   "proximos": [
     {
-      "id": 64695,
-      "jornada": 4,
-      "fechaHora": "2026-11-08T00:00:00.000Z",
-      "local": "Manzanares Voley C",
-      "visitante": "Descansa...",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Juvenil Femenino C"
-    },
-    {
       "id": 56780,
       "jornada": 7,
       "fechaHora": "2026-11-08T14:00:00.000Z",
@@ -34917,6 +34904,19 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Juvenil Femenino A"
+    },
+    {
+      "id": 60918,
+      "jornada": 7,
+      "fechaHora": "2026-11-22T00:00:00.000Z",
+      "local": "Manzanares Voley B",
+      "visitante": "CV Valdemoro Las Aguas Juvenil Femenino",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino B"
     }
   ],
   "ultimos": [
