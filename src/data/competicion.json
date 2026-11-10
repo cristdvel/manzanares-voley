@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-09T18:25:48.281Z",
+  "actualizado": "2026-11-10T02:34:52.109Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -321,7 +321,7 @@
               "fechaHora": "2026-11-14T10:00:00.000Z",
               "local": "CV Nueva Castilla Alevin Femenino",
               "visitante": "Grupo Egido Pinto B Alevin Femenino",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -2727,6 +2727,17 @@
               "aplazado": false
             },
             {
+              "id": 59901,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T13:30:00.000Z",
+              "local": "Feel Alcobendas Rojo",
+              "visitante": "Intervoley Fuenlabrada",
+              "pabellon": "Luis Buñuel, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 59896,
               "jornada": 7,
               "fechaHora": "2026-11-21T16:00:00.000Z",
@@ -2752,21 +2763,10 @@
             {
               "id": 59900,
               "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "fechaHora": "2026-11-22T11:30:00.000Z",
               "local": "Cde Voleibol Colmenar A",
               "visitante": "Coslada Voley A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 59901,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Feel Alcobendas Rojo",
-              "visitante": "Intervoley Fuenlabrada",
-              "pabellon": null,
+              "pabellon": "Lorenzo Rico",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -4810,6 +4810,17 @@
               "aplazado": false
             },
             {
+              "id": 73301,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T11:30:00.000Z",
+              "local": "Stars Sport Madrid Verde",
+              "visitante": "Cuv Alcorcón Blanco",
+              "pabellon": "Colegio Richmond Park",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 73299,
               "jornada": 7,
               "fechaHora": "2026-11-21T12:30:00.000Z",
@@ -4849,17 +4860,6 @@
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "A.D.perales",
               "visitante": "Cde Parla Voley Multiopticas B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 73301,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Stars Sport Madrid Verde",
-              "visitante": "Cuv Alcorcón Blanco",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -6910,10 +6910,10 @@
             {
               "id": 59625,
               "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "fechaHora": "2026-11-21T16:00:00.000Z",
               "local": "CV Collado Villalba A",
               "visitante": "CV Sanse",
-              "pabellon": null,
+              "pabellon": "Antonio Machado, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -8991,23 +8991,45 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
+              "id": 57179,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T13:15:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "Club Voleibol Móstoles A",
+              "pabellon": "Antonio Machado, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57181,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T16:00:00.000Z",
+              "local": "CV Las Rozas A",
+              "visitante": "Cvleganes.com A",
+              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57183,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T16:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Cvleganes.com B",
+              "pabellon": "M-4 (Sonia Abejón), Pabellón Municipal",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 57184,
               "jornada": 7,
               "fechaHora": "2026-11-21T18:00:00.000Z",
               "local": "Dragons Voleibol Moralzarzal A",
               "visitante": "A. D. Voleibol Rivas Verde",
               "pabellon": "Moralzarzal, Pol (Ciudad Deportiva Navafria)",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 57179,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "CV Collado Villalba A",
-              "visitante": "Club Voleibol Móstoles A",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -9024,17 +9046,6 @@
               "aplazado": false
             },
             {
-              "id": 57181,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "CV Las Rozas A",
-              "visitante": "Cvleganes.com A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57182,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -9045,17 +9056,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 57183,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Ucam Torrejón A",
-              "visitante": "Cvleganes.com B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             }
           ]
         },
@@ -10764,7 +10764,7 @@
               "fechaHora": "2026-10-11T10:00:00.000Z",
               "local": "CV Nueva Castilla A",
               "visitante": "Claret Madrid A",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -10920,7 +10920,7 @@
               "fechaHora": "2026-10-25T12:00:00.000Z",
               "local": "CV Nueva Castilla A",
               "visitante": "Gsd Las Suertes",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -11034,7 +11034,7 @@
               "fechaHora": "2026-11-15T11:00:00.000Z",
               "local": "CV Nueva Castilla A",
               "visitante": "Stars Sport Madrid Azul",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -11096,6 +11096,17 @@
               "jugado": false
             },
             {
+              "id": 67190,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T12:00:00.000Z",
+              "local": "Stars Sport Madrid Azul",
+              "visitante": "Cde Parla Voley Parlazul B",
+              "pabellon": "Pabellon Nueva Castilla",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 67186,
               "jornada": 7,
               "fechaHora": "2026-11-21T14:30:00.000Z",
@@ -11112,17 +11123,6 @@
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Gsd Las Suertes",
               "visitante": "Grupo Egido Pinto B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 67190,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Stars Sport Madrid Azul",
-              "visitante": "Cde Parla Voley Parlazul B",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -12747,7 +12747,7 @@
               "fechaHora": "2026-10-03T12:00:00.000Z",
               "local": "CV Nueva Castilla B Cadete Femenino",
               "visitante": "C.d.b.colegio Aquila 2",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -12892,7 +12892,7 @@
               "fechaHora": "2026-10-17T13:30:00.000Z",
               "local": "CV Nueva Castilla B Cadete Femenino",
               "visitante": "Cde Parla Voley Maxcolchon E Cadete Femenino",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -13031,12 +13031,12 @@
               "fechaHora": "2026-11-07T13:30:00.000Z",
               "local": "CV Nueva Castilla B Cadete Femenino",
               "visitante": "Manzanares Voley C Cadete Femenino",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": true,
               "esLocal": false,
               "aplazado": false,
-              "direccion": "C/ PICO DE LA CIERVA,4",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
+              "direccion": "CALLE PICO DE LA CIERVA, 4 VILLA DE VALLECAS",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON NUEVA CASTILLA CALLE PICO DE LA CIERVA, 4 VILLA DE VALLECAS, MADRID",
               "jugado": true,
               "setsLocal": 1,
               "setsVisitante": 3,
@@ -13168,6 +13168,28 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
+              "id": 72173,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T09:30:00.000Z",
+              "local": "C.d.b.colegio Aquila 2",
+              "visitante": "Avp A Pozo Red",
+              "pabellon": "Colegio Aquila",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 72172,
+              "jornada": 7,
+              "fechaHora": "2026-11-21T12:00:00.000Z",
+              "local": "CV Nueva Castilla B Cadete Femenino",
+              "visitante": "Cde Parla Voley Folder D Cadete Femenino",
+              "pabellon": "Pabellon Nueva Castilla",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 72171,
               "jornada": 7,
               "fechaHora": "2026-11-21T16:00:00.000Z",
@@ -13198,28 +13220,6 @@
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "A.D.perales Blanco",
               "visitante": "Descansa...",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 72172,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "CV Nueva Castilla B Cadete Femenino",
-              "visitante": "Cde Parla Voley Folder D Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 72173,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "C.d.b.colegio Aquila 2",
-              "visitante": "Avp A Pozo Red",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -14413,12 +14413,12 @@
           "fechaHora": "2026-11-07T13:30:00.000Z",
           "local": "CV Nueva Castilla B Cadete Femenino",
           "visitante": "Manzanares Voley C Cadete Femenino",
-          "pabellon": "Nueva Castilla",
+          "pabellon": "Pabellon Nueva Castilla",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "direccion": "C/ PICO DE LA CIERVA,4",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
+          "direccion": "CALLE PICO DE LA CIERVA, 4 VILLA DE VALLECAS",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON NUEVA CASTILLA CALLE PICO DE LA CIERVA, 4 VILLA DE VALLECAS, MADRID",
           "jugado": true,
           "setsLocal": 1,
           "setsVisitante": 3,
@@ -19042,23 +19042,12 @@
               "aplazado": false
             },
             {
-              "id": 56788,
-              "jornada": 9,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Ucam Torrejón A",
-              "visitante": "Chv1995 A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 56789,
               "jornada": 9,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
+              "fechaHora": "2026-11-21T20:00:00.000Z",
               "local": "CV Las Rozas A",
               "visitante": "Baumit CV Collado Villalba",
-              "pabellon": null,
+              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -19078,10 +19067,21 @@
             {
               "id": 56793,
               "jornada": 9,
-              "fechaHora": "2026-11-22T09:30:00.000Z",
+              "fechaHora": "2026-11-22T11:00:00.000Z",
               "local": "Club Voleibol Móstoles A",
               "visitante": "CV Bulldogs A",
               "pabellon": "Pau 4, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 56788,
+              "jornada": 9,
+              "fechaHora": "2026-11-22T12:00:00.000Z",
+              "local": "Ucam Torrejón A",
+              "visitante": "Chv1995 A",
+              "pabellon": "M-4 (Sonia Abejón), Pabellón Municipal",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -21012,17 +21012,6 @@
               "jugado": false
             },
             {
-              "id": 60920,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Abv Boadilla B",
-              "visitante": "Arganvoley",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 60921,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -21051,6 +21040,17 @@
               "local": "Club Voleibol Móstoles B",
               "visitante": "Cuv Alcorcón Blanco",
               "pabellon": "Pau 4, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 60920,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T18:30:00.000Z",
+              "local": "Abv Boadilla B",
+              "visitante": "Arganvoley",
+              "pabellon": "Ceip Principe Don Felipe",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -21098,17 +21098,6 @@
               "aplazado": false
             },
             {
-              "id": 60925,
-              "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Arganvoley",
-              "visitante": "VP Madrid B Negro",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 60926,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
@@ -21126,6 +21115,17 @@
               "local": "CV Valdemoro Las Aguas Juvenil Femenino",
               "visitante": "Club Voleibol Móstoles B",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 60925,
+              "jornada": 8,
+              "fechaHora": "2026-11-29T09:30:00.000Z",
+              "local": "Arganvoley",
+              "visitante": "VP Madrid B Negro",
+              "pabellon": "Centro Dotacional Integrado, Arganzuela",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -24615,23 +24615,23 @@
               "jugado": false
             },
             {
-              "id": 62631,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Club Voleibol Plaza Castilla",
-              "visitante": "Chv1995 A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 62633,
               "jornada": 7,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "Club Voleibol Torrelodones",
               "visitante": "CV Aranjuez",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 62631,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T09:30:00.000Z",
+              "local": "Club Voleibol Plaza Castilla",
+              "visitante": "Chv1995 A",
+              "pabellon": "Asunción Cuesta Blanca, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26316,7 +26316,7 @@
               "fechaHora": "2026-10-11T19:00:00.000Z",
               "local": "CV Nueva Castilla",
               "visitante": "CV Las Rozas A",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26461,7 +26461,7 @@
               "fechaHora": "2026-10-25T18:00:00.000Z",
               "local": "CV Nueva Castilla",
               "visitante": "Ucam Torrejón",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26572,7 +26572,7 @@
               "fechaHora": "2026-11-02T12:00:00.000Z",
               "local": "Cuv Alcorcón Azul",
               "visitante": "CV Nueva Castilla",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26714,7 +26714,7 @@
               "fechaHora": "2026-11-15T17:00:00.000Z",
               "local": "CV Nueva Castilla",
               "visitante": "Cde Parla Voley Ortopedia A",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -26760,17 +26760,6 @@
               "aplazado": false
             },
             {
-              "id": 57327,
-              "jornada": 8,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Feel Alcobendas",
-              "visitante": "Ucam Torrejón",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57328,
               "jornada": 8,
               "fechaHora": "2026-11-22T11:30:00.000Z",
@@ -26795,10 +26784,21 @@
             {
               "id": 57325,
               "jornada": 8,
-              "fechaHora": "2026-11-22T19:00:00.000Z",
+              "fechaHora": "2026-11-22T17:00:00.000Z",
               "local": "CV Sanse",
               "visitante": "CV Nueva Castilla",
               "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57327,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T19:00:00.000Z",
+              "local": "Feel Alcobendas",
+              "visitante": "Ucam Torrejón",
+              "pabellon": "Luis Buñuel, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -28899,7 +28899,7 @@
               "fechaHora": "2026-11-15T10:00:00.000Z",
               "local": "Stars Sport Madrid",
               "visitante": "CV Getafe Azul",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -28944,6 +28944,17 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
+              "id": 61214,
+              "jornada": 8,
+              "fechaHora": "2026-11-21T18:00:00.000Z",
+              "local": "CV Las Rozas B",
+              "visitante": "Chv1995 Arganzuela",
+              "pabellon": "Centro Deportivo Y Cultural - La Marazuela",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 61218,
               "jornada": 8,
               "fechaHora": "2026-11-21T20:00:00.000Z",
@@ -28958,33 +28969,11 @@
               "jugado": false
             },
             {
-              "id": 61212,
-              "jornada": 8,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Cde Voleibol Colmenar B",
-              "visitante": "Stars Sport Madrid",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 61213,
               "jornada": 8,
               "fechaHora": "2026-11-22T00:00:00.000Z",
               "local": "CV Getafe Azul",
               "visitante": "Salesianos Estrecho Auxiliadora",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 61214,
-              "jornada": 8,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "CV Las Rozas B",
-              "visitante": "Chv1995 Arganzuela",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -29008,6 +28997,17 @@
               "local": "Cd Newman B",
               "visitante": "Chv1995 B",
               "pabellon": "Club Deportivo Newman",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 61212,
+              "jornada": 8,
+              "fechaHora": "2026-11-22T10:00:00.000Z",
+              "local": "Cde Voleibol Colmenar B",
+              "visitante": "Stars Sport Madrid",
+              "pabellon": "Lorenzo Rico",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31180,7 +31180,7 @@
               "fechaHora": "2026-10-11T17:00:00.000Z",
               "local": "CV Nueva Castilla",
               "visitante": "CV Bulldogs A",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31297,7 +31297,7 @@
               "fechaHora": "2026-10-24T18:00:00.000Z",
               "local": "CV Nueva Castilla",
               "visitante": "CV Madrid A",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31500,7 +31500,7 @@
               "fechaHora": "2026-11-15T19:00:00.000Z",
               "local": "CV Nueva Castilla",
               "visitante": "Cde Parla Voley Ortopedia",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31522,17 +31522,6 @@
           "numero": 7,
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
-            {
-              "id": 58111,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T00:00:00.000Z",
-              "local": "Circe Fisioterapia CV Collado Villalba",
-              "visitante": "CV Nueva Castilla",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
             {
               "id": 58112,
               "jornada": 7,
@@ -31585,6 +31574,17 @@
               "local": "Cd Newman A",
               "visitante": "Abv Boadilla B",
               "pabellon": "Club Deportivo Newman",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 58111,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T18:30:00.000Z",
+              "local": "Circe Fisioterapia CV Collado Villalba",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": "Antonio Machado, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -33168,7 +33168,7 @@
               "fechaHora": "2026-10-04T18:30:00.000Z",
               "local": "Adc Sanfermin",
               "visitante": "CV Nueva Castilla Senior Masculino",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -33235,7 +33235,7 @@
               "fechaHora": "2026-10-17T16:00:00.000Z",
               "local": "CV Nueva Castilla Senior Masculino",
               "visitante": "Sad Municipal Loeches",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -33319,7 +33319,7 @@
               "fechaHora": "2026-11-07T19:00:00.000Z",
               "local": "CV Nueva Castilla Senior Masculino",
               "visitante": "Maria Rodrigo",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -33450,12 +33450,12 @@
               "fechaHora": "2026-11-14T19:00:00.000Z",
               "local": "Manzanares Voley",
               "visitante": "CV Nueva Castilla Senior Masculino",
-              "pabellon": "Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": true,
               "esLocal": true,
               "aplazado": false,
-              "direccion": "C/ PICO DE LA CIERVA,4",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
+              "direccion": "CALLE PICO DE LA CIERVA, 4 VILLA DE VALLECAS",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON NUEVA CASTILLA CALLE PICO DE LA CIERVA, 4 VILLA DE VALLECAS, MADRID",
               "jugado": false
             },
             {
@@ -34326,12 +34326,12 @@
           "fechaHora": "2026-11-14T19:00:00.000Z",
           "local": "Manzanares Voley",
           "visitante": "CV Nueva Castilla Senior Masculino",
-          "pabellon": "Nueva Castilla",
+          "pabellon": "Pabellon Nueva Castilla",
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
-          "direccion": "C/ PICO DE LA CIERVA,4",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
+          "direccion": "CALLE PICO DE LA CIERVA, 4 VILLA DE VALLECAS",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON NUEVA CASTILLA CALLE PICO DE LA CIERVA, 4 VILLA DE VALLECAS, MADRID",
           "jugado": false
         },
         {
@@ -34609,12 +34609,12 @@
       "fechaHora": "2026-11-14T19:00:00.000Z",
       "local": "Manzanares Voley",
       "visitante": "CV Nueva Castilla Senior Masculino",
-      "pabellon": "Nueva Castilla",
+      "pabellon": "Pabellon Nueva Castilla",
       "esManzanares": true,
       "esLocal": true,
       "aplazado": false,
-      "direccion": "C/ PICO DE LA CIERVA,4",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=NUEVA CASTILLA C/ PICO DE LA CIERVA,4, MADRID",
+      "direccion": "CALLE PICO DE LA CIERVA, 4 VILLA DE VALLECAS",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON NUEVA CASTILLA CALLE PICO DE LA CIERVA, 4 VILLA DE VALLECAS, MADRID",
       "jugado": false,
       "categoria": "Sénior Masculino"
     },
