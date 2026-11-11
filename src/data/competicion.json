@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-10T12:12:56.616Z",
+  "actualizado": "2026-11-11T15:54:19.038Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -11067,17 +11067,6 @@
               "aplazado": false
             },
             {
-              "id": 67183,
-              "jornada": 6,
-              "fechaHora": "2026-11-15T13:30:00.000Z",
-              "local": "Cuv Alcorcón Blanco",
-              "visitante": "Gsd Las Suertes",
-              "pabellon": "Los Cantos, Polideportivo",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 67185,
               "jornada": 6,
               "fechaHora": "2026-11-15T14:00:00.000Z",
@@ -11090,6 +11079,17 @@
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
               "jugado": false
+            },
+            {
+              "id": 67183,
+              "jornada": 6,
+              "fechaHora": "2026-11-15T16:30:00.000Z",
+              "local": "Cuv Alcorcón Blanco",
+              "visitante": "Gsd Las Suertes",
+              "pabellon": "Gsd Las Suertes",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -26726,17 +26726,6 @@
               "aplazado": false
             },
             {
-              "id": 57322,
-              "jornada": 7,
-              "fechaHora": "2026-11-15T16:30:00.000Z",
-              "local": "Cuv Alcorcón Azul",
-              "visitante": "CV Sanse",
-              "pabellon": "Los Cantos, Polideportivo",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57323,
               "jornada": 7,
               "fechaHora": "2026-11-15T17:00:00.000Z",
@@ -26754,6 +26743,17 @@
               "local": "CV Collado Villalba",
               "visitante": "Feel Alcobendas",
               "pabellon": "Antonio Machado, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57322,
+              "jornada": 7,
+              "fechaHora": "2026-11-15T19:30:00.000Z",
+              "local": "Cuv Alcorcón Azul",
+              "visitante": "CV Sanse",
+              "pabellon": "Centro Velodromo, Polid (Eduardo Lopez Mateo)",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -29064,7 +29064,7 @@
             {
               "id": 61221,
               "jornada": 9,
-              "fechaHora": "2026-11-28T20:00:00.000Z",
+              "fechaHora": "2026-11-28T18:00:00.000Z",
               "local": "CV Yma Majadahonda Junior Femenino",
               "visitante": "Cd Newman B",
               "pabellon": "Club Deportivo Newman",
