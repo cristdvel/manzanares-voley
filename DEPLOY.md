@@ -155,7 +155,12 @@ un error controlado.
 6. Prueba: haz un pedido en `/tienda` con un archivo pequeño y confirma que
    llega el email.
 
-> Límite del adjunto: 8 MB (imagen o PDF). Se puede subir en `functions/api/pedido.ts`.
+> **El comprobante de pago es obligatorio** y se comprueba en tres sitios: el
+> formulario (no deja enviar sin archivo y avisa del motivo), y el servidor
+> (`functions/api/pedido.ts`), que rechaza el pedido si falta, pesa más de 8 MB
+> o menos de 2 KB, o si por sus primeros bytes no es de verdad un PDF o una
+> imagen (JPG, PNG, WEBP, HEIC); no se fía del tipo ni de la extensión que
+> declare el navegador. Esos límites están al principio de ese archivo.
 
 ---
 

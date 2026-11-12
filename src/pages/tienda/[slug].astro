@@ -220,13 +220,21 @@ const breadcrumb = {
               </div>
               <div class="field" id="field-file">
                 <label for="p-file">Comprobante de pago <span class="req">*</span></label>
-                <input type="file" id="p-file" name="comprobante" accept="image/*,application/pdf" required />
+                <input
+                  type="file"
+                  id="p-file"
+                  name="comprobante"
+                  accept="image/jpeg,image/png,image/webp,image/heic,image/heif,application/pdf,.jpg,.jpeg,.png,.webp,.heic,.heif,.pdf"
+                  required
+                  aria-describedby="file-ok file-error"
+                />
+                <span class="file-ok" id="file-ok" role="status" hidden></span>
                 <div class="transfer-info">
                   Realiza la transferencia a:
                   <strong>ES24 2100 4888 7322 0013 6834</strong>
                   A nombre de: Club Deportivo Elemental Manzanares Voley
                 </div>
-                <span class="error-msg">Es obligatorio adjuntar el justificante de la transferencia (imagen o PDF, máx. 8 MB).</span>
+                <span class="error-msg" id="file-error" role="alert">Es obligatorio adjuntar el justificante de la transferencia (imagen o PDF, máx. 8 MB).</span>
               </div>
 
               <label class="check" for="p-priv">
@@ -351,6 +359,31 @@ const breadcrumb = {
   const submitBtn = document.getElementById("pedido-submit") as HTMLButtonElement;
   const fileEl = document.getElementById("p-file") as HTMLInputElement;
   const fieldFile = document.getElementById("field-file")!;
+  const fileOkEl = document.getElementById("file-ok")!;
+  const fileErrEl = document.getElementById("file-error")!;
+
+  const EXT_OK = /\.(jpe?g|png|webp|heic|heif|pdf)$/i;
+  const TIPOS_OK = ["image/jpeg", "image/png", "image/webp", "image/heic", "image/heif", "application/pdf"];
+
+  /** Texto de error si el comprobante falta o no sirve; null si está bien. */
+  function errorComprobante(f: File | null | undefined): string | null {
+    if (!f) return "Es obligatorio adjuntar el justificante de la transferencia (imagen o PDF, máx. 8 MB).";
+    if (f.size > 8 * 1024 * 1024) return "El archivo pesa más de 8 MB. Adjunta una captura o un PDF más ligero.";
+    if (f.size < 2 * 1024) return "El archivo está vacío o es demasiado pequeño. Adjunta el justificante completo.";
+    const tipoOk = f.type ? TIPOS_OK.includes(f.type) : EXT_OK.test(f.name);
+    if (!tipoOk) return "Formato no válido. Adjunta el justificante en JPG, PNG, WEBP, HEIC o PDF.";
+    return null;
+  }
+
+  // Al elegir el archivo se confirma al instante (o se avisa de qué falla).
+  fileEl.addEventListener("change", () => {
+    const f = fileEl.files && fileEl.files[0];
+    const error = f ? errorComprobante(f) : null;
+    fieldFile.classList.toggle("field--error", !!error);
+    if (error) fileErrEl.textContent = error;
+    fileOkEl.hidden = !f || !!error;
+    if (f && !error) fileOkEl.textContent = "✓ Comprobante adjunto: " + f.name;
+  });
 
   form?.addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -372,11 +405,12 @@ const breadcrumb = {
     });
 
     // archivo OBLIGATORIO
-    const f = fileEl.files && fileEl.files[0];
-    const fileMal = !f || f.size === 0 || f.size > 8 * 1024 * 1024;
+    const fileMal = errorComprobante(fileEl.files && fileEl.files[0]);
     fieldFile.classList.toggle("field--error", !!fileMal);
+    if (fileMal) fileErrEl.textContent = fileMal;
 
     if (faltaOpt || fileMal || !form.checkValidity()) {
+      if (fileMal) fieldFile.scrollIntoView({ behavior: "smooth", block: "center" });
       if (!faltaOpt && !fileMal) form.reportValidity();
       return;
     }
