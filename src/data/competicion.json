@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-12T16:37:39.473Z",
+  "actualizado": "2026-11-13T00:55:30.813Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -11321,6 +11321,17 @@
           "fecha": "2026-12-20T00:00:00.000Z",
           "partidos": [
             {
+              "id": 67209,
+              "jornada": 10,
+              "fechaHora": "2026-12-19T09:45:00.000Z",
+              "local": "Nuestra Señora Del Pilar Cadete Femenino",
+              "visitante": "Gsd Las Suertes",
+              "pabellon": "Nuestra Señora Del Pilar",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 67204,
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
@@ -11371,17 +11382,6 @@
               "fechaHora": "2026-12-20T00:00:00.000Z",
               "local": "Claret Madrid A",
               "visitante": "C.d.v. Vallecas Cadete Femenino",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 67209,
-              "jornada": 10,
-              "fechaHora": "2026-12-20T00:00:00.000Z",
-              "local": "Nuestra Señora Del Pilar Cadete Femenino",
-              "visitante": "Gsd Las Suertes",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -13184,17 +13184,6 @@
           "fecha": "2026-11-22T00:00:00.000Z",
           "partidos": [
             {
-              "id": 72173,
-              "jornada": 7,
-              "fechaHora": "2026-11-21T09:30:00.000Z",
-              "local": "C.d.b.colegio Aquila 2",
-              "visitante": "Avp A Pozo Red",
-              "pabellon": "Colegio Aquila",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 72172,
               "jornada": 7,
               "fechaHora": "2026-11-21T12:00:00.000Z",
@@ -13248,6 +13237,17 @@
               "local": "Cde Parla Voley Maxcolchon E Cadete Femenino",
               "visitante": "CV Getafe Verde",
               "pabellon": "Miguel Hernandez, Ceip",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 72173,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T12:30:00.000Z",
+              "local": "C.d.b.colegio Aquila 2",
+              "visitante": "Avp A Pozo Red",
+              "pabellon": "Colegio Aquila",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
