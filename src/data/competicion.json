@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-13T11:54:55.752Z",
+  "actualizado": "2026-11-14T00:42:55.194Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -2780,6 +2780,17 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
+              "id": 59907,
+              "jornada": 8,
+              "fechaHora": "2026-11-28T16:00:00.000Z",
+              "local": "Dragons Voleibol Moralzarzal Blanco B",
+              "visitante": "Cd Newman A",
+              "pabellon": "Moralzarzal, Pol (Ciudad Deportiva Navafria)",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 59903,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
@@ -2819,17 +2830,6 @@
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Grupo Egido Pinto A",
               "visitante": "CV Madrid A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 59907,
-              "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Dragons Voleibol Moralzarzal Blanco B",
-              "visitante": "Cd Newman A",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -10569,13 +10569,13 @@
           "equipo": "C.d.v. Vallecas Cadete Femenino",
           "esManzanares": false,
           "pts": 6,
-          "pj": 5,
+          "pj": 6,
           "pg": 2,
-          "pp": 3,
-          "setsFavor": 8,
-          "setsContra": 11,
-          "puntosFavor": 405,
-          "puntosContra": 419
+          "pp": 4,
+          "setsFavor": 9,
+          "setsContra": 14,
+          "puntosFavor": 497,
+          "puntosContra": 513
         },
         {
           "pos": 9,
@@ -10592,6 +10592,19 @@
         },
         {
           "pos": 10,
+          "equipo": "Manzanares Voley B Cadete Femenino",
+          "esManzanares": true,
+          "pts": 5,
+          "pj": 5,
+          "pg": 2,
+          "pp": 3,
+          "setsFavor": 6,
+          "setsContra": 12,
+          "puntosFavor": 366,
+          "puntosContra": 413
+        },
+        {
+          "pos": 11,
           "equipo": "Nuestra Señora Del Pilar Cadete Femenino",
           "esManzanares": false,
           "pts": 4,
@@ -10602,19 +10615,6 @@
           "setsContra": 12,
           "puntosFavor": 410,
           "puntosContra": 452
-        },
-        {
-          "pos": 11,
-          "equipo": "Manzanares Voley B Cadete Femenino",
-          "esManzanares": true,
-          "pts": 2,
-          "pj": 4,
-          "pg": 1,
-          "pp": 3,
-          "setsFavor": 3,
-          "setsContra": 11,
-          "puntosFavor": 272,
-          "puntosContra": 321
         },
         {
           "pos": 12,
@@ -11257,7 +11257,10 @@
               "aplazado": false,
               "direccion": "C/ JADRAQUE S/N",
               "mapa": "https://www.google.com/maps/search/?api=1&query=VIRGEN DEL CERRO, COLEGIO C/ JADRAQUE S/N, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 1,
+              "setsVisitante": 3,
+              "resultado": "1-3"
             },
             {
               "id": 67198,
@@ -12361,7 +12364,10 @@
           "aplazado": false,
           "direccion": "C/ JADRAQUE S/N",
           "mapa": "https://www.google.com/maps/search/?api=1&query=VIRGEN DEL CERRO, COLEGIO C/ JADRAQUE S/N, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 1,
+          "setsVisitante": 3,
+          "resultado": "1-3"
         },
         {
           "id": 67185,
@@ -22498,6 +22504,19 @@
         },
         {
           "pos": 2,
+          "equipo": "Intervoley Fuenlabrada",
+          "esManzanares": false,
+          "pts": 10,
+          "pj": 4,
+          "pg": 3,
+          "pp": 1,
+          "setsFavor": 11,
+          "setsContra": 4,
+          "puntosFavor": 338,
+          "puntosContra": 275
+        },
+        {
+          "pos": 3,
           "equipo": "Cde Parla Voley Parlazul Juvenil Femenino",
           "esManzanares": false,
           "pts": 9,
@@ -22510,7 +22529,7 @@
           "puntosContra": 234
         },
         {
-          "pos": 3,
+          "pos": 4,
           "equipo": "C.d.b.colegio Aquila Juvenil Femenino",
           "esManzanares": false,
           "pts": 7,
@@ -22521,19 +22540,6 @@
           "setsContra": 8,
           "puntosFavor": 362,
           "puntosContra": 373
-        },
-        {
-          "pos": 4,
-          "equipo": "Intervoley Fuenlabrada",
-          "esManzanares": false,
-          "pts": 7,
-          "pj": 3,
-          "pg": 2,
-          "pp": 1,
-          "setsFavor": 8,
-          "setsContra": 3,
-          "puntosFavor": 249,
-          "puntosContra": 204
         },
         {
           "pos": 5,
@@ -22566,13 +22572,13 @@
           "equipo": "Arcangel Juv A",
           "esManzanares": false,
           "pts": 2,
-          "pj": 4,
+          "pj": 5,
           "pg": 1,
-          "pp": 3,
-          "setsFavor": 5,
-          "setsContra": 11,
-          "puntosFavor": 340,
-          "puntosContra": 380
+          "pp": 4,
+          "setsFavor": 6,
+          "setsContra": 14,
+          "puntosFavor": 411,
+          "puntosContra": 469
         },
         {
           "pos": 8,
@@ -30997,13 +31003,13 @@
           "equipo": "Manzanares Voley Senior Femenino",
           "esManzanares": true,
           "pts": 9,
-          "pj": 5,
+          "pj": 6,
           "pg": 3,
-          "pp": 2,
-          "setsFavor": 11,
-          "setsContra": 9,
-          "puntosFavor": 419,
-          "puntosContra": 430
+          "pp": 3,
+          "setsFavor": 12,
+          "setsContra": 12,
+          "puntosFavor": 492,
+          "puntosContra": 528
         },
         {
           "pos": 7,
@@ -31035,14 +31041,14 @@
           "pos": 9,
           "equipo": "CV Bulldogs A",
           "esManzanares": false,
-          "pts": 3,
-          "pj": 5,
-          "pg": 1,
+          "pts": 6,
+          "pj": 6,
+          "pg": 2,
           "pp": 4,
-          "setsFavor": 7,
-          "setsContra": 14,
-          "puntosFavor": 447,
-          "puntosContra": 468
+          "setsFavor": 10,
+          "setsContra": 15,
+          "puntosFavor": 545,
+          "puntosContra": 541
         },
         {
           "pos": 10,
@@ -31491,7 +31497,10 @@
               "aplazado": false,
               "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 1,
+              "setsVisitante": 3,
+              "resultado": "1-3"
             },
             {
               "id": 58110,
@@ -32819,7 +32828,10 @@
           "aplazado": false,
           "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
           "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 1,
+          "setsVisitante": 3,
+          "resultado": "1-3"
         },
         {
           "id": 58115,
@@ -34535,36 +34547,6 @@
   ],
   "proximos": [
     {
-      "id": 67200,
-      "jornada": 9,
-      "fechaHora": "2026-11-13T20:00:00.000Z",
-      "local": "C.d.v. Vallecas Cadete Femenino",
-      "visitante": "Manzanares Voley B Cadete Femenino",
-      "pabellon": "Virgen Del Cerro, Colegio",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "C/ JADRAQUE S/N",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=VIRGEN DEL CERRO, COLEGIO C/ JADRAQUE S/N, MADRID",
-      "jugado": false,
-      "categoria": "Cadete Femenino B"
-    },
-    {
-      "id": 58107,
-      "jornada": 6,
-      "fechaHora": "2026-11-13T20:45:00.000Z",
-      "local": "Manzanares Voley Senior Femenino",
-      "visitante": "CV Bulldogs A",
-      "pabellon": "Colegio Greenfield",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-      "jugado": false,
-      "categoria": "Sénior Femenino"
-    },
-    {
       "id": 73292,
       "jornada": 6,
       "fechaHora": "2026-11-14T13:00:00.000Z",
@@ -34981,9 +34963,75 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
       "jugado": false,
       "categoria": "Cadete Femenino A"
+    },
+    {
+      "id": 64706,
+      "jornada": 6,
+      "fechaHora": "2026-11-22T12:15:00.000Z",
+      "local": "Manzanares Voley C",
+      "visitante": "Cde Union Voleibol El Alamo Juvenil Femenino",
+      "pabellon": "El Alamo, Ies",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "PASEO DEL OLIVAR 62",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=EL ALAMO, IES PASEO DEL OLIVAR 62, EL ALAMO",
+      "jugado": false,
+      "categoria": "Juvenil Femenino C"
+    },
+    {
+      "id": 62630,
+      "jornada": 7,
+      "fechaHora": "2026-11-22T13:30:00.000Z",
+      "local": "CV Guadarrama",
+      "visitante": "Manzanares Voley",
+      "pabellon": "Colegio Publico Villa De Guadarrama",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CALLE DE LOS ESCORIALES 11",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO PUBLICO VILLA DE GUADARRAMA CALLE DE LOS ESCORIALES 11, GUADARRAMA",
+      "jugado": false,
+      "categoria": "Juvenil Masculino"
     }
   ],
   "ultimos": [
+    {
+      "id": 58107,
+      "jornada": 6,
+      "fechaHora": "2026-11-13T20:45:00.000Z",
+      "local": "Manzanares Voley Senior Femenino",
+      "visitante": "CV Bulldogs A",
+      "pabellon": "Colegio Greenfield",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
+      "jugado": true,
+      "setsLocal": 1,
+      "setsVisitante": 3,
+      "resultado": "1-3",
+      "categoria": "Sénior Femenino"
+    },
+    {
+      "id": 67200,
+      "jornada": 9,
+      "fechaHora": "2026-11-13T20:00:00.000Z",
+      "local": "C.d.v. Vallecas Cadete Femenino",
+      "visitante": "Manzanares Voley B Cadete Femenino",
+      "pabellon": "Virgen Del Cerro, Colegio",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "C/ JADRAQUE S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=VIRGEN DEL CERRO, COLEGIO C/ JADRAQUE S/N, MADRID",
+      "jugado": true,
+      "setsLocal": 1,
+      "setsVisitante": 3,
+      "resultado": "1-3",
+      "categoria": "Cadete Femenino B"
+    },
     {
       "id": 61203,
       "jornada": 6,
@@ -35091,42 +35139,6 @@
       "setsVisitante": 0,
       "resultado": "3-0",
       "categoria": "Juvenil Masculino"
-    },
-    {
-      "id": 58102,
-      "jornada": 5,
-      "fechaHora": "2026-11-08T11:00:00.000Z",
-      "local": "Cd Newman A",
-      "visitante": "Manzanares Voley Senior Femenino",
-      "pabellon": "Club Deportivo Newman",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "C/ AVENIDA DE GUADALAJARA, 28",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=CLUB DEPORTIVO NEWMAN C/ AVENIDA DE GUADALAJARA, 28, MADRID",
-      "jugado": true,
-      "setsLocal": 2,
-      "setsVisitante": 3,
-      "resultado": "2-3",
-      "categoria": "Sénior Femenino"
-    },
-    {
-      "id": 62191,
-      "jornada": 4,
-      "fechaHora": "2026-11-07T20:00:00.000Z",
-      "local": "Manzanares Voley",
-      "visitante": "Avp Servi-Cop",
-      "pabellon": "Pabellon Ceip Jose Hierro",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "AVENIDA SISTEMA SOLAR 8",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON CEIP JOSE HIERRO  AVENIDA SISTEMA SOLAR 8, PARLA",
-      "jugado": true,
-      "setsLocal": 0,
-      "setsVisitante": 3,
-      "resultado": "0-3",
-      "categoria": "Sénior Masculino"
     }
   ]
 }
