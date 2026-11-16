@@ -179,8 +179,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
       </table>
       ${notas ? `<h3 style="margin:18px 0 6px">Tus notas</h3><p style="margin:0;white-space:pre-wrap">${esc(notas)}</p>` : ""}
       <p style="margin:24px 0 0;color:#666;font-size:13px">
-        ¿Dudas mientras tanto? Escríbenos a
-        <a href="mailto:manzanaresvoley@gmail.com">manzanaresvoley@gmail.com</a>.
+        Guarda este correo: tu número de pedido es <strong>${esc(numero)}</strong>.
       </p>
     </div>`;
 

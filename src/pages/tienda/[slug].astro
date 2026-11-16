@@ -245,7 +245,7 @@ const breadcrumb = {
               <input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true" />
 
               <button type="submit" class="btn btn--primary btn--lg" id="pedido-submit">Realizar pedido</button>
-              <p class="form-note">Recibimos tu pedido y el comprobante de pago por email.</p>
+              <p class="form-note">Al enviar el pedido recibirás un email de confirmación con tu número de pedido.</p>
             </form>
 
             <div id="pedido-error" class="pedido-error" role="alert" hidden></div>
@@ -476,10 +476,14 @@ const breadcrumb = {
         window.location.href = "/tienda/gracias?" + params.toString();
         return;
       } else {
-        throw new Error(data.error || "No se pudo enviar el pedido.");
+        throw new Error(data.error || "No se pudo enviar el pedido. Inténtalo de nuevo en unos minutos.");
       }
     } catch (err) {
-      errEl.textContent = (err as Error).message + " Si sigue fallando, escríbenos por email.";
+      // Un fallo de red del navegador llega como TypeError ("Failed to fetch").
+      errEl.textContent =
+        err instanceof TypeError
+          ? "No hemos podido enviar el pedido. Comprueba tu conexión a internet e inténtalo de nuevo."
+          : (err as Error).message;
       errEl.hidden = false;
     } finally {
       submitBtn.disabled = false;

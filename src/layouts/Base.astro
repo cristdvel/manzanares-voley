@@ -321,7 +321,7 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
           catHint.dataset.categoria = cat || "";
           if (cat === null) {
             catHint.textContent =
-              "Aún por debajo de la edad mínima (9 años). Escríbenos y te avisamos cuando pueda empezar.";
+              "Aún por debajo de la edad mínima para inscribirse (9 años).";
           } else {
             catHint.textContent = "Categoría orientativa: " + cat + " · " + age + " años";
           }
@@ -402,7 +402,7 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
                   });
               })
               .then(function (result) {
-                if (!result.ok) throw new Error(result.error || "No se pudo enviar la inscripción.");
+                if (!result.ok) throw new Error(result.error || "No se pudo enviar la inscripción. Inténtalo de nuevo en unos minutos.");
                 form.style.display = "none";
                 success.classList.add("show");
                 success.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -411,7 +411,11 @@ const allSchemas = [orgSchema, siteSchema, ...schemas];
               })
               .catch(function (err) {
                 if (errEl) {
-                  errEl.textContent = err.message + " Si sigue fallando, escríbenos por email.";
+                  // Un fallo de red del navegador llega como TypeError ("Failed to fetch").
+                  errEl.textContent =
+                    err instanceof TypeError
+                      ? "No hemos podido enviar la inscripción. Comprueba tu conexión a internet e inténtalo de nuevo."
+                      : err.message;
                   errEl.hidden = false;
                   errEl.scrollIntoView({ behavior: "smooth", block: "center" });
                 }
