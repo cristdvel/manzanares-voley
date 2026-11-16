@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-15T20:51:38.505Z",
+  "actualizado": "2026-11-16T05:08:26.959Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -25,6 +25,19 @@
         },
         {
           "pos": 2,
+          "equipo": "Manzanares Voley Alevin",
+          "esManzanares": true,
+          "pts": 9,
+          "pj": 3,
+          "pg": 3,
+          "pp": 0,
+          "setsFavor": 9,
+          "setsContra": 0,
+          "puntosFavor": 226,
+          "puntosContra": 127
+        },
+        {
+          "pos": 3,
           "equipo": "Arganvoley",
           "esManzanares": false,
           "pts": 6,
@@ -37,7 +50,7 @@
           "puntosContra": 66
         },
         {
-          "pos": 3,
+          "pos": 4,
           "equipo": "Avp A Pozo Red",
           "esManzanares": false,
           "pts": 6,
@@ -48,19 +61,6 @@
           "setsContra": 0,
           "puntosFavor": 150,
           "puntosContra": 88
-        },
-        {
-          "pos": 4,
-          "equipo": "Manzanares Voley Alevin",
-          "esManzanares": true,
-          "pts": 6,
-          "pj": 2,
-          "pg": 2,
-          "pp": 0,
-          "setsFavor": 6,
-          "setsContra": 0,
-          "puntosFavor": 151,
-          "puntosContra": 104
         },
         {
           "pos": 5,
@@ -145,13 +145,13 @@
           "equipo": "Avp B Yagüe",
           "esManzanares": false,
           "pts": 0,
-          "pj": 2,
+          "pj": 3,
           "pg": 0,
-          "pp": 2,
+          "pp": 3,
           "setsFavor": 0,
-          "setsContra": 6,
-          "puntosFavor": 59,
-          "puntosContra": 150
+          "setsContra": 9,
+          "puntosFavor": 82,
+          "puntosContra": 225
         }
       ],
       "jornadas": [
@@ -477,7 +477,10 @@
               "aplazado": false,
               "direccion": "AVENIDA SISTEMA SOLAR 8",
               "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON CEIP JOSE HIERRO  AVENIDA SISTEMA SOLAR 8, PARLA",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 0,
+              "resultado": "3-0"
             },
             {
               "id": 75816,
@@ -1843,7 +1846,10 @@
           "aplazado": false,
           "direccion": "AVENIDA SISTEMA SOLAR 8",
           "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON CEIP JOSE HIERRO  AVENIDA SISTEMA SOLAR 8, PARLA",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0"
         },
         {
           "id": 75814,
@@ -10514,14 +10520,14 @@
           "pos": 2,
           "equipo": "Cuv Alcorcón Blanco",
           "esManzanares": false,
-          "pts": 14,
-          "pj": 5,
-          "pg": 5,
+          "pts": 16,
+          "pj": 6,
+          "pg": 6,
           "pp": 0,
-          "setsFavor": 15,
-          "setsContra": 4,
-          "puntosFavor": 457,
-          "puntosContra": 389
+          "setsFavor": 18,
+          "setsContra": 6,
+          "puntosFavor": 561,
+          "puntosContra": 479
         },
         {
           "pos": 3,
@@ -10564,6 +10570,19 @@
         },
         {
           "pos": 6,
+          "equipo": "Gsd Las Suertes",
+          "esManzanares": false,
+          "pts": 8,
+          "pj": 6,
+          "pg": 2,
+          "pp": 4,
+          "setsFavor": 12,
+          "setsContra": 15,
+          "puntosFavor": 507,
+          "puntosContra": 582
+        },
+        {
+          "pos": 7,
           "equipo": "Nuestra Señora Del Pilar Cadete Femenino",
           "esManzanares": false,
           "pts": 7,
@@ -10574,19 +10593,6 @@
           "setsContra": 13,
           "puntosFavor": 504,
           "puntosContra": 536
-        },
-        {
-          "pos": 7,
-          "equipo": "Gsd Las Suertes",
-          "esManzanares": false,
-          "pts": 7,
-          "pj": 5,
-          "pg": 2,
-          "pp": 3,
-          "setsFavor": 10,
-          "setsContra": 12,
-          "puntosFavor": 417,
-          "puntosContra": 478
         },
         {
           "pos": 8,
@@ -15395,6 +15401,17 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
+              "id": 63004,
+              "jornada": 8,
+              "fechaHora": "2026-11-28T13:30:00.000Z",
+              "local": "Club Voleibol Móstoles B",
+              "visitante": "Cuv Alcorcón B",
+              "pabellon": "Pau 4, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 63002,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
@@ -15411,17 +15428,6 @@
               "fechaHora": "2026-11-29T00:00:00.000Z",
               "local": "Mintonette CV Pozuelo",
               "visitante": "A.D.perales",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 63004,
-              "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Club Voleibol Móstoles B",
-              "visitante": "Cuv Alcorcón B",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -20443,6 +20449,19 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "Cvfuenlabrada",
+          "esManzanares": false,
+          "pts": 18,
+          "pj": 6,
+          "pg": 6,
+          "pp": 0,
+          "setsFavor": 18,
+          "setsContra": 1,
+          "puntosFavor": 470,
+          "puntosContra": 284
+        },
+        {
+          "pos": 2,
           "equipo": "VP Madrid B Negro",
           "esManzanares": false,
           "pts": 17,
@@ -20453,19 +20472,6 @@
           "setsContra": 3,
           "puntosFavor": 506,
           "puntosContra": 388
-        },
-        {
-          "pos": 2,
-          "equipo": "Cvfuenlabrada",
-          "esManzanares": false,
-          "pts": 15,
-          "pj": 5,
-          "pg": 5,
-          "pp": 0,
-          "setsFavor": 15,
-          "setsContra": 1,
-          "puntosFavor": 395,
-          "puntosContra": 244
         },
         {
           "pos": 3,
@@ -20508,19 +20514,6 @@
         },
         {
           "pos": 6,
-          "equipo": "CV Valdemoro Las Aguas Juvenil Femenino",
-          "esManzanares": false,
-          "pts": 9,
-          "pj": 5,
-          "pg": 3,
-          "pp": 2,
-          "setsFavor": 9,
-          "setsContra": 9,
-          "puntosFavor": 387,
-          "puntosContra": 384
-        },
-        {
-          "pos": 7,
           "equipo": "Abv Boadilla B",
           "esManzanares": false,
           "pts": 9,
@@ -20531,6 +20524,19 @@
           "setsContra": 12,
           "puntosFavor": 507,
           "puntosContra": 523
+        },
+        {
+          "pos": 7,
+          "equipo": "CV Valdemoro Las Aguas Juvenil Femenino",
+          "esManzanares": false,
+          "pts": 9,
+          "pj": 6,
+          "pg": 3,
+          "pp": 3,
+          "setsFavor": 9,
+          "setsContra": 12,
+          "puntosFavor": 427,
+          "puntosContra": 459
         },
         {
           "pos": 8,
@@ -34637,21 +34643,6 @@
   ],
   "proximos": [
     {
-      "id": 75817,
-      "jornada": 5,
-      "fechaHora": "2026-11-15T09:30:00.000Z",
-      "local": "Manzanares Voley Alevin",
-      "visitante": "Avp B Yagüe",
-      "pabellon": "Pabellon Ceip Jose Hierro",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "AVENIDA SISTEMA SOLAR 8",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON CEIP JOSE HIERRO  AVENIDA SISTEMA SOLAR 8, PARLA",
-      "jugado": false,
-      "categoria": "Alevín Femenino"
-    },
-    {
       "id": 67187,
       "jornada": 7,
       "fechaHora": "2026-11-21T09:45:00.000Z",
@@ -35059,6 +35050,19 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Junior Femenino B"
+    },
+    {
+      "id": 58118,
+      "jornada": 8,
+      "fechaHora": "2026-11-29T00:00:00.000Z",
+      "local": "Manzanares Voley Senior Femenino",
+      "visitante": "Cde Parla Voley Ortopedia",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Sénior Femenino"
     }
   ],
   "ultimos": [
