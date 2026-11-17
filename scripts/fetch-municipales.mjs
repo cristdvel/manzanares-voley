@@ -6,7 +6,8 @@
  * Action (cron) — ver .github/workflows/municipales.yml.
  *
  * El Ayuntamiento publica dos CSV (partidos y clasificaciones, en ISO-8859-1 y
- * separados por ";") y los renueva cada miércoles; el nombre del fichero lleva
+ * separados por ";") y los renueva dos veces por semana (lunes y jueves); los
+ * resultados de cada partido se van cerrando poco a poco; el nombre del fichero lleva
  * la fecha (partidos_20261007.csv), así que la URL actual se pide a la API de
  * CKAN del portal en cada ejecución. Los equipos del club se localizan por
  * categoría + sexo + nombre según src/data/equipos-municipales.json.
@@ -28,7 +29,7 @@ const FUENTE = "https://datos.madrid.es/dataset/211549-0-juegos-deportivos-actua
 const UA = { "User-Agent": "Mozilla/5.0 (manzanaresvoley.com data bot)" };
 
 const AVISO_SIN_DATOS =
-  "Todavía no hay calendario publicado para este equipo. Las competiciones municipales de categorías base arrancan el 14 de noviembre de 2026 y el Ayuntamiento publica los datos cada miércoles: aparecerá aquí automáticamente.";
+  "Todavía no hay calendario publicado para este equipo. El Ayuntamiento actualiza los datos varias veces por semana: aparecerá aquí automáticamente.";
 
 async function descargar(url, intentos = 3) {
   let ultimo;

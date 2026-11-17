@@ -2,7 +2,7 @@ name: Actualizar juegos municipales
 
 on:
   schedule:
-    - cron: "30 16 * * 3" # miércoles por la tarde: el Ayuntamiento publica los datos ese día
+    - cron: "30 16 * * 1,4" # lunes y jueves por la tarde: días en que el Ayuntamiento publica los datos
     - cron: "15 6 * * *" # y una vez al día por si se retrasa
   workflow_dispatch: {} # ejecución manual
 

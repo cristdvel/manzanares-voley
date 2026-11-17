@@ -552,11 +552,13 @@ hecho):
 municipal sale de los **datos abiertos del Ayuntamiento de Madrid** (conjunto
 "Competiciones deportivas municipales de deportes colectivos. Temporada en
 curso" en <https://datos.madrid.es/dataset/211549-0-juegos-deportivos-actual>),
-que el Ayuntamiento renueva **cada miércoles**. No hace falta configurar nada
+que el Ayuntamiento renueva **dos veces por semana (lunes y jueves)**; los
+resultados de cada partido se van cerrando poco a poco, así que un partido
+puede tardar unos días en aparecer con marcador. No hace falta configurar nada
 en Cloudflare ni en Google.
 
 - **Descarga automática:** la GitHub Action `.github/workflows/municipales.yml`
-  ejecuta `scripts/fetch-municipales.mjs` los miércoles por la tarde y una vez
+  ejecuta `scripts/fetch-municipales.mjs` los lunes y jueves por la tarde y una vez
   al día, y si hay cambios hace commit de `src/data/municipales.json` (eso
   redespliega la web sola). Se puede lanzar a mano en GitHub → Actions →
   "Actualizar juegos municipales" → *Run workflow*. Si el portal del
@@ -566,10 +568,10 @@ en Cloudflare ni en Google.
   2026/2027). Cada uno se localiza en los datos por **categoría + sexo + nombre
   del equipo** (expresiones regulares). El año pasado el club aparecía como
   `MANZANARES VOLEY AZUL/NARANJA/BLANCO/ROJO` y `T. BRETON MANZANARES VOLEY`.
-- **Hasta que haya datos:** las categorías base arrancan el **14 de noviembre**
-  (inscripción hasta el 20 de octubre) y hoy el Ayuntamiento solo ha publicado
-  voleibol sénior, así que cada equipo muestra "Todavía no hay calendario
-  publicado". Aparecerá solo en cuanto el Ayuntamiento lo suba.
+- **Estado a 17 nov 2026:** los 11 equipos ya tienen calendario publicado (las
+  categorías base arrancaron el 14 de noviembre). Si en el futuro un equipo no
+  tuviera datos, mostraría "Todavía no hay calendario publicado" y aparecería
+  solo en cuanto el Ayuntamiento lo suba.
 - **Cuando aparezcan los equipos, hay que comprobar el emparejamiento:** abre la
   Action o ejecuta `node scripts/fetch-municipales.mjs` y mira el log. Si un
   equipo del club no se encuentra o se mezcla con otro (el log avisa con
