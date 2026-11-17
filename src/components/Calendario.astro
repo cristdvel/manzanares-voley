@@ -59,9 +59,7 @@ const {
                 <span class="cal-item__vs">{p.jugado ? p.resultado : "·"}</span>
                 <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
               </span>
-              {p.aplazado && <span class="cal-item__tag">Aplazado</span>}
-              {p.provisional && <span class="cal-item__tag" title="Resultado comunicado por el club; pendiente de publicar por el Ayuntamiento">Provisional</span>}
-              {(p.pabellon || p.fase) && (
+              {p.aplazado && <span class="cal-item__tag">Aplazado</span>}              {(p.pabellon || p.fase) && (
                 <span class="cal-item__sede">
                   {p.fase && <>{p.fase}{p.pabellon ? " · " : ""}</>}
                   {p.pabellon && <>📍 {p.pabellon}</>}

@@ -33,7 +33,7 @@ export interface Partido {
   categoria?: string;
   /** competición a la que pertenece (p. ej. "Copa Primavera 2026"); solo en los municipales. */
   fase?: string;
-  /** resultado comunicado por el club que el Ayuntamiento aún no ha publicado; solo en los municipales. */
+  /** resultado comunicado por el club que el Ayuntamiento aún no ha publicado; solo en los municipales (no se muestra en la web). */
   provisional?: boolean;
 }
 

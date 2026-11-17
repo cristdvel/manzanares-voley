@@ -25,6 +25,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = process.env.JDM_OUT || join(ROOT, "src/data/municipales.json");
 const CFG = join(ROOT, "src/data/equipos-municipales.json");
 const MANUALES = join(ROOT, "src/data/resultados-municipales-provisionales.json");
+const CONTRASTE = process.env.JDM_CONTRASTE || join(ROOT, "src/data/contraste-resultados-municipales.json");
 const CKAN = "https://datos.madrid.es/api/3/action/package_show?id=211549-0-juegos-deportivos-actual";
 const FUENTE = "https://datos.madrid.es/dataset/211549-0-juegos-deportivos-actual";
 const UA = { "User-Agent": "Mozilla/5.0 (manzanaresvoley.com data bot)" };
@@ -248,18 +249,27 @@ async function main() {
   } catch {
     /* sin fichero de resultados provisionales */
   }
+  // Contraste del resultado del club con el oficial (Manzanares siempre primero):
+  // "pendiente" = el Ayuntamiento aún no lo ha publicado; "coincide" / "difiere"
+  // = ya hay dato oficial y se compara. Se guarda en CONTRASTE para poder revisarlo.
+  const contraste = [];
   for (const r of manuales) {
     const g = grupos.find((x) => x.id === r.equipo);
     const rival = norm(r.rival || "");
     const p = g?.misPartidos.find(
       (x) => x.fechaHora?.startsWith(r.fecha) && norm(x.esLocal ? x.visitante : x.local).includes(rival),
     );
+    const club = `${r.setsClub}-${r.setsRival}`;
     if (!p) {
-      console.warn(`⚠ Resultado provisional sin partido: ${r.equipo} · ${r.fecha} · ${r.rival || "?"}`);
+      console.warn(`⚠ Resultado del club sin partido: ${r.equipo} · ${r.fecha} · ${r.rival || "?"}`);
+      contraste.push({ equipo: r.equipo, fecha: r.fecha, rival: r.rival, club, oficial: null, estado: "sin partido" });
       continue;
     }
     if (p.jugado) {
-      console.log(`  · ${r.equipo} ${r.fecha}: ya tiene resultado oficial (${p.resultado}); se ignora el provisional.`);
+      const oficial = `${p.esLocal ? p.setsLocal : p.setsVisitante}-${p.esLocal ? p.setsVisitante : p.setsLocal}`;
+      const estado = oficial === club ? "coincide" : "difiere";
+      console.log(`  ${estado === "coincide" ? "✓" : "⚠ DIFERENCIA"} ${r.equipo} ${r.fecha}: club ${club} · oficial ${oficial}`);
+      contraste.push({ equipo: r.equipo, fecha: r.fecha, rival: r.rival, club, oficial, estado });
       continue;
     }
     p.jugado = true;
@@ -267,6 +277,21 @@ async function main() {
     p.setsVisitante = p.esLocal ? r.setsRival : r.setsClub;
     p.resultado = `${p.setsLocal}-${p.setsVisitante}`;
     p.provisional = true;
+    contraste.push({ equipo: r.equipo, fecha: r.fecha, rival: r.rival, club, oficial: null, estado: "pendiente" });
+  }
+  if (manuales.length > 0) {
+    const resumen = (e) => contraste.filter((c) => c.estado === e).length;
+    console.log(
+      `Contraste con el club: ${resumen("coincide")} coinciden · ${resumen("difiere")} difieren · ${resumen("pendiente")} pendientes de dato oficial.`,
+    );
+    let previoContraste = null;
+    try {
+      previoContraste = await readFile(CONTRASTE, "utf8");
+    } catch {
+      /* primera ejecución */
+    }
+    const nuevoContraste = JSON.stringify({ contraste }, null, 2) + "\n";
+    if (previoContraste !== nuevoContraste) await writeFile(CONTRASTE, nuevoContraste);
   }
 
   const conDatos = grupos.filter((g) => g.misPartidos.length > 0).length;

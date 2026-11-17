@@ -28,13 +28,13 @@ jobs:
 
       - name: Commit si hay cambios
         run: |
-          if git diff --quiet -- src/data/municipales.json; then
+          if git diff --quiet -- src/data/municipales.json src/data/contraste-resultados-municipales.json && [ -z "$(git ls-files --others --exclude-standard src/data/contraste-resultados-municipales.json)" ]; then
             echo "Sin cambios en los juegos municipales."
             exit 0
           fi
           git config user.name "manzanares-voley-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/municipales.json
+          git add src/data/municipales.json src/data/contraste-resultados-municipales.json
           git commit -m "Actualiza juegos municipales (Ayuntamiento de Madrid)"
           git pull --rebase origin main
           git push

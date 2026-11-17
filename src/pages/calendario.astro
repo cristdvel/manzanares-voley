@@ -36,14 +36,9 @@ const eventSchemas = proximos
 
 const introMunicipal =
   "Calendario, resultados y clasificación de los equipos de Manzanares Voley en los Juegos Deportivos Municipales de Madrid, con datos abiertos del Ayuntamiento.";
-const hayProvisionales = gruposMunicipales.some((g) => g.misPartidos.some((p) => p.provisional));
-const pieMunicipal =
-  (datosMunicipales
-    ? `Datos del Ayuntamiento de Madrid del ${datosMunicipales} · se actualizan varias veces por semana`
-    : "Datos del Ayuntamiento de Madrid · se actualizan varias veces por semana") +
-  (hayProvisionales
-    ? " · Los resultados marcados «Provisional» los comunica el club y aún no constan en la clasificación oficial."
-    : "");
+const pieMunicipal = datosMunicipales
+  ? `Datos del Ayuntamiento de Madrid del ${datosMunicipales} · se actualizan varias veces por semana`
+  : "Datos del Ayuntamiento de Madrid · se actualizan varias veces por semana";
 ---
 
 <Base
