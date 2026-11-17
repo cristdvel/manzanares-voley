@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T12:49:56.707Z",
+  "actualizado": "2026-11-17T23:22:32.488Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -9124,22 +9124,22 @@
               "aplazado": false
             },
             {
-              "id": 57189,
+              "id": 57190,
               "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Feel Alcobendas Negro",
-              "visitante": "CV Las Rozas A",
-              "pabellon": null,
+              "fechaHora": "2026-11-28T12:00:00.000Z",
+              "local": "CV Collado Villalba A",
+              "visitante": "VP Madrid A Amarillo",
+              "pabellon": "Polideportivo Municipal Majalastablas",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
             },
             {
-              "id": 57190,
+              "id": 57189,
               "jornada": 8,
               "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "CV Collado Villalba A",
-              "visitante": "VP Madrid A Amarillo",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Las Rozas A",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -26994,23 +26994,23 @@
               "jugado": false
             },
             {
-              "id": 57331,
-              "jornada": 9,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "CV Collado Villalba",
-              "visitante": "Cvleganes.com",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57332,
               "jornada": 9,
               "fechaHora": "2026-11-29T14:00:00.000Z",
               "local": "Ucam Torrejón",
               "visitante": "V-Valley CValcalá G1",
               "pabellon": "M-4 (Sonia Abejón), Pabellón Municipal",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57331,
+              "jornada": 9,
+              "fechaHora": "2026-11-29T19:00:00.000Z",
+              "local": "CV Collado Villalba",
+              "visitante": "Cvleganes.com",
+              "pabellon": "Europa, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
