@@ -1,0 +1,15 @@
+{
+  "_comentario": "Resultados de los Juegos Municipales comunicados por el club mientras el Ayuntamiento no los publica. scripts/fetch-municipales.mjs los aplica SOLO a partidos sin resultado oficial (se marcan 'Provisional' en la web); en cuanto el Ayuntamiento publica el dato, manda el oficial. 'equipo' es el id de equipos-municipales.json, 'fecha' AAAA-MM-DD, 'rival' un trozo del nombre del rival (para no tocar otro partido del mismo día) y los sets van siempre desde el punto de vista de Manzanares: setsClub - setsRival. Se pueden borrar las entradas antiguas cuando ya haya dato oficial.",
+  "resultados": [
+    { "equipo": "benjamin-mixto", "fecha": "2026-11-14", "rival": "IRLANDESAS", "setsClub": 0, "setsRival": 3 },
+    { "equipo": "alevin-mixto", "fecha": "2026-11-14", "rival": "COSTA", "setsClub": 3, "setsRival": 0 },
+    { "equipo": "infantil-fem", "fecha": "2026-11-14", "rival": "LOURDES", "setsClub": 2, "setsRival": 0 },
+    { "equipo": "infantil-mixto", "fecha": "2026-11-14", "rival": "IRLANDESAS", "setsClub": 2, "setsRival": 0 },
+    { "equipo": "infantil-fem-azul", "fecha": "2026-11-14", "rival": "AMIDECU", "setsClub": 2, "setsRival": 0 },
+    { "equipo": "infantil-fem-naranja", "fecha": "2026-11-14", "rival": "AGUIRRE", "setsClub": 0, "setsRival": 2 },
+    { "equipo": "cadete-fem", "fecha": "2026-11-14", "rival": "AGUIRRE", "setsClub": 2, "setsRival": 0 },
+    { "equipo": "cadete-fem-azul", "fecha": "2026-11-14", "rival": "KING", "setsClub": 0, "setsRival": 2 },
+    { "equipo": "cadete-fem-naranja", "fecha": "2026-11-14", "rival": "ALCOBENDAS", "setsClub": 0, "setsRival": 2 },
+    { "equipo": "juvenil-fem-blanco", "fecha": "2026-11-14", "rival": "ESCOLAPIAS", "setsClub": 0, "setsRival": 2 }
+  ]
+}

@@ -58,6 +58,7 @@ const {
                     <span class="cal-item__vs">{p.resultado}</span>
                     <span class={!p.esLocal ? "is-mzv" : ""}>{p.visitante}</span>
                   </span>
+                  {p.provisional && <span class="cal-item__tag" title="Resultado comunicado por el club; pendiente de publicar por el Ayuntamiento">Provisional</span>}
                 </li>
               ))}
             </ol>

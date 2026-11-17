@@ -24,6 +24,7 @@ import { dirname, join } from "node:path";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = process.env.JDM_OUT || join(ROOT, "src/data/municipales.json");
 const CFG = join(ROOT, "src/data/equipos-municipales.json");
+const MANUALES = join(ROOT, "src/data/resultados-municipales-provisionales.json");
 const CKAN = "https://datos.madrid.es/api/3/action/package_show?id=211549-0-juegos-deportivos-actual";
 const FUENTE = "https://datos.madrid.es/dataset/211549-0-juegos-deportivos-actual";
 const UA = { "User-Agent": "Mozilla/5.0 (manzanaresvoley.com data bot)" };
@@ -237,6 +238,36 @@ async function main() {
       misPartidos: filas.map((r) => aPartido(r, ids)),
     };
   });
+
+  // Resultados provisionales comunicados por el club: solo se aplican a partidos
+  // que el Ayuntamiento todavía no ha cerrado; en cuanto publica el dato oficial,
+  // este manda y la entrada manual se ignora.
+  let manuales = [];
+  try {
+    manuales = JSON.parse(await readFile(MANUALES, "utf8")).resultados || [];
+  } catch {
+    /* sin fichero de resultados provisionales */
+  }
+  for (const r of manuales) {
+    const g = grupos.find((x) => x.id === r.equipo);
+    const rival = norm(r.rival || "");
+    const p = g?.misPartidos.find(
+      (x) => x.fechaHora?.startsWith(r.fecha) && norm(x.esLocal ? x.visitante : x.local).includes(rival),
+    );
+    if (!p) {
+      console.warn(`⚠ Resultado provisional sin partido: ${r.equipo} · ${r.fecha} · ${r.rival || "?"}`);
+      continue;
+    }
+    if (p.jugado) {
+      console.log(`  · ${r.equipo} ${r.fecha}: ya tiene resultado oficial (${p.resultado}); se ignora el provisional.`);
+      continue;
+    }
+    p.jugado = true;
+    p.setsLocal = p.esLocal ? r.setsClub : r.setsRival;
+    p.setsVisitante = p.esLocal ? r.setsRival : r.setsClub;
+    p.resultado = `${p.setsLocal}-${p.setsVisitante}`;
+    p.provisional = true;
+  }
 
   const conDatos = grupos.filter((g) => g.misPartidos.length > 0).length;
   const data = {

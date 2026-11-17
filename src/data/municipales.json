@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-16T15:35:25.019Z",
+  "actualizado": "2026-11-17T11:23:46.169Z",
   "temporada": "2026/2027",
   "fuente": "https://datos.madrid.es/dataset/211549-0-juegos-deportivos-actual",
   "datosDel": "2026-11-16",
@@ -156,9 +156,13 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "jugado": false,
+          "jugado": true,
           "fase": "Juegos Deportivos Municipales",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=40.40206,-3.695401"
+          "mapa": "https://www.google.com/maps/search/?api=1&query=40.40206,-3.695401",
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0",
+          "provisional": true
         },
         {
           "id": 30451002003,
@@ -421,9 +425,13 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "jugado": false,
+          "jugado": true,
           "fase": "Juegos Deportivos Municipales",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=40.40206,-3.695401"
+          "mapa": "https://www.google.com/maps/search/?api=1&query=40.40206,-3.695401",
+          "setsLocal": 0,
+          "setsVisitante": 3,
+          "resultado": "0-3",
+          "provisional": true
         },
         {
           "id": 30453002003,
@@ -630,9 +638,13 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "jugado": false,
+          "jugado": true,
           "fase": "Juegos Deportivos Municipales",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=40.394479,-3.691159"
+          "mapa": "https://www.google.com/maps/search/?api=1&query=40.394479,-3.691159",
+          "setsLocal": 0,
+          "setsVisitante": 2,
+          "resultado": "0-2",
+          "provisional": true
         },
         {
           "id": 30473002006,
@@ -796,9 +808,13 @@
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
-          "jugado": false,
+          "jugado": true,
           "fase": "Juegos Deportivos Municipales",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=40.394479,-3.691159"
+          "mapa": "https://www.google.com/maps/search/?api=1&query=40.394479,-3.691159",
+          "setsLocal": 0,
+          "setsVisitante": 2,
+          "resultado": "0-2",
+          "provisional": true
         },
         {
           "id": 30456002002,
@@ -1003,9 +1019,13 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "jugado": false,
+          "jugado": true,
           "fase": "Juegos Deportivos Municipales",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=40.394479,-3.691159"
+          "mapa": "https://www.google.com/maps/search/?api=1&query=40.394479,-3.691159",
+          "setsLocal": 0,
+          "setsVisitante": 2,
+          "resultado": "0-2",
+          "provisional": true
         },
         {
           "id": 30455002003,
@@ -1210,9 +1230,13 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "jugado": false,
+          "jugado": true,
           "fase": "Juegos Deportivos Municipales",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=40.394479,-3.691159"
+          "mapa": "https://www.google.com/maps/search/?api=1&query=40.394479,-3.691159",
+          "setsLocal": 0,
+          "setsVisitante": 2,
+          "resultado": "0-2",
+          "provisional": true
         },
         {
           "id": 32913002003,
@@ -1417,9 +1441,13 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "jugado": false,
+          "jugado": true,
           "fase": "Juegos Deportivos Municipales",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=40.40206,-3.695401"
+          "mapa": "https://www.google.com/maps/search/?api=1&query=40.40206,-3.695401",
+          "setsLocal": 0,
+          "setsVisitante": 2,
+          "resultado": "0-2",
+          "provisional": true
         },
         {
           "id": 30457002003,
@@ -1624,9 +1652,13 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "jugado": false,
+          "jugado": true,
           "fase": "Juegos Deportivos Municipales",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=40.4167,-3.7003"
+          "mapa": "https://www.google.com/maps/search/?api=1&query=40.4167,-3.7003",
+          "setsLocal": 2,
+          "setsVisitante": 0,
+          "resultado": "2-0",
+          "provisional": true
         },
         {
           "id": 30635002002,
@@ -1833,9 +1865,13 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "jugado": false,
+          "jugado": true,
           "fase": "Juegos Deportivos Municipales",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=40.4167,-3.7003"
+          "mapa": "https://www.google.com/maps/search/?api=1&query=40.4167,-3.7003",
+          "setsLocal": 2,
+          "setsVisitante": 0,
+          "resultado": "2-0",
+          "provisional": true
         },
         {
           "id": 30635002001,
@@ -2305,9 +2341,13 @@
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
-          "jugado": false,
+          "jugado": true,
           "fase": "Juegos Deportivos Municipales",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=40.407762,-3.716521"
+          "mapa": "https://www.google.com/maps/search/?api=1&query=40.407762,-3.716521",
+          "setsLocal": 2,
+          "setsVisitante": 0,
+          "resultado": "2-0",
+          "provisional": true
         },
         {
           "id": 30461002003,
