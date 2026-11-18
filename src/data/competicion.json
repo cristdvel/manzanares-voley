@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-17T23:22:32.488Z",
+  "actualizado": "2026-11-18T10:07:14.911Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -12,6 +12,19 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "Manzanares Voley Alevin",
+          "esManzanares": true,
+          "pts": 12,
+          "pj": 4,
+          "pg": 4,
+          "pp": 0,
+          "setsFavor": 12,
+          "setsContra": 0,
+          "puntosFavor": 301,
+          "puntosContra": 173
+        },
+        {
+          "pos": 2,
           "equipo": "Mirasur School Alevin Femenino",
           "esManzanares": false,
           "pts": 9,
@@ -22,19 +35,6 @@
           "setsContra": 0,
           "puntosFavor": 225,
           "puntosContra": 111
-        },
-        {
-          "pos": 2,
-          "equipo": "Manzanares Voley Alevin",
-          "esManzanares": true,
-          "pts": 9,
-          "pj": 3,
-          "pg": 3,
-          "pp": 0,
-          "setsFavor": 9,
-          "setsContra": 0,
-          "puntosFavor": 226,
-          "puntosContra": 127
         },
         {
           "pos": 3,
@@ -54,13 +54,13 @@
           "equipo": "Avp A Pozo Red",
           "esManzanares": false,
           "pts": 6,
-          "pj": 2,
+          "pj": 3,
           "pg": 2,
-          "pp": 0,
+          "pp": 1,
           "setsFavor": 6,
-          "setsContra": 0,
-          "puntosFavor": 150,
-          "puntosContra": 88
+          "setsContra": 3,
+          "puntosFavor": 196,
+          "puntosContra": 163
         },
         {
           "pos": 5,
@@ -338,7 +338,10 @@
               "aplazado": false,
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 0,
+              "resultado": "3-0"
             },
             {
               "id": 75808,
@@ -1832,7 +1835,10 @@
           "aplazado": false,
           "direccion": "GALLUR 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0"
         },
         {
           "id": 75817,
@@ -4913,10 +4919,10 @@
             {
               "id": 73306,
               "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
+              "fechaHora": "2026-11-28T13:00:00.000Z",
               "local": "Cuv Alcorcón Blanco B",
               "visitante": "Salesianos San Miguel",
-              "pabellon": null,
+              "pabellon": "San Miguel, Colegio Salesianos",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -7020,23 +7026,23 @@
               "aplazado": false
             },
             {
+              "id": 59632,
+              "jornada": 8,
+              "fechaHora": "2026-11-27T19:15:00.000Z",
+              "local": "Cvleganes.com A",
+              "visitante": "Cde Parla Voley Parlazul",
+              "pabellon": "Europa, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 59635,
               "jornada": 8,
               "fechaHora": "2026-11-28T13:30:00.000Z",
               "local": "CV Alcalá Scolatrip",
               "visitante": "VP Madrid A Amarillo",
               "pabellon": "Espartales, Ciudad Deportiva",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 59632,
-              "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Cvleganes.com A",
-              "visitante": "Cde Parla Voley Parlazul",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -7056,7 +7062,7 @@
             {
               "id": 59633,
               "jornada": 8,
-              "fechaHora": "2026-11-29T09:30:00.000Z",
+              "fechaHora": "2026-11-29T09:15:00.000Z",
               "local": "Club Voleibol Móstoles",
               "visitante": "Chv1995 A",
               "pabellon": "Pau 4, Polideportivo",
@@ -9113,6 +9119,17 @@
           "fecha": "2026-11-29T00:00:00.000Z",
           "partidos": [
             {
+              "id": 57189,
+              "jornada": 8,
+              "fechaHora": "2026-11-21T11:00:00.000Z",
+              "local": "Feel Alcobendas Negro",
+              "visitante": "CV Las Rozas A",
+              "pabellon": "Luis Buñuel, Pabellon",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 57187,
               "jornada": 8,
               "fechaHora": "2026-11-28T12:00:00.000Z",
@@ -9130,17 +9147,6 @@
               "local": "CV Collado Villalba A",
               "visitante": "VP Madrid A Amarillo",
               "pabellon": "Polideportivo Municipal Majalastablas",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 57189,
-              "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Feel Alcobendas Negro",
-              "visitante": "CV Las Rozas A",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -11257,17 +11263,6 @@
               "jugado": false
             },
             {
-              "id": 67193,
-              "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Cde Parla Voley Parlazul B",
-              "visitante": "VP Madrid C Blanco C",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 67192,
               "jornada": 8,
               "fechaHora": "2026-11-29T10:00:00.000Z",
@@ -11285,6 +11280,17 @@
               "local": "Cuv Alcorcón Blanco",
               "visitante": "Stars Sport Madrid Azul",
               "pabellon": "Los Cantos, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 67193,
+              "jornada": 8,
+              "fechaHora": "2026-11-29T19:00:00.000Z",
+              "local": "Cde Parla Voley Parlazul B",
+              "visitante": "VP Madrid C Blanco C",
+              "pabellon": "La Cantueña, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -19232,21 +19238,10 @@
             {
               "id": 56795,
               "jornada": 10,
-              "fechaHora": "2026-11-28T20:00:00.000Z",
+              "fechaHora": "2026-11-28T11:30:00.000Z",
               "local": "VP Madrid A Amarillo Juvenil Femenino",
               "visitante": "Club Voleibol Móstoles A",
               "pabellon": "Ceip La Rioja",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 56798,
-              "jornada": 10,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Baumit CV Collado Villalba",
-              "visitante": "V-Valley CValcalá G1",
-              "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -19286,6 +19281,17 @@
               "direccion": "AV ALEMANIA, 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=EUROPA, PABELLON AV ALEMANIA, 2, LEGANES",
               "jugado": false
+            },
+            {
+              "id": 56798,
+              "jornada": 10,
+              "fechaHora": "2026-12-21T19:00:00.000Z",
+              "local": "Baumit CV Collado Villalba",
+              "visitante": "V-Valley CValcalá G1",
+              "pabellon": "Antonio Machado, Colegio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -31740,23 +31746,23 @@
               "jugado": false
             },
             {
-              "id": 58111,
-              "jornada": 7,
-              "fechaHora": "2026-11-22T18:30:00.000Z",
-              "local": "Circe Fisioterapia CV Collado Villalba",
-              "visitante": "CV Nueva Castilla",
-              "pabellon": "Antonio Machado, Colegio",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 58116,
               "jornada": 7,
               "fechaHora": "2026-11-22T19:00:00.000Z",
               "local": "Cde Parla Voley Ortopedia",
               "visitante": "Salesianos San Miguel B",
               "pabellon": "Miguel Hernandez, Ceip",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 58111,
+              "jornada": 7,
+              "fechaHora": "2026-11-22T20:00:00.000Z",
+              "local": "Circe Fisioterapia CV Collado Villalba",
+              "visitante": "CV Nueva Castilla",
+              "pabellon": "Pabellon Nueva Castilla",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31781,7 +31787,7 @@
             {
               "id": 58119,
               "jornada": 8,
-              "fechaHora": "2026-11-27T20:00:00.000Z",
+              "fechaHora": "2026-11-24T20:30:00.000Z",
               "local": "CV Majadahonda A",
               "visitante": "CV Madrid A",
               "pabellon": "Principe Felipe, Polideportivo",
