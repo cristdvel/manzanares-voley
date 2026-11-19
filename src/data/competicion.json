@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-18T16:58:58.979Z",
+  "actualizado": "2026-11-19T12:33:44.853Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -4928,17 +4928,6 @@
               "aplazado": false
             },
             {
-              "id": 73308,
-              "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Avp A Rasán",
-              "visitante": "A.D.perales",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 73304,
               "jornada": 8,
               "fechaHora": "2026-11-29T09:30:00.000Z",
@@ -4970,6 +4959,17 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 73308,
+              "jornada": 8,
+              "fechaHora": "2027-01-10T09:30:00.000Z",
+              "local": "Avp A Rasán",
+              "visitante": "A.D.perales",
+              "pabellon": "Pabellón Ceip José Hierro",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -4977,6 +4977,17 @@
           "numero": 9,
           "fecha": "2026-12-13T00:00:00.000Z",
           "partidos": [
+            {
+              "id": 73315,
+              "jornada": 9,
+              "fechaHora": "2026-12-12T16:00:00.000Z",
+              "local": "Salesianos Estrecho Bosco B",
+              "visitante": "Cde Parla Voley Folder C",
+              "pabellon": "Salesianos Estrecho",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
             {
               "id": 73314,
               "jornada": 9,
@@ -5028,17 +5039,6 @@
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Salesianos San Miguel",
               "visitante": "Cde Parla Voley Multiopticas B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 73315,
-              "jornada": 9,
-              "fechaHora": "2026-12-13T00:00:00.000Z",
-              "local": "Salesianos Estrecho Bosco B",
-              "visitante": "Cde Parla Voley Folder C",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -10522,7 +10522,7 @@
       "categoria": "Cadete Femenino B",
       "division": "1ª División Aut. Zonal",
       "competicion": "Cadete Femenino",
-      "fase": "Liga",
+      "fase": "Fase Regular",
       "urlFmvoley": "https://fmvoley.com/clasificaciones-y-resultados",
       "clasificacion": [
         {
@@ -12651,10 +12651,10 @@
           "pj": 5,
           "pg": 5,
           "pp": 0,
-          "setsFavor": 14,
+          "setsFavor": 15,
           "setsContra": 1,
-          "puntosFavor": 372,
-          "puntosContra": 235
+          "puntosFavor": 397,
+          "puntosContra": 245
         },
         {
           "pos": 2,
@@ -12691,9 +12691,9 @@
           "pg": 3,
           "pp": 2,
           "setsFavor": 11,
-          "setsContra": 6,
-          "puntosFavor": 368,
-          "puntosContra": 335
+          "setsContra": 7,
+          "puntosFavor": 378,
+          "puntosContra": 360
         },
         {
           "pos": 5,
@@ -29136,20 +29136,6 @@
               "aplazado": false
             },
             {
-              "id": 61218,
-              "jornada": 8,
-              "fechaHora": "2026-11-21T20:00:00.000Z",
-              "local": "Manzanares Voley B Junior Femenino",
-              "visitante": "B. M. 2 De Mayo",
-              "pabellon": "Colegio Greenfield",
-              "esManzanares": true,
-              "esLocal": true,
-              "aplazado": false,
-              "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
-              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-              "jugado": false
-            },
-            {
               "id": 61216,
               "jornada": 8,
               "fechaHora": "2026-11-22T09:30:00.000Z",
@@ -29203,6 +29189,20 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
+            },
+            {
+              "id": 61218,
+              "jornada": 8,
+              "fechaHora": "2026-12-18T20:00:00.000Z",
+              "local": "Manzanares Voley B Junior Femenino",
+              "visitante": "B. M. 2 De Mayo",
+              "pabellon": "Colegio Greenfield",
+              "esManzanares": true,
+              "esLocal": true,
+              "aplazado": false,
+              "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
+              "jugado": false
             }
           ]
         },
@@ -30842,20 +30842,6 @@
           "resultado": "2-3"
         },
         {
-          "id": 61218,
-          "jornada": 8,
-          "fechaHora": "2026-11-21T20:00:00.000Z",
-          "local": "Manzanares Voley B Junior Femenino",
-          "visitante": "B. M. 2 De Mayo",
-          "pabellon": "Colegio Greenfield",
-          "esManzanares": true,
-          "esLocal": true,
-          "aplazado": false,
-          "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
-          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-          "jugado": false
-        },
-        {
           "id": 61219,
           "jornada": 9,
           "fechaHora": "2026-11-27T19:00:00.000Z",
@@ -30891,6 +30877,20 @@
           "esManzanares": true,
           "esLocal": true,
           "aplazado": false,
+          "jugado": false
+        },
+        {
+          "id": 61218,
+          "jornada": 8,
+          "fechaHora": "2026-12-18T20:00:00.000Z",
+          "local": "Manzanares Voley B Junior Femenino",
+          "visitante": "B. M. 2 De Mayo",
+          "pabellon": "Colegio Greenfield",
+          "esManzanares": true,
+          "esLocal": true,
+          "aplazado": false,
+          "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
           "jugado": false
         },
         {
@@ -34797,21 +34797,6 @@
       "categoria": "Junior Femenino A"
     },
     {
-      "id": 61218,
-      "jornada": 8,
-      "fechaHora": "2026-11-21T20:00:00.000Z",
-      "local": "Manzanares Voley B Junior Femenino",
-      "visitante": "B. M. 2 De Mayo",
-      "pabellon": "Colegio Greenfield",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-      "jugado": false,
-      "categoria": "Junior Femenino B"
-    },
-    {
       "id": 62996,
       "jornada": 7,
       "fechaHora": "2026-11-22T00:00:00.000Z",
@@ -35153,6 +35138,19 @@
       "mapa": "https://www.google.com/maps/search/?api=1&query=EUROPA, PABELLON AV ALEMANIA, 2, LEGANES",
       "jugado": false,
       "categoria": "Juvenil Femenino A"
+    },
+    {
+      "id": 61232,
+      "jornada": 10,
+      "fechaHora": "2026-12-12T00:00:00.000Z",
+      "local": "Saint Louis Morillon",
+      "visitante": "Manzanares Voley B Junior Femenino",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Junior Femenino B"
     }
   ],
   "ultimos": [
