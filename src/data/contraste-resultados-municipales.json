@@ -5,80 +5,80 @@
       "fecha": "2026-11-14",
       "rival": "IRLANDESAS",
       "club": "0-3",
-      "oficial": null,
-      "estado": "pendiente"
+      "oficial": "0-3",
+      "estado": "coincide"
     },
     {
       "equipo": "alevin-mixto",
       "fecha": "2026-11-14",
       "rival": "COSTA",
       "club": "3-0",
-      "oficial": null,
-      "estado": "pendiente"
+      "oficial": "3-0",
+      "estado": "coincide"
     },
     {
       "equipo": "infantil-fem",
       "fecha": "2026-11-14",
       "rival": "LOURDES",
       "club": "2-0",
-      "oficial": null,
-      "estado": "pendiente"
+      "oficial": "2-0",
+      "estado": "coincide"
     },
     {
       "equipo": "infantil-mixto",
       "fecha": "2026-11-14",
       "rival": "IRLANDESAS",
       "club": "2-0",
-      "oficial": null,
-      "estado": "pendiente"
+      "oficial": "2-0",
+      "estado": "coincide"
     },
     {
       "equipo": "infantil-fem-azul",
       "fecha": "2026-11-14",
       "rival": "AMIDECU",
       "club": "2-0",
-      "oficial": null,
-      "estado": "pendiente"
+      "oficial": "2-0",
+      "estado": "coincide"
     },
     {
       "equipo": "infantil-fem-naranja",
       "fecha": "2026-11-14",
       "rival": "AGUIRRE",
       "club": "0-2",
-      "oficial": null,
-      "estado": "pendiente"
+      "oficial": "0-2",
+      "estado": "coincide"
     },
     {
       "equipo": "cadete-fem",
       "fecha": "2026-11-14",
       "rival": "AGUIRRE",
       "club": "2-0",
-      "oficial": null,
-      "estado": "pendiente"
+      "oficial": "2-0",
+      "estado": "coincide"
     },
     {
       "equipo": "cadete-fem-azul",
       "fecha": "2026-11-14",
       "rival": "KING",
       "club": "0-2",
-      "oficial": null,
-      "estado": "pendiente"
+      "oficial": "0-2",
+      "estado": "coincide"
     },
     {
       "equipo": "cadete-fem-naranja",
       "fecha": "2026-11-14",
       "rival": "ALCOBENDAS",
       "club": "0-2",
-      "oficial": null,
-      "estado": "pendiente"
+      "oficial": "0-2",
+      "estado": "coincide"
     },
     {
       "equipo": "juvenil-fem-blanco",
       "fecha": "2026-11-14",
       "rival": "ESCOLAPIAS",
       "club": "0-2",
-      "oficial": null,
-      "estado": "pendiente"
+      "oficial": "0-2",
+      "estado": "coincide"
     }
   ]
 }
