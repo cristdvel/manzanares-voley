@@ -160,7 +160,13 @@ un error controlado.
 > (`functions/api/pedido.ts`), que rechaza el pedido si falta, pesa más de 8 MB
 > o menos de 2 KB, o si por sus primeros bytes no es de verdad un PDF o una
 > imagen (JPG, PNG, WEBP, HEIC); no se fía del tipo ni de la extensión que
-> declare el navegador. Esos límites están al principio de ese archivo.
+> declare el navegador (muchos Android mandan el tipo vacío o
+> "application/octet-stream" con archivos de WhatsApp o Drive). Esos límites
+> están al principio de ese archivo. El formulario además **lee el comprobante
+> entero en memoria nada más elegirlo** y envía esa copia: en el móvil los
+> archivos de Drive, WhatsApp o Descargas se leen de forma perezosa y, si el
+> sistema ya no puede releerlos al enviar, el envío falla con un "Failed to
+> fetch" genérico.
 
 ---
 

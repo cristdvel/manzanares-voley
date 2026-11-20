@@ -27,21 +27,24 @@ const MAX_FILE = 8 * 1024 * 1024; // 8 MB
 // Un justificante real (captura o PDF del banco) pesa bastante más que esto;
 // por debajo es un archivo vacío o de relleno.
 const MIN_FILE = 2 * 1024;
-const TIPOS_OK = ["image/jpeg", "image/png", "image/webp", "image/heic", "image/heif", "application/pdf"];
 
 /**
- * Comprueba por los primeros bytes que el archivo es de verdad un PDF o una
- * imagen (JPEG, PNG, WEBP, HEIC/HEIF), sin fiarse del tipo que declare el
- * navegador ni de la extensión.
+ * Detecta por los primeros bytes si el archivo es de verdad un PDF o una
+ * imagen (JPEG, PNG, WEBP, HEIC/HEIF) y devuelve su tipo real; null si no lo
+ * es. No se fía del tipo que declare el navegador (muchos Android mandan vacío
+ * o "application/octet-stream" con archivos de WhatsApp o Drive) ni de la
+ * extensión.
  */
-function esJustificanteValido(b: Uint8Array): boolean {
+function detectarTipo(b: Uint8Array): { mime: string; ext: string } | null {
   const ascii = (desde: number, hasta: number) => String.fromCharCode(...b.slice(desde, hasta));
-  if (ascii(0, 4) === "%PDF") return true;
-  if (b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) return true; // JPEG
-  if (b[0] === 0x89 && ascii(1, 4) === "PNG") return true;
-  if (ascii(0, 4) === "RIFF" && ascii(8, 12) === "WEBP") return true;
-  if (ascii(4, 8) === "ftyp" && /^(heic|heix|hevc|hevx|heim|heis|mif1|msf1)/.test(ascii(8, 12))) return true;
-  return false;
+  if (ascii(0, 4) === "%PDF") return { mime: "application/pdf", ext: ".pdf" };
+  if (b[0] === 0xff && b[1] === 0xd8 && b[2] === 0xff) return { mime: "image/jpeg", ext: ".jpg" };
+  if (b[0] === 0x89 && ascii(1, 4) === "PNG") return { mime: "image/png", ext: ".png" };
+  if (ascii(0, 4) === "RIFF" && ascii(8, 12) === "WEBP") return { mime: "image/webp", ext: ".webp" };
+  if (ascii(4, 8) === "ftyp" && /^(heic|heix|hevc|hevx|heim|heis|mif1|msf1)/.test(ascii(8, 12))) {
+    return { mime: "image/heic", ext: ".heic" };
+  }
+  return null;
 }
 
 function esc(s: unknown): string {
@@ -131,16 +134,15 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
   if (file.size < MIN_FILE) {
     return json({ ok: false, error: "El comprobante está vacío o es demasiado pequeño. Adjunta el justificante completo." }, 400);
   }
-  if (file.type && !TIPOS_OK.includes(file.type)) {
-    return json({ ok: false, error: "El comprobante debe ser una imagen (JPG, PNG, WEBP, HEIC) o un PDF." }, 400);
-  }
-  if (!esJustificanteValido(new Uint8Array(await file.slice(0, 16).arrayBuffer()))) {
+  const tipoReal = detectarTipo(new Uint8Array(await file.slice(0, 16).arrayBuffer()));
+  if (!tipoReal) {
     return json({ ok: false, error: "El comprobante debe ser una imagen (JPG, PNG, WEBP, HEIC) o un PDF." }, 400);
   }
 
   const numero = generarNumeroPedido();
-  // Renombra el adjunto con el nº de pedido, conservando la extensión original.
-  const ext = /\.[a-zA-Z0-9]+$/.exec(file.name || "")?.[0] || "";
+  // Renombra el adjunto con el nº de pedido, conservando la extensión original
+  // (o la del tipo real si el archivo no trae ninguna).
+  const ext = /\.[a-zA-Z0-9]+$/.exec(file.name || "")?.[0] || tipoReal.ext;
   const nombreArchivo = `${numero}${ext}`;
 
   const filas = lineas
@@ -217,7 +219,7 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env, waitUnti
         pedido: lineas,
         comprobante: {
           nombre: nombreArchivo,
-          tipo: file.type || "application/octet-stream",
+          tipo: tipoReal.mime,
           base64: attachment.content,
         },
       }),
