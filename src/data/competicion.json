@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T01:08:02.613Z",
+  "actualizado": "2026-11-21T12:12:57.367Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -2145,14 +2145,14 @@
           "pos": 5,
           "equipo": "Club Voleibol Torrelodones A",
           "esManzanares": false,
-          "pts": 11,
-          "pj": 6,
-          "pg": 3,
+          "pts": 13,
+          "pj": 7,
+          "pg": 4,
           "pp": 3,
-          "setsFavor": 14,
-          "setsContra": 9,
-          "puntosFavor": 495,
-          "puntosContra": 449
+          "setsFavor": 17,
+          "setsContra": 11,
+          "puntosFavor": 602,
+          "puntosContra": 552
         },
         {
           "pos": 6,
@@ -2171,14 +2171,14 @@
           "pos": 7,
           "equipo": "Sad Recuerdo A",
           "esManzanares": false,
-          "pts": 9,
-          "pj": 6,
+          "pts": 10,
+          "pj": 7,
           "pg": 3,
-          "pp": 3,
-          "setsFavor": 11,
-          "setsContra": 9,
-          "puntosFavor": 428,
-          "puntosContra": 395
+          "pp": 4,
+          "setsFavor": 13,
+          "setsContra": 12,
+          "puntosFavor": 531,
+          "puntosContra": 502
         },
         {
           "pos": 8,
@@ -4212,6 +4212,32 @@
         },
         {
           "pos": 2,
+          "equipo": "Cde Parla Voley Multiopticas B",
+          "esManzanares": false,
+          "pts": 15,
+          "pj": 7,
+          "pg": 5,
+          "pp": 2,
+          "setsFavor": 17,
+          "setsContra": 8,
+          "puntosFavor": 571,
+          "puntosContra": 465
+        },
+        {
+          "pos": 3,
+          "equipo": "Cuv Alcorcón Blanco B",
+          "esManzanares": false,
+          "pts": 15,
+          "pj": 7,
+          "pg": 5,
+          "pp": 2,
+          "setsFavor": 17,
+          "setsContra": 8,
+          "puntosFavor": 574,
+          "puntosContra": 471
+        },
+        {
+          "pos": 4,
           "equipo": "Club Deportivo Loreto Madrid",
           "esManzanares": false,
           "pts": 13,
@@ -4224,7 +4250,7 @@
           "puntosContra": 461
         },
         {
-          "pos": 3,
+          "pos": 5,
           "equipo": "Cuv Alcorcón Naranja C",
           "esManzanares": false,
           "pts": 13,
@@ -4237,43 +4263,17 @@
           "puntosContra": 420
         },
         {
-          "pos": 4,
-          "equipo": "Cde Parla Voley Multiopticas B",
-          "esManzanares": false,
-          "pts": 12,
-          "pj": 6,
-          "pg": 4,
-          "pp": 2,
-          "setsFavor": 14,
-          "setsContra": 8,
-          "puntosFavor": 495,
-          "puntosContra": 409
-        },
-        {
-          "pos": 5,
-          "equipo": "Cuv Alcorcón Blanco B",
-          "esManzanares": false,
-          "pts": 12,
-          "pj": 6,
-          "pg": 4,
-          "pp": 2,
-          "setsFavor": 14,
-          "setsContra": 8,
-          "puntosFavor": 499,
-          "puntosContra": 432
-        },
-        {
           "pos": 6,
           "equipo": "A.D.perales",
           "esManzanares": false,
           "pts": 12,
-          "pj": 6,
+          "pj": 7,
           "pg": 4,
-          "pp": 2,
+          "pp": 3,
           "setsFavor": 14,
-          "setsContra": 8,
-          "puntosFavor": 490,
-          "puntosContra": 430
+          "setsContra": 11,
+          "puntosFavor": 546,
+          "puntosContra": 506
         },
         {
           "pos": 7,
@@ -4293,13 +4293,13 @@
           "equipo": "Stars Sport Madrid Verde",
           "esManzanares": false,
           "pts": 10,
-          "pj": 6,
+          "pj": 7,
           "pg": 3,
-          "pp": 3,
+          "pp": 4,
           "setsFavor": 11,
-          "setsContra": 10,
-          "puntosFavor": 438,
-          "puntosContra": 406
+          "setsContra": 13,
+          "puntosFavor": 477,
+          "puntosContra": 481
         },
         {
           "pos": 9,
@@ -6443,27 +6443,27 @@
           "pos": 11,
           "equipo": "Cde Parla Voley Parlazul",
           "esManzanares": false,
-          "pts": 0,
-          "pj": 6,
-          "pg": 0,
+          "pts": 3,
+          "pj": 7,
+          "pg": 1,
           "pp": 6,
-          "setsFavor": 3,
-          "setsContra": 18,
-          "puntosFavor": 423,
-          "puntosContra": 512
+          "setsFavor": 6,
+          "setsContra": 19,
+          "puntosFavor": 519,
+          "puntosContra": 577
         },
         {
           "pos": 12,
           "equipo": "CV Tres Cantos",
           "esManzanares": false,
           "pts": 0,
-          "pj": 7,
+          "pj": 8,
           "pg": 0,
-          "pp": 7,
-          "setsFavor": 1,
-          "setsContra": 21,
-          "puntosFavor": 332,
-          "puntosContra": 545
+          "pp": 8,
+          "setsFavor": 2,
+          "setsContra": 24,
+          "puntosFavor": 397,
+          "puntosContra": 641
         }
       ],
       "jornadas": [
@@ -10579,6 +10579,19 @@
         },
         {
           "pos": 5,
+          "equipo": "Nuestra Señora Del Pilar Cadete Femenino",
+          "esManzanares": false,
+          "pts": 10,
+          "pj": 7,
+          "pg": 3,
+          "pp": 4,
+          "setsFavor": 14,
+          "setsContra": 13,
+          "puntosFavor": 579,
+          "puntosContra": 591
+        },
+        {
+          "pos": 6,
           "equipo": "CV Nueva Castilla A",
           "esManzanares": false,
           "pts": 8,
@@ -10591,7 +10604,7 @@
           "puntosContra": 539
         },
         {
-          "pos": 6,
+          "pos": 7,
           "equipo": "Gsd Las Suertes",
           "esManzanares": false,
           "pts": 8,
@@ -10602,19 +10615,6 @@
           "setsContra": 15,
           "puntosFavor": 507,
           "puntosContra": 582
-        },
-        {
-          "pos": 7,
-          "equipo": "Nuestra Señora Del Pilar Cadete Femenino",
-          "esManzanares": false,
-          "pts": 7,
-          "pj": 6,
-          "pg": 2,
-          "pp": 4,
-          "setsFavor": 11,
-          "setsContra": 13,
-          "puntosFavor": 504,
-          "puntosContra": 536
         },
         {
           "pos": 8,
@@ -10673,13 +10673,13 @@
           "equipo": "Manzanares Voley B Cadete Femenino",
           "esManzanares": true,
           "pts": 5,
-          "pj": 7,
+          "pj": 8,
           "pg": 2,
-          "pp": 5,
+          "pp": 6,
           "setsFavor": 7,
-          "setsContra": 18,
-          "puntosFavor": 515,
-          "puntosContra": 594
+          "setsContra": 21,
+          "puntosFavor": 570,
+          "puntosContra": 669
         }
       ],
       "jornadas": [
@@ -11167,7 +11167,10 @@
               "aplazado": false,
               "direccion": "CALLE AYALA 47",
               "mapa": "https://www.google.com/maps/search/?api=1&query=NUESTRA SEÑORA DEL PILAR CALLE AYALA 47, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 0,
+              "resultado": "3-0"
             },
             {
               "id": 67191,
@@ -12461,7 +12464,10 @@
           "aplazado": false,
           "direccion": "CALLE AYALA 47",
           "mapa": "https://www.google.com/maps/search/?api=1&query=NUESTRA SEÑORA DEL PILAR CALLE AYALA 47, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0"
         },
         {
           "id": 67196,
@@ -14787,6 +14793,19 @@
         },
         {
           "pos": 4,
+          "equipo": "A. D. Voleibol Rivas",
+          "esManzanares": false,
+          "pts": 10,
+          "pj": 6,
+          "pg": 3,
+          "pp": 3,
+          "setsFavor": 12,
+          "setsContra": 11,
+          "puntosFavor": 491,
+          "puntosContra": 454
+        },
+        {
+          "pos": 5,
           "equipo": "Cuv Alcorcón B",
           "esManzanares": false,
           "pts": 9,
@@ -14797,19 +14816,6 @@
           "setsContra": 9,
           "puntosFavor": 451,
           "puntosContra": 442
-        },
-        {
-          "pos": 5,
-          "equipo": "A. D. Voleibol Rivas",
-          "esManzanares": false,
-          "pts": 7,
-          "pj": 5,
-          "pg": 2,
-          "pp": 3,
-          "setsFavor": 9,
-          "setsContra": 10,
-          "puntosFavor": 395,
-          "puntosContra": 377
         },
         {
           "pos": 6,
@@ -14855,13 +14861,13 @@
           "equipo": "V-Valley CValcalá G2",
           "esManzanares": false,
           "pts": 4,
-          "pj": 5,
+          "pj": 6,
           "pg": 1,
-          "pp": 4,
-          "setsFavor": 7,
-          "setsContra": 11,
-          "puntosFavor": 387,
-          "puntosContra": 406
+          "pp": 5,
+          "setsFavor": 8,
+          "setsContra": 14,
+          "puntosFavor": 464,
+          "puntosContra": 502
         },
         {
           "pos": 10,
@@ -34707,21 +34713,6 @@
   ],
   "proximos": [
     {
-      "id": 67187,
-      "jornada": 7,
-      "fechaHora": "2026-11-21T09:45:00.000Z",
-      "local": "Nuestra Señora Del Pilar Cadete Femenino",
-      "visitante": "Manzanares Voley B Cadete Femenino",
-      "pabellon": "Nuestra Señora Del Pilar",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CALLE AYALA 47",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=NUESTRA SEÑORA DEL PILAR CALLE AYALA 47, MADRID",
-      "jugado": false,
-      "categoria": "Cadete Femenino B"
-    },
-    {
       "id": 59898,
       "jornada": 7,
       "fechaHora": "2026-11-21T13:00:00.000Z",
@@ -35151,9 +35142,40 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Junior Femenino B"
+    },
+    {
+      "id": 75822,
+      "jornada": 6,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "Cde Parla Voley Maxcolchon C Alevin Femenino",
+      "visitante": "Manzanares Voley Alevin",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Alevín Femenino"
     }
   ],
   "ultimos": [
+    {
+      "id": 67187,
+      "jornada": 7,
+      "fechaHora": "2026-11-21T09:45:00.000Z",
+      "local": "Nuestra Señora Del Pilar Cadete Femenino",
+      "visitante": "Manzanares Voley B Cadete Femenino",
+      "pabellon": "Nuestra Señora Del Pilar",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CALLE AYALA 47",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=NUESTRA SEÑORA DEL PILAR CALLE AYALA 47, MADRID",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 0,
+      "resultado": "3-0",
+      "categoria": "Cadete Femenino B"
+    },
     {
       "id": 60915,
       "jornada": 6,
@@ -35279,24 +35301,6 @@
       "setsVisitante": 2,
       "resultado": "3-2",
       "categoria": "Junior Femenino A"
-    },
-    {
-      "id": 64700,
-      "jornada": 5,
-      "fechaHora": "2026-11-15T11:00:00.000Z",
-      "local": "Avp B Rafranjo",
-      "visitante": "Manzanares Voley C",
-      "pabellon": "Pabellón Ceip José Hierro",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "AVENIDA DEL SISTEMA SOLAR, 101A",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLÓN CEIP JOSÉ HIERRO  AVENIDA DEL SISTEMA SOLAR, 101A, PARLA",
-      "jugado": true,
-      "setsLocal": 0,
-      "setsVisitante": 3,
-      "resultado": "0-3",
-      "categoria": "Juvenil Femenino C"
     }
   ]
 }
