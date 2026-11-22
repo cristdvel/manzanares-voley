@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-21T21:29:16.268Z",
+  "actualizado": "2026-11-22T05:29:02.506Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -4218,6 +4218,19 @@
         },
         {
           "pos": 2,
+          "equipo": "Club Deportivo Loreto Madrid",
+          "esManzanares": false,
+          "pts": 16,
+          "pj": 7,
+          "pg": 6,
+          "pp": 1,
+          "setsFavor": 19,
+          "setsContra": 7,
+          "puntosFavor": 599,
+          "puntosContra": 486
+        },
+        {
+          "pos": 3,
           "equipo": "Cuv Alcorcón Naranja C",
           "esManzanares": false,
           "pts": 16,
@@ -4230,7 +4243,7 @@
           "puntosContra": 451
         },
         {
-          "pos": 3,
+          "pos": 4,
           "equipo": "Cde Parla Voley Multiopticas B",
           "esManzanares": false,
           "pts": 15,
@@ -4243,7 +4256,7 @@
           "puntosContra": 465
         },
         {
-          "pos": 4,
+          "pos": 5,
           "equipo": "Cuv Alcorcón Blanco B",
           "esManzanares": false,
           "pts": 15,
@@ -4254,19 +4267,6 @@
           "setsContra": 8,
           "puntosFavor": 574,
           "puntosContra": 471
-        },
-        {
-          "pos": 5,
-          "equipo": "Club Deportivo Loreto Madrid",
-          "esManzanares": false,
-          "pts": 13,
-          "pj": 6,
-          "pg": 5,
-          "pp": 1,
-          "setsFavor": 16,
-          "setsContra": 7,
-          "puntosFavor": 524,
-          "puntosContra": 461
         },
         {
           "pos": 6,
@@ -4351,13 +4351,13 @@
           "equipo": "Salesianos Estrecho Bosco B",
           "esManzanares": false,
           "pts": 0,
-          "pj": 6,
+          "pj": 7,
           "pg": 0,
-          "pp": 6,
+          "pp": 7,
           "setsFavor": 0,
-          "setsContra": 18,
-          "puntosFavor": 210,
-          "puntosContra": 451
+          "setsContra": 21,
+          "puntosFavor": 235,
+          "puntosContra": 526
         }
       ],
       "jornadas": [
@@ -26325,19 +26325,32 @@
         },
         {
           "pos": 9,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
+          "equipo": "Cde Parla Voley Ortopedia A",
+          "esManzanares": false,
           "pts": 6,
-          "pj": 7,
-          "pg": 1,
+          "pj": 8,
+          "pg": 2,
           "pp": 6,
-          "setsFavor": 11,
-          "setsContra": 18,
-          "puntosFavor": 576,
-          "puntosContra": 640
+          "setsFavor": 7,
+          "setsContra": 19,
+          "puntosFavor": 552,
+          "puntosContra": 601
         },
         {
           "pos": 10,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 6,
+          "pj": 8,
+          "pg": 1,
+          "pp": 7,
+          "setsFavor": 12,
+          "setsContra": 21,
+          "puntosFavor": 642,
+          "puntosContra": 737
+        },
+        {
+          "pos": 11,
           "equipo": "VP Madrid A Amarillo",
           "esManzanares": false,
           "pts": 5,
@@ -26348,19 +26361,6 @@
           "setsContra": 19,
           "puntosFavor": 542,
           "puntosContra": 629
-        },
-        {
-          "pos": 11,
-          "equipo": "Cde Parla Voley Ortopedia A",
-          "esManzanares": false,
-          "pts": 3,
-          "pj": 7,
-          "pg": 1,
-          "pp": 6,
-          "setsFavor": 4,
-          "setsContra": 18,
-          "puntosFavor": 455,
-          "puntosContra": 535
         },
         {
           "pos": 12,
@@ -26939,7 +26939,10 @@
               "aplazado": false,
               "direccion": "CALLE MAZATERON, 12",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 1,
+              "setsVisitante": 3,
+              "resultado": "1-3"
             },
             {
               "id": 57328,
@@ -28155,7 +28158,10 @@
           "aplazado": false,
           "direccion": "CALLE MAZATERON, 12",
           "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 1,
+          "setsVisitante": 3,
+          "resultado": "1-3"
         },
         {
           "id": 57330,
@@ -33243,6 +33249,19 @@
         },
         {
           "pos": 3,
+          "equipo": "Maria Rodrigo",
+          "esManzanares": false,
+          "pts": 9,
+          "pj": 4,
+          "pg": 3,
+          "pp": 1,
+          "setsFavor": 10,
+          "setsContra": 4,
+          "puntosFavor": 334,
+          "puntosContra": 256
+        },
+        {
+          "pos": 4,
           "equipo": "Adc Sanfermin",
           "esManzanares": false,
           "pts": 9,
@@ -33253,19 +33272,6 @@
           "setsContra": 6,
           "puntosFavor": 359,
           "puntosContra": 382
-        },
-        {
-          "pos": 4,
-          "equipo": "Maria Rodrigo",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 3,
-          "pg": 2,
-          "pp": 1,
-          "setsFavor": 7,
-          "setsContra": 4,
-          "puntosFavor": 259,
-          "puntosContra": 216
         },
         {
           "pos": 5,
@@ -33311,13 +33317,13 @@
           "equipo": "Manzanares Voley",
           "esManzanares": true,
           "pts": 3,
-          "pj": 5,
+          "pj": 6,
           "pg": 1,
-          "pp": 4,
+          "pp": 5,
           "setsFavor": 4,
-          "setsContra": 13,
-          "puntosFavor": 351,
-          "puntosContra": 412
+          "setsContra": 16,
+          "puntosFavor": 391,
+          "puntosContra": 487
         },
         {
           "pos": 9,
@@ -33629,7 +33635,10 @@
               "aplazado": false,
               "direccion": "CALLE TALAMANCA DEL JARAMA, 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=IES MARIA RODRIGO CALLE TALAMANCA DEL JARAMA, 2, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 0,
+              "resultado": "3-0"
             },
             {
               "id": 62193,
@@ -34578,7 +34587,10 @@
           "aplazado": false,
           "direccion": "CALLE TALAMANCA DEL JARAMA, 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=IES MARIA RODRIGO CALLE TALAMANCA DEL JARAMA, 2, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0"
         },
         {
           "id": 62203,
@@ -34730,36 +34742,6 @@
     }
   ],
   "proximos": [
-    {
-      "id": 62194,
-      "jornada": 5,
-      "fechaHora": "2026-11-21T16:00:00.000Z",
-      "local": "Maria Rodrigo",
-      "visitante": "Manzanares Voley",
-      "pabellon": "Ies Maria Rodrigo",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CALLE TALAMANCA DEL JARAMA, 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=IES MARIA RODRIGO CALLE TALAMANCA DEL JARAMA, 2, MADRID",
-      "jugado": false,
-      "categoria": "Sénior Masculino"
-    },
-    {
-      "id": 57324,
-      "jornada": 8,
-      "fechaHora": "2026-11-21T18:30:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Cde Parla Voley Ortopedia A",
-      "pabellon": "Colegio Nueva Castilla (Nuevo)",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CALLE MAZATERON, 12",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-      "jugado": false,
-      "categoria": "Junior Femenino A"
-    },
     {
       "id": 62996,
       "jornada": 7,
@@ -35167,9 +35149,53 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Infantil Masculino"
+    },
+    {
+      "id": 57193,
+      "jornada": 9,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Feel Alcobendas Negro",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Femenino A"
+    },
+    {
+      "id": 72187,
+      "jornada": 9,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "CV Getafe Verde",
+      "visitante": "Manzanares Voley C Cadete Femenino",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Femenino C"
     }
   ],
   "ultimos": [
+    {
+      "id": 57324,
+      "jornada": 8,
+      "fechaHora": "2026-11-21T18:30:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Cde Parla Voley Ortopedia A",
+      "pabellon": "Colegio Nueva Castilla (Nuevo)",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "CALLE MAZATERON, 12",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+      "jugado": true,
+      "setsLocal": 1,
+      "setsVisitante": 3,
+      "resultado": "1-3",
+      "categoria": "Junior Femenino A"
+    },
     {
       "id": 72174,
       "jornada": 7,
@@ -35187,6 +35213,24 @@
       "setsVisitante": 0,
       "resultado": "3-0",
       "categoria": "Cadete Femenino C"
+    },
+    {
+      "id": 62194,
+      "jornada": 5,
+      "fechaHora": "2026-11-21T16:00:00.000Z",
+      "local": "Maria Rodrigo",
+      "visitante": "Manzanares Voley",
+      "pabellon": "Ies Maria Rodrigo",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CALLE TALAMANCA DEL JARAMA, 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=IES MARIA RODRIGO CALLE TALAMANCA DEL JARAMA, 2, MADRID",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 0,
+      "resultado": "3-0",
+      "categoria": "Sénior Masculino"
     },
     {
       "id": 73298,
@@ -35277,42 +35321,6 @@
       "setsVisitante": 3,
       "resultado": "1-3",
       "categoria": "Cadete Masculino A"
-    },
-    {
-      "id": 67185,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T14:00:00.000Z",
-      "local": "Manzanares Voley B Cadete Femenino",
-      "visitante": "Claret Madrid A",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": true,
-      "setsLocal": 0,
-      "setsVisitante": 3,
-      "resultado": "0-3",
-      "categoria": "Cadete Femenino B"
-    },
-    {
-      "id": 62627,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T14:00:00.000Z",
-      "local": "Manzanares Voley",
-      "visitante": "VP Madrid B Negro B",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": true,
-      "setsLocal": 3,
-      "setsVisitante": 0,
-      "resultado": "3-0",
-      "categoria": "Juvenil Masculino"
     }
   ]
 }
