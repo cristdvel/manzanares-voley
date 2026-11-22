@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-22T05:29:02.506Z",
+  "actualizado": "2026-11-22T15:59:17.882Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -28,26 +28,26 @@
           "equipo": "Manzanares Voley Alevin",
           "esManzanares": true,
           "pts": 12,
-          "pj": 4,
+          "pj": 5,
           "pg": 4,
-          "pp": 0,
-          "setsFavor": 12,
-          "setsContra": 0,
-          "puntosFavor": 301,
-          "puntosContra": 173
+          "pp": 1,
+          "setsFavor": 13,
+          "setsContra": 3,
+          "puntosFavor": 386,
+          "puntosContra": 268
         },
         {
           "pos": 3,
           "equipo": "Arganvoley",
           "esManzanares": false,
-          "pts": 6,
-          "pj": 2,
-          "pg": 2,
+          "pts": 9,
+          "pj": 3,
+          "pg": 3,
           "pp": 0,
-          "setsFavor": 6,
-          "setsContra": 0,
-          "puntosFavor": 150,
-          "puntosContra": 66
+          "setsFavor": 9,
+          "setsContra": 1,
+          "puntosFavor": 245,
+          "puntosContra": 151
         },
         {
           "pos": 4,
@@ -64,6 +64,19 @@
         },
         {
           "pos": 5,
+          "equipo": "CV Nueva Castilla Alevin Femenino",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 3,
+          "pg": 2,
+          "pp": 1,
+          "setsFavor": 3,
+          "setsContra": 4,
+          "puntosFavor": 116,
+          "puntosContra": 154
+        },
+        {
+          "pos": 6,
           "equipo": "C.d.b.colegio Aquila",
           "esManzanares": false,
           "pts": 5,
@@ -74,19 +87,6 @@
           "setsContra": 3,
           "puntosFavor": 198,
           "puntosContra": 259
-        },
-        {
-          "pos": 6,
-          "equipo": "CV Nueva Castilla Alevin Femenino",
-          "esManzanares": false,
-          "pts": 3,
-          "pj": 2,
-          "pg": 1,
-          "pp": 1,
-          "setsFavor": 3,
-          "setsContra": 4,
-          "puntosFavor": 116,
-          "puntosContra": 154
         },
         {
           "pos": 7,
@@ -106,9 +106,9 @@
           "equipo": "CV Madrid B Alevin Femenino",
           "esManzanares": false,
           "pts": 3,
-          "pj": 3,
+          "pj": 4,
           "pg": 1,
-          "pp": 2,
+          "pp": 3,
           "setsFavor": 0,
           "setsContra": 6,
           "puntosFavor": 172,
@@ -449,7 +449,10 @@
               "aplazado": false,
               "direccion": "CANARIAS 17",
               "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DOTACIONAL INTEGRADO, ARGANZUELA CANARIAS 17, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 1,
+              "resultado": "3-1"
             },
             {
               "id": 75811,
@@ -1869,7 +1872,10 @@
           "aplazado": false,
           "direccion": "CANARIAS 17",
           "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DOTACIONAL INTEGRADO, ARGANZUELA CANARIAS 17, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 1,
+          "resultado": "3-1"
         },
         {
           "id": 75822,
@@ -2143,6 +2149,19 @@
         },
         {
           "pos": 5,
+          "equipo": "Coslada Voley A",
+          "esManzanares": false,
+          "pts": 13,
+          "pj": 7,
+          "pg": 5,
+          "pp": 2,
+          "setsFavor": 18,
+          "setsContra": 13,
+          "puntosFavor": 648,
+          "puntosContra": 602
+        },
+        {
+          "pos": 6,
           "equipo": "Club Voleibol Torrelodones A",
           "esManzanares": false,
           "pts": 13,
@@ -2153,19 +2172,6 @@
           "setsContra": 11,
           "puntosFavor": 602,
           "puntosContra": 552
-        },
-        {
-          "pos": 6,
-          "equipo": "Coslada Voley A",
-          "esManzanares": false,
-          "pts": 10,
-          "pj": 6,
-          "pg": 4,
-          "pp": 2,
-          "setsFavor": 15,
-          "setsContra": 12,
-          "puntosFavor": 558,
-          "puntosContra": 527
         },
         {
           "pos": 7,
@@ -2211,13 +2217,13 @@
           "equipo": "Cde Voleibol Colmenar A",
           "esManzanares": false,
           "pts": 4,
-          "pj": 6,
+          "pj": 7,
           "pg": 1,
-          "pp": 5,
-          "setsFavor": 5,
-          "setsContra": 16,
-          "puntosFavor": 399,
-          "puntosContra": 498
+          "pp": 6,
+          "setsFavor": 6,
+          "setsContra": 19,
+          "puntosFavor": 474,
+          "puntosContra": 588
         },
         {
           "pos": 11,
@@ -6323,6 +6329,19 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "Club Voleibol Móstoles",
+          "esManzanares": false,
+          "pts": 20,
+          "pj": 7,
+          "pg": 7,
+          "pp": 0,
+          "setsFavor": 21,
+          "setsContra": 4,
+          "puntosFavor": 603,
+          "puntosContra": 442
+        },
+        {
+          "pos": 2,
           "equipo": "Cvleganes.com A",
           "esManzanares": false,
           "pts": 17,
@@ -6335,33 +6354,33 @@
           "puntosContra": 316
         },
         {
-          "pos": 2,
-          "equipo": "Club Voleibol Móstoles",
-          "esManzanares": false,
-          "pts": 17,
-          "pj": 6,
-          "pg": 6,
-          "pp": 0,
-          "setsFavor": 18,
-          "setsContra": 4,
-          "puntosFavor": 528,
-          "puntosContra": 402
-        },
-        {
           "pos": 3,
           "equipo": "Cuv Alcorcón A",
           "esManzanares": false,
           "pts": 15,
-          "pj": 6,
+          "pj": 7,
           "pg": 5,
-          "pp": 1,
+          "pp": 2,
           "setsFavor": 17,
-          "setsContra": 7,
-          "puntosFavor": 544,
-          "puntosContra": 487
+          "setsContra": 10,
+          "puntosFavor": 584,
+          "puntosContra": 562
         },
         {
           "pos": 4,
+          "equipo": "Cvleganes.com B",
+          "esManzanares": false,
+          "pts": 14,
+          "pj": 7,
+          "pg": 5,
+          "pp": 2,
+          "setsFavor": 16,
+          "setsContra": 11,
+          "puntosFavor": 601,
+          "puntosContra": 553
+        },
+        {
+          "pos": 5,
           "equipo": "CV Sanse",
           "esManzanares": false,
           "pts": 14,
@@ -6374,7 +6393,20 @@
           "puntosContra": 571
         },
         {
-          "pos": 5,
+          "pos": 6,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 13,
+          "pj": 7,
+          "pg": 4,
+          "pp": 3,
+          "setsFavor": 15,
+          "setsContra": 11,
+          "puntosFavor": 565,
+          "puntosContra": 496
+        },
+        {
+          "pos": 7,
           "equipo": "CV Collado Villalba A",
           "esManzanares": false,
           "pts": 12,
@@ -6385,32 +6417,6 @@
           "setsContra": 12,
           "puntosFavor": 544,
           "puntosContra": 529
-        },
-        {
-          "pos": 6,
-          "equipo": "Cvleganes.com B",
-          "esManzanares": false,
-          "pts": 11,
-          "pj": 6,
-          "pg": 4,
-          "pp": 2,
-          "setsFavor": 13,
-          "setsContra": 10,
-          "puntosFavor": 501,
-          "puntosContra": 482
-        },
-        {
-          "pos": 7,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
-          "pts": 10,
-          "pj": 6,
-          "pg": 3,
-          "pp": 3,
-          "setsFavor": 12,
-          "setsContra": 10,
-          "puntosFavor": 466,
-          "puntosContra": 418
         },
         {
           "pos": 8,
@@ -6430,26 +6436,26 @@
           "equipo": "VP Madrid A Amarillo",
           "esManzanares": false,
           "pts": 6,
-          "pj": 5,
+          "pj": 6,
           "pg": 2,
-          "pp": 3,
-          "setsFavor": 7,
-          "setsContra": 10,
-          "puntosFavor": 373,
-          "puntosContra": 398
+          "pp": 4,
+          "setsFavor": 8,
+          "setsContra": 13,
+          "puntosFavor": 444,
+          "puntosContra": 498
         },
         {
           "pos": 10,
           "equipo": "CV Alcalá Scolatrip",
           "esManzanares": false,
           "pts": 3,
-          "pj": 6,
+          "pj": 7,
           "pg": 1,
-          "pp": 5,
-          "setsFavor": 5,
-          "setsContra": 15,
-          "puntosFavor": 377,
-          "puntosContra": 477
+          "pp": 6,
+          "setsFavor": 6,
+          "setsContra": 18,
+          "puntosFavor": 455,
+          "puntosContra": 576
         },
         {
           "pos": 11,
@@ -7018,7 +7024,10 @@
               "aplazado": false,
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 1,
+              "resultado": "3-1"
             }
           ]
         },
@@ -8235,7 +8244,10 @@
           "aplazado": false,
           "direccion": "GALLUR 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 1,
+          "resultado": "3-1"
         },
         {
           "id": 59636,
@@ -8472,14 +8484,14 @@
           "pos": 4,
           "equipo": "Feel Alcobendas Negro",
           "esManzanares": false,
-          "pts": 12,
-          "pj": 6,
-          "pg": 5,
+          "pts": 15,
+          "pj": 7,
+          "pg": 6,
           "pp": 1,
-          "setsFavor": 15,
+          "setsFavor": 18,
           "setsContra": 9,
-          "puntosFavor": 549,
-          "puntosContra": 466
+          "puntosFavor": 624,
+          "puntosContra": 524
         },
         {
           "pos": 5,
@@ -8496,29 +8508,29 @@
         },
         {
           "pos": 6,
-          "equipo": "VP Madrid A Amarillo",
-          "esManzanares": false,
-          "pts": 8,
-          "pj": 6,
-          "pg": 3,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 10,
+          "pj": 7,
+          "pg": 4,
           "pp": 3,
-          "setsFavor": 10,
-          "setsContra": 11,
-          "puntosFavor": 440,
-          "puntosContra": 442
+          "setsFavor": 13,
+          "setsContra": 13,
+          "puntosFavor": 545,
+          "puntosContra": 574
         },
         {
           "pos": 7,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
+          "equipo": "VP Madrid A Amarillo",
+          "esManzanares": false,
           "pts": 8,
-          "pj": 6,
+          "pj": 7,
           "pg": 3,
-          "pp": 3,
+          "pp": 4,
           "setsFavor": 10,
-          "setsContra": 11,
-          "puntosFavor": 437,
-          "puntosContra": 475
+          "setsContra": 14,
+          "puntosFavor": 498,
+          "puntosContra": 517
         },
         {
           "pos": 8,
@@ -8535,6 +8547,19 @@
         },
         {
           "pos": 9,
+          "equipo": "CV Sanse Rojo",
+          "esManzanares": false,
+          "pts": 7,
+          "pj": 7,
+          "pg": 2,
+          "pp": 5,
+          "setsFavor": 13,
+          "setsContra": 19,
+          "puntosFavor": 607,
+          "puntosContra": 701
+        },
+        {
+          "pos": 10,
           "equipo": "CV Las Rozas A",
           "esManzanares": false,
           "pts": 7,
@@ -8545,19 +8570,6 @@
           "setsContra": 15,
           "puntosFavor": 521,
           "puntosContra": 525
-        },
-        {
-          "pos": 10,
-          "equipo": "CV Sanse Rojo",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 6,
-          "pg": 2,
-          "pp": 4,
-          "setsFavor": 11,
-          "setsContra": 16,
-          "puntosFavor": 508,
-          "puntosContra": 593
         },
         {
           "pos": 11,
@@ -9126,7 +9138,10 @@
               "aplazado": false,
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 2,
+              "resultado": "3-2"
             }
           ]
         },
@@ -10343,7 +10358,10 @@
           "aplazado": false,
           "direccion": "GALLUR 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 2,
+          "resultado": "3-2"
         },
         {
           "id": 57188,
@@ -10604,6 +10622,19 @@
         },
         {
           "pos": 6,
+          "equipo": "Gsd Las Suertes",
+          "esManzanares": false,
+          "pts": 10,
+          "pj": 7,
+          "pg": 3,
+          "pp": 4,
+          "setsFavor": 15,
+          "setsContra": 17,
+          "puntosFavor": 611,
+          "puntosContra": 683
+        },
+        {
+          "pos": 7,
           "equipo": "Las Nieves A",
           "esManzanares": false,
           "pts": 9,
@@ -10616,7 +10647,7 @@
           "puntosContra": 612
         },
         {
-          "pos": 7,
+          "pos": 8,
           "equipo": "VP Madrid C Blanco C",
           "esManzanares": false,
           "pts": 8,
@@ -10629,7 +10660,7 @@
           "puntosContra": 570
         },
         {
-          "pos": 8,
+          "pos": 9,
           "equipo": "CV Nueva Castilla A",
           "esManzanares": false,
           "pts": 8,
@@ -10642,30 +10673,17 @@
           "puntosContra": 614
         },
         {
-          "pos": 9,
-          "equipo": "Gsd Las Suertes",
-          "esManzanares": false,
-          "pts": 8,
-          "pj": 6,
-          "pg": 2,
-          "pp": 4,
-          "setsFavor": 12,
-          "setsContra": 15,
-          "puntosFavor": 507,
-          "puntosContra": 582
-        },
-        {
           "pos": 10,
           "equipo": "Grupo Egido Pinto B",
           "esManzanares": false,
-          "pts": 7,
-          "pj": 6,
+          "pts": 8,
+          "pj": 7,
           "pg": 2,
-          "pp": 4,
-          "setsFavor": 9,
-          "setsContra": 13,
-          "puntosFavor": 453,
-          "puntosContra": 507
+          "pp": 5,
+          "setsFavor": 11,
+          "setsContra": 16,
+          "puntosFavor": 554,
+          "puntosContra": 611
         },
         {
           "pos": 11,
@@ -12678,14 +12696,14 @@
           "pos": 2,
           "equipo": "Avp A Pozo Red",
           "esManzanares": false,
-          "pts": 15,
-          "pj": 5,
-          "pg": 5,
+          "pts": 18,
+          "pj": 6,
+          "pg": 6,
           "pp": 0,
-          "setsFavor": 15,
+          "setsFavor": 18,
           "setsContra": 4,
-          "puntosFavor": 456,
-          "puntosContra": 341
+          "puntosFavor": 531,
+          "puntosContra": 377
         },
         {
           "pos": 3,
@@ -12718,13 +12736,13 @@
           "equipo": "Cde Parla Voley Maxcolchon E Cadete Femenino",
           "esManzanares": false,
           "pts": 10,
-          "pj": 5,
+          "pj": 6,
           "pg": 3,
-          "pp": 2,
-          "setsFavor": 11,
-          "setsContra": 7,
-          "puntosFavor": 378,
-          "puntosContra": 360
+          "pp": 3,
+          "setsFavor": 12,
+          "setsContra": 10,
+          "puntosFavor": 454,
+          "puntosContra": 457
         },
         {
           "pos": 6,
@@ -12767,19 +12785,32 @@
         },
         {
           "pos": 9,
-          "equipo": "C.d.b.colegio Aquila 2",
+          "equipo": "CV Getafe Verde",
           "esManzanares": false,
-          "pts": 4,
-          "pj": 5,
-          "pg": 1,
-          "pp": 4,
-          "setsFavor": 7,
-          "setsContra": 13,
-          "puntosFavor": 376,
-          "puntosContra": 465
+          "pts": 5,
+          "pj": 7,
+          "pg": 2,
+          "pp": 5,
+          "setsFavor": 8,
+          "setsContra": 18,
+          "puntosFavor": 519,
+          "puntosContra": 574
         },
         {
           "pos": 10,
+          "equipo": "C.d.b.colegio Aquila 2",
+          "esManzanares": false,
+          "pts": 4,
+          "pj": 6,
+          "pg": 1,
+          "pp": 5,
+          "setsFavor": 7,
+          "setsContra": 16,
+          "puntosFavor": 412,
+          "puntosContra": 540
+        },
+        {
+          "pos": 11,
           "equipo": "A.D.perales Blanco",
           "esManzanares": false,
           "pts": 3,
@@ -12790,19 +12821,6 @@
           "setsContra": 16,
           "puntosFavor": 426,
           "puntosContra": 482
-        },
-        {
-          "pos": 11,
-          "equipo": "CV Getafe Verde",
-          "esManzanares": false,
-          "pts": 2,
-          "pj": 6,
-          "pg": 1,
-          "pp": 5,
-          "setsFavor": 5,
-          "setsContra": 17,
-          "puntosFavor": 422,
-          "puntosContra": 498
         }
       ],
       "jornadas": [
@@ -14800,17 +14818,30 @@
           "pos": 3,
           "equipo": "Dragons Voleibol Moralzarzal",
           "esManzanares": false,
-          "pts": 11,
-          "pj": 6,
-          "pg": 4,
+          "pts": 14,
+          "pj": 7,
+          "pg": 5,
           "pp": 2,
-          "setsFavor": 14,
+          "setsFavor": 17,
           "setsContra": 9,
-          "puntosFavor": 508,
-          "puntosContra": 456
+          "puntosFavor": 585,
+          "puntosContra": 508
         },
         {
           "pos": 4,
+          "equipo": "Cuv Alcorcón B",
+          "esManzanares": false,
+          "pts": 12,
+          "pj": 6,
+          "pg": 4,
+          "pp": 2,
+          "setsFavor": 15,
+          "setsContra": 9,
+          "puntosFavor": 526,
+          "puntosContra": 478
+        },
+        {
+          "pos": 5,
           "equipo": "A. D. Voleibol Rivas",
           "esManzanares": false,
           "pts": 10,
@@ -14821,19 +14852,6 @@
           "setsContra": 11,
           "puntosFavor": 491,
           "puntosContra": 454
-        },
-        {
-          "pos": 5,
-          "equipo": "Cuv Alcorcón B",
-          "esManzanares": false,
-          "pts": 9,
-          "pj": 5,
-          "pg": 3,
-          "pp": 2,
-          "setsFavor": 12,
-          "setsContra": 9,
-          "puntosFavor": 451,
-          "puntosContra": 442
         },
         {
           "pos": 6,
@@ -14853,13 +14871,13 @@
           "equipo": "A.D.perales",
           "esManzanares": false,
           "pts": 6,
-          "pj": 5,
+          "pj": 6,
           "pg": 2,
-          "pp": 3,
+          "pp": 4,
           "setsFavor": 7,
-          "setsContra": 11,
-          "puntosFavor": 378,
-          "puntosContra": 384
+          "setsContra": 14,
+          "puntosFavor": 430,
+          "puntosContra": 461
         },
         {
           "pos": 8,
@@ -14905,13 +14923,13 @@
           "equipo": "Mintonette CV Pozuelo",
           "esManzanares": false,
           "pts": 1,
-          "pj": 6,
+          "pj": 7,
           "pg": 0,
-          "pp": 6,
+          "pp": 7,
           "setsFavor": 2,
-          "setsContra": 18,
-          "puntosFavor": 244,
-          "puntosContra": 481
+          "setsContra": 21,
+          "puntosFavor": 280,
+          "puntosContra": 556
         }
       ],
       "jornadas": [
@@ -18408,43 +18426,56 @@
           "pos": 2,
           "equipo": "Cvleganes.com A",
           "esManzanares": false,
-          "pts": 18,
-          "pj": 8,
-          "pg": 7,
+          "pts": 21,
+          "pj": 9,
+          "pg": 8,
           "pp": 1,
-          "setsFavor": 23,
+          "setsFavor": 26,
           "setsContra": 12,
-          "puntosFavor": 767,
-          "puntosContra": 653
+          "puntosFavor": 842,
+          "puntosContra": 710
         },
         {
           "pos": 3,
           "equipo": "Ucam Torrejón A",
           "esManzanares": false,
-          "pts": 17,
-          "pj": 8,
-          "pg": 6,
+          "pts": 20,
+          "pj": 9,
+          "pg": 7,
           "pp": 2,
-          "setsFavor": 20,
-          "setsContra": 12,
-          "puntosFavor": 695,
-          "puntosContra": 662
+          "setsFavor": 23,
+          "setsContra": 13,
+          "puntosFavor": 793,
+          "puntosContra": 742
         },
         {
           "pos": 4,
           "equipo": "Feel Alcobendas Negro",
           "esManzanares": false,
-          "pts": 17,
-          "pj": 8,
-          "pg": 5,
+          "pts": 20,
+          "pj": 9,
+          "pg": 6,
           "pp": 3,
-          "setsFavor": 19,
+          "setsFavor": 22,
           "setsContra": 10,
-          "puntosFavor": 680,
-          "puntosContra": 557
+          "puntosFavor": 755,
+          "puntosContra": 613
         },
         {
           "pos": 5,
+          "equipo": "Club Voleibol Móstoles A",
+          "esManzanares": false,
+          "pts": 17,
+          "pj": 9,
+          "pg": 5,
+          "pp": 4,
+          "setsFavor": 22,
+          "setsContra": 15,
+          "puntosFavor": 794,
+          "puntosContra": 747
+        },
+        {
+          "pos": 6,
           "equipo": "Assa Abloy Sanse",
           "esManzanares": false,
           "pts": 16,
@@ -18455,19 +18486,6 @@
           "setsContra": 17,
           "puntosFavor": 848,
           "puntosContra": 785
-        },
-        {
-          "pos": 6,
-          "equipo": "Club Voleibol Móstoles A",
-          "esManzanares": false,
-          "pts": 16,
-          "pj": 8,
-          "pg": 5,
-          "pp": 3,
-          "setsFavor": 20,
-          "setsContra": 12,
-          "puntosFavor": 690,
-          "puntosContra": 645
         },
         {
           "pos": 7,
@@ -18484,6 +18502,19 @@
         },
         {
           "pos": 8,
+          "equipo": "CV Bulldogs A",
+          "esManzanares": false,
+          "pts": 9,
+          "pj": 9,
+          "pg": 3,
+          "pp": 6,
+          "setsFavor": 12,
+          "setsContra": 21,
+          "puntosFavor": 685,
+          "puntosContra": 744
+        },
+        {
+          "pos": 9,
           "equipo": "CV Las Rozas A",
           "esManzanares": false,
           "pts": 8,
@@ -18496,56 +18527,43 @@
           "puntosContra": 778
         },
         {
-          "pos": 9,
+          "pos": 10,
           "equipo": "Manzanares Voley A",
           "esManzanares": true,
           "pts": 7,
-          "pj": 8,
+          "pj": 9,
           "pg": 2,
-          "pp": 6,
+          "pp": 7,
           "setsFavor": 12,
-          "setsContra": 20,
-          "puntosFavor": 670,
-          "puntosContra": 718
-        },
-        {
-          "pos": 10,
-          "equipo": "CV Bulldogs A",
-          "esManzanares": false,
-          "pts": 7,
-          "pj": 8,
-          "pg": 2,
-          "pp": 6,
-          "setsFavor": 9,
-          "setsContra": 19,
-          "puntosFavor": 583,
-          "puntosContra": 640
+          "setsContra": 23,
+          "puntosFavor": 726,
+          "puntosContra": 793
         },
         {
           "pos": 11,
           "equipo": "Chv1995 A",
           "esManzanares": false,
           "pts": 6,
-          "pj": 8,
+          "pj": 9,
           "pg": 1,
-          "pp": 7,
-          "setsFavor": 12,
-          "setsContra": 21,
-          "puntosFavor": 651,
-          "puntosContra": 730
+          "pp": 8,
+          "setsFavor": 13,
+          "setsContra": 24,
+          "puntosFavor": 731,
+          "puntosContra": 828
         },
         {
           "pos": 12,
           "equipo": "V-Valley CValcalá G1",
           "esManzanares": false,
           "pts": 2,
-          "pj": 8,
+          "pj": 9,
           "pg": 1,
-          "pp": 7,
+          "pp": 8,
           "setsFavor": 5,
-          "setsContra": 23,
-          "puntosFavor": 525,
-          "puntosContra": 679
+          "setsContra": 26,
+          "puntosFavor": 582,
+          "puntosContra": 754
         }
       ],
       "jornadas": [
@@ -19244,7 +19262,10 @@
               "aplazado": false,
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 0,
+              "setsVisitante": 3,
+              "resultado": "0-3"
             }
           ]
         },
@@ -20349,7 +20370,10 @@
           "aplazado": false,
           "direccion": "GALLUR 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 0,
+          "setsVisitante": 3,
+          "resultado": "0-3"
         },
         {
           "id": 56797,
@@ -20549,43 +20573,56 @@
           "pos": 3,
           "equipo": "Cuv Alcorcón Blanco",
           "esManzanares": false,
-          "pts": 15,
-          "pj": 6,
-          "pg": 5,
+          "pts": 17,
+          "pj": 7,
+          "pg": 6,
           "pp": 1,
-          "setsFavor": 15,
-          "setsContra": 4,
-          "puntosFavor": 438,
-          "puntosContra": 347
+          "setsFavor": 18,
+          "setsContra": 6,
+          "puntosFavor": 538,
+          "puntosContra": 435
         },
         {
           "pos": 4,
-          "equipo": "Manzanares Voley B",
-          "esManzanares": true,
+          "equipo": "Club Voleibol Móstoles B",
+          "esManzanares": false,
           "pts": 12,
-          "pj": 6,
+          "pj": 7,
           "pg": 4,
-          "pp": 2,
-          "setsFavor": 14,
-          "setsContra": 10,
-          "puntosFavor": 517,
-          "puntosContra": 501
+          "pp": 3,
+          "setsFavor": 16,
+          "setsContra": 12,
+          "puntosFavor": 621,
+          "puntosContra": 558
         },
         {
           "pos": 5,
-          "equipo": "Club Voleibol Móstoles B",
-          "esManzanares": false,
-          "pts": 11,
-          "pj": 6,
+          "equipo": "Manzanares Voley B",
+          "esManzanares": true,
+          "pts": 12,
+          "pj": 7,
           "pg": 4,
-          "pp": 2,
-          "setsFavor": 14,
-          "setsContra": 9,
-          "puntosFavor": 533,
-          "puntosContra": 458
+          "pp": 3,
+          "setsFavor": 15,
+          "setsContra": 13,
+          "puntosFavor": 601,
+          "puntosContra": 597
         },
         {
           "pos": 6,
+          "equipo": "CV Valdemoro Las Aguas Juvenil Femenino",
+          "esManzanares": false,
+          "pts": 12,
+          "pj": 7,
+          "pg": 4,
+          "pp": 3,
+          "setsFavor": 12,
+          "setsContra": 13,
+          "puntosFavor": 523,
+          "puntosContra": 543
+        },
+        {
+          "pos": 7,
           "equipo": "Abv Boadilla B",
           "esManzanares": false,
           "pts": 9,
@@ -20596,19 +20633,6 @@
           "setsContra": 12,
           "puntosFavor": 507,
           "puntosContra": 523
-        },
-        {
-          "pos": 7,
-          "equipo": "CV Valdemoro Las Aguas Juvenil Femenino",
-          "esManzanares": false,
-          "pts": 9,
-          "pj": 6,
-          "pg": 3,
-          "pp": 3,
-          "setsFavor": 9,
-          "setsContra": 12,
-          "puntosFavor": 427,
-          "puntosContra": 459
         },
         {
           "pos": 8,
@@ -21194,7 +21218,10 @@
               "aplazado": false,
               "direccion": "GALLUR 2",
               "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 1,
+              "setsVisitante": 3,
+              "resultado": "1-3"
             },
             {
               "id": 60922,
@@ -22433,7 +22460,10 @@
           "aplazado": false,
           "direccion": "GALLUR 2",
           "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 1,
+          "setsVisitante": 3,
+          "resultado": "1-3"
         },
         {
           "id": 60928,
@@ -22668,6 +22698,19 @@
         },
         {
           "pos": 4,
+          "equipo": "Cde Union Voleibol El Alamo Juvenil Femenino",
+          "esManzanares": false,
+          "pts": 9,
+          "pj": 5,
+          "pg": 3,
+          "pp": 2,
+          "setsFavor": 9,
+          "setsContra": 8,
+          "puntosFavor": 369,
+          "puntosContra": 361
+        },
+        {
+          "pos": 5,
           "equipo": "C.d.b.colegio Aquila Juvenil Femenino",
           "esManzanares": false,
           "pts": 7,
@@ -22680,7 +22723,7 @@
           "puntosContra": 448
         },
         {
-          "pos": 5,
+          "pos": 6,
           "equipo": "A.D.perales Blanco Juvenil Femenino",
           "esManzanares": false,
           "pts": 7,
@@ -22693,30 +22736,17 @@
           "puntosContra": 296
         },
         {
-          "pos": 6,
-          "equipo": "Cde Union Voleibol El Alamo Juvenil Femenino",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 4,
-          "pg": 2,
-          "pp": 2,
-          "setsFavor": 6,
-          "setsContra": 7,
-          "puntosFavor": 288,
-          "puntosContra": 286
-        },
-        {
           "pos": 7,
           "equipo": "Manzanares Voley C",
           "esManzanares": true,
           "pts": 4,
-          "pj": 4,
+          "pj": 5,
           "pg": 1,
-          "pp": 3,
-          "setsFavor": 5,
-          "setsContra": 9,
-          "puntosFavor": 273,
-          "puntosContra": 302
+          "pp": 4,
+          "setsFavor": 6,
+          "setsContra": 12,
+          "puntosFavor": 348,
+          "puntosContra": 383
         },
         {
           "pos": 8,
@@ -23092,7 +23122,10 @@
               "aplazado": false,
               "direccion": "PASEO DEL OLIVAR 62",
               "mapa": "https://www.google.com/maps/search/?api=1&query=EL ALAMO, IES PASEO DEL OLIVAR 62, EL ALAMO",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 1,
+              "setsVisitante": 3,
+              "resultado": "1-3"
             },
             {
               "id": 64705,
@@ -23978,7 +24011,10 @@
           "aplazado": false,
           "direccion": "PASEO DEL OLIVAR 62",
           "mapa": "https://www.google.com/maps/search/?api=1&query=EL ALAMO, IES PASEO DEL OLIVAR 62, EL ALAMO",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 1,
+          "setsVisitante": 3,
+          "resultado": "1-3"
         },
         {
           "id": 64709,
@@ -24175,6 +24211,19 @@
         },
         {
           "pos": 4,
+          "equipo": "Manzanares Voley",
+          "esManzanares": true,
+          "pts": 12,
+          "pj": 6,
+          "pg": 4,
+          "pp": 2,
+          "setsFavor": 13,
+          "setsContra": 6,
+          "puntosFavor": 436,
+          "puntosContra": 378
+        },
+        {
+          "pos": 5,
           "equipo": "CV Getafe Azul",
           "esManzanares": false,
           "pts": 12,
@@ -24187,30 +24236,17 @@
           "puntosContra": 431
         },
         {
-          "pos": 5,
+          "pos": 6,
           "equipo": "CV Guadarrama",
           "esManzanares": false,
           "pts": 12,
-          "pj": 6,
+          "pj": 7,
           "pg": 4,
-          "pp": 2,
+          "pp": 3,
           "setsFavor": 14,
-          "setsContra": 9,
-          "puntosFavor": 534,
-          "puntosContra": 464
-        },
-        {
-          "pos": 6,
-          "equipo": "Manzanares Voley",
-          "esManzanares": true,
-          "pts": 9,
-          "pj": 5,
-          "pg": 3,
-          "pp": 2,
-          "setsFavor": 10,
-          "setsContra": 6,
-          "puntosFavor": 361,
-          "puntosContra": 323
+          "setsContra": 12,
+          "puntosFavor": 589,
+          "puntosContra": 539
         },
         {
           "pos": 7,
@@ -24802,7 +24838,10 @@
               "aplazado": false,
               "direccion": "CALLE DE LOS ESCORIALES 11",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO PUBLICO VILLA DE GUADARRAMA CALLE DE LOS ESCORIALES 11, GUADARRAMA",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 0,
+              "setsVisitante": 3,
+              "resultado": "0-3"
             },
             {
               "id": 62629,
@@ -26025,7 +26064,10 @@
           "aplazado": false,
           "direccion": "CALLE DE LOS ESCORIALES 11",
           "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO PUBLICO VILLA DE GUADARRAMA CALLE DE LOS ESCORIALES 11, GUADARRAMA",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 0,
+          "setsVisitante": 3,
+          "resultado": "0-3"
         },
         {
           "id": 62637,
@@ -26234,6 +26276,19 @@
         },
         {
           "pos": 2,
+          "equipo": "Cvleganes.com",
+          "esManzanares": false,
+          "pts": 19,
+          "pj": 8,
+          "pg": 7,
+          "pp": 1,
+          "setsFavor": 22,
+          "setsContra": 8,
+          "puntosFavor": 680,
+          "puntosContra": 593
+        },
+        {
+          "pos": 3,
           "equipo": "Feel Alcobendas",
           "esManzanares": false,
           "pts": 19,
@@ -26246,56 +26301,43 @@
           "puntosContra": 475
         },
         {
-          "pos": 3,
+          "pos": 4,
           "equipo": "CV Las Rozas A",
           "esManzanares": false,
-          "pts": 17,
-          "pj": 7,
+          "pts": 18,
+          "pj": 8,
           "pg": 6,
-          "pp": 1,
-          "setsFavor": 18,
-          "setsContra": 5,
-          "puntosFavor": 524,
-          "puntosContra": 432
-        },
-        {
-          "pos": 4,
-          "equipo": "Cvleganes.com",
-          "esManzanares": false,
-          "pts": 17,
-          "pj": 7,
-          "pg": 6,
-          "pp": 1,
-          "setsFavor": 19,
-          "setsContra": 6,
-          "puntosFavor": 580,
-          "puntosContra": 497
+          "pp": 2,
+          "setsFavor": 20,
+          "setsContra": 8,
+          "puntosFavor": 620,
+          "puntosContra": 532
         },
         {
           "pos": 5,
           "equipo": "V-Valley CValcalá G1",
           "esManzanares": false,
-          "pts": 13,
-          "pj": 7,
-          "pg": 4,
+          "pts": 16,
+          "pj": 8,
+          "pg": 5,
           "pp": 3,
-          "setsFavor": 15,
-          "setsContra": 9,
-          "puntosFavor": 533,
-          "puntosContra": 471
+          "setsFavor": 18,
+          "setsContra": 10,
+          "puntosFavor": 629,
+          "puntosContra": 541
         },
         {
           "pos": 6,
           "equipo": "CV Collado Villalba",
           "esManzanares": false,
           "pts": 12,
-          "pj": 7,
+          "pj": 8,
           "pg": 5,
-          "pp": 2,
-          "setsFavor": 16,
-          "setsContra": 13,
-          "puntosFavor": 620,
-          "puntosContra": 590
+          "pp": 3,
+          "setsFavor": 17,
+          "setsContra": 16,
+          "puntosFavor": 690,
+          "puntosContra": 686
         },
         {
           "pos": 7,
@@ -28347,14 +28389,14 @@
           "pos": 1,
           "equipo": "Saint Louis Morillon",
           "esManzanares": false,
-          "pts": 21,
-          "pj": 7,
-          "pg": 7,
+          "pts": 24,
+          "pj": 8,
+          "pg": 8,
           "pp": 0,
-          "setsFavor": 21,
+          "setsFavor": 24,
           "setsContra": 2,
-          "puntosFavor": 560,
-          "puntosContra": 357
+          "puntosFavor": 635,
+          "puntosContra": 401
         },
         {
           "pos": 2,
@@ -28373,17 +28415,30 @@
           "pos": 3,
           "equipo": "Cd Newman B",
           "esManzanares": false,
-          "pts": 17,
-          "pj": 7,
-          "pg": 6,
+          "pts": 20,
+          "pj": 8,
+          "pg": 7,
           "pp": 1,
-          "setsFavor": 18,
+          "setsFavor": 21,
           "setsContra": 5,
-          "puntosFavor": 535,
-          "puntosContra": 442
+          "puntosFavor": 610,
+          "puntosContra": 492
         },
         {
           "pos": 4,
+          "equipo": "Cde Voleibol Colmenar A",
+          "esManzanares": false,
+          "pts": 19,
+          "pj": 8,
+          "pg": 6,
+          "pp": 2,
+          "setsFavor": 21,
+          "setsContra": 7,
+          "puntosFavor": 630,
+          "puntosContra": 492
+        },
+        {
+          "pos": 5,
           "equipo": "Manzanares Voley B Junior Femenino",
           "esManzanares": true,
           "pts": 17,
@@ -28396,59 +28451,33 @@
           "puntosContra": 472
         },
         {
-          "pos": 5,
-          "equipo": "Cde Voleibol Colmenar A",
-          "esManzanares": false,
-          "pts": 16,
-          "pj": 7,
-          "pg": 5,
-          "pp": 2,
-          "setsFavor": 18,
-          "setsContra": 7,
-          "puntosFavor": 555,
-          "puntosContra": 448
-        },
-        {
           "pos": 6,
           "equipo": "Chv1995 B",
           "esManzanares": false,
           "pts": 12,
-          "pj": 7,
+          "pj": 8,
           "pg": 4,
-          "pp": 3,
+          "pp": 4,
           "setsFavor": 14,
-          "setsContra": 10,
-          "puntosFavor": 546,
-          "puntosContra": 475
+          "setsContra": 13,
+          "puntosFavor": 596,
+          "puntosContra": 550
         },
         {
           "pos": 7,
           "equipo": "CV Yma Majadahonda Junior Femenino",
           "esManzanares": false,
           "pts": 10,
-          "pj": 7,
+          "pj": 8,
           "pg": 3,
-          "pp": 4,
+          "pp": 5,
           "setsFavor": 12,
-          "setsContra": 13,
-          "puntosFavor": 537,
-          "puntosContra": 531
+          "setsContra": 16,
+          "puntosFavor": 581,
+          "puntosContra": 606
         },
         {
           "pos": 8,
-          "equipo": "CV Bulldogs B Junior Femenino",
-          "esManzanares": false,
-          "pts": 9,
-          "pj": 6,
-          "pg": 3,
-          "pp": 3,
-          "setsFavor": 10,
-          "setsContra": 10,
-          "puntosFavor": 431,
-          "puntosContra": 438
-        },
-        {
-          "pos": 9,
           "equipo": "Stars Sport Madrid",
           "esManzanares": false,
           "pts": 9,
@@ -28459,6 +28488,19 @@
           "setsContra": 13,
           "puntosFavor": 501,
           "puntosContra": 503
+        },
+        {
+          "pos": 9,
+          "equipo": "CV Bulldogs B Junior Femenino",
+          "esManzanares": false,
+          "pts": 9,
+          "pj": 7,
+          "pg": 3,
+          "pp": 4,
+          "setsFavor": 10,
+          "setsContra": 13,
+          "puntosFavor": 475,
+          "puntosContra": 513
         },
         {
           "pos": 10,
@@ -31183,13 +31225,13 @@
           "equipo": "CV Majadahonda A",
           "esManzanares": false,
           "pts": 10,
-          "pj": 6,
+          "pj": 7,
           "pg": 4,
-          "pp": 2,
-          "setsFavor": 13,
-          "setsContra": 11,
-          "puntosFavor": 520,
-          "puntosContra": 455
+          "pp": 3,
+          "setsFavor": 14,
+          "setsContra": 14,
+          "puntosFavor": 608,
+          "puntosContra": 552
         },
         {
           "pos": 7,
@@ -31221,17 +31263,30 @@
           "pos": 9,
           "equipo": "CV Bulldogs A",
           "esManzanares": false,
-          "pts": 6,
-          "pj": 6,
-          "pg": 2,
+          "pts": 9,
+          "pj": 7,
+          "pg": 3,
           "pp": 4,
-          "setsFavor": 10,
-          "setsContra": 15,
-          "puntosFavor": 545,
-          "puntosContra": 541
+          "setsFavor": 13,
+          "setsContra": 16,
+          "puntosFavor": 642,
+          "puntosContra": 629
         },
         {
           "pos": 10,
+          "equipo": "Cd Newman A",
+          "esManzanares": false,
+          "pts": 4,
+          "pj": 7,
+          "pg": 1,
+          "pp": 6,
+          "setsFavor": 7,
+          "setsContra": 20,
+          "puntosFavor": 474,
+          "puntosContra": 609
+        },
+        {
+          "pos": 11,
           "equipo": "CV Sanse A",
           "esManzanares": false,
           "pts": 3,
@@ -31244,30 +31299,17 @@
           "puntosContra": 503
         },
         {
-          "pos": 11,
+          "pos": 12,
           "equipo": "Abv Boadilla B",
           "esManzanares": false,
-          "pts": 2,
-          "pj": 6,
+          "pts": 3,
+          "pj": 7,
           "pg": 0,
-          "pp": 6,
-          "setsFavor": 6,
-          "setsContra": 18,
-          "puntosFavor": 454,
-          "puntosContra": 566
-        },
-        {
-          "pos": 12,
-          "equipo": "Cd Newman A",
-          "esManzanares": false,
-          "pts": 2,
-          "pj": 6,
-          "pg": 0,
-          "pp": 6,
-          "setsFavor": 4,
-          "setsContra": 18,
-          "puntosFavor": 371,
-          "puntosContra": 507
+          "pp": 7,
+          "setsFavor": 8,
+          "setsContra": 21,
+          "puntosFavor": 556,
+          "puntosContra": 669
         }
       ],
       "jornadas": [
@@ -34756,111 +34798,6 @@
       "categoria": "Cadete Masculino A"
     },
     {
-      "id": 75814,
-      "jornada": 4,
-      "fechaHora": "2026-11-22T09:30:00.000Z",
-      "local": "Arganvoley",
-      "visitante": "Manzanares Voley Alevin",
-      "pabellon": "Centro Dotacional Integrado, Arganzuela",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CANARIAS 17",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DOTACIONAL INTEGRADO, ARGANZUELA CANARIAS 17, MADRID",
-      "jugado": false,
-      "categoria": "Alevín Femenino"
-    },
-    {
-      "id": 59626,
-      "jornada": 7,
-      "fechaHora": "2026-11-22T12:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "CV Alcalá Scolatrip",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Infantil Masculino"
-    },
-    {
-      "id": 57182,
-      "jornada": 7,
-      "fechaHora": "2026-11-22T12:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "CV Sanse Rojo",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Cadete Femenino A"
-    },
-    {
-      "id": 64706,
-      "jornada": 6,
-      "fechaHora": "2026-11-22T12:15:00.000Z",
-      "local": "Manzanares Voley C",
-      "visitante": "Cde Union Voleibol El Alamo Juvenil Femenino",
-      "pabellon": "El Alamo, Ies",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "PASEO DEL OLIVAR 62",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=EL ALAMO, IES PASEO DEL OLIVAR 62, EL ALAMO",
-      "jugado": false,
-      "categoria": "Juvenil Femenino C"
-    },
-    {
-      "id": 62630,
-      "jornada": 7,
-      "fechaHora": "2026-11-22T13:30:00.000Z",
-      "local": "CV Guadarrama",
-      "visitante": "Manzanares Voley",
-      "pabellon": "Colegio Publico Villa De Guadarrama",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CALLE DE LOS ESCORIALES 11",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO PUBLICO VILLA DE GUADARRAMA CALLE DE LOS ESCORIALES 11, GUADARRAMA",
-      "jugado": false,
-      "categoria": "Juvenil Masculino"
-    },
-    {
-      "id": 56791,
-      "jornada": 9,
-      "fechaHora": "2026-11-22T14:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Feel Alcobendas Negro",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Juvenil Femenino A"
-    },
-    {
-      "id": 60918,
-      "jornada": 7,
-      "fechaHora": "2026-11-22T14:00:00.000Z",
-      "local": "Manzanares Voley B",
-      "visitante": "CV Valdemoro Las Aguas Juvenil Femenino",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": false,
-      "categoria": "Juvenil Femenino B"
-    },
-    {
       "id": 58115,
       "jornada": 7,
       "fechaHora": "2026-11-22T16:00:00.000Z",
@@ -35175,9 +35112,226 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Cadete Femenino C"
+    },
+    {
+      "id": 63009,
+      "jornada": 9,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "Cvleganes.com B",
+      "visitante": "Manzanares Voley A",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Masculino A"
+    },
+    {
+      "id": 63264,
+      "jornada": 7,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "Manzanares Voley B",
+      "visitante": "Santa Isabel La Asunción",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Cadete Masculino B"
+    },
+    {
+      "id": 56802,
+      "jornada": 11,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Baumit CV Collado Villalba",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino A"
+    },
+    {
+      "id": 60929,
+      "jornada": 9,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "Manzanares Voley B",
+      "visitante": "Voleibol Hispano Usera",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino B"
+    },
+    {
+      "id": 64709,
+      "jornada": 7,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "Intervoley Fuenlabrada",
+      "visitante": "Manzanares Voley C",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Femenino C"
+    },
+    {
+      "id": 62643,
+      "jornada": 9,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "CV Getafe Azul",
+      "visitante": "Manzanares Voley",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Juvenil Masculino"
+    },
+    {
+      "id": 57336,
+      "jornada": 10,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "CV Sanse",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Junior Femenino A"
     }
   ],
   "ultimos": [
+    {
+      "id": 56791,
+      "jornada": 9,
+      "fechaHora": "2026-11-22T14:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "Feel Alcobendas Negro",
+      "pabellon": "Gallur , Cdm",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "GALLUR 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+      "jugado": true,
+      "setsLocal": 0,
+      "setsVisitante": 3,
+      "resultado": "0-3",
+      "categoria": "Juvenil Femenino A"
+    },
+    {
+      "id": 60918,
+      "jornada": 7,
+      "fechaHora": "2026-11-22T14:00:00.000Z",
+      "local": "Manzanares Voley B",
+      "visitante": "CV Valdemoro Las Aguas Juvenil Femenino",
+      "pabellon": "Gallur , Cdm",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "GALLUR 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+      "jugado": true,
+      "setsLocal": 1,
+      "setsVisitante": 3,
+      "resultado": "1-3",
+      "categoria": "Juvenil Femenino B"
+    },
+    {
+      "id": 62630,
+      "jornada": 7,
+      "fechaHora": "2026-11-22T13:30:00.000Z",
+      "local": "CV Guadarrama",
+      "visitante": "Manzanares Voley",
+      "pabellon": "Colegio Publico Villa De Guadarrama",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CALLE DE LOS ESCORIALES 11",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO PUBLICO VILLA DE GUADARRAMA CALLE DE LOS ESCORIALES 11, GUADARRAMA",
+      "jugado": true,
+      "setsLocal": 0,
+      "setsVisitante": 3,
+      "resultado": "0-3",
+      "categoria": "Juvenil Masculino"
+    },
+    {
+      "id": 64706,
+      "jornada": 6,
+      "fechaHora": "2026-11-22T12:15:00.000Z",
+      "local": "Manzanares Voley C",
+      "visitante": "Cde Union Voleibol El Alamo Juvenil Femenino",
+      "pabellon": "El Alamo, Ies",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "PASEO DEL OLIVAR 62",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=EL ALAMO, IES PASEO DEL OLIVAR 62, EL ALAMO",
+      "jugado": true,
+      "setsLocal": 1,
+      "setsVisitante": 3,
+      "resultado": "1-3",
+      "categoria": "Juvenil Femenino C"
+    },
+    {
+      "id": 59626,
+      "jornada": 7,
+      "fechaHora": "2026-11-22T12:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "CV Alcalá Scolatrip",
+      "pabellon": "Gallur , Cdm",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "GALLUR 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 1,
+      "resultado": "3-1",
+      "categoria": "Infantil Masculino"
+    },
+    {
+      "id": 57182,
+      "jornada": 7,
+      "fechaHora": "2026-11-22T12:00:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "CV Sanse Rojo",
+      "pabellon": "Gallur , Cdm",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "GALLUR 2",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 2,
+      "resultado": "3-2",
+      "categoria": "Cadete Femenino A"
+    },
+    {
+      "id": 75814,
+      "jornada": 4,
+      "fechaHora": "2026-11-22T09:30:00.000Z",
+      "local": "Arganvoley",
+      "visitante": "Manzanares Voley Alevin",
+      "pabellon": "Centro Dotacional Integrado, Arganzuela",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "CANARIAS 17",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DOTACIONAL INTEGRADO, ARGANZUELA CANARIAS 17, MADRID",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 1,
+      "resultado": "3-1",
+      "categoria": "Alevín Femenino"
+    },
     {
       "id": 57324,
       "jornada": 8,
@@ -35195,132 +35349,6 @@
       "setsVisitante": 3,
       "resultado": "1-3",
       "categoria": "Junior Femenino A"
-    },
-    {
-      "id": 72174,
-      "jornada": 7,
-      "fechaHora": "2026-11-21T16:00:00.000Z",
-      "local": "Mirasur School Cadete Femenino",
-      "visitante": "Manzanares Voley C Cadete Femenino",
-      "pabellon": "Colegio Mirasur, Pabellon",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "C/PABLO GARGALLO 1",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO MIRASUR, PABELLON C/PABLO GARGALLO 1, PINTO",
-      "jugado": true,
-      "setsLocal": 3,
-      "setsVisitante": 0,
-      "resultado": "3-0",
-      "categoria": "Cadete Femenino C"
-    },
-    {
-      "id": 62194,
-      "jornada": 5,
-      "fechaHora": "2026-11-21T16:00:00.000Z",
-      "local": "Maria Rodrigo",
-      "visitante": "Manzanares Voley",
-      "pabellon": "Ies Maria Rodrigo",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CALLE TALAMANCA DEL JARAMA, 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=IES MARIA RODRIGO CALLE TALAMANCA DEL JARAMA, 2, MADRID",
-      "jugado": true,
-      "setsLocal": 3,
-      "setsVisitante": 0,
-      "resultado": "3-0",
-      "categoria": "Sénior Masculino"
-    },
-    {
-      "id": 73298,
-      "jornada": 7,
-      "fechaHora": "2026-11-21T15:00:00.000Z",
-      "local": "Manzanares Voley B",
-      "visitante": "Cuv Alcorcón Naranja C",
-      "pabellon": "Gallur , Cdm",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "GALLUR 2",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=GALLUR , CDM GALLUR 2, MADRID",
-      "jugado": true,
-      "setsLocal": 0,
-      "setsVisitante": 3,
-      "resultado": "0-3",
-      "categoria": "Infantil Femenino B"
-    },
-    {
-      "id": 59898,
-      "jornada": 7,
-      "fechaHora": "2026-11-21T13:00:00.000Z",
-      "local": "CV Madrid A",
-      "visitante": "Manzanares Voley A",
-      "pabellon": "Colegio Greenfield",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO GREENFIELD   CARR. DE CARABANCHEL A VILLAVERDE, 82, VILLAVERDE, MADRID",
-      "jugado": true,
-      "setsLocal": 3,
-      "setsVisitante": 1,
-      "resultado": "3-1",
-      "categoria": "Infantil Femenino A"
-    },
-    {
-      "id": 67187,
-      "jornada": 7,
-      "fechaHora": "2026-11-21T09:45:00.000Z",
-      "local": "Nuestra Señora Del Pilar Cadete Femenino",
-      "visitante": "Manzanares Voley B Cadete Femenino",
-      "pabellon": "Nuestra Señora Del Pilar",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CALLE AYALA 47",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=NUESTRA SEÑORA DEL PILAR CALLE AYALA 47, MADRID",
-      "jugado": true,
-      "setsLocal": 3,
-      "setsVisitante": 0,
-      "resultado": "3-0",
-      "categoria": "Cadete Femenino B"
-    },
-    {
-      "id": 60915,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T17:00:00.000Z",
-      "local": "Cuv Alcorcón Blanco",
-      "visitante": "Manzanares Voley B",
-      "pabellon": "Colegio Nueva Castilla (Nuevo)",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CALLE MAZATERON, 12",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-      "jugado": true,
-      "setsLocal": 3,
-      "setsVisitante": 0,
-      "resultado": "3-0",
-      "categoria": "Juvenil Femenino B"
-    },
-    {
-      "id": 62990,
-      "jornada": 6,
-      "fechaHora": "2026-11-15T15:00:00.000Z",
-      "local": "A. D. Voleibol Rivas",
-      "visitante": "Manzanares Voley A",
-      "pabellon": "Jose Hierro, Polideportivo",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "AV JOSE HIERRO 86",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=JOSE HIERRO, POLIDEPORTIVO AV JOSE HIERRO 86, RIVAS-VACIAMADRID",
-      "jugado": true,
-      "setsLocal": 1,
-      "setsVisitante": 3,
-      "resultado": "1-3",
-      "categoria": "Cadete Masculino A"
     }
   ]
 }
