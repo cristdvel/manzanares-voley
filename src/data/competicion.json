@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-22T21:40:55.135Z",
+  "actualizado": "2026-11-23T06:07:06.037Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -34791,19 +34791,6 @@
   ],
   "proximos": [
     {
-      "id": 62996,
-      "jornada": 7,
-      "fechaHora": "2026-11-22T00:00:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "Descansa...",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Cadete Masculino A"
-    },
-    {
       "id": 63007,
       "jornada": 8,
       "fechaHora": "2026-11-22T17:15:00.000Z",
@@ -35207,6 +35194,19 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Junior Femenino B"
+    },
+    {
+      "id": 58128,
+      "jornada": 9,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "Salesianos San Miguel B",
+      "visitante": "Manzanares Voley Senior Femenino",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Sénior Femenino"
     }
   ],
   "ultimos": [
