@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T06:07:06.037Z",
+  "actualizado": "2026-11-23T19:54:43.621Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -51,19 +51,32 @@
         },
         {
           "pos": 4,
-          "equipo": "Avp A Pozo Red",
+          "equipo": "C.d.b.colegio Aquila",
           "esManzanares": false,
-          "pts": 6,
-          "pj": 3,
-          "pg": 2,
+          "pts": 8,
+          "pj": 4,
+          "pg": 3,
           "pp": 1,
-          "setsFavor": 6,
-          "setsContra": 3,
-          "puntosFavor": 196,
-          "puntosContra": 163
+          "setsFavor": 9,
+          "setsContra": 4,
+          "puntosFavor": 295,
+          "puntosContra": 339
         },
         {
           "pos": 5,
+          "equipo": "Avp A Pozo Red",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 4,
+          "pg": 2,
+          "pp": 2,
+          "setsFavor": 7,
+          "setsContra": 6,
+          "puntosFavor": 276,
+          "puntosContra": 260
+        },
+        {
+          "pos": 6,
           "equipo": "CV Nueva Castilla Alevin Femenino",
           "esManzanares": false,
           "pts": 6,
@@ -74,19 +87,6 @@
           "setsContra": 4,
           "puntosFavor": 116,
           "puntosContra": 154
-        },
-        {
-          "pos": 6,
-          "equipo": "C.d.b.colegio Aquila",
-          "esManzanares": false,
-          "pts": 5,
-          "pj": 3,
-          "pg": 2,
-          "pp": 1,
-          "setsFavor": 6,
-          "setsContra": 3,
-          "puntosFavor": 198,
-          "puntosContra": 259
         },
         {
           "pos": 7,
@@ -103,6 +103,19 @@
         },
         {
           "pos": 8,
+          "equipo": "Cde Parla Voley Maxcolchon C Alevin Femenino",
+          "esManzanares": false,
+          "pts": 3,
+          "pj": 4,
+          "pg": 1,
+          "pp": 3,
+          "setsFavor": 3,
+          "setsContra": 9,
+          "puntosFavor": 225,
+          "puntosContra": 272
+        },
+        {
+          "pos": 9,
           "equipo": "CV Madrid B Alevin Femenino",
           "esManzanares": false,
           "pts": 3,
@@ -115,7 +128,7 @@
           "puntosContra": 151
         },
         {
-          "pos": 9,
+          "pos": 10,
           "equipo": "Grupo Egido Pinto B Alevin Femenino",
           "esManzanares": false,
           "pts": 1,
@@ -128,30 +141,17 @@
           "puntosContra": 279
         },
         {
-          "pos": 10,
-          "equipo": "Cde Parla Voley Maxcolchon C Alevin Femenino",
-          "esManzanares": false,
-          "pts": 0,
-          "pj": 3,
-          "pg": 0,
-          "pp": 3,
-          "setsFavor": 0,
-          "setsContra": 9,
-          "puntosFavor": 150,
-          "puntosContra": 225
-        },
-        {
           "pos": 11,
           "equipo": "Avp B Yagüe",
           "esManzanares": false,
           "pts": 0,
-          "pj": 3,
+          "pj": 4,
           "pg": 0,
-          "pp": 3,
+          "pp": 4,
           "setsFavor": 0,
-          "setsContra": 9,
-          "puntosFavor": 82,
-          "puntosContra": 225
+          "setsContra": 12,
+          "puntosFavor": 129,
+          "puntosContra": 300
         }
       ],
       "jornadas": [
@@ -597,10 +597,10 @@
             {
               "id": 75826,
               "jornada": 6,
-              "fechaHora": "2026-12-13T00:00:00.000Z",
+              "fechaHora": "2026-12-13T09:30:00.000Z",
               "local": "Arganvoley",
               "visitante": "Mirasur School Alevin Femenino",
-              "pabellon": null,
+              "pabellon": "Centro Dotacional Integrado, Arganzuela",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -11358,7 +11358,7 @@
             {
               "id": 67198,
               "jornada": 9,
-              "fechaHora": "2026-12-12T09:45:00.000Z",
+              "fechaHora": "2026-11-30T18:45:00.000Z",
               "local": "Nuestra Señora Del Pilar Cadete Femenino",
               "visitante": "Las Nieves A",
               "pabellon": "Nuestra Señora Del Pilar",
@@ -21422,17 +21422,6 @@
               "aplazado": false
             },
             {
-              "id": 60936,
-              "jornada": 10,
-              "fechaHora": "2026-12-20T00:00:00.000Z",
-              "local": "Arganvoley",
-              "visitante": "B. M. 2 Ciudad Getafe",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 60937,
               "jornada": 10,
               "fechaHora": "2026-12-20T00:00:00.000Z",
@@ -21465,6 +21454,17 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
+            },
+            {
+              "id": 60936,
+              "jornada": 10,
+              "fechaHora": "2026-12-20T09:30:00.000Z",
+              "local": "Arganvoley",
+              "visitante": "B. M. 2 Ciudad Getafe",
+              "pabellon": "Centro Dotacional Integrado, Arganzuela",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
             }
           ]
         },
@@ -27108,10 +27108,10 @@
             {
               "id": 57335,
               "jornada": 9,
-              "fechaHora": "2026-11-29T19:00:00.000Z",
+              "fechaHora": "2026-12-02T20:30:00.000Z",
               "local": "Cde Parla Voley Ortopedia A",
               "visitante": "CV Sanse",
-              "pabellon": "La Cantueña, Pabellon",
+              "pabellon": "Ies Atenea",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31900,17 +31900,6 @@
               "aplazado": false
             },
             {
-              "id": 58122,
-              "jornada": 8,
-              "fechaHora": "2026-11-29T00:00:00.000Z",
-              "local": "Circe Fisioterapia CV Collado Villalba",
-              "visitante": "Club Voleibol Torrelodones B",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 58121,
               "jornada": 8,
               "fechaHora": "2026-11-29T09:30:00.000Z",
@@ -31928,6 +31917,17 @@
               "local": "Abv Boadilla B",
               "visitante": "CV Bulldogs A",
               "pabellon": "Ceip Principe Don Felipe",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 58122,
+              "jornada": 8,
+              "fechaHora": "2026-12-21T20:45:00.000Z",
+              "local": "Circe Fisioterapia CV Collado Villalba",
+              "visitante": "Club Voleibol Torrelodones B",
+              "pabellon": "Antonio Machado, Colegio",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -34791,21 +34791,6 @@
   ],
   "proximos": [
     {
-      "id": 63007,
-      "jornada": 8,
-      "fechaHora": "2026-11-22T17:15:00.000Z",
-      "local": "Manzanares Voley A",
-      "visitante": "V-Valley CValcalá G2",
-      "pabellon": "Colegio Nueva Castilla (Nuevo)",
-      "esManzanares": true,
-      "esLocal": true,
-      "aplazado": false,
-      "direccion": "CALLE MAZATERON, 12",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-      "jugado": false,
-      "categoria": "Cadete Masculino A"
-    },
-    {
       "id": 61219,
       "jornada": 9,
       "fechaHora": "2026-11-27T19:00:00.000Z",
@@ -35207,6 +35192,19 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Sénior Femenino"
+    },
+    {
+      "id": 62203,
+      "jornada": 7,
+      "fechaHora": "2026-12-13T00:00:00.000Z",
+      "local": "Manzanares Voley",
+      "visitante": "Descansa...",
+      "pabellon": null,
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "jugado": false,
+      "categoria": "Sénior Masculino"
     }
   ],
   "ultimos": [
