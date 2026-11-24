@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-23T19:54:43.621Z",
+  "actualizado": "2026-11-24T04:39:29.885Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -14790,6 +14790,19 @@
       "clasificacion": [
         {
           "pos": 1,
+          "equipo": "Manzanares Voley A",
+          "esManzanares": true,
+          "pts": 21,
+          "pj": 7,
+          "pg": 7,
+          "pp": 0,
+          "setsFavor": 21,
+          "setsContra": 2,
+          "puntosFavor": 570,
+          "puntosContra": 365
+        },
+        {
+          "pos": 2,
           "equipo": "Cvleganes.com B",
           "esManzanares": false,
           "pts": 21,
@@ -14800,19 +14813,6 @@
           "setsContra": 4,
           "puntosFavor": 599,
           "puntosContra": 420
-        },
-        {
-          "pos": 2,
-          "equipo": "Manzanares Voley A",
-          "esManzanares": true,
-          "pts": 18,
-          "pj": 6,
-          "pg": 6,
-          "pp": 0,
-          "setsFavor": 18,
-          "setsContra": 2,
-          "puntosFavor": 495,
-          "puntosContra": 305
         },
         {
           "pos": 3,
@@ -14897,13 +14897,13 @@
           "equipo": "V-Valley CValcalá G2",
           "esManzanares": false,
           "pts": 4,
-          "pj": 6,
+          "pj": 7,
           "pg": 1,
-          "pp": 5,
+          "pp": 6,
           "setsFavor": 8,
-          "setsContra": 14,
-          "puntosFavor": 464,
-          "puntosContra": 502
+          "setsContra": 17,
+          "puntosFavor": 524,
+          "puntosContra": 577
         },
         {
           "pos": 10,
@@ -15490,7 +15490,10 @@
               "aplazado": false,
               "direccion": "CALLE MAZATERON, 12",
               "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-              "jugado": false
+              "jugado": true,
+              "setsLocal": 3,
+              "setsVisitante": 0,
+              "resultado": "3-0"
             },
             {
               "id": 63004,
@@ -16699,7 +16702,10 @@
           "aplazado": false,
           "direccion": "CALLE MAZATERON, 12",
           "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
-          "jugado": false
+          "jugado": true,
+          "setsLocal": 3,
+          "setsVisitante": 0,
+          "resultado": "3-0"
         },
         {
           "id": 63009,
@@ -35209,6 +35215,24 @@
   ],
   "ultimos": [
     {
+      "id": 63007,
+      "jornada": 8,
+      "fechaHora": "2026-11-22T17:15:00.000Z",
+      "local": "Manzanares Voley A",
+      "visitante": "V-Valley CValcalá G2",
+      "pabellon": "Colegio Nueva Castilla (Nuevo)",
+      "esManzanares": true,
+      "esLocal": true,
+      "aplazado": false,
+      "direccion": "CALLE MAZATERON, 12",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=COLEGIO NUEVA CASTILLA (NUEVO) CALLE MAZATERON, 12, MADRID",
+      "jugado": true,
+      "setsLocal": 3,
+      "setsVisitante": 0,
+      "resultado": "3-0",
+      "categoria": "Cadete Masculino A"
+    },
+    {
       "id": 58115,
       "jornada": 7,
       "fechaHora": "2026-11-22T16:00:00.000Z",
@@ -35333,24 +35357,6 @@
       "setsVisitante": 2,
       "resultado": "3-2",
       "categoria": "Cadete Femenino A"
-    },
-    {
-      "id": 75814,
-      "jornada": 4,
-      "fechaHora": "2026-11-22T09:30:00.000Z",
-      "local": "Arganvoley",
-      "visitante": "Manzanares Voley Alevin",
-      "pabellon": "Centro Dotacional Integrado, Arganzuela",
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "direccion": "CANARIAS 17",
-      "mapa": "https://www.google.com/maps/search/?api=1&query=CENTRO DOTACIONAL INTEGRADO, ARGANZUELA CANARIAS 17, MADRID",
-      "jugado": true,
-      "setsLocal": 3,
-      "setsVisitante": 1,
-      "resultado": "3-1",
-      "categoria": "Alevín Femenino"
     }
   ]
 }
