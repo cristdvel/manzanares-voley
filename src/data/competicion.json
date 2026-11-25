@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-25T03:24:06.010Z",
+  "actualizado": "2026-11-25T13:57:17.127Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -8473,6 +8473,19 @@
         },
         {
           "pos": 3,
+          "equipo": "Feel Alcobendas Negro",
+          "esManzanares": false,
+          "pts": 18,
+          "pj": 8,
+          "pg": 7,
+          "pp": 1,
+          "setsFavor": 21,
+          "setsContra": 9,
+          "puntosFavor": 699,
+          "puntosContra": 567
+        },
+        {
+          "pos": 4,
           "equipo": "CV Collado Villalba A",
           "esManzanares": false,
           "pts": 16,
@@ -8483,19 +8496,6 @@
           "setsContra": 10,
           "puntosFavor": 640,
           "puntosContra": 569
-        },
-        {
-          "pos": 4,
-          "equipo": "Feel Alcobendas Negro",
-          "esManzanares": false,
-          "pts": 15,
-          "pj": 7,
-          "pg": 6,
-          "pp": 1,
-          "setsFavor": 18,
-          "setsContra": 9,
-          "puntosFavor": 624,
-          "puntosContra": 524
         },
         {
           "pos": 5,
@@ -8567,13 +8567,13 @@
           "equipo": "CV Las Rozas A",
           "esManzanares": false,
           "pts": 7,
-          "pj": 7,
+          "pj": 8,
           "pg": 2,
-          "pp": 5,
+          "pp": 6,
           "setsFavor": 9,
-          "setsContra": 15,
-          "puntosFavor": 521,
-          "puntosContra": 525
+          "setsContra": 18,
+          "puntosFavor": 564,
+          "puntosContra": 600
         },
         {
           "pos": 11,
@@ -24260,19 +24260,6 @@
         },
         {
           "pos": 7,
-          "equipo": "Club Voleibol Torrelodones",
-          "esManzanares": false,
-          "pts": 7,
-          "pj": 7,
-          "pg": 3,
-          "pp": 4,
-          "setsFavor": 11,
-          "setsContra": 17,
-          "puntosFavor": 545,
-          "puntosContra": 603
-        },
-        {
-          "pos": 8,
           "equipo": "CV Aranjuez",
           "esManzanares": false,
           "pts": 7,
@@ -24285,7 +24272,7 @@
           "puntosContra": 582
         },
         {
-          "pos": 9,
+          "pos": 8,
           "equipo": "Cuv Alcorcón B",
           "esManzanares": false,
           "pts": 6,
@@ -24296,6 +24283,19 @@
           "setsContra": 13,
           "puntosFavor": 409,
           "puntosContra": 444
+        },
+        {
+          "pos": 9,
+          "equipo": "Club Voleibol Torrelodones",
+          "esManzanares": false,
+          "pts": 5,
+          "pj": 6,
+          "pg": 2,
+          "pp": 4,
+          "setsFavor": 8,
+          "setsContra": 15,
+          "puntosFavor": 441,
+          "puntosContra": 509
         },
         {
           "pos": 10,
@@ -29318,17 +29318,6 @@
               "aplazado": false
             },
             {
-              "id": 61225,
-              "jornada": 9,
-              "fechaHora": "2026-11-28T17:45:00.000Z",
-              "local": "Salesianos Estrecho Auxiliadora",
-              "visitante": "Stars Sport Madrid",
-              "pabellon": "Salesianos Estrecho",
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 61221,
               "jornada": 9,
               "fechaHora": "2026-11-28T18:00:00.000Z",
@@ -29368,6 +29357,17 @@
               "local": "Cde Voleibol Colmenar A",
               "visitante": "CV Las Rozas B",
               "pabellon": "Lorenzo Rico",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 61225,
+              "jornada": 9,
+              "fechaHora": "2026-12-19T20:00:00.000Z",
+              "local": "Salesianos Estrecho Auxiliadora",
+              "visitante": "Stars Sport Madrid",
+              "pabellon": "Salesianos Estrecho",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
