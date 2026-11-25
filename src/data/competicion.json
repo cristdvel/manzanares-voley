@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-24T19:23:17.000Z",
+  "actualizado": "2026-11-25T03:24:06.010Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -64,6 +64,19 @@
         },
         {
           "pos": 5,
+          "equipo": "CV Nueva Castilla Alevin Femenino",
+          "esManzanares": false,
+          "pts": 6,
+          "pj": 3,
+          "pg": 2,
+          "pp": 1,
+          "setsFavor": 6,
+          "setsContra": 4,
+          "puntosFavor": 191,
+          "puntosContra": 154
+        },
+        {
+          "pos": 6,
           "equipo": "Avp A Pozo Red",
           "esManzanares": false,
           "pts": 6,
@@ -74,19 +87,6 @@
           "setsContra": 6,
           "puntosFavor": 276,
           "puntosContra": 260
-        },
-        {
-          "pos": 6,
-          "equipo": "CV Nueva Castilla Alevin Femenino",
-          "esManzanares": false,
-          "pts": 6,
-          "pj": 3,
-          "pg": 2,
-          "pp": 1,
-          "setsFavor": 3,
-          "setsContra": 4,
-          "puntosFavor": 116,
-          "puntosContra": 154
         },
         {
           "pos": 7,
@@ -123,9 +123,9 @@
           "pg": 1,
           "pp": 3,
           "setsFavor": 0,
-          "setsContra": 6,
+          "setsContra": 9,
           "puntosFavor": 172,
-          "puntosContra": 151
+          "puntosContra": 226
         },
         {
           "pos": 10,
@@ -4993,6 +4993,20 @@
           "fecha": "2026-12-13T00:00:00.000Z",
           "partidos": [
             {
+              "id": 73311,
+              "jornada": 9,
+              "fechaHora": "2026-12-12T12:00:00.000Z",
+              "local": "A.D.perales",
+              "visitante": "Manzanares Voley B",
+              "pabellon": "Pabellon Deportivo Perales Del Rio",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "AVDA. FRANCISCO CHICO MENDES S/N",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON DEPORTIVO PERALES DEL RIO AVDA. FRANCISCO CHICO MENDES S/N, GETAFE",
+              "jugado": false
+            },
+            {
               "id": 73315,
               "jornada": 9,
               "fechaHora": "2026-12-12T16:00:00.000Z",
@@ -5013,18 +5027,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 73311,
-              "jornada": 9,
-              "fechaHora": "2026-12-13T00:00:00.000Z",
-              "local": "A.D.perales",
-              "visitante": "Manzanares Voley B",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 73312,
@@ -6150,13 +6152,15 @@
         {
           "id": 73311,
           "jornada": 9,
-          "fechaHora": "2026-12-13T00:00:00.000Z",
+          "fechaHora": "2026-12-12T12:00:00.000Z",
           "local": "A.D.perales",
           "visitante": "Manzanares Voley B",
-          "pabellon": null,
+          "pabellon": "Pabellon Deportivo Perales Del Rio",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "AVDA. FRANCISCO CHICO MENDES S/N",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON DEPORTIVO PERALES DEL RIO AVDA. FRANCISCO CHICO MENDES S/N, GETAFE",
           "jugado": false
         },
         {
@@ -15557,6 +15561,17 @@
           "fecha": "2026-12-13T00:00:00.000Z",
           "partidos": [
             {
+              "id": 63012,
+              "jornada": 9,
+              "fechaHora": "2026-12-12T10:00:00.000Z",
+              "local": "A.D.perales",
+              "visitante": "Club Voleibol Móstoles B",
+              "pabellon": "Pabellon Deportivo Perales Del Rio",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 63008,
               "jornada": 9,
               "fechaHora": "2026-12-13T00:00:00.000Z",
@@ -15596,17 +15611,6 @@
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "Cuv Alcorcón B",
               "visitante": "Club Voleibol Plaza Castilla A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
-              "id": 63012,
-              "jornada": 9,
-              "fechaHora": "2026-12-13T00:00:00.000Z",
-              "local": "A.D.perales",
-              "visitante": "Club Voleibol Móstoles B",
               "pabellon": null,
               "esManzanares": false,
               "esLocal": false,
@@ -23195,17 +23199,6 @@
               "aplazado": false
             },
             {
-              "id": 64708,
-              "jornada": 7,
-              "fechaHora": "2026-12-13T00:00:00.000Z",
-              "local": "A.D.perales Blanco Juvenil Femenino",
-              "visitante": "Arcangel Juv A",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 64709,
               "jornada": 7,
               "fechaHora": "2026-12-13T00:00:00.000Z",
@@ -23235,6 +23228,17 @@
               "local": "Cde Union Voleibol El Alamo Juvenil Femenino",
               "visitante": "Cde Parla Voley Parlazul Juvenil Femenino",
               "pabellon": "El Alamo, Ies",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 64708,
+              "jornada": 7,
+              "fechaHora": "2026-12-13T10:30:00.000Z",
+              "local": "A.D.perales Blanco Juvenil Femenino",
+              "visitante": "Arcangel Juv A",
+              "pabellon": "Cerrobuenavista, Polideportivo Municipal",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -35005,6 +35009,21 @@
       "categoria": "Junior Femenino B"
     },
     {
+      "id": 73311,
+      "jornada": 9,
+      "fechaHora": "2026-12-12T12:00:00.000Z",
+      "local": "A.D.perales",
+      "visitante": "Manzanares Voley B",
+      "pabellon": "Pabellon Deportivo Perales Del Rio",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "AVDA. FRANCISCO CHICO MENDES S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=PABELLON DEPORTIVO PERALES DEL RIO AVDA. FRANCISCO CHICO MENDES S/N, GETAFE",
+      "jugado": false,
+      "categoria": "Infantil Femenino B"
+    },
+    {
       "id": 75822,
       "jornada": 6,
       "fechaHora": "2026-12-13T00:00:00.000Z",
@@ -35029,19 +35048,6 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Infantil Femenino A"
-    },
-    {
-      "id": 73311,
-      "jornada": 9,
-      "fechaHora": "2026-12-13T00:00:00.000Z",
-      "local": "A.D.perales",
-      "visitante": "Manzanares Voley B",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Infantil Femenino B"
     },
     {
       "id": 59637,
