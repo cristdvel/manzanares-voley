@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-26T00:00:55.931Z",
+  "actualizado": "2026-11-26T13:36:25.807Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -15576,6 +15576,20 @@
               "aplazado": false
             },
             {
+              "id": 63009,
+              "jornada": 9,
+              "fechaHora": "2026-12-12T16:00:00.000Z",
+              "local": "Cvleganes.com B",
+              "visitante": "Manzanares Voley A",
+              "pabellon": "Emilia Pardo Bazan, Pabellon",
+              "esManzanares": true,
+              "esLocal": false,
+              "aplazado": false,
+              "direccion": "AV PORTUGAL, S/N",
+              "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
+              "jugado": false
+            },
+            {
               "id": 63008,
               "jornada": 9,
               "fechaHora": "2026-12-13T00:00:00.000Z",
@@ -15585,18 +15599,6 @@
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
-            },
-            {
-              "id": 63009,
-              "jornada": 9,
-              "fechaHora": "2026-12-13T00:00:00.000Z",
-              "local": "Cvleganes.com B",
-              "visitante": "Manzanares Voley A",
-              "pabellon": null,
-              "esManzanares": true,
-              "esLocal": false,
-              "aplazado": false,
-              "jugado": false
             },
             {
               "id": 63010,
@@ -16718,13 +16720,15 @@
         {
           "id": 63009,
           "jornada": 9,
-          "fechaHora": "2026-12-13T00:00:00.000Z",
+          "fechaHora": "2026-12-12T16:00:00.000Z",
           "local": "Cvleganes.com B",
           "visitante": "Manzanares Voley A",
-          "pabellon": null,
+          "pabellon": "Emilia Pardo Bazan, Pabellon",
           "esManzanares": true,
           "esLocal": false,
           "aplazado": false,
+          "direccion": "AV PORTUGAL, S/N",
+          "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
           "jugado": false
         },
         {
@@ -21352,6 +21356,17 @@
               "aplazado": false
             },
             {
+              "id": 60930,
+              "jornada": 9,
+              "fechaHora": "2026-12-12T17:30:00.000Z",
+              "local": "Club Voleibol Móstoles B",
+              "visitante": "Cvfuenlabrada",
+              "pabellon": "Pau 4, Polideportivo",
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
               "id": 60929,
               "jornada": 9,
               "fechaHora": "2026-12-13T00:00:00.000Z",
@@ -21362,17 +21377,6 @@
               "esLocal": true,
               "aplazado": false,
               "jugado": false
-            },
-            {
-              "id": 60930,
-              "jornada": 9,
-              "fechaHora": "2026-12-13T00:00:00.000Z",
-              "local": "Club Voleibol Móstoles B",
-              "visitante": "Cvfuenlabrada",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
             },
             {
               "id": 60931,
@@ -27182,23 +27186,23 @@
               "aplazado": false
             },
             {
-              "id": 57340,
-              "jornada": 10,
-              "fechaHora": "2026-12-13T00:00:00.000Z",
-              "local": "Cvleganes.com",
-              "visitante": "Ucam Torrejón",
-              "pabellon": null,
-              "esManzanares": false,
-              "esLocal": false,
-              "aplazado": false
-            },
-            {
               "id": 57341,
               "jornada": 10,
               "fechaHora": "2026-12-13T00:00:00.000Z",
               "local": "CV Las Rozas A",
               "visitante": "CV Collado Villalba",
               "pabellon": null,
+              "esManzanares": false,
+              "esLocal": false,
+              "aplazado": false
+            },
+            {
+              "id": 57340,
+              "jornada": 10,
+              "fechaHora": "2026-12-13T16:00:00.000Z",
+              "local": "Cvleganes.com",
+              "visitante": "Ucam Torrejón",
+              "pabellon": "Emilia Pardo Bazan, Pabellon",
               "esManzanares": false,
               "esLocal": false,
               "aplazado": false
@@ -31210,6 +31214,19 @@
         },
         {
           "pos": 4,
+          "equipo": "CV Majadahonda A",
+          "esManzanares": false,
+          "pts": 13,
+          "pj": 8,
+          "pg": 5,
+          "pp": 3,
+          "setsFavor": 17,
+          "setsContra": 14,
+          "puntosFavor": 683,
+          "puntosContra": 608
+        },
+        {
+          "pos": 5,
           "equipo": "Salesianos San Miguel B",
           "esManzanares": false,
           "pts": 11,
@@ -31222,7 +31239,7 @@
           "puntosContra": 573
         },
         {
-          "pos": 5,
+          "pos": 6,
           "equipo": "Circe Fisioterapia CV Collado Villalba",
           "esManzanares": false,
           "pts": 11,
@@ -31235,7 +31252,7 @@
           "puntosContra": 615
         },
         {
-          "pos": 6,
+          "pos": 7,
           "equipo": "Manzanares Voley Senior Femenino",
           "esManzanares": true,
           "pts": 11,
@@ -31248,30 +31265,17 @@
           "puntosContra": 628
         },
         {
-          "pos": 7,
+          "pos": 8,
           "equipo": "CV Madrid A",
           "esManzanares": false,
           "pts": 11,
-          "pj": 7,
+          "pj": 8,
           "pg": 3,
-          "pp": 4,
+          "pp": 5,
           "setsFavor": 16,
-          "setsContra": 15,
-          "puntosFavor": 654,
-          "puntosContra": 636
-        },
-        {
-          "pos": 8,
-          "equipo": "CV Majadahonda A",
-          "esManzanares": false,
-          "pts": 10,
-          "pj": 7,
-          "pg": 4,
-          "pp": 3,
-          "setsFavor": 14,
-          "setsContra": 14,
-          "puntosFavor": 608,
-          "puntosContra": 552
+          "setsContra": 18,
+          "puntosFavor": 710,
+          "puntosContra": 711
         },
         {
           "pos": 9,
@@ -35028,6 +35032,21 @@
       "categoria": "Infantil Femenino B"
     },
     {
+      "id": 63009,
+      "jornada": 9,
+      "fechaHora": "2026-12-12T16:00:00.000Z",
+      "local": "Cvleganes.com B",
+      "visitante": "Manzanares Voley A",
+      "pabellon": "Emilia Pardo Bazan, Pabellon",
+      "esManzanares": true,
+      "esLocal": false,
+      "aplazado": false,
+      "direccion": "AV PORTUGAL, S/N",
+      "mapa": "https://www.google.com/maps/search/?api=1&query=EMILIA PARDO BAZAN, PABELLON AV PORTUGAL, S/N, LEGANES",
+      "jugado": false,
+      "categoria": "Cadete Masculino A"
+    },
+    {
       "id": 75822,
       "jornada": 6,
       "fechaHora": "2026-12-13T00:00:00.000Z",
@@ -35078,19 +35097,6 @@
       "aplazado": false,
       "jugado": false,
       "categoria": "Cadete Femenino C"
-    },
-    {
-      "id": 63009,
-      "jornada": 9,
-      "fechaHora": "2026-12-13T00:00:00.000Z",
-      "local": "Cvleganes.com B",
-      "visitante": "Manzanares Voley A",
-      "pabellon": null,
-      "esManzanares": true,
-      "esLocal": false,
-      "aplazado": false,
-      "jugado": false,
-      "categoria": "Cadete Masculino A"
     },
     {
       "id": 63264,
