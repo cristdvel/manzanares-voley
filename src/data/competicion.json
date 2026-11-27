@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-11-26T13:36:25.807Z",
+  "actualizado": "2026-11-27T00:21:16.392Z",
   "temporada": "2026/2027",
   "grupos": [
     {
@@ -18442,6 +18442,19 @@
         },
         {
           "pos": 2,
+          "equipo": "Feel Alcobendas Negro",
+          "esManzanares": false,
+          "pts": 23,
+          "pj": 10,
+          "pg": 7,
+          "pp": 3,
+          "setsFavor": 25,
+          "setsContra": 11,
+          "puntosFavor": 850,
+          "puntosContra": 690
+        },
+        {
+          "pos": 3,
           "equipo": "Cvleganes.com A",
           "esManzanares": false,
           "pts": 21,
@@ -18454,7 +18467,7 @@
           "puntosContra": 710
         },
         {
-          "pos": 3,
+          "pos": 4,
           "equipo": "Ucam Torrejón A",
           "esManzanares": false,
           "pts": 20,
@@ -18465,19 +18478,6 @@
           "setsContra": 13,
           "puntosFavor": 793,
           "puntosContra": 742
-        },
-        {
-          "pos": 4,
-          "equipo": "Feel Alcobendas Negro",
-          "esManzanares": false,
-          "pts": 20,
-          "pj": 9,
-          "pg": 6,
-          "pp": 3,
-          "setsFavor": 22,
-          "setsContra": 10,
-          "puntosFavor": 755,
-          "puntosContra": 613
         },
         {
           "pos": 5,
@@ -18497,13 +18497,13 @@
           "equipo": "Assa Abloy Sanse",
           "esManzanares": false,
           "pts": 16,
-          "pj": 9,
+          "pj": 10,
           "pg": 6,
-          "pp": 3,
-          "setsFavor": 21,
-          "setsContra": 17,
-          "puntosFavor": 848,
-          "puntosContra": 785
+          "pp": 4,
+          "setsFavor": 22,
+          "setsContra": 20,
+          "puntosFavor": 925,
+          "puntosContra": 880
         },
         {
           "pos": 7,
